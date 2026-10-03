@@ -87,13 +87,26 @@ def build_pattern(name: str) -> tuple[re.Pattern | None, str]:
     return None, f"{bare} (one short word, no suffix to anchor on; skipped)"
 
 
+def user_agent() -> str:
+    """SEC asks every client to identify itself. Read the contact from .env rather than
+    hardcoding a personal address, so this file can be shared."""
+    env = ROOT / ".env"
+    if env.exists():
+        for line in env.read_text(encoding="utf-8").splitlines():
+            if line.startswith("SEC_USER_AGENT="):
+                value = line.split("=", 1)[1].strip()
+                if value:
+                    return value
+    raise SystemExit("Set SEC_USER_AGENT in .env to 'Your Name your-email@example.com'")
+
+
 def fetch_month(source: str, year: int, month: int) -> str:
     CACHE.mkdir(parents=True, exist_ok=True)
     cache_file = CACHE / f"{source}_{year}-{month:02d}.html"
     if cache_file.exists():
         return cache_file.read_text(encoding="utf-8", errors="ignore")
     url = f"{SOURCES[source]}?year={year}&month={month}"
-    req = urllib.request.Request(url, headers={"User-Agent": "quanthacks-research k.katiyar2006@gmail.com"})
+    req = urllib.request.Request(url, headers={"User-Agent": user_agent()})
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=45) as resp:

@@ -532,6 +532,66 @@ def conditional_relationships(panel,features,out):
     return summary
 
 
+def add_research_findings(out,signals,relationships,shortlist,conditional):
+    one=signals[(signals.target=='forward_cohort_excess_1m') & (signals.test_months>=12)]
+    three=signals[(signals.target=='forward_cohort_excess_3m') & (signals.test_months>=12)]
+    risk=signals[(signals.target=='forward_21d_volatility') & signals.feature.isin(
+        ['past_60d_volatility','operating_margin_reported_q','log_reported_quarter_revenue',
+         'rd_share_reported_q','exploratory_ttm_sbc_pct_rev'])]
+    pair_examples=shortlist[shortlist.apply(lambda row:(row.ticker_a,row.ticker_b) in
+                              [('PAYC','PCTY'),('QLYS','TENB'),('CRM','NOW'),('CDNS','SNPS')],axis=1)]
+    focused=relationships[relationships.apply(lambda row:(row.metric_a,row.metric_b) in
+                        [('rd_share_reported_q','sbc_share_reported_q'),
+                         ('sm_share_reported_q','sbc_share_reported_q'),
+                         ('rd_share_reported_q','revenue_growth_reported_yoy'),
+                         ('rd_share_reported_q','operating_margin_reported_q')],axis=1)]
+    increment=conditional[conditional.target=='forward_21d_volatility']
+    findings=f'''## Findings
+
+**Risk is more predictable here than return direction.** Among tests with at least 12 holdout months,
+{int((one.test_bh_q<=.10).sum())} next-month and {int((three.test_bh_q<=.10).sum())} three-month return tests
+pass the exploratory 10% false-discovery threshold. R&D spending, AI/cloud mentions and EPSS do not establish
+a usable directional return signal in this sample. AI announcement candidate-share tests have only four
+useful holdout months and are underpowered; absence of evidence is not evidence of no effect.
+
+Selected volatility associations (mean monthly rank correlations):
+
+{table(risk,['feature','train_mean_rank_ic','test_mean_rank_ic','test_bh_q','test_months'])}
+
+Higher past volatility predicts higher next-month volatility. Higher operating margins and revenue size
+accompany lower future volatility. R&D intensity and stock-compensation intensity accompany higher future
+volatility. The stock-compensation TTM input has unverified cross-filing accounting flags.
+After controlling for past volatility, size and momentum, {int((increment.test_bh_q<=.10).sum())} volatility
+tests pass 10% FDR in the conditional family. These controls reduce the case for independent new signals.
+The two multiple-testing families are corrected separately ({len(signals)} main tests, {len(conditional)} conditional tests).
+
+Selected fundamental relationships:
+
+{table(focused,['metric_a','metric_b','mean_monthly_cross_section_rank_corr','test_mean_rank_corr','months'])}
+
+R&D and sales/marketing intensity accompany stock-compensation intensity. R&D has a modest positive
+association with current YoY revenue growth. The negative relationship between expenses and operating margin
+partly reflects the accounting identity and common revenue denominator; it is not independent evidence that
+cutting R&D improves the business. These are contemporaneous comparisons, not forecasts of next year's growth.
+
+Pairs to investigate from the discovery-selected list:
+
+{table(pair_examples,['ticker_a','ticker_b','train_return_corr','test_return_corr','test_sector_residual_corr','test_spread_std_vs_train','test_spread_mean_shift_in_train_sd'])}
+
+PAYC/PCTY and QLYS/TENB retained substantial residual correlation and relatively similar spread scale in
+the holdout. CRM/NOW retained correlation but its spread mean shifted. CDNS/SNPS retained strong correlation,
+yet its spread standard deviation grew about 3.18 times and its mean shifted 5.76 training standard deviations.
+That makes a fixed mean-reversion hedge much less convincing. Correlated returns alone do not establish cointegration.
+No transaction-cost, short-borrow, execution or portfolio backtest was performed.
+
+'''
+    report=out/'REPORT.md'
+    content=report.read_text(encoding='utf-8')
+    if '## Findings\n' not in content:
+        content=content.replace('## Price and coverage audit\n',findings+'## Price and coverage audit\n',1)
+    report.write_text(content,encoding='utf-8')
+
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,default=ROOT/'data/processed/company_signal_research')
     args=ap.parse_args();out=args.output;out.mkdir(parents=True,exist_ok=True)
@@ -552,11 +612,15 @@ def main():
     sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in
              [EXTRACTS/'prices/daily_bars.csv',EXTRACTS/'company_metrics/fundamentals_quarterly.csv',
               EXTRACTS/'company_metrics/quarterly_metric_sources.csv',EXTRACTS/'company_news/news_articles.csv',
-              EXTRACTS/'epss_monthly/company_epss_history.csv']}
+              EXTRACTS/'epss_monthly/company_epss_history.csv',
+              ROOT/'data/packaged_software/packaged_software_companies.csv',
+              ROOT/'data/packaged_software/output/tenk_text_flags.csv',
+              ROOT/'data/packaged_software/output/ticker_details.csv'] if p.exists()}
     manifest=dict(universe_companies=len(companies),raw_price_rows=nraw,invalid_close_rows_excluded=invalid,
                   price_start=str(price.index.min().date()),price_end=str(price.index.max().date()),
                   monthly_panel_rows=len(panel),monthly_panel_companies=panel.ticker.nunique(),
                   monthly_panel_end=str(panel.month.max().date()),feature_count=len(features),signal_tests=len(signals),
+                  conditional_tests=len(conditional),
                   pair_eligible_companies=neligible,pair_tests=len(pairs),training_selected_pairs=len(shortlist),
                   training_end='2024-12-31',test_start='2025-01-01',random_seed=SEED,source_sha256=sources,
                   limitations=['Current surviving universe; historical ticker aliases not spliced into prices',
@@ -653,6 +717,7 @@ See `feature_signal_summary.csv`, `fundamental_metric_relationships.csv`, `train
 The manifest records source hashes and assumptions. Source CSVs are unchanged.
 '''
     (out/'REPORT.md').write_text(report,encoding='utf-8')
+    add_research_findings(out,signals,relationships,shortlist,conditional)
     print(json.dumps({k:v for k,v in manifest.items() if k not in ['source_sha256','limitations']},indent=2),flush=True)
 
 

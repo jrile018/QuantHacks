@@ -17,13 +17,13 @@ SOUN,LivePerson (per-share stock value),dropped,,$3.33 is a per-share stock valu
 SOUN,unrelated 2021 purchase,dropped,,"$25,000 is a historical purchase price in the notes."
 VWAV,VisionWave (post-deal equity),dropped,,"$110M is post-transaction equity value, not consideration."
 BBAI,Government Business valuation,dropped,,$36M-$44M is an implied enterprise-value range.
-SWMR,SWMR deal,plausible - verify,16000000 USD cash + shares,PREM14A: aggregate up to about $16.0M in cash plus shares. Confirm the deal and terms.
-SKIL,Skillsoft merger,plausible - verify,204943210 USD aggregate,DEFM14A: aggregate consideration figure. Confirm which deal and how it is split.
-AISP,Airship AI / BYTS,plausible - verify,225000000 USD aggregate (in shares),S-4: aggregate consideration of $225.0M in shares. Confirm it is the total deal value.
-AIFF,Tellenger (WaveDancer),plausible - verify,1500000 USD aggregate,S-4: aggregate purchase price $1.5M. Small deal; confirm.
-DDD,3D Systems merger agreement (2023),plausible - verify,7.00 USD per share cash + 1.6387 shares,Merger agreement text: $7.00 cash plus 1.6387 shares per share. Confirm counterparty.
-ALKT,Alkami merger agreement (2022),plausible - verify,135500000 USD enterprise value,"Merger agreement defines Enterprise Value as $135,500,000. Confirm this is the purchase price."
-BBAI,BigBear.ai merger agreement (2023),plausible - verify,70000000 USD enterprise value,"Merger agreement defines Enterprise Value as $70,000,000. Confirm this is the purchase price."
+SWMR,SWMR deal,confirmed (cash part only),"16000000 USD cash + 5,487,067 shares","PREM14A: up to about $16.0M cash plus 5,487,067 shares. Total value is higher than the cash figure."
+SKIL,Skillsoft merger,confirmed (cash part only),204943210 USD cash + shares,"DEFM14A: Skillsoft acquiring Codecademy; $204,943,210 in cash plus shares. Total deal value is higher than the cash figure."
+AISP,Airship AI / BYTS,confirmed,225000000 USD aggregate in shares,S-4: Airship AI / BYTS SPAC merger; aggregate consideration $225.0M in Pubco shares at $10.00 deemed value.
+AIFF,Tellenger (WaveDancer),confirmed,1500000 USD aggregate,S-4: WaveDancer (now Firefly Neuroscience) acquiring Tellenger; aggregate purchase price $1.5M.
+DDD,3D Systems merger agreement (2023),confirmed terms; completion not verified,7.00 USD per share cash + 1.6387 shares,Merger agreement: 3D Systems bid for Stratasys Ltd. Terms are in the agreement; whether the deal closed was not checked in the filings.
+ALKT,Alkami merger agreement (2022),confirmed,135500000 USD enterprise value,"Merger agreement: Alkami acquiring Segmint Inc.; Enterprise Value defined as $135,500,000."
+BBAI,BigBear.ai merger agreement (2023),confirmed,70000000 USD enterprise value,"Merger agreement: BigBear.ai acquiring Pangiam; Enterprise Value defined as $70,000,000."
 SNPS,Ansys merger agreement (2024-01),confirmed,197.00 USD per share cash,Merger agreement text: $197.00 cash per Ansys share (matches S-4).
 TTWO,Zynga merger agreement (2022-01),confirmed,3.50 USD per share cash,Merger agreement text: $3.50 cash per share (matches S-4).
 ADSK,contract threshold,dropped,,"$50,000 is a materiality threshold in a rep, not a deal term."
