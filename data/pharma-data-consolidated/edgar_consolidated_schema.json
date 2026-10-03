@@ -1,0 +1,3571 @@
+{
+  "title": "QuantHacks pharma EDGAR consolidated documents",
+  "description": "Document-level consolidation of data/pharma-data edgar_* tables with redundant numeric features removed.",
+  "meta": {
+    "built_at": "2026-10-03T20:29:19.301600+00:00",
+    "source_dir": "data\\pharma-data",
+    "n_documents": 31942,
+    "n_companies": 100,
+    "n_columns": 108,
+    "feature_selection": {
+      "n_candidates": 397,
+      "dropped_low_variance": [
+        {
+          "column": "f_abbv_longtermdebtandcapitalleaseobligationsgross",
+          "reason": "sparse",
+          "n_non_null": 5,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_abbv_researchanddevelopmentexpensefromcollaborativearrangements",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_abbv_researchanddevelopmentmilestoneexpenses",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_abt_corporateandbenefitplancosts",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_abt_othercostandexpenseoperatingandnonoperating",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_agio_accruedresearchanddevelopmentcostscurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_alks_depreciationinternalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_employeerelatedinternalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_externalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_internalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_lybalviexternalresearchanddevelopmentexpensesdevelopmentprograms",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_occupancyinternalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_otherexternalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_alks_otherinternalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_amlx_personnelrelatedresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_amrx_businesscombinationacquisitionrelatedcoststransactionrelatedandintegratione",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_amrx_facilitiescosts",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_amrx_intellectualpropertylegaldevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_amrx_otherincomeoperating",
+          "reason": "sparse",
+          "n_non_null": 5,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_amrx_productdevelopmentandstudiesexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_anip_earningslossbeforeinteresttaxesdepreciationandamortization",
+          "reason": "sparse",
+          "n_non_null": 11,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_anip_longtermdebtgrosscurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_anip_longtermdebtgrossnoncurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_arqt_researchanddevelopmentcompensationandpersonnelrelatedexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_axsm_classofwarrantsorrightsweightedaveragepricetradingdays",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_axsm_debtinstrumentfinalpaymentfeethresholdpercentageofdebtoutstanding",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_axsm_debtinstrumentprepaymentpenaltypercentage",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_axsm_fairvalueofwarrants",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_axsm_researchanddevelopmentexpensereversal",
+          "reason": "sparse",
+          "n_non_null": 1,
+          "non_null_frac": 0.0
+        },
+        {
+          "column": "f_bbio_allocationoftransactionpriceforresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_bbio_convertibleseniornotes",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_bbio_increasedecreaseinaccruedresearchanddevelopmentliabilities",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bbio_noncashinterestexpenseondeferredroyaltyobligations",
+          "reason": "sparse",
+          "n_non_null": 4,
+          "non_null_frac": 0.0001
+        },
+        {
+          "column": "f_bgne_accruedliabilitiesexternalresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bgne_amortizationofresearchanddevelopmentfinancingliability",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bgne_paymentstopurchaseinprocessresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bgne_prepaidresearchanddevelopmentcosts",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bgne_researchanddevelopmentcostshareliabilitycurrentportion",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bhc_amortizationofintangibleassetsexcludingamortizationallocatedtorevenuescostof",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bhc_debtinstrumentcovenantcompliancesecuredleverageratio",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_bhc_debtinstrumentcovenanttermsfixedchargecoverageratio",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_bhc_debtinstrumentperiodicpaymentremainingquarterlyamortization",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_bhc_debtinstrumentredemptionpricepercentagechangeincontrol",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bhc_debtinstrumentvariableratefloor",
+          "reason": "sparse",
+          "n_non_null": 4,
+          "non_null_frac": 0.0001
+        },
+        {
+          "column": "f_bhc_goodwillimpairmentlossnotincludedinassetimpairmentcharges",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_bhc_researchanddevelopmentexpenseproductrelated",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bhc_researchanddevelopmentexpensequalityassurance",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bhc_restructuringchargesandinitialpublicofferingcosts",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bhvn_researchanddevelopmentexpensepersonnelexpensesexcludingsharebasedcompensati",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_bhvn_researchanddevelopmentexpensesharebasedcompensationexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_bhvn_researchanddevelopmentpreclinicalresearchprograms",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_bhvn_researchanddevelopmentprogramexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_bmy_accruedresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_bmy_researchanddevelopmentexpensecollaborativearrangement",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_cmps_prepaidexpenseresearchanddevelopmentcurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_cmps_researchanddevelopmenttaxcreditcurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_cmps_researchanddevelopmenttaxcreditincometaxexpensebenefit",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_cogt_accruedexternalresearchanddevelopmentexpensescurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_cytk_convertiblenotesnet",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_cytk_debtinstrumentconvertiblethresholdlessthanpercentageofstockpricetrigger",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_cytk_debtinstrumentremainingfaceamount",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_cytk_imputedrateofinterestonunamortizedportionofliability",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_cytk_longtermdebtmaturitiesrepaymentsofprincipalafteryearfour",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_cytk_noncashinterestexpenserelatedtosaleoffutureroyalties",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_cytk_percentageofdiscountratesforfairvaluesofderivativeliabilities",
+          "reason": "sparse",
+          "n_non_null": 9,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_cytk_repayableloanpercentagetoprincipalamount",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_dnth_claseprubartdnth103programrelatedexpenses",
+          "reason": "sparse",
+          "n_non_null": 2,
+          "non_null_frac": 0.0001
+        },
+        {
+          "column": "f_dnth_claseprubartprogramrelatedexpenses",
+          "reason": "sparse",
+          "n_non_null": 3,
+          "non_null_frac": 0.0001
+        },
+        {
+          "column": "f_dyn_accruedresearchanddevelopmentexpensescurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_dyn_platformandexternalresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_eras_accruedresearchanddevelopmentexpensescurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_eras_inprocessresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_ewtx_accruedresearchanddevelopmentcostscurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_gpcr_clinicalresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_gpcr_discoveryresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_gpcr_interestandotherincomeexpensenet",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_hrmy_accruedresearchanddevelopmentcurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_idya_externalclinicaldevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_imnm_directexpenseofacquiredinprocessprogramresearchanddevelopmentprogram",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_imnm_indirectresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_imnm_inprocessresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 9,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_insm_interestexpenseexcludingfinanceleaseinterestexpense",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_insm_laborandrelatedexpenseresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_interest_table_mixed",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_interest_table_nature",
+          "reason": "sparse",
+          "n_non_null": 11,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_ions_debtinstrumentconvertibleconversionpriceincludingcallspread",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_ions_debtinstrumentconvertiblepercentageofprincipalamountusedaspurchasepriceupon",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_ions_debtinstrumentconvertiblesharessubjecttoconversion",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_ions_interestexpenseandamortizationofissuancecostsrelatedtosaleoffutureroyalties",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_ions_researchanddevelopmentsupportexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_jazz_interestexpensedebtcontractualcouponrate",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_jazz_propertyplantandequipmentnetandoperatingleaserightofuseassets",
+          "reason": "sparse",
+          "n_non_null": 5,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_jnj_interestexpensepercenttosales",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_jnj_researchanddevelopmentexpenseexcludingacquiredinprocesscostpercenttosales",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_jnj_researchanddevelopmentinprocess1",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_lqda_programexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_mbx_researchanddevelopmentoverheadexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_mirm_researchanddevelopmentexpensesexcludingstockbasedcompensation",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_mrk_salesdiscounts",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_mrk_segmentreportingunallocatedotherexpensesnet",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_nams_externalresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_nrix_revenueremainingperformanceobligationvariableconsiderationamountresearchand",
+          "reason": "sparse",
+          "n_non_null": 9,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_ogn_debtinstrumentinterestpayments",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_pbh_contributionmargin",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_pbh_generalandadministrativeanddepreciationandamortizationexpense",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_pfe_debtinstrumentfairvalueadjustmentshedgingandpurchaseaccounting",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_pgen_adjustmentforbonusespaidinequityawards",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_pgen_capitalexpendituresnetofproceedsfromsaleofassetsandinvestmentsinaffiliates",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_pgen_netincomelossattributabletoparentadjustedebitdaincludingcashpaidforcapitale",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_pvla_researchanddevelopmentexpensesincome",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_qure_assetsnotbeingpledgedtosecurefacilitiesbydirectlyorindirectly",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_rcus_accruedresearchanddevelopmentexpensescurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_rcus_reimbursementofresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_rd_table_segment",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_regn_acquiredinprocessresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_regn_researchanddevelopmentexpensereimbursements",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_roiv_acquiredinprocessresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_rprx_debtinstrumentissuanceasapercentofpar",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_rprx_proceedsfromnoncontrollinginterestsresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_rytm_accruedresearchanddevelopmentcosts",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_rytm_proceedsfromroyaltyfinancingagreement",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_sepn_externalresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_sga_table_mixed",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_sls_prepaidresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_smmt_acquiredinprocessresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 4,
+          "non_null_frac": 0.0001
+        },
+        {
+          "column": "f_smmt_researchanddevelopmenttaxcredit",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_sndx_costofproductsales",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_srpt_costofgoodssoldexcludingamortization",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_srpt_developmentmilestoneandsettlementupfrontfeerecognizedasresearchanddevelopme",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_stok_accruedresearchanddevelopmentcostscurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_supn_externalresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_supn_internalresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_teva_goodwillreclassification",
+          "reason": "sparse",
+          "n_non_null": 9,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_teva_impairmentsrestructuringandothers",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_teva_legalsettlementsandlosscontingencies",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_teva_otheroperatingincomeexpense",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_teva_otherunallocatedamounts",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_tgtx_noncashcompensationresearchanddevelopmentexpenses",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_tngx_accruedresearchanddevelopmentcostscurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_trvi_accruedresearchanddevelopmentliabilities",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_tvtx_externalresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_tvtx_inprocessresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 8,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_tvtx_internalpersonnelcostsforresearchanddevelopment",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_urgn_accruedresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_urgn_inprocessresearchanddevelopmentexpense",
+          "reason": "sparse",
+          "n_non_null": 6,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_businesscombinationacquisitionrelatedcosts",
+          "reason": "sparse",
+          "n_non_null": 22,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_businesscombinationprovisionalinformationinitialaccountingincompleteadju",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_commercialpaper",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_communicationsinformationtechnologyandoccupancy",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_contractwithcustomerliability",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_contractwithcustomerliabilitycurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_contractwithcustomerliabilitynoncurrent",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_convertibledebt",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_convertiblelongtermnotespayable",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_convertiblenotespayable",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_costofgoodsandservicessoldamortization",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_debtcurrent",
+          "reason": "sparse",
+          "n_non_null": 24,
+          "non_null_frac": 0.0008
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentinterestrateincreasedecrease",
+          "reason": "sparse",
+          "n_non_null": 22,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentperiodicpaymentprincipal",
+          "reason": "sparse",
+          "n_non_null": 9,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentredemptionpricepercentage",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentrepaidprincipal",
+          "reason": "sparse",
+          "n_non_null": 23,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentrepurchasedfaceamount",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_debtlongtermandshorttermcombinedamount",
+          "reason": "sparse",
+          "n_non_null": 21,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_deferredfinancecostscurrentnet",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_deferredfinancecostsnoncurrentnet",
+          "reason": "sparse",
+          "n_non_null": 22,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_deferredrevenuenoncurrent",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_depreciationnonproduction",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_derivativeassetnotionalamount",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_derivativefixedinterestrate",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_embeddedderivativegainlossonembeddedderivativenet",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_equitysecuritiesfvniunrealizedgainloss",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_extinguishmentofdebtamount",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_fairvalueadjustmentofwarrants",
+          "reason": "sparse",
+          "n_non_null": 10,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_fairvaluemeasurementwithunobservableinputsreconciliationrecurringbasisli",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_finitelivedintangibleassetsnet",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_foreigncurrencyexchangeratetranslation1",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_gainlossondispositionofassets1",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_gainlossoninvestments",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_goodwillacquiredduringperiod",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_goodwillotherincreasedecrease",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_goodwillwrittenoffrelatedtosaleofbusinessunit",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_incomelossfromcontinuingoperationsbeforeincometaxesminorityinterestandin",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_incomelossfromdiscontinuedoperationsnetoftaxattributabletoreportingentit",
+          "reason": "sparse",
+          "n_non_null": 11,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_intangibleassetsnetexcludinggoodwill",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_intangibleassetsnetincludinggoodwill",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_interestexpenselongtermdebt",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_interestexpenseoperating",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_interestincomeexpensenet",
+          "reason": "sparse",
+          "n_non_null": 24,
+          "non_null_frac": 0.0008
+        },
+        {
+          "column": "f_us_gaap_inventorywritedown",
+          "reason": "sparse",
+          "n_non_null": 11,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_investmentincomedividend",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_investmentincomenonoperating",
+          "reason": "sparse",
+          "n_non_null": 21,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_lettersofcreditoutstandingamount",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_lineofcreditfacilitycurrentborrowingcapacity",
+          "reason": "sparse",
+          "n_non_null": 23,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_lineofcreditfacilityfairvalueofamountoutstanding",
+          "reason": "sparse",
+          "n_non_null": 23,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_lineofcreditfacilityunusedcapacitycommitmentfeepercentage",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_linesofcreditcurrent",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_linesofcreditfairvaluedisclosure",
+          "reason": "sparse",
+          "n_non_null": 23,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_litigationsettlementexpense",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_longtermdebtandcapitalleaseobligations",
+          "reason": "sparse",
+          "n_non_null": 24,
+          "non_null_frac": 0.0008
+        },
+        {
+          "column": "f_us_gaap_longtermdebtpercentagebearingfixedinterestrate",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_longtermdebtweightedaverageinterestrate",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_manufacturingcosts",
+          "reason": "sparse",
+          "n_non_null": 21,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_netincomelossattributabletononcontrollinginterest",
+          "reason": "sparse",
+          "n_non_null": 9,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_netincomelossavailabletocommonstockholdersbasic",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_numberofinterestratederivativesheld",
+          "reason": "sparse",
+          "n_non_null": 15,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_othergeneralandadministrativeexpense",
+          "reason": "sparse",
+          "n_non_null": 24,
+          "non_null_frac": 0.0008
+        },
+        {
+          "column": "f_us_gaap_otherlaborrelatedexpenses",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_othernoncashincomeexpense",
+          "reason": "sparse",
+          "n_non_null": 12,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_othersellinggeneralandadministrativeexpense",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_paymentsofdebtissuancecosts",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_paymentsoffinancingcosts",
+          "reason": "sparse",
+          "n_non_null": 17,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_paymentstoacquireproductiveassets",
+          "reason": "sparse",
+          "n_non_null": 3,
+          "non_null_frac": 0.0001
+        },
+        {
+          "column": "f_us_gaap_proceedsfromissuanceofsecureddebt",
+          "reason": "sparse",
+          "n_non_null": 24,
+          "non_null_frac": 0.0008
+        },
+        {
+          "column": "f_us_gaap_proceedsfromissuanceofseniorlongtermdebt",
+          "reason": "sparse",
+          "n_non_null": 23,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_proceedsfromlongtermlinesofcredit",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_proceedsfromrepaymentsoflongtermdebtandcapitalsecurities",
+          "reason": "sparse",
+          "n_non_null": 18,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_proceedsfromsaleofintangibleassets",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_productionanddistributioncosts",
+          "reason": "sparse",
+          "n_non_null": 5,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_professionalfees",
+          "reason": "sparse",
+          "n_non_null": 22,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_propertyplantandequipmentadditions",
+          "reason": "sparse",
+          "n_non_null": 6,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_repaymentsoflongtermlinesofcredit",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_researchanddevelopmentassetacquiredotherthanthroughbusinesscombinationfa",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_revenuenotfromcontractwithcustomer",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_us_gaap_revenueremainingperformanceobligation",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_secureddebt",
+          "reason": "sparse",
+          "n_non_null": 23,
+          "non_null_frac": 0.0007
+        },
+        {
+          "column": "f_us_gaap_sellingexpense",
+          "reason": "sparse",
+          "n_non_null": 14,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_us_gaap_shareprice",
+          "reason": "sparse",
+          "n_non_null": 20,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_us_gaap_shorttermdebtweightedaverageinterestrate",
+          "reason": "sparse",
+          "n_non_null": 16,
+          "non_null_frac": 0.0005
+        },
+        {
+          "column": "f_us_gaap_stockissuedduringperiodvalueissuedforservices",
+          "reason": "sparse",
+          "n_non_null": 8,
+          "non_null_frac": 0.0003
+        },
+        {
+          "column": "f_us_gaap_suppliesexpense",
+          "reason": "sparse",
+          "n_non_null": 13,
+          "non_null_frac": 0.0004
+        },
+        {
+          "column": "f_vrdn_researchanddevelopmentexpenseexcludingsharebasedcompensationexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_vtrs_corporatecosts",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_vtrs_costofproductandservicesoldadjusted",
+          "reason": "sparse",
+          "n_non_null": 5,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_vtrs_otheronetimenonoperatingexpense",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_vtrs_otherresearchanddevelopmentrefund",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_vtrs_sellinggeneralandadministrativeexpenseadjusted",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_xncr_researchanddevelopmentexpenseexternal",
+          "reason": "sparse",
+          "n_non_null": 6,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_zlab_researchanddevelopmentexpenseclinicalprograms",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_zlab_researchanddevelopmentexpensepersonnelcompensationandrelatedcosts",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_zlab_researchanddevelopmentexpensepreclinicalprograms",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_zlab_researchanddevelopmentexpenseunallocatedexpense",
+          "reason": "sparse",
+          "n_non_null": 7,
+          "non_null_frac": 0.0002
+        },
+        {
+          "column": "f_zts_certainsignificantreconcilingitemsincludedindepreciationdepletionandamortiza",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_zts_certainsignificantreconcilingitemsincludedinincomelossfromcontinuingoperatio",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_zts_otherunallocateditemsincludedindepreciationdepletionandamortization",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        },
+        {
+          "column": "f_zts_otherunallocateditemsincludedinincomelossfromcontinuingoperationsbeforeincom",
+          "reason": "sparse",
+          "n_non_null": 19,
+          "non_null_frac": 0.0006
+        }
+      ],
+      "dropped_correlated": [
+        {
+          "column": "f_us_gaap_lineofcreditfacilityremainingborrowingcapacity",
+          "kept_instead": "f_us_gaap_researchanddevelopmentexpense",
+          "abs_corr": 0.9813
+        },
+        {
+          "column": "f_us_gaap_notespayable",
+          "kept_instead": "f_us_gaap_researchanddevelopmentexpense",
+          "abs_corr": 0.997
+        },
+        {
+          "column": "f_us_gaap_repaymentsofdebt",
+          "kept_instead": "f_us_gaap_researchanddevelopmentexpense",
+          "abs_corr": 0.9668
+        },
+        {
+          "column": "f_us_gaap_repaymentsofsecureddebt",
+          "kept_instead": "f_us_gaap_researchanddevelopmentexpense",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_revenuefromcollaborativearrangementexcludingrevenuefromcontractwithcusto",
+          "kept_instead": "f_us_gaap_researchanddevelopmentexpense",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_sga_table_none",
+          "kept_instead": "f_us_gaap_allocatedsharebasedcompensationexpense",
+          "abs_corr": 0.9756
+        },
+        {
+          "column": "f_us_gaap_depreciationdepletionandamortization",
+          "kept_instead": "f_us_gaap_allocatedsharebasedcompensationexpense",
+          "abs_corr": 0.9896
+        },
+        {
+          "column": "f_us_gaap_proceedsfromlinesofcredit",
+          "kept_instead": "f_us_gaap_allocatedsharebasedcompensationexpense",
+          "abs_corr": 0.9968
+        },
+        {
+          "column": "f_us_gaap_repaymentsoflinesofcredit",
+          "kept_instead": "f_us_gaap_allocatedsharebasedcompensationexpense",
+          "abs_corr": 0.9819
+        },
+        {
+          "column": "f_us_gaap_depreciation",
+          "kept_instead": "f_us_gaap_generalandadministrativeexpense",
+          "abs_corr": 0.9515
+        },
+        {
+          "column": "f_us_gaap_depreciationandamortization",
+          "kept_instead": "f_us_gaap_generalandadministrativeexpense",
+          "abs_corr": 0.9966
+        },
+        {
+          "column": "f_us_gaap_grossprofit",
+          "kept_instead": "f_us_gaap_generalandadministrativeexpense",
+          "abs_corr": 0.9605
+        },
+        {
+          "column": "f_us_gaap_interestincomeexpensenonoperatingnet",
+          "kept_instead": "f_us_gaap_generalandadministrativeexpense",
+          "abs_corr": 0.9573
+        },
+        {
+          "column": "f_us_gaap_lineofcreditfacilityinterestrateatperiodend",
+          "kept_instead": "f_us_gaap_generalandadministrativeexpense",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_cost_of_sales_table_none",
+          "kept_instead": "f_us_gaap_operatingexpenses",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_notespayablefairvaluedisclosure",
+          "kept_instead": "f_us_gaap_operatingexpenses",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_repaymentsofseniordebt",
+          "kept_instead": "f_us_gaap_operatingexpenses",
+          "abs_corr": 0.9818
+        },
+        {
+          "column": "f_us_gaap_royaltyexpense",
+          "kept_instead": "f_us_gaap_operatingexpenses",
+          "abs_corr": 0.9645
+        },
+        {
+          "column": "f_rd_table_mixed",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 0.9659
+        },
+        {
+          "column": "f_us_gaap_costofgoodsandservicessold",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 0.9537
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentfeeamount",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_netincomeloss",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 0.9561
+        },
+        {
+          "column": "f_us_gaap_researchanddevelopmentexpenseexcludingacquiredinprocesscost",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 0.9549
+        },
+        {
+          "column": "f_us_gaap_revenuefromcontractwithcustomerincludingassessedtax",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 0.9586
+        },
+        {
+          "column": "f_us_gaap_sellingandmarketingexpense",
+          "kept_instead": "f_us_gaap_sellinggeneralandadministrativeexpense",
+          "abs_corr": 0.9601
+        },
+        {
+          "column": "f_us_gaap_classofwarrantorrightnumberofsecuritiescalledbywarrantsorrights",
+          "kept_instead": "f_us_gaap_amortizationofintangibleassets",
+          "abs_corr": 0.9736
+        },
+        {
+          "column": "f_us_gaap_costofrevenue",
+          "kept_instead": "f_us_gaap_amortizationofintangibleassets",
+          "abs_corr": 0.9533
+        },
+        {
+          "column": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalafteryearfive",
+          "kept_instead": "f_us_gaap_amortizationofintangibleassets",
+          "abs_corr": 0.9718
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentcarryingamount",
+          "kept_instead": "f_debt_instrument_carrying_amount",
+          "abs_corr": 0.9742
+        },
+        {
+          "column": "f_us_gaap_restrictedcashnoncurrent",
+          "kept_instead": "f_debt_instrument_carrying_amount",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_incomelossfromcontinuingoperationsbeforeincometaxesextraordinaryitemsnon",
+          "kept_instead": "f_us_gaap_costsandexpenses",
+          "abs_corr": 0.9568
+        },
+        {
+          "column": "f_us_gaap_operatingcostsandexpenses",
+          "kept_instead": "f_us_gaap_costsandexpenses",
+          "abs_corr": 0.976
+        },
+        {
+          "column": "f_us_gaap_operatingincomeloss",
+          "kept_instead": "f_us_gaap_costsandexpenses",
+          "abs_corr": 0.9887
+        },
+        {
+          "column": "f_us_gaap_revenues",
+          "kept_instead": "f_us_gaap_costsandexpenses",
+          "abs_corr": 0.9509
+        },
+        {
+          "column": "f_us_gaap_segmentexpenditureadditiontolonglivedassets",
+          "kept_instead": "f_us_gaap_costsandexpenses",
+          "abs_corr": 0.9915
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentfairvalue",
+          "kept_instead": "f_us_gaap_longtermdebt",
+          "abs_corr": 0.9539
+        },
+        {
+          "column": "f_us_gaap_deferredfinancecostsnet",
+          "kept_instead": "f_us_gaap_longtermdebt",
+          "abs_corr": 0.9928
+        },
+        {
+          "column": "f_us_gaap_equitysecuritiesfvnigainloss",
+          "kept_instead": "f_us_gaap_longtermdebt",
+          "abs_corr": 0.9934
+        },
+        {
+          "column": "f_us_gaap_goodwillforeigncurrencytranslationgainloss",
+          "kept_instead": "f_us_gaap_longtermdebt",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_amortizationoffinancingcostsanddiscounts",
+          "kept_instead": "f_us_gaap_interestexpense",
+          "abs_corr": 0.956
+        },
+        {
+          "column": "f_us_gaap_interestexpensenonoperating",
+          "kept_instead": "f_us_gaap_interestexpense",
+          "abs_corr": 0.9842
+        },
+        {
+          "column": "f_us_gaap_marketingandadvertisingexpense",
+          "kept_instead": "f_us_gaap_interestexpense",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_nonoperatingincomeexpense",
+          "kept_instead": "f_us_gaap_interestexpense",
+          "abs_corr": 0.9811
+        },
+        {
+          "column": "f_us_gaap_otheroperatingincomeexpensenet",
+          "kept_instead": "f_us_gaap_interestexpense",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_sga_table_nature",
+          "kept_instead": "f_us_gaap_revenuefromcontractwithcustomerexcludingassessedtax",
+          "abs_corr": 0.9621
+        },
+        {
+          "column": "f_us_gaap_effectiveincometaxratereconciliationnondeductibleexpenseresearchanddevel",
+          "kept_instead": "f_us_gaap_revenuefromcontractwithcustomerexcludingassessedtax",
+          "abs_corr": 0.9724
+        },
+        {
+          "column": "f_debt_instrument_stated_rate",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestratestatedpercentage",
+          "abs_corr": 0.9807
+        },
+        {
+          "column": "f_us_gaap_classofwarrantorrightexercisepriceofwarrantsorrights1",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestratestatedpercentage",
+          "abs_corr": 0.9906
+        },
+        {
+          "column": "f_us_gaap_longtermloanspayable",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestratestatedpercentage",
+          "abs_corr": 0.9955
+        },
+        {
+          "column": "f_us_gaap_businesscombinationcontingentconsiderationarrangementschangeinamountofco",
+          "kept_instead": "f_us_gaap_longtermdebtcurrent",
+          "abs_corr": 0.9852
+        },
+        {
+          "column": "f_us_gaap_interestpayablecurrent",
+          "kept_instead": "f_us_gaap_longtermdebtcurrent",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_incometaxexpensebenefit",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinnexttwelvemonths",
+          "abs_corr": 0.9532
+        },
+        {
+          "column": "f_us_gaap_longtermdebtandcapitalleaseobligationscurrent",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinnexttwelvemonths",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_convertibledebtnoncurrent",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyeartwo",
+          "abs_corr": 0.9842
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentunamortizeddiscountpremiumnet",
+          "kept_instead": "f_us_gaap_interestexpensedebt",
+          "abs_corr": 0.9999
+        },
+        {
+          "column": "f_us_gaap_goodwillimpairmentloss",
+          "kept_instead": "f_us_gaap_interestexpensedebt",
+          "abs_corr": 0.9619
+        },
+        {
+          "column": "f_us_gaap_profitloss",
+          "kept_instead": "f_us_gaap_interestexpensedebt",
+          "abs_corr": 0.9729
+        },
+        {
+          "column": "f_us_gaap_contractwithcustomerliabilityrevenuerecognized",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearthree",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_seniornotes",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearthree",
+          "abs_corr": 0.9562
+        },
+        {
+          "column": "f_debt_instrument_face_amount",
+          "kept_instead": "f_us_gaap_debtinstrumentfaceamount",
+          "abs_corr": 0.9678
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentinterestrateduringperiod",
+          "kept_instead": "f_us_gaap_debtinstrumentfaceamount",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_loanspayable",
+          "kept_instead": "f_us_gaap_debtinstrumentfaceamount",
+          "abs_corr": 0.9908
+        },
+        {
+          "column": "f_debt_instrument_effective_rate",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestrateeffectivepercentage",
+          "abs_corr": 0.9892
+        },
+        {
+          "column": "f_us_gaap_commonstockcapitalsharesreservedforfutureissuance",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestrateeffectivepercentage",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_interestexpenseother",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestrateeffectivepercentage",
+          "abs_corr": 0.9793
+        },
+        {
+          "column": "f_us_gaap_repaymentsofrelatedpartydebt",
+          "kept_instead": "f_us_gaap_debtinstrumentinterestrateeffectivepercentage",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_amortizationofdebtdiscountpremium",
+          "kept_instead": "f_rd_table_nature",
+          "abs_corr": 0.9889
+        },
+        {
+          "column": "f_us_gaap_assets",
+          "kept_instead": "f_rd_table_nature",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_costofgoodsandserviceexcludingdepreciationdepletionandamortization",
+          "kept_instead": "f_rd_table_nature",
+          "abs_corr": 0.9878
+        },
+        {
+          "column": "f_us_gaap_incometaxreconciliationnondeductibleexpenseresearchanddevelopment",
+          "kept_instead": "f_rd_table_nature",
+          "abs_corr": 0.9969
+        },
+        {
+          "column": "f_us_gaap_longtermdebtpercentagebearingvariableinterestrate",
+          "kept_instead": "f_rd_table_nature",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_propertyplantandequipmentnet",
+          "kept_instead": "f_rd_table_nature",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_rd_table_none",
+          "kept_instead": "f_rd_table_program",
+          "abs_corr": 0.9744
+        },
+        {
+          "column": "f_us_gaap_laborandrelatedexpense",
+          "kept_instead": "f_rd_table_program",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentconvertibleconversionprice1",
+          "kept_instead": "f_us_gaap_proceedsfromissuanceoflongtermdebt",
+          "abs_corr": 0.9761
+        },
+        {
+          "column": "f_us_gaap_deferredfinancecostsgross",
+          "kept_instead": "f_us_gaap_proceedsfromissuanceoflongtermdebt",
+          "abs_corr": 0.9771
+        },
+        {
+          "column": "f_us_gaap_proceedsfromissuanceofdebt",
+          "kept_instead": "f_us_gaap_proceedsfromissuanceoflongtermdebt",
+          "abs_corr": 0.9996
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentconvertibleconversionratio1",
+          "kept_instead": "f_us_gaap_restructuringcharges",
+          "abs_corr": 0.9787
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentconvertiblethresholdconsecutivetradingdays1",
+          "kept_instead": "f_us_gaap_restructuringcharges",
+          "abs_corr": 0.9788
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentconvertiblethresholdpercentageofstockpricetrigger",
+          "kept_instead": "f_us_gaap_restructuringcharges",
+          "abs_corr": 0.9788
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentconvertiblethresholdtradingdays",
+          "kept_instead": "f_us_gaap_restructuringcharges",
+          "abs_corr": 0.9788
+        },
+        {
+          "column": "f_us_gaap_sharebasedcompensation",
+          "kept_instead": "f_us_gaap_restructuringcharges",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_cost_of_sales_table_nature",
+          "kept_instead": "f_us_gaap_segmentreportingotheritemamount",
+          "abs_corr": 0.9684
+        },
+        {
+          "column": "f_us_gaap_debtinstrumentunamortizeddiscount",
+          "kept_instead": "f_us_gaap_segmentreportingotheritemamount",
+          "abs_corr": 0.9998
+        },
+        {
+          "column": "f_us_gaap_gainslossesonextinguishmentofdebt",
+          "kept_instead": "f_us_gaap_segmentreportingotheritemamount",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_othernonoperatingincomeexpense",
+          "kept_instead": "f_us_gaap_segmentreportingotheritemamount",
+          "abs_corr": 0.99
+        },
+        {
+          "column": "f_us_gaap_paymentstoacquireinprocessresearchanddevelopment",
+          "kept_instead": "f_us_gaap_interestexpensedebtexcludingamortization",
+          "abs_corr": 0.9998
+        },
+        {
+          "column": "f_us_gaap_repaymentsofshorttermdebt",
+          "kept_instead": "f_us_gaap_interestexpensedebtexcludingamortization",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_researchanddevelopmentassetacquiredotherthanthroughbusinesscombinationwr",
+          "kept_instead": "f_us_gaap_interestexpensedebtexcludingamortization",
+          "abs_corr": 0.977
+        },
+        {
+          "column": "f_us_gaap_shorttermborrowings",
+          "kept_instead": "f_us_gaap_interestexpensedebtexcludingamortization",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_incomelossfromequitymethodinvestments",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalremainderoffiscalyear",
+          "abs_corr": 0.9935
+        },
+        {
+          "column": "f_us_gaap_repaymentsoflongtermdebtandcapitalsecurities",
+          "kept_instead": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalremainderoffiscalyear",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_debt_instrument_capacity",
+          "kept_instead": "f_us_gaap_lineofcreditfacilitymaximumborrowingcapacity",
+          "abs_corr": 0.9924
+        },
+        {
+          "column": "f_us_gaap_foreigncurrencytransactiongainlossbeforetax",
+          "kept_instead": "f_us_gaap_lineofcreditfacilitymaximumborrowingcapacity",
+          "abs_corr": 0.9998
+        },
+        {
+          "column": "f_us_gaap_goodwill",
+          "kept_instead": "f_us_gaap_lineofcreditfacilitymaximumborrowingcapacity",
+          "abs_corr": 0.9593
+        },
+        {
+          "column": "f_us_gaap_repaymentsofconvertibledebt",
+          "kept_instead": "f_us_gaap_lineofcreditfacilitymaximumborrowingcapacity",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_interestpayablecurrentandnoncurrent",
+          "kept_instead": "f_us_gaap_lineofcredit",
+          "abs_corr": 0.9998
+        },
+        {
+          "column": "f_us_gaap_unamortizeddebtissuanceexpense",
+          "kept_instead": "f_us_gaap_lineofcredit",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_investmentincomeinterest",
+          "kept_instead": "f_us_gaap_amortizationoffinancingcosts",
+          "abs_corr": 0.9802
+        },
+        {
+          "column": "f_debt_instrument_spread",
+          "kept_instead": "f_us_gaap_debtinstrumentbasisspreadonvariablerate1",
+          "abs_corr": 0.9938
+        },
+        {
+          "column": "f_us_gaap_noncurrentassets",
+          "kept_instead": "f_interest_table_none",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_researchanddevelopmentinprocess",
+          "kept_instead": "f_interest_table_none",
+          "abs_corr": 1.0
+        },
+        {
+          "column": "f_us_gaap_assetimpairmentcharges",
+          "kept_instead": "f_us_gaap_gainlossrelatedtolitigationsettlement",
+          "abs_corr": 0.9531
+        }
+      ],
+      "kept": [
+        "f_us_gaap_researchanddevelopmentexpense",
+        "f_us_gaap_allocatedsharebasedcompensationexpense",
+        "f_us_gaap_generalandadministrativeexpense",
+        "f_us_gaap_operatingexpenses",
+        "f_us_gaap_sellinggeneralandadministrativeexpense",
+        "f_us_gaap_amortizationofintangibleassets",
+        "f_debt_instrument_carrying_amount",
+        "f_us_gaap_longtermdebtnoncurrent",
+        "f_us_gaap_costsandexpenses",
+        "f_us_gaap_longtermdebt",
+        "f_us_gaap_interestexpense",
+        "f_us_gaap_revenuefromcontractwithcustomerexcludingassessedtax",
+        "f_us_gaap_debtinstrumentinterestratestatedpercentage",
+        "f_us_gaap_longtermdebtcurrent",
+        "f_us_gaap_repaymentsoflongtermdebt",
+        "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinnexttwelvemonths",
+        "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyeartwo",
+        "f_us_gaap_interestexpensedebt",
+        "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearthree",
+        "f_us_gaap_debtinstrumentfaceamount",
+        "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearfour",
+        "f_us_gaap_debtinstrumentinterestrateeffectivepercentage",
+        "f_rd_table_nature",
+        "f_rd_table_program",
+        "f_us_gaap_proceedsfromissuanceoflongtermdebt",
+        "f_press_release_rd_value",
+        "f_us_gaap_debtinstrumentunamortizeddiscountpremiumanddebtissuancecostsnet",
+        "f_us_gaap_restructuringcharges",
+        "f_us_gaap_segmentreportingotheritemamount",
+        "f_press_release_rd_prior_value",
+        "f_us_gaap_interestexpensedebtexcludingamortization",
+        "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalremainderoffiscalyear",
+        "f_us_gaap_lineofcreditfacilitymaximumborrowingcapacity",
+        "f_us_gaap_lineofcredit",
+        "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearfive",
+        "f_us_gaap_amortizationoffinancingcosts",
+        "f_us_gaap_debtinstrumentbasisspreadonvariablerate1",
+        "f_us_gaap_longtermdebtfairvalue",
+        "f_us_gaap_otherresearchanddevelopmentexpense",
+        "f_us_gaap_convertibledebtfairvaluedisclosures",
+        "f_interest_table_none",
+        "f_us_gaap_debtweightedaverageinterestrate",
+        "f_us_gaap_gainlossrelatedtolitigationsettlement",
+        "f_us_gaap_adjustmentforamortization",
+        "f_us_gaap_debtinstrumentunamortizedpremium",
+        "f_us_gaap_impairmentofintangibleassetsindefinitelivedexcludinggoodwill",
+        "f_us_gaap_longtermdebtweightedaverageinterestrateovertime",
+        "f_us_gaap_derivativenotionalamount",
+        "f_us_gaap_othercomprehensiveincomelossnetinvestmenthedgegainlossbeforereclassifica"
+      ],
+      "method": "min_non_null+variance+pairwise_abs_corr",
+      "corr_threshold": 0.95,
+      "min_non_null": 25,
+      "max_keep": 120,
+      "sklearn_available": false,
+      "n_kept": 49,
+      "n_dropped": 348
+    },
+    "grain": "one row per SEC document (ticker \u00d7 accession \u00d7 doc_seq)",
+    "primary_key": [
+      "ticker",
+      "accession",
+      "doc_seq"
+    ]
+  },
+  "source_catalog": [
+    {
+      "file": "company_state_disclosures.csv",
+      "role": "company_state_applicability",
+      "n_rows": 8800,
+      "n_columns": 20,
+      "columns": "ticker|name|cik|hq_state|hq_country|state_of_incorporation|regime_state|tier|row_id|regime_name|citation|trigger_type|applicability|basis|missing_inputs|regime_status|rule_verification_status|source_url|as_of_date|caveat",
+      "bytes": 5568253,
+      "is_side_table": false
+    },
+    {
+      "file": "disclosure_requirements_federal.csv",
+      "role": "rules_federal",
+      "n_rows": 126,
+      "n_columns": 35,
+      "columns": "row_id|family|title|form_type_edgar|item_or_section|legal_basis|who_must_file|applies_domestic|applies_fpi|trigger|trigger_type|deadline|deadline_large_accelerated|deadline_accelerated|deadline_non_accelerated|filed_or_furnished|financial_content|debt_content|rd_expense_content|typical_exhibits|effective_from|pending_change|source_url|source_quote|source_type|confidence|notes|package|verification_status|verifier_quote_found|verifier_source_url|verifier_notes|quote_check|as_of_date|caveat",
+      "bytes": 440867,
+      "is_side_table": false
+    },
+    {
+      "file": "disclosure_requirements_state.csv",
+      "role": "rules_state",
+      "n_rows": 88,
+      "n_columns": 32,
+      "columns": "row_id|tier|state|regime_name|citation|status|what_disclosed|deadline_rule|trigger_type|trigger_detail|threshold|frequency|disclosed_to|entity_scope|effective_from|federal_preemption_note|public_availability|source_url|secondary_source_url|source_quote|source_type|confidence|notes|package|verification_status|verifier_quote_found|verifier_source_url|verifier_notes|public_data_url|quote_check|as_of_date|caveat",
+      "bytes": 267646,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_8k_daily.csv",
+      "role": "analysis_side",
+      "n_rows": 173700,
+      "n_columns": 3,
+      "columns": "ticker|date|n_8k",
+      "bytes": 3276000,
+      "is_side_table": true
+    },
+    {
+      "file": "edgar_8k_events.csv",
+      "role": "eightk_events",
+      "n_rows": 7942,
+      "n_columns": 13,
+      "columns": "ticker|name|accession|filing_date|accepted_at_et|item|cause|data_category|massive_tertiary|rule_id|tier|evidence_text|url",
+      "bytes": 3796127,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_8k_index.csv",
+      "role": "analysis_side",
+      "n_rows": 5501,
+      "n_columns": 7,
+      "columns": "ticker|name|filing_date|form|items|accession|url",
+      "bytes": 944711,
+      "is_side_table": true
+    },
+    {
+      "file": "edgar_8k_similarity_by_cause.csv",
+      "role": "similarity_cause",
+      "n_rows": 406,
+      "n_columns": 7,
+      "columns": "cause_a|cause_b|n_shared_threads|thread_jaccard|text_cosine|n_filings_a|n_filings_b",
+      "bytes": 23874,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_8k_similarity_by_item.csv",
+      "role": "similarity_item",
+      "n_rows": 276,
+      "n_columns": 7,
+      "columns": "item_a|item_b|n_shared_threads|thread_jaccard|text_cosine|n_filings_a|n_filings_b",
+      "bytes": 8954,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_8k_vs_financials.csv",
+      "role": "analysis_side",
+      "n_rows": 5501,
+      "n_columns": 11,
+      "columns": "ticker|name|8k_date|8k_form|8k_items|is_earnings_8k|nearest_fin_form|nearest_fin_date|fin_report_period|days_8k_to_fin|8k_timing",
+      "bytes": 600505,
+      "is_side_table": true
+    },
+    {
+      "file": "edgar_classification_columns.csv",
+      "role": "feature_dictionary_by_class",
+      "n_rows": 18139,
+      "n_columns": 7,
+      "columns": "group_axis|group_value|feature_name|n_documents|n_with_feature|fill_rate|example_value",
+      "bytes": 2030422,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_company_profile.csv",
+      "role": "company_dimension",
+      "n_rows": 100,
+      "n_columns": 53,
+      "columns": "ticker|name|cik|sec_name|sec_tickers|exchanges|sic|filer_category|is_smaller_reporting|is_emerging_growth|fiscal_year_end|edgar_state_of_incorporation|hq_street|hq_city|hq_state|hq_country_code|hq_country|hq_zip|hq_source|mailing_city|mailing_state|phone|former_names|last_rename_date|predecessor_ciks|cover_inc_code|cover_city|cover_state|cover_country|cover_filer_category|cover_accession|hq_basis|hq_city_final|hq_state_final|hq_country_final|incorporation_code|incorporation_basis|incorporated_in_us_state|flags|domicile_class|first_filing_in_window|first_public_date|foreign_forms_until|domestic_forms_from|n_filings|n_8k|has_debt|debt_metrics|has_rd|rd_primary_tag|has_product_revenue|product_revenue_tags|n_restated_periods",
+      "bytes": 59765,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_consolidated.csv",
+      "role": "other",
+      "n_rows": 31946,
+      "n_columns": 68,
+      "columns": "ticker|name|cik|doc_id|accession|doc_seq|form|doc_type|doc_description|is_primary_doc|document_class|data_category|cause|all_causes|data_present|massive_primary|massive_secondary|massive_tertiary|entity_ids|thread_id|items|filing_date|accepted_at_et|accepted_source|report_date|hq_state|hq_country|state_of_incorporation|hq_state_at_filing|filer_category|domicile_class|issuer_regime|issuer_name_at_filing|filer_role|file_number|respective_8k_accession|link_type|k8_role|match_confidence|is_structural|doc_timing|doc_lead_minutes|doc_lead_days|doc_lead_sessions|lead_bucket|prev_8k_accession|prev_8k_days|next_8k_accession|next_8k_days|rule_id|tier|confidence|evidence_text|doc_url|index_url|doc_key|published_before_8k|has_rd|has_product_revenue|f_us_gaap_researchanddevelopmentexpense|f_us_gaap_allocatedsharebasedcompensationexpense|f_us_gaap_generalandadministrativeexpense|f_us_gaap_operatingexpenses|f_us_gaap_sellinggeneralandadministrativeexpense|f_us_gaap_amortizationofintangibleassets|f_debt_instrument_carrying_amount|f_us_gaap_longtermdebtnoncurrent|f_us_gaap_costsandexpenses",
+      "bytes": 28230291,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_debt_instruments.csv",
+      "role": "debt_instruments",
+      "n_rows": 7469,
+      "n_columns": 16,
+      "columns": "ticker|name|accession|instrument_key|instrument_label|debt_type|face_amount|carrying_amount|stated_rate|effective_rate|spread|maturity_date|maturity_ladder|capacity|unit|n_facts",
+      "bytes": 1199827,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_debt_quarterly.csv",
+      "role": "debt_quarterly",
+      "n_rows": 3665,
+      "n_columns": 22,
+      "columns": "ticker|name|quarter|end|metric|value|tag|form|filed|fiscal_year|fiscal_quarter|start|duration_days|value_basis|accession|accepted_at_et|latest_value|was_restated|first_seen_as_comparative|tag_ambiguous|unit|taxonomy",
+      "bytes": 829955,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_doc_8k_links.csv",
+      "role": "doc_8k_links",
+      "n_rows": 4542,
+      "n_columns": 34,
+      "columns": "ticker|name|cik|doc_accession|doc_form|document_class|data_category|doc_cause|doc_report_date|doc_accepted_at_et|k8_accession|k8_items|k8_cause|k8_data_category|k8_massive_tertiary|k8_role|k8_event_date|k8_accepted_at_et|link_type|match_key|match_confidence|is_structural|is_primary|doc_timing|doc_lead_minutes|doc_lead_hours|doc_lead_days|doc_lead_sessions|lead_bucket|days_8k_to_doc|doc_vs_event_days|issuer_regime|doc_url|k8_url",
+      "bytes": 2608108,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_docs_before_8k.csv",
+      "role": "docs_before_8k",
+      "n_rows": 2029,
+      "n_columns": 34,
+      "columns": "ticker|name|cik|doc_accession|doc_form|document_class|data_category|doc_cause|doc_report_date|doc_accepted_at_et|k8_accession|k8_items|k8_cause|k8_data_category|k8_massive_tertiary|k8_role|k8_event_date|k8_accepted_at_et|link_type|match_key|match_confidence|is_structural|is_primary|doc_timing|doc_lead_minutes|doc_lead_hours|doc_lead_days|doc_lead_sessions|lead_bucket|days_8k_to_doc|doc_vs_event_days|issuer_regime|doc_url|k8_url",
+      "bytes": 1173871,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_document_columns.csv",
+      "role": "feature_dictionary_by_doc",
+      "n_rows": 14093,
+      "n_columns": 14,
+      "columns": "ticker|name|cik|accession|doc_seq|form|doc_type|document_class|data_category|cause|doc_url|n_features|feature_groups|columns",
+      "bytes": 16487479,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_document_coverage.csv",
+      "role": "coverage_long",
+      "n_rows": 10396,
+      "n_columns": 17,
+      "columns": "ticker|name|cik|doc_class|slot_key|period_end|regime|expected|expectation_basis|status|accession|filing_date|due_date|days_vs_due|url|n_docs|note",
+      "bytes": 4251880,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_document_coverage_wide.csv",
+      "role": "coverage_wide",
+      "n_rows": 100,
+      "n_columns": 59,
+      "columns": "ticker|name|annual_report_expected|annual_report_late|annual_report_missing|annual_report_present|debt_instrument_detail_expected|debt_instrument_detail_late|debt_instrument_detail_missing|debt_instrument_detail_present|earnings_8k_expected|earnings_8k_late|earnings_8k_missing|earnings_8k_present|earnings_press_release_expected|earnings_press_release_late|earnings_press_release_missing|earnings_press_release_present|indenture_or_note_form_expected|indenture_or_note_form_late|indenture_or_note_form_missing|indenture_or_note_form_present|loan_or_credit_agreement_expected|loan_or_credit_agreement_late|loan_or_credit_agreement_missing|loan_or_credit_agreement_present|pricing_term_sheet_expected|pricing_term_sheet_late|pricing_term_sheet_missing|pricing_term_sheet_present|prospectus_supplement_expected|prospectus_supplement_late|prospectus_supplement_missing|prospectus_supplement_present|proxy_statement_expected|proxy_statement_late|proxy_statement_missing|proxy_statement_present|quarterly_report_expected|quarterly_report_late|quarterly_report_missing|quarterly_report_present|rd_change_reason_expected|rd_change_reason_late|rd_change_reason_missing|rd_change_reason_present|rd_composition_expected|rd_composition_late|rd_composition_missing|rd_composition_present|underwriting_agreement_expected|underwriting_agreement_late|underwriting_agreement_missing|underwriting_agreement_present|vote_results_8k_expected|vote_results_8k_late|vote_results_8k_missing|vote_results_8k_present|missing_list",
+      "bytes": 20724,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_document_features.csv",
+      "role": "features_long",
+      "n_rows": 277642,
+      "n_columns": 20,
+      "columns": "ticker|name|cik|accession|doc_seq|form|doc_type|document_class|data_category|cause|feature_group|feature_name|canonical_feature|label|value|value_num|unit|period_start|period_end|doc_url",
+      "bytes": 116424300,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_document_groups.csv",
+      "role": "document_groups",
+      "n_rows": 2123,
+      "n_columns": 12,
+      "columns": "data_category|cause|ticker|name|n_documents|n_filings|document_classes|first_date|last_date|n_linked|n_before_8k|median_lead_days",
+      "bytes": 307859,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_documents.csv",
+      "role": "document_spine",
+      "n_rows": 31946,
+      "n_columns": 55,
+      "columns": "ticker|name|cik|doc_id|accession|doc_seq|form|doc_type|doc_description|is_primary_doc|document_class|data_category|cause|all_causes|data_present|massive_primary|massive_secondary|massive_tertiary|entity_ids|thread_id|items|filing_date|accepted_at_et|accepted_source|report_date|hq_state|hq_country|state_of_incorporation|hq_state_at_filing|filer_category|domicile_class|issuer_regime|issuer_name_at_filing|filer_role|file_number|respective_8k_accession|link_type|k8_role|match_confidence|is_structural|doc_timing|doc_lead_minutes|doc_lead_days|doc_lead_sessions|lead_bucket|prev_8k_accession|prev_8k_days|next_8k_accession|next_8k_days|rule_id|tier|confidence|evidence_text|doc_url|index_url",
+      "bytes": 26596501,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_earnings_8k_gap.csv",
+      "role": "analysis_side",
+      "n_rows": 1731,
+      "n_columns": 8,
+      "columns": "ticker|name|earnings_8k_date|quarter_end|fin_form|fin_filing_date|days_8k_to_fin|8k_timing",
+      "bytes": 151718,
+      "is_side_table": true
+    },
+    {
+      "file": "edgar_entities.csv",
+      "role": "entities",
+      "n_rows": 935,
+      "n_columns": 7,
+      "columns": "ticker|entity_id|entity_type|label|sources|n_source_docs|n_filings_naming_it",
+      "bytes": 66275,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_expense_reasons.csv",
+      "role": "expense_reasons",
+      "n_rows": 8525,
+      "n_columns": 9,
+      "columns": "ticker|name|accession|expense_line|sentence|direction|change_drivers|source|has_table",
+      "bytes": 3674782,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_file_catalog.csv",
+      "role": "other",
+      "n_rows": 28,
+      "n_columns": 7,
+      "columns": "file|role|n_rows|n_columns|columns|bytes|is_side_table",
+      "bytes": 9455,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_filing_index.csv",
+      "role": "filing_spine",
+      "n_rows": 43503,
+      "n_columns": 20,
+      "columns": "ticker|name|cik|accession|form|form_tier|is_amendment|filing_date|report_date|accepted_at_et|accepted_source|items|file_number|size_bytes|is_inline_xbrl|primary_document|issuer_regime|issuer_name_at_filing|url|index_url",
+      "bytes": 17147659,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_financials_quarterly.csv",
+      "role": "financials_quarterly",
+      "n_rows": 22268,
+      "n_columns": 22,
+      "columns": "ticker|name|quarter|end|metric|value|tag|form|filed|fiscal_year|fiscal_quarter|start|duration_days|value_basis|accession|accepted_at_et|latest_value|was_restated|first_seen_as_comparative|tag_ambiguous|unit|taxonomy",
+      "bytes": 5174228,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_rd_composition.csv",
+      "role": "rd_composition",
+      "n_rows": 35007,
+      "n_columns": 27,
+      "columns": "ticker|name|accession|expense_line|table_id|caption|row_idx|row_label|is_total_row|is_subtotal_row|col_idx|col_header|value|scale|breakdown_basis|reconciles|residual|matched_total|n_component_rows|section|period_start|period_end|is_current_period|total_sign|total_gap|matched_concept|currency",
+      "bytes": 20391496,
+      "is_side_table": false
+    },
+    {
+      "file": "edgar_timing_summary.csv",
+      "role": "analysis_side",
+      "n_rows": 100,
+      "n_columns": 11,
+      "columns": "ticker|name|quarters|median_days_8k_before_fin|min_days|max_days|share_8k_before|share_same_day|share_8k_after|all_8ks|earnings_8ks",
+      "bytes": 7154,
+      "is_side_table": true
+    }
+  ],
+  "columns": [
+    {
+      "name": "ticker",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 100,
+      "kind": "spine",
+      "examples": [
+        "ABBV",
+        "ABBV",
+        "ABBV"
+      ]
+    },
+    {
+      "name": "name",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 100,
+      "kind": "spine",
+      "examples": [
+        "ABBVIE INC.",
+        "ABBVIE INC.",
+        "ABBVIE INC."
+      ]
+    },
+    {
+      "name": "cik",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 101,
+      "kind": "spine",
+      "examples": [
+        "0001551152",
+        "0001551152",
+        "0001551152"
+      ]
+    },
+    {
+      "name": "doc_id",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 31880,
+      "kind": "spine",
+      "examples": [
+        "0001551152-22-000003:1",
+        "0001551152-22-000003:2",
+        "0001551152-22-000007:1"
+      ]
+    },
+    {
+      "name": "accession",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 11286,
+      "kind": "spine",
+      "examples": [
+        "0001551152-22-000003",
+        "0001551152-22-000003",
+        "0001551152-22-000007"
+      ]
+    },
+    {
+      "name": "doc_seq",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 42,
+      "kind": "spine",
+      "examples": [
+        "1",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "name": "form",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 61,
+      "kind": "spine",
+      "examples": [
+        "8-K",
+        "8-K",
+        "10-K"
+      ]
+    },
+    {
+      "name": "doc_type",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 485,
+      "kind": "spine",
+      "examples": [
+        "8-K",
+        "EX-99.1",
+        "10-K"
+      ]
+    },
+    {
+      "name": "doc_description",
+      "dtype": "str",
+      "non_null": 31759,
+      "null_frac": 0.005729,
+      "n_distinct": 1318,
+      "kind": "spine",
+      "examples": [
+        "8-K",
+        "EXHIBIT 99.1",
+        "10-K"
+      ]
+    },
+    {
+      "name": "is_primary_doc",
+      "dtype": "bool",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "document_class",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 25,
+      "kind": "spine",
+      "examples": [
+        "current_report",
+        "earnings_press_release",
+        "annual_report"
+      ]
+    },
+    {
+      "name": "data_category",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 15,
+      "kind": "spine",
+      "examples": [
+        "earnings_results",
+        "earnings_results",
+        "earnings_results"
+      ]
+    },
+    {
+      "name": "cause",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 30,
+      "kind": "spine",
+      "examples": [
+        "earnings_release",
+        "earnings_release",
+        "scheduled_periodic_report"
+      ]
+    },
+    {
+      "name": "all_causes",
+      "dtype": "str",
+      "non_null": 11765,
+      "null_frac": 0.631676,
+      "n_distinct": 305,
+      "kind": "spine",
+      "examples": [
+        "earnings_release",
+        "earnings_release",
+        "leadership_change"
+      ]
+    },
+    {
+      "name": "data_present",
+      "dtype": "str",
+      "non_null": 12000,
+      "null_frac": 0.624319,
+      "n_distinct": 25,
+      "kind": "spine",
+      "examples": [
+        "rd_total|rd_composition|acquired_iprd_milestones|segment_expense|opex_composition|debt_loans_credit",
+        "rd_total|rd_composition|acquired_iprd_milestones|segment_expense|opex_composition|debt_loans_credit",
+        "rd_total|rd_composition|acquired_iprd_milestones|segment_expense|opex_composition|debt_loans_credit"
+      ]
+    },
+    {
+      "name": "massive_primary",
+      "dtype": "str",
+      "non_null": 11686,
+      "null_frac": 0.634149,
+      "n_distinct": 8,
+      "kind": "spine",
+      "examples": [
+        "financial_results",
+        "financial_results",
+        "leadership_and_governance"
+      ]
+    },
+    {
+      "name": "massive_secondary",
+      "dtype": "str",
+      "non_null": 11686,
+      "null_frac": 0.634149,
+      "n_distinct": 22,
+      "kind": "spine",
+      "examples": [
+        "earnings_and_performance",
+        "earnings_and_performance",
+        "board_of_directors"
+      ]
+    },
+    {
+      "name": "massive_tertiary",
+      "dtype": "str",
+      "non_null": 11686,
+      "null_frac": 0.634149,
+      "n_distinct": 50,
+      "kind": "spine",
+      "examples": [
+        "annual_earnings",
+        "annual_earnings",
+        "director_departure"
+      ]
+    },
+    {
+      "name": "entity_ids",
+      "dtype": "str",
+      "non_null": 11386,
+      "null_frac": 0.643541,
+      "n_distinct": 1379,
+      "kind": "spine",
+      "examples": [
+        "debt:notes_2039_4.05|debt:notes_2036_4.3|debt:notes_2035_4.55|debt:notes_2035_4.5|debt:notes_2031_1.25|debt:notes_2029_3.2|debt:notes_2029_2.125|debt:notes_2049_4.25|debt:notes_2048_4.875|debt:notes_2046_4.45|debt:notes_2045_4.75|debt:notes_2045_4.7|debt:notes_2044_4.85|debt:notes_2042_4.625|debt:notes_2042_4.4|debt:notes_2026_2.95|debt:notes_2025_3.8|debt:notes_2025_3.6|debt:notes_2025|debt:notes_2024_3.85|debt:notes_2024_2.6|debt:notes_2024_1.375|debt:notes_2024_1.25|debt:notes_2023_3.75|debt:notes_2023_2.85|debt:notes_2023_2.8|debt:notes_2028_4.25|debt:notes_2028_2.625|debt:notes_2028_2.125|debt:notes_2027_0.75|debt:notes_2026_3.2|debt:notes_2021_0.5|debt:notes_2016|debt:notes_2015|debt:notes_2023_1.5|debt:notes_2023|debt:notes_2022_3.45|debt:notes_2022_3.25|debt:notes_2022_3.2|debt:notes_2022_2.9|debt:notes_2022_2.3|debt:notes_2022|debt:notes_2021_5|debt:notes_2021_3.375|debt:notes_2021_2.3|debt:notes_2021_2.15",
+        "debt:notes_2039_4.05|debt:notes_2036_4.3|debt:notes_2035_4.55|debt:notes_2035_4.5|debt:notes_2031_1.25|debt:notes_2029_3.2|debt:notes_2029_2.125|debt:notes_2049_4.25|debt:notes_2048_4.875|debt:notes_2046_4.45|debt:notes_2045_4.75|debt:notes_2045_4.7|debt:notes_2044_4.85|debt:notes_2042_4.625|debt:notes_2042_4.4|debt:notes_2026_2.95|debt:notes_2025_3.8|debt:notes_2025_3.6|debt:notes_2025|debt:notes_2024_3.85|debt:notes_2024_2.6|debt:notes_2024_1.375|debt:notes_2024_1.25|debt:notes_2023_3.75|debt:notes_2023_2.85|debt:notes_2023_2.8|debt:notes_2028_4.25|debt:notes_2028_2.625|debt:notes_2028_2.125|debt:notes_2027_0.75|debt:notes_2026_3.2|debt:notes_2021_0.5|debt:notes_2016|debt:notes_2015|debt:notes_2023_1.5|debt:notes_2023|debt:notes_2022_3.45|debt:notes_2022_3.25|debt:notes_2022_3.2|debt:notes_2022_2.9|debt:notes_2022_2.3|debt:notes_2022|debt:notes_2021_5|debt:notes_2021_3.375|debt:notes_2021_2.3|debt:notes_2021_2.15",
+        "debt:notes_2039_4.05|debt:notes_2036_4.3|debt:notes_2035_4.55|debt:notes_2035_4.5|debt:notes_2031_1.25|debt:notes_2029_3.2|debt:notes_2029_2.125|debt:notes_2049_4.25|debt:notes_2048_4.875|debt:notes_2046_4.45|debt:notes_2045_4.75|debt:notes_2045_4.7|debt:notes_2044_4.85|debt:notes_2042_4.625|debt:notes_2042_4.4|debt:notes_2026_2.95|debt:notes_2025_3.8|debt:notes_2025_3.6|debt:notes_2025|debt:notes_2024_3.85|debt:notes_2024_2.6|debt:notes_2024_1.375|debt:notes_2024_1.25|debt:notes_2023_3.75|debt:notes_2023_2.85|debt:notes_2023_2.8|debt:notes_2028_4.25|debt:notes_2028_2.625|debt:notes_2028_2.125|debt:notes_2027_0.75|debt:notes_2026_3.2|debt:notes_2021_0.5|debt:notes_2016|debt:notes_2015|debt:notes_2023_1.5|debt:notes_2023|debt:notes_2022_3.45|debt:notes_2022_3.25|debt:notes_2022_3.2|debt:notes_2022_2.9|debt:notes_2022_2.3|debt:notes_2022|debt:notes_2021_5|debt:notes_2021_3.375|debt:notes_2021_2.3|debt:notes_2021_2.15"
+      ]
+    },
+    {
+      "name": "thread_id",
+      "dtype": "str",
+      "non_null": 11386,
+      "null_frac": 0.643541,
+      "n_distinct": 663,
+      "kind": "spine",
+      "examples": [
+        "0001551152:debt:notes_2039_4.05",
+        "0001551152:debt:notes_2039_4.05",
+        "0001551152:debt:notes_2039_4.05"
+      ]
+    },
+    {
+      "name": "items",
+      "dtype": "str",
+      "non_null": 11721,
+      "null_frac": 0.633054,
+      "n_distinct": 230,
+      "kind": "spine",
+      "examples": [
+        "2.02,9.01",
+        "2.02,9.01",
+        "5.02"
+      ]
+    },
+    {
+      "name": "filing_date",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 1169,
+      "kind": "spine",
+      "examples": [
+        "2022-02-02",
+        "2022-02-02",
+        "2022-02-18"
+      ]
+    },
+    {
+      "name": "accepted_at_et",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 11269,
+      "kind": "spine",
+      "examples": [
+        "2022-02-02 07:48:04",
+        "2022-02-02 07:48:04",
+        "2022-02-18 12:41:31"
+      ]
+    },
+    {
+      "name": "accepted_source",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 1,
+      "kind": "spine",
+      "examples": [
+        "header",
+        "header",
+        "header"
+      ]
+    },
+    {
+      "name": "report_date",
+      "dtype": "str",
+      "non_null": 25677,
+      "null_frac": 0.196137,
+      "n_distinct": 1277,
+      "kind": "spine",
+      "examples": [
+        "2022-02-02",
+        "2022-02-02",
+        "2021-12-31"
+      ]
+    },
+    {
+      "name": "hq_state",
+      "dtype": "str",
+      "non_null": 27328,
+      "null_frac": 0.144449,
+      "n_distinct": 18,
+      "kind": "spine",
+      "examples": [
+        "IL",
+        "IL",
+        "IL"
+      ]
+    },
+    {
+      "name": "hq_country",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 8,
+      "kind": "spine",
+      "examples": [
+        "US",
+        "US",
+        "US"
+      ]
+    },
+    {
+      "name": "state_of_incorporation",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 18,
+      "kind": "spine",
+      "examples": [
+        "DE",
+        "DE",
+        "DE"
+      ]
+    },
+    {
+      "name": "hq_state_at_filing",
+      "dtype": "str",
+      "non_null": 30838,
+      "null_frac": 0.034563,
+      "n_distinct": 27,
+      "kind": "spine",
+      "examples": [
+        "IL",
+        "IL",
+        "IL"
+      ]
+    },
+    {
+      "name": "filer_category",
+      "dtype": "str",
+      "non_null": 31239,
+      "null_frac": 0.022009,
+      "n_distinct": 3,
+      "kind": "spine",
+      "examples": [
+        "Large accelerated filer",
+        "Large accelerated filer",
+        "Large accelerated filer"
+      ]
+    },
+    {
+      "name": "domicile_class",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 3,
+      "kind": "spine",
+      "examples": [
+        "us_domestic",
+        "us_domestic",
+        "us_domestic"
+      ]
+    },
+    {
+      "name": "issuer_regime",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 4,
+      "kind": "spine",
+      "examples": [
+        "domestic",
+        "domestic",
+        "domestic"
+      ]
+    },
+    {
+      "name": "issuer_name_at_filing",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 117,
+      "kind": "spine",
+      "examples": [
+        "AbbVie Inc.",
+        "AbbVie Inc.",
+        "AbbVie Inc."
+      ]
+    },
+    {
+      "name": "filer_role",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 4,
+      "kind": "spine",
+      "examples": [
+        "FILER",
+        "FILER",
+        "FILER"
+      ]
+    },
+    {
+      "name": "file_number",
+      "dtype": "str",
+      "non_null": 31434,
+      "null_frac": 0.015904,
+      "n_distinct": 949,
+      "kind": "spine",
+      "examples": [
+        "001-35565",
+        "001-35565",
+        "001-35565"
+      ]
+    },
+    {
+      "name": "respective_8k_accession",
+      "dtype": "str",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 2549,
+      "kind": "spine",
+      "examples": [
+        "0001551152-22-000003",
+        "0001551152-22-000003",
+        "0001551152-22-000003"
+      ]
+    },
+    {
+      "name": "link_type",
+      "dtype": "str",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 8,
+      "kind": "spine",
+      "examples": [
+        "same_period_earnings",
+        "same_period_earnings",
+        "same_period_earnings"
+      ]
+    },
+    {
+      "name": "k8_role",
+      "dtype": "str",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 9,
+      "kind": "spine",
+      "examples": [
+        "release",
+        "release",
+        "release"
+      ]
+    },
+    {
+      "name": "match_confidence",
+      "dtype": "str",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 3,
+      "kind": "spine",
+      "examples": [
+        "high",
+        "high",
+        "high"
+      ]
+    },
+    {
+      "name": "is_structural",
+      "dtype": "object",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 2,
+      "kind": "spine",
+      "examples": [
+        "False",
+        "False",
+        "False"
+      ]
+    },
+    {
+      "name": "doc_timing",
+      "dtype": "str",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 3,
+      "kind": "spine",
+      "examples": [
+        "after",
+        "after",
+        "after"
+      ]
+    },
+    {
+      "name": "doc_lead_minutes",
+      "dtype": "float64",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 2957,
+      "kind": "spine",
+      "min": -1231174.5,
+      "max": 215434.6
+    },
+    {
+      "name": "doc_lead_days",
+      "dtype": "float64",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 215,
+      "kind": "spine",
+      "min": -855.0,
+      "max": 150.0
+    },
+    {
+      "name": "doc_lead_sessions",
+      "dtype": "float64",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 166,
+      "kind": "spine",
+      "min": -590.0,
+      "max": 102.0
+    },
+    {
+      "name": "lead_bucket",
+      "dtype": "str",
+      "non_null": 14399,
+      "null_frac": 0.549214,
+      "n_distinct": 10,
+      "kind": "spine",
+      "examples": [
+        "after",
+        "after",
+        "after"
+      ]
+    },
+    {
+      "name": "prev_8k_accession",
+      "dtype": "str",
+      "non_null": 30364,
+      "null_frac": 0.049402,
+      "n_distinct": 5402,
+      "kind": "spine",
+      "examples": [
+        "0001551152-22-000003",
+        "0001551152-22-000003",
+        "0001551152-22-000003"
+      ]
+    },
+    {
+      "name": "prev_8k_days",
+      "dtype": "float64",
+      "non_null": 30364,
+      "null_frac": 0.049402,
+      "n_distinct": 3169,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 199.8
+    },
+    {
+      "name": "next_8k_accession",
+      "dtype": "str",
+      "non_null": 31379,
+      "null_frac": 0.017626,
+      "n_distinct": 5380,
+      "kind": "spine",
+      "examples": [
+        "0001104659-22-030613",
+        "0001104659-22-030613",
+        "0001104659-22-030613"
+      ]
+    },
+    {
+      "name": "next_8k_days",
+      "dtype": "float64",
+      "non_null": 31379,
+      "null_frac": 0.017626,
+      "n_distinct": 3917,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1286.97
+    },
+    {
+      "name": "rule_id",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 59,
+      "kind": "spine",
+      "examples": [
+        "item_2.02",
+        "earnings_release_exhibit",
+        "form_type"
+      ]
+    },
+    {
+      "name": "tier",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 3,
+      "kind": "spine",
+      "examples": [
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    {
+      "name": "confidence",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 3,
+      "kind": "spine",
+      "examples": [
+        "high",
+        "high",
+        "high"
+      ]
+    },
+    {
+      "name": "evidence_text",
+      "dtype": "str",
+      "non_null": 12002,
+      "null_frac": 0.624256,
+      "n_distinct": 9102,
+      "kind": "spine",
+      "examples": [
+        "On February 2, 2022, AbbVie Inc. issued a press release announcing financial results for the fourth quarter and full year ended December 31, 2021.",
+        "On February 2, 2022, AbbVie Inc. issued a press release announcing financial results for the fourth quarter and full year ended December 31, 2021.",
+        "On February 28, 2022, Edward M. Liddy informed AbbVie Inc. of his decision to retire as a director as of the 2022 annual shareholders meeting in May."
+      ]
+    },
+    {
+      "name": "doc_url",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 31882,
+      "kind": "spine",
+      "examples": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000003/abbv-20220202.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000003/abbv-20211231xexhibit991.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000007/abbv-20211231.htm"
+      ]
+    },
+    {
+      "name": "index_url",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 11286,
+      "kind": "spine",
+      "examples": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000003/0001551152-22-000003-index.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000003/0001551152-22-000003-index.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000007/0001551152-22-000007-index.htm"
+      ]
+    },
+    {
+      "name": "doc_key",
+      "dtype": "str",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 31880,
+      "kind": "spine",
+      "examples": [
+        "0001551152-22-000003:1",
+        "0001551152-22-000003:2",
+        "0001551152-22-000007:1"
+      ]
+    },
+    {
+      "name": "published_before_8k",
+      "dtype": "bool",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "has_rd",
+      "dtype": "bool",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "has_product_revenue",
+      "dtype": "bool",
+      "non_null": 31942,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_us_gaap_researchanddevelopmentexpense",
+      "dtype": "float64",
+      "non_null": 1460,
+      "null_frac": 0.954292,
+      "n_distinct": 1433,
+      "kind": "selected_feature",
+      "min": -520133333.3333333,
+      "max": 11540916666.666666
+    },
+    {
+      "name": "f_us_gaap_allocatedsharebasedcompensationexpense",
+      "dtype": "float64",
+      "non_null": 1268,
+      "null_frac": 0.960303,
+      "n_distinct": 1214,
+      "kind": "selected_feature",
+      "min": -2166000.0,
+      "max": 70046000000.0
+    },
+    {
+      "name": "f_us_gaap_generalandadministrativeexpense",
+      "dtype": "float64",
+      "non_null": 974,
+      "null_frac": 0.969507,
+      "n_distinct": 957,
+      "kind": "selected_feature",
+      "min": -32152000.0,
+      "max": 775033000.0
+    },
+    {
+      "name": "f_us_gaap_operatingexpenses",
+      "dtype": "float64",
+      "non_null": 894,
+      "null_frac": 0.972012,
+      "n_distinct": 882,
+      "kind": "selected_feature",
+      "min": 1796000.0,
+      "max": 7676600000.0
+    },
+    {
+      "name": "f_us_gaap_sellinggeneralandadministrativeexpense",
+      "dtype": "float64",
+      "non_null": 886,
+      "null_frac": 0.972262,
+      "n_distinct": 884,
+      "kind": "selected_feature",
+      "min": 2858000.0,
+      "max": 24765000000.0
+    },
+    {
+      "name": "f_us_gaap_amortizationofintangibleassets",
+      "dtype": "float64",
+      "non_null": 768,
+      "null_frac": 0.975956,
+      "n_distinct": 606,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 10200000000.0
+    },
+    {
+      "name": "f_debt_instrument_carrying_amount",
+      "dtype": "float64",
+      "non_null": 747,
+      "null_frac": 0.976614,
+      "n_distinct": 534,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 60951000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtnoncurrent",
+      "dtype": "float64",
+      "non_null": 662,
+      "null_frac": 0.979275,
+      "n_distinct": 651,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 61641000000.0
+    },
+    {
+      "name": "f_us_gaap_costsandexpenses",
+      "dtype": "float64",
+      "non_null": 661,
+      "null_frac": 0.979306,
+      "n_distinct": 660,
+      "kind": "selected_feature",
+      "min": 6063000.0,
+      "max": 56679000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebt",
+      "dtype": "float64",
+      "non_null": 618,
+      "null_frac": 0.980652,
+      "n_distinct": 594,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 66841000000.0
+    },
+    {
+      "name": "f_us_gaap_interestexpense",
+      "dtype": "float64",
+      "non_null": 541,
+      "null_frac": 0.983063,
+      "n_distinct": 516,
+      "kind": "selected_feature",
+      "min": -21581000.0,
+      "max": 3091000000.0
+    },
+    {
+      "name": "f_us_gaap_revenuefromcontractwithcustomerexcludingassessedtax",
+      "dtype": "float64",
+      "non_null": 482,
+      "null_frac": 0.98491,
+      "n_distinct": 473,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 11819666666.666666
+    },
+    {
+      "name": "f_us_gaap_debtinstrumentinterestratestatedpercentage",
+      "dtype": "float64",
+      "non_null": 479,
+      "null_frac": 0.985004,
+      "n_distinct": 200,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 5.9
+    },
+    {
+      "name": "f_us_gaap_longtermdebtcurrent",
+      "dtype": "float64",
+      "non_null": 436,
+      "null_frac": 0.98635,
+      "n_distinct": 312,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 7297000000.0
+    },
+    {
+      "name": "f_us_gaap_repaymentsoflongtermdebt",
+      "dtype": "float64",
+      "non_null": 414,
+      "null_frac": 0.987039,
+      "n_distinct": 264,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 11431000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinnexttwelvemonths",
+      "dtype": "float64",
+      "non_null": 397,
+      "null_frac": 0.987571,
+      "n_distinct": 153,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 12428000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyeartwo",
+      "dtype": "float64",
+      "non_null": 387,
+      "null_frac": 0.987884,
+      "n_distinct": 162,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 8771000000.0
+    },
+    {
+      "name": "f_us_gaap_interestexpensedebt",
+      "dtype": "float64",
+      "non_null": 386,
+      "null_frac": 0.987916,
+      "n_distinct": 335,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1604000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearthree",
+      "dtype": "float64",
+      "non_null": 378,
+      "null_frac": 0.988166,
+      "n_distinct": 178,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 9523000000.0
+    },
+    {
+      "name": "f_us_gaap_debtinstrumentfaceamount",
+      "dtype": "float64",
+      "non_null": 345,
+      "null_frac": 0.989199,
+      "n_distinct": 171,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 70805000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearfour",
+      "dtype": "float64",
+      "non_null": 338,
+      "null_frac": 0.989418,
+      "n_distinct": 169,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 9723000000.0
+    },
+    {
+      "name": "f_us_gaap_debtinstrumentinterestrateeffectivepercentage",
+      "dtype": "float64",
+      "non_null": 333,
+      "null_frac": 0.989575,
+      "n_distinct": 165,
+      "kind": "selected_feature",
+      "min": 0.0025,
+      "max": 4.25
+    },
+    {
+      "name": "f_rd_table_nature",
+      "dtype": "float64",
+      "non_null": 327,
+      "null_frac": 0.989763,
+      "n_distinct": 321,
+      "kind": "selected_feature",
+      "min": -15662857.142857144,
+      "max": 335519200.0
+    },
+    {
+      "name": "f_rd_table_program",
+      "dtype": "float64",
+      "non_null": 273,
+      "null_frac": 0.991453,
+      "n_distinct": 267,
+      "kind": "selected_feature",
+      "min": 1378833.3333333333,
+      "max": 156109333.33333334
+    },
+    {
+      "name": "f_us_gaap_proceedsfromissuanceoflongtermdebt",
+      "dtype": "float64",
+      "non_null": 261,
+      "null_frac": 0.991829,
+      "n_distinct": 123,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 30831000000.0
+    },
+    {
+      "name": "f_press_release_rd_value",
+      "dtype": "float64",
+      "non_null": 251,
+      "null_frac": 0.992142,
+      "n_distinct": 200,
+      "kind": "selected_feature",
+      "min": 12.0,
+      "max": 998.7
+    },
+    {
+      "name": "f_us_gaap_debtinstrumentunamortizeddiscountpremiumanddebtissuancecostsnet",
+      "dtype": "float64",
+      "non_null": 251,
+      "null_frac": 0.992142,
+      "n_distinct": 240,
+      "kind": "selected_feature",
+      "min": -1656000000.0,
+      "max": 499000000.0
+    },
+    {
+      "name": "f_us_gaap_restructuringcharges",
+      "dtype": "float64",
+      "non_null": 237,
+      "null_frac": 0.99258,
+      "n_distinct": 195,
+      "kind": "selected_feature",
+      "min": -44000000.0,
+      "max": 1987000000.0
+    },
+    {
+      "name": "f_us_gaap_segmentreportingotheritemamount",
+      "dtype": "float64",
+      "non_null": 236,
+      "null_frac": 0.992612,
+      "n_distinct": 234,
+      "kind": "selected_feature",
+      "min": -7000000000.0,
+      "max": 6146000000.0
+    },
+    {
+      "name": "f_press_release_rd_prior_value",
+      "dtype": "float64",
+      "non_null": 234,
+      "null_frac": 0.992674,
+      "n_distinct": 184,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 998.7
+    },
+    {
+      "name": "f_us_gaap_interestexpensedebtexcludingamortization",
+      "dtype": "float64",
+      "non_null": 230,
+      "null_frac": 0.992799,
+      "n_distinct": 196,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 135838000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalremainderoffiscalyear",
+      "dtype": "float64",
+      "non_null": 229,
+      "null_frac": 0.992831,
+      "n_distinct": 93,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1350000000.0
+    },
+    {
+      "name": "f_us_gaap_lineofcreditfacilitymaximumborrowingcapacity",
+      "dtype": "float64",
+      "non_null": 215,
+      "null_frac": 0.993269,
+      "n_distinct": 81,
+      "kind": "selected_feature",
+      "min": 400000.0,
+      "max": 7576250000.0
+    },
+    {
+      "name": "f_us_gaap_lineofcredit",
+      "dtype": "float64",
+      "non_null": 192,
+      "null_frac": 0.993989,
+      "n_distinct": 32,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 795000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtmaturitiesrepaymentsofprincipalinyearfive",
+      "dtype": "float64",
+      "non_null": 173,
+      "null_frac": 0.994584,
+      "n_distinct": 120,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 8570000000.0
+    },
+    {
+      "name": "f_us_gaap_amortizationoffinancingcosts",
+      "dtype": "float64",
+      "non_null": 170,
+      "null_frac": 0.994678,
+      "n_distinct": 137,
+      "kind": "selected_feature",
+      "min": 18500.0,
+      "max": 7400000.0
+    },
+    {
+      "name": "f_us_gaap_debtinstrumentbasisspreadonvariablerate1",
+      "dtype": "float64",
+      "non_null": 157,
+      "null_frac": 0.995085,
+      "n_distinct": 50,
+      "kind": "selected_feature",
+      "min": -0.02,
+      "max": 2.5
+    },
+    {
+      "name": "f_us_gaap_longtermdebtfairvalue",
+      "dtype": "float64",
+      "non_null": 145,
+      "null_frac": 0.995461,
+      "n_distinct": 138,
+      "kind": "selected_feature",
+      "min": 19366000.0,
+      "max": 9400000000.0
+    },
+    {
+      "name": "f_us_gaap_otherresearchanddevelopmentexpense",
+      "dtype": "float64",
+      "non_null": 120,
+      "null_frac": 0.996243,
+      "n_distinct": 116,
+      "kind": "selected_feature",
+      "min": -26647500.0,
+      "max": 198532000.0
+    },
+    {
+      "name": "f_us_gaap_convertibledebtfairvaluedisclosures",
+      "dtype": "float64",
+      "non_null": 115,
+      "null_frac": 0.9964,
+      "n_distinct": 113,
+      "kind": "selected_feature",
+      "min": 5200000.0,
+      "max": 1700000000.0
+    },
+    {
+      "name": "f_interest_table_none",
+      "dtype": "float64",
+      "non_null": 75,
+      "null_frac": 0.997652,
+      "n_distinct": 74,
+      "kind": "selected_feature",
+      "min": -66193333.333333336,
+      "max": 259000000.0
+    },
+    {
+      "name": "f_us_gaap_debtweightedaverageinterestrate",
+      "dtype": "float64",
+      "non_null": 66,
+      "null_frac": 0.997934,
+      "n_distinct": 58,
+      "kind": "selected_feature",
+      "min": 0.0011,
+      "max": 0.13
+    },
+    {
+      "name": "f_us_gaap_gainlossrelatedtolitigationsettlement",
+      "dtype": "float64",
+      "non_null": 60,
+      "null_frac": 0.998122,
+      "n_distinct": 50,
+      "kind": "selected_feature",
+      "min": -1057000000.0,
+      "max": 150000000.0
+    },
+    {
+      "name": "f_us_gaap_adjustmentforamortization",
+      "dtype": "float64",
+      "non_null": 52,
+      "null_frac": 0.998372,
+      "n_distinct": 49,
+      "kind": "selected_feature",
+      "min": 137000000.0,
+      "max": 2793000000.0
+    },
+    {
+      "name": "f_us_gaap_debtinstrumentunamortizedpremium",
+      "dtype": "float64",
+      "non_null": 30,
+      "null_frac": 0.999061,
+      "n_distinct": 30,
+      "kind": "selected_feature",
+      "min": 13700000.0,
+      "max": 1835000000.0
+    },
+    {
+      "name": "f_us_gaap_impairmentofintangibleassetsindefinitelivedexcludinggoodwill",
+      "dtype": "float64",
+      "non_null": 28,
+      "null_frac": 0.999123,
+      "n_distinct": 18,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 379000000.0
+    },
+    {
+      "name": "f_us_gaap_longtermdebtweightedaverageinterestrateovertime",
+      "dtype": "float64",
+      "non_null": 28,
+      "null_frac": 0.999123,
+      "n_distinct": 16,
+      "kind": "selected_feature",
+      "min": 0.039,
+      "max": 0.1068
+    },
+    {
+      "name": "f_us_gaap_derivativenotionalamount",
+      "dtype": "float64",
+      "non_null": 27,
+      "null_frac": 0.999155,
+      "n_distinct": 8,
+      "kind": "selected_feature",
+      "min": 700000000.0,
+      "max": 1500000000.0
+    },
+    {
+      "name": "f_us_gaap_othercomprehensiveincomelossnetinvestmenthedgegainlossbeforereclassifica",
+      "dtype": "float64",
+      "non_null": 27,
+      "null_frac": 0.999155,
+      "n_distinct": 27,
+      "kind": "selected_feature",
+      "min": -418000000.0,
+      "max": 681500000.0
+    }
+  ]
+}
