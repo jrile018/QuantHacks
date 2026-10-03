@@ -40,6 +40,8 @@ This changes the starter notebook's same-day entry assumption, so its P&L can di
 | `tests/` | Offline tests for event construction, P&L, risk, and capacity |
 | `requirements.txt`, `setup.ps1`, `setup.sh`, `.env.example` | Reproducible setup and key template |
 | `data/README.md` | Data handling and download notes |
+| `docs/financial-profile-research.md` | SEC form coverage, no-key data sources, document/OCR access, and financial reconciliation design for the Tiger CIK universe |
+| `docs/company-sector-breakdown.md` | SIC-based industry split of the 1,630 Tiger 8-K filers, with counts, definitions, sources, and limits |
 | `examples/` | Documentation example showing the raw API response shape; **not** study data |
 | `references/` | Downloaded challenge briefs and original starter archives |
 
@@ -59,6 +61,8 @@ The notebook fetches disclosures from Massive's `/stocks/filings/8-K/vX/disclosu
 The JSON file in `examples/` is copied from [Massive's public 8-K Disclosures documentation](https://massive.com/docs/rest/stocks/filings/8-k-disclosures) solely to explain the response format. It is not a live query or a result from the notebook.
 
 The repository contains the runner, notebook, tests, downloaded challenge references, and a public API response example. A Massive API key is required to download the study data and reproduce event rows and results.
+
+For a proposed company-financials dataset based on the 1,630 CIKs exported from Tiger, read the [financial profile research](docs/financial-profile-research.md). SEC public filing and XBRL APIs require no API key. The proposed financial statements and documents have not yet been imported into Tiger.
 
 ## Copy local data to Tiger Cloud
 
