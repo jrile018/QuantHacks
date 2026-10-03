@@ -18,7 +18,7 @@ For a repeatable single-window run, use:
 python run_all.py --tag cfo_appointment --start 2024-01-01 --end 2025-12-31
 ```
 
-Use `--max-events 1` for an API-access smoke test. The runner writes `events.csv`, `dropped.csv`, `results.csv`, `scoreboard.csv`, `capacity.csv`, and `manifest.json` to ignored `data/processed/`. It accepts `--capital`, `--risk-fraction`, `--participation`, and `--cost-haircut` to state sizing assumptions. Run `python run_all.py --help` for all arguments. To compare windows, run it once per window with different `--output-dir` values; the notebook includes the in-sample, placebo, and out-of-sample comparison plots.
+Use `--max-events 1` for an API-access smoke test. The runner writes `events.csv`, `dropped.csv`, `results.csv`, `scoreboard.csv`, `capacity.csv`, selected `option_legs.csv`, observed `option_bars.csv`, and `manifest.json` to ignored `data/processed/`. The manifest records each table's row count and SHA-256 hash. It accepts `--capital`, `--risk-fraction`, `--participation`, and `--cost-haircut` to state sizing assumptions. Run `python run_all.py --help` for all arguments. To compare windows, run it once per window with different `--output-dir` values; the notebook includes the in-sample, placebo, and out-of-sample comparison plots. The selected option tables can be ingested by [Lattice](stat-arb/docs/options-native.md).
 
 The client also accepts `MASSIVE_API_KEY` from the environment. A first full notebook run can take around ten minutes; later runs reuse `.massive_cache/`.
 

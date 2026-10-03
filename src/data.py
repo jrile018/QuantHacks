@@ -174,9 +174,12 @@ def fetch_chain(ticker: str, as_of: pd.Timestamp, dte_lo: int, dte_hi: int) -> p
     chain = pd.DataFrame(rows)
     if chain.empty:
         return chain
-    if "shares_per_contract" in chain:
-        chain = chain[chain["shares_per_contract"].fillna(100) == 100]      # drop post-split non-standard series
-    chain = chain[["ticker", "contract_type", "strike_price", "expiration_date"]].copy()
+    if "shares_per_contract" not in chain:
+        chain["shares_per_contract"] = np.nan
+    chain["shares_per_contract"] = pd.to_numeric(chain["shares_per_contract"], errors="coerce")
+    chain = chain[chain["shares_per_contract"] == 100]  # reject unknown and adjusted series
+    chain = chain[["ticker", "contract_type", "strike_price", "expiration_date",
+                   "shares_per_contract"]].copy()
     chain["expiration_date"] = pd.to_datetime(chain["expiration_date"])
     chain["dte"] = (chain["expiration_date"] - as_of).dt.days
     chain["strike_price"] = chain["strike_price"].astype(float)
