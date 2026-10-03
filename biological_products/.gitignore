@@ -1,0 +1,5 @@
+# Big pulled data is rebuilt by scripts/ (see docs/README). Only data/final and docs are shared.
+data/raw/
+data/processed/
+scratch/
+__pycache__/
