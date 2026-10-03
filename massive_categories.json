@@ -1,0 +1,835 @@
+[
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "ceo_appointment",
+        "description":  "New CEO appointment with background, employment terms, and compensation.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "ceo_departure",
+        "description":  "CEO departure, resignation, retirement, termination, or death with circumstances and transition.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "cfo_appointment",
+        "description":  "New CFO appointment with background, terms, and transition timeline.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "cfo_departure",
+        "description":  "CFO departure with circumstances and transition arrangements.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "executive_officer_appointment",
+        "description":  "Other named executive officer appointment with position and terms.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "executive_officer_departure",
+        "description":  "Other named executive officer departure with circumstances.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "executive_leadership",
+        "tertiary_category":  "executive_compensation_change",
+        "description":  "Material executive or director compensation changes including new employment agreements, amendments, severance, change-in-control provisions, or equity awards. Consolidates all compensation-related events into a single tag.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "board_of_directors",
+        "tertiary_category":  "director_appointment",
+        "description":  "New director election or appointment with background, qualifications, and committee assignments.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "board_of_directors",
+        "tertiary_category":  "director_departure",
+        "description":  "Director resignation, removal, retirement, or decision not to stand for re-election, including any disagreements causing departure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "corporate_control",
+        "tertiary_category":  "control_acquisition",
+        "description":  "Acquisition of controlling interest by new shareholder, investor group, or entity.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "corporate_control",
+        "tertiary_category":  "control_disposition",
+        "description":  "Loss of controlling interest through sale, dilution, or other transaction.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "corporate_control",
+        "tertiary_category":  "going_private_transaction",
+        "description":  "Going-private, management buyout, or similar transaction ending public trading.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "corporate_control",
+        "tertiary_category":  "reverse_merger",
+        "description":  "Reverse merger where private operating company merges with public shell, becoming publicly traded. Includes shell company status changes.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "governance_documents",
+        "tertiary_category":  "charter_amendment",
+        "description":  "Certificate or articles of incorporation amendment, including changes to shareholder voting, dividend, or liquidation rights. Use this for the governance action; use preferred_stock_modification for preferred-specific term changes.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "governance_documents",
+        "tertiary_category":  "bylaw_amendment",
+        "description":  "Bylaw amendment with nature of changes and impact on governance or shareholder rights.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "governance_documents",
+        "tertiary_category":  "code_of_ethics_change",
+        "description":  "Code of ethics amendment or waiver for principal executive, financial, or accounting officers.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "governance_documents",
+        "tertiary_category":  "shareholder_rights_plan",
+        "description":  "Adoption, amendment, or termination of a shareholder rights plan (poison pill) or similar anti-takeover mechanism.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "governance_documents",
+        "tertiary_category":  "preferred_stock_modification",
+        "description":  "Material modification of preferred stock terms including conversion, dividend, redemption, or voting provisions.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "leadership_and_governance",
+        "secondary_category":  "governance_documents",
+        "tertiary_category":  "fiscal_year_change",
+        "description":  "Fiscal year end change with old and new dates, transition period, and rationale.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "earnings_and_performance",
+        "tertiary_category":  "quarterly_earnings",
+        "description":  "Quarterly financial results including revenue, net income, EPS, and key operating metrics with management commentary.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "earnings_and_performance",
+        "tertiary_category":  "annual_earnings",
+        "description":  "Annual financial results with year-over-year comparisons, key metrics, and forward outlook.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "earnings_and_performance",
+        "tertiary_category":  "preliminary_results",
+        "description":  "Preliminary or unaudited financial results before formal statement preparation.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "earnings_and_performance",
+        "tertiary_category":  "nav_per_share",
+        "description":  "Net asset value per share for BDCs, closed-end funds, interval funds, or non-traded REITs.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "guidance_and_outlook",
+        "tertiary_category":  "guidance_issuance_or_update",
+        "description":  "Issuance, revision, or reaffirmation of financial guidance including revenue projections, earnings estimates, and key metric forecasts. Consolidates all guidance-related disclosures regardless of disclosure mechanism.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "guidance_and_outlook",
+        "tertiary_category":  "guidance_withdrawal",
+        "description":  "Withdrawal or suspension of previously issued financial guidance.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "impairments_and_charges",
+        "tertiary_category":  "goodwill_impairment",
+        "description":  "Goodwill impairment charge when carrying value exceeds fair value, with amount and affected reporting unit.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "impairments_and_charges",
+        "tertiary_category":  "asset_impairment",
+        "description":  "Long-lived or intangible asset impairment or write-down with asset nature and circumstances.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "impairments_and_charges",
+        "tertiary_category":  "investment_impairment",
+        "description":  "Other-than-temporary impairment on investments or securities with amount and nature.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "impairments_and_charges",
+        "tertiary_category":  "material_charge_or_gain",
+        "description":  "Material nonrecurring charges, gains, or unusual items significantly affecting results (e.g., restructuring charges, legal settlements, one-time gains).",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "financial_integrity",
+        "tertiary_category":  "financial_restatement",
+        "description":  "Prior financial statements should not be relied upon due to material errors requiring restatement.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "financial_integrity",
+        "tertiary_category":  "accounting_error_correction",
+        "description":  "Material accounting error correction not requiring full restatement but requiring disclosure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "financial_integrity",
+        "tertiary_category":  "audit_opinion_withdrawal",
+        "description":  "Withdrawal of auditor opinion on prior statements requiring reissuance.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "financial_results",
+        "secondary_category":  "financial_integrity",
+        "tertiary_category":  "internal_control_weakness",
+        "description":  "Material weakness in internal control over financial reporting requiring disclosure and remediation.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_agreements",
+        "tertiary_category":  "acquisition_agreement",
+        "description":  "Definitive agreement to acquire a business, subsidiary, or division, specifying price, financing, and conditions.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_agreements",
+        "tertiary_category":  "merger_agreement",
+        "description":  "Definitive merger or business combination agreement with exchange ratios and terms.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_agreements",
+        "tertiary_category":  "divestiture_agreement",
+        "description":  "Definitive agreement to sell a business unit, subsidiary, or product line.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_agreements",
+        "tertiary_category":  "joint_venture_agreement",
+        "description":  "Joint venture, partnership, or collaboration agreement defining shared activities and governance.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_agreements",
+        "tertiary_category":  "licensing_agreement",
+        "description":  "Licensing or technology transfer agreement for patents, trademarks, or proprietary technology.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_completions",
+        "tertiary_category":  "acquisition_completion",
+        "description":  "Completed business acquisition with final purchase price, financing, and integration plans.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_completions",
+        "tertiary_category":  "merger_completion",
+        "description":  "Completed merger or business combination with resulting ownership structure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_completions",
+        "tertiary_category":  "divestiture_completion",
+        "description":  "Completed sale or divestiture with proceeds, gain/loss, and strategic rationale.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_completions",
+        "tertiary_category":  "spinoff_completion",
+        "description":  "Completed spinoff, split-off, or separation creating independent entity with distribution details.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_completions",
+        "tertiary_category":  "asset_purchase_or_sale",
+        "description":  "Completed purchase or sale of significant individual assets (real estate, equipment, IP) outside ordinary course.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_terminations",
+        "tertiary_category":  "deal_termination",
+        "description":  "Termination, expiration, or non-renewal of a material agreement due to term completion, mutual agreement, or exercise of termination rights.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_terminations",
+        "tertiary_category":  "deal_breach_default",
+        "description":  "Termination of a material agreement due to breach or default, with associated penalties or disputes.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "strategic_transactions",
+        "secondary_category":  "deal_terminations",
+        "tertiary_category":  "deal_withdrawal",
+        "description":  "Withdrawal from or cancellation of a pending agreement before completion, with rationale and any fees.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_activity",
+        "tertiary_category":  "debt_issuance",
+        "description":  "Bonds, notes, or debentures issuance with principal, rate, maturity, covenants, and use of proceeds.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_activity",
+        "tertiary_category":  "credit_facility",
+        "description":  "Credit agreement, loan facility, or revolving credit arrangement. Includes amendments modifying capacity, rates, covenants, or maturity.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_activity",
+        "tertiary_category":  "credit_facility_draw",
+        "description":  "Borrowing under existing credit facilities or term loans with amount and purpose.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_activity",
+        "tertiary_category":  "debt_retirement",
+        "description":  "Purchase, redemption, tender, or early retirement of outstanding debt securities.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_activity",
+        "tertiary_category":  "guarantee_or_letter_of_credit",
+        "description":  "Issuance or release of guarantees, letters of credit, or keepwell agreements.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_activity",
+        "tertiary_category":  "off_balance_sheet_arrangement",
+        "description":  "Off-balance sheet obligations including VIEs, synthetic leases, or structured finance with real exposure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_distress",
+        "tertiary_category":  "debt_acceleration",
+        "description":  "Events triggering debt acceleration, interest rate increases, or debt term modifications.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_distress",
+        "tertiary_category":  "covenant_violation",
+        "description":  "Breach or anticipated breach of financial covenants, with waivers obtained or amendments to cure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_distress",
+        "tertiary_category":  "payment_default",
+        "description":  "Actual failure to make required principal or interest payment on outstanding debt.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "debt_distress",
+        "tertiary_category":  "rating_downgrade_trigger",
+        "description":  "Credit rating downgrade triggering contractual consequences (increased rates, collateral, acceleration).",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "public_offering",
+        "description":  "Public equity offering or registered direct offering with underwriting terms.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "private_placement",
+        "description":  "Private placement of unregistered equity to accredited investors or QIBs, with terms and registration rights.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "pipe_transaction",
+        "description":  "PIPE transaction involving unregistered securities at market discount with registration rights.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "warrant_or_conversion",
+        "description":  "Unregistered securities from warrant/option exercise or convertible security conversion.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "equity_compensation_grant",
+        "description":  "Unregistered securities under equity compensation plans for employees, directors, or consultants.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "acquisition_consideration_shares",
+        "description":  "Unregistered securities issued as merger or acquisition consideration.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "rights_offering",
+        "description":  "Rights offering to existing shareholders to purchase additional shares at a discount.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "equity_activity",
+        "tertiary_category":  "underwriting_agreement",
+        "description":  "Underwriting or placement agent agreement for securities distribution in offerings.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "shareholder_returns",
+        "tertiary_category":  "dividend_declaration",
+        "description":  "Cash dividend, special dividend, or distribution declaration with amount, record date, and payment date.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "shareholder_returns",
+        "tertiary_category":  "dividend_policy_change",
+        "description":  "Material change to dividend policy including suspension, reduction, or significant increase.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "shareholder_returns",
+        "tertiary_category":  "share_repurchase_program",
+        "description":  "Share buyback program authorization, expansion, or update with amount and timing.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "shareholder_returns",
+        "tertiary_category":  "tender_offer",
+        "description":  "Tender offer to acquire outstanding securities (equity, debt, or trust preferred) with pricing and conditions.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "shareholder_returns",
+        "tertiary_category":  "stock_split",
+        "description":  "Forward or reverse stock split with ratio, dates, and share impact.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "capital_and_financing",
+        "secondary_category":  "credit_ratings",
+        "tertiary_category":  "credit_rating_change",
+        "description":  "Credit rating upgrade, downgrade, outlook modification, or watch placement by rating agencies.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "restructuring",
+        "tertiary_category":  "restructuring_plan",
+        "description":  "Restructuring or cost reduction initiative with expected charges, timeline, and anticipated savings.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "restructuring",
+        "tertiary_category":  "facility_closure",
+        "description":  "Facility closures, consolidations, or relocations with locations, employees, and charges.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "restructuring",
+        "tertiary_category":  "workforce_reduction",
+        "description":  "Significant layoffs, RIFs, or voluntary separation programs with positions, severance, and timeline.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "restructuring",
+        "tertiary_category":  "business_line_exit",
+        "description":  "Decision to exit or discontinue a business line, product category, or market segment.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "significant_contract_award",
+        "description":  "Material contract win or commercial agreement outside ordinary course affecting future revenues.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "product_or_service_launch",
+        "description":  "Significant new product, service offering, or technology development affecting future performance.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "clinical_trial_results",
+        "description":  "Clinical trial data for pharma, biotech, or medical devices including efficacy and safety findings.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "patent_milestone",
+        "description":  "Patent grants, issuances, or significant IP milestones from USPTO or international offices.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "regulatory_decision",
+        "description":  "Regulatory approvals, rejections, complete response letters, or information requests from FDA, EPA, or other agencies.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "strategic_initiative",
+        "description":  "Strategic plans, business transformation, or market entry/exit that represent material changes to business direction.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "business_developments",
+        "tertiary_category":  "esg_sustainability_commitment",
+        "description":  "Material ESG initiative, sustainability target, or environmental/social development the company considers significant.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "material_agreements",
+        "tertiary_category":  "supply_or_distribution_agreement",
+        "description":  "Material supply, distribution, or purchasing commitment establishing long-term obligations.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "material_agreements",
+        "tertiary_category":  "lease_agreement",
+        "description":  "Significant lease for real property, equipment, or facilities including operating, finance, and sale-leaseback.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "material_agreements",
+        "tertiary_category":  "settlement_agreement",
+        "description":  "Settlement resolving material litigation, regulatory proceedings, or disputes. Use this instead of material_litigation when the event is the settlement itself.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "operations_and_strategy",
+        "secondary_category":  "material_agreements",
+        "tertiary_category":  "partnership_or_collaboration",
+        "description":  "Partnership, collaboration, or commercial relationship agreement affecting operations or competitive position.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "legal_proceedings",
+        "tertiary_category":  "material_litigation",
+        "description":  "Significant litigation updates, outcomes, or judgments not covered by settlement_agreement.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "legal_proceedings",
+        "tertiary_category":  "class_action_filing",
+        "description":  "Class action lawsuit filed against the company with claims and potential exposure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "legal_proceedings",
+        "tertiary_category":  "regulatory_investigation",
+        "description":  "SEC, DOJ, or other regulatory investigation, Wells notice, or enforcement action.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "bankruptcy_and_insolvency",
+        "tertiary_category":  "voluntary_bankruptcy",
+        "description":  "Voluntary bankruptcy filing (Chapter 7, 11, 15) with circumstances and expected impact.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "bankruptcy_and_insolvency",
+        "tertiary_category":  "involuntary_bankruptcy",
+        "description":  "Involuntary bankruptcy petition by creditors with petitioner identity and amounts.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "bankruptcy_and_insolvency",
+        "tertiary_category":  "receivership_appointment",
+        "description":  "Appointment of receiver, trustee, or conservator to control assets with scope and duration.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "bankruptcy_and_insolvency",
+        "tertiary_category":  "bankruptcy_emergence",
+        "description":  "Confirmation of reorganization plan or emergence from bankruptcy with creditor treatment and new capital structure.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "bankruptcy_and_insolvency",
+        "tertiary_category":  "going_concern",
+        "description":  "Going concern doubt expressed by auditors or management, substantial doubt about ability to continue operations.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "security_and_safety",
+        "tertiary_category":  "cybersecurity_incident",
+        "description":  "Material cybersecurity incident, data breach, ransomware, or information security event affecting systems or data.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "security_and_safety",
+        "tertiary_category":  "natural_disaster_impact",
+        "description":  "Natural disaster, catastrophic event, or force majeure impact on operations, facilities, or financial condition.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "security_and_safety",
+        "tertiary_category":  "mine_safety_violation",
+        "description":  "Mine safety violations, citations, or penalties from MSHA requiring corrective action or fines.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "risk_events",
+        "secondary_category":  "security_and_safety",
+        "tertiary_category":  "mine_closure",
+        "description":  "Mining operations closure due to safety concerns or violation patterns with production impact.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "auditor_matters",
+        "tertiary_category":  "auditor_resignation",
+        "description":  "Independent auditor resignation with date and any disagreements.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "auditor_matters",
+        "tertiary_category":  "auditor_dismissal",
+        "description":  "Independent auditor dismissal with reasons and reportable events.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "auditor_matters",
+        "tertiary_category":  "new_auditor_engagement",
+        "description":  "New auditor engagement with prior consultations and change disclosures.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "auditor_matters",
+        "tertiary_category":  "auditor_disagreement",
+        "description":  "Disagreements with auditors on accounting principles, disclosures, or audit scope.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "exchange_listing",
+        "tertiary_category":  "listing_deficiency_notice",
+        "description":  "Notice of failure to satisfy continued listing requirements with cure period.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "exchange_listing",
+        "tertiary_category":  "listing_compliance_regained",
+        "description":  "Regained listing compliance after previous deficiency notice.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "exchange_listing",
+        "tertiary_category":  "delisting_determination",
+        "description":  "Exchange determination to delist securities with effective date and reasons.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "exchange_listing",
+        "tertiary_category":  "listing_transfer",
+        "description":  "Transfer between exchanges or market tiers, or initial listing approval.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "exchange_listing",
+        "tertiary_category":  "voluntary_delisting",
+        "description":  "Voluntary decision to delist with rationale and alternative trading arrangements.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "asset_backed_securities",
+        "tertiary_category":  "abs_structural_change",
+        "description":  "Material changes to ABS structure including servicer/trustee replacement, credit enhancement modification, or trust document amendments.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "regulatory_and_compliance",
+        "secondary_category":  "asset_backed_securities",
+        "tertiary_category":  "abs_distribution_failure",
+        "description":  "Failure to make required ABS distribution with missed amount, reasons, and expected remediation.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "shareholder_meetings",
+        "tertiary_category":  "shareholder_meeting_notice",
+        "description":  "Annual or special meeting announcement with dates, agenda, and record date.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "shareholder_meetings",
+        "tertiary_category":  "annual_meeting_results",
+        "description":  "Annual meeting results including elections, ratifications, and proposal outcomes.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "shareholder_meetings",
+        "tertiary_category":  "special_meeting_results",
+        "description":  "Special meeting results on mergers, charter amendments, or other significant actions.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "shareholder_activism",
+        "tertiary_category":  "activist_investor_campaign",
+        "description":  "Activist engagement including demands, proxy contests, settlements, or board nominations.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "shareholder_activism",
+        "tertiary_category":  "shareholder_proposal_outcome",
+        "description":  "Shareholder proposal outcomes with support levels and management response.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "shareholder_activism",
+        "tertiary_category":  "director_nomination",
+        "description":  "Shareholder director nominations under proxy access or advance notice bylaws.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "investor_communications",
+        "tertiary_category":  "investor_presentation",
+        "description":  "Investor presentations, conference materials, or earnings call supplements disclosed for broad dissemination.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "investor_communications",
+        "tertiary_category":  "business_update",
+        "description":  "Business performance, market conditions, or operational updates communicated to investors.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "investor_communications",
+        "tertiary_category":  "capital_allocation_update",
+        "description":  "Capital allocation strategy, financial plan, or investment priorities communicated to investment community.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "insider_trading",
+        "tertiary_category":  "trading_plan_10b5_1",
+        "description":  "Rule 10b5-1 trading plan adoption, modification, or termination by officers, directors, or affiliates.",
+        "taxonomy":  "1.0"
+    },
+    {
+        "primary_category":  "shareholder_activity",
+        "secondary_category":  "insider_trading",
+        "tertiary_category":  "benefit_plan_blackout",
+        "description":  "Blackout period notice during which benefit plan trading will be suspended.",
+        "taxonomy":  "1.0"
+    }
+]
