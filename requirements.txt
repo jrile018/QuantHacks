@@ -9,3 +9,5 @@ matplotlib>=3.8    # tested 3.11.1
 # Running the notebook
 ipykernel>=6.29    # tested 7.3.0
 jupyterlab>=4.0    # skip if you use VS Code with the Jupyter extension
+
+massive
