@@ -2,12 +2,12 @@
 
 Uses MASSIVE_API_KEY from .env. One aggregates request per ticker covers the whole window.
 Adjusted prices account for splits and dividends, so returns computed from them are total
-returns. Each ticker's response is cached under data/extracts/_cache/prices/.
+returns. Each ticker's response is cached under data/packaged_software/extracts/_cache/prices/.
 
-Writes data/extracts/prices/daily_bars.csv with one row per ticker per trading day:
+Writes data/packaged_software/extracts/prices/daily_bars.csv with one row per ticker per trading day:
   ticker, date, open, high, low, close, volume, vwap, transactions
 
-Tickers with no bars come back with a status row in data/extracts/prices/price_coverage.csv,
+Tickers with no bars come back with a status row in data/packaged_software/extracts/prices/price_coverage.csv,
 so a missing price is visible rather than silently absent.
 Standard library only.
 """
@@ -27,8 +27,8 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "prices"
-OUT_DIR = ROOT / "data" / "extracts" / "prices"
+CACHE = HERE / "extracts" / "_cache" / "prices"
+OUT_DIR = HERE / "extracts" / "prices"
 START = "2022-01-01"
 API = "https://api.massive.com/v2/aggs/ticker/{ticker}/range/1/day/{start}/{end}"
 WORKERS = 5

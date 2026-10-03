@@ -32,7 +32,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "output"
-BARS = HERE.parents[1] / "data" / "extracts" / "prices" / "daily_bars.csv"
+BARS = HERE / "extracts" / "prices" / "daily_bars.csv"
 FACTORS = OUT / "factor_returns_daily.csv"
 AUDITOR = OUT / "auditor_changes.csv"
 FILINGS = OUT / "8k_item_filings.csv"

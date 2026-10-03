@@ -16,7 +16,7 @@ SYMBOL = re.compile(r'<ix:nonnumeric\b[^>]*name\s*=\s*[\"\']dei:TradingSymbol[\"
 def main():
     with (HERE / "packaged_software_companies.csv").open(encoding="utf-8-sig", newline="") as source:
         companies = {int(c["cik"]): c for c in csv.DictReader(source)}
-    with (ROOT / "data/extracts/sec/filings_index.csv").open(encoding="utf-8-sig", newline="") as source:
+    with (ROOT / "data/packaged_software/extracts/sec/filings_index.csv").open(encoding="utf-8-sig", newline="") as source:
         filings = list(csv.DictReader(source))
     observed = {}
     for f in sorted(filings, key=lambda f: f["filing_date"]):

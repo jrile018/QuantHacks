@@ -1,6 +1,6 @@
 """Scan downloaded 8-K / 8-K/A documents for the event items on the checklist.
 
-For every company folder under data/extracts/sec/<TICKER>/, reads each 8-K and 8-K/A
+For every company folder under data/packaged_software/extracts/sec/<TICKER>/, reads each 8-K and 8-K/A
 primary document, finds which "Item X.XX" headings it contains, and writes:
   output/8k_item_filings.csv    one row per (filing, item) match, with a short snippet
   output/8k_item_by_company.csv one row per company with a count per item
@@ -21,7 +21,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-EXTRACT = ROOT / "data" / "extracts" / "sec"
+EXTRACT = HERE / "extracts" / "sec"
 OUT_DIR = HERE / "output"
 
 # Items from the checklist: 1.01/1.02 agreements, 2.01 acquisitions, 2.03/2.04 debt,

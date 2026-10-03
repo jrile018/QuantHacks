@@ -1,7 +1,7 @@
 """Add a Rule of 40 score to the quarterly fundamentals.
 
 Rule of 40 = year-over-year revenue growth + free-cash-flow margin, both as percentage points.
-Reads data/extracts/company_metrics/fundamentals_quarterly.csv and writes
+Reads data/packaged_software/extracts/company_metrics/fundamentals_quarterly.csv and writes
 output/rule_of_40.csv with one row per company-quarter where both inputs exist.
 
 Caveat: the FCF margin in the source file is operating cash flow minus physical capex,
@@ -16,7 +16,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-SRC = ROOT / "data" / "extracts" / "company_metrics" / "fundamentals_quarterly.csv"
+SRC = HERE / "extracts" / "company_metrics" / "fundamentals_quarterly.csv"
 OUT = HERE / "output" / "rule_of_40.csv"
 FIELDS = ["cik", "ticker", "name", "period_end", "rev_growth_pct", "fcf_margin_pct", "rule_of_40"]
 

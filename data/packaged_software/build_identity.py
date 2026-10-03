@@ -1,6 +1,6 @@
 """Company identity from SEC submissions records, for the 168-company universe.
 
-Fetches each CIK's submissions JSON (cached under data/extracts/identity/cache/) and writes
+Fetches each CIK's submissions JSON (cached under data/packaged_software/extracts/identity/cache/) and writes
 output/company_identity.csv with: exchange, former names, fiscal year end, state of
 incorporation, business and mailing addresses, phone, EIN, and filer category.
 
@@ -20,7 +20,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "identity" / "cache"
+CACHE = HERE / "extracts" / "identity" / "cache"
 OUT = HERE / "output" / "company_identity.csv"
 URL = "https://data.sec.gov/submissions/CIK{cik}.json"
 FIELDS = ["cik", "ticker", "name", "sic", "sic_description", "exchanges", "former_names",

@@ -438,8 +438,8 @@ def main():
     # Yesterday avoids requesting today's file before publication.
     parser.add_argument("--end", type=dt.date.fromisoformat, default=dt.datetime.now(dt.timezone.utc).date() - dt.timedelta(days=1))
     parser.add_argument("--frequency", choices=["daily", "monthly"], default="daily")
-    parser.add_argument("--output", type=Path, default=ROOT / "data" / "extracts" / "epss")
-    parser.add_argument("--cache", type=Path, default=ROOT / "data" / "extracts" / "_cache" / "epss")
+    parser.add_argument("--output", type=Path, default=HERE / "extracts" / "epss")
+    parser.add_argument("--cache", type=Path, default=HERE / "extracts" / "_cache" / "epss")
     parser.add_argument("--tickers", help="Optional comma-separated subset for a smoke test")
     parser.add_argument("--threshold", type=float, default=0.10)
     parser.add_argument("--summary-only", action="store_true", help="Omit per-CVE daily files")

@@ -25,7 +25,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-CACHE = ROOT / "data" / "extracts" / "_cache" / "factor_returns"
+CACHE = HERE / "extracts" / "_cache" / "factor_returns"
 OUT = HERE / "output" / "factor_returns_daily.csv"
 BASE = "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/"
 FILES = {

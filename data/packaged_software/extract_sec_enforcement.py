@@ -31,7 +31,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "sec_enforcement"
+CACHE = HERE / "extracts" / "_cache" / "sec_enforcement"
 OUT_RELEASES = HERE / "output" / "sec_litigation_releases.csv"
 OUT_COMPANY = HERE / "output" / "sec_enforcement_by_company.csv"
 # Three enforcement streams. Litigation releases are civil court actions (mostly against

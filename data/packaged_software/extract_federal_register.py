@@ -28,7 +28,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "federal_register"
+CACHE = HERE / "extracts" / "_cache" / "federal_register"
 OUT_DOCS = HERE / "output" / "federal_register_documents.csv"
 OUT_COMPANY = HERE / "output" / "federal_register_by_company.csv"
 API = "https://www.federalregister.gov/api/v1/documents.json"

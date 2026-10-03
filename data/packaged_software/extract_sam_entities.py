@@ -37,7 +37,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "sam_entities"
+CACHE = HERE / "extracts" / "_cache" / "sam_entities"
 OUT = HERE / "output" / "sam_entities.csv"
 OUT_CANDIDATES = HERE / "output" / "sam_entity_candidates.csv"
 API = "https://api.sam.gov/entity-information/v4/entities"

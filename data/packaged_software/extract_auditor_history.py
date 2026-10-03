@@ -26,7 +26,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-SEC = ROOT / "data" / "extracts" / "sec"
+SEC = HERE / "extracts" / "sec"
 COMPANIES = HERE / "packaged_software_companies.csv"
 OUT_HISTORY = HERE / "output" / "auditor_history.csv"
 OUT_CHANGES = HERE / "output" / "auditor_changes.csv"

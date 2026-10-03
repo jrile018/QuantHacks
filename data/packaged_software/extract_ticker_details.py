@@ -30,7 +30,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "ticker_details"
+CACHE = HERE / "extracts" / "_cache" / "ticker_details"
 OUT = HERE / "output" / "ticker_details.csv"
 API = "https://api.massive.com/v3/reference/tickers/{ticker}"
 FIELDS = ["cik", "ticker", "name", "vendor_name", "homepage_url", "domain", "total_employees",

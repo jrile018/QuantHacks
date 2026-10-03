@@ -1,6 +1,6 @@
 """Extract Census industry data and USAspending awards for the packaged-software list.
 
-Writes to data/extracts/:
+Writes to data/packaged_software/extracts/:
   census/cbp_naics5112/   County Business Patterns, software publishers (NAICS 5112),
                           one CSV per year, national plus state level.
   usaspending/<TICKER>/   Federal contract awards for each company, one CSV per company.
@@ -14,7 +14,7 @@ Usage (from the repo root):
     python data/packaged_software/extract_census_usaspending.py
     python data/packaged_software/extract_census_usaspending.py --skip-usaspending
 
-Standard library only. Responses are cached under data/extracts/_cache/.
+Standard library only. Responses are cached under data/packaged_software/extracts/_cache/.
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ sys.path.insert(0, str(HERE))
 import pull_federal_contracts as usa  # noqa: E402  (reuses the USAspending query code)
 
 COMPANIES = HERE / "packaged_software_companies.csv"
-EXTRACTS = ROOT / "data" / "extracts"
+EXTRACTS = HERE / "extracts"
 CACHE = EXTRACTS / "_cache"
 CENSUS_YEARS = range(2017, 2024)  # CBP currently publishes through 2023; 2024+ return 404
 CBP_VARS = ["NAME", "NAICS2017", "ESTAB", "EMP", "PAYANN", "PAYQTR1"]

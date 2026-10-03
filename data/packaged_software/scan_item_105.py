@@ -1,6 +1,6 @@
 """Find Item 1.05 (cybersecurity incident) 8-K filings for each company in the extract.
 
-Scans every downloaded 8-K / 8-K/A primary document under data/extracts/sec/<TICKER>/
+Scans every downloaded 8-K / 8-K/A primary document under data/packaged_software/extracts/sec/<TICKER>/
 for an "Item 1.05" heading and writes:
   output/item_105_filings.csv   one row per matching filing
   output/item_105_by_company.csv   one row per company, including companies with zero hits
@@ -17,7 +17,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-EXTRACT = ROOT / "data" / "extracts" / "sec"
+EXTRACT = HERE / "extracts" / "sec"
 COMPANIES = HERE / "packaged_software_companies.csv"
 OUT_DIR = HERE / "output"
 ITEM_RE = re.compile(r"item\s*1\.05\b", re.IGNORECASE)

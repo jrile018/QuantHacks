@@ -5,7 +5,7 @@ revenue and expenses, so each company's growth can be compared with the industry
 (the abnormal-growth benchmark for section 20).
 
 Uses CENSUS_API_KEY from .env. One API call per quarter, cached under
-data/extracts/_cache/census_qss/. Output: data/extracts/census/qss_software_publishers.csv
+data/packaged_software/extracts/_cache/census_qss/. Output: data/packaged_software/extracts/census/qss_software_publishers.csv
 
 Codes used (from the QSS variable list):
   category_code 5112T      NAICS 5112, software publishers
@@ -32,8 +32,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-CACHE = ROOT / "data" / "extracts" / "_cache" / "census_qss"
-OUT = ROOT / "data" / "extracts" / "census" / "qss_software_publishers.csv"
+CACHE = HERE / "extracts" / "_cache" / "census_qss"
+OUT = HERE / "extracts" / "census" / "qss_software_publishers.csv"
 API = "https://api.census.gov/data/timeseries/eits/qss"
 CATEGORY = "5112T"
 DATA_TYPES = {"QREV", "QEXP", "PQREV"}

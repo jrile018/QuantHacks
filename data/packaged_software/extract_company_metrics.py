@@ -546,8 +546,8 @@ def run(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--companies", type=Path, default=HERE / "packaged_software_companies.csv")
-    parser.add_argument("--sec", type=Path, default=ROOT / "data/extracts/sec")
-    parser.add_argument("--output", type=Path, default=ROOT / "data/extracts/company_metrics")
+    parser.add_argument("--sec", type=Path, default=ROOT / "data/packaged_software/extracts/sec")
+    parser.add_argument("--output", type=Path, default=ROOT / "data/packaged_software/extracts/company_metrics")
     parser.add_argument("--start", default="2022-01-01")
     parser.add_argument("--end", default=dt.datetime.now(dt.timezone.utc).date().isoformat())
     parser.add_argument("--offline", action="store_true", help="Use only previously downloaded genuine SEC data")

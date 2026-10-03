@@ -6,7 +6,7 @@ For each company in packaged_software_companies.csv:
   - downloads each filing's primary document,
   - downloads the company's XBRL companyfacts JSON (standardized financials).
 
-Output (data/extracts/sec/):
+Output (data/packaged_software/extracts/sec/):
   <TICKER>/<FORM>/<YYYY-MM-DD>_<accession>/<primary document>
   <TICKER>/companyfacts.json
   filings_index.csv   one row per filing with its local path and status
@@ -42,7 +42,7 @@ from sec_common import env_value
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-OUT = ROOT / "data" / "extracts" / "sec"
+OUT = HERE / "extracts" / "sec"
 SUBMISSIONS = "https://data.sec.gov/submissions/{name}"
 COMPANYFACTS = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
 ARCHIVE = "https://www.sec.gov/Archives/edgar/data/{cik_int}/{acc_nodash}/{doc}"

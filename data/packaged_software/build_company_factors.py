@@ -5,9 +5,9 @@ Sources (all already on disk):
   output/8k_item_by_company.csv            8-K item counts (scan_8k_items.py)
   output/item_105_by_company.csv           Item 1.05 cyber incidents (scan_item_105.py)
   output/rule_of_40.csv                    latest Rule of 40 (derive_rule_of_40.py)
-  data/extracts/company_metrics/fundamentals_quarterly.csv   latest TTM revenue, operating cash flow
+  data/packaged_software/extracts/company_metrics/fundamentals_quarterly.csv   latest TTM revenue, operating cash flow
   output/company_summary.csv               federal contract totals, exact-name matches
-  data/extracts/company_news/news_articles.csv               news candidates per company
+  data/packaged_software/extracts/company_news/news_articles.csv               news candidates per company
 
 Writes output/company_factors.csv. Columns that have no source yet are left blank,
 so the file shows what is still missing.
@@ -47,13 +47,13 @@ def main() -> int:
 
     # Latest quarter revenue and operating cash flow (TTM) per company
     latest_fund: dict[str, dict] = {}
-    for r in read_rows(ROOT / "data" / "extracts" / "company_metrics" / "fundamentals_quarterly.csv"):
+    for r in read_rows(HERE / "extracts" / "company_metrics" / "fundamentals_quarterly.csv"):
         prev = latest_fund.get(r["ticker"])
         if prev is None or r["period_end"] > prev["period_end"]:
             latest_fund[r["ticker"]] = r
 
     news_count: dict[str, int] = defaultdict(int)
-    news_path = ROOT / "data" / "extracts" / "company_news" / "news_articles.csv"
+    news_path = HERE / "extracts" / "company_news" / "news_articles.csv"
     for r in read_rows(news_path):
         news_count[r["ticker"]] += 1
 

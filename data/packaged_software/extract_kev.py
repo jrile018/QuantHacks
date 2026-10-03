@@ -27,7 +27,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 MAPPING = HERE / "epss_company_mapping.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "kev"
+CACHE = HERE / "extracts" / "_cache" / "kev"
 OUT_CVES = HERE / "output" / "kev_company_cves.csv"
 OUT_COMPANY = HERE / "output" / "kev_by_company.csv"
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"

@@ -29,7 +29,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 LEI_FILE = HERE / "output" / "company_lei.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "gleif_parents"
+CACHE = HERE / "extracts" / "_cache" / "gleif_parents"
 OUT_PARENTS = HERE / "output" / "company_gleif_parents.csv"
 OUT_CHILDREN = HERE / "output" / "company_gleif_children.csv"
 BASE = "https://api.gleif.org/api/v1/lei-records/{lei}"

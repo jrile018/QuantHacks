@@ -3,7 +3,7 @@
 build_filing_signals.py flags only each company's latest 10-K. This covers the whole
 timeline, so a flag can be tracked from year to year.
 
-Reads data/extracts/sec/<TICKER>/10-K/ and 10-K_A/ and writes:
+Reads data/packaged_software/extracts/sec/<TICKER>/10-K/ and 10-K_A/ and writes:
   output/tenk_text_flags.csv       one row per filing, with a count per flag
   output/tenk_flag_snippets.csv    one snippet per (filing, flag) so matches can be checked
 
@@ -21,7 +21,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-SEC = ROOT / "data" / "extracts" / "sec"
+SEC = HERE / "extracts" / "sec"
 COMPANIES = HERE / "packaged_software_companies.csv"
 OUT_FLAGS = HERE / "output" / "tenk_text_flags.csv"
 OUT_SNIPS = HERE / "output" / "tenk_flag_snippets.csv"

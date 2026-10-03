@@ -1,10 +1,10 @@
 """Filing-based signals for the 168-company universe, from data already on disk.
 
 Two sources, no new downloads:
-  1. Cached SEC submissions records (data/extracts/identity/cache/): counts of insider
+  1. Cached SEC submissions records (data/packaged_software/extracts/identity/cache/): counts of insider
      trades (Form 3/4), ownership filings (SC 13D/G), late-filing notices (NT 10-K/10-Q),
      SEC comment letters (CORRESP, UPLOAD), over the last 24 months.
-  2. The latest 10-K in data/extracts/sec/<TICKER>/10-K/: text flags for Item 1C cyber
+  2. The latest 10-K in data/packaged_software/extracts/sec/<TICKER>/10-K/: text flags for Item 1C cyber
      governance, going-concern doubt, material weakness, and customer concentration.
 
 Writes output/filing_signals.csv. Standard library only.
@@ -22,8 +22,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-CACHE = ROOT / "data" / "extracts" / "identity" / "cache"
-SEC = ROOT / "data" / "extracts" / "sec"
+CACHE = HERE / "extracts" / "identity" / "cache"
+SEC = HERE / "extracts" / "sec"
 COMPANIES = HERE / "packaged_software_companies.csv"
 OUT = HERE / "output" / "filing_signals.csv"
 

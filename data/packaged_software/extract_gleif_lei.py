@@ -25,7 +25,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 COMPANIES = HERE / "packaged_software_companies.csv"
-CACHE = ROOT / "data" / "extracts" / "_cache" / "gleif"
+CACHE = HERE / "extracts" / "_cache" / "gleif"
 OUT = HERE / "output" / "company_lei.csv"
 API = "https://api.gleif.org/api/v1/lei-records"
 FIELDS = ["cik", "ticker", "name", "lei", "gleif_legal_name", "match_confidence",

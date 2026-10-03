@@ -11,12 +11,12 @@ data/processed/
 __pycache__/
 
 # Raw downloads, caches and logs stay local. Only the CSV tables are shared.
-# Tables are kept under data/extracts and data/packaged_software/output.
-data/extracts/**
-!data/extracts/**/
-!data/extracts/**/*.csv
-data/extracts/sec/**
-!data/extracts/sec/
-!data/extracts/sec/filings_index.csv
-data/extracts/_cache/
-data/extracts/**/*.json
+# Tables are kept under data/packaged_software/extracts and data/packaged_software/output.
+data/packaged_software/extracts/**
+!data/packaged_software/extracts/**/
+!data/packaged_software/extracts/**/*.csv
+data/packaged_software/extracts/sec/**
+!data/packaged_software/extracts/sec/
+!data/packaged_software/extracts/sec/filings_index.csv
+data/packaged_software/extracts/_cache/
+data/packaged_software/extracts/**/*.json
