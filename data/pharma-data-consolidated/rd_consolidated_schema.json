@@ -1,0 +1,939 @@
+{
+  "title": "QuantHacks pharma R&D expenses and reasons (consolidated)",
+  "description": "Filing-level consolidation of public R&D expense amounts, MD&A/press-release change reasons, composition breakdowns, and company keyword summaries for the top-100 pharma universe from 2022 through the pipeline as-of date. Redundant numeric features removed via sparse/zero-variance/correlation filters (same method as edgar_consolidated).",
+  "meta": {
+    "built_at": "2026-10-03T20:52:55.585110+00:00",
+    "grain": "one row per SEC filing accession that carries any R&D disclosure signal",
+    "primary_key": [
+      "ticker",
+      "accession"
+    ],
+    "window": "2022-01-01 -> as-of pipeline snapshot",
+    "n_filings": 5767,
+    "n_companies": 100,
+    "n_columns": 65,
+    "feature_selection": {
+      "n_candidates": 41,
+      "dropped_low_variance": [
+        {
+          "column": "f_mdna_basis_stage",
+          "reason": "zero_variance",
+          "n_non_null": 1116,
+          "non_null_frac": 0.1935
+        }
+      ],
+      "dropped_correlated": [
+        {
+          "column": "f_has_xbrl_rd",
+          "kept_instead": "f_has_facts_rd",
+          "abs_corr": 0.9865
+        },
+        {
+          "column": "f_mdna_composition_cells",
+          "kept_instead": "f_mdna_component_rows",
+          "abs_corr": 0.9976
+        }
+      ],
+      "kept": [
+        "f_has_facts_rd",
+        "f_has_mdna_composition",
+        "f_has_press_rd",
+        "f_has_reason",
+        "f_n_press_rd_rows",
+        "f_driver_acquired_iprd",
+        "f_driver_acquisition_integration",
+        "f_driver_clinical_trial_activity",
+        "f_driver_collab_cost_share_reimbursement",
+        "f_driver_commercial_launch",
+        "f_driver_fx_other",
+        "f_driver_manufacturing_cmc",
+        "f_driver_milestone_upfront_license",
+        "f_driver_personnel_headcount",
+        "f_driver_program_advancement",
+        "f_driver_program_completion_or_termination",
+        "f_driver_restructuring",
+        "f_driver_stock_comp",
+        "f_n_reason_decrease",
+        "f_n_reason_increase",
+        "f_n_reason_sentences",
+        "f_xbrl_rd_n",
+        "f_xbrl_rd_total",
+        "f_facts_rd_expense",
+        "f_facts_rd_n",
+        "f_xbrl_rd_composition_n",
+        "f_xbrl_rd_composition_sum",
+        "f_xbrl_sbc_rd",
+        "f_mdna_basis_mixed",
+        "f_mdna_basis_nature",
+        "f_mdna_basis_program",
+        "f_mdna_basis_segment",
+        "f_mdna_component_rows",
+        "f_mdna_reconciles",
+        "f_press_rd_value_usd",
+        "f_press_rd_prior_usd",
+        "f_press_rd_yoy_pct",
+        "f_facts_acquired_iprd"
+      ],
+      "method": "min_non_null+variance+pairwise_abs_corr",
+      "corr_threshold": 0.95,
+      "min_non_null": 25,
+      "max_keep": 80,
+      "n_kept": 38,
+      "n_dropped": 3
+    },
+    "source_dir": "data\\pharma-data",
+    "cache_dir": "C:\\Users\\ackjl\\AppData\\Local\\QuantHacks\\sec_cache\\work"
+  },
+  "company_summary": {
+    "grain": "one row per ticker",
+    "n_companies": 100,
+    "coverage_complete": 98,
+    "columns": [
+      "ticker",
+      "name",
+      "cik",
+      "has_rd_profile",
+      "rd_primary_tag",
+      "n_rd_quarterly_facts",
+      "n_acquired_iprd_facts",
+      "n_xbrl_rd_facts",
+      "n_composition_cells",
+      "n_reason_sentences",
+      "n_press_rd_rows",
+      "n_named_programs",
+      "n_reason_increase",
+      "n_reason_decrease",
+      "latest_rd_expense",
+      "first_rd_expense_2022plus",
+      "composition_bases",
+      "top_drivers",
+      "keywords",
+      "program_labels",
+      "data_sources",
+      "sample_reason_sentence",
+      "description_summary",
+      "coverage_complete"
+    ]
+  },
+  "source_catalog": [
+    {
+      "file": "rd_totals_quarterly.csv",
+      "role": "rd_totals_companyfacts",
+      "n_rows": 1834,
+      "n_columns": 22,
+      "columns": "ticker|name|quarter|end|metric|value|tag|form|filed|fiscal_year|fiscal_quarter|start|duration_days|value_basis|accession|accepted_at_et|latest_value|was_restated|first_seen_as_comparative|tag_ambiguous|unit|taxonomy",
+      "bytes": 455302
+    },
+    {
+      "file": "rd_expense_reasons_all.csv",
+      "role": "rd_change_reasons",
+      "n_rows": 5377,
+      "n_columns": 10,
+      "columns": "ticker|name|accession|expense_line|sentence|direction|change_drivers|source|has_table|source_kind",
+      "bytes": 2546755
+    },
+    {
+      "file": "rd_press_releases.csv",
+      "role": "rd_press_release_amounts",
+      "n_rows": 4720,
+      "n_columns": 20,
+      "columns": "ticker|name|accession|filing_date|form|doc_seq|doc_type|headline|is_earnings|period_label|rd_value|rd_prior_value|rd_scale|rd_reason_sentence|rd_period_header|rd_currency|url|rd_value_usd|rd_prior_value_usd|rd_yoy_change_pct",
+      "bytes": 1775135
+    },
+    {
+      "file": "rd_xbrl_facts.csv",
+      "role": "rd_xbrl_facts",
+      "n_rows": 22430,
+      "n_columns": 20,
+      "columns": "accession|group|concept|label|is_custom|value|value_text|unit|decimals|period_start|period_end|is_instant|duration_kind|is_current_period|dims|member_labels|instrument_key|instrument_label|ticker|name",
+      "bytes": 7390269
+    },
+    {
+      "file": "rd_composition.csv",
+      "role": "rd_mdna_composition",
+      "n_rows": 35007,
+      "n_columns": 27,
+      "columns": "ticker|name|accession|expense_line|table_id|caption|row_idx|row_label|is_total_row|is_subtotal_row|col_idx|col_header|value|scale|breakdown_basis|reconciles|residual|matched_total|n_component_rows|section|period_start|period_end|is_current_period|total_sign|total_gap|matched_concept|currency",
+      "bytes": 20391496
+    },
+    {
+      "file": "rd_company_summary.csv",
+      "role": "rd_company_dimension",
+      "n_rows": 100,
+      "n_columns": 24,
+      "columns": "ticker|name|cik|has_rd_profile|rd_primary_tag|n_rd_quarterly_facts|n_acquired_iprd_facts|n_xbrl_rd_facts|n_composition_cells|n_reason_sentences|n_press_rd_rows|n_named_programs|n_reason_increase|n_reason_decrease|latest_rd_expense|first_rd_expense_2022plus|composition_bases|top_drivers|keywords|program_labels|data_sources|sample_reason_sentence|description_summary|coverage_complete",
+      "bytes": 188509
+    },
+    {
+      "file": "rd_consolidated.csv",
+      "role": "rd_consolidated_filings",
+      "n_rows": 5767,
+      "n_columns": 65,
+      "columns": "ticker|name|cik|accession|form|form_tier|filing_date|report_date|accepted_at_et|url|index_url|hq_state|state_of_incorporation|sic|has_rd|rd_primary_tag|has_product_revenue|rd_reason_sentence|rd_period_header|headline|reason_summary|top_drivers|keywords|program_labels|description_summary|company_data_sources|composition_bases|f_has_facts_rd|f_has_mdna_composition|f_has_press_rd|f_has_reason|f_n_press_rd_rows|f_driver_acquired_iprd|f_driver_acquisition_integration|f_driver_clinical_trial_activity|f_driver_collab_cost_share_reimbursement|f_driver_commercial_launch|f_driver_fx_other|f_driver_manufacturing_cmc|f_driver_milestone_upfront_license|f_driver_personnel_headcount|f_driver_program_advancement|f_driver_program_completion_or_termination|f_driver_restructuring|f_driver_stock_comp|f_n_reason_decrease|f_n_reason_increase|f_n_reason_sentences|f_xbrl_rd_n|f_xbrl_rd_total|f_facts_rd_expense|f_facts_rd_n|f_xbrl_rd_composition_n|f_xbrl_rd_composition_sum|f_xbrl_sbc_rd|f_mdna_basis_mixed|f_mdna_basis_nature|f_mdna_basis_program|f_mdna_basis_segment|f_mdna_component_rows|f_mdna_reconciles|f_press_rd_value_usd|f_press_rd_prior_usd|f_press_rd_yoy_pct|f_facts_acquired_iprd",
+      "bytes": 12640094
+    },
+    {
+      "file": "rd_consolidated.parquet",
+      "role": "rd_consolidated_filings",
+      "n_rows": 5767,
+      "n_columns": 65,
+      "columns": "ticker|name|cik|accession|form|form_tier|filing_date|report_date|accepted_at_et|url|index_url|hq_state|state_of_incorporation|sic|has_rd|rd_primary_tag|has_product_revenue|rd_reason_sentence|rd_period_header|headline|reason_summary|top_drivers|keywords|program_labels|description_summary|company_data_sources|composition_bases|f_has_facts_rd|f_has_mdna_composition|f_has_press_rd|f_has_reason|f_n_press_rd_rows|f_driver_acquired_iprd|f_driver_acquisition_integration|f_driver_clinical_trial_activity|f_driver_collab_cost_share_reimbursement|f_driver_commercial_launch|f_driver_fx_other|f_driver_manufacturing_cmc|f_driver_milestone_upfront_license|f_driver_personnel_headcount|f_driver_program_advancement|f_driver_program_completion_or_termination|f_driver_restructuring|f_driver_stock_comp|f_n_reason_decrease|f_n_reason_increase|f_n_reason_sentences|f_xbrl_rd_n|f_xbrl_rd_total|f_facts_rd_expense|f_facts_rd_n|f_xbrl_rd_composition_n|f_xbrl_rd_composition_sum|f_xbrl_sbc_rd|f_mdna_basis_mixed|f_mdna_basis_nature|f_mdna_basis_program|f_mdna_basis_segment|f_mdna_component_rows|f_mdna_reconciles|f_press_rd_value_usd|f_press_rd_prior_usd|f_press_rd_yoy_pct|f_facts_acquired_iprd",
+      "bytes": 1084031
+    },
+    {
+      "file": "rd_file_catalog.csv",
+      "role": "file_catalog",
+      "n_rows": 10,
+      "n_columns": 6,
+      "columns": "file|role|n_rows|n_columns|columns|bytes",
+      "bytes": 4436
+    },
+    {
+      "file": "rd_consolidated_schema.json",
+      "role": "schema",
+      "n_rows": 0,
+      "n_columns": 0,
+      "columns": "",
+      "bytes": 30491
+    }
+  ],
+  "driver_vocabulary": [
+    "clinical_trial_activity",
+    "program_advancement",
+    "program_completion_or_termination",
+    "manufacturing_cmc",
+    "personnel_headcount",
+    "stock_comp",
+    "milestone_upfront_license",
+    "acquired_iprd",
+    "collab_cost_share_reimbursement",
+    "acquisition_integration",
+    "restructuring",
+    "commercial_launch",
+    "fx_other"
+  ],
+  "columns": [
+    {
+      "name": "ticker",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 100,
+      "kind": "spine",
+      "examples": [
+        "ABBV",
+        "ABBV",
+        "ABBV"
+      ]
+    },
+    {
+      "name": "name",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 100,
+      "kind": "spine",
+      "examples": [
+        "ABBVIE INC.",
+        "ABBVIE INC.",
+        "ABBVIE INC."
+      ]
+    },
+    {
+      "name": "cik",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 101,
+      "kind": "spine",
+      "examples": [
+        "0001551152",
+        "0001551152",
+        "0001551152"
+      ]
+    },
+    {
+      "name": "accession",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 5767,
+      "kind": "spine",
+      "examples": [
+        "0001551152-22-000003",
+        "0001551152-22-000007",
+        "0001104659-22-048450"
+      ]
+    },
+    {
+      "name": "form",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 10,
+      "kind": "spine",
+      "examples": [
+        "8-K",
+        "10-K",
+        "8-K"
+      ]
+    },
+    {
+      "name": "form_tier",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "examples": [
+        "anchor",
+        "financial",
+        "anchor"
+      ]
+    },
+    {
+      "name": "filing_date",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 1046,
+      "kind": "spine",
+      "examples": [
+        "2022-02-02",
+        "2022-02-18",
+        "2022-04-21"
+      ]
+    },
+    {
+      "name": "report_date",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 1128,
+      "kind": "spine",
+      "examples": [
+        "2022-02-02",
+        "2021-12-31",
+        "2022-04-21"
+      ]
+    },
+    {
+      "name": "accepted_at_et",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 5756,
+      "kind": "spine",
+      "examples": [
+        "2022-02-02 07:48:04",
+        "2022-02-18 12:41:31",
+        "2022-04-21 17:12:34"
+      ]
+    },
+    {
+      "name": "url",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 5767,
+      "kind": "spine",
+      "examples": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000003/abbv-20220202.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000007/abbv-20211231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000110465922048450/tm2213254d1_8k.htm"
+      ]
+    },
+    {
+      "name": "index_url",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 5767,
+      "kind": "spine",
+      "examples": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000003/0001551152-22-000003-index.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000007/0001551152-22-000007-index.htm",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000110465922048450/0001104659-22-048450-index.htm"
+      ]
+    },
+    {
+      "name": "hq_state",
+      "dtype": "str",
+      "non_null": 4783,
+      "null_frac": 0.170626,
+      "n_distinct": 15,
+      "kind": "spine",
+      "examples": [
+        "IL",
+        "IL",
+        "IL"
+      ]
+    },
+    {
+      "name": "state_of_incorporation",
+      "dtype": "str",
+      "non_null": 4811,
+      "null_frac": 0.165771,
+      "n_distinct": 17,
+      "kind": "spine",
+      "examples": [
+        "DE",
+        "DE",
+        "DE"
+      ]
+    },
+    {
+      "name": "sic",
+      "dtype": "int64",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 1,
+      "kind": "spine",
+      "min": 2834.0,
+      "max": 2834.0
+    },
+    {
+      "name": "has_rd",
+      "dtype": "bool",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "rd_primary_tag",
+      "dtype": "str",
+      "non_null": 5665,
+      "null_frac": 0.017687,
+      "n_distinct": 2,
+      "kind": "spine",
+      "examples": [
+        "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+        "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+        "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost"
+      ]
+    },
+    {
+      "name": "has_product_revenue",
+      "dtype": "bool",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "spine",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "rd_reason_sentence",
+      "dtype": "str",
+      "non_null": 3989,
+      "null_frac": 0.308306,
+      "n_distinct": 1040,
+      "kind": "spine",
+      "examples": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "rd_period_header",
+      "dtype": "str",
+      "non_null": 3989,
+      "null_frac": 0.308306,
+      "n_distinct": 236,
+      "kind": "spine",
+      "examples": [
+        "Fourth Quarter Ended December 31, 2021",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "headline",
+      "dtype": "str",
+      "non_null": 3989,
+      "null_frac": 0.308306,
+      "n_distinct": 3426,
+      "kind": "spine",
+      "examples": [
+        "AbbVie Reports Full-Year and Fourth-Quarter 2021 Financial Results",
+        "Reconciliation of Reported GAAP and Non-GAAP Results to Revised Non-GAAP Results",
+        "AbbVie Reports First-Quarter 2022 Financial Results"
+      ]
+    },
+    {
+      "name": "reason_summary",
+      "dtype": "str",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2625,
+      "kind": "spine",
+      "examples": [
+        "R&D expenses as a percentage of net revenues decreased in 2021 primarily due to the increased scale of the combined company and synergies realized for the period subsequent to completion of the Allergan acquisition as well as lower integration costs related to the acquisition of Allergan.",
+        "R&D expense percentage was favorably impacted by the purchase of a priority review voucher from a third party in the first quarter of 2021, increased scale of the combined company and synergies realized as well as lower integration costs related to the acquisition of Allergan.",
+        "R&D expense percentage was favorably impacted by the purchase of priority review vouchers from third parties during the three and six months ended June 30, 2021, increased scale of the combined company and synergies realized as well as lower integration costs related to the acquisition of Allergan."
+      ]
+    },
+    {
+      "name": "top_drivers",
+      "dtype": "str",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 589,
+      "kind": "spine",
+      "examples": [
+        "program_completion_or_termination,acquisition_integration",
+        "acquisition_integration",
+        "acquisition_integration"
+      ]
+    },
+    {
+      "name": "keywords",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 100,
+      "kind": "spine",
+      "examples": [
+        "percentage,acquisition,lower,net,revenues,integration,impacted,allergan,well,funding,support,all,stages,pipeline,assets,scale,combined,synergies,realized,march,favorably,purchase,priority,review,third,during,unfavorably,driven,humira,loss,exclusivity,united,states,incurred,immunogen,vouchers,parties,six,june,nine",
+        "percentage,acquisition,lower,net,revenues,integration,impacted,allergan,well,funding,support,all,stages,pipeline,assets,scale,combined,synergies,realized,march,favorably,purchase,priority,review,third,during,unfavorably,driven,humira,loss,exclusivity,united,states,incurred,immunogen,vouchers,parties,six,june,nine",
+        "percentage,acquisition,lower,net,revenues,integration,impacted,allergan,well,funding,support,all,stages,pipeline,assets,scale,combined,synergies,realized,march,favorably,purchase,priority,review,third,during,unfavorably,driven,humira,loss,exclusivity,united,states,incurred,immunogen,vouchers,parties,six,june,nine"
+      ]
+    },
+    {
+      "name": "program_labels",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 90,
+      "kind": "spine",
+      "examples": [
+        "Collaborative arrangement|Genentech, Inc.",
+        "Collaborative arrangement|Genentech, Inc.",
+        "Collaborative arrangement|Genentech, Inc."
+      ]
+    },
+    {
+      "name": "description_summary",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 100,
+      "kind": "spine",
+      "examples": [
+        "ABBVIE INC. (ABBV). latest tagged R&D expense about 2,344,000,000. sources: companyfacts_rd, xbrl_rd, change_reasons, press_release_rd, named_programs. top change drivers: acquisition_integration, program_completion_or_termination, personnel_headcount. named programs: Collaborative arrangement, Genentech, Inc.. reason sentences tilted increase=8 / decrease=3. example: R&D expenses as a percentage of net revenues decreased in 2021 primarily due to the increased scale of the combined company and synergies realized for the period subsequent to completion of the Allergan acquisition as we.",
+        "ABBVIE INC. (ABBV). latest tagged R&D expense about 2,344,000,000. sources: companyfacts_rd, xbrl_rd, change_reasons, press_release_rd, named_programs. top change drivers: acquisition_integration, program_completion_or_termination, personnel_headcount. named programs: Collaborative arrangement, Genentech, Inc.. reason sentences tilted increase=8 / decrease=3. example: R&D expenses as a percentage of net revenues decreased in 2021 primarily due to the increased scale of the combined company and synergies realized for the period subsequent to completion of the Allergan acquisition as we.",
+        "ABBVIE INC. (ABBV). latest tagged R&D expense about 2,344,000,000. sources: companyfacts_rd, xbrl_rd, change_reasons, press_release_rd, named_programs. top change drivers: acquisition_integration, program_completion_or_termination, personnel_headcount. named programs: Collaborative arrangement, Genentech, Inc.. reason sentences tilted increase=8 / decrease=3. example: R&D expenses as a percentage of net revenues decreased in 2021 primarily due to the increased scale of the combined company and synergies realized for the period subsequent to completion of the Allergan acquisition as we."
+      ]
+    },
+    {
+      "name": "company_data_sources",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 7,
+      "kind": "spine",
+      "examples": [
+        "companyfacts_rd|xbrl_rd|change_reasons|press_release_rd|named_programs",
+        "companyfacts_rd|xbrl_rd|change_reasons|press_release_rd|named_programs",
+        "companyfacts_rd|xbrl_rd|change_reasons|press_release_rd|named_programs"
+      ]
+    },
+    {
+      "name": "composition_bases",
+      "dtype": "str",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 9,
+      "kind": "spine",
+      "examples": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "f_has_facts_rd",
+      "dtype": "float64",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_has_mdna_composition",
+      "dtype": "float64",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_has_press_rd",
+      "dtype": "float64",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_has_reason",
+      "dtype": "float64",
+      "non_null": 5767,
+      "null_frac": 0.0,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_n_press_rd_rows",
+      "dtype": "float64",
+      "non_null": 3989,
+      "null_frac": 0.308306,
+      "n_distinct": 7,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 7.0
+    },
+    {
+      "name": "f_driver_acquired_iprd",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_acquisition_integration",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_clinical_trial_activity",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_collab_cost_share_reimbursement",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_commercial_launch",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_fx_other",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_manufacturing_cmc",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_milestone_upfront_license",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_personnel_headcount",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_program_advancement",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_program_completion_or_termination",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_restructuring",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_driver_stock_comp",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_n_reason_decrease",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 8,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 7.0
+    },
+    {
+      "name": "f_n_reason_increase",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 14,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 13.0
+    },
+    {
+      "name": "f_n_reason_sentences",
+      "dtype": "float64",
+      "non_null": 2690,
+      "null_frac": 0.533553,
+      "n_distinct": 14,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 14.0
+    },
+    {
+      "name": "f_xbrl_rd_n",
+      "dtype": "float64",
+      "non_null": 1659,
+      "null_frac": 0.712329,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 2.0
+    },
+    {
+      "name": "f_xbrl_rd_total",
+      "dtype": "float64",
+      "non_null": 1659,
+      "null_frac": 0.712329,
+      "n_distinct": 1628,
+      "kind": "selected_feature",
+      "min": 165000.0,
+      "max": 30531000000.0
+    },
+    {
+      "name": "f_facts_rd_expense",
+      "dtype": "float64",
+      "non_null": 1627,
+      "null_frac": 0.717878,
+      "n_distinct": 1575,
+      "kind": "selected_feature",
+      "min": -20759000.0,
+      "max": 13321000000.0
+    },
+    {
+      "name": "f_facts_rd_n",
+      "dtype": "float64",
+      "non_null": 1627,
+      "null_frac": 0.717878,
+      "n_distinct": 3,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 3.0
+    },
+    {
+      "name": "f_xbrl_rd_composition_n",
+      "dtype": "float64",
+      "non_null": 1311,
+      "null_frac": 0.772672,
+      "n_distinct": 54,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 100.0
+    },
+    {
+      "name": "f_xbrl_rd_composition_sum",
+      "dtype": "float64",
+      "non_null": 1311,
+      "null_frac": 0.772672,
+      "n_distinct": 1227,
+      "kind": "selected_feature",
+      "min": -1275500000.0,
+      "max": 97354000000.75
+    },
+    {
+      "name": "f_xbrl_sbc_rd",
+      "dtype": "float64",
+      "non_null": 1263,
+      "null_frac": 0.780995,
+      "n_distinct": 1226,
+      "kind": "selected_feature",
+      "min": -2747000.0,
+      "max": 51200000000.0
+    },
+    {
+      "name": "f_mdna_basis_mixed",
+      "dtype": "float64",
+      "non_null": 1116,
+      "null_frac": 0.806485,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_mdna_basis_nature",
+      "dtype": "float64",
+      "non_null": 1116,
+      "null_frac": 0.806485,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_mdna_basis_program",
+      "dtype": "float64",
+      "non_null": 1116,
+      "null_frac": 0.806485,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_mdna_basis_segment",
+      "dtype": "float64",
+      "non_null": 1116,
+      "null_frac": 0.806485,
+      "n_distinct": 2,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_mdna_component_rows",
+      "dtype": "float64",
+      "non_null": 1116,
+      "null_frac": 0.806485,
+      "n_distinct": 71,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 132.0
+    },
+    {
+      "name": "f_mdna_reconciles",
+      "dtype": "float64",
+      "non_null": 1116,
+      "null_frac": 0.806485,
+      "n_distinct": 8,
+      "kind": "selected_feature",
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "f_press_rd_value_usd",
+      "dtype": "float64",
+      "non_null": 246,
+      "null_frac": 0.957344,
+      "n_distinct": 200,
+      "kind": "selected_feature",
+      "min": 12.0,
+      "max": 998.7
+    },
+    {
+      "name": "f_press_rd_prior_usd",
+      "dtype": "float64",
+      "non_null": 229,
+      "null_frac": 0.960291,
+      "n_distinct": 184,
+      "kind": "selected_feature",
+      "min": 1.0,
+      "max": 998.7
+    },
+    {
+      "name": "f_press_rd_yoy_pct",
+      "dtype": "float64",
+      "non_null": 218,
+      "null_frac": 0.962199,
+      "n_distinct": 212,
+      "kind": "selected_feature",
+      "min": -0.908695652173913,
+      "max": 126.0
+    },
+    {
+      "name": "f_facts_acquired_iprd",
+      "dtype": "float64",
+      "non_null": 148,
+      "null_frac": 0.974337,
+      "n_distinct": 89,
+      "kind": "selected_feature",
+      "min": -1192000000.0,
+      "max": 8540000000.0
+    }
+  ]
+}
