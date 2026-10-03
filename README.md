@@ -36,6 +36,7 @@ This changes the starter notebook's same-day entry assumption, so its P&L can di
 | `src/risk_management.py` | Bootstrap uncertainty, comparison tables, and loss budget |
 | `src/capital_liquidity.py` | Cash collateral, option volume limits, and cost assumptions |
 | `src/config.py` | Shared study parameters |
+| `scripts/import_tiger.py` | Repeatable import of local API cache and study outputs into Tiger Cloud |
 | `tests/` | Offline tests for event construction, P&L, risk, and capacity |
 | `requirements.txt`, `setup.ps1`, `setup.sh`, `.env.example` | Reproducible setup and key template |
 | `data/README.md` | Data handling and download notes |
@@ -58,3 +59,13 @@ The notebook fetches disclosures from Massive's `/stocks/filings/8-K/vX/disclosu
 The JSON file in `examples/` is copied from [Massive's public 8-K Disclosures documentation](https://massive.com/docs/rest/stocks/filings/8-k-disclosures) solely to explain the response format. It is not a live query or a result from the notebook.
 
 The repository contains the runner, notebook, tests, downloaded challenge references, and a public API response example. A Massive API key is required to download the study data and reproduce event rows and results.
+
+## Copy local data to Tiger Cloud
+
+After authenticating with the Tiger CLI (`tiger auth login`) and running a study, import the local cache and all manifested runs under `data/processed/`:
+
+```bash
+python scripts/import_tiger.py --service-id YOUR_TIGER_SERVICE_ID
+```
+
+Use `--dry-run` to see the file and row counts without writing. The importer uses the CLI's saved credentials; no database password enters the repository. It creates the `quant_hacks` schema with `source_files` (exact file bytes and SHA-256 hashes), `study_runs` (manifests), `study_rows` (CSV rows as JSON), and an `api_responses` JSON view. Repeating the import updates the same files and study run instead of adding duplicate rows. See [data/README.md](data/README.md) for example queries. Local files remain in place as a second copy.
