@@ -1,4 +1,4 @@
-# Financial profiles from SEC filings: source and build research
+o# Financial profiles from SEC filings: source and build research
 
 Researched 2026-10-02. Initial universe: the **1,630 distinct CIKs already in Tiger Cloud**. This is a design and source audit; it does not claim that the financial statements have been downloaded into Tiger.
 

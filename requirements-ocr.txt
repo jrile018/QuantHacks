@@ -1,0 +1,4 @@
+# Optional document OCR dependencies. The Tesseract executable is installed separately.
+Pillow>=10.0
+pytesseract>=0.3.13
+pypdfium2>=4.30

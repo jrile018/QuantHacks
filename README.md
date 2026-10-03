@@ -32,6 +32,7 @@ This changes the starter notebook's same-day entry assumption, so its P&L can di
 | `gator-quant-hacks-8k-options-challenge.ipynb` | Visual research walkthrough and comparative analysis |
 | `run_all.py`, `src/main.py` | Reproducible command-line runner and CSV/manifest output |
 | `src/data.py` | API access, cache, calendar, disclosure events, and options bars |
+| `src/document_ocr.py` | Optional scanned-document OCR with per-page text and source hashes |
 | `src/implementation.py` | Option leg pricing and six-strategy P&L engine |
 | `src/risk_management.py` | Bootstrap uncertainty, comparison tables, and loss budget |
 | `src/capital_liquidity.py` | Cash collateral, option volume limits, and cost assumptions |
@@ -39,6 +40,7 @@ This changes the starter notebook's same-day entry assumption, so its P&L can di
 | `scripts/import_tiger.py` | Repeatable import of local API cache and study outputs into Tiger Cloud |
 | `tests/` | Offline tests for event construction, P&L, risk, and capacity |
 | `requirements.txt`, `setup.ps1`, `setup.sh`, `.env.example` | Reproducible setup and key template |
+| `requirements-ocr.txt` | Optional OCR Python dependencies |
 | `data/README.md` | Data handling and download notes |
 | `docs/financial-profile-research.md` | SEC form coverage, no-key data sources, document/OCR access, and financial reconciliation design for the Tiger CIK universe |
 | `docs/company-sector-breakdown.md` | SIC-based industry split of the 1,630 Tiger 8-K filers, with counts, definitions, sources, and limits |
@@ -63,6 +65,18 @@ The JSON file in `examples/` is copied from [Massive's public 8-K Disclosures do
 The repository contains the runner, notebook, tests, downloaded challenge references, and a public API response example. A Massive API key is required to download the study data and reproduce event rows and results.
 
 For a proposed company-financials dataset based on the 1,630 CIKs exported from Tiger, read the [financial profile research](docs/financial-profile-research.md). SEC public filing and XBRL APIs require no API key. The proposed financial statements and documents have not yet been imported into Tiger.
+
+## OCR scanned documents
+
+Install optional Python dependencies with `.venv\Scripts\python.exe -m pip install -r requirements-ocr.txt` on Windows (or `.venv/bin/python -m pip install -r requirements-ocr.txt` on macOS/Linux). Install the [Tesseract executable](https://tesseract-ocr.github.io/tessdoc/Installation.html) separately and make it available on `PATH`. The module reads PNG, JPEG, TIFF (including all pages), BMP, WebP, and scanned PDF files. PDF pages are rendered with pypdfium2 before OCR.
+
+```powershell
+.venv\Scripts\python.exe -m src.document_ocr data\raw\sample-scan.pdf --output data\processed\ocr\sample-scan.json
+```
+
+The module also detects common Windows user and system installation paths. For another location, add `--tesseract-cmd "C:\path\to\tesseract.exe"`. The output contains full text, per-page text, page count, Tesseract word-confidence averages, the OCR settings and engine version, and a SHA-256 hash of the input file. Confidence is a recognition diagnostic, **not** proof that amounts or tables were read correctly. OCR text is not yet parsed into financial statements or imported into Tiger. Prefer direct text/XBRL extraction for documents that already contain machine-readable data.
+
+This module uses the image-to-text architecture reviewed in [Sun-Biz-Aggregator](https://github.com/IlanDanial/Sun-Biz-Aggregator/tree/060050d6daa376049e0fe60edf8ee27c0d3a7e40). It is independently implemented here because that repository does not include a license file; its Florida UCC form parsers and training scripts are not bundled.
 
 ## Copy local data to Tiger Cloud
 
