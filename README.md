@@ -41,6 +41,7 @@ This changes the starter notebook's same-day entry assumption, so its P&L can di
 | `requirements.txt`, `setup.ps1`, `setup.sh`, `.env.example` | Reproducible setup and key template |
 | `data/README.md` | Data handling and download notes |
 | `docs/financial-profile-research.md` | SEC form coverage, no-key data sources, document/OCR access, and financial reconciliation design for the Tiger CIK universe |
+| `docs/company-sector-breakdown.md` | SIC-based industry split of the 1,630 Tiger 8-K filers, with counts, definitions, sources, and limits |
 | `examples/` | Documentation example showing the raw API response shape; **not** study data |
 | `references/` | Downloaded challenge briefs and original starter archives |
 
