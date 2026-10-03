@@ -1,0 +1,11 @@
+# Gator Quant Hacks 2026 · Trade the 8-K starter notebook
+# Python 3.10+ required. Tested with Python 3.14.3 and the versions noted below.
+
+pandas>=2.2        # tested 3.0.5
+numpy>=2.0         # tested 2.5.2
+requests>=2.31     # tested 2.34.2
+matplotlib>=3.8    # tested 3.11.1
+
+# Running the notebook
+ipykernel>=6.29    # tested 7.3.0
+jupyterlab>=4.0    # skip if you use VS Code with the Jupyter extension

@@ -1,0 +1,1084 @@
+<browser__document__url>https://www.gqhacks.com/tracks/systematic-trading</browser__document__url>
+<browser__document__title>Systematic Trading Track | Gator Quant Hacks 2026</browser__document__title>
+
+<browser__document__content>
+GQH-01
+SPACE MARKET
+ORBIT STABLE
+GQH
+SYSTEMS NOMINAL
+ABOUT
+TRACKS
+SCHEDULE
+SPONSORS
+TEAM
+FAQ
+APPLY
+BOARD NOW ->
+← ALL TRACKS
+TRACK 03 · SYSTEMATIC TRADING
+STRATEGY · BACKTEST · QUANT NOTE · SPONSORED BY WEBULL
+OCT 2–4, 2026 · ANY LANGUAGE · NO P&L LEADERBOARD
+FIND AN EDGE. PROVE IT HONESTLY.
+FIND AN
+EDGE
+PROVE IT HONESTLY
+DELIVERABLES
+NOTE + CODE
+QUANT NOTE
+≤ 5 PAGES
+SCORED
+5 × 10 = 50
+DEVPOST
+SUN 10:00 AM
++ BONUS PRIZE
+TRADE THE 8-K · OPTIONS CHALLENGE
+→
+BACKGROUND: A TREND RULE ON SYNTHETIC PRICES
+READ THE BRIEF
+01
+CH 01
+OVERVIEW
+WHAT YOU’RE DOING THIS WEEKEND
+
+Your team designs, builds and backtests a systematic trading strategy, then hands in a quant note (five pages max) and the code behind it. There’s no P&L leaderboard. Judges score your reasoning: why the edge should exist, how carefully you tested it, and whether it would hold up in real trading.
+
+FRI 7:15 PM
+HACKING BEGINS
+
+Pick a market and write down why you think there’s an edge in it. Do this before you run a single backtest.
+
+FRI NIGHT
+DATA
+
+Get clean history from sponsor data or a free public source. Settle on your universe, then set aside the most recent stretch as your out-of-sample period and don’t look at it.
+
+SATURDAY
+BUILD & TEST
+
+Build the signal, size positions, add realistic costs, and try to break it. Expect most ideas to fail here. Keep a list of the ones that did, because it goes in your note.
+
+SAT NIGHT
+EVALUATE ONCE
+
+Run the out-of-sample period once and report the result, good or bad. Then write the quant note around what you found.
+
+SUN 10:00 AM
+DEVPOST CLOSES
+
+Note and repo link due on Devpost. You can keep pushing code until 11:00 AM.
+
+YOUR TASK
+OCT 2–4
+
+Start from a clear economic hypothesis, turn it into a strategy, and test it with realistic costs and a real out-of-sample period. Then report what you found, including what didn’t work.
+
+Judges care more about how you tested than how big the returns are. A modest strategy with a solid rationale will score better than a huge backtest that doesn’t hold up. Use any language; most teams use Python.
+
+IN SCOPE
+HYPOTHESIS
+DATA
+SIGNALS
+SIZING
+COSTS
+OUT-OF-SAMPLE
+RISK
+CAPACITY
+
++ BONUS PRIZE · SPONSORED BY
+TRADE THE 8-K
+
+Massive is running a bonus challenge inside this track. You use Massive’s 8-K disclosure categories as the signal and its options data as the instrument, and argue that certain kinds of corporate filings tell you when to put on one of five options strategies. There’s a starter notebook for the data work, and judging is on the research rather than P&L.
+
+$500 toward the winning team’s prize, plus a month of Massive data for each member
+Starter notebook and Massive’s judging criteria are on the bonus page. All the normal track rules still apply.
+Workshop: Saturday 1:00 PM, Reitz Room 2355
+BONUS CHALLENGE DETAILS →
+WHAT JUDGES WANT TO SEE
+01
+A HYPOTHESIS UP FRONT
+
+An economic reason for the edge, written down before you saw any results.
+
+02
+A FAIR TEST
+
+Realistic costs, and an out-of-sample period you never tuned on.
+
+03
+THE FAILURES TOO
+
+What didn’t work, and how many variants you tried in total.
+
+04
+CODE THAT RUNS
+
+A judge can run it and get the same headline numbers that are in your note.
+
+KEY TERMS
+↺
+BACKTEST
+
+Running a strategy over historical data as if you’d traded it, bar by bar, using only what you would have known at each point.
+
+The point is to find out where your idea breaks.
+
+OOS
+OUT-OF-SAMPLE
+
+Data you set aside and never use to design or tune the strategy. It’s as close as you can get to testing on the future.
+
+For this track: the most recent 20% of your history or the most recent 2 years, whichever is shorter.
+
+S/σ
+SHARPE RATIO
+
+Average return divided by volatility, annualized. Roughly, how much return you got for the risk you took.
+
+A Sharpe above 3 on daily data usually means a bug. Check before you celebrate.
+
+▼%
+MAX DRAWDOWN
+
+The biggest drop from a peak in your equity curve to the low that came after it.
+
+Ask yourself whether you’d have kept running the strategy through it.
+
+⇄
+TURNOVER
+
+How much you trade per year, as a multiple of your capital. More trading means more costs.
+
+Plenty of strategies that make money gross lose it once you charge for turnover.
+
+bp
+BASIS POINT
+
+One hundredth of a percent (0.01%). Trading costs are usually quoted in bps per trade.
+
+Pick a cost for your market and explain where the number came from.
+
+NO LEADERBOARD
+Returns alone don’t win anything. Judges would rather see a Sharpe of 0.6 you can defend than a 4 you can’t explain.
+
+02
+CH 02
+HYPOTHESIS
+WHO’S ON THE OTHER SIDE OF YOUR TRADE?
+
+Every trade has a counterparty. Before you look at any results, write down who’s taking the other side and why the opportunity hasn’t gone away. That’s the core of your Economic Foundation score, and having it in writing makes it harder to fool yourself once backtests start coming in.
+
+HYPOTHESIS BUILDER · WHO IS ON THE OTHER SIDE?
+PICK AN EDGE SOURCE · FILL THE BLANKS
+%
+RISK PREMIUM
+?!
+BEHAVIORAL BIAS
+#
+STRUCTURAL CONSTRAINT
+⇄
+LIQUIDITY PROVISION
+
+You are paid for holding a risk that other investors would rather not hold.
+
+THE OTHER SIDE
+Investors who pay to shed the risk: hedgers, insurance buyers, holders who can’t stomach drawdowns.
+CLASSIC EXAMPLE
+Value and momentum premia show up across stocks, bonds, currencies and commodities.
+Asness, Moskowitz & Pedersen, Value and Momentum Everywhere (2013); Ilmanen, Expected Returns (2011)
+WHAT WOULD KILL IT
+The risk arrives all at once, or the trade gets crowded and the premium shrinks.
+HYPOTHESIS · RISK PREMIUM
+WRITTEN BEFORE RESULTS · 2026-10-02 19:46
+
+We expect LARGE-CAP US EQUITIES to EARN A POSITIVE CARRY over ONE TO THREE MONTHS because HEDGERS PAY A PREMIUM TO OFFLOAD THE RISK, and the edge persists because THE RISK IS REAL AND THE LOSSES DO HAPPEN. If true, we should see HIGHER RETURNS FOR THE RISKIER LEG, NET OF COSTS; it fails if THE RETURNS ARE EXPLAINED BY MARKET BETA ALONE.
+
+COPY HYPOTHESIS
+UNIVERSE
+BEHAVIOR
+HORIZON
+WHO’S ON THE OTHER SIDE
+WHY IT PERSISTS
+TESTABLE PREDICTION
+IT FAILS IF
+WHO’S ON THE OTHER SIDE · PICK ONE OR WRITE YOUR OWN
+HEDGERS PAY A PREMIUM TO OFFLOAD THE RISK
+MOST INVESTORS AVOID ASSETS THAT LOSE IN BAD TIMES
+LEVERAGE-CONSTRAINED INVESTORS OVERPAY FOR SAFE-LOOKING ASSETS
+WHO’S ON THE OTHER SIDE
+hedgers pay a premium to offload the risk
+
+COMMIT IT FIRST
+Commit your hypothesis to the repo before your first backtest. The commit timestamp shows judges it came before the results.
+
+03
+CH 03
+DATA
+GET CLEAN DATA, THEN HOLD SOME BACK
+
+Pick a liquid, publicly traded market you can get clean data for. Registered teams get sponsor data from Databento and Webull, and free public sources are fine too. Once you have your history, set aside the most recent part and leave it alone until the end.
+
+SPONSOR DATA
+DATABENTO
+
+Market data for registered teams. Access instructions are in the Discord.
+
+DOCS ↗
+SPONSOR DATA · TRACK SPONSOR
+WEBULL
+
+Market data through the Webull OpenAPI, for any market it supports, with a ready-made backtesting starter.
+
+STARTER KIT ↓
+FREE · PUBLIC
+FRED
+
+Macro and rates data from the St. Louis Fed.
+
+FRED ↗
+FREE · PUBLIC
+KEN FRENCH LIBRARY
+
+Factor returns for benchmarking against market, value and momentum.
+
+LIBRARY ↗
+ANY LIQUID MARKET
+EQUITIES
+ETFS
+FUTURES
+FX
+OPTIONS
+CRYPTO
+THE OUT-OF-SAMPLE RULE
+HOLDOUT PLANNER · WHERE YOUR TEST SET STARTS
+RULE: MOST RECENT 20% OR 2 YEARS, WHICHEVER IS SHORTER
+HISTORY STARTS
+2012
+FREQUENCY
+DAILY
+HOURLY
+1-MIN
+WALK-FORWARD OFF
+IN-SAMPLE · BUILD & TUNE HERE
+OOS
+OCT 2024
+2012
+2014
+2016
+2018
+2020
+2022
+2024
+2026
+NOW
+WHICH RULE BINDS
+2-YEAR CAP BINDS
+
+20% of 14.8 YRS would be 3.0 YRS. The 2-year cap is shorter, so hold out 2 years.
+
+IN-SAMPLE
+12.8 YRS
+JAN 2012 → OCT 2024
+OUT-OF-SAMPLE
+2.0 YRS
+OCT 2024 → OCT 2026
+IN-SAMPLE BARS
+3,213
+DAILY BARS
+OOS BARS
+504
+DAILY BARS
+
+LOCK IT
+Evaluate it once, at the end. If you look at it and then go back and change things, it isn’t out-of-sample anymore.
+
+DATA PROBLEMS TO HANDLE (AND EXPLAIN IN THE NOTE)
+SURVIVORSHIP
+
+Today’s index members are the companies that survived. Use a point-in-time universe, or say the bias is there and estimate how much it matters.
+
+CORPORATE ACTIONS
+
+Splits and dividends make prices jump overnight. Use adjusted data and say how it was adjusted.
+
+MISSING DATA
+
+Gaps, halts and stale prints. Say whether you filled or dropped them, and never fill a gap with data from after it.
+
+THE RULES
+DATA
+CITE EVERY SOURCE
+
+Sponsor data is optional. Free public sources are allowed. Every source you use is cited in the note.
+
+MARKET
+ANY LIQUID MARKET
+
+Any liquid, publicly traded market works. Pick one you can get clean data for.
+
+COSTS
+NET OF COSTS
+
+Every reported result is net of transaction costs. State the cost in bps per trade and justify it.
+
+ORIGINAL
+EXTEND, THEN CITE
+
+Open-source libraries and published research are fine, cited. Copying a strategy is allowed only if you clearly extend it and say what is new.
+
+AI
+AI TOOLS ALLOWED
+
+You’re still responsible for every line of code and every claim, and judges may ask you to explain any of it.
+
+TEAM
+EVERYONE CAN EXPLAIN
+
+Every team member should be able to explain the strategy if judges ask follow-up questions.
+
+04
+CH 04
+THE WEBULL STARTER
+START FROM THE WEBULL KIT
+
+Webull, the track sponsor, put together a starter that connects the open-source backtrader engine to Webull OpenAPI market data. It fetches bars, runs the backtest, prints return, drawdown and Sharpe, and writes an interactive chart report, so all you have to write is the strategy. Any market the Webull API supports is allowed.
+
+STARTER KIT · PYTHON 3.11+ · BACKTRADER
+Webull backtesting starter
+Two example strategies, a chart report and the full guide. Bring your own API credentials.
+DOWNLOAD KIT .ZIP ↓
+examples/backtest/main.py
+The backtest entry point
+examples/strategies/
+Two examples, dual_ma and portfolio. Yours goes here too
+webull_bt/
+The WebullData feed and report generator; parameters in feed.py
+docs/USAGE_EN.md
+The full guide: settings, writing a strategy, FAQ
+examples/live/
+Simulated live and order placement. Optional, not scored
+GET YOUR CREDENTIALS
+01
+LOG IN
+
+Log in at webull.com and finish account opening if you haven’t.
+
+02
+APPLY
+
+Avatar → Developer Tool → OpenAPI Management → My Application, and submit.
+
+03
+GENERATE A KEY
+
+Once approved: API Keys Management → Generate Key, for an App Key and App Secret.
+
+APPLY EARLY
+Webull estimates approval at 1 to 2 working days. You also need market data access for what you trade, or requests come back 403. See Webull’s application guide for the full steps.
+
+RUN IT, THEN MAKE IT YOURS
+FIRST BACKTEST
+COPY
+# Python 3.11+, from the unzipped folder
+uv sync                         # or: pip install -e . in a venv
+cp examples/backtest/.env.example examples/backtest/.env
+# put WEBULL_APP_KEY and WEBULL_APP_SECRET in that .env, then
+uv run python examples/backtest/main.py
+
+Pick the market, symbols, bar size and date range with WEBULL_CATEGORY, WEBULL_SYMBOLS, WEBULL_TIMESPAN and WEBULL_FROMDATE/TODATE in .env. Add a strategy as a file in examples/strategies/ that ends with STRATEGY_CLASS = YourClass, then set WEBULL_STRATEGY to its name.
+
+Everything else is in docs/USAGE_EN.md and the Webull API docs. Never commit .env.
+
+TRACK RULES STILL APPLY
+NET OF COSTS
+
+The example trades for free. Add costs before you report anything, and justify the bps for your market.
+
+ADD COSTS
+COPY
+# examples/backtest/main.py, after cerebro.broker.setcash(...)
+cerebro.broker.setcommission(commission=0.0005)   # 5 bps per side
+cerebro.broker.set_slippage_perc(0.0005)          # 5 bps slippage
+HOLD OUT THE END
+
+The example backtests the whole range it fetches. Set your out-of-sample period with the rule above, develop with WEBULL_TODATE before it, and run the held-out range once at the end.
+
+SCORED ON THE NOTE
+The kit’s backtest summary is evidence for your note. Your score comes from the rubric further down. Paper and live trading aren’t scored.
+
+05
+CH 05
+BACKTESTING
+TRY TO BREAK YOUR OWN BACKTEST
+
+Below is a small but complete backtest: a trend-following rule on twelve years of synthetic prices. Change the lookback, raise costs, turn on the lookahead bug, and when you’re done tuning, evaluate the out-of-sample period once to see if the edge holds.
+
+BACKTEST LAB · TIME-SERIES MOMENTUM
+SYNTHETIC MARKET · ILLUSTRATIVE ONLY
+MARKET
+1
+2
+3
+4
+5
+LOOKBACK 60 BARS
+COST 5 BPS / TRADE
+COSTS ×2 OFF
+SIGNAL
+LAG 1 BAR ✓
+SAME BAR ✗ (LOOKAHEAD)
+SIZING
+SIGN ±1
+VOL TARGET
+
+RULE
+Each day: if the last 60 days’ return is above zero, hold long, otherwise short. Trade at the next bar.
+
+NET OF COSTS
+GROSS
+BUY & HOLD
+LOG SCALE · GROWTH OF $1
+$0.5
+$0.75
+$1
+$1.5
+$2
+2014
+2016
+2018
+2020
+2022
+2024
+2026
+IN-SAMPLE
+OUT-OF-SAMPLE · LOCKED
+LAST 504 BARS
+EVALUATE ONCE ▸
+BY YEAR · NET RETURN
+WHERE DID THE PROFIT COME FROM?
+−25%
+’14
+−16%
+’15
+−8%
+’16
+−20%
+’17
+−8%
+’18
+−18%
+’19
+6%
+’20
+118%
+’21
+9%
+’22
+11%
+’23
+?
+··
+’24
+?
+··
+’25
+	IN-SAMPLE	OUT-OF-SAMPLE
+ANN. RETURN	−0.2%	LOCKED
+VOLATILITY	17.4%	LOCKED
+SHARPE	0.07	LOCKED
+MAX DRAWDOWN	−67.8%	LOCKED
+TURNOVER	30.7×/YR	LOCKED
+WORST MONTH	−10.1%	LOCKED
+SKEW	0.11	LOCKED
+In-sample Sharpe 0.07 net of 5 bps. Settle the rule, then evaluate the held-out years once.
+PLATEAU · IN-SAMPLE SHARPE BY LOOKBACK
+-0.1
+0.0
+0.6
+5
+60
+120
+180
+250
+
+Sharpe moves a lot around 60. If you picked this value because it scored best, expect it to do worse out of sample. Best in-sample: 120 bars (0.57). Choosing it after looking is one more trial to disclose.
+
+LAG EVERY SIGNAL
+
+If a signal uses today’s close, you can’t also trade at today’s close. Trade at the next open or close instead. Switch the lab to SAME BAR to see how much fake performance that bug adds.
+
+DOUBLE THE COSTS
+
+Report everything net of commissions, spread and slippage, and show what happens when costs double. If the edge disappears, say so.
+
+REPORT THE MINIMUM
+
+For in-sample and out-of-sample separately: annualized return, volatility, Sharpe, max drawdown, turnover, and an equity curve.
+
+06
+CH 06
+PITFALLS
+COMMON WAYS BACKTESTS GO WRONG
+
+Judges see these every year. Each one makes a backtest look better without making the strategy any better. Catch them yourself and you’ll do better on Economic Foundation and Performance.
+
+TAP A CARD TO SEE HOW TO AVOID IT
+0/9 READ
+01
+PROBLEM
+P-HACKING
+DATA SNOOPING
+WHAT IT LOOKS LIKE
+Testing dozens of signals, lookbacks or thresholds and reporting only the best one.
+02
+PROBLEM
+OVERFITTING
+TOO MANY PARAMETERS
+WHAT IT LOOKS LIKE
+Many free parameters, complex rules, or ML models tuned on a short history.
+03
+PROBLEM
+LOOKAHEAD BIAS
+USING FUTURE INFORMATION
+WHAT IT LOOKS LIKE
+Using information not available at decision time: same-bar close for signal and fill, revised economic data, future index membership.
+04
+PROBLEM
+SURVIVORSHIP BIAS
+ONLY TODAY’S SURVIVORS
+WHAT IT LOOKS LIKE
+Backtesting only on today’s index members or tickers that still trade.
+05
+PROBLEM
+IGNORING COSTS
+GROSS RETURNS ONLY
+WHAT IT LOOKS LIKE
+Reporting gross returns, or assuming a high-turnover strategy trades for free.
+06
+PROBLEM
+LEAKING THE TEST SET
+TUNING ON THE TEST SET
+WHAT IT LOOKS LIKE
+Looking at out-of-sample results, then going back and changing the strategy.
+07
+PROBLEM
+MISLEADING SHARPE
+SHARPE WITHOUT CONTEXT
+WHAT IT LOOKS LIKE
+Sharpe from too little data, overlapping returns, or a strategy short volatility that hides tail risk.
+08
+PROBLEM
+REGIME DEPENDENCE
+ONE GOOD PERIOD
+WHAT IT LOOKS LIKE
+All the profit comes from one period, such as 2020 or 2022.
+09
+PROBLEM
+UNREALISTIC CAPACITY
+IGNORING MARKET IMPACT
+WHAT IT LOOKS LIKE
+Trading illiquid names at full size, or ignoring market impact.
+TRYING MANY VARIANTS ON NOISE
+OVERFITTING MACHINE · DATA SNOOPING ON PURE NOISE
+NO STRATEGY HERE HAS AN EDGE
+VARIANTS TO TRY
+1
+10
+50
+200
+1,000
+RUN 200 BACKTESTS ▸
+↻ NEW NOISE
+TRIALS RUN
+0
+BEST IN-SAMPLE SHARPE
+—
+LUCK ALONE PREDICTS
+—
+WINNER OUT OF SAMPLE
+—
+IN-SAMPLE SHARPE OF EVERY VARIANT
+10 YEARS IN SAMPLE · GROSS OF COSTS · NO LOOKAHEAD
+−1
+−0.5
+0
++0.5
++1
+PICK A NUMBER OF VARIANTS, THEN RUN
+
+The more rules you try, the better the best one looks, even when none of them work. The cyan line shows how good the luckiest of N useless strategies should look by chance. Bailey and López de Prado’s fix for this is the Deflated Sharpe Ratio.
+
+WHAT TO DO INSTEAD
+Write the hypothesis first
+Report how many variants you tried
+Show that nearby parameter values work too
+
+CHECK THE SIMPLE EXPLANATION
+When a result looks good, look for a simpler reason first. Usually it’s a bug, a bias, or exposure to something well known like market beta, momentum or value.
+
+07
+CH 07
+RISK & CAPACITY
+WHAT HAPPENS WITH REAL MONEY
+
+Two of the five judging criteria are about what comes after the backtest: how you control risk, and how much money the strategy could manage before trading costs and market impact eat the edge.
+
+▥
+LIMITS
+
+Limits per name, per sector, and on gross and net exposure. What’s the most you can lose on a single position?
+
+⏚
+DE-RISKING
+
+Rules, set in advance, for when you cut size and when you scale back in.
+
+≈
+FACTOR EXPOSURE
+
+Is the edge really just market beta, momentum or value? Regress your returns on those factors to find out.
+
+↯
+TAIL & REGIME
+
+What happens in a crash, a volatility spike, or a market that stops trending?
+
+ESTIMATING CAPACITY
+CAPACITY DIAL · HOW BIG BEFORE THE EDGE IS GONE
+SQUARE-ROOT IMPACT LAW · ROUGH MODEL
+SMALL-CAP STOCKS
+LARGE-CAP ETFS
+FAST INTRADAY
+STRATEGY AUM
+$10.0M
+NAMES TRADED
+100
+AVG DAILY $ VOLUME / NAME
+$5.01M
+TURNOVER
+20× / YR
+GROSS SHARPE (BEFORE COSTS)
+1.50
+STRATEGY VOLATILITY
+10%
+HALF-SPREAD + FEES
+15.0 BPS
+DAILY VOL OF THE NAMES
+3.5%
+$10.0K
+$100K
+$1.00M
+$10.0M
+$100M
+$1.00B
+$10.0B
+$100B
+$1.00T
+1.5
+0.0
+-0.9
+GROSS SHARPE 1.50
+EDGE HALF GONE
+CAPACITY
+CAPACITY ≈
+$186M
+Edge half gone near $26.1M
+NET SHARPE @ $10.0M
+0.92
+COST PER TRADE
+28.9 BPS
+15.0 FIXED + 13.9 IMPACT
+YEARLY COST DRAG
+5.79%
+DAILY TRADE / NAME
+$7.94K
+PARTICIPATION
+0.16% OF ADV
+1%
+5%
+10%
+
+UNDER 1% OF ADV. Small next to the market. Impact is minor.
+
+IN YOUR NOTE
+Size positions as a fraction of average daily volume and estimate capacity in dollars. This dial is a rough model: state your own cost, spread and impact assumptions for your market, and show how results change when costs double.
+
+08
+CH 08
+QUANT NOTE
+WRITING THE QUANT NOTE
+
+The quant note is a PDF of at most five pages, figures and tables included. References and an optional appendix of extra charts don’t count toward the limit, but judges aren’t required to read the appendix. Use 11pt font or larger and standard margins.
+
+NOTE BLUEPRINT · PDF · MAX 5 PAGES
+CLICK A SECTION · ADJUST ITS BUDGET
+5 PAGES INCL. FIGURES & TABLES
+11PT FONT OR LARGER
+STANDARD MARGINS
+REFERENCES & APPENDIX DON’T COUNT
+SUMMARY
+ECONOMIC HYPOTHESIS
+DATA & UNIVERSE
+PAGE 1
+METHODOLOGY
+PAGE 2
+RESULTS
+PAGE 3
+RISK MANAGEMENT
+PAGE 4
+LIQUIDITY & CAPACITY
+LIMITATIONS & NEXT STEPS
+PAGE 5
+REFERENCES
+DOESN’T COUNT
+OUTSIDE LIMIT
+APPENDIX · OPTIONAL
+DOESN’T COUNT
+OUTSIDE LIMIT
+01
+SUMMARY
+−
+0.25
++
+02
+ECONOMIC HYPOTHESIS
+−
+0.50
++
+03
+DATA & UNIVERSE
+−
+0.50
++
+04
+METHODOLOGY
+−
+1.00
++
+05
+RESULTS
+−
+1.25
++
+06
+RISK MANAGEMENT
+−
+0.50
++
+07
+LIQUIDITY & CAPACITY
+−
+0.50
++
+08
+LIMITATIONS & NEXT STEPS
+−
+0.50
++
+TOTAL PAGES
+5.00/5.00
+SECTION 05
+RESULTS
+
+In-sample vs out-of-sample performance, net of transaction costs.
+
+AT MINIMUM
+Annualized return
+Volatility
+Sharpe ratio
+Max drawdown
+Turnover
+An equity curve
+
+Report in-sample and out-of-sample results separately. Every number net of costs.
+
+FEEDS
+Performance & Analytical Evidence
+
+Budgets are a suggested starting point. Judges are not required to read the appendix, so anything that matters belongs in the five pages.
+
+09
+CH 09
+JUDGING
+HOW IT’S SCORED
+
+Judges score five criteria from 1 to 10, for a total out of 50. Code isn’t scored on its own, but it supports your Performance score, and judges will spot-check that it runs and matches your note.
+
+RUBRIC SIMULATOR · 5 CRITERIA × 10 POINTS
+TRY SCORING YOUR OWN DRAFT
+01
+ECONOMIC FOUNDATION
+
+Strength of the economic hypothesis behind the strategy
+
+7
+/10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1–3
+4–6
+7–9
+10
+
+Strong economic rationale with clear articulation of why the strategy should perform. Logical, well-supported arguments.
+
+02
+INNOVATION
+
+Creativity and distinctiveness of the strategy
+
+5
+/10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1–3
+4–6
+7–9
+10
+
+Some innovative aspects, but relies on established frameworks or ideas.
+
+03
+RISK MANAGEMENT PLAN
+
+Comprehensiveness and effectiveness of risk controls
+
+6
+/10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1–3
+4–6
+7–9
+10
+
+Basic risk management plan, but lacking depth or thoroughness.
+
+04
+LIQUIDITY & CAPITAL
+
+How well the strategy accounts for liquidity and capital deployment
+
+5
+/10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1–3
+4–6
+7–9
+10
+
+Some consideration of liquidity and capital, but with gaps or oversights.
+
+05
+PERFORMANCE & ANALYTICAL EVIDENCE
+
+Use of historical data or other evidence to demonstrate the strategy's potential
+
+7
+/10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1–3
+4–6
+7–9
+10
+
+Strong use of data and analysis. Well-reasoned performance expectations.
+
+TOTAL
+30/50
+THE CAP RULE · CRITERION 5
+✓
+JUDGES CAN RUN OUR CODE AND IT MATCHES THE NOTE
+✓
+NO LOOKAHEAD, NO TUNING ON OUT-OF-SAMPLE
+
+Code is not scored separately, but it backs up criterion 5. If either box breaks, criterion 5 is capped at 4.
+
+TIES
+Performance & Analytical Evidence first, then Economic Foundation.
+
+NO LEADERBOARD
+There’s no P&L leaderboard. Returns only count as evidence for your argument.
+
+SCORE CAP
+If judges can’t run your code, or it gives materially different numbers than your note, your Performance and Analytical Evidence score is capped at 4. The same cap applies if they find lookahead bias or tuning on the out-of-sample period.
+
+10
+CH 10
+SUBMITTING
+HOW TO SUBMIT
+
+Submit two things on Devpost: your quant note as a PDF and a link to a public GitHub repo. Both are required. A note without code, or code without a note, won’t be judged.
+
+DEVPOST SUBMISSION
+SUN OCT 4 · 10:00 AM
+01D
+14H
+02M
+35S
+Late submissions are not judged.
+FINAL CODE PUSH
+SUN OCT 4 · 11:00 AM
+01D
+15H
+02M
+35S
+Commits after 11:00 AM are not reviewed.
+EASTERN TIME
+DEVPOST LINK
+GQHACKS.DEVPOST.COM ↗
+DEADLINE
+SUN OCT 4 · 10:00 AM
+DATA ACCESS & HELP
+PARTICIPANT DISCORD ↗
+EVENT INFO
+HACKER GUIDE ↗
+WHAT GOES IN THE REPO
+A README with setup steps and the single command or notebook that reproduces your headline results
+A dependency file: requirements.txt, environment.yml, or equivalent
+All signal, backtest and analysis code
+Data download scripts, or instructions for getting the data
+NEVER COMMIT
+Raw licensed data
+API keys
+A zip upload instead of a public GitHub link
+
+Judges will spot-check that your code runs and that the numbers in your note match what it produces.
+
+your-strategy/
+├── README.md
+setup + one command to run
+├── requirements.txt
+or environment.yml
+├── .env.example
+keys stay out of git
+├── data/
+│   └── download.py
+download scripts only
+├── src/
+│   ├── signals.py
+│   ├── backtest.py
+│   └── analysis.py
+└── run_all.py
+reproduces the note
+
+EXAMPLE LAYOUT · YOURS CAN DIFFER
+
+SUBMISSION CHECKLIST
+SUBMISSION CHECKLIST
+SAVED IN THIS BROWSER ONLY
+0/10
+Quant note as a PDF, 5 pages or fewer (excluding references and appendix)
+Hypothesis stated before results
+In-sample and out-of-sample results reported separately, net of costs
+Sharpe, max drawdown, turnover, and an equity curve included
+Risk management and liquidity/capacity sections included
+Number of strategy variants tested disclosed
+Public GitHub repo linked, with a README and dependency file
+One command or notebook reproduces the headline numbers
+No API keys or licensed raw data committed
+All team members listed on Devpost
+10 TO GO
+FURTHER READING (OPTIONAL)
+BACKTESTING HONESTLY
+Most useful this weekend
+Pseudo-Mathematics and Financial Charlatanism
+Bailey, Borwein, López de Prado & Zhu · Notices of the AMS, 2014
+Why backtest overfitting is so easy
+…and the Cross-Section of Expected Returns
+Harvey, Liu & Zhu · Review of Financial Studies, 2016
+Why a t-stat of 2 is not enough after many tests
+The Deflated Sharpe Ratio
+Bailey & López de Prado, 2014
+Adjusting Sharpe for the number of trials
+Advances in Financial Machine Learning
+Marcos López de Prado, 2018
+Purged cross-validation and backtest pitfalls
+STRATEGY IDEAS & INTUITION
+Time Series Momentum
+Moskowitz, Ooi & Pedersen · Journal of Financial Economics, 2012
+Value and Momentum Everywhere
+Asness, Moskowitz & Pedersen · Journal of Finance, 2013
+Expected Returns
+Antti Ilmanen, 2011
+A survey of where returns come from
+Quantitative Trading and Algorithmic Trading
+Ernest Chan
+Practical and beginner-friendly
+RISK & PORTFOLIO CONSTRUCTION
+Active Portfolio Management
+Grinold & Kahn
+The fundamental law, information ratio, sizing
+DATA & TOOLS
+Databento documentation ↗
+Kenneth French Data Library ↗
+FRED ↗
+Quantopian lecture archive ↗
+pandas
+numpy
+statsmodels
+vectorbt
+backtrader
+quantstats
+SYSTEMATIC TRADING TRACK
+QUESTIONS? ASK US.
+
+Post in the Discord or email gatorquanthacks@gmail.com. Gator Quant Hacks runs October 2–4, 2026.
+
+JOIN THE DISCORD ↗
+← BACK TO ALL TRACKS
+
+This page summarizes the Systematic Trading Track Participant Brief. The interactive labs use synthetic data. If anything here conflicts with the brief or an organizer announcement, go with the brief or the announcement.
+
+GQH 2026
+
+© 2026 GATOR QUANT HACKS. ALL RIGHTS RESERVED.
+
+Contact Us
+Join the Discord
+Apply
+Code of Conduct
+Terms & Conditions
+</browser__document__content>

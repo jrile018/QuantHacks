@@ -1,0 +1,11 @@
+# Your API key and raw API responses never leave your machine
+.env
+.env.*
+!.env.example
+.massive_cache/
+data/raw/
+data/processed/
+
+.venv/
+.ipynb_checkpoints/
+__pycache__/

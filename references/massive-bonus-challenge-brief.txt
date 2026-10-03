@@ -1,0 +1,727 @@
+<browser__document__url>https://www.gqhacks.com/tracks/systematic-trading/massive</browser__document__url>
+<browser__document__title>Massive Bonus Challenge: Trade the 8-K | Gator Quant Hacks 2026</browser__document__title>
+
+<browser__document__content>
+GQH-01
+SPACE MARKET
+ORBIT STABLE
+GQH
+SYSTEMS NOMINAL
+ABOUT
+TRACKS
+SCHEDULE
+SPONSORS
+TEAM
+FAQ
+APPLY
+BOARD NOW ->
+← SYSTEMATIC TRADING
+BONUS PRIZE · SYSTEMATIC TRADING
+MISSION FILE: 8-K DISCLOSURES × OPTIONS · SPONSORED BY MASSIVE
+8-K FILED · CHAIN PRICED AT t_pre · IMPLIED vs REALIZED · SEALED WINDOW LOCKED
+TRADE THE 8-K. WAS IT PRICED IN?
+TRADE THE
+8-K
+WAS IT PRICED IN?
+SIGNAL
+8-K FILINGS
+INSTRUMENT
+US OPTIONS
+QUANT NOTE
+≤ 5 PAGES
+JUDGED ON
+RESEARCH, NOT P&L
+LIVE MODEL · 8-K EVENTS vs THE IMPLIED-MOVE CONE
+READ THE CHALLENGE
+01
+CH 01
+THE CHALLENGE
+DID THE OPTIONS MARKET SEE IT COMING?
+
+A bonus prize inside the Systematic Trading track, sponsored by Massive. Use Massive’s 8-K disclosure categories as the signal and its options data as the instrument, and make the case that a type of corporate filing tells you when to enter an options strategy.
+
+THE EVENT
+A CFO IS APPOINTED
+
+Something material happens at a company: a CEO leaves, a merger is signed, guidance is cut, a new CFO is named.
+
+≤ 4 BUSINESS DAYS
+FORM 8-K FILED
+
+The company must disclose it on a Form 8-K. Massive’s Filings & Disclosures dataset tags every 8-K since January 2022 with one of 119 event types.
+
+t_pre
+THE NIGHT BEFORE
+
+The session before the filing, the option chain has already put a price on how much the stock should move. It can’t know the news yet.
+
+YOUR TASK
+OCT 2–4
+Pick one or more 8-K disclosure categories and one strategy from the library, and make the case that the category is a signal for entering that strategy.
+
+Define the rule: which filings, which contracts, entered when, exited when. Test it on the 100 largest US companies across the fixed horizons, show how it compares with ordinary days for the same names, show it out of sample, and show how sensitive it is to your parameters.
+
+THREE TIERS
+EVERY TEAM
+BASELINE
+
+One category, one strategy, one expiry bucket, and a written interpretation.
+
+THE NOTEBOOK
+Runs end to end: CFO appointments × all five strategies × 3–6 month options, in-sample and out-of-sample.
+SEPARATES THE TOP TEAMS
+STRETCH
+
+Decay across horizons and expiry buckets, combined categories, a placebo control, timing refinements, a realistic trade specification.
+
+THE NOTEBOOK
+Sections 7, 10, 11 and the timing stretch.
+JUDGES ONLY
+SEALED WINDOW
+
+Judges rerun your pipeline on dates you never saw.
+
+THE NOTEBOOK
+The final section, one function call.
+A SUB-TRACK
+
+Every Systematic Trading rule applies here too: a hypothesis stated before results, results net of costs, every data source cited, a quant note of at most five pages, and a public GitHub repo. Massive’s challenge adds the data, the strategy menu and the fixed horizons. One exception: the notebook’s own out-of-sample window and the judges’ sealed window replace the track’s 20% holdout rule.
+
+READ THE TRACK RULES →
+
+NOT P&L
+You’re judged on the novelty of the category-to-strategy link, the rigor of the analysis, whether it replicates on a sealed window, the realism of the trade, and clarity. A well-argued null result with a clear decay curve beats a lucky backtest.
+
+02
+CH 02
+OPTIONS 101
+ONE NUMBER THAT MATTERS
+
+No options experience needed to start. Every strategy here is a bet on one relationship: the implied move the chain charged on the pre-event session against the move the stock actually made. Buying options wins when realized beats implied; selling wins when it doesn’t.
+
+THE VOCABULARY
+CALL
+PUT
+STRIKE
+EXPIRY / DTE
+PREMIUM
+AT THE MONEY
+DEBIT / CREDIT
+LONG / SHORT
+COVERED / SECURED
+BREAK-EVEN
+IMPLIED MOVE
+IV
+ASSIGNMENT
+IMPLIED MOVE
+
+The cost of the ATM call plus the ATM put, divided by spot. What the chain says the event is worth, and the benchmark the whole challenge is built on.
+
+IMPLIED vs REALIZED
+IMPLIED MOVE LAB · WHAT THE CHAIN CHARGED vs WHAT HAPPENED
+ILLUSTRATIVE NUMBERS
+01
+THE PRE-EVENT SESSION, t_pre
+
+The session before the filing. Its chain cannot know the news, so it is where the implied move is read.
+
+SPOT $100
+ATM CALL $3.40
+ATM PUT $3.10
+IMPLIED MOVE = (CALL + PUT) ÷ SPOT
+($3.40 + $3.10) ÷ $100
+±6.5%
+02
+AFTER THE 8-K
+
+What the stock actually did. Drag it and watch where it lands against the band the chain priced.
+
+REALIZED MOVE +2.0%
+WHAT THE CHAIN PRICED
+−30%
+−20%
+−10%
+$100
++10%
++20%
++30%
+$102.00
+SELLERS OF OPTIONS WIN
+
+The realized move fell short of the implied move. The chain over-charged for drama that did not arrive, so whoever sold it kept the difference.
+
+|REALIZED| ÷ IMPLIED
+0.31
+BELOW 1 · THE MARKET OVER-PAID
+THE VOLATILITY TRAP
+
+The most common novice result: the stock moved the right way and the long call still lost money. Implied volatility collapses the moment the uncertainty resolves.
+
+IV CRUSH AFTER THE NEWS ON
+DAYS TO EXPIRY 30
+IV CHANGE AFTER THE NEWS -40%
+LONG ATM CALL · P&L PER SHARE
+IV 28% → 17% · COST $3.25
+DIRECTION
+the move, one day of time
++$1.08
+VOLATILITY
+IV falling after the news
+−$1.23
+TOTAL
+× 100 per contract
+−$0.15
+
+The stock moved +2.0% and the long call still lost −$0.15 a share. Direction was right; the volatility collapse took more back.
+
+Modelled with Black-Scholes, zero rates, strike at spot. Pre-news IV is set so the model straddle costs your $6.50.
+
+WHICH SIDE OF IT ARE YOU ON?
+1 · Long call
+The option gives back in IV what it gained in direction.
+HURT
+2 · Covered call
+You sold the call, so the collapse is your profit.
+PAID
+3 · Protective put
+On the hedge leg. A bought put wants IV to rise.
+HURT
+4 · Collar
+Roughly, being one bought and one sold option.
+NEUTRAL
+5 · Cash-secured put
+You sold the put, so the collapse is your profit.
+PAID
+
+State which side you are on in your quant note.
+
+03
+CH 03
+THE FIVE STRATEGIES
+PICK A SHAPE, DEFEND THE PAIRING
+
+Five standard strategies, each explainable in two sentences and buildable from one option chain: OptionsPlaybook’s four Rookie strategies plus one Veteran, the long call. Finding and defending the link between a filing category and one of these is the challenge.
+
+PAYOFF EXPLORER · FIVE DEFINED STRATEGIES
+AT EXPIRY · ILLUSTRATIVE PREMIUMS
+1
+VETERAN
+LONG CALL
+UP, AND SOON
+2
+ROOKIE
+COVERED CALL
+FLAT TO MILDLY UP
+3
+ROOKIE
+PROTECTIVE PUT
+UP, BUT NERVOUS
+4
+ROOKIE
+COLLAR
+UP, BUT NERVOUS, CHEAPLY
+5
+ROOKIE
+CASH-SECURED PUT
+FLAT TO UP, HAPPY TO OWN IT
+OTM DISTANCE
+3%
+5%
+10%
+ATM · PAY 4.00
+-5
+0
++5
++10
++15
++20
++25
+70
+80
+90
+SPOT 100
+110
+120
+130
+STOCK PRICE AT EXPIRY →
+P&L / SHARE
+A 100
+MAX LOSS −4.00
+UNLIMITED ↗
+BE 104.00
+STOCK AT EXPIRY 108.00
+P&L / SHARE
++4.00
++400.00 PER CONTRACT
+LONG CALL
+BREAK-EVEN
+1 · LONG CALL
+Buy 1 ATM call
+CONSTRUCTION
+Buy 1 call, strike A ≈ spot
+MAX GAIN
+Unlimited
+MAX LOSS
+The premium paid
+BREAK-EVEN
+A + premium
+YOU PAY / ARE PAID
+Debit
+THE 8-K SIGNAL
+
+Guidance raised, an acquisition completed, a large contract award, a buyback authorized: categories where the disclosure is unambiguously good news and you can argue the move was not already in the price.
+
+WATCH OUT FOR
+
+The move must arrive before expiry and be bigger than the premium. A stock that rises 2% when you paid 4% for the call is a loss. Compare your realized move against the implied move, never against zero.
+
+THE VOLATILITY TRAP
+
+Exposed. Implied volatility collapses once the news is out, and the call gives back in IV what it gained in direction.
+
+WHICH SHAPE IS YOUR THESIS?
+CHOOSE ON THE SHAPE OF THE THESIS, NOT ON WHICH STRATEGY SOUNDS MOST ADVANCED
+“THIS CATEGORY MOVES STOCKS MORE THAN THE MARKET EXPECTS, AND I CAN CALL THE DIRECTION.”
+→ 1 · LONG CALL
+“THIS CATEGORY IS OVER-PRICED: THE MARKET PAYS UP FOR DRAMA THAT DOES NOT ARRIVE.”
+→ 2 · COVERED CALL OR 5 · CASH-SECURED PUT
+“YOU HAVE TO HOLD THIS NAME THROUGH THE EVENT.”
+→ 3 · PROTECTIVE PUT OR 4 · COLLAR
+
+NO STOCK FEEDThree of the five start with 100 shares, and this challenge has no stock data. The notebook builds the shares from a synthetic long: a long ATM call plus a short ATM put at the same strike and expiry, which by put-call parity moves one for one with the stock. Payoffs follow OptionsPlaybook ↗.
+
+LEARN ONE CONTRACT
+The long call teaches what a call costs. The covered call sells that same contract. The protective put buys the insurance instead of selling it, the collar is both at once, and the cash-secured put is the covered call’s payoff without owning the shares. More on each at
+OptionsPlaybook
+.
+
+04
+CH 04
+THE DATA
+TWO DATASETS, ONE KEY
+
+Everything comes from api.massive.com: the 8-K filings that are your events, and the options chains and daily bars that are your instrument. That is the whole list, and the notebook shows how far it goes.
+
+FILINGS & DISCLOSURES
+/stocks/filings/8-K/vX/disclosures
+
+The events: 119 AI-tagged 8-K event types, one row per event, coverage from January 2022.
+
+ENDPOINT DOCS ↗
+TAXONOMY ↗
+OPTIONS CONTRACTS
+/v3/reference/options/contracts?as_of=…
+
+The chain exactly as it existed on the pre-event session, before anyone knew the news.
+
+ENDPOINT DOCS ↗
+OPTIONS AGGREGATES
+/v2/aggs/ticker/O:…/range/1/day/…
+
+Every leg’s daily close and volume from entry to expiry, and the stock price, recovered from the chain by put-call parity.
+
+ENDPOINT DOCS ↗
+NOT IN THIS CHALLENGE
+✕ NO STOCK FEED
+✕ NO INDEX MEMBERSHIP FEED
+✕ NO EARNINGS CALENDAR
+
+The notebook builds the trading calendar from NYSE holiday rules, reads the stock price off the option chain, and replicates the 100 shares behind three of the five strategies with options.
+
+GET YOUR KEY
+01
+ASK IN #MASSIVE
+
+Ask in the #massive channel on the participant Discord. Massive creates keys with the right entitlements for teams on the challenge.
+
+02
+KEEP IT OUT OF THE CODE
+
+Put the key in the environment or a .env file next to the notebook. The notebook reads it from there and never needs it pasted into a cell.
+
+03
+KEEP IT OUT OF GIT
+
+Ignore .env and the .massive_cache/ folder. The cache holds raw API responses, and licensed data stays out of public repos.
+
+MASSIVE_API_KEY
+COPY
+# .env next to the notebook (the setup script creates it)
+MASSIVE_API_KEY=your-key-here
+
+# or an environment variable, set before starting Jupyter
+export MASSIVE_API_KEY=your-key-here          # macOS / Linux
+$env:MASSIVE_API_KEY="your-key-here"          # Windows PowerShell
+
+# .gitignore
+.env
+.massive_cache/
+05
+CH 05
+THE NOTEBOOK
+A PIPELINE YOU CAN SWAP THE TAG IN
+
+Massive’s data team wrote a starter notebook that runs the whole study end to end. Its worked example asks: if a company appoints a new CFO, which of the five strategies would have worked? Swap the tag, the strategy set or the universe and the same pipeline runs.
+
+STARTER KIT · PYTHON 3.10+
+Trade the 8-K: starter kit
+The notebook, setup scripts and requirements in one folder. Bring your own API key.
+DOWNLOAD KIT .ZIP ↓
+NOTEBOOK ONLY .IPYNB ↓
+gator-quant-hacks-8k-options-challenge.ipynb
+The starter notebook
+setup.sh · setup.ps1
+One-step setup for macOS / Linux and Windows
+requirements.txt
+pandas, numpy, requests, matplotlib, ipykernel, JupyterLab
+.env.example
+Template for your API key
+.gitignore
+Keeps .env and .massive_cache/ out of git
+README.md
+These instructions
+SET UP IN TWO MINUTES
+01
+INSTALL PYTHON 3.10+
+
+From python.org if you don’t have it. On Windows, tick “Add python.exe to PATH”. Tested on 3.14.
+
+02
+RUN THE SETUP SCRIPT
+
+Unzip the kit and run the script from inside the folder. It creates a .venv, installs requirements.txt, registers the Jupyter kernel and creates .env from .env.example. Safe to re-run.
+
+03
+ADD YOUR KEY
+
+Open .env and replace your-key-here with your Massive API key from #massive: no spaces, no quotes.
+
+04
+PICK THE KERNEL AND RUN ALL
+
+Start Jupyter (or open the notebook in VS Code), choose the kernel “Python (Gator Quant Hacks .venv)” and run every cell. Section 1 prints “API key loaded (ends xxxx)”. The first run takes about ten minutes; responses are cached in .massive_cache/, so later runs take seconds.
+
+MACOS / LINUX
+COPY
+# macOS / Linux, from the unzipped folder
+./setup.sh
+source .venv/bin/activate && jupyter lab
+WINDOWS
+COPY
+# Windows PowerShell, from the unzipped folder
+powershell -ExecutionPolicy Bypass -File setup.ps1
+.venv\Scripts\activate; jupyter lab
+BY HAND, ANY OS
+COPY
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
+python -m ipykernel install --user --name gator-quant-hacks --display-name "Python (Gator Quant Hacks .venv)"
+cp .env.example .env               # then add your key
+IF SOMETHING BREAKS
+“Kernel not found” when opening the notebook
+
+Run the setup script, or pick any Python 3.10+ kernel.
+
+ModuleNotFoundError
+
+The notebook is on a different kernel from the one you installed into. Run import sys; print(sys.executable) in a cell: it should end in .venv/bin/python.
+
+Prompted for an API key
+
+.env is missing, in a different folder from the notebook, or still has the placeholder.
+
+Slow iteration
+
+Set RUN_PLACEBO = False in section 2 while exploring, which saves about eight minutes a run. Turn it back on before you submit.
+
+Stale recent data
+
+The cache never expires. Delete .massive_cache/ to refetch.
+
+Already in Colab or an existing kernel?
+
+Skip setup: run the optional %pip install -r requirements.txt cell at the top of the notebook, then restart the kernel.
+
+KEEP THE KEY OUT
+Never paste your key into a notebook cell, and don’t submit .env. Judges run your notebook with their own key.
+
+WALK THE SECTIONS
+1
+SETUP
+2
+CONFIGURATION
+3
+TRADING CALENDAR
+4
+EVENTS
+5
+THE CHAIN & HIDDEN SPOT
+6
+THE P&L ENGINE
+7
+SCOREBOARD & PLACEBO
+8
+OUT-OF-SAMPLE
+9
+ONE TICKER, END TO END
+10
+PARAMETER SENSITIVITY
+11
+SPECIFYING THE TRADE
+★
+STRETCH · TIMING
+🔒
+SEALED WINDOW
+SECTION 1 · 1/13
+SETUP
+
+Plain requests against the REST API. api_get caches every response on disk by URL and follows next_url pagination. A full run is roughly 6,500 requests and about ten minutes on a fresh cache, most of it the placebo; reruns take seconds.
+
+← PREV
+NEXT →
+t_pre, t_0 AND THE FIXED HORIZONS
+ONE EVENT ON THE CALENDAR
+ENTRY = "POST" ✓ TRADEABLE
+ENTRY = "PRE" · WAS IT PRICED?
+t_pre
+chain read here
+t_0
+8-K filed
++1
++2
++3
++5
++10
++21
++42
++63
+EXP
+
+Buy at the close of t_0, the filing session, and mark it 21 sessions later. This is the rule you could actually trade, provided the filing landed before the bell.
+
+Horizons are fixed for every team: [1, 2, 3, 5, 10, 21, 42, 63] sessions plus expiry. Report all of them, so judges see where the edge lives rather than where it looks best.
+
+THE CONFIGURATION CELL
+EVENT_TAG
+"cfo_appointment"
+One tertiary_category from the taxonomy. Yours to change.
+STUDY_START..END
+2024-01-01 → 2025-12-31
+In-sample. Research here.
+OOS_START..END
+2026-01-01 → 2026-08-31
+Out-of-sample, run in the notebook. Don’t tune on it.
+HOLDOUT
+set by the judges
+Sealed. The judges’ window; the dates in the notebook are placeholders.
+TOP_100
+100 tickers
+The 100 largest US companies. Static, so mind survivorship.
+EXPIRY_BUCKETS
+1m · 2m · 3–6m
+Days to expiry. The headline bucket is 3–6m.
+HORIZONS
+1 2 3 5 10 21 42 63
+Sessions after the filing. Fixed for every team. Do not change.
+OTM_PCT / OTM_GRID
+0.05 / 3% · 5% · 10%
+Distance of the sold call and the put.
+ENTRY
+"post"
+"post" is tradeable. "pre" asks whether the market priced it.
+WHAT THE WORKED EXAMPLE FOUND
+70
+IN-SAMPLE EVENTS
+
+CFO appointments across 51 of the top 100, 2022 to November 2025.
+
++0.42%
+BEST EDGE: COLLAR
+
+Over ordinary days, averaged over the 21-session, 42-session and expiry horizons. No horizon’s interval excluded zero.
+
+−0.18%
+NET AFTER COSTS
+
+The collar at 21 sessions after a 5%-of-premium haircut each way. The gross edge didn’t survive trading costs.
+
+12
+OUT-OF-SAMPLE EVENTS
+
+Enough to check the sign of the in-sample answer, not to prove it.
+
+THAT’S THE POINT
+The example’s honest answer is that CFO appointments don’t give a tradeable edge on their own. Your job is to find a category, or a combination, where the gap over ordinary days holds up across horizons, out of sample, and after costs. These figures come from an earlier draft run on 2022–2025 windows. The final notebook ships without saved outputs and uses the windows above, so your first run will print its own numbers.
+
+06
+CH 06
+JUDGING & PRIZE
+A FINDING THAT REPLICATES WINS
+
+A Massive entry is a Systematic Trading submission, scored on the track’s rubric like every other. GQH judges send their ten strongest Massive entries to Massive, and the Massive team picks the bonus winner using the criteria below.
+
+01
+THE QUANT NOTE · PDF ≤ 5 PAGES
+
+The track’s note, built around your 8-K finding: the hypothesis (which categories, which strategy, why the market should misprice it), the method, results with uncertainty at every fixed horizon in- and out-of-sample, what would make it break, and how you would trade it.
+
+02
+THE CODE · PUBLIC GITHUB REPO
+
+Your notebook, built on the starter, that runs from a clean kernel with only an API key and takes a start date and an end date as inputs: judges will call it on a window you haven’t seen. Plus a README and a dependency file, as for every track submission.
+
+03
+A SENSITIVITY CHECK
+
+The result across the neighbouring choices you could have made: expiry bucket, OTM distance, entry session, horizon, category definition. It goes in the note.
+
+WHAT MASSIVE LOOKS FOR · 100 POINTS
+30
+HYPOTHESIS AND NOVELTY
+
+A non-obvious, economically motivated category-to-strategy link. “Guidance up, buy a call” is the floor.
+
+30
+ANALYTICAL RIGOR
+
+All fixed horizons reported, a placebo or baseline, an out-of-sample window, uncertainty shown, sensitivity examined.
+
+20
+SEALED-WINDOW REPLICATION
+
+The finding holds on the judges’ window, or you predicted its fragility and were right.
+
+10
+TRADE REALISM
+
+Entry timing that respects the filing lag, costs and liquidity from the data, stated capacity.
+
+10
+COMMUNICATION
+
+A write-up a portfolio manager could act on, and a notebook that runs.
+
+FROM DEVPOST TO THE STAGE
+SUN 10:00 AM
+DEVPOST CLOSES
+
+Submit on Devpost like every project. Code pushes until 11:00 AM.
+
+SUN 1:00 PM
+TOP 10
+
+GQH judges send their ten strongest Massive entries to Massive.
+
+SUN 2:30 PM
+MASSIVE PICKS
+
+The Massive team chooses the winner from the shortlist.
+
+SUN 3:35 PM
+CLOSING CEREMONY
+
+The winner is announced on stage.
+
+THE PRIZE
+WINNING TEAM
+$500
+toward the winning team’s prize
+One month free of any Massive Advanced individual plan for each winning team member: stocks, options or futures, their pick.
+Massive swag, handed out at the event.
+07
+CH 07
+THE WEEKEND
+MASSIVE IS IN THE ROOM
+
+The Massive team is at the event to help teams get from the starter notebook to a real finding. Questions about the challenge, keys or the data go to #massive on the participant Discord.
+
+FRI · OCT 2
+6:30 PM
+MEET MASSIVE
+Commencement · Reitz Union Grand Ballroom
+
+The Massive team is there from the opening. Find them with questions about the challenge.
+
+SAT · OCT 3
+1:00 PM
+MASSIVE WORKSHOP
+Reitz Room 2355
+
+A walkthrough of the challenge, the 8-K dataset and the starter notebook, then Q&A.
+
+SAT · OCT 3
+AFTERNOON
+OPTIONS DATA HELP
+Ask in #massive on Discord
+
+The Massive team stays on hand for questions on the options data while you’re deep in the research.
+
+SUN · OCT 4
+3:35 PM
+WINNER ANNOUNCED
+Closing ceremony
+
+Massive judges remotely and the winner is announced at closing.
+
+DEADLINES
+DEVPOST SUBMISSION
+SUN OCT 4 · 10:00 AM
+01D
+14H
+01M
+26S
+Late submissions are not judged.
+FINAL CODE PUSH
+SUN OCT 4 · 11:00 AM
+01D
+15H
+01M
+26S
+Commits after 11:00 AM are not reviewed.
+EASTERN TIME
+BEFORE YOU SUBMIT
+SUBMISSION CHECKLIST
+SAVED IN THIS BROWSER ONLY
+0/12
+Notebook runs from a clean kernel with only an API key
+Pipeline takes a start date and an end date as inputs
+Out-of-sample window left untouched until the end, never tuned on
+Hypothesis names the categories, the strategy, and why the market should misprice it
+Every fixed horizon reported, in-sample and out-of-sample, net of costs, with uncertainty
+A placebo or ordinary-day baseline for the same names
+Parameter-sensitivity check across neighbouring choices
+Trade specification: entry vs filing lag, costs in bps, liquidity, capacity
+Quant note as a PDF, 5 pages or fewer
+Public GitHub repo with a README and dependency file
+No API key, .env or .massive_cache committed
+Submitted on Devpost by 10:00 AM
+12 TO GO
+SUBMIT
+GQHACKS.DEVPOST.COM ↗
+KEYS & HELP
+#MASSIVE ON DISCORD ↗
+STARTER KIT
+NOTEBOOK + SETUP .ZIP ↓
+API DOCS
+MASSIVE.COM/DOCS ↗
+END OF BONUS FILE
+FIND THE FILING THE MARKET MISPRICES
+
+The Massive bonus challenge runs inside the Systematic Trading Track at Gator Quant Hacks, October 2–4, 2026.
+
+GET THE STARTER KIT ↓
+← SYSTEMATIC TRADING TRACK
+
+This page is a plain-language tour of Massive’s starter notebook and challenge brief. As a sub-track, every Systematic Trading rule applies except the 20% holdout rule. The labs use illustrative numbers. Where anything here differs from the notebook or an organizer announcement, those govern.
+
+GQH 2026
+
+© 2026 GATOR QUANT HACKS. ALL RIGHTS RESERVED.
+
+Contact Us
+Join the Discord
+Apply
+Code of Conduct
+Terms & Conditions
+</browser__document__content>

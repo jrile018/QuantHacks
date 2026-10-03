@@ -1,0 +1,29 @@
+{
+  "note": "Illustrative response copied from Massive's public 8-K Disclosures documentation. These are documentation examples, not downloaded rows from this workspace.",
+  "source": "https://massive.com/docs/rest/stocks/filings/8-k-disclosures",
+  "count": 2,
+  "results": [
+    {
+      "accession_number": "0000320193-25-000010",
+      "cik": "0000320193",
+      "filing_date": "2025-01-14",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/320193/0000320193-25-000010.txt",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_announcement",
+      "supporting_text": "On January 14, 2025, Apple Inc. announced financial results for the fiscal quarter ended December 28, 2024.",
+      "tertiary_category": "quarterly_results",
+      "tickers": ["AAPL"]
+    },
+    {
+      "accession_number": "0000004962-25-000002",
+      "cik": "0000004962",
+      "filing_date": "2025-01-15",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-25-000002.txt",
+      "primary_category": "regulatory_compliance",
+      "secondary_category": "regulation_fd",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and Small Business portfolios.",
+      "tertiary_category": "financial_data_disclosure",
+      "tickers": ["AXP"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+Gator Quant Hacks 2026 — Systematic Trading materials
+Downloaded October 2, 2026 from the official track pages.
+
+FILES
+downloads/gqh-webull-backtrader-starter.zip
+  Webull/Backtrader starter kit.
+  https://www.gqhacks.com/webull/gqh-webull-backtrader-starter.zip
+
+downloads/gqh-massive-8k-starter-kit.zip
+  Massive Trade the 8-K bonus challenge starter kit, including notebook and setup files.
+  https://www.gqhacks.com/massive/gqh-massive-8k-starter-kit.zip
+
+../gator-quant-hacks-8k-options-challenge.ipynb
+  Standalone copy of the Massive starter notebook (renamed to match the starter kit).
+  https://www.gqhacks.com/massive/gqh-massive-8k-options-starter.ipynb
+
+systematic-trading-track-brief.txt
+  Text snapshot of the track page, including rules, rubric, and submission guidance.
+  https://www.gqhacks.com/tracks/systematic-trading
+
+massive-bonus-challenge-brief.txt
+  Text snapshot of the Massive bonus challenge page.
+  https://www.gqhacks.com/tracks/systematic-trading/massive
+
+OTHER LIVE RESOURCES
+Hacker guide: https://gqhacks.notion.site/hacker-guide
+Submission portal: https://gqhacks.devpost.com/
+Participant Discord (data access and announcements): https://discord.gg/BNB82dKdf
+Webull API documentation: https://developer.webull.com/apis/docs
+Databento documentation: https://databento.com/docs
+Massive API documentation: https://massive.com/docs
+FRED: https://fred.stlouisfed.org/
+Kenneth French Data Library: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+
+The live pages and organizer announcements can change; check them for final rules and deadlines.
