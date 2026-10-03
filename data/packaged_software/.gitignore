@@ -1,0 +1,3 @@
+# Pulled federal award data and API response cache stay local
+output/
+cache/
