@@ -1,0 +1,30 @@
+ticker,target_or_deal,decision,price_or_value,basis
+ADBE,Figma (Adobe acquisition),confirmed,22.4795 USD per share cash,"S-4 text: (ii) $22.4795 in cash per share. Deal was later terminated (Dec 2023) per public record, not checked in filings here."
+SNPS,Ansys,confirmed,197.00 USD per share cash + 0.3450 SNPS shares,S-4 text: $197.00 in cash plus 0.3450 shares per Ansys share.
+GEN,MoneyLion,confirmed,82.00 USD per share cash + CVR,S-4 text: $82.00 in cash and one contingent value right per share.
+NOW,Moveworks,confirmed,2850000000 USD aggregate,"S-4 text: aggregate consideration $2,850,000,000."
+TTWO,Zynga,confirmed,3.50 USD per share cash + exchange ratio shares,S-4 text: $3.50 in cash plus an exchange-ratio component.
+SAIL,SailPoint (take-private),confirmed,65.25 USD per share cash,DEFM14A text: $65.25 in cash per SailPoint share.
+WEAV,Weave (take-private),confirmed,7.40 USD per share cash,DEFM14A text: $7.40 in cash per share.
+COUR,Udemy,confirmed (cash part only),3.00 USD per Udemy share cash + 0.461 COUR shares,S-4 text: $3.00 cash and 0.461 Coursera shares per Udemy share. Aggregate value not taken from this filing.
+CRWV,Core Scientific,dropped,,"$5.75 is a 2024 rejected proposal, not the deal. The S-4 describes a stock deal; no cash price found."
+CXAI,Inpixon/CXApp transaction,dropped,,"$69.0M is pre-transaction equity value used in a fairness discussion, not consideration."
+MRDN,Meridian (valuation range),dropped,,$352M-$425M is an implied valuation range.
+PXLW,Pixelworks (valuation range),dropped,,$1M figure is a rounded implied-equity range in a table.
+MCHX,earnout shares,dropped,,"$6.52M is an earnout component, not total consideration; total not found."
+CYAB,trust account,dropped,,"$3.945M is trust-related, not consideration."
+SOUN,LivePerson (per-share stock value),dropped,,$3.33 is a per-share stock value; total not found.
+SOUN,unrelated 2021 purchase,dropped,,"$25,000 is a historical purchase price in the notes."
+VWAV,VisionWave (post-deal equity),dropped,,"$110M is post-transaction equity value, not consideration."
+BBAI,Government Business valuation,dropped,,$36M-$44M is an implied enterprise-value range.
+SWMR,SWMR deal,plausible - verify,16000000 USD cash + shares,PREM14A: aggregate up to about $16.0M in cash plus shares. Confirm the deal and terms.
+SKIL,Skillsoft merger,plausible - verify,204943210 USD aggregate,DEFM14A: aggregate consideration figure. Confirm which deal and how it is split.
+AISP,Airship AI / BYTS,plausible - verify,225000000 USD aggregate (in shares),S-4: aggregate consideration of $225.0M in shares. Confirm it is the total deal value.
+AIFF,Tellenger (WaveDancer),plausible - verify,1500000 USD aggregate,S-4: aggregate purchase price $1.5M. Small deal; confirm.
+DDD,3D Systems merger agreement (2023),plausible - verify,7.00 USD per share cash + 1.6387 shares,Merger agreement text: $7.00 cash plus 1.6387 shares per share. Confirm counterparty.
+ALKT,Alkami merger agreement (2022),plausible - verify,135500000 USD enterprise value,"Merger agreement defines Enterprise Value as $135,500,000. Confirm this is the purchase price."
+BBAI,BigBear.ai merger agreement (2023),plausible - verify,70000000 USD enterprise value,"Merger agreement defines Enterprise Value as $70,000,000. Confirm this is the purchase price."
+SNPS,Ansys merger agreement (2024-01),confirmed,197.00 USD per share cash,Merger agreement text: $197.00 cash per Ansys share (matches S-4).
+TTWO,Zynga merger agreement (2022-01),confirmed,3.50 USD per share cash,Merger agreement text: $3.50 cash per share (matches S-4).
+ADSK,contract threshold,dropped,,"$50,000 is a materiality threshold in a rep, not a deal term."
+GEN,contract thresholds,dropped,,"$20M and $250M are covenant thresholds, not the deal price."

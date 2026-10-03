@@ -9,3 +9,14 @@ data/processed/
 .venv/
 .ipynb_checkpoints/
 __pycache__/
+
+# Raw downloads, caches and logs stay local. Only the CSV tables are shared.
+# Tables are kept under data/extracts and data/packaged_software/output.
+data/extracts/**
+!data/extracts/**/
+!data/extracts/**/*.csv
+data/extracts/sec/**
+!data/extracts/sec/
+!data/extracts/sec/filings_index.csv
+data/extracts/_cache/
+data/extracts/**/*.json

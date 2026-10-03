@@ -1,0 +1,3 @@
+cik,company_name,recipient_name,exact_name_match,award_id,start_date,end_date,award_amount,awarding_agency,awarding_sub_agency,description,usaspending_internal_id
+0001373715,"SERVICENOW, INC.","SERVICENOW, INC.",True,33314523P00496079,2023-07-28,2026-07-30,2996587.2,Smithsonian Institution,Smithsonian Institution,SOFTWARE LICENSE RENEWAL,CONT_AWD_33314523P00496079_3300_-NONE-_-NONE-
+0001373715,"SERVICENOW, INC.","SERVICENOW, INC.",True,33314520P00443883,2020-05-22,2023-07-30,1493444.86,Smithsonian Institution,Smithsonian Institution,SOFTWARE LICENSE RENEWAL,CONT_AWD_33314520P00443883_3300_-NONE-_-NONE-

@@ -1,0 +1,2 @@
+cik,company_name,recipient_name,exact_name_match,award_id,start_date,end_date,award_amount,awarding_agency,awarding_sub_agency,description,usaspending_internal_id
+0000816761,TERADATA CORPORATION,TERADATA GOVERNMENT SYSTEMS LLC,False,HQ085926FF980,2025-12-29,2035-12-28,500.0,Department of Defense,Missile Defense Agency,SCALABLE HOMELAND INNOVATIVE ENTERPRISE LAYERED DEFENSE (SHIELD) INITIAL ORDER.,CONT_AWD_HQ085926FF980_9700_HQ085926DF597_9700

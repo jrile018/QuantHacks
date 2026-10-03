@@ -1,0 +1,169 @@
+cik,ticker,name,score_date,model_version,coverage_status,mapping_status,cpe_vendors,eligible_cve_count,scored_cve_count,missing_epss_count,score_coverage_fraction,mean_product_cve_epss,median_product_cve_epss,max_product_cve_epss,high_epss_cve_count,high_epss_threshold,historical_mapping_limitation
+0000935036,ACIW,"ACI Worldwide, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,aciworldwide,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000796343,ADBE,Adobe Inc.,2025-12-01,v2025.03.14,scored,curated_current_brand,adobe,6758,6758,0,1.0,0.0694643015685114,0.02029,0.94421,1066,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000769397,ADSK,Autodesk Inc,2025-12-01,v2025.03.14,scored,curated_current_brand,autodesk,323,323,0,1.0,0.005974643962848298,0.00103,0.49329,4,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001577526,AI,"C3.ai, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001459200,ALRM,"Alarm.com Holdings, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,alarm,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001807166,AMST,Amesite Inc.,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001433195,APPF,"AppFolio, Inc. Class A",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,appfolio,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001441683,APPN,Appian Corporation Class A Common Stock,2025-12-01,v2025.03.14,scored,curated_current_brand,appian,1,1,0,1.0,0.71369,0.71369,0.71369,1,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,asana,2,2,0,1.0,0.03672,0.03672,0.06991,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002026353,ATHR,"Aether Holdings, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001534154,AUID,authID Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,avepoint,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001015739,AWRE,Aware Inc,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001070235,BB,BlackBerry Limited,2025-12-01,v2025.03.14,scored,curated_current_brand,blackberry,69,69,0,1.0,0.03976898550724638,0.00277,0.94469,3,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001786352,BILL,"BILL Holdings, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,bio-key,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001666134,BL,"BlackLine, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001378590,BLIN,Bridgeline Digital Inc.,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001280058,BLKB,"Blackbaud, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,blackbaud,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,backblaze,4,4,0,1.0,0.05171,0.000515,0.20543,1,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001372612,BOX,"BOX, INC.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,box,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,bentley,224,224,0,1.0,0.015705580357142857,0.00621,0.94358,2,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000813672,CDNS,Cadence Design Systems,2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,cadence,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001827090,CERT,"Certara, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001651562,COUR,"Coursera, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001108524,CRM,"Salesforce, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,salesforce,14,14,0,1.0,0.014469285714285714,0.00209,0.08696,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001768267,CRNC,Cerence Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,crowdstrike,1,1,0,1.0,0.01718,0.01718,0.01718,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001769628,CRWV,"CoreWeave, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001169561,CVLT,"Commault Systems, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,commvault,15,15,0,1.0,0.30317066666666664,0.20456,0.85562,9,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001569345,CXM,"Sprinklr, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002032341,CYAB,"Cyabra, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001467623,DBX,"Dropbox, Inc. Class A",2025-12-01,v2025.03.14,scored,curated_current_brand,dropbox,15,15,0,1.0,0.007045999999999999,0.00171,0.08256,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000910638,DDD,3D Systems Corporation,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",2025-12-01,v2025.03.14,no_eligible_cves_on_date,curated_current_brand,datadog,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001261333,DOCU,"DocuSign, Inc. Common Stock",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,docusign,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001773383,DT,"Dynatrace, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,dynatrace,2,2,0,1.0,0.002955,0.002955,0.00386,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001066194,EGAN,eGain Corporation,2025-12-01,v2025.03.14,scored,curated_current_brand,egain,4,4,0,1.0,0.00326,0.003365,0.00441,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001707753,ESTC,Elastic N.V.,2025-12-01,v2025.03.14,scored,curated_current_brand,elastic,191,191,0,1.0,0.03505905759162304,0.0027,0.94448,9,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001853145,EVCM,EverCommerce Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,expensify,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001960355,EXYN,"Exyn Technologies, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001993400,FATN,"FatPipe, Inc. Common Stock",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,fatpipe,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001579878,FIG,"Figma, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,figma,1,1,0,1.0,0.00154,0.00154,0.00154,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001800667,FROG,JFrog Ltd. Ordinary Shares,2025-12-01,v2025.03.14,scored,curated_current_brand,jfrog,32,32,0,1.0,0.0776796875,0.003045,0.92486,4,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,2025-12-01,v2025.03.14,scored,curated_current_brand,freshworks,3,3,0,1.0,0.00227,0.00191,0.00434,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,fastly,3,3,0,1.0,0.0022500000000000003,0.00283,0.003,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000849399,GEN,Gen Digital Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001653482,GTLB,GitLab Inc. Class A Common Stock,2025-12-01,v2025.03.14,scored,curated_current_brand,gitlab,1260,1260,0,1.0,0.015344261904761906,0.00127,0.94467,32,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,guidewire,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001404655,HUBS,"HUBSPOT, INC.",2025-12-01,v2025.03.14,scored,curated_current_brand,hubspot,6,6,0,1.0,0.0036833333333333336,0.0036,0.00659,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001081745,INLX,"Intellinetics, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001615063,INSE,"Inspired Entertainment, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001565687,INTA,"Intapp, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000896878,INTU,Intuit Inc,2025-12-01,v2025.03.14,scored,curated_current_brand,intuit,16,16,0,1.0,0.042055625,0.001705,0.57182,1,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001432133,KLTR,"Kaltura, Inc. Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,kaltura,7,7,0,1.0,0.11561428571428571,0.00284,0.77447,1,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001835830,KVYO,"Klaviyo, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,klaviyo,2,2,0,1.0,0.00076,0.00076,0.00089,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001625641,LAW,"CS Disco, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001056696,MANH,Manhattan Associates Inc,2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,manh,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001224133,MCHX,"Marchex, Inc. Class B",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001441816,MDB,"MongoDB, Inc. Class A",2025-12-01,v2025.03.14,scored,curated_current_brand,mongodb,111,111,0,1.0,0.010827477477477478,0.00268,0.52332,2,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000789019,MSFT,Microsoft Corp,2025-12-01,v2025.03.14,scored,curated_current_brand,microsoft,6819,6819,0,1.0,0.22025512978442588,0.14182,0.94451,3819,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001211805,MYSZ,"My Size, Inc",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001834488,NABL,"N-able, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,n-able,15,15,0,1.0,0.027743333333333335,0.00147,0.21393,2,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001639723,NAVN,"Navan, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001902733,NCNO,"nCino, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2025-12-01,v2025.03.14,scored,curated_current_brand,cloudflare,55,55,0,1.0,0.0031352727272727274,0.00116,0.04721,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001373715,NOW,"SERVICENOW, INC.",2025-12-01,v2025.03.14,scored,curated_current_brand,servicenow,17,17,0,1.0,0.1658558823529412,0.00505,0.94349,5,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,nutanix,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,netskope,10,10,0,1.0,0.00227,0.00067,0.01073,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001039280,NTWK,"NetSol Technologies, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,netsol,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002083632,OCTV,Octave Intelligence plc Class B Ordinary Shares,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,okta,10,10,0,1.0,0.009628000000000001,0.001075,0.05288,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001341439,ORCL,Oracle Corp,2025-12-01,v2025.03.14,scored,curated_current_brand,oracle,9373,9373,0,1.0,0.038586397098047585,0.00499,0.94508,589,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001734722,PATH,"UiPath, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,uipath,5,5,0,1.0,0.007876,0.00607,0.01805,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,paycom,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001611052,PCOR,"Procore Technologies, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,procore,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,paylocity,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001568100,PD,"PagerDuty, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,pagerduty,11,11,0,1.0,0.010467272727272726,0.00213,0.08918,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001120914,PDFS,PDF Solutions Inc,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,2025-12-01,v2025.03.14,scored,curated_current_brand,palantir,29,29,0,1.0,0.0019027586206896551,0.00159,0.00635,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001784535,PRCH,"Porch Group, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000876167,PRGS,Progress Software Corp (DE),2025-12-01,v2025.03.14,scored,curated_current_brand,progress,217,217,0,1.0,0.09580525345622119,0.00229,0.94468,37,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000857005,PTC,"PTC, INC",2025-12-01,v2025.03.14,scored,curated_current_brand,ptc,34,34,0,1.0,0.006104705882352941,0.0015400000000000001,0.03999,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001040161,PXLW,Pixelworks Inc,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001107843,QLYS,"Qualys, Inc. Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,qualys,11,11,0,1.0,0.0017454545454545455,0.00151,0.0055,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001410384,QTWO,Q2 Holdings Inc,2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,q2,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001758009,QUBT,Quantum Computing Inc. Common,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000797542,QXL,Quantum X Labs Inc. Common Stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001315098,RBLX,Roblox Corporation,2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,roblox,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001943896,RBRK,"Rubrik, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,rubrik,4,4,0,1.0,0.011,0.00311,0.03732,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001720116,RDVT,"Red Violet, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002077709,ROC,Rank One Computing Corporation Common stock,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001560327,RPD,"Rapid7, Inc. Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,rapid7,74,74,0,1.0,0.0317327027027027,0.0019,0.87878,3,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001583708,S,"SentinelOne, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,sentinelone,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001627857,SAIL,"SailPoint, Inc. Common Stock",2025-12-01,v2025.03.14,scored,curated_current_brand,sailpoint,9,9,0,1.0,0.002871111111111111,0.00242,0.00666,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,2025-12-01,v2025.03.14,scored,curated_current_brand,shopify,2,2,0,1.0,0.00273,0.00273,0.00306,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001774675,SKIL,Skillsoft Corp.,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000948708,SMSI,Smith Micro Software Inc,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001640147,SNOW,Snowflake Inc.,2025-12-01,v2025.03.14,scored,curated_current_brand,snowflake,28,28,0,1.0,0.0035817857142857144,0.000665,0.02162,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000883241,SNPS,Synopsys Inc,2025-12-01,v2025.03.14,scored,curated_current_brand,synopsys,7,7,0,1.0,0.0018857142857142857,0.00198,0.00406,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001092699,SPSC,"SPS Commerce, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001402436,SSNC,SS&C Technologies Inc,2025-12-01,v2025.03.14,scored,curated_current_brand,ssctech,7,7,0,1.0,0.01401,0.00407,0.06908,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002092574,SWMR,"Swarmer, Inc Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000816761,TDC,TERADATA CORPORATION,2025-12-01,v2025.03.14,scored,curated_current_brand,teradata,5,5,0,1.0,0.005102,0.00299,0.0126,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,2025-12-01,v2025.03.14,scored,curated_current_brand,atlassian,465,465,0,1.0,0.07809709677419355,0.00387,0.94472,46,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001660280,TENB,"Tenable Holdings, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,tenable,151,151,0,1.0,0.04928794701986755,0.00353,0.94432,13,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000946581,TTWO,Take-Two Interactive Software Inc,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001447669,TWLO,Twilio Inc.,2025-12-01,v2025.03.14,scored,curated_current_brand,twilio,2,2,0,1.0,0.122955,0.122955,0.24538,1,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0000860731,TYL,"Tyler Technologies, Inc.",2025-12-01,v2025.03.14,scored,curated_current_brand,tylertech,13,13,0,1.0,0.008782307692307692,0.00756,0.01994,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001810806,U,Unity Software Inc.,2025-12-01,v2025.03.14,scored,curated_current_brand,unity3d,2,2,0,1.0,0.03162,0.03162,0.03483,0,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001505155,UPLD,"Upland Software, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,uplandsoftware,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001393052,VEEV,Veeva Systems Inc.,2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,veeva,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001603015,VIA,"Via Transportation, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001973062,VIDA,VIDA Global Inc.,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001361113,VRNS,"Varonis Systems, Inc.",2025-12-01,v2025.03.14,no_current_matching_cves,curated_current_brand,varonis,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0002038439,VWAV,"VisionWave Holdings, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001609151,WEAV,"Weave Communications, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001445305,WK,Workiva Inc.,2025-12-01,v2025.03.14,no_eligible_cves_on_date,curated_current_brand,workiva,0,0,0,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001788999,XPER,Xperi Inc,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001512673,XYZ,"Block, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001873951,XZO,"Exzeo Group, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001856314,YOU,"Clear Secure, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001667313,ZDGE,"Zedge, Inc.",2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time
+0001851003,ZETA,Zeta Global Holdings Corp.,2025-12-01,v2025.03.14,unmapped,unmapped,,,,,,,,,,0.1,retrospective_current_universe_and_nvd_mapping_not_point_in_time

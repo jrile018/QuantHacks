@@ -1,0 +1,3 @@
+cik,company_name,recipient_name,exact_name_match,award_id,start_date,end_date,award_amount,awarding_agency,awarding_sub_agency,description,usaspending_internal_id
+0001280058,"Blackbaud, Inc.",BLACKBAUD INC,True,33317423P00483272,2022-11-01,2023-10-31,30558.16,Smithsonian Institution,Smithsonian Institution,ANNUAL MAINTENANCE FOR FINANCIAL EDGE ACCOUNTING SOFTWARE,CONT_AWD_33317423P00483272_3300_-NONE-_-NONE-
+0001280058,"Blackbaud, Inc.",BLACKBAUD INC,True,36C24520P0843,2020-09-30,2020-10-30,9684.67,Department of Veterans Affairs,Department of Veterans Affairs,SSVF-GPD GRANT MGMT SAAS,CONT_AWD_36C24520P0843_3600_-NONE-_-NONE-
