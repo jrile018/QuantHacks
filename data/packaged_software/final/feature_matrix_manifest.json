@@ -1,0 +1,62 @@
+{
+  "version": "reviewed-diagnostic-v2-financial-density",
+  "rows": 3192,
+  "companies": 168,
+  "quarters": 19,
+  "raw_features": 94,
+  "populated_feature_cells": 120248,
+  "total_feature_cells": 300048,
+  "labelled_rows": 2300,
+  "label_status_counts": {
+    "diagnostic_price_return_not_executable_or_total_return_certified": 2300,
+    "missing_price_in_matched_session_window": 380,
+    "outcome_not_mature_or_factor_calendar_unavailable": 336,
+    "dated_price_identity_requires_review": 176
+  },
+  "legacy_quarter_only_clock_cells": 28132,
+  "cloud_source_files_hash_checked": 56,
+  "original_rows": 2334,
+  "original_features": 37,
+  "input_sha256": {
+    "final\\dataset.sqlite": "181855f51cf5ccc496aee68f4d55164458b8df0fcdb172c3432c58dc84c5a00a",
+    "final\\companies_universe.csv": "790300386ec7eabbd645050bbd91125ab38b6835e8430a466fb400894f6b539a",
+    "extracts\\financial_quality\\metric_validation.csv": "ed99c5e8ca786b9853f8ba351b271a69182e895aaa97f29570d386cd2d7b7a54",
+    "extracts\\financial_quality\\ratio_dependency_validation.csv": "350dfbcdcca8ac28a0455104da3be2d67e643cfe1ae7000ce816306185724b02",
+    "extracts\\financial_quality\\audit.json": "d6d128299b62418b48a188a905ed8ce6ade60be9744769ca054a8f53c562f354",
+    "extracts\\company_coverage\\daily_bars_reviewed.csv": "b43b5d9276cc209b724ee641ef10eaa14e568d4f538b35de7329f1fff0eb7cd4",
+    "output\\factor_returns_daily.csv": "1308b8307937717189d5299559a224d5bc4990f740231c80f2cdf350bcd98f61",
+    "extracts\\infrastructure_evidence\\reviewed_cloud_contract_observations.csv": "8b04111f6ce953aa51e08e0245f6c138458cadd9e5f7cbe9a32384d4dbbb9b75",
+    "extracts\\infrastructure_evidence\\infrastructure_observations_with_scope_review.csv": "5723221c67cd7fe48668d91f329ac07191d1bc8c91393256f5c7e7be9dcae376",
+    "extracts\\infrastructure_evidence\\reported_cloud_agreement_spending_first_filed.csv": "f40ff02ac1e5647647f450f1a17de1c567ba59e220c831d3db2e5e652eed9a50",
+    "extracts\\financial_density\\recovered_observations.csv": "4c36247141e28f2caff024ce5f81da5948fcc796508e8645987adbb3fd1754a4",
+    "extracts\\financial_density\\audit.json": "04a436a99ad538908b537d6d6c1684b40b1323ea226a0739dd1e9a16bd689880",
+    "extracts\\infrastructure_evidence\\additional_reviewed_cloud_observations.csv": "d1b1a8e6c3d302d4bfbefe013417657df5b6c4bfeb4302b92b663c7b636787a5",
+    "extracts\\infrastructure_evidence\\additional_cloud_review_audit.json": "b3453b16f94128df8e8b1e136ac1ebad2df54e743d67a927b5d18ee72e5bb62d"
+  },
+  "financial_max_age_days": 400,
+  "command": ".\\venv\\Scripts\\python.exe data/packaged_software/rebuild_reviewed_matrix.py",
+  "output_sha256": {
+    "feature_matrix_backtest.csv": "aa616af31c61c27ab6c320a114b0a5c3d714f77a9d57704d0c4d51b7934585e4",
+    "feature_matrix_provenance.csv": "5da369324e71497404415458610e2731db267489e729098993c2fec78f23cd42",
+    "feature_matrix_label_audit.csv": "b6727f86a9b5905f342031c7e81931dab1be600609f3459d368fd2f6e4030fce",
+    "feature_matrix_coverage.csv": "059c7a0a6714db4422884965d94abdd22829d91360219bdf18804c4c425f31b9",
+    "feature_matrix_observations.csv": "d7fc35265ca34064cf6bcfdc22f107aa13911ad4de8b4360c9f6b7492301cbe3",
+    "FEATURE_MATRIX_DICTIONARY.csv": "6ad5c35e8e94136beb1983c78d5c474a2ad9540465450ff616821982588b5438"
+  },
+  "base_build_output_sha256": {
+    "feature_matrix_backtest.csv": "19c791746dcfc6bcd7dd38df89dc0a307b82bb9e592f0c67eacfb143a5268fc9",
+    "feature_matrix_provenance.csv": "5da369324e71497404415458610e2731db267489e729098993c2fec78f23cd42",
+    "feature_matrix_label_audit.csv": "b6727f86a9b5905f342031c7e81931dab1be600609f3459d368fd2f6e4030fce",
+    "feature_matrix_coverage.csv": "059c7a0a6714db4422884965d94abdd22829d91360219bdf18804c4c425f31b9",
+    "feature_matrix_observations.csv": "d7fc35265ca34064cf6bcfdc22f107aa13911ad4de8b4360c9f6b7492301cbe3",
+    "FEATURE_MATRIX_DICTIONARY.csv": "719d0b8c7a00e04cfcf271d05df20162c5f19c628902e1569ebd4e17c5555a42"
+  },
+  "power_capex_extension": {
+    "raw_features_added": 41,
+    "rows": 3192,
+    "columns": 419,
+    "manifest": "extracts/power_capex/matrix_update_manifest.json",
+    "provenance": "extracts/power_capex/matrix_feature_provenance.csv",
+    "coverage": "extracts/power_capex/matrix_feature_coverage.csv"
+  }
+}

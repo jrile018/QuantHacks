@@ -1,0 +1,7 @@
+litigation_release: 1367 releases
+accounting_auditing_release: 307 releases
+administrative_proceeding: 2433 releases
+
+Releases in window: 4107
+Companies with a matched release: 1 of 168
+Wrote sec_litigation_releases.csv and sec_enforcement_by_company.csv

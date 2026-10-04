@@ -1,0 +1,27 @@
+universe: 168 companies
+return correlations computed for 158 companies with at least 250 overlapping days
+  correlation >= 0.3: 4510 edges, density 0.364
+  correlation >= 0.5: 747 edges, density 0.060
+  correlation >= 0.7: 4 edges, density 0.000
+news_comention   edges   2931 | density 0.2089 | largest component 155 | mean ICM reach 129.05
+tenk_mention     edges    152 | density 0.0108 | largest component  90 | mean ICM reach 7.78
+return_corr      edges    747 | density 0.0533 | largest component  77 | mean ICM reach 25.59
+shared_auditor   edges   1425 | density 0.1016 | largest component  30 | mean ICM reach 17.74
+shared_agency    edges      7 | density 0.0005 | largest component   7 | mean ICM reach 1.04
+common_ownership_13f edges   1159 | density 0.0826 | largest component 129 | mean ICM reach 73.96
+
+most connected by composite rank (mean of per-layer eigenvector ranks):
+  VEEV   0.662  layers=5/5  Veeva Systems Inc.
+  SNOW   0.658  layers=5/5  Snowflake Inc.
+  SHOP   0.647  layers=5/5  Shopify Inc. Class A subordinate votin
+  DOCU   0.647  layers=5/5  DocuSign, Inc. Common Stock
+  HUBS   0.630  layers=5/5  HUBSPOT, INC.
+  ESTC   0.605  layers=5/5  Elastic N.V.
+  CRM    0.601  layers=5/5  Salesforce, Inc.
+  ASAN   0.600  layers=5/5  Asana, Inc. Class A Common Stock
+  TYL    0.598  layers=5/5  Tyler Technologies, Inc.
+  AI     0.585  layers=5/5  C3.ai, Inc.
+companies by number of layers they appear in: {0: 8, 1: 7, 2: 15, 3: 35, 4: 56, 5: 47}
+companies with no edge in any layer (8): ['AIFF', 'ATHR', 'EXYN', 'FATN', 'LTRYW', 'OCTV', 'QXL', 'VIDA']
+
+Wrote 6421 edges, 1176 company-layer rows, 6 layer summaries

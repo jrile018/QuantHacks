@@ -1,0 +1,7 @@
+customer_concentration: 1046 statements, 135 companies
+  a customer at/above the threshold: 721 statements, 104 companies
+    of those, a counted/single customer: 138 statements, 30 companies
+  explicitly no customer above it:   325 statements
+legal_proceedings: 832 filings, Item 3 found in 751, 'no material litigation' in 102
+executive_departures: 898 filings, 154 companies
+  immediate: 248 | for cause: 70 | planned retirement wording: 22

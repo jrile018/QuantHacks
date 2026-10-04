@@ -1,0 +1,6 @@
+ticker,cpe_vendor,ownership_start_used,evidence_url
+AISP,airship.ai,2022-01-01,https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2025/va-25-265-01.json
+GEN,avira,2022-01-01,https://investor.gendigital.com/news/news-details/2021/NortonLifeLocks-Q3-Growth-Momentum-Fueled-by-Cyber-Safety-Adoption/default.aspx
+GEN,avast,2022-09-12,https://newsroom.gendigital.com/2022-09-12-NortonLifeLock-Completes-Merger-with-Avast
+GEN,avg,2022-09-12,https://newsroom.gendigital.com/2022-09-12-NortonLifeLock-Completes-Merger-with-Avast;https://blog.avast.com/avast-and-avg-become-one
+GEN,piriform,2022-09-12,https://newsroom.gendigital.com/2022-09-12-NortonLifeLock-Completes-Merger-with-Avast;https://blog.avast.com/welcome-piriform-to-avast

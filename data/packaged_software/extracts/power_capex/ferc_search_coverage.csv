@@ -1,0 +1,169 @@
+asof,cik,query,retained_hits,status,ticker,total_hits
+2026-10-04,0000935036,"(""ACI Worldwide Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,ACIW,2
+2026-10-04,0000796343,"(""Adobe Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",30,completed_candidate_search_not_direct_project_attribution,ADBE,30
+2026-10-04,0000769397,"(""Autodesk Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",86,completed_candidate_search_not_direct_project_attribution,ADSK,86
+2026-10-04,0001362190,"(""AudioEye Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AEYE,0
+2026-10-04,0001577526,"(""C3.ai Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,AI,1
+2026-10-04,0000803578,"(""Firefly Neuroscience Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AIFF,0
+2026-10-04,0001842566,"(""Airship AI Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AISP,0
+2026-10-04,0001529274,"(""Alkami Technology Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,ALKT,0
+2026-10-04,0001459200,"(""Alarm.com Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,ALRM,1
+2026-10-04,0001866692,"(""Amplitude Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AMPL,0
+2026-10-04,0001807166,"(""Amesite Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AMST,0
+2026-10-04,0001433195,"(""AppFolio Inc. Class A"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,APPF,0
+2026-10-04,0001441683,"(""Appian Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,APPN,0
+2026-10-04,0001477720,"(""Asana Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,ASAN,2
+2026-10-04,0002026353,"(""Aether Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,ATHR,0
+2026-10-04,0001534154,"(""authID Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AUID,0
+2026-10-04,0001777921,"(""AvePoint Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,AVPT,1
+2026-10-04,0001015739,"(""Aware Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,AWRE,0
+2026-10-04,0001514416,"(""Bandwidth Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BAND,0
+2026-10-04,0001070235,"(""BlackBerry Limited"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BB,0
+2026-10-04,0001836981,"(""BigBear.ai Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BBAI,0
+2026-10-04,0001786352,"(""BILL Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BILL,0
+2026-10-04,0001019034,"(""BIO-key International Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BKYI,0
+2026-10-04,0001666134,"(""BlackLine Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BL,0
+2026-10-04,0001378590,"(""Bridgeline Digital Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BLIN,0
+2026-10-04,0001280058,"(""Blackbaud Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,BLKB,2
+2026-10-04,0001462056,"(""Backblaze Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BLZE,0
+2026-10-04,0001372612,"(""BOX INC"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",11,completed_candidate_search_not_direct_project_attribution,BOX,11
+2026-10-04,0001676238,"(""Braze Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,BRZE,0
+2026-10-04,0001031308,"(""Bentley Systems Incorporated"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",6,completed_candidate_search_not_direct_project_attribution,BSY,6
+2026-10-04,0001818201,"(""CCC Intelligent Solutions Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CCC,0
+2026-10-04,0001582982,"(""CareCloud Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CCLD,0
+2026-10-04,0001866633,"(""Consensus Cloud Solutions Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,CCSI,1
+2026-10-04,0000813672,"(""Cadence Design Systems"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",9,completed_candidate_search_not_direct_project_attribution,CDNS,9
+2026-10-04,0001827090,"(""Certara Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CERT,0
+2026-10-04,0001626450,"(""Commerce.com Inc. Series 1"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CMRC,0
+2026-10-04,0001651562,"(""Coursera Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,COUR,0
+2026-10-04,0001108524,"(""Salesforce Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",67,completed_candidate_search_not_direct_project_attribution,CRM,67
+2026-10-04,0001768267,"(""Cerence Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CRNC,0
+2026-10-04,0001535527,"(""CrowdStrike Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",7,completed_candidate_search_not_direct_project_attribution,CRWD,7
+2026-10-04,0001769628,"(""CoreWeave Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,CRWV,2
+2026-10-04,0001169561,"(""Commault Systems Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CVLT,0
+2026-10-04,0001820875,"(""CXApp Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CXAI,0
+2026-10-04,0001569345,"(""Sprinklr Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CXM,0
+2026-10-04,0002032341,"(""Cyabra Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,CYAB,0
+2026-10-04,0001467623,"(""Dropbox Inc. Class A"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,DBX,0
+2026-10-04,0000910638,"(""3D Systems Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,DDD,0
+2026-10-04,0001561550,"(""Datadog Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",9,completed_candidate_search_not_direct_project_attribution,DDOG,9
+2026-10-04,0001861795,"(""Definitive Healthcare Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,DH,0
+2026-10-04,0001261333,"(""DocuSign Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",4,completed_candidate_search_not_direct_project_attribution,DOCU,4
+2026-10-04,0001773383,"(""Dynatrace Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",4,completed_candidate_search_not_direct_project_attribution,DT,4
+2026-10-04,0001562088,"(""Duolingo Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,DUOL,0
+2026-10-04,0001396536,"(""Duos Technologies Group Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,DUOT,1
+2026-10-04,0001066194,"(""eGain Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,EGAN,0
+2026-10-04,0001707753,"(""Elastic N.V"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,ESTC,0
+2026-10-04,0001853145,"(""EverCommerce Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,EVCM,0
+2026-10-04,0001476840,"(""Expensify Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,EXFY,0
+2026-10-04,0001960355,"(""Exyn Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,EXYN,0
+2026-10-04,0001993400,"(""FatPipe Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,FATN,0
+2026-10-04,0001579878,"(""Figma Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,FIG,0
+2026-10-04,0001602409,"(""FingerMotion Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,FNGR,0
+2026-10-04,0001800667,"(""JFrog Ltd"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,FROG,0
+2026-10-04,0001544522,"(""Freshworks Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,FRSH,0
+2026-10-04,0001517413,"(""Fastly Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,FSLY,1
+2026-10-04,0001743725,"(""Grid Dynamics Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,GDYN,0
+2026-10-04,0001831096,"(""Great Elm Group Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,GEG,0
+2026-10-04,0000849399,"(""Gen Digital Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",28,completed_candidate_search_not_direct_project_attribution,GEN,28
+2026-10-04,0001653482,"(""GitLab Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,GTLB,0
+2026-10-04,0001794515,"(""ZoomInfo Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,GTM,0
+2026-10-04,0001528396,"(""GUIDEWIRE SOFTWARE INC"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,GWRE,2
+2026-10-04,0001895618,"(""Gaxos.ai Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,GXAI,0
+2026-10-04,0001404655,"(""HUBSPOT INC"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",4,completed_candidate_search_not_direct_project_attribution,HUBS,4
+2026-10-04,0001718939,"(""T Stamp Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,IDAI,0
+2026-10-04,0001040896,"(""Intellicheck Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,IDN,0
+2026-10-04,0001728688,"(""i3 Verticals Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,IIIV,0
+2026-10-04,0001081745,"(""Intellinetics Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,INLX,0
+2026-10-04,0001615063,"(""Inspired Entertainment Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,INSE,0
+2026-10-04,0001565687,"(""Intapp Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,INTA,0
+2026-10-04,0000896878,"(""Intuit Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",40,completed_candidate_search_not_direct_project_attribution,INTU,40
+2026-10-04,0001397183,"(""Iveda Solutions Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,IVDA,0
+2026-10-04,0001432133,"(""Kaltura Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,KLTR,0
+2026-10-04,0001835830,"(""Klaviyo Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,KVYO,0
+2026-10-04,0001625641,"(""CS Disco Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,LAW,0
+2026-10-04,0001673481,"(""Sports Entertainment Gaming Global Corporation Warrants"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,LTRYW,0
+2026-10-04,0001056696,"(""Manhattan Associates Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,MANH,2
+2026-10-04,0001910139,"(""Mobileye Global Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MBLY,0
+2026-10-04,0001224133,"(""Marchex Inc. Class B"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MCHX,0
+2026-10-04,0001441816,"(""MongoDB Inc. Class A"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MDB,0
+2026-10-04,0001805651,"(""MarketWise Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MKTW,0
+2026-10-04,0001522540,"(""Marqeta Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MQ,0
+2026-10-04,0001437925,"(""Meridian Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MRDN,0
+2026-10-04,0000789019,"(""Microsoft Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",500,truncated_candidate_search_not_complete,MSFT,9446
+2026-10-04,0001821175,"(""Motorsport Games Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MSGM,0
+2026-10-04,0001823878,"(""PLAYSTUDIOS Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MYPS,0
+2026-10-04,0001211805,"(""My Size Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,MYSZ,0
+2026-10-04,0001834488,"(""N-able Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,NABL,0
+2026-10-04,0001639723,"(""Navan Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,NAVN,0
+2026-10-04,0001902733,"(""nCino Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,NCNO,0
+2026-10-04,0001477333,"(""Cloudflare Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",3,completed_candidate_search_not_direct_project_attribution,NET,3
+2026-10-04,0001373715,"(""SERVICENOW INC"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",22,completed_candidate_search_not_direct_project_attribution,NOW,22
+2026-10-04,0001618732,"(""Nutanix Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,NTNX,2
+2026-10-04,0002063196,"(""Netskope Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,NTSK,0
+2026-10-04,0001039280,"(""NetSol Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,NTWK,0
+2026-10-04,0002083632,"(""Octave Intelligence plc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,OCTV,0
+2026-10-04,0001660134,"(""Okta Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,OKTA,2
+2026-10-04,0001341439,"(""Oracle Corporation"" OR ""Oracle America"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",61,completed_candidate_search_not_direct_project_attribution,ORCL,61
+2026-10-04,0000813828,"(""Banzai International Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PARA,0
+2026-10-04,0001734722,"(""UiPath Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,PATH,1
+2026-10-04,0001590955,"(""PAYCOM SOFTWARE INC"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",17,completed_candidate_search_not_direct_project_attribution,PAYC,17
+2026-10-04,0001611052,"(""Procore Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",3,completed_candidate_search_not_direct_project_attribution,PCOR,3
+2026-10-04,0001591698,"(""Paylocity Holding Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PCTY,0
+2026-10-04,0001568100,"(""PagerDuty Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,PD,1
+2026-10-04,0001120914,"(""PDF Solutions Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PDFS,0
+2026-10-04,0001826681,"(""Palladyne AI Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PDYN,0
+2026-10-04,0001321655,"(""Palantir Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",3,completed_candidate_search_not_direct_project_attribution,PLTR,3
+2026-10-04,0001784535,"(""Porch Group Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PRCH,0
+2026-10-04,0000876167,"(""Progress Software Corp (DE)"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PRGS,0
+2026-10-04,0000857005,"(""PTC INC"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",21,completed_candidate_search_not_direct_project_attribution,PTC,21
+2026-10-04,0001040161,"(""Pixelworks Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,PXLW,0
+2026-10-04,0001107843,"(""Qualys Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,QLYS,2
+2026-10-04,0001410384,"(""Q2 Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,QTWO,1
+2026-10-04,0001758009,"(""Quantum Computing Inc. Common"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,QUBT,0
+2026-10-04,0000797542,"(""Quantum X Labs Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,QXL,0
+2026-10-04,0001315098,"(""Roblox Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,RBLX,1
+2026-10-04,0001943896,"(""Rubrik Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,RBRK,0
+2026-10-04,0000748268,"(""Red Cat Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,RCAT,0
+2026-10-04,0001720116,"(""Red Violet Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,RDVT,0
+2026-10-04,0002077709,"(""Rank One Computing Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,ROC,0
+2026-10-04,0001560327,"(""Rapid7 Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,RPD,2
+2026-10-04,0001583708,"(""SentinelOne Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,S,1
+2026-10-04,0001627857,"(""SailPoint Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SAIL,0
+2026-10-04,0001594805,"(""Shopify Inc. Class A subordinate voting shares"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SHOP,0
+2026-10-04,0001774675,"(""Skillsoft Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SKIL,0
+2026-10-04,0000948708,"(""Smith Micro Software Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SMSI,0
+2026-10-04,0001886894,"(""Snail Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SNAL,0
+2026-10-04,0001640147,"(""Snowflake Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",64,completed_candidate_search_not_direct_project_attribution,SNOW,64
+2026-10-04,0000883241,"(""Synopsys Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",23,completed_candidate_search_not_direct_project_attribution,SNPS,23
+2026-10-04,0001840856,"(""SoundHound AI Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SOUN,0
+2026-10-04,0001092699,"(""SPS Commerce Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",4,completed_candidate_search_not_direct_project_attribution,SPSC,4
+2026-10-04,0001517375,"(""Sprout Social Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,SPT,2
+2026-10-04,0001402436,"(""SS&C Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,SSNC,2
+2026-10-04,0001351636,"(""SoundThinking Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SSTI,0
+2026-10-04,0001943289,"(""Silvaco Group Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SVCO,0
+2026-10-04,0002092574,"(""Swarmer Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,SWMR,0
+2026-10-04,0000816761,"(""TERADATA CORPORATION"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,TDC,0
+2026-10-04,0001650372,"(""Atlassian Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",36,completed_candidate_search_not_direct_project_attribution,TEAM,36
+2026-10-04,0001660280,"(""Tenable Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",3,completed_candidate_search_not_direct_project_attribution,TENB,3
+2026-10-04,0001638826,"(""ServiceTitan Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,TTAN,0
+2026-10-04,0000946581,"(""Take-Two Interactive Software Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",7,completed_candidate_search_not_direct_project_attribution,TTWO,7
+2026-10-04,0001447669,"(""Twilio Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",5,completed_candidate_search_not_direct_project_attribution,TWLO,5
+2026-10-04,0000860731,"(""Tyler Technologies Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",10,completed_candidate_search_not_direct_project_attribution,TYL,10
+2026-10-04,0001810806,"(""Unity Software Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",1,completed_candidate_search_not_direct_project_attribution,U,1
+2026-10-04,0001505155,"(""Upland Software Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,UPLD,0
+2026-10-04,0001393052,"(""Veeva Systems Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,VEEV,2
+2026-10-04,0001806837,"(""Vertex Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,VERX,0
+2026-10-04,0001603015,"(""Via Transportation Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,VIA,0
+2026-10-04,0001973062,"(""VIDA Global Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,VIDA,0
+2026-10-04,0001361113,"(""Varonis Systems Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",3,completed_candidate_search_not_direct_project_attribution,VRNS,3
+2026-10-04,0002038439,"(""VisionWave Holdings Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,VWAV,0
+2026-10-04,0001609151,"(""Weave Communications Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,WEAV,0
+2026-10-04,0001360565,"(""Where Food Comes From Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,WFCF,0
+2026-10-04,0001445305,"(""Workiva Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",3,completed_candidate_search_not_direct_project_attribution,WK,3
+2026-10-04,0001788999,"(""Xperi Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,XPER,0
+2026-10-04,0001512673,"(""Block Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",14,completed_candidate_search_not_direct_project_attribution,XYZ,14
+2026-10-04,0001873951,"(""Exzeo Group Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,XZO,0
+2026-10-04,0001856314,"(""Clear Secure Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",2,completed_candidate_search_not_direct_project_attribution,YOU,2
+2026-10-04,0001667313,"(""Zedge Inc"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,ZDGE,0
+2026-10-04,0001851003,"(""Zeta Global Holdings Corporation"") AND (""data center"" OR ""large load"" OR ""power purchase"" OR ""interconnection"")",0,completed_candidate_search_not_direct_project_attribution,ZETA,0

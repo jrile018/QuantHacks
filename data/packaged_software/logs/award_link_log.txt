@@ -1,0 +1,8 @@
+1954 exact-name awards with a start date, for 44 companies
+
+1954 awards
+  amount_and_agency        2  (0%)
+  amount                  12  (1%)
+  agency_and_contract     38  (2%)
+  none                  1902  (97%)
+linked to an 8-K: 52 awards, $0.03B of $6.46B

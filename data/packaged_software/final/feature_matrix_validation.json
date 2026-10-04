@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "input_sha256": true,
+    "output_sha256": true,
+    "full_grid_unique": true,
+    "presence_flags": true,
+    "equal_values_equal_ranks": true,
+    "ranks_match_independent_average_formula": true,
+    "no_future_availability": true,
+    "one_ledger_cell_per_feature": true,
+    "every_blank_has_reason": true,
+    "award_predictors_withheld": true,
+    "cloud_disclosure_quarter_only": true,
+    "labels_independently_recomputed": true,
+    "label_sessions_and_identity": true
+  },
+  "comparison": {
+    "old_rows": 2334,
+    "new_rows": 3192,
+    "old_raw_features": 37,
+    "new_raw_features": 94,
+    "old_population_percent": 70.1,
+    "new_population_percent": 40.08,
+    "comparable_original_rows_and_features_population_percent": 63.48,
+    "new_labelled_rows": 2300,
+    "cloud_populated_cells": 71,
+    "cloud_companies": 25
+  },
+  "limitations": "Checks do not certify accounting semantics, actual historical clocks, corporate actions, historical membership or executable returns."
+}

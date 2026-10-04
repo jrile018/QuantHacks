@@ -1,0 +1,6 @@
+168 of 168 companies have a matchable name
+tenk_sections: 832 filings | Item 1A found 764 | Item 7 found 760 | change score 544
+mention network: 445 rows, 179 pairs, 70 filers naming someone
+  named with a legal suffix (precise): 396 rows, 156 pairs
+  risk-factor change scored for 544 filings, median 0.427
+  change score withheld, section too small: 91

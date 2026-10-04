@@ -1,0 +1,4 @@
+168 tickers, 2022-01-01 to 2026-10-03
+
+Wrote 174896 bars for 168 of 168 tickers
+Tickers with no bars: []

@@ -1,0 +1,10 @@
+SIC 7372 population: 345; current universe: 168
+  50/345
+  100/345
+  150/345
+  200/345
+  250/345
+  300/345
+
+status of companies outside the current universe: {'active': 59, 'deregistered': 51, 'stopped_filing': 66, 'delisted': 3}
+status of the whole population: {'active': 224, 'deregistered': 51, 'stopped_filing': 67, 'delisted': 3}

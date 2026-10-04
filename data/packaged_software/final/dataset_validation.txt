@@ -1,0 +1,40 @@
+Unified dataset build
+
+dim_company: 168 companies
+fact_prices: 174896 bars
+fact_labels: 2681 company-quarters (forward 63-day excess return)
+fact_panel: 68130 cells
+fact_financials: 4374 annual values
+fact_events: 11682 dated events
+fact_contracts: 22197 awards
+fact_exhibit_contracts: 1412 exhibits
+edge_relations: 6421 links
+subsidiaries: 15687 records
+evidence: 1802 text spans
+
+Row counts:
+  dim_company: 168
+  fact_prices: 174896
+  fact_factors: 1169
+  fact_panel: 68130
+  fact_financials: 4374
+  fact_events: 11682
+  fact_contracts: 22197
+  fact_exhibit_contracts: 1412
+  fact_labels: 2681
+  edge_relations: 6421
+  subsidiaries: 15687
+  evidence: 1802
+
+Validation:
+PASS  fact_prices keys missing from dim_company: 0
+PASS  fact_panel keys missing from dim_company: 0
+PASS  fact_events keys missing from dim_company: 0
+PASS  fact_financials keys missing from dim_company: 0
+PASS  fact_labels keys missing from dim_company: 0
+PASS  dim_company rows with a blank membership status: 0
+INFO  companies labelled no_membership_record (known gap): 2
+PASS  cik values not 10 characters: 0
+PASS  labels present: 2681
+PASS  prices present: 174896
+PASS  panel present: 68130

@@ -1,0 +1,21 @@
+18 quarterly 13F data sets from 2022
+2022-01: 82 companies matched, 7159 managers, 2684317 holdings
+2022-04: 83 companies matched, 7187 managers, 2603731 holdings
+2022-07: 83 companies matched, 7214 managers, 2632327 holdings
+2022-10: 81 companies matched, 7206 managers, 2622058 holdings
+2023-01: 62 companies matched, 7522 managers, 2786017 holdings
+2023-04: 61 companies matched, 7410 managers, 2672308 holdings
+2023-07: 86 companies matched, 7413 managers, 2724039 holdings
+2023-10: 56 companies matched, 7519 managers, 2886468 holdings
+2024-01: 72 companies matched, 7755 managers, 2848736 holdings
+2024-03: 80 companies matched, 8130 managers, 3026705 holdings
+2024-06: 86 companies matched, 8125 managers, 3278515 holdings
+2024-09: 88 companies matched, 8123 managers, 3201864 holdings
+2024-12: 85 companies matched, 8721 managers, 3362299 holdings
+2025-03: 51 companies matched, 8898 managers, 3440002 holdings
+2025-06: 94 companies matched, 8811 managers, 3360306 holdings
+2025-09: 89 companies matched, 8570 managers, 3267091 holdings
+2025-12: 69 companies matched, 9364 managers, 3473209 holdings
+2026-03: 80 companies matched, 9716 managers, 3822885 holdings
+
+1159 common-ownership edges (cosine >= 0.05 in >= 2 quarters)

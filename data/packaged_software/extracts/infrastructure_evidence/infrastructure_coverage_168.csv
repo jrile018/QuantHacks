@@ -1,0 +1,169 @@
+cik,ticker,name,sic,industry,tagged_observations,tagged_source_element_matches,standard_scoped_observations,custom_observations_requiring_review,land_balance_observations,computer_equipment_observations,cloud_hosting_observations,status
+0000935036,ACIW,"ACI Worldwide, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,55,55,55,0,7,0,0,reported_observations_found_not_complete_spend
+0000796343,ADBE,Adobe Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,60,60,57,3,7,0,3,reported_observations_found_not_complete_spend
+0000769397,ADSK,Autodesk Inc,7372,SERVICES-PREPACKAGED SOFTWARE,119,119,115,4,0,36,2,reported_observations_found_not_complete_spend
+0001362190,AEYE,"AudioEye, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,32,32,32,0,0,0,0,reported_observations_found_not_complete_spend
+0001577526,AI,"C3.ai, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,87,87,73,14,0,36,14,reported_observations_found_not_complete_spend
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,36,36,36,0,0,0,0,reported_observations_found_not_complete_spend
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,0,0,0,0,0,0,0,no_selected_tagged_observation_not_zero
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,86,86,58,28,0,0,28,reported_observations_found_not_complete_spend
+0001459200,ALRM,"Alarm.com Holdings, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,71,71,71,0,7,0,0,reported_observations_found_not_complete_spend
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,96,96,41,55,0,0,55,reported_observations_found_not_complete_spend
+0001807166,AMST,Amesite Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,30,30,29,1,0,8,0,reported_observations_found_not_complete_spend
+0001433195,APPF,"AppFolio, Inc. Class A",7372,SERVICES-PREPACKAGED SOFTWARE,48,48,48,0,0,7,0,reported_observations_found_not_complete_spend
+0001441683,APPN,Appian Corporation Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,66,66,34,32,0,0,32,reported_observations_found_not_complete_spend
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,74,74,74,0,0,37,0,reported_observations_found_not_complete_spend
+0002026353,ATHR,"Aether Holdings, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,17,17,17,0,0,6,0,reported_observations_found_not_complete_spend
+0001534154,AUID,authID Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,10,10,10,0,0,2,0,reported_observations_found_not_complete_spend
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,82,82,55,27,0,7,27,reported_observations_found_not_complete_spend
+0001015739,AWRE,Aware Inc,7372,SERVICES-PREPACKAGED SOFTWARE,40,40,40,0,0,7,0,reported_observations_found_not_complete_spend
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,23,23,23,0,0,0,0,reported_observations_found_not_complete_spend
+0001070235,BB,BlackBerry Limited,7372,SERVICES-PREPACKAGED SOFTWARE,74,74,74,0,0,0,0,reported_observations_found_not_complete_spend
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,8,0,reported_observations_found_not_complete_spend
+0001786352,BILL,"BILL Holdings, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,32,32,32,0,0,0,0,reported_observations_found_not_complete_spend
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,33,33,33,0,0,0,0,reported_observations_found_not_complete_spend
+0001666134,BL,"BlackLine, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,47,47,47,0,0,7,0,reported_observations_found_not_complete_spend
+0001378590,BLIN,Bridgeline Digital Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,37,37,37,0,0,7,0,reported_observations_found_not_complete_spend
+0001280058,BLKB,"Blackbaud, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,162,162,130,32,7,7,32,reported_observations_found_not_complete_spend
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,91,91,91,0,0,32,0,reported_observations_found_not_complete_spend
+0001372612,BOX,"BOX, INC.",7372,SERVICES-PREPACKAGED SOFTWARE,59,59,59,0,0,21,0,reported_observations_found_not_complete_spend
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,37,37,37,0,0,0,0,reported_observations_found_not_complete_spend
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,64,64,44,20,2,0,20,reported_observations_found_not_complete_spend
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,98,98,98,0,0,32,0,reported_observations_found_not_complete_spend
+0001582982,CCLD,"CareCloud, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,43,43,43,0,0,9,0,reported_observations_found_not_complete_spend
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,58,58,58,0,0,23,0,reported_observations_found_not_complete_spend
+0000813672,CDNS,Cadence Design Systems,7372,SERVICES-PREPACKAGED SOFTWARE,58,58,58,0,9,0,0,reported_observations_found_not_complete_spend
+0001827090,CERT,"Certara, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,7,0,reported_observations_found_not_complete_spend
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,33,33,33,0,0,7,0,reported_observations_found_not_complete_spend
+0001651562,COUR,"Coursera, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,0,0,0,0,0,0,0,no_selected_tagged_observation_not_zero
+0001108524,CRM,"Salesforce, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,53,53,53,0,0,0,0,reported_observations_found_not_complete_spend
+0001768267,CRNC,Cerence Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,0,0,reported_observations_found_not_complete_spend
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,61,61,37,24,0,0,24,reported_observations_found_not_complete_spend
+0001769628,CRWV,"CoreWeave, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,34,34,34,0,0,1,0,reported_observations_found_not_complete_spend
+0001169561,CVLT,"Commault Systems, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,51,51,51,0,2,9,0,reported_observations_found_not_complete_spend
+0001820875,CXAI,CXApp Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,110,110,110,0,0,0,0,reported_observations_found_not_complete_spend
+0001569345,CXM,"Sprinklr, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,108,108,54,54,0,17,37,reported_observations_found_not_complete_spend
+0002032341,CYAB,"Cyabra, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,28,28,28,0,0,12,0,reported_observations_found_not_complete_spend
+0001467623,DBX,"Dropbox, Inc. Class A",7372,SERVICES-PREPACKAGED SOFTWARE,65,65,65,0,0,31,0,reported_observations_found_not_complete_spend
+0000910638,DDD,3D Systems Corporation,7372,SERVICES-PREPACKAGED SOFTWARE,46,46,46,0,0,0,0,reported_observations_found_not_complete_spend
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,87,87,66,21,0,32,21,reported_observations_found_not_complete_spend
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,34,34,34,0,0,0,0,reported_observations_found_not_complete_spend
+0001261333,DOCU,"DocuSign, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,83,83,83,0,0,37,0,reported_observations_found_not_complete_spend
+0001773383,DT,"Dynatrace, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,35,35,35,0,0,0,0,reported_observations_found_not_complete_spend
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,38,38,34,4,0,0,4,reported_observations_found_not_complete_spend
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,73,73,67,6,0,0,0,reported_observations_found_not_complete_spend
+0001066194,EGAN,eGain Corporation,7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,9,0,reported_observations_found_not_complete_spend
+0001707753,ESTC,Elastic N.V.,7372,SERVICES-PREPACKAGED SOFTWARE,38,38,37,1,0,0,1,reported_observations_found_not_complete_spend
+0001853145,EVCM,EverCommerce Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,88,88,66,22,0,32,22,reported_observations_found_not_complete_spend
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,137,137,117,20,32,32,20,reported_observations_found_not_complete_spend
+0001960355,EXYN,"Exyn Technologies, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,19,19,19,0,0,0,0,reported_observations_found_not_complete_spend
+0001993400,FATN,"FatPipe, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,6,6,6,0,0,0,0,reported_observations_found_not_complete_spend
+0001579878,FIG,"Figma, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,15,15,15,0,0,4,0,reported_observations_found_not_complete_spend
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,36,36,36,0,0,0,0,reported_observations_found_not_complete_spend
+0001800667,FROG,JFrog Ltd. Ordinary Shares,7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,32,0,reported_observations_found_not_complete_spend
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,115,115,98,17,0,32,17,reported_observations_found_not_complete_spend
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,78,78,48,30,0,7,0,reported_observations_found_not_complete_spend
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,76,76,76,0,0,32,0,reported_observations_found_not_complete_spend
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,8,8,8,0,0,0,0,reported_observations_found_not_complete_spend
+0000849399,GEN,Gen Digital Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,146,146,143,3,0,27,3,reported_observations_found_not_complete_spend
+0001653482,GTLB,GitLab Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,37,37,37,0,0,0,0,reported_observations_found_not_complete_spend
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,50,50,28,22,0,28,22,reported_observations_found_not_complete_spend
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",7372,SERVICES-PREPACKAGED SOFTWARE,63,63,54,9,0,4,0,reported_observations_found_not_complete_spend
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,0,0,0,0,0,0,0,no_selected_tagged_observation_not_zero
+0001404655,HUBS,"HUBSPOT, INC.",7372,SERVICES-PREPACKAGED SOFTWARE,34,34,34,0,0,0,0,reported_observations_found_not_complete_spend
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,106,106,106,0,0,48,0,reported_observations_found_not_complete_spend
+0001040896,IDN,"Intellicheck, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,95,95,95,0,0,32,0,reported_observations_found_not_complete_spend
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,76,76,76,0,0,7,0,reported_observations_found_not_complete_spend
+0001081745,INLX,"Intellinetics, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,35,35,35,0,0,0,0,reported_observations_found_not_complete_spend
+0001615063,INSE,"Inspired Entertainment, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,64,64,64,0,0,10,0,reported_observations_found_not_complete_spend
+0001565687,INTA,"Intapp, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,142,142,71,71,0,0,71,reported_observations_found_not_complete_spend
+0000896878,INTU,Intuit Inc,7372,SERVICES-PREPACKAGED SOFTWARE,64,64,64,0,9,0,0,reported_observations_found_not_complete_spend
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,27,27,27,0,0,0,0,reported_observations_found_not_complete_spend
+0001432133,KLTR,"Kaltura, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,77,77,77,0,0,32,0,reported_observations_found_not_complete_spend
+0001835830,KVYO,"Klaviyo, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,74,74,74,0,0,24,0,reported_observations_found_not_complete_spend
+0001625641,LAW,"CS Disco, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,32,32,32,0,0,0,0,reported_observations_found_not_complete_spend
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,7372,SERVICES-PREPACKAGED SOFTWARE,65,65,65,0,0,50,0,reported_observations_found_not_complete_spend
+0001056696,MANH,Manhattan Associates Inc,7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,0,0,reported_observations_found_not_complete_spend
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,83,83,83,0,0,0,0,reported_observations_found_not_complete_spend
+0001224133,MCHX,"Marchex, Inc. Class B",7372,SERVICES-PREPACKAGED SOFTWARE,61,61,61,0,0,32,0,reported_observations_found_not_complete_spend
+0001441816,MDB,"MongoDB, Inc. Class A",7372,SERVICES-PREPACKAGED SOFTWARE,46,46,46,0,0,9,0,reported_observations_found_not_complete_spend
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,124,124,83,41,0,0,41,reported_observations_found_not_complete_spend
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,82,82,66,16,0,32,16,reported_observations_found_not_complete_spend
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,96,96,96,0,0,18,0,reported_observations_found_not_complete_spend
+0000789019,MSFT,Microsoft Corp,7372,SERVICES-PREPACKAGED SOFTWARE,81,81,81,0,15,0,0,reported_observations_found_not_complete_spend
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,32,32,32,0,0,6,0,reported_observations_found_not_complete_spend
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,96,96,96,0,0,32,0,reported_observations_found_not_complete_spend
+0001211805,MYSZ,"My Size, Inc",7372,SERVICES-PREPACKAGED SOFTWARE,49,49,49,0,0,15,0,reported_observations_found_not_complete_spend
+0001834488,NABL,"N-able, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,46,46,46,0,0,9,0,reported_observations_found_not_complete_spend
+0001639723,NAVN,"Navan, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,17,17,17,0,0,8,0,reported_observations_found_not_complete_spend
+0001902733,NCNO,"nCino, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,111,111,111,0,0,37,0,reported_observations_found_not_complete_spend
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",7372,SERVICES-PREPACKAGED SOFTWARE,99,99,99,0,0,0,0,reported_observations_found_not_complete_spend
+0001373715,NOW,"SERVICENOW, INC.",7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,32,0,reported_observations_found_not_complete_spend
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,72,72,72,0,0,0,0,reported_observations_found_not_complete_spend
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,25,25,25,0,0,8,0,reported_observations_found_not_complete_spend
+0001039280,NTWK,"NetSol Technologies, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,152,152,152,0,34,34,0,reported_observations_found_not_complete_spend
+0002083632,OCTV,Octave Intelligence plc Class B Ordinary Shares,7372,SERVICES-PREPACKAGED SOFTWARE,4,4,4,0,0,0,0,reported_observations_found_not_complete_spend
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,37,37,37,0,0,2,0,reported_observations_found_not_complete_spend
+0001341439,ORCL,Oracle Corp,7372,SERVICES-PREPACKAGED SOFTWARE,176,176,70,106,11,0,106,reported_observations_found_not_complete_spend
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,40,40,40,0,5,0,0,reported_observations_found_not_complete_spend
+0001734722,PATH,"UiPath, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,133,133,103,30,0,37,30,reported_observations_found_not_complete_spend
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",7372,SERVICES-PREPACKAGED SOFTWARE,146,146,130,16,0,32,0,reported_observations_found_not_complete_spend
+0001611052,PCOR,"Procore Technologies, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,73,73,41,32,0,7,32,reported_observations_found_not_complete_spend
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,103,103,103,0,0,34,0,reported_observations_found_not_complete_spend
+0001568100,PD,"PagerDuty, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,105,105,79,26,0,39,26,reported_observations_found_not_complete_spend
+0001120914,PDFS,PDF Solutions Inc,7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,32,0,reported_observations_found_not_complete_spend
+0001826681,PDYN,Palladyne AI Corp. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,71,71,71,0,0,33,0,reported_observations_found_not_complete_spend
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,62,62,62,0,0,28,0,reported_observations_found_not_complete_spend
+0001784535,PRCH,"Porch Group, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,34,34,34,0,0,0,0,reported_observations_found_not_complete_spend
+0000876167,PRGS,Progress Software Corp (DE),7372,SERVICES-PREPACKAGED SOFTWARE,50,50,50,0,0,7,0,reported_observations_found_not_complete_spend
+0000857005,PTC,"PTC, INC",7372,SERVICES-PREPACKAGED SOFTWARE,42,42,35,7,0,0,0,reported_observations_found_not_complete_spend
+0001040161,PXLW,Pixelworks Inc,7372,SERVICES-PREPACKAGED SOFTWARE,37,37,37,0,0,0,0,reported_observations_found_not_complete_spend
+0001107843,QLYS,"Qualys, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,64,64,64,0,0,30,0,reported_observations_found_not_complete_spend
+0001410384,QTWO,Q2 Holdings Inc,7372,SERVICES-PREPACKAGED SOFTWARE,43,43,41,2,0,7,2,reported_observations_found_not_complete_spend
+0001758009,QUBT,Quantum Computing Inc. Common,7372,SERVICES-PREPACKAGED SOFTWARE,67,67,67,0,0,21,0,reported_observations_found_not_complete_spend
+0000797542,QXL,Quantum X Labs Inc. Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,44,44,44,0,0,9,0,reported_observations_found_not_complete_spend
+0001315098,RBLX,Roblox Corporation,7372,SERVICES-PREPACKAGED SOFTWARE,34,34,34,0,0,0,0,reported_observations_found_not_complete_spend
+0001943896,RBRK,"Rubrik, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,42,42,42,0,0,0,0,reported_observations_found_not_complete_spend
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,8,8,8,0,0,0,0,reported_observations_found_not_complete_spend
+0001720116,RDVT,"Red Violet, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,39,39,39,0,0,7,0,reported_observations_found_not_complete_spend
+0002077709,ROC,Rank One Computing Corporation Common stock,7372,SERVICES-PREPACKAGED SOFTWARE,7,7,7,0,0,6,0,reported_observations_found_not_complete_spend
+0001560327,RPD,"Rapid7, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,32,0,reported_observations_found_not_complete_spend
+0001583708,S,"SentinelOne, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,37,37,37,0,0,0,0,reported_observations_found_not_complete_spend
+0001627857,SAIL,"SailPoint, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,2,2,2,0,0,0,0,reported_observations_found_not_complete_spend
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,7372,SERVICES-PREPACKAGED SOFTWARE,30,30,30,0,0,8,0,reported_observations_found_not_complete_spend
+0001774675,SKIL,Skillsoft Corp.,7372,SERVICES-PREPACKAGED SOFTWARE,42,42,42,0,0,5,0,reported_observations_found_not_complete_spend
+0000948708,SMSI,Smith Micro Software Inc,7372,SERVICES-PREPACKAGED SOFTWARE,15,15,15,0,0,5,0,reported_observations_found_not_complete_spend
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,98,98,98,0,30,30,0,reported_observations_found_not_complete_spend
+0001640147,SNOW,Snowflake Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,74,74,37,37,0,0,37,reported_observations_found_not_complete_spend
+0000883241,SNPS,Synopsys Inc,7372,SERVICES-PREPACKAGED SOFTWARE,57,57,57,0,7,0,0,reported_observations_found_not_complete_spend
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,42,42,42,0,0,9,0,reported_observations_found_not_complete_spend
+0001092699,SPSC,"SPS Commerce, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,65,65,65,0,0,32,0,reported_observations_found_not_complete_spend
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,7,0,reported_observations_found_not_complete_spend
+0001402436,SSNC,SS&C Technologies Inc,7372,SERVICES-PREPACKAGED SOFTWARE,105,105,105,0,34,0,0,reported_observations_found_not_complete_spend
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,7,0,reported_observations_found_not_complete_spend
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,27,27,27,0,0,0,0,reported_observations_found_not_complete_spend
+0002092574,SWMR,"Swarmer, Inc Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,5,5,5,0,0,0,0,reported_observations_found_not_complete_spend
+0000816761,TDC,TERADATA CORPORATION,7372,SERVICES-PREPACKAGED SOFTWARE,55,55,55,0,7,0,0,reported_observations_found_not_complete_spend
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,7372,SERVICES-PREPACKAGED SOFTWARE,80,80,80,0,0,0,0,reported_observations_found_not_complete_spend
+0001660280,TENB,"Tenable Holdings, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,44,44,44,0,0,10,0,reported_observations_found_not_complete_spend
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,76,76,50,26,0,16,26,reported_observations_found_not_complete_spend
+0000946581,TTWO,Take-Two Interactive Software Inc,7372,SERVICES-PREPACKAGED SOFTWARE,64,64,64,0,2,9,0,reported_observations_found_not_complete_spend
+0001447669,TWLO,Twilio Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,3,3,3,0,0,0,0,reported_observations_found_not_complete_spend
+0000860731,TYL,"Tyler Technologies, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,7,0,0,reported_observations_found_not_complete_spend
+0001810806,U,Unity Software Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,44,44,42,2,0,8,0,reported_observations_found_not_complete_spend
+0001505155,UPLD,"Upland Software, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,45,45,45,0,0,0,0,reported_observations_found_not_complete_spend
+0001393052,VEEV,Veeva Systems Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,108,108,108,0,27,27,0,reported_observations_found_not_complete_spend
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,225,225,138,87,0,0,87,reported_observations_found_not_complete_spend
+0001603015,VIA,"Via Transportation, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,17,17,17,0,0,8,0,reported_observations_found_not_complete_spend
+0001973062,VIDA,VIDA Global Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,0,0,0,0,0,0,0,no_selected_tagged_observation_not_zero
+0001361113,VRNS,"Varonis Systems, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,41,41,41,0,0,7,0,reported_observations_found_not_complete_spend
+0002038439,VWAV,"VisionWave Holdings, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,4,4,4,0,0,0,0,reported_observations_found_not_complete_spend
+0001609151,WEAV,"Weave Communications, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,0,0,reported_observations_found_not_complete_spend
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",7372,SERVICES-PREPACKAGED SOFTWARE,39,39,39,0,0,0,0,reported_observations_found_not_complete_spend
+0001445305,WK,Workiva Inc.,7372,SERVICES-PREPACKAGED SOFTWARE,50,50,50,0,0,0,0,reported_observations_found_not_complete_spend
+0001788999,XPER,Xperi Inc,7372,SERVICES-PREPACKAGED SOFTWARE,92,92,92,0,30,0,0,reported_observations_found_not_complete_spend
+0001512673,XYZ,"Block, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,40,40,40,0,0,6,0,reported_observations_found_not_complete_spend
+0001873951,XZO,"Exzeo Group, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,6,6,6,0,0,0,0,reported_observations_found_not_complete_spend
+0001856314,YOU,"Clear Secure, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,66,66,66,0,0,0,0,reported_observations_found_not_complete_spend
+0001667313,ZDGE,"Zedge, Inc.",7372,SERVICES-PREPACKAGED SOFTWARE,28,28,28,0,0,0,0,reported_observations_found_not_complete_spend
+0001851003,ZETA,Zeta Global Holdings Corp.,7372,SERVICES-PREPACKAGED SOFTWARE,34,34,34,0,0,0,0,reported_observations_found_not_complete_spend

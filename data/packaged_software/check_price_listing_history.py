@@ -89,6 +89,10 @@ def main():
         pd.concat(excluded,ignore_index=True).to_csv(OUT/'price_identity_exclusions.csv',index=False)
     else:
         pd.DataFrame(columns=list(prices.columns)+['exclusion_reason']).to_csv(OUT/'price_identity_exclusions.csv',index=False)
+    prices['source_cik_metadata']=prices['cik']
+    prices['cik']=prices.ticker.map(companies.cik.str.zfill(10))
+    prices['cik_assignment_basis']='fixed_target_universe_with_separate_dated_price_identity_review'
+    prices['price_identity_status']=prices.ticker.map(pd.DataFrame(reviews).set_index('ticker').status)
     prices.to_csv(OUT/'daily_bars_reviewed.csv',index=False)
     print(pd.DataFrame(reviews).status.value_counts().to_dict())
     print(f'{sum(r["excluded_bars"] for r in reviews)} bars quarantined; {len(prices)} retained')

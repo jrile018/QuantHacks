@@ -37,9 +37,13 @@ def application_vendors(value):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--limit',type=int)
+    ap.add_argument('--include-empty-vendors',action='store_true',help='Also research mapped vendors that returned no CVEs')
     args=ap.parse_args()
     companies=read_csv(HERE/'epss_company_mapping.csv')
-    missing=[r for r in companies if not r['cpe_vendors'].strip()]
+    empty=set()
+    if args.include_empty_vendors:
+        empty={r['cik'] for r in read_csv(HERE/'extracts/epss_monthly/mapping_coverage.csv') if r['current_matching_cve_count']=='0'}
+    missing=[r for r in companies if not r['cpe_vendors'].strip() or r['cik'] in empty]
     if args.limit:
         missing=missing[:args.limit]
     OUT.mkdir(parents=True,exist_ok=True)

@@ -1,0 +1,12 @@
+{
+  "before_populated_cells": 102626,
+  "after_populated_cells": 120248,
+  "net_added_populated_cells": 17622,
+  "existing_definition_newly_populated_cells": 21,
+  "existing_definition_newly_missing_cells": 0,
+  "before_all_features_population_pct": 38.73614759791044,
+  "after_all_features_population_pct": 40.07625446595211,
+  "existing_definitions_population_pct": 38.744074040522996,
+  "cloud_cells": 71,
+  "cloud_companies": 25
+}

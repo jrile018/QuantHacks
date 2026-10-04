@@ -1,0 +1,167 @@
+cik,name,in_current_universe,first_filing_in_window,last_filing,deregistered,delisted,status,exit_date,filings_in_window
+0000910638,3D SYSTEMS CORP,yes,2022-01-04,2026-09-18,,,active,,426
+0000935036,"ACI WORLDWIDE, INC.",yes,2022-01-26,2026-09-25,,,active,,331
+0000796343,ADOBE INC.,yes,2022-01-10,2026-09-22,,,active,,616
+0001529274,"ALKAMI TECHNOLOGY, INC.",yes,2022-01-04,2026-09-09,,,active,,496
+0001433195,APPFOLIO INC,yes,2022-01-12,2026-08-24,,,active,,464
+0001441683,APPIAN CORP,yes,2022-01-04,2026-10-02,,,active,,443
+0001362190,AUDIOEYE INC,yes,2022-01-04,2026-10-02,,,active,,310
+0001015739,AWARE INC /MA/,yes,2022-01-05,2026-09-24,,,active,,241
+0002026353,"Aether Holdings, Inc.",yes,2024-06-28,2026-08-13,,,active,,71
+0001842566,"Airship AI Holdings, Inc.",yes,2022-01-12,2026-10-01,,2023-12-21,active,,294
+0001459200,"Alarm.com Holdings, Inc.",yes,2022-01-05,2026-09-04,,,active,,327
+0001807166,Amesite Inc.,yes,2022-01-10,2026-10-02,,,active,,261
+0001866692,"Amplitude, Inc.",yes,2022-01-03,2026-10-02,,,active,,394
+0001477720,"Asana, Inc.",yes,2022-01-03,2026-10-02,,,active,,534
+0001650372,Atlassian Corp,yes,2022-01-27,2026-09-22,2022-10-11,2022-09-30,active,,2357
+0000769397,"Autodesk, Inc.",yes,2022-01-03,2026-09-10,,,active,,402
+0001777921,"AvePoint, Inc.",yes,2022-01-03,2026-10-02,,2025-07-11,active,,432
+0001031308,BENTLEY SYSTEMS INC,yes,2022-01-05,2026-10-01,,,active,,702
+0001786352,"BILL Holdings, Inc.",yes,2022-01-06,2026-10-02,,,active,,527
+0001019034,BIO KEY INTERNATIONAL INC,yes,2022-01-04,2026-10-02,,,active,,299
+0001280058,BLACKBAUD INC,yes,2022-01-03,2026-09-04,,,active,,468
+0001070235,BLACKBERRY Ltd,yes,2022-01-31,2026-10-02,,,active,,430
+0001666134,"BLACKLINE, INC.",yes,2022-01-27,2026-09-04,,,active,,494
+0001372612,BOX INC,yes,2022-01-12,2026-09-25,,,active,,492
+0001462056,"Backblaze, Inc.",yes,2022-02-02,2026-08-24,,,active,,639
+0001514416,Bandwidth Inc.,yes,2022-01-04,2026-09-17,,,active,,580
+0001836981,"BigBear.ai Holdings, Inc.",yes,2022-01-06,2026-09-30,,,active,,596
+0001512673,"Block, Inc.",yes,2022-01-04,2026-10-02,,,active,,923
+0001676238,"Braze, Inc.",yes,2022-01-12,2026-09-09,,,active,,671
+0001378590,"Bridgeline Digital, Inc.",yes,2022-02-03,2026-09-22,,,active,,208
+0001577526,"C3.ai, Inc.",yes,2022-02-09,2026-10-02,,,active,,434
+0000813672,CADENCE DESIGN SYSTEMS INC,yes,2022-01-20,2026-10-01,,,active,,739
+0001818201,CCC Intelligent Solutions Holdings Inc.,yes,2022-01-04,2026-08-18,,2022-12-16,active,,453
+0001169561,COMMVAULT SYSTEMS INC,yes,2022-01-25,2026-09-29,,,active,,473
+0001625641,"CS Disco, Inc.",yes,2022-01-04,2026-08-19,,,active,,336
+0001820875,CXApp Inc.,yes,2022-02-03,2026-09-03,,2023-03-15,active,,236
+0002032341,"CYABRA, INC.",yes,2024-11-12,2026-09-22,,,active,,81
+0001582982,"CareCloud, Inc.",yes,2022-01-07,2026-09-29,,2025-03-21,active,,337
+0001768267,Cerence Inc.,yes,2022-01-20,2026-08-26,,,active,,284
+0001827090,"Certara, Inc.",yes,2022-01-04,2026-09-03,,,active,,300
+0001856314,"Clear Secure, Inc.",yes,2022-01-04,2026-09-30,,,active,,445
+0001477333,"Cloudflare, Inc.",yes,2022-01-05,2026-09-23,,,active,,882
+0001626450,"Commerce.com, Inc.",yes,2022-01-20,2026-09-23,,,active,,446
+0001866633,"Consensus Cloud Solutions, Inc.",yes,2022-01-07,2026-08-25,,,active,,305
+0001769628,"CoreWeave, Inc.",yes,2022-03-01,2026-10-02,,,active,,1142
+0001651562,"Coursera, Inc.",yes,2022-01-03,2026-10-02,,,active,,680
+0001535527,"CrowdStrike Holdings, Inc.",yes,2022-01-10,2026-10-02,,,active,,792
+0001261333,"DOCUSIGN, INC.",yes,2022-01-07,2026-10-02,,,active,,683
+0001467623,"DROPBOX, INC.",yes,2022-01-04,2026-10-02,,,active,,708
+0001396536,"DUOS TECHNOLOGIES GROUP, INC.",yes,2022-01-12,2026-09-23,,,active,,338
+0001561550,"Datadog, Inc.",yes,2022-01-06,2026-10-02,,,active,,1193
+0001861795,Definitive Healthcare Corp.,yes,2022-02-11,2026-10-01,,,active,,306
+0001562088,"Duolingo, Inc.",yes,2022-01-03,2026-09-28,,,active,,697
+0001773383,"Dynatrace, Inc.",yes,2022-01-31,2026-09-25,,,active,,528
+0001066194,EGAIN Corp,yes,2022-02-03,2026-10-01,,,active,,123
+0001707753,Elastic N.V.,yes,2022-01-12,2026-10-02,,,active,,466
+0001853145,EverCommerce Inc.,yes,2022-02-11,2026-10-01,,,active,,897
+0001476840,"Expensify, Inc.",yes,2022-02-02,2026-09-18,,,active,,606
+0001960355,"Exyn Technologies, Inc.",yes,2025-12-04,2026-08-25,,,active,,49
+0001873951,"Exzeo Group, Inc.",yes,2023-04-07,2026-08-14,,,active,,105
+0000803578,"FIREFLY NEUROSCIENCE, INC.",yes,2022-01-03,2026-09-29,,,active,,274
+0001517413,"Fastly, Inc.",yes,2022-01-18,2026-09-30,,2025-12-08,active,,749
+0001993400,Fatpipe Inc/UT,yes,2023-10-10,2026-09-15,,,active,,70
+0001579878,"Figma, Inc.",yes,2024-05-29,2026-09-14,,,active,,349
+0001602409,"FingerMotion, Inc.",yes,2022-01-03,2026-09-29,,,active,,232
+0001544522,Freshworks Inc.,yes,2022-01-03,2026-10-02,,,active,,860
+0001895618,GAXOS.AI INC.,yes,2022-01-14,2026-10-01,,,active,,151
+0001743725,"GRID DYNAMICS HOLDINGS, INC.",yes,2022-01-07,2026-10-02,,,active,,509
+0000849399,Gen Digital Inc.,yes,2022-01-12,2026-09-28,,,active,,294
+0001653482,Gitlab Inc.,yes,2022-01-04,2026-10-01,,,active,,607
+0001831096,"Great Elm Group, Inc.",yes,2022-01-05,2026-09-23,,,active,,345
+0001528396,"Guidewire Software, Inc.",yes,2022-01-06,2026-09-30,,,active,,664
+0001404655,HUBSPOT INC,yes,2022-01-04,2026-09-17,,,active,,602
+0001081745,"INTELLINETICS, INC.",yes,2022-01-10,2026-09-30,,,active,,169
+0000896878,INTUIT INC.,yes,2022-01-04,2026-09-09,,,active,,804
+0001615063,"Inspired Entertainment, Inc.",yes,2022-01-04,2026-09-23,,,active,,235
+0001565687,"Intapp, Inc.",yes,2022-02-03,2026-10-02,,,active,,783
+0001040896,"Intellicheck, Inc.",yes,2022-01-03,2026-08-26,,,active,,342
+0001397183,"Iveda Solutions, Inc.",yes,2022-01-03,2026-09-09,,,active,,177
+0001800667,JFrog Ltd,yes,2022-01-25,2026-10-02,,,active,,789
+0001432133,KALTURA INC,yes,2022-01-20,2026-09-22,,,active,,358
+0001835830,"Klaviyo, Inc.",yes,2022-08-02,2026-09-25,,,active,,494
+0001056696,MANHATTAN ASSOCIATES INC,yes,2022-01-31,2026-08-14,,,active,,334
+0001224133,MARCHEX INC,yes,2022-01-03,2026-08-13,,,active,,205
+0001805651,"MARKETWISE, INC.",yes,2022-01-07,2026-09-24,,2022-09-29,active,,359
+0000789019,MICROSOFT CORP,yes,2022-01-18,2026-09-17,,,active,,779
+0001522540,"Marqeta, Inc.",yes,2022-01-03,2026-09-18,,,active,,413
+0001437925,Meridian Holdings Inc./NV,yes,2022-01-13,2026-10-02,,,active,,375
+0001910139,Mobileye Global Inc.,yes,2022-03-02,2026-09-14,,,active,,256
+0001441816,"MongoDB, Inc.",yes,2022-01-05,2026-09-29,,,active,,680
+0001821175,Motorsport Games Inc.,yes,2022-01-10,2026-09-03,,,active,,236
+0001211805,"My Size, Inc.",yes,2022-01-03,2026-09-28,,,active,,183
+0001834488,"N-able, Inc.",yes,2022-02-03,2026-08-28,,,active,,333
+0001039280,NETSOL TECHNOLOGIES INC,yes,2022-01-12,2026-10-02,,,active,,215
+0001639723,"Navan, Inc.",yes,2025-06-20,2026-09-23,,,active,,161
+0002063196,Netskope Inc,yes,2025-04-28,2026-10-02,,,active,,135
+0001618732,"Nutanix, Inc.",yes,2022-01-03,2026-09-25,,,active,,374
+0001341439,ORACLE CORP,yes,2022-01-19,2026-10-01,,2025-07-10,active,,467
+0002083632,Octave Intelligence plc,yes,2025-09-11,2026-08-12,,,active,,15
+0001660134,"Okta, Inc.",yes,2022-01-25,2026-10-01,,,active,,528
+0001120914,PDF SOLUTIONS INC,yes,2022-01-04,2026-09-01,,,active,,228
+0001040161,"PIXELWORKS, INC",yes,2022-01-07,2026-08-20,,,active,,214
+0001823878,"PLAYSTUDIOS, Inc.",yes,2022-01-13,2026-10-01,,2026-06-17,active,,265
+0001611052,"PROCORE TECHNOLOGIES, INC.",yes,2022-01-14,2026-09-14,,,active,,737
+0000876167,PROGRESS SOFTWARE CORP /MA,yes,2022-01-18,2026-09-30,,,active,,476
+0000857005,PTC INC.,yes,2022-01-26,2026-09-17,,,active,,526
+0001568100,"PagerDuty, Inc.",yes,2022-01-04,2026-10-02,,,active,,408
+0001321655,Palantir Technologies Inc.,yes,2022-01-06,2026-10-01,,2024-11-25,active,,741
+0001826681,Palladyne AI Corp.,yes,2022-01-18,2026-09-28,,2026-09-28,active,,482
+0001590955,"Paycom Software, Inc.",yes,2022-02-03,2026-09-03,,,active,,473
+0001591698,Paylocity Holding Corp,yes,2022-01-19,2026-10-02,,,active,,739
+0001410384,"Q2 Holdings, Inc.",yes,2022-02-03,2026-09-11,,,active,,591
+0001107843,"QUALYS, INC.",yes,2022-01-04,2026-09-22,,,active,,516
+0000797542,QUANTUM X LABS INC.,yes,2022-02-14,2026-09-22,,,active,,150
+0001758009,Quantum Computing Inc.,yes,2022-01-03,2026-10-02,,,active,,250
+0002077709,Rank One Computing Corp,yes,2025-08-13,2026-10-02,,,active,,75
+0001560327,"Rapid7, Inc.",yes,2022-01-05,2026-09-04,,,active,,329
+0000748268,"Red Cat Holdings, Inc.",yes,2022-01-04,2026-09-17,,,active,,328
+0001720116,"Red Violet, Inc.",yes,2022-01-06,2026-08-27,,,active,,233
+0001315098,Roblox Corp,yes,2022-01-06,2026-10-02,,,active,,1078
+0001943896,"Rubrik, Inc.",yes,2022-10-14,2026-10-02,,,active,,426
+0001594805,SHOPIFY INC.,yes,2022-01-07,2026-09-25,,2025-03-28,active,,297
+0000948708,"SMITH MICRO SOFTWARE, INC.",yes,2022-01-20,2026-09-18,,,active,,377
+0001840856,"SOUNDHOUND AI, INC.",yes,2022-01-05,2026-09-21,,2022-04-27,active,,570
+0001351636,"SOUNDTHINKING, INC.",yes,2022-01-21,2026-10-02,,,active,,355
+0001092699,SPS COMMERCE INC,yes,2022-01-06,2026-08-14,,,active,,328
+0001402436,SS&C Technologies Holdings Inc,yes,2022-02-04,2026-08-18,,,active,,258
+0000883241,SYNOPSYS INC,yes,2022-02-01,2026-09-16,,,active,,470
+0001627857,"Sailpoint Technologies Holdings, Inc.",yes,2022-01-06,2023-02-14,2022-08-30,2022-08-16,stopped_filing,2023-02-14,80
+0001108524,"Salesforce, Inc.",yes,2022-01-05,2026-09-23,,,active,,1647
+0001583708,"SentinelOne, Inc.",yes,2022-01-04,2026-09-15,,,active,,707
+0001373715,"ServiceNow, Inc.",yes,2022-01-11,2026-09-01,,,active,,1179
+0001638826,"ServiceTitan, Inc.",yes,2024-02-29,2026-09-23,,,active,,333
+0001943289,"Silvaco Group, Inc.",yes,2022-09-23,2026-09-01,,,active,,244
+0001774675,Skillsoft Corp.,yes,2022-01-07,2026-09-25,,2023-11-09,active,,386
+0001886894,"Snail, Inc.",yes,2022-01-03,2026-09-01,,,active,,157
+0001640147,Snowflake Inc.,yes,2022-01-20,2026-10-02,,,active,,1054
+0001673481,Sports Entertainment Gaming Global Corp,yes,2022-01-12,2026-08-27,,,active,,260
+0001569345,"Sprinklr, Inc.",yes,2022-01-10,2026-10-01,,,active,,647
+0001517375,"Sprout Social, Inc.",yes,2022-01-05,2026-10-02,,,active,,517
+0002092574,"Swarmer, Inc",yes,2025-10-31,2026-10-02,,,active,,77
+0001718939,T Stamp Inc,yes,2022-01-12,2026-10-02,,,active,,428
+0000946581,TAKE TWO INTERACTIVE SOFTWARE INC,yes,2022-01-10,2026-10-02,,,active,,522
+0000816761,TERADATA CORP /DE/,yes,2022-01-07,2026-09-17,2022-09-20,,active,,420
+0001447669,TWILIO INC,yes,2022-01-04,2026-10-02,,2022-12-19,active,,653
+0000860731,TYLER TECHNOLOGIES INC,yes,2022-01-04,2026-10-02,,,active,,478
+0001660280,"Tenable Holdings, Inc.",yes,2022-01-05,2026-09-15,,,active,,527
+0001734722,"UiPath, Inc.",yes,2022-01-05,2026-10-02,,,active,,551
+0001810806,Unity Software Inc.,yes,2022-01-04,2026-09-01,,,active,,737
+0001505155,"Upland Software, Inc.",yes,2022-01-10,2026-09-21,2024-05-30,,active,,314
+0001361113,VARONIS SYSTEMS INC,yes,2022-01-19,2026-07-29,,,active,,293
+0001393052,VEEVA SYSTEMS INC,yes,2022-01-03,2026-10-02,,,active,,637
+0001973062,VIDA Global Inc.,yes,2023-05-09,2026-09-30,,,active,,37
+0001806837,"Vertex, Inc.",yes,2022-01-10,2026-10-01,,,active,,472
+0001603015,"Via Transportation, Inc.",yes,2025-04-15,2026-08-20,,,active,,72
+0002038439,"VisionWave Holdings, Inc.",yes,2024-10-01,2026-10-01,,,active,,184
+0001445305,WORKIVA INC,yes,2022-01-04,2026-09-16,,,active,,351
+0001609151,"Weave Communications, Inc.",yes,2022-02-14,2026-09-25,,,active,,600
+0001360565,"Where Food Comes From, Inc.",yes,2022-01-05,2026-09-30,,,active,,117
+0001788999,Xperi Inc.,yes,2022-01-11,2026-08-14,,,active,,248
+0001667313,"Zedge, Inc.",yes,2022-01-05,2026-10-02,,,active,,146
+0001851003,Zeta Global Holdings Corp.,yes,2022-02-11,2026-10-02,,,active,,407
+0001794515,ZoomInfo Technologies Inc.,yes,2022-01-04,2026-10-02,,,active,,587
+0001534154,authID Inc.,yes,2022-01-03,2026-09-15,,,active,,238
+0001728688,"i3 Verticals, Inc.",yes,2022-01-06,2026-09-30,,,active,,241
+0001902733,"nCino, Inc.",yes,2022-01-10,2026-09-17,,,active,,740
