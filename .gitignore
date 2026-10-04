@@ -7,8 +7,11 @@ data/raw/
 data/processed/
 
 .venv/
+venv/
 .ipynb_checkpoints/
 __pycache__/
+*.log
+logs/
 
 # Raw downloads, caches and logs stay local. Only the CSV tables are shared.
 # Tables are kept under data/packaged_software/extracts and data/packaged_software/output.
@@ -20,3 +23,14 @@ data/packaged_software/extracts/sec/**
 !data/packaged_software/extracts/sec/filings_index.csv
 data/packaged_software/extracts/_cache/
 data/packaged_software/extracts/**/*.json
+
+# Cache, raw-download and probe folders hold API responses and may contain CSVs.
+# Directory patterns exclude their contents even though *.csv is re-included above.
+data/packaged_software/extracts/**/*cache*/
+data/packaged_software/extracts/**/raw/
+data/packaged_software/extracts/**/completed/
+data/packaged_software/extracts/**/cves/
+data/packaged_software/extracts/**/public_sources/
+data/packaged_software/extracts/**/public_source_probe/
+data/packaged_software/extracts/**/companies_house/
+data/packaged_software/extracts/**/sec/
