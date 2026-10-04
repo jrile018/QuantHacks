@@ -88,6 +88,7 @@ fil_s1_n365,filings,count,S-1 filings in last 365 days
 fil_s8_n365,filings,count,S-8 filings in last 365 days
 fil_nt_n365,filings,count,late filing notice filings in last 365 days
 fil_effect_n90,filings,count,registration effective filings in last 90 days
+fil_q10_dsl,filings,days,days since last 10-Q filing (none in coverage = NaN)
 fil_k10_dsl,filings,days,days since last 10-K filing (none in coverage = NaN)
 fil_f425_n180,filings,count,merger comms filings in last 180 days
 fil_proxy_n180,filings,count,proxy filings in last 180 days

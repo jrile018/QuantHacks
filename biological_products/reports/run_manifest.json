@@ -1,42 +1,67 @@
 {
- "reference": "/tmp/ref2",
+ "reference": "/tmp/ref3",
  "compared": [
   {
    "file": "standard_results.csv",
-   "rows_ref": 14,
-   "rows_new": 14,
+   "rows_ref": 16,
+   "rows_new": 16,
    "problems": 0
   },
   {
-   "file": "standard_portfolio.csv",
-   "rows_ref": 6,
-   "rows_new": 6,
+   "file": "ledger_daily.csv",
+   "rows_ref": 437,
+   "rows_new": 437,
    "problems": 0
   },
   {
-   "file": "offer_trades_v2.csv",
-   "rows_ref": 198,
-   "rows_new": 198,
+   "file": "ledger_trades.csv",
+   "rows_ref": 187,
+   "rows_new": 187,
+   "problems": 0
+  },
+  {
+   "file": "ledger_summary.csv",
+   "rows_ref": 2,
+   "rows_new": 2,
+   "problems": 0
+  },
+  {
+   "file": "offer_trades_v3.csv",
+   "rows_ref": 193,
+   "rows_new": 193,
+   "problems": 0
+  },
+  {
+   "file": "offer_strategy_trades_v3.csv",
+   "rows_ref": 193,
+   "rows_new": 193,
    "problems": 0
   }
  ],
  "inputs": {
-  "fds_features.csv": "c022ff5e1bca5e9b59e8ad01ae3cdf16ff78b9f9839aba18ab2193af12a1dc6d",
-  "fds_labels.csv": "fa0c54fe506e8cd3d438a0ba40b9c8273995bb9926d1f7c24d84477299c87cec",
+  "fds_features.csv": "7d5ca93073dbcd2958b5bb88513e4c91261bccc49a9e2998a26df887c7ffca1c",
+  "fds_labels.csv": "a7baf3f2a9590b933b71505a597b5df58ce60cf2fb3c57e3d31ea809634a23be",
   "fds_options.csv": "5831fd4abd6e854b4c24146a3d3719bbca79e5ddf47af54efcb2e495f4ac242f",
   "fds_lookup_cik_ticker.csv": "53c9d6a8b8c05f522cc1819a6a47aff4eae7d478c844981750ab7e416cba1e42",
   "fds_realprice.csv": "2305cdbaa5c179a527a7fa558be21f5bc6c7a383d699f3e89dd6e721cf80cb85",
   "stock_trades_real_v2.csv": "dc0237cddd99c1cbb02cad60a484e83dfe3b20d8580c0c3d38c8ee58f843b8ec",
+  "stock_trades_real_v3.csv": "537c7cc4446690b9b7a69f6b1222066fb7011e5e3f0dbcb0c6bb4e88a8211d19",
   "prices.csv": "8d90d73425adcf0e54a1b2ee117adb7787c46c338c7c9a877f7bda0abb9b17dd",
   "splits.csv": "662100da070c6e568d8cb40b19b3f0ed8d2ea16de22df42ce2751bb679902648",
   "events_8k.csv": "53d7c8851a1c414b3d562d8a6b5a6bb5f1235eeed65502ff984fda30970538cf"
  },
  "outputs": {
-  "standard_results.csv": "73b0d6e590395d177db6cc30eee29e3e8dd20d8ff2bde55401b8dcec8f7690a1",
-  "standard_results.csv (reference)": "73b0d6e590395d177db6cc30eee29e3e8dd20d8ff2bde55401b8dcec8f7690a1",
-  "standard_portfolio.csv": "289262e74286b0f0a734c98ef66e465992a0ba12a3d7398846ecad820230bad1",
-  "standard_portfolio.csv (reference)": "289262e74286b0f0a734c98ef66e465992a0ba12a3d7398846ecad820230bad1",
-  "offer_trades_v2.csv": "a3c29dc6743f0f303da89caa010811847868188d8837bed7ab384339af10eaa8",
-  "offer_trades_v2.csv (reference)": "a3c29dc6743f0f303da89caa010811847868188d8837bed7ab384339af10eaa8"
+  "standard_results.csv": "8d4a920cc2ff8070b7e7a70c77bfd56d7d446771ce4af9eb779111938b8a2b4d",
+  "standard_results.csv (reference)": "8d4a920cc2ff8070b7e7a70c77bfd56d7d446771ce4af9eb779111938b8a2b4d",
+  "ledger_daily.csv": "02cc4a0235531387cf916fd85551d3ed0dc5c36d3e320c596f460f5e4f8eaf65",
+  "ledger_daily.csv (reference)": "02cc4a0235531387cf916fd85551d3ed0dc5c36d3e320c596f460f5e4f8eaf65",
+  "ledger_trades.csv": "1d8e72c6ebd38d67f4fbd317d84b2f6e8f87f95f44d630c0a577df770fefb877",
+  "ledger_trades.csv (reference)": "1d8e72c6ebd38d67f4fbd317d84b2f6e8f87f95f44d630c0a577df770fefb877",
+  "ledger_summary.csv": "e7fb69409cb8a683f1f6604b20985baab15e35fa53fcf36460063c09e2d21f2a",
+  "ledger_summary.csv (reference)": "e7fb69409cb8a683f1f6604b20985baab15e35fa53fcf36460063c09e2d21f2a",
+  "offer_trades_v3.csv": "21d3c874ecf096200d5f19c01a2abeee25ac014d3c0d12885a07b3e2e94505b0",
+  "offer_trades_v3.csv (reference)": "21d3c874ecf096200d5f19c01a2abeee25ac014d3c0d12885a07b3e2e94505b0",
+  "offer_strategy_trades_v3.csv": "e28dbaa9b24353d2af082b6551a7ef008da1450a8f9f9a5c2f253adb6601c134",
+  "offer_strategy_trades_v3.csv (reference)": "e28dbaa9b24353d2af082b6551a7ef008da1450a8f9f9a5c2f253adb6601c134"
  }
 }

@@ -26,7 +26,7 @@ import numpy as np, pandas as pd
 ap = argparse.ArgumentParser()
 ap.add_argument('--data', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data'))
 ap.add_argument('--out', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'reports'))
-ap.add_argument('--trades', default='offer_strategy_trades_v2.csv'); ap.add_argument('--quotes', default='stock_trades_real_v2.csv')
+ap.add_argument('--trades', default='offer_strategy_trades_v3.csv'); ap.add_argument('--quotes', default='stock_trades_real_v3.csv')
 ap.add_argument('--slot', type=float, default=0.20, help='share of NAV shorted per trade at entry (and the same bought in XBI)')
 ap.add_argument('--borrow', type=float, default=0.30, help='annual borrow fee on the short market value')
 ap.add_argument('--min_px', type=float, default=1.0); ap.add_argument('--nav0', type=float, default=1_000_000.0)
@@ -58,6 +58,7 @@ def run_ledger(T, C, cal, split_ratio, slot, borrow, nav0, min_px, log=print):
         for p in openpos:
             if p['exit'] == d:
                 sh_now = shares_now(p['tk'], p['entry'], p['sh'], d); xsh = p['xsh']
+                f = sh_now * p['s_out_ask'] * borrow / 252; p['fee'] += f; cash -= f; fee_acc[i] += f     # borrow for the exit day too (5 sessions in total)
                 cover = sh_now * p['s_out_ask']; sell_x = xsh * p['x_out_bid']
                 cash += -cover + sell_x
                 p['pnl'] = (p['proceeds'] - cover) + (sell_x - p['x_cost']) - p['fee']
@@ -139,19 +140,41 @@ if a.selftest:
     C = pd.DataFrame(100.0, index=cal, columns=['DDD', 'XBI'])
     T = pd.DataFrame([dict(tk='DDD', signal=0, entry=cal[1], exit=cal[5], hit=0, s_in_bid=100, s_in_ask=100, s_out_bid=100, s_out_ask=100, x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)])
     D, L, S = run_ledger(T, C, cal, lambda tk, d: 1.0, 0.20, 0.365, 1000.0, 1.0)
-    print('fixture 4: flat stock, borrow 36.5%/yr, 4 marked days (entry day to the day before exit)'); check('fee', L.fee.iloc[0], 4 * 200 * 0.365 / 252)
+    print('fixture 4: flat stock, borrow 36.5%/yr, 5 sessions (entry day to exit day)'); check('fee', L.fee.iloc[0], 5 * 200 * 0.365 / 252)
+    # fixture 4b: borrow must follow MARKET value, not entry dollars: stock doubles on day 2 and stays, 2 sessions
+    C = pd.DataFrame(100.0, index=cal, columns=['DDD', 'XBI']); C.loc[cal[2]:, 'DDD'] = 200
+    T = pd.DataFrame([dict(tk='DDD', signal=0, entry=cal[1], exit=cal[2], hit=0, s_in_bid=100, s_in_ask=100, s_out_bid=200, s_out_ask=200, x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)])
+    D, L, S = run_ledger(T, C, cal, lambda tk, d: 1.0, 0.20, 0.365, 1000.0, 1.0)
+    print('fixture 4b: stock doubles, borrow on market value'); check('fee = (200 + 400) x 0.365/252', L.fee.iloc[0], (200 + 400) * 0.365 / 252)
     # fixture 5: window clipping: a trade across a boundary puts its days in each window; sums reconcile to the whole
     C = pd.DataFrame(100.0, index=cal, columns=['EEE', 'XBI']); C['EEE'] = np.linspace(100, 80, len(cal))
-    T = pd.DataFrame([dict(tk='EEE', signal=0, entry=cal[20], exit=cal[25], hit=0, s_in_bid=C.EEE.iloc[20], s_in_ask=C.EEE.iloc[20], s_out_bid=C.EEE.iloc[25], s_out_ask=C.EEE.iloc[25], x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)])
+    T = pd.DataFrame([dict(tk='EEE', signal=0, entry=cal[20], exit=cal[55], hit=0, s_in_bid=C.EEE.iloc[20], s_in_ask=C.EEE.iloc[20], s_out_bid=C.EEE.iloc[55], s_out_ask=C.EEE.iloc[55], x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)])
     D, L, S = run_ledger(T, C, cal, lambda tk, d: 1.0, 0.20, 0.0, 1000.0, 1.0)
-    b = cal[23]; w1 = D[D.date < b]; w2 = D[D.date >= b]
-    print('fixture 5: one trade across a window boundary'); check('window P&L sums to total', (w1.nav.iloc[-1] - 1000) + (w2.nav.iloc[-1] - w1.nav.iloc[-1]), D.nav.iloc[-1] - 1000)
-    check('no daily mark outside its window', float(((w1.date >= b) | (w2.date < b)).sum()), 0.0)
+    b = cal[23]; sh = 200 / C.EEE.iloc[20]
+    print('fixture 5: one trade across a window boundary (short, price falls linearly, XBI flat)')
+    # expected P&L inside each window from the known price path: short gains sh x (price drop) over the days of that window
+    want1 = sh * (C.EEE.iloc[20] - C.EEE.iloc[22]); want2 = sh * (C.EEE.iloc[22] - C.EEE.iloc[55])
+    w1 = D[D.date < b]; w2 = D[(D.date >= b)]
+    check('window 1 P&L from the price path', w1.nav.iloc[-1] - 1000, want1); check('window 2 P&L from the price path', w2.nav.iloc[-1] - w1.nav.iloc[-1], want2)
+    rng_ = np.random.default_rng(1); st2 = window_stats(D, b, cal[-1], 50, rng_)
+    check('window_stats return equals the clipped NAV change', st2['total_return_pct'] / 100 * w1.nav.iloc[-1], want2, tol=1e-6)
+    check('window_stats counts only days inside the window', float(st2['days']), float(len(w2)))
+    # fixture 5b: a short that loses more than 100% of its stake
+    C = pd.DataFrame(100.0, index=cal, columns=['HHH', 'XBI']); C.loc[cal[2]:, 'HHH'] = 350
+    T = pd.DataFrame([dict(tk='HHH', signal=0, entry=cal[1], exit=cal[2], hit=0, s_in_bid=100, s_in_ask=100, s_out_bid=350, s_out_ask=350, x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)])
+    D, L, S = run_ledger(T, C, cal, lambda tk, d: 1.0, 0.20, 0.0, 1000.0, 1.0)
+    print('fixture 5b: short loses 250% of its stake'); check('trade P&L = -250% of slot', L.pnl.iloc[0], -500.0); check('NAV = initial - 500', D.nav.iloc[-1], 500.0)
     # fixture 6: entry rejected under $1 and when no slot
     C = pd.DataFrame(100.0, index=cal, columns=['FFF', 'GGG', 'XBI']); C['FFF'] = 0.9
     T = pd.DataFrame([dict(tk='FFF', signal=0, entry=cal[1], exit=cal[3], hit=0, s_in_bid=0.9, s_in_ask=0.95, s_out_bid=0.9, s_out_ask=0.95, x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)])
     D, L, S = run_ledger(T, C, cal, lambda tk, d: 1.0, 0.20, 0.0, 1000.0, 1.0)
     print('fixture 6: entry quote under $1'); check('trade skipped', float(len(S)), 1.0); check('no P&L', D.nav.iloc[-1] - 1000, 0.0)
+    # fixture 6b: no free slot (slot = 50% -> at most 2 positions; third same-day trade is skipped)
+    C = pd.DataFrame(100.0, index=cal, columns=['A1', 'A2', 'A3', 'XBI'])
+    q = dict(s_in_bid=100, s_in_ask=100, s_out_bid=100, s_out_ask=100, x_in_bid=100, x_in_ask=100, x_out_bid=100, x_out_ask=100)
+    T = pd.DataFrame([dict(tk=t_, signal=0, entry=cal[1], exit=cal[3], hit=0, **q) for t_ in ('A1', 'A2', 'A3')])
+    D, L, S = run_ledger(T, C, cal, lambda tk, d: 1.0, 0.50, 0.0, 1000.0, 1.0)
+    print('fixture 6b: three trades, two slots'); check('one trade skipped for no slot', float((S.reason == 'no free slot').sum()), 1.0); check('two trades taken', float(len(L)), 2.0)
     print('SELFTEST', 'PASS' if ok else 'FAIL'); sys.exit(0 if ok else 1)
 
 # ------------------------------------------------------------------ real run
@@ -182,7 +205,7 @@ for name, d0, d1 in (('in sample', a.is_start, a.is_end), ('out of sample', a.os
 # reconciliation: sum of trade P&L + fees = NAV change
 recon = L.pnl.sum() - (D.nav.iloc[-1] - a.nav0)
 print(f'reconciliation: sum of trade P&L {L.pnl.sum():,.0f} vs NAV change {D.nav.iloc[-1] - a.nav0:,.0f} | difference {recon:,.2f} (should be 0)')
-assert abs(recon) < 1e-3 * a.nav0, 'ledger does not reconcile'
+assert abs(recon) < 0.01, 'ledger does not reconcile to the cent'
 D.to_csv(os.path.join(a.out, 'ledger_daily.csv'), index=False); L.to_csv(os.path.join(a.out, 'ledger_trades.csv'), index=False); S.to_csv(os.path.join(a.out, 'ledger_skipped.csv'), index=False)
 pd.DataFrame(rows).to_csv(os.path.join(a.out, 'ledger_summary.csv'), index=False)
 if not a.no_chart:

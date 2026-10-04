@@ -449,7 +449,8 @@ def add_count(name, w, block, unit, desc):
     add(name, v, np.where(~np.isnan(v), C_OK, C_INAPP), block, unit, desc)
 
 SPEC = {'k8': (30, 90, 365, 'dsl'), 'f4': (30, 90, 'dsl'), 'f144': (30, 90), 's13': (90,), 'p424b': (90, 365, 'dsl'),
-        's3': (365,), 's1': (365,), 's8': (365,), 'nt': (365,), 'effect': (90,),   # v2: 'seccorr' (CORRESP/UPLOAD) dropped: the SEC releases comment letters weeks after their index date 'q10': ('dsl',),
+        's3': (365,), 's1': (365,), 's8': (365,), 'nt': (365,), 'effect': (90,), 'q10': ('dsl',),
+        # v2: 'seccorr' (CORRESP/UPLOAD) dropped: the SEC releases comment letters weeks after their index date
         'k10': ('dsl',), 'f425': (180,), 'proxy': (180,)}
 GN = {'k8': '8-K', 'f4': 'Form 4', 'f144': 'Form 144', 's13': '13D/13G', 'p424b': '424B prospectus', 's3': 'S-3', 's1': 'S-1', 's8': 'S-8',
       'nt': 'late filing notice', 'seccorr': 'SEC comment letters', 'effect': 'registration effective', 'q10': '10-Q', 'k10': '10-K', 'f425': 'merger comms', 'proxy': 'proxy'}
@@ -536,7 +537,8 @@ add('news_spike', at_t(cn.rolling(5, min_periods=1).sum() / (cn.rolling(60, min_
 # ------------------------------------------------------------------ TRIALS (v2: from monthly AACT registry snapshots, point in time)
 # Each AACT snapshot is the registry as it stood on the snapshot date; it is usable from the next day. For day t we use the latest
 # snapshot dated before t and read that snapshot's dates, phase and enrollment. Nothing from a later registry version can reach day t.
-# A trial counts only once its first posting date is on or before the snapshot date. Month-only registry dates are the 1st in AACT;
+# A trial counts only once its first posting date is on or before the snapshot date. Trial-to-company mapping uses the sponsor list
+# from trials.csv (Oct 2026 pull); a trial whose sponsor changed hands is attributed to today's owner (known limit). Month-only registry dates are the 1st in AACT;
 # we move start dates to the END of the month (conservative: a trial is not counted active before it certainly started).
 log('trials block (AACT snapshots)')
 tr0 = pd.read_csv(os.path.join(RAW, 'trials.csv'), usecols=['ticker', 'nct_id'])
@@ -570,7 +572,7 @@ for cik, ix in panel.groupby('cik').indices.items():
         sel = ix[snap_idx[ix] == si]; dd = dates[sel]; t = T_[T_.snap == snaps[si]]
         R['tr_snapshot_age_days'][sel] = (dd - snaps[si]) / D1
         for nm, mk_ in (('tr_active', pd.Series(True, index=t.index)), ('tr_active_p3', t.ph3), ('tr_active_p2', t.ph2), ('tr_active_p1', t.ph1)):
-            tt = t[mk_]; starts = np.sort(tt.start_eom.values); ends = np.sort(tt.completion_date[tt.completion_date.notna()].values)
+            tt = t[mk_]; starts = np.sort(tt.start_eom.values); ends = np.sort(tt.completion_date[tt.completion_date.notna() & (tt.completion_date_type == 'ACTUAL')].values)   # a trial stays 'active' until the snapshot marks its completion ACTUAL
             R[nm][sel] = np.searchsorted(starts, dd, side='right') - np.searchsorted(ends, dd, side='right')
         s_ = np.sort(t.start_eom.values)
         R['tr_started_365'][sel] = np.searchsorted(s_, dd, side='right') - np.searchsorted(s_, dd - 365 * D1, side='right')
@@ -583,7 +585,7 @@ for cik, ix in panel.groupby('cik').indices.items():
             R['tr_dsl_results'][sel] = np.where(j >= 0, (dd - rs[np.maximum(j, 0)]) / D1, np.nan)
         e3 = np.zeros(len(sel))
         for r_ in t[t.ph3].itertuples():
-            endv = r_.completion_date if pd.notna(r_.completion_date) else pd.Timestamp('2200-01-01')
+            endv = r_.completion_date if (pd.notna(r_.completion_date) and r_.completion_date_type == 'ACTUAL') else pd.Timestamp('2200-01-01')
             e3 += np.where((dd >= np.datetime64(r_.start_eom)) & (dd < np.datetime64(endv)), r_.enr, 0)
         R['tr_enroll_active_p3'][sel] = e3
 TRD_DESC = {'tr_active': 'trials started and not yet completed, per the registry snapshot available that day', 'tr_active_p3': 'active phase 3 trials (snapshot)',

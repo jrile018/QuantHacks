@@ -76,6 +76,10 @@ for fn, keys in KEYS.items():
     except Exception as ex: problems.append(f'{fn}: cannot read ({ex})'); continue
     pr = compare(r, n, keys, a.tol, fn); problems += pr; compared.append(fn); manifest['compared'].append(dict(file=fn, rows_ref=len(r), rows_new=len(n), problems=len(pr)))
     manifest['outputs'][fn] = sha(np_); manifest['outputs'][fn + ' (reference)'] = sha(rp)
+REQUIRED = ['standard_results.csv', 'ledger_daily.csv', 'ledger_trades.csv', 'ledger_summary.csv', 'offer_trades_v3.csv', 'offer_strategy_trades_v3.csv']
+missing_req = [f for f in REQUIRED if not os.path.exists(os.path.join(a.ref, f))]
+if missing_req: print('INVALID REFERENCE: required reference files missing:', missing_req); sys.exit(2)
+if any('duplicate keys' in p for p in problems): print('INVALID: duplicate keys in a compared file'); [print('  -', p) for p in problems if 'duplicate' in p]; sys.exit(2)
 if not compared: print('INVALID REFERENCE: no comparable files found in', a.ref); sys.exit(2)
 for fn in ('fds_features.csv', 'fds_labels.csv', 'fds_options.csv', 'fds_lookup_cik_ticker.csv', 'fds_realprice.csv', 'stock_trades_real_v2.csv', 'stock_trades_real_v3.csv'):
     p = os.path.join(FDS, fn)

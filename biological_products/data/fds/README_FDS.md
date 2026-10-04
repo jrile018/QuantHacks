@@ -2,12 +2,12 @@
 
 > **Version 2 (2026-10-04).** Rebuilt after the team lead's audit. Removed because they carried future information: `px_close_raw`, `fin_shares_adj_m`, the old `fin_mktcap_m`, `fin_log_mktcap`, `fin_liq_to_mcap` (built from a price file adjusted for later splits), `fil_seccorr_n180` (SEC letters are released weeks after their index date), and the `tr_*` columns built from an Oct 2026 registry pull. Added: `px_close_real` (real close, later splits undone using `data/raw/splits.csv`), `fin_shares_now_m` and a real `fin_mktcap_m`, `tr_*` rebuilt from monthly AACT snapshots with `tr_snapshot_age_days`. News now uses a 16:00 America/New_York close (was a fixed 21:00 UTC). The spike filter no longer looks at the next day's bar. Do not call this dataset leak-free: trial snapshots are monthly, the universe is today's list, and the sentiment model's provenance is not recorded.
 
-Point in time company snapshot. One row per company per market day. 89,150 rows, 139 companies, 2024-01-02 to 2026-10-02.
+Point in time company snapshot. One row per company per market day. 89,151 rows, 139 companies, 2024-01-02 to 2026-10-02. Version 2 (2026-10-04).
 
 ## Files (data/fds/)
 | File | What it is |
 | --- | --- |
-| fds_features.csv | The matrix. Numbers only. 156 feature columns plus `cik` and `date` (YYYYMMDD). |
+| fds_features.csv | The matrix. Numbers only. 155 feature columns (v2) plus `cik` and `date` (YYYYMMDD). |
 | fds_missing.csv | Same shape. Reason code for every cell (see fds_lookup_codes.csv). |
 | fds_labels.csv | Outcomes (next returns, will an 8-K come). Kept separate so labels can never leak into features. |
 | fds_dictionary.csv | Every column: block, unit, definition. |
@@ -19,7 +19,7 @@ Rebuild: `python scripts/16_build_fds.py` then `python scripts/16b_write_fds.py`
 
 ## Design choices and why
 1. **Row = company x market day, not one row per 8-K.** The team plan needs "what did we know before the first release". A daily snapshot answers that for any day, and 8-K days are just rows. It also keeps quiet days, so we can learn what normal looks like.
-2. **Decision clock = market close (21:00 UTC rule).** Matches the team's Benchmark chat so the files join.
+2. **Decision clock = market close, 16:00 America/New_York.** (v1 used a fixed 21:00 UTC, which is 5pm New York in summer; fixed in v2.)
 3. **One day lag on anything with only a date.** SEC data gives a filing date, not a time. A filing from day D is usable from D+1. This costs up to a day of freshness but removes any chance of using a filing that came out after the decision. Check: smallest filing age in the data is 1 day. News has a real timestamp, so it is usable if published before 21:00 UTC.
 4. **Restatements handled as they happened.** For each company and item, the value is whatever the latest filing before that date said. Later corrections do not rewrite the past.
 5. **Trailing 12 month flows are rebuilt from filed periods** (latest annual + current year to date - same period last year). Quarterly 10-Q numbers are cumulative, so this is the only safe way.
@@ -30,20 +30,20 @@ Rebuild: `python scripts/16_build_fds.py` then `python scripts/16b_write_fds.py`
 financials (balance, flows, derived: runway, cash vs market cap, dilution), market (returns, volatility, volume, distance from high, XBI/SPY state), filings (counts and days-since by form type, 8-K item counts), 8-K category history (Massive categories grouped: trial, regulatory, offering, deal, management, listing, earnings, presentation, debt), insider (Form 4 buys and sells), news (volume, sentiment, spike), trials (leak-safe subset), regulatory (FDA action dates already mentioned in earlier 8-Ks, openFDA approvals), calendar.
 
 ## What was left out on purpose
-- **ClinicalTrials.gov forward dates and status.** The registry is a snapshot from Oct 2026, so "trial ends in 90 days" would use dates that were revised later. Only start dates, completion dates already passed, and results-posted dates are used. Remaining risk: a trial may have been registered after it started, so some counts can run slightly early. Fix: re-pull `studyFirstSubmitDate` from the registry (the sandbox could not reach it).
-- **Options coverage.** Not collected yet (needs the Massive key run on a machine that can reach it). Roughly 39% of trial result events had steady options trading in the earlier check. Add a `has_options` column before choosing the tradable universe.
+- **ClinicalTrials.gov forward-looking fields.** v2 trial features come from the monthly AACT snapshot available before each day (`tr_snapshot_age_days` = how old that view is). Planned completion dates are not used as features; a trial counts as completed only when the snapshot marks the completion ACTUAL. Trial-to-company mapping uses the Oct 2026 sponsor list (a trial whose sponsor changed is attributed to today's owner).
+- **SEC comment letters** (`fil_seccorr_n180`, dropped in v2): the SEC releases them weeks after their index date.
 - Purple Book (no ticker link yet).
 
 ## Data problems found and fixed
-- Price source is already split adjusted to today. Bad prints and sub-2-cent bars dropped (see log).
+- Price source is split adjusted to today. v2 keeps the delivered series for returns and computes the REAL close from the split history (`px_close_real`); the delivered close is not written. Sub-2-cent bars dropped (see log). The v1 'reverting spike' filter looked at the next day's bar and was removed in v2.
 - Some companies entered share counts x1000 in XBRL (one made a market cap of $7 trillion). Fixed by checking neighbours; 7 fixes logged.
-- Reverse splits: older cover-page shares are divided by later reverse splits so market cap matches the adjusted price.
+- Reverse splits: v2 converts cover-page shares only by the splits between the filing date and the row date (`fin_shares_now_m`), and market cap = real close x those shares. (v1 divided by ALL later splits, which revealed future reverse splits; removed.)
 
 ## Checks run
 - 300 random balance sheet values re-derived from the raw SEC files using only filings before the date: 300 match.
 - 400 random rows re-counted for 8-K counts, days-since, trial-result 8-Ks, insider buys: 0 mismatches.
 - TTM equals the annual figure when the period ends on a fiscal year end: 46 of 46.
-- No feature has a rank correlation above 0.04 with next-day return (no sign of leakage).
+- No feature has a rank correlation above 0.04 with next-day return. (This check did not catch the v1 split and trial problems; it is a weak test, kept only for the record.)
 - Quick baseline, train to mid 2025, test Aug 2025 on, gradient boosting:
   - 8-K in next 5 days: AUC 0.66 calendar only, 0.73 with filing history, 0.73 with everything.
   - Offering/underwriting 8-K in next 5 days (2.5% base rate): 0.51, 0.58, 0.67. Financial and market data help most here.

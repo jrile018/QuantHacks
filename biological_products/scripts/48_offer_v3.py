@@ -83,7 +83,7 @@ t = trade_rows(sel, a.hold)
 
 # ---------- matched controls ----------
 elig = T[T.ok & (T.rk > a.top)].copy()
-def bucket(s, edges): return np.digitize(s.fillna(-1), edges)
+def bucket(s, edges): return np.where(s.isna(), -1, np.digitize(s.fillna(0), edges))   # NaN is its own bucket
 for df in (elig, t):
     df['b_cap'] = bucket(df['fin_mktcap_m'] if 'fin_mktcap_m' in df else df['mktcap_m'], [50, 150, 500, 2000])
     df['b_run'] = bucket(df['fin_runway_q'] if 'fin_runway_q' in df else df['runway_q'], [2, 4, 8])
@@ -92,13 +92,19 @@ ctl_rows = []; by_day = {d: g for d, g in elig.groupby('d')}
 for r in t.itertuples():
     g = by_day.get(r.d)
     if g is None: continue
-    g = g[(g.b_cap == r.b_cap) & (g.b_run == r.b_run)]
+    g = g[(g.b_cap == r.b_cap) & (g.b_run == r.b_run) & (g.b_adv == r.b_adv)]
     if len(g) > 3: g = g.sample(3, random_state=int(r.cik) % 1000)
     for c in g.itertuples(): ctl_rows.append(dict(trade_cik=r.cik, trade_tk=r.tk, d=r.d, cik=c.cik, tk=c.tk, p=c.p, y_8k_next5_offer=c.y_8k_next5_offer, px_close_real=c.px_close_real, fin_mktcap_m=c.fin_mktcap_m, fin_runway_q=c.fin_runway_q, px_adv20_usd_m=c.px_adv20_usd_m))
 CT = pd.DataFrame(ctl_rows)
 ct = trade_rows(CT.rename(columns={}), a.hold) if len(CT) else pd.DataFrame()
-print(f'\nMATCHED CONTROLS: {len(CT)} control company-days for {CT.trade_cik.nunique() if len(CT) else 0} traded signals (same day, same market cap and runway bucket, not flagged)')
-if len(ct): windows(ct, 'gross', a.hold, f'controls, {a.hold} day hold, before costs'); print(f'    control offering rate within 5 days: {ct.hit.mean()*100:.1f}% (model picks: {t.hit.mean()*100:.1f}%)')
+nsig = CT.drop_duplicates(['trade_cik', 'd']).shape[0] if len(CT) else 0
+print(f'\nMATCHED CONTROLS: {len(CT)} control company-days for {nsig} of the {len(t)} traded signals ({CT.trade_cik.nunique() if len(CT) else 0} companies); same day, same market cap, runway and dollar-volume bucket, not flagged; signals with no match have no control')
+if len(ct):
+    windows(ct, 'gross', a.hold, f'controls, {a.hold} day hold, before costs (bar prices, no quotes)')
+    matched = t.merge(CT.drop_duplicates(['trade_cik', 'd'])[['trade_cik', 'd']], left_on=['cik', 'd'], right_on=['trade_cik', 'd'])
+    windows(matched, 'gross', a.hold, 'the matched model picks only, same bar prices'); print(f'    offering rate within 5 days: controls {ct.hit.mean()*100:.1f}% | matched model picks {matched.hit.mean()*100:.1f}% | all model picks {t.hit.mean()*100:.1f}%')
+    pairs = matched.merge(ct.groupby('d').gross.mean().rename('ctl_mean'), left_on='d', right_index=True); dpair = pairs.gross - pairs.ctl_mean
+    print(f'    PAIRED difference, pick minus same-day control average: n {len(dpair)} mean {dpair.mean()*100:+.2f}% | in sample {line(dpair[(pairs.d >= IS0) & (pairs.d <= IS1)], a.hold)} | out of sample {line(dpair[(pairs.d >= OS0) & (pairs.d <= OS1)], a.hold)}')
 rnd = trade_rows(T[T.ok].sample(len(sel), random_state=1), a.hold); windows(rnd, 'gross', a.hold, 'random eligible company-days, same count')
 
 t['signal'] = t.d.dt.strftime('%Y%m%d').astype(int)

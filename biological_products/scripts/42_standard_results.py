@@ -137,12 +137,12 @@ for k in range(len(T)):
 ser = {}
 for w, (d0, d1) in WIN.items():
     m = ((T.sig >= d0) & (T.sig <= d1)).values; dd, dg, dn = window_series(Go[m], No[m], OPo[m], cal[f0:f1 + 1], 0.20)
-    prow.append(dict(strategy='Offering short', window=w, trades=int(m.sum()), **port_stats(dn)))
+    prow.append(dict(strategy='Offering short (signal cohort path, descriptive; not a calendar account, see ledger_summary.csv)', window=w, trades=int(m.sum()), **port_stats(dn)))
     m2 = m & (T.spread_in < 0.02).values; _, _, dn2 = window_series(Go[m2], No[m2], OPo[m2], cal[f0:f1 + 1], 0.20)
-    prow.append(dict(strategy='Offering short, liquid subset', window=w, trades=int(m2.sum()), **port_stats(dn2)))
+    prow.append(dict(strategy='Offering short, liquid subset (signal cohort path, descriptive)', window=w, trades=int(m2.sum()), **port_stats(dn2)))
     ser[w] = ([(dd.values, (np.cumprod(1 + dg) - 1) * 100, ORANGE, 'Before costs'), (dd.values, (np.cumprod(1 + dn) - 1) * 100, BLUE, 'After costs')],
-              f'{int(m.sum())} trades. Portfolio Sharpe after costs {sharpe_d(dn):+.2f}' + ('\n(the model has no trades in 2024: it needs that year to train)' if (d0 == IS0 and IS0.year == 2024) else '\n'))
-two_panel('std_offering_short.png', 'Offering short (our backtest): equity curve, same windows as the team', ser)
+              f'{int(m.sum())} trades. Signal cohort path: each trade drawn whole in its signal window (descriptive, not a calendar account)\nsee reports/ledger_offering_short.png for the account')
+two_panel('std_offering_short.png', 'Offering short: per trade cohort paths by window (descriptive)', ser)
 
 # ============ 2. trial registry stage, our backtest, one chain over the whole period ============
 UP = ['to_active_not_recruiting', 'pc_reached', 'enroll_actual']; DN = ['sites_up', 'enroll_target_up', 'to_recruiting']
@@ -179,10 +179,10 @@ add('Trial registry stage: short while building a trial, buy when enrollment end
 days = cal[first:last + 1]; ser = {}
 for w, (d0, d1) in WIN.items():
     m = ((R.ud >= d0) & (R.ud <= d1)).values; dd, dg, dn = window_series(G[m], N[m], OP[m], days, 0.05)
-    prow.append(dict(strategy='Trial registry stage', window=w, trades=int(m.sum()), **port_stats(dn)))
+    prow.append(dict(strategy='Trial registry stage (signal cohort path, descriptive)', window=w, trades=int(m.sum()), **port_stats(dn)))
     ser[w] = ([(dd.values, (np.cumprod(1 + dg) - 1) * 100, ORANGE, 'Before costs'), (dd.values, (np.cumprod(1 + dn) - 1) * 100, BLUE, 'After costs')],
-              f'{int(m.sum())} trades. Portfolio Sharpe after costs {sharpe_d(dn):+.2f}' + ('\n(the rules were designed on events up to June 2025)' if d0 == IS0 else '\n'))
-two_panel('std_trial_registry.png', 'Trial registry stage (our backtest): equity curve, same windows as the team', ser)
+              f'{int(m.sum())} trades. Signal cohort path (descriptive, not a calendar account)' + ('\n(the rules were designed on events up to June 2025)' if d0 == IS0 else '\n'))
+two_panel('std_trial_registry.png', 'Trial registry stage: per trade cohort paths by window (descriptive)', ser)
 
 # ============ 3 and 4. team engine runs on HiPerGator ============
 def engine(folders, col, sign, hold, strategy, fname, title, date_col='event_date'):
@@ -209,6 +209,6 @@ pd.set_option('display.width', 260); pd.set_option('display.max_colwidth', 60)
 print('STANDARD RESULTS (per trade; same windows and same formula for every strategy)')
 print(S.assign(strategy=S.strategy.str.slice(0, 44))[['strategy', 'engine', 'costs', 'window', 'trades', 'total_pnl_pct', 'avg_trade_pct', 'median_trade_pct', 'win_rate', 'sharpe', 'ci_lo', 'ci_hi', 'cib_lo', 'cib_hi']].round(2).to_string(index=False))
 print('ci = trades resampled one by one (independent trades assumed); cib = whole signal weeks resampled (allows for overlap and shared shocks)')
-print('\nPORTFOLIO VERSION (daily profit and loss, our own backtests, after costs)')
+print('\nSIGNAL COHORT PATHS (descriptive only: a trade is drawn whole in its signal window; this is NOT a calendar account. The account is reports/ledger_summary.csv from script 49)')
 print(Pp.round(2).to_string(index=False))
 print('\nwritten to', os.path.abspath(OUT))

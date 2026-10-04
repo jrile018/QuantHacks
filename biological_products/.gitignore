@@ -13,3 +13,5 @@ hpg_bundle/_to_delete/
 scratch/HANDOFF_before_audit_note.md
 __pycache__/
 *.pyc
+data/raw/companyfacts.tar
+data/_stage/
