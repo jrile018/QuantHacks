@@ -1,0 +1,84 @@
+feature,coverage,kept,reason
+8k_item_1_01_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_1_05_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_2_01_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_2_02_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_2_03_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_2_05_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_4_01_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_4_02_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_5_02_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+8k_item_8_01_count,0.6776,False,disclosure-only (output/8k_item_filings.csv)
+auditor_changed,0.0157,False,coverage 1.6% below 50%; disclosure-only (output/auditor_changes.csv)
+capex_cash_ttm_delta_yoy_usd,0.4862,False,coverage 48.6% below 50%
+capex_cash_ttm_growth_yoy,0.4853,False,coverage 48.5% below 50%
+capex_guidance_annual_high_usd,0.0031,False,coverage 0.3% below 50%; scope not complete (reported_cash_capex_guidance_not_explicitly_data_center_or_PPE_only)
+capex_guidance_annual_low_usd,0.0031,False,coverage 0.3% below 50%; scope not complete (reported_cash_capex_guidance_not_explicitly_data_center_or_PPE_only)
+capex_guidance_candidate_sentences,0.8994,False,scope not complete (latest_scanned_filing_not_complete_company_inventory)
+capex_guidance_next_12_months_upper_bound_usd,0.0044,False,coverage 0.4% below 50%; scope not complete (total_capex_unspecified_asset_scope; horizon_end_assumed_filing_date_plus_365_days)
+capex_guidance_remaining_year_high_usd,0.0016,False,coverage 0.2% below 50%; scope not complete (mixed_computer_software_equipment_office_buildout_and_possible_land_not_data_center_only)
+capex_guidance_remaining_year_low_usd,0.0016,False,coverage 0.2% below 50%; scope not complete (mixed_computer_software_equipment_office_buildout_and_possible_land_not_data_center_only)
+cloud_annual_minimum_commitment_disclosed_usd,0.0003,False,coverage 0.0% below 50%; disclosure-only (extracts/infrastructure_evidence/reviewed_cloud_contract_observations.csv)
+cloud_contract_minimum_total_disclosed_usd,0.0066,False,coverage 0.7% below 50%; disclosure-only (extracts/infrastructure_evidence/additional_reviewed_cloud_observations.csv)
+cloud_remaining_obligations_and_associated_services_disclosed_usd,0.0003,False,coverage 0.0% below 50%; disclosure-only (extracts/infrastructure_evidence/reviewed_cloud_contract_observations.csv)
+cloud_remaining_obligations_disclosed_usd,0.0009,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/reviewed_cloud_contract_observations.csv)
+convertible_debt_noncurrent,0.0128,False,coverage 1.3% below 50%; disclosure-only (output/xbrl_gaps_annual.csv)
+datacenter_capex_candidate_sentences,0.9007,False,scope not complete (latest_scanned_filing_not_complete_company_inventory)
+divestiture_proceeds,0.0025,False,coverage 0.3% below 50%; disclosure-only (output/xbrl_gaps_annual.csv)
+federal_award_amount_started,0.0,False,coverage 0.0% below 50%; disclosure-only (legacy_awards_withheld)
+federal_award_value_started_exact,0.0,False,coverage 0.0% below 50%; disclosure-only (legacy_awards_withheld)
+federal_awards_count_started_exact,0.0,False,coverage 0.0% below 50%; disclosure-only (legacy_awards_withheld)
+federal_awards_started_count,0.0,False,coverage 0.0% below 50%; disclosure-only (legacy_awards_withheld)
+ferc_power_search_candidate_count,0.083,False,coverage 8.3% below 50%; scope not complete (completed_candidate_search_not_direct_project_attribution)
+finance_lease_liability_delta_qoq_usd,0.1758,False,coverage 17.6% below 50%
+finance_lease_liability_delta_yoy_usd,0.1852,False,coverage 18.5% below 50%
+finance_lease_liability_growth_qoq,0.1585,False,coverage 15.9% below 50%
+finance_lease_liability_growth_yoy,0.162,False,coverage 16.2% below 50%
+finance_lease_liability_usd,0.2008,False,coverage 20.1% below 50%
+finance_lease_noncash_additions_annual_usd,0.0833,False,coverage 8.3% below 50%
+finance_lease_noncash_additions_quarter_usd,0.0482,False,coverage 4.8% below 50%
+finance_lease_rou_asset_usd,0.1006,False,coverage 10.1% below 50%
+finance_lease_undiscounted_payments_usd,0.1591,False,coverage 15.9% below 50%
+goodwill_acquired_in_year,0.047,False,coverage 4.7% below 50%; disclosure-only (output/xbrl_gaps_annual.csv)
+kev_cves_added_count,0.6776,False,disclosure-only (output/kev_company_cves.csv)
+land_balance,0.032,False,coverage 3.2% below 50%
+long_term_debt_current,0.2243,False,coverage 22.4% below 50%
+long_term_debt_noncurrent,0.3014,False,coverage 30.1% below 50%
+loss_contingency_accrual,0.0072,False,coverage 0.7% below 50%; disclosure-only (output/xbrl_gaps_annual.csv)
+machinery_equipment_gross,0.0338,False,coverage 3.4% below 50%
+mixed_services_commitments_primarily_cloud_disclosed_usd,0.0009,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/additional_reviewed_cloud_observations.csv)
+operating_lease_noncash_additions_quarter_usd,0.3687,False,coverage 36.9% below 50%
+pjm_rto_capacity_price_cap_hit,0.2632,False,coverage 26.3% below 50%; scope not complete (PJM regional macro context; issuer exposure unmeasured)
+pjm_rto_capacity_price_change_vs_previous_auction,0.9474,False,scope not complete (PJM regional macro context; issuer exposure unmeasured)
+pjm_rto_capacity_price_usd_mw_day,1.0,False,scope not complete (PJM regional macro context; issuer exposure unmeasured)
+pjm_rto_capacity_shortfall_mw,0.2105,False,coverage 21.1% below 50%; scope not complete (PJM regional macro context; issuer exposure unmeasured)
+ppa_disclosure_candidate_sentences,0.901,False,scope not complete (latest_scanned_filing_not_complete_company_inventory)
+public_float,0.1892,False,coverage 18.9% below 50%; disclosure-only (output/xbrl_gaps_annual.csv)
+purchase_obligations,0.2312,False,coverage 23.1% below 50%
+purchase_obligations_next_12_months,0.1927,False,coverage 19.3% below 50%
+purchase_obligations_pct_ttm_rev,0.2033,False,coverage 20.3% below 50%
+q_acquisition_payments_pct_rev,0.2387,False,coverage 23.9% below 50%
+q_acquisitions,0.24,False,coverage 24.0% below 50%
+q_software_development_cash_payments,0.1783,False,coverage 17.8% below 50%
+q_software_rd_expense_excluding_acquired_in_process,0.0282,False,coverage 2.8% below 50%
+q_software_rd_pct_rev,0.0282,False,coverage 2.8% below 50%
+reported_AWS_agreement_spending_annual_disclosed_usd,0.0013,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/reported_cloud_agreement_spending_first_filed.csv)
+reported_AWS_agreement_spending_nine_month_disclosed_usd,0.0009,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/reported_cloud_agreement_spending_first_filed.csv)
+reported_AWS_agreement_spending_quarter_disclosed_usd,0.0028,False,coverage 0.3% below 50%; disclosure-only (extracts/infrastructure_evidence/reported_cloud_agreement_spending_first_filed.csv)
+reported_AWS_agreement_spending_six_month_disclosed_usd,0.0016,False,coverage 0.2% below 50%; disclosure-only (extracts/infrastructure_evidence/reported_cloud_agreement_spending_first_filed.csv)
+reported_cloud_and_server_hosting_expense_annual_disclosed_usd,0.0006,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_cloud_and_server_hosting_expense_nine_month_disclosed_usd,0.0003,False,coverage 0.0% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_cloud_and_server_hosting_expense_quarter_disclosed_usd,0.0016,False,coverage 0.2% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_cloud_and_server_hosting_expense_six_month_disclosed_usd,0.0006,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_hosting_and_infrastructure_expense_annual_disclosed_usd,0.0006,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_hosting_and_infrastructure_expense_nine_month_disclosed_usd,0.0003,False,coverage 0.0% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_hosting_and_infrastructure_expense_quarter_disclosed_usd,0.0016,False,coverage 0.2% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+reported_hosting_and_infrastructure_expense_six_month_disclosed_usd,0.0006,False,coverage 0.1% below 50%; disclosure-only (extracts/infrastructure_evidence/infrastructure_observations_with_scope_review.csv)
+rule_of_40,0.0031,False,coverage 0.3% below 50%
+software_rd_pct_rev,0.0398,False,coverage 4.0% below 50%
+ttm_acquisitions,0.4107,False,coverage 41.1% below 50%
+ttm_software_development_cash_payments,0.1711,False,coverage 17.1% below 50%
+ttm_software_rd_expense_excluding_acquired_in_process,0.0398,False,coverage 4.0% below 50%
+unused_cloud_commitment_expense_quarter_disclosed_usd,0.0003,False,coverage 0.0% below 50%; disclosure-only (extracts/infrastructure_evidence/additional_reviewed_cloud_observations.csv)
+warn_ca_employees_affected,0.6776,False,disclosure-only (output/warn_ca_notices.csv)
+warn_ca_notices_count,0.6776,False,disclosure-only (output/warn_ca_notices.csv)
