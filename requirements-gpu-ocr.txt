@@ -1,0 +1,10 @@
+# Install a CUDA-enabled PyTorch build matching the allocated environment first.
+# This Transformers release contains the official GlmOcrForConditionalGeneration.
+transformers==5.3.0
+torch>=2.6,<3
+torchvision>=0.21,<1
+huggingface-hub>=0.34,<2
+safetensors>=0.5
+Pillow>=10.0
+pypdfium2>=4.30
+# LoRA uses a separately checked-out, explicitly selected LLaMA-Factory revision.

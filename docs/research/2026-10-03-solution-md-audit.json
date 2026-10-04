@@ -1,0 +1,1360 @@
+{
+  "generatedUtc": "2026-10-04T01:11:12.623013+00:00",
+  "scope": "Repository source Markdown including hidden/untracked documents; differing active-worktree documents and execution reports. Git internals, dependency environments and ignored raw/processed/cache outputs excluded.",
+  "snapshotNote": "Frozen 83-path root inventory plus active-worktree document versions. Sources were fully read at their recorded versions. Concurrent later changes do not erase those reads. See cutoff times and changed-after-read fields rather than assuming immutable project state. Newly created documents after this inventory are outside this pass.",
+  "rootInventory": [
+    {
+      "path": "task_plan.md",
+      "sha256": "2c9f9dfdbd90538c5101f8cf5b876eda87d363e6c40652c2687b33c2a47fe9fe",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "progress.md",
+      "sha256": "b00aa020c2c29af44cef6deb56527bf57d0f85e214aeef994bf4cc988fa71edb",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "a3d16c98ca5026deb8a111760eba9acd51ee36a5a1085e08a804711de4b86067",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "examples/reit_money_analysis/README.md",
+      "sha256": "74607765dfd5f209adbc76dd0406392e518a383043b3555337f110ece1363316",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "data/README.md",
+      "sha256": "ccbd8c3fcbc61ef1be194516364164e720ed0aa306214d289d6bfc9b729e89cf",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/options-quote-collection.md",
+      "sha256": "90101b04f15d1442bdc380382d396067b1e9af2e4baded4fd8ab331ab7e0ee43",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/the-solution.md",
+      "sha256": "cfac5124006f24962427292cdf1fe73480119d6f93b6b0f372d9609db513f44c",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/databento-options-backfill.md",
+      "sha256": "43b8627ed6aca699dd51ec9cda5fff71341f53b741722efe68a349a7488054a9",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/8k-ocr-sentiment-options-research.md",
+      "sha256": "18986b8692fe05cf754fb5469b0775294b2b483c75bf4ddcf9300d205ccf767c",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/8k-anticipation-research-concept.md",
+      "sha256": "e087b5211123aeaa59d0598becdeff2f5fd8cfbcc3a85a6eb1b4b91802665a13",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/grill-sessions/2026-10-03-regime-risk-layer.md",
+      "sha256": "31e09deea4a9f2b1a4118de0fb0891233cb8fcd05016c105afe32349a4c01114",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/8k-document-analysis.md",
+      "sha256": "fc8066050f9432361d87ef229fdad53d0472ff7fe2a3b6354553e8a20e03f970",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/company-sector-breakdown.md",
+      "sha256": "8fd2cf7ed655e6a73865b880fd7e4ba44ea4318da9d91f74fd9fd43d79bc0b6b",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/company-source-map.md",
+      "sha256": "68f9d60bd2c3a554a68ac23a4ff90f01112d2e7521e8bbe5464d881b25ba1403",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/financial-profile-research.md",
+      "sha256": "0a0628cc1c836c2d902a52c206969ae84a9880bf9eb6bccf68a708642ebd273d",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/feature-matrix-readiness.md",
+      "sha256": "b084288a4c5cc871d75a0e1947d9cbe11d2695aff53471ce79171b479e85885f",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/grill-sessions/2026-10-03-8k-parallel-plan.md",
+      "sha256": "e37f72a948e54d475f37da13b4fbb478bd488e4151ef3929e87a2d2330303aae",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/grill-sessions/2026-10-03-multi-market-lattice.md",
+      "sha256": "b9262d0feef093ec083823e19d91b9ce1b37f14b8bba8bcdf710ad1a3a10db17",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/hipergator-document-processing.md",
+      "sha256": "e2612a6d4686317699f24380a8cb11b0e8ed10c56af9192733e84dc28ae68cb6",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/hipergator-and-training-status.md",
+      "sha256": "22f275a7b2971d9e13acb748ecf5bf7046acbc77e2dbe8ae6d950394ddc70039",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/options-model-training.md",
+      "sha256": "f5970bd8c59388978b6aa9a6149d48f6015b8dc24e6125c7595a598cd210f4d7",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-source-map.md",
+      "sha256": "f0d7c447db479353aecbf0dffdbe09e9b92c275d58ca3650630473bafc52c900",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-scale-grilling.md",
+      "sha256": "3f3bc49a9162cf3665dffadc1f3ddd6fd971efc83c716b7fcd967c3196802ab3",
+      "fullRead": false,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": true
+    },
+    {
+      "path": "docs/reit-relationship-seed-evidence.md",
+      "sha256": "ee7999e7566f3d846b9cb8199a9bd53f7fe28036b50ee846a254652ec2c7a877",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-real-filing-pilot.md",
+      "sha256": "785d1526039414d8c95994bb98f1992aa36a798817f232abf4933ef073b39666",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-money-extraction-research.md",
+      "sha256": "a231ba69e84bed09044fd26c520739180fcbf403d975ccf10f8606ee1f437c5f",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-market-build.md",
+      "sha256": "87dc708027d8620cc8c2b502dc911e98570f2524b9bb3b573f752b1fe5a9f170",
+      "fullRead": false,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": true
+    },
+    {
+      "path": "docs/reit-loan-and-money-movement-sources.md",
+      "sha256": "8a1f7bd5382247f0cbf1630e4e7615815baca7492c97220305c373a18e016d14",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-collection-integrity-2026-10-03.md",
+      "sha256": "626a381c3a60df31ec9c5a012332238ef78ad0276102c4a30e4023637c7543f1",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-arbitrage-market-data-plan-2026-10-03.md",
+      "sha256": "4d0cee0e914a4de9cbb832bc9e14769b90e3b087e14755fd1a840e6816670df6",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-arbitrage-economic-grill-2026-10-03.md",
+      "sha256": "61f94e585f2433a7915c521b13bb6c8c3547650a32692615c28f13b1ef9f602a",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/prediction-market-evidence-review.md",
+      "sha256": "57ad10e999dfbff3741147b110cfc687ce3098002c8368a2da32d43418117934",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-regime-risk-and-signal-optimization.md",
+      "sha256": "7a1aa33b953c84365383eaf82d19e6f967cbdc433f97b7300a3a6f3ca77c2ce9",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-ocr-calibration-and-lora.md",
+      "sha256": "aff8f1e30325a860634f33f6628c00a5d97887126438cbf56a08eab7f8f526be",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-multi-market-lattice-design.md",
+      "sha256": "df4437416863fcfc1bbc6a31325ae12feb1bc7227c7ae474ddec2bd3e9ba1718",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-multi-market-execution-status.md",
+      "sha256": "22aa97cb497120ef05eae9b218f7c7b6da6cd90f2ad202fb0a5e5c261c696ecc",
+      "fullRead": false,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": true
+    },
+    {
+      "path": "docs/research/2026-10-03-multi-market-acquisition.md",
+      "sha256": "6ebb7e5fcc8abe78023eb65a218090e655a57bcfc456b1c491758c8e0fa1f370",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-lattice-extensions.md",
+      "sha256": "4e5636da243667b616a26590685b801143a714c4bb4e56458f82b859beb6104c",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-futures-market-data-and-validation.md",
+      "sha256": "5135cdb53c61ee89f98eafbb4db98b69f9bd225bfadfcbcccbeb9da64ee3f4ba",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-feature-provenance-and-source-design.md",
+      "sha256": "9b19826c7f7f44b641c071129b3196444f3c82ee66a8b3ef7d133022aeaa06e8",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-experiment-and-regime-design.md",
+      "sha256": "037bd289bef376fd895a3ab674981fd98afdc17d2f3dbb516b01d7e3ec96e1f2",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-event-timing-and-options-data.md",
+      "sha256": "f7fae339354bb4288ab690e750994e407738eadec7d9b42b6028344f8c61dd4b",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-equities-market-data-and-validation.md",
+      "sha256": "cbdcd0a72dd8e4a954c64a703cb438cabe44da93c14adeaaf6f05c90d6ec97c2",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/research/2026-10-03-cross-chat-scope-and-cross-asset-integration.md",
+      "sha256": "7f103bf4338bafb30f9c5f2a9bfd981d946d0a26698faa0e7a7126a0a4fa9e16",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-workflow-audit.md",
+      "sha256": "35a5790b2ef02e19548f42788aa6970bf60604eaa449b1c865959023203c0d5c",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-universe-discovery-build.md",
+      "sha256": "9fe451fd00dc9e448ce9e376bf8628b28969ae715ad7807dc083463833ac24ae",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-source-validation-2026-10-03.md",
+      "sha256": "5fdccc844cc7884e8574f949398ef06fc689fc5213d667bd3e57c49d415e669e",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/reit-source-quality-build.md",
+      "sha256": "b4320770fb0cb49791586c141b651d4acaf872a9db15103d36987fb5edf77345",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/strategy-research-review-2026-10-03.md",
+      "sha256": "25c6b0dd72d156496e391b3953f305952d8ae66afa5565e82bda16ed095e1992",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/strategy-grilling-2026-10-03.md",
+      "sha256": "dff1b68f76f3072127b60aa765d3ce2e455456248debb2231f08b2fe73e078ea",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/sec-8k-url-catalog.md",
+      "sha256": "3b233bfedcd0e25d426ca04931779e9aa8c709fd1f165810fe7a173bfc967644",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/strategy-validation-research-2026-10-03.md",
+      "sha256": "85a874380f1f771e50697bd3ec4ab513d96d3fdfcd32606dc35e16afa4f9c126",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-03-reit-pdf-interpretation-design.md",
+      "sha256": "fec7a631ae6c783a4db51bc3bab4c32c682da847b42227c53f4dc1457146f36e",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-03-reit-money-records-design.md",
+      "sha256": "b301290143a382c971245daf28659860dffc1d83e7b043abae3f9392bbb6bc3a",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-03-8k-document-analysis-design.md",
+      "sha256": "d2059cc6c33b5ea48035f09e4bacb45b821e52b87cb961e273702ac615aa2147",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-strategy-validation.md",
+      "sha256": "63cedcfe2b1dacce380474e60cb3bcaa66c2fc3aa44b5e652ac6ab0b3460a208",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-strategy-research-review.md",
+      "sha256": "0799c30a503e5d3e8a2051189db3c08c1d969c49c3589d043b1d153bc8da52f6",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-sec-8k-url-catalog.md",
+      "sha256": "d14f549d3fc47111a9fa130532c4a475edfc0c1a1c70d8dee6b0b39348b3e213",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-workflow-audit-optimization.md",
+      "sha256": "b728ad84b85d68aa14273324d13845ab9c4f477fc1ea47578b86ed6c76180132",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-workflow-audit-optimization-ledger.md",
+      "sha256": "939a9c3e98f413c05efb09793ba9a9971943bb569543f140a49daa1b6325ff11",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-scale-parallel-plan.md",
+      "sha256": "ced98a81fb248b490bb3a8261cfda2e950be725f53c0f3ca080fe6ccb2fb669f",
+      "fullRead": false,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": true
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-scale-execution-ledger.md",
+      "sha256": "429660d77f850e33d3f056d9e102297111c130765ba82887de92d128f303fce9",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-real-filing-pilot.md",
+      "sha256": "8b0a05e18b08d92d61c0d494cabda661f4e462ee433a881af63bd3b3cf9a1bc7",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-pdf-interpretation.md",
+      "sha256": "3d94403caf68415f7de585efd06cd9ac8b3fd35103421874f387a3ddf2f24283",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-money-records.md",
+      "sha256": "496caf526abf9f8b46e0243b41d57997668bcc5f63663223e17b8def6b624985",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-money-records-ledger.md",
+      "sha256": "475b21cd904b8729185a2e6f9a4fe84700105731630907a9d92c0dd4f4a9b625",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-document-collection.md",
+      "sha256": "1f0d01a194541ed3abe88cb9e7c98d8c48b2f0023c083a5e0a666ab484dcad58",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-reit-document-collection-ledger.md",
+      "sha256": "e2ce34b7f807c8ae3e9808b28b9a4488e60c3a5abf07ab481a6aaaaa1bf0472a",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-prediction-market-benchmark.md",
+      "sha256": "c8c520cc3e7854ac7b2c94f007cbb44f858a0446b767f4315907ee03e12ac7b0",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-parallel-8k-validation-and-learning.md",
+      "sha256": "e9890829b0b70e78c3ad935543236718d9cb02758d5ed39bdba6fc590c84d310",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-opra-ohlcv-1d-acquisition.md",
+      "sha256": "3f8d3e95dbaeb9ac2ef30abdc2103c1fb53600025cf5d548f5daa8ad193fad50",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-multi-market-lattice-research.md",
+      "sha256": "8e7fa301a0c069fa82b9a0327a0bd1e60262d3eade7c652d93bfba481bb0a07b",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-hipergator-and-options-learning.md",
+      "sha256": "5d966cdf3c8ffcd48aeec67012ddd343e30a93b74e6ba64ba53b1975c92aa0d8",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-03-gpu-document-ocr.md",
+      "sha256": "5bb67b6bf8d4a24611c750889948205539f941bea38bd9e61f4d5f2aefa06a48",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/PRIOR-ART.md",
+      "sha256": "e1cc3d3c11fe7a35efd1ab788c680d7e578e88146d97256a59aa4d0214ef0ce1",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/HYPOTHESES.md",
+      "sha256": "cebd3d0e0b2d9d6cbef2168b28567396564d20a28f40e536f8730849ddedb86b",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/README.md",
+      "sha256": "c68ef3587c2c0620000879a9d507d29c9a9ffa47ee2564ab934497f7f6a78072",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/ADR.md",
+      "sha256": "8a0a3f5c7565a17c2647c70ab74c4cef4100c8715df0de32f66fd3b1bd4cc618",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/BLOCKED.md",
+      "sha256": "c63451b50a064e7be6b99b3f202a4887b30540cfdb930e9c35e713cb065990f7",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/docs/options-native.md",
+      "sha256": "3f4cc0e8809c556dbf9126518f67cd73d35c5508e645a7995963c6856203c941",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/docs/options-integration-plan.md",
+      "sha256": "185a00edbae2b21caa1497b6f27fb46e709a682b42100c50648350052277d775",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/docs/superpowers/plans/2026-10-03-native-options-integration.md",
+      "sha256": "42baa013ea303e363f958e0327536b2fd0f4614a7587d708328cbca8a4aaf4b6",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    },
+    {
+      "path": "stat-arb/docs/superpowers/specs/2026-10-03-native-options-design.md",
+      "sha256": "32d1808f0dc07be4e32cef07d02288a46d51f958fbbf2b7bccc7f924a20d1a80",
+      "fullRead": true,
+      "pathFullyRead": true,
+      "changedAfterRecordedRead": false
+    }
+  ],
+  "sourceReadReceipts": {
+    ".solution-read-final-addendum.json": {
+      "path": "docs/reit-market-build.md",
+      "sha256": "9ef046a9bfd9f314cc64ec31f0cd212e7a75928c025386dd5e1968a9f89623d0",
+      "fullRead": true,
+      "readAtUtc": "2026-10-04T01:07:36.6010151Z",
+      "currentHashMatched": true
+    },
+    ".solution-read-industry.json": {
+      "scope": "Manifest paths matching ^docs/(reit-|company-|financial-profile) plus examples/reit_money_analysis/README.md",
+      "inventoryPath": ".solution-md-inventory.json",
+      "readCount": 14,
+      "allFullRead": true,
+      "files": [
+        {
+          "path": "docs/company-sector-breakdown.md",
+          "sha256": "8fd2cf7ed655e6a73865b880fd7e4ba44ea4318da9d91f74fd9fd43d79bc0b6b",
+          "fullRead": true,
+          "summary": "Tiger 8-K export has 1,630 distinct CIK filers; 1,596 SIC-classified, 34 unknown. SIC 6798 is a 53-filer screen, not validated REIT coverage; current metadata may not reflect filing-date SIC."
+        },
+        {
+          "path": "docs/company-source-map.md",
+          "sha256": "68f9d60bd2c3a554a68ac23a4ff90f01112d2e7521e8bbe5464d881b25ba1403",
+          "fullRead": true,
+          "summary": "Catalog of SEC financial source endpoints and form priorities for the same 1,630-CIK company universe; planned graph/catalog, with execution record distinguishing URL generation from document retrieval/verification."
+        },
+        {
+          "path": "docs/financial-profile-research.md",
+          "sha256": "0a0628cc1c836c2d902a52c206969ae84a9880bf9eb6bccf68a708642ebd273d",
+          "fullRead": true,
+          "summary": "SEC-based financial profiles: XBRL/APIs, filings and OCR boundaries, as-filed versus restated facts, reconciliation, schema and planned backfill; public filings cannot supply every transaction-level ledger."
+        },
+        {
+          "path": "docs/reit-arbitrage-economic-grill-2026-10-03.md",
+          "sha256": "61f94e585f2433a7915c521b13bb6c8c3547650a32692615c28f13b1ef9f602a",
+          "fullRead": true,
+          "summary": "Planning-only economic framework separating executable arbitrage from risky repricing; mechanism horizons, chronological validation, all-in costs, portfolio constraints and capital/risk frontier; no project return established."
+        },
+        {
+          "path": "docs/reit-arbitrage-market-data-plan-2026-10-03.md",
+          "sha256": "4d0cee0e914a4de9cbb832bc9e14769b90e3b087e14755fd1a840e6816670df6",
+          "fullRead": true,
+          "summary": "No-purchase source and staged acquisition plan for validated U.S.-listed REITs from 2024, with quote/approval gate; differentiates vendor coverage from fill evidence and strict arbitrage inputs."
+        },
+        {
+          "path": "docs/reit-collection-integrity-2026-10-03.md",
+          "sha256": "626a381c3a60df31ec9c5a012332238ef78ad0276102c4a30e4023637c7543f1",
+          "fullRead": true,
+          "summary": "Offline cached-source/hash integrity audit: 35 SEC docs matched; one issuer exhibit period cue unresolved; partial parser warnings; not live URL, completeness, extraction-fidelity, or financial-accuracy proof."
+        },
+        {
+          "path": "docs/reit-loan-and-money-movement-sources.md",
+          "sha256": "8a1f7bd5382247f0cbf1630e4e7615815baca7492c97220305c373a18e016d14",
+          "fullRead": true,
+          "summary": "Loan/cash-flow source map and REIT subtype distinctions; options overlap is AMT only, 53 SIC CIKs and 174 ticker rows are screening counts; filings disclose aggregates, not every bank transfer."
+        },
+        {
+          "path": "docs/reit-money-extraction-research.md",
+          "sha256": "a231ba69e84bed09044fd26c520739180fcbf403d975ccf10f8606ee1f437c5f",
+          "fullRead": true,
+          "summary": "Local bounded XBRL/table/PDF money-record extraction design and implementation; tested synthetic behavior and focused tests, with unresolved custom meanings, loan terms, table geometry, and real-document accuracy gaps."
+        },
+        {
+          "path": "docs/reit-real-filing-pilot.md",
+          "sha256": "785d1526039414d8c95994bb98f1992aa36a798817f232abf4933ef073b39666",
+          "fullRead": true,
+          "summary": "Real Realty Income digital-PDF pilot classified 14/14 selected assertions after rules fix; four-issuer SEC collection yielded 35 docs and 638 parsed XBRL observations, but wider interpretation remains partial with warnings/omissions."
+        },
+        {
+          "path": "docs/reit-scale-grilling.md",
+          "sha256": "96a8b44c5c0c61f76679c8fdb3269c326aed1ad75fef31f4143e734c08ad12e9",
+          "fullRead": true,
+          "summary": "User-confirmed validated U.S. REIT coverage in batches, Jan. 2024 onward, non-REIT counterparty links, and separate strict-arbitrage/repricing tracks; spending limits and later gates remain unresolved; plan only, no bulk job/purchase."
+        },
+        {
+          "path": "docs/reit-source-map.md",
+          "sha256": "f0d7c447db479353aecbf0dffdbe09e9b92c275d58ca3650630473bafc52c900",
+          "fullRead": true,
+          "summary": "Lists 53 SIC 6798 filers and issuer filing links; 39 have ticker strings; local options cache has only GD contracts, no saved REIT options. Equity and mortgage REIT economics differ; SIC is not current eligibility proof."
+        },
+        {
+          "path": "docs/reit-source-validation-2026-10-03.md",
+          "sha256": "5fdccc844cc7884e8574f949398ef06fc689fc5213d667bd3e57c49d415e669e",
+          "fullRead": true,
+          "summary": "URL validation attempted 173 concrete endpoints; 95 rendered, 78 tool/access errors (not proof dead), one explicit 403 and one tool-size limit; page identity is not accuracy/completeness."
+        },
+        {
+          "path": "docs/reit-workflow-audit.md",
+          "sha256": "35a5790b2ef02e19548f42788aa6970bf60604eaa449b1c865959023203c0d5c",
+          "fullRead": true,
+          "summary": "Collector/workflow audit: bounded AMT/AAT/BXMT/AGNC pilot selection, filing/XBRL/OCR pipeline improvements and focused test results; full loan database and real accuracy remain incomplete."
+        },
+        {
+          "path": "examples/reit_money_analysis/README.md",
+          "sha256": "74607765dfd5f209adbc76dd0406392e518a383043b3555337f110ece1363316",
+          "fullRead": true,
+          "summary": "Synthetic offline fixture, explicitly fabricated; demonstrates duplicate evidence, separate debt balance, custom item review and candidate retention\u2014not real issuer accuracy."
+        }
+      ]
+    },
+    ".solution-read-lattice-addendum.json": {
+      "postReadHashCheckUtc": "2026-10-04T00:57:32.4653205Z",
+      "materialCurrentMilestoneDelta": [
+        "Compared with the prior metadata-only acquisition note, the current execution record reports nine bounded data batches purchased/finalized; do not repeat its older .13917/pending-only ledger snapshot as current.",
+        "First actual equity diagnostic is complete on 12 names: neither graph-stability nor residual-state packet clears the proposed 1% forecast floor or beats the simple substitute; decision is no promotion. The risk/direct mappings remain uncosted diagnostics.",
+        "The 63-session initial lookback and 22-cell/6-ablation budget are now frozen/implemented in the research config per the extension note, but exact holdout/economic policy and promotion remain gated; don't turn proposed hurdle figures into an approved risk mandate.",
+        "No multi-market executable strategy or live paper result: downloads remain under verification; futures adapters and matched option diagnostic are in progress; forward paper awaits historical promotion."
+      ],
+      "readPassStartedUtc": "2026-10-04T00:52:35.2922974Z",
+      "coverageNote": "Files were read fully once in chunks where required. Hashes were checked stable after those reads at postReadHashCheckUtc. Do not chase any later source edits; compare the current docs to these hashes and flag any difference.",
+      "singlePassClosedAtUtc": "2026-10-04T00:57:32.4653205Z",
+      "files": [
+        {
+          "sha256": "8e7fa301a0c069fa82b9a0327a0bd1e60262d3eade7c652d93bfba481bb0a07b",
+          "bytes": 15277,
+          "fullRead": true,
+          "hashCapturedUtc": "2026-10-04T00:52:35.2922974Z",
+          "textCharsRead": 15275,
+          "path": "docs/superpowers/plans/2026-10-03-multi-market-lattice-research.md",
+          "summary": "Implementation plan: all markets and all three roles, separate adapters and shared account ledger, but no runs inferred from unchecked tasks; freeze clocks, costs, contract policies, caps and reserved holdout before economic tests.",
+          "postReadHashMatched": true
+        },
+        {
+          "sha256": "6ebb7e5fcc8abe78023eb65a218090e655a57bcfc456b1c491758c8e0fa1f370",
+          "bytes": 8171,
+          "fullRead": true,
+          "hashCapturedUtc": "2026-10-04T00:52:35.2922974Z",
+          "textCharsRead": 8141,
+          "path": "docs/research/2026-10-03-multi-market-acquisition.md",
+          "summary": "Earlier metadata-only research record: no time-series data or batch submitted in that research step; quotes and then-pending OPRA status are superseded by the newer execution record.",
+          "postReadHashMatched": true
+        },
+        {
+          "sha256": "4e5636da243667b616a26590685b801143a714c4bb4e56458f82b859beb6104c",
+          "bytes": 34316,
+          "fullRead": true,
+          "hashCapturedUtc": "2026-10-04T00:52:35.2922974Z",
+          "textCharsRead": 34287,
+          "path": "docs/research/2026-10-03-lattice-extensions.md",
+          "summary": "Latest extension note freezes 63-session lookback, at most six added scalar predictors, 22 primary cells plus up to six ablations, then staged forward evaluation; thresholds are proposals, not risk mandate or results.",
+          "postReadHashMatched": true
+        },
+        {
+          "sha256": "63f7cd4c56c512a91abd3ec4bb94f446a20ed23c15ecb9cadd55fd5813345e7a",
+          "bytes": 6335,
+          "fullRead": true,
+          "hashCapturedUtc": "2026-10-04T00:57:00.8399619Z",
+          "textCharsRead": 6331,
+          "path": "docs/research/2026-10-03-multi-market-execution-status.md",
+          "summary": "Current execution record reports nine finalized Databento batches (.530219...), a .669385 actual-plus-reserved ledger, two small Lattice packets implemented, an exploratory 12-name equity diagnostic that misses both registered practical floors and is not promoted; downloads still being verified, futures/options economic comparisons in progress, forward paper pending.",
+          "postReadHashMatched": true
+        }
+      ],
+      "purpose": "Full-read addendum for the four Markdown sources changed during solution drafting; records the exact content versions read once and hash-stability cutoff. Later changes are not chased."
+    },
+    ".solution-read-lattice-research.json": {
+      "fullRead": true,
+      "generatedUtc": "2026-10-04T00:36:13.2268029Z",
+      "files": [
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-cross-chat-scope-and-cross-asset-integration.md",
+          "sha256": "7f103bf4338bafb30f9c5f2a9bfd981d946d0a26698faa0e7a7126a0a4fa9e16",
+          "summary": "Cross-chat decisions, canonical validation spine, asset responsibilities, and gaps in verified inputs.",
+          "bytes": 9917
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-equities-market-data-and-validation.md",
+          "sha256": "cbdcd0a72dd8e4a954c64a703cb438cabe44da93c14adeaaf6f05c90d6ec97c2",
+          "summary": "Equity universe, point-in-time data, validation, execution and falsification requirements.",
+          "bytes": 12367
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-event-timing-and-options-data.md",
+          "sha256": "f7fae339354bb4288ab690e750994e407738eadec7d9b42b6028344f8c61dd4b",
+          "summary": "Release clocks, historical event eligibility, option quote limitations and event-label design.",
+          "bytes": 16134
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-experiment-and-regime-design.md",
+          "sha256": "037bd289bef376fd895a3ab674981fd98afdc17d2f3dbb516b01d7e3ec96e1f2",
+          "summary": "Forecast-first experiments, regime families, risk-policy comparisons and validation schedule.",
+          "bytes": 16325
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-feature-provenance-and-source-design.md",
+          "sha256": "9b19826c7f7f44b641c071129b3196444f3c82ee66a8b3ef7d133022aeaa06e8",
+          "summary": "Dated feature provenance, source joins, availability and audit requirements.",
+          "bytes": 6890
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-futures-market-data-and-validation.md",
+          "sha256": "5135cdb53c61ee89f98eafbb4db98b69f9bd225bfadfcbcccbeb9da64ee3f4ba",
+          "summary": "Futures families, contract lifecycle, pricing/accounting and validation requirements.",
+          "bytes": 11963
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-lattice-extensions.md",
+          "sha256": "15a44a057b201c2c2faf4c32f0a190f8fae071bac7179472bfb8f041d228cd85",
+          "summary": "Candidate Lattice extensions, mechanisms, baseline comparisons and rejection criteria.",
+          "bytes": 34208
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-multi-market-acquisition.md",
+          "sha256": "6185a2ec2eca79d1fdbbca8d263d4d852c018c0c0a20ecb15ac8466e54546935",
+          "summary": "Acquisition evidence, dataset/API quotes, cost cap and staged data-expansion plan.",
+          "bytes": 8006
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-multi-market-execution-status.md",
+          "sha256": "7d7dd6c668156d9e4a8d9cb8e7532e03735aba9d8ea6a25b6792dc65828bb5d2",
+          "summary": "Workstream execution status and explicit pending inputs; no validated strategy result.",
+          "bytes": 3208
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-multi-market-lattice-design.md",
+          "sha256": "df4437416863fcfc1bbc6a31325ae12feb1bc7227c7ae474ddec2bd3e9ba1718",
+          "summary": "Current cross-asset forecast-first design, sample status, data needs, common labels, controls and forward-paper gates.",
+          "bytes": 20900
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-ocr-calibration-and-lora.md",
+          "sha256": "aff8f1e30325a860634f33f6628c00a5d97887126438cbf56a08eab7f8f526be",
+          "summary": "OCR/FinBERT calibration scope, verified runtime claims, proposed corpus and limitations.",
+          "bytes": 14303
+        },
+        {
+          "fullRead": true,
+          "path": "docs/research/2026-10-03-regime-risk-and-signal-optimization.md",
+          "sha256": "7a1aa33b953c84365383eaf82d19e6f967cbdc433f97b7300a3a6f3ca77c2ce9",
+          "summary": "Regime/risk architecture, objective, policy comparisons, candidate states and unapproved profile assumptions.",
+          "bytes": 29988
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/ADR.md",
+          "sha256": "8a0a3f5c7565a17c2647c70ab74c4cef4100c8715df0de32f66fd3b1bd4cc618",
+          "summary": "Authoritative Lattice decisions, mathematics, evidence history, negative M8 gate, partial M10 and planned milestones.",
+          "bytes": 112611
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/BLOCKED.md",
+          "sha256": "c63451b50a064e7be6b99b3f202a4887b30540cfdb930e9c35e713cb065990f7",
+          "summary": "Data, source, universe and strategy blockers with measured coverage limitations.",
+          "bytes": 15127
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/docs/options-integration-plan.md",
+          "sha256": "185a00edbae2b21caa1497b6f27fb46e709a682b42100c50648350052277d775",
+          "summary": "Earlier CSV-to-native options integration plan and staged implementation status.",
+          "bytes": 1632
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/docs/options-native.md",
+          "sha256": "3f4cc0e8809c556dbf9126518f67cd73d35c5508e645a7995963c6856203c941",
+          "summary": "Current native options pipeline status, smoke-test scope and unproven economics.",
+          "bytes": 3128
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/docs/superpowers/plans/2026-10-03-native-options-integration.md",
+          "sha256": "42baa013ea303e363f958e0327536b2fd0f4614a7587d708328cbca8a4aaf4b6",
+          "summary": "Native options integration tasks, boundaries, verification and open dependencies.",
+          "bytes": 9281
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/docs/superpowers/specs/2026-10-03-native-options-design.md",
+          "sha256": "32d1808f0dc07be4e32cef07d02288a46d51f958fbbf2b7bccc7f924a20d1a80",
+          "summary": "Native options design contract and required feature/outcome separation.",
+          "bytes": 4005
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/HYPOTHESES.md",
+          "sha256": "cebd3d0e0b2d9d6cbef2168b28567396564d20a28f40e536f8730849ddedb86b",
+          "summary": "Append-only hypotheses and status, including failed H1 and untestable H3.",
+          "bytes": 11543
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/PRIOR-ART.md",
+          "sha256": "e1cc3d3c11fe7a35efd1ab788c680d7e578e88146d97256a59aa4d0214ef0ce1",
+          "summary": "Prior evidence, candidate mechanisms, baseline comparisons and transfer limitations.",
+          "bytes": 24482
+        },
+        {
+          "fullRead": true,
+          "path": "stat-arb/README.md",
+          "sha256": "c68ef3587c2c0620000879a9d507d29c9a9ffa47ee2564ab934497f7f6a78072",
+          "summary": "Repository implementation and validation guide, including tested failures and interpretation limits.",
+          "bytes": 32733
+        }
+      ],
+      "scopeRegex": "^(stat-arb/|docs/research/)",
+      "summary": "Read every in-scope Markdown file fully, including stat-arb/ADR.md in consecutive chunks and the changed multi-market Lattice design in its current version. The project is a forecast-first research instrument, not a proven trading strategy: the original correlation-distance peer-reversion gate fails its matched-control test; embedding-based prediction remains untested because embedding is not in the signal path. Cross-asset, option, forecast, regime and portfolio-risk work is scoped as separate falsifiable lanes with shared account accounting; futures adapters, several dated datasets and decision/risk parameters remain planned or blocked. See parent synthesis for section-level details and evidence status.",
+      "inventory": ".solution-md-inventory.json",
+      "coveredCount": 21,
+      "inventoryScopedCount": 21
+    },
+    ".solution-read-overview.json": {
+      "path": "docs/the-solution.md",
+      "sha256": "cfac5124006f24962427292cdf1fe73480119d6f93b6b0f372d9609db513f44c",
+      "fullRead": true,
+      "note": "Full overview read and all subsequent inserted status/plan changes read"
+    },
+    ".solution-read-plans.json": {
+      "generatedLocalDate": "2026-10-03",
+      "scope": "Current filesystem enumeration of docs/superpowers/plans and docs/superpowers/specs, including the REIT scale execution ledger added after the initial inventory.",
+      "coverageCount": 22,
+      "fullReadCount": 22,
+      "allFullRead": true,
+      "files": [
+        {
+          "path": "docs/superpowers/plans/2026-10-03-gpu-document-ocr.md",
+          "sha256": "5bb67b6bf8d4a24611c750889948205539f941bea38bd9e61f4d5f2aefa06a48",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-hipergator-and-options-learning.md",
+          "sha256": "5d966cdf3c8ffcd48aeec67012ddd343e30a93b74e6ba64ba53b1975c92aa0d8",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-multi-market-lattice-research.md",
+          "sha256": "09b948c8c396031aef74c84846d7bd825d6582987f7bff9aed09c8f367a39ed1",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-opra-ohlcv-1d-acquisition.md",
+          "sha256": "3f8d3e95dbaeb9ac2ef30abdc2103c1fb53600025cf5d548f5daa8ad193fad50",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-parallel-8k-validation-and-learning.md",
+          "sha256": "e9890829b0b70e78c3ad935543236718d9cb02758d5ed39bdba6fc590c84d310",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-prediction-market-benchmark.md",
+          "sha256": "c8c520cc3e7854ac7b2c94f007cbb44f858a0446b767f4315907ee03e12ac7b0",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-document-collection-ledger.md",
+          "sha256": "e2ce34b7f807c8ae3e9808b28b9a4488e60c3a5abf07ab481a6aaaaa1bf0472a",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-document-collection.md",
+          "sha256": "1f0d01a194541ed3abe88cb9e7c98d8c48b2f0023c083a5e0a666ab484dcad58",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-money-records-ledger.md",
+          "sha256": "475b21cd904b8729185a2e6f9a4fe84700105731630907a9d92c0dd4f4a9b625",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-money-records.md",
+          "sha256": "496caf526abf9f8b46e0243b41d57997668bcc5f63663223e17b8def6b624985",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-pdf-interpretation.md",
+          "sha256": "3d94403caf68415f7de585efd06cd9ac8b3fd35103421874f387a3ddf2f24283",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-real-filing-pilot.md",
+          "sha256": "8b0a05e18b08d92d61c0d494cabda661f4e462ee433a881af63bd3b3cf9a1bc7",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-scale-execution-ledger.md",
+          "sha256": "429660d77f850e33d3f056d9e102297111c130765ba82887de92d128f303fce9",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-scale-parallel-plan.md",
+          "sha256": "f0f3733f930fc3c00e1bed23f88f1a8cb5e7d03cb7309b93087d423563f7df3b",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-workflow-audit-optimization-ledger.md",
+          "sha256": "939a9c3e98f413c05efb09793ba9a9971943bb569543f140a49daa1b6325ff11",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-reit-workflow-audit-optimization.md",
+          "sha256": "b728ad84b85d68aa14273324d13845ab9c4f477fc1ea47578b86ed6c76180132",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-sec-8k-url-catalog.md",
+          "sha256": "d14f549d3fc47111a9fa130532c4a475edfc0c1a1c70d8dee6b0b39348b3e213",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-strategy-research-review.md",
+          "sha256": "0799c30a503e5d3e8a2051189db3c08c1d969c49c3589d043b1d153bc8da52f6",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-03-strategy-validation.md",
+          "sha256": "63cedcfe2b1dacce380474e60cb3bcaa66c2fc3aa44b5e652ac6ab0b3460a208",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-03-8k-document-analysis-design.md",
+          "sha256": "d2059cc6c33b5ea48035f09e4bacb45b821e52b87cb961e273702ac615aa2147",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-03-reit-money-records-design.md",
+          "sha256": "b301290143a382c971245daf28659860dffc1d83e7b043abae3f9392bbb6bc3a",
+          "fullRead": true
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-03-reit-pdf-interpretation-design.md",
+          "sha256": "fec7a631ae6c783a4db51bc3bab4c32c682da847b42227c53f4dc1457146f36e",
+          "fullRead": true
+        }
+      ],
+      "summary": [
+        "Strategy-validation is the canonical shared decision, provenance, labels, chronology, execution-cost, ledger, ablation, holdout, and forward-paper spine.",
+        "The parallel 8-K plan is dependency-gated lanes A-G; asset baselines have independent gates, while OCR/LoRA and optional geometry/odds are off the critical path.",
+        "Regime/risk extends the common protocol: continuous observable baseline, filtered past-only Markov/HMM and causal change alarms as challengers; separately test forecast, gating/sizing and finite routing; compare profiles within/across equity, purchased-options and futures books with an independent final risk gate. Multipliers remain illustrative.",
+        "The REIT branch stages source/universe validation, bounded collection, source-grounded financial meanings, entity/instrument histories, independent evaluation, then market data and separate strict-arbitrage versus predicted-repricing tracks.",
+        "Preserve ownership seams and state distinctions: plan, local implementation, verified runtime, actual fills and OOS economics are not interchangeable. Pilots/OCR do not imply alpha.",
+        "Accepted scope includes January 2024 onward plus earlier lookbacks, next-session anchor with exact clock pending, validated US REITs, equities/options/futures, ES/MES first, and separate futures-alpha/hedge and arbitrage/repricing studies. Capital/risk limits, spending ceilings, permissions, splits and promotion thresholds remain unresolved unless explicitly answered."
+      ]
+    },
+    ".solution-read-root-1.json": [
+      {
+        "path": "README.md",
+        "sha256": "a3d16c98ca5026deb8a111760eba9acd51ee36a5a1085e08a804711de4b86067",
+        "fullRead": true
+      },
+      {
+        "path": "data/README.md",
+        "sha256": "ccbd8c3fcbc61ef1be194516364164e720ed0aa306214d289d6bfc9b729e89cf",
+        "fullRead": true
+      },
+      {
+        "path": "docs/sec-8k-url-catalog.md",
+        "sha256": "3b233bfedcd0e25d426ca04931779e9aa8c709fd1f165810fe7a173bfc967644",
+        "fullRead": true
+      },
+      {
+        "path": "docs/feature-matrix-readiness.md",
+        "sha256": "b084288a4c5cc871d75a0e1947d9cbe11d2695aff53471ce79171b479e85885f",
+        "fullRead": true
+      },
+      {
+        "path": "docs/options-quote-collection.md",
+        "sha256": "90101b04f15d1442bdc380382d396067b1e9af2e4baded4fd8ab331ab7e0ee43",
+        "fullRead": true
+      }
+    ],
+    ".solution-read-root-2.json": [
+      {
+        "path": "docs/options-model-training.md",
+        "sha256": "f5970bd8c59388978b6aa9a6149d48f6015b8dc24e6125c7595a598cd210f4d7",
+        "fullRead": true
+      },
+      {
+        "path": "docs/8k-document-analysis.md",
+        "sha256": "fc8066050f9432361d87ef229fdad53d0472ff7fe2a3b6354553e8a20e03f970",
+        "fullRead": true
+      },
+      {
+        "path": "docs/hipergator-and-training-status.md",
+        "sha256": "22f275a7b2971d9e13acb748ecf5bf7046acbc77e2dbe8ae6d950394ddc70039",
+        "fullRead": true
+      }
+    ],
+    ".solution-read-root-3.json": [
+      {
+        "path": "docs/8k-anticipation-research-concept.md",
+        "sha256": "e087b5211123aeaa59d0598becdeff2f5fd8cfbcc3a85a6eb1b4b91802665a13",
+        "fullRead": true
+      },
+      {
+        "path": "docs/8k-ocr-sentiment-options-research.md",
+        "sha256": "18986b8692fe05cf754fb5469b0775294b2b483c75bf4ddcf9300d205ccf767c",
+        "fullRead": true
+      }
+    ],
+    ".solution-read-root-4.json": [
+      {
+        "path": "docs/hipergator-document-processing.md",
+        "sha256": "e2612a6d4686317699f24380a8cb11b0e8ed10c56af9192733e84dc28ae68cb6",
+        "fullRead": true
+      },
+      {
+        "path": "docs/databento-options-backfill.md",
+        "sha256": "43b8627ed6aca699dd51ec9cda5fff71341f53b741722efe68a349a7488054a9",
+        "fullRead": true
+      },
+      {
+        "path": "progress.md",
+        "sha256": "01ccfd2fc8287ce6405afd14ead786f893ca913402f8acb9433c32e7fdb5788a",
+        "fullRead": true
+      },
+      {
+        "path": "task_plan.md",
+        "sha256": "e64aa1336c1b36de25847d6eeab2c302c164a5f2c2a882dbc5c14c7012ebaa5c",
+        "fullRead": true
+      },
+      {
+        "path": "docs/grill-sessions/2026-10-03-8k-parallel-plan.md",
+        "sha256": "e37f72a948e54d475f37da13b4fbb478bd488e4151ef3929e87a2d2330303aae",
+        "fullRead": true
+      },
+      {
+        "path": "docs/grill-sessions/2026-10-03-multi-market-lattice.md",
+        "sha256": "b9262d0feef093ec083823e19d91b9ce1b37f14b8bba8bcdf710ad1a3a10db17",
+        "fullRead": true
+      },
+      {
+        "path": "docs/grill-sessions/2026-10-03-regime-risk-layer.md",
+        "sha256": "31e09deea4a9f2b1a4118de0fb0891233cb8fcd05016c105afe32349a4c01114",
+        "fullRead": true
+      },
+      {
+        "path": "docs/strategy-grilling-2026-10-03.md",
+        "sha256": "dff1b68f76f3072127b60aa765d3ce2e455456248debb2231f08b2fe73e078ea",
+        "fullRead": true
+      }
+    ],
+    ".solution-read-root-4b.json": [
+      {
+        "path": "progress.md",
+        "sha256": "b00aa020c2c29af44cef6deb56527bf57d0f85e214aeef994bf4cc988fa71edb",
+        "fullRead": true
+      },
+      {
+        "path": "task_plan.md",
+        "sha256": "2c9f9dfdbd90538c5101f8cf5b876eda87d363e6c40652c2687b33c2a47fe9fe",
+        "fullRead": true
+      },
+      {
+        "path": "docs/grill-sessions/2026-10-03-8k-parallel-plan.md",
+        "sha256": "e37f72a948e54d475f37da13b4fbb478bd488e4151ef3929e87a2d2330303aae",
+        "fullRead": true
+      }
+    ],
+    ".solution-read-root-5.json": [
+      {
+        "path": "docs/prediction-market-evidence-review.md",
+        "sha256": "57ad10e999dfbff3741147b110cfc687ce3098002c8368a2da32d43418117934",
+        "fullRead": true
+      },
+      {
+        "path": "docs/strategy-research-review-2026-10-03.md",
+        "sha256": "25c6b0dd72d156496e391b3953f305952d8ae66afa5565e82bda16ed095e1992",
+        "fullRead": true
+      },
+      {
+        "path": "docs/strategy-validation-research-2026-10-03.md",
+        "sha256": "85a874380f1f771e50697bd3ec4ab513d96d3fdfcd32606dc35e16afa4f9c126",
+        "fullRead": true
+      }
+    ],
+    ".solution-read-worktrees.json": {
+      "snapshotCutoffUtc": "2026-10-04 00:52:39 UTC",
+      "scope": [
+        "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+        "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs"
+      ],
+      "inventorySummary": {
+        "worktreeMarkdownEntriesAtInventory": 82,
+        "rootHashDeduplicatedEntriesAtInventory": 60,
+        "distinctWorktreeOnlyOrDifferingVersionsFullyRead": 20,
+        "note": "Receipt records the versions fully read and the three requested root addenda. Two Lattice files were identical to root during deduplication, then root changed; their worktree hashes and paths are recorded as changedAfterRead. The root requested a freeze without another inventory/hash loop; later concurrent edits are outside this cutoff."
+      },
+      "fullyReadWorktreeVersions": [
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "README.md",
+          "sha256": "30d9a80e649c2633ba516d3f988f0960e7795e8e8252e9273d52800106447dc5",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "data/README.md",
+          "sha256": "a457d692d3c4969d07c611ec674700824a588b6ec49dff1d9ca7003690ac06ed",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "data/README.md",
+          "sha256": "a457d692d3c4969d07c611ec674700824a588b6ec49dff1d9ca7003690ac06ed",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/company-sector-breakdown.md",
+          "sha256": "285396cd0781a4e3417fd084430e6106ffe3cdabaec12901496c19daa43a2feb",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/company-sector-breakdown.md",
+          "sha256": "285396cd0781a4e3417fd084430e6106ffe3cdabaec12901496c19daa43a2feb",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": ".superpowers/sdd/2026-10-03-parallel-8k-validation-and-learning/task1-report.md",
+          "sha256": "0a69fc967d906db46f77f5da7924bb5d25ff30d47fc1662d87153e0f1d5c3dba",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": ".superpowers/sdd/2026-10-03-parallel-8k-validation-and-learning/progress.md",
+          "sha256": "e2a4e03d5e4727577636827e49a1935c030e2994a9ba446506320ee2be550971",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": ".superpowers/sdd/2026-10-03-parallel-8k-validation-and-learning/task2-report.md",
+          "sha256": "119d48ce81ad28d42b605090fa02575469e9c2aa69707c910c726ffa9fcb1e9c",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": ".superpowers/sdd/2026-10-03-parallel-8k-validation-and-learning/task3-report.md",
+          "sha256": "1a82e4d85554c60b7506652ce7301c2d6a7142436636cd46afadfa583d3c1848",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/reit-collection-integrity-2026-10-03.md",
+          "sha256": "1aa601289d54d921fa8f3f410207ed1e479ebbac764d47eceddc9cac1e234f41",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/reit-source-validation-2026-10-03.md",
+          "sha256": "f45ad8517d0c1df1bdf6fa2efe106519be1dcdee727c2c23e13875ae3c40e675",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/reit-scale-grilling.md",
+          "sha256": "aae5b9dbd91c4904383bbba497814188571e78139463ec4d69375ec787aa64d8",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/grill-sessions/2026-10-03-multi-market-lattice.md",
+          "sha256": "d18e54910dfa8f430cd49f1e80f74aa50b118fb978cdc29aad027ad9ad689e55",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/superpowers/plans/2026-10-03-reit-scale-parallel-plan.md",
+          "sha256": "5b9e98b7de43ab7e4fb27514505451614e52e518aca8f8785a23bfa070c99227",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/research/2026-10-03-multi-market-lattice-design.md",
+          "sha256": "7033c982602a286786e1e460212fdab2e9fd3895d04671c280d9c5c15e405867",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "README.md",
+          "sha256": "73c030366b6be293dd0207fe9f282d6b63f4a7cb5adaac2933dc84414e0220d6",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/8k-anticipation-research-concept.md",
+          "sha256": "8c8cce435c1bdda1ff6dcce6c7451bb57969f230eef2fa1fa53d92c910a876f8",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/ocr-benchmark-pilot.md",
+          "sha256": "d2b0649ddce8de2a6bac10e30339d8b2c004cfdbc119f9c12f371dbfe2849391",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/ocr-to-financial-math-research.md",
+          "sha256": "a5360002279ecd27b705252ca7e4110229b671c354dc2dcbccc8a077239fb6ab",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/superpowers/plans/2026-10-03-sec-facts-matrix.md",
+          "sha256": "682fa2ae91defad7bb1e74bd62d2dd2c8e97f1c218372ef60d0a6a3e0f13b14a",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/superpowers/plans/2026-10-03-point-in-time-feature-matrix.md",
+          "sha256": "3e98a5e3ac84e1962dcc3c9ea226d285d19756a9972629b4db6582ac92661d45",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs",
+          "path": "docs/sec-facts-matrix.md",
+          "sha256": "de4669e8226c28766f6099070620a7b61f12a86d6e60369edbc2c2fc3578f2a7",
+          "fullRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/superpowers/plans/2026-10-03-multi-market-lattice-research.md",
+          "sha256": "09b948c8c396031aef74c84846d7bd825d6582987f7bff9aed09c8f367a39ed1",
+          "identicalRootPath": "docs/superpowers/plans/2026-10-03-multi-market-lattice-research.md",
+          "changedAfterRead": true
+        },
+        {
+          "worktree": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+          "path": "docs/research/2026-10-03-lattice-extensions.md",
+          "sha256": "15a44a057b201c2c2faf4c32f0a190f8fae071bac7179472bfb8f041d228cd85",
+          "identicalRootPath": "docs/research/2026-10-03-lattice-extensions.md",
+          "changedAfterRead": true
+        }
+      ],
+      "rootAddenda": [
+        {
+          "rootPath": "docs/reit-relationship-seed-evidence.md",
+          "sha256": "ee7999e7566f3d846b9cb8199a9bd53f7fe28036b50ee846a254652ec2c7a877",
+          "fullRead": true
+        },
+        {
+          "rootPath": "docs/reit-source-quality-build.md",
+          "sha256": "b4320770fb0cb49791586c141b651d4acaf872a9db15103d36987fb5edf77345",
+          "fullRead": true
+        },
+        {
+          "rootPath": "docs/reit-universe-discovery-build.md",
+          "sha256": "9fe451fd00dc9e448ce9e376bf8628b28969ae715ad7807dc083463833ac24ae",
+          "fullRead": true
+        }
+      ]
+    }
+  },
+  "discussion": {
+    "title": "the solution",
+    "url": "https://github.com/jrile018/QuantHacks/discussions/3",
+    "contextCrossLink": "https://github.com/jrile018/QuantHacks/discussions/2#discussioncomment-18737581"
+  },
+  "review": "Independent bounded review completed; P2 change-detector comparison corrected. Local report status and latest Lattice diagnostic added with explicit evidence limits.",
+  "publishedReadback": {
+    "verifiedAtUtc": "2026-10-04T01:11:01.9044182Z",
+    "title": "the solution",
+    "url": "https://github.com/jrile018/QuantHacks/discussions/3",
+    "bodyEqualsFile": true,
+    "bodySha256": "cfac5124006f24962427292cdf1fe73480119d6f93b6b0f372d9609db513f44c",
+    "contextComment": "https://github.com/jrile018/QuantHacks/discussions/2#discussioncomment-18737581",
+    "contextBodyEqualsFile": true
+  }
+}

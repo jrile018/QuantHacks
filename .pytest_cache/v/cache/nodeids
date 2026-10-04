@@ -1,0 +1,17 @@
+[
+  "tests/audit/test_signal_math.py::test_additive_return_is_not_buy_and_hold_or_log_spread",
+  "tests/audit/test_signal_math.py::test_disjoint_calibration_has_no_forced_zero_endpoint_and_correct_hedge",
+  "tests/audit/test_signal_math.py::test_exact_ou_mapping_and_half_life_units",
+  "tests/audit/test_signal_math.py::test_gross_normalization_and_two_sided_trade_cost",
+  "tests/audit/test_signal_math.py::test_native_guard_counterexample_changes_with_time_unit",
+  "tests/audit/test_signal_math.py::test_one_factor_equal_book_variance_is_inflated_by_diagonal_residuals",
+  "tests/audit/test_signal_math.py::test_raw_stock_mse_can_lose_while_hedge_forecast_is_exact",
+  "tests/audit/test_signal_math.py::test_tree_covariance_is_valid_but_changes_nonedge_correlations",
+  "tests/test_lattice_risk.py::test_constant_asset_rejects_only_undefined_tree_estimator",
+  "tests/test_lattice_risk.py::test_entry_and_exit_charged_even_when_single_mark_and_end_has_no_next_session",
+  "tests/test_lattice_risk.py::test_failed_weekly_tree_rebalance_keeps_known_live_book",
+  "tests/test_lattice_risk.py::test_fixed_book_next_session_target_and_estimators_share_it",
+  "tests/test_lattice_risk.py::test_future_append_cannot_change_frozen_diagnostics",
+  "tests/test_lattice_risk.py::test_missing_window_or_mark_abstains_without_bridging",
+  "tests/test_lattice_risk.py::test_weights_respect_cap_and_drift_makes_turnover_nonzero"
+]

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "first_family": "2.02",
+  "administrative_items": ["9.01"],
+  "target_rule_id": "call_put_3to6m_5pct_next_session_v1",
+  "expiry_days": {"minimum": 90, "maximum": 180, "target": 120},
+  "call_spot_ratio": 1.05,
+  "put_spot_ratio": 0.95,
+  "eligibility": {
+    "max_quote_age_seconds": null,
+    "max_spread_fraction": null,
+    "execution_costs": null
+  },
+  "model_training_enabled": false,
+  "market_forecast_enabled": false
+}

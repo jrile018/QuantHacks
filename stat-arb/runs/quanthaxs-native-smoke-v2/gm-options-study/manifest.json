@@ -1,0 +1,22 @@
+{
+  "atm_mark_event_buckets": 2,
+  "build_type": "research",
+  "compiler_id": "Python/pyarrow",
+  "created_at_utc": "2026-10-03T18:47:30.685368+00:00",
+  "event_buckets": 2,
+  "git_commit": "unknown",
+  "input_hashes": {
+    "gm-options-ingest/manifest.json": "ebb668839a980fe795597af9456a68e25303498aa5b0f2eb05217408f0afad58",
+    "tools/options_native.py": "3ef7b9936a13f7610ae34501cac3dfa966a538d5b5881b11c78c7bb28efa1103"
+  },
+  "matched_event_buckets": 0,
+  "missing_estimator_pairs": 6,
+  "missing_score_absent_date": 0,
+  "missing_score_absent_ticker": 2,
+  "missing_score_event_buckets": 2,
+  "run_id": "quanthaxs-native-smoke-v2",
+  "schema_version": "1.0.0",
+  "stage": "gm-options-study",
+  "status": "ok",
+  "wall_time_seconds": 0.0
+}

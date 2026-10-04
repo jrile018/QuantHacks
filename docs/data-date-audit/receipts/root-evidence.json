@@ -1,0 +1,72 @@
+{
+  "schema_version": "data-date-audit-root-receipt-v1",
+  "files": [
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\coordination\\first-pilot-decision-register.md",
+      "bytes": 9165,
+      "sha256": "aff06ba13a1352707c6985bd382912374daaee315deec58ef77529bd0b73a2fd",
+      "mtime_utc": "2026-10-04T07:31:37.348637+00:00",
+      "observed_at": "2026-10-04T07:58:04.550839+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\coordination\\handoffs\\post-release-pilot.md",
+      "bytes": 3689,
+      "sha256": "b4a5c0b2eb65701fc130779ad3177f345edfaccfd03bf537b3bc984767f11eeb",
+      "mtime_utc": "2026-10-04T07:31:37.353920+00:00",
+      "observed_at": "2026-10-04T07:58:04.550839+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\coordination\\skills-usage.md",
+      "bytes": 9417,
+      "sha256": "ab65820fc05742cd16f684de1ef8e34d4a49bb76ed9dffb4a614fa8310233c5b",
+      "mtime_utc": "2026-10-04T07:11:07.911957+00:00",
+      "observed_at": "2026-10-04T07:58:04.551806+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-sharpe-confidence-and-monte-carlo.md",
+      "bytes": 32075,
+      "sha256": "bd9e7321762188e2df74df37a5e58c04f87a97fa798f0c581a6d83cff5388f34",
+      "mtime_utc": "2026-10-04T06:06:00.703032+00:00",
+      "observed_at": "2026-10-04T07:58:04.552803+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\superpowers\\plans\\2026-10-04-sharpe-confidence-and-monte-carlo.md",
+      "bytes": 22627,
+      "sha256": "b96a836aab54c131795e0715319ad51ed79d49b86fee2d2aa97133b93578a2ac",
+      "mtime_utc": "2026-10-04T07:05:35.123274+00:00",
+      "observed_at": "2026-10-04T07:58:04.552803+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\gpu-math\\2026-10-04-inference-training.md",
+      "bytes": 17938,
+      "sha256": "30a291e9f1841ab3f8b0e8f0bf9247eb946097f6fb41b21f11f9aa8674a6bc7b",
+      "mtime_utc": "2026-10-04T07:31:59.578071+00:00",
+      "observed_at": "2026-10-04T07:58:04.552803+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-alpha-pilot-and-lean-review.md",
+      "bytes": 25457,
+      "sha256": "9b6dbc6ab013f3a50c90af2e5072235ab29cabf50bc2875bd76dbe3e2140f25e",
+      "mtime_utc": "2026-10-04T07:07:41.822929+00:00",
+      "observed_at": "2026-10-04T07:58:04.553800+00:00",
+      "evidence_class": "inspected artifact",
+      "mtime_is_publication": false
+    }
+  ],
+  "gsd_progress_workflow_exists": false,
+  "gsd_progress_fallback": "owned docs/data-date-audit/plan-progress.md; no duplicate .planning/root plan",
+  "alpha_seed_hash_unchanged": true,
+  "economic_metrics_computed": false
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "chat-continuation-ledger-v1",
+  "createdAtUtc": "2026-10-04T04:57:22.956173+00:00",
+  "authorization": "explicit human request2026-10-04 to create context-carrying continuations when needed within approved QuantHaxs work",
+  "projectId": "b5bf3c65-60cb-43e8-9765-7b3415a19fa0",
+  "policy": "docs/coordination/continuation-policy.md",
+  "maxNewChatsPerMonitorPass": 1,
+  "entries": []
+}

@@ -1,0 +1,837 @@
+{
+  "schema_version": "data-date-audit-bounded-refresh-v1",
+  "observed_at": "2026-10-04 07:51:14 UTC",
+  "persistence": "saved bounded refresh; fresh per-packet checks pending",
+  "evidence": [
+    {
+      "id": "E01",
+      "class": "inspected artifact",
+      "location": "docs/data-date-audit/seed-audit-2026-10-04.md + evidence-snapshot.json",
+      "observed_at": "seed cutoff 2026-10-04T07:35:16Z; refreshed seed fingerprints 07:38:38Z",
+      "limitation": "seed contents read, current packet bytes not rehashed"
+    },
+    {
+      "id": "E02",
+      "class": "inspected human messages",
+      "thread": "01a10571-d8fb-7aa0-b526-b792caffbde2",
+      "items": [
+        "01a105a9-d752-7d03-a8a3-4cbe091a1cef",
+        "01a105af-2f17-7773-804d-295e7fb26245",
+        "01a105af-32c3-7112-bbb1-16512812c742",
+        "01a105b1-b2ee-7a61-b924-d006d9d4df8c",
+        "01a105ba-2b41-7321-8566-5d6725c7d712"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E03",
+      "class": "inspected human messages",
+      "thread": "01a1055f-309c-7682-a989-81dfeea8d6dd",
+      "items": [
+        "01a105d3-c42b-7773-bf4e-291f2da3778f",
+        "01a105d4-736d-71c3-b551-221a556b8e4c",
+        "01a105d5-30a4-7fe0-a72a-b475d7a13e73",
+        "01a105d5-3447-77b1-a684-b35ef1ecf765"
+      ],
+      "supersedes": "earlier long-only choice and seed unspecified sizing snapshot",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E04",
+      "class": "owner report",
+      "thread": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+      "turn": "01a105d0-9cc6-7e80-b2a3-d6f854ce4423",
+      "items": [
+        "msg_05ff618c7f00a81d016ac2031be4b887d282123ea72c288fae",
+        "msg_05ff618c7f00a81d016ac201796b0487d285cc091e876ab666"
+      ],
+      "claim": "seven early2023 wording disclosures; new marks2024-25; execution/cost evidence unaccepted",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E05",
+      "class": "retained runtime command output",
+      "thread": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+      "item": "exec-7d7967a0-ce2b-4019-960d-0717e324c5ba",
+      "path": "/home/john-riley/QuantHacks/8k-validation-20261003/native-consumer-v7-final-v1/results",
+      "run_sha256": "808da15b3d7c90a8a9f21255025647bd3cac4d54545c36d67e74947f6ff2942f",
+      "regression_sha256": "15f8458de46d5ca8a630b3b8ed36a1af73b2fa9024322d955957e05de715cf8a",
+      "claim": "690 tests/0 skips/exit0/frozen196; descriptive3; canonical0/gold0",
+      "limitation": "retained producer-side read of consumer metadata; no new byte verification by audit",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E06",
+      "class": "retained command output",
+      "thread": "01a1036f-6912-73f2-b9ff-513b7d6c8400",
+      "item": "exec-adc1b88b-1364-46af-97ba-45ef424604cb",
+      "path": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/native-v7-acceptance-v1/acceptance-capsule-final-v1.json",
+      "sha256": "0efcef5cc06c729f3743e820978d419485216f008530b4ff0bc773dd9f9c2777",
+      "limitation": "owner retained hash matches, audit cannot reread capsule or final collection verifier",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E07",
+      "class": "retained command output",
+      "thread": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+      "items": [
+        "exec-5f65a995-b707-4b63-870f-bfb43d3575b0",
+        "exec-3ab61c2e-beea-4a4b-97a9-67c8f589030a",
+        "exec-80c52a28-34ca-4134-97d9-520dcd2e5f6b"
+      ],
+      "claim": "45 originals,37 requests,36 historical accessions,2092 issuer weekdays,8368history+16currentcells,424groups/500XML/844states",
+      "limitation": "distinct versions/purposes; actual calendar dates not compared",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E08",
+      "class": "retained command output + owner report",
+      "thread": "01a102d3-5cc5-7373-9620-523d2a1419a6",
+      "item": "exec-daf79b38",
+      "path": "data/processed/reit_build/20261004-continuation/market_inputs.json",
+      "sha256": "b1c0d821e6dc74fd7355f17cef56725f01ad8acf6d1c88317a419689f33453f6",
+      "claim": "sixjobs/162files/1992219328compressedbytes; 2024-01-01 to2026-01-01exclusive",
+      "limitation": "truncated item ID; current v3 not independently inspected",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E09",
+      "class": "owner report",
+      "thread": "01a1029b-f907-7bc1-9127-bf22a03633cd",
+      "turn": "01a105d8-182c-78b2-bb39-e8e03bc8bf31",
+      "claim": "15doc/2391fragment FinBERT candidate; no accepted costed net series; publication-v3 conditional bounds20",
+      "limitation": "candidate/version/folds and exact public bounds pending",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E10",
+      "class": "observed tool failure",
+      "claim": "OS112 exec helper; Node kernel assets; apply_patch plan save failed",
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "consequence": "fresh artifact reads and saving register blocked; no cleanup or bulk writes"
+    },
+    {
+      "id": "E11",
+      "class": "inspected delivery tool receipt",
+      "destinations": [
+        "Post Benchmark",
+        "Benchmark",
+        "Benchmark pt. 2 industry spec",
+        "Track work across project chats",
+        "Assess Lattice repo fit",
+        "Check remote desktop GPU access"
+      ],
+      "claim": "Six scoped owner audit requests delivered; Post initial retry after changed active turn, accounting follow-up delivered",
+      "limitation": "delivery not consumer acceptance",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E12",
+      "class": "owner report + retained planning excerpts",
+      "thread": "01a105bb-546b-76f3-b524-81385ca35506",
+      "claim": "existing CPU-first optionalGPU plan; inference method owner preserved; no runtime/speedup",
+      "path": "docs/superpowers/plans/2026-10-04-remote-gpu-math-optimization.md",
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "DD01",
+      "arm_priority": "P0 shared / P1 financial",
+      "status": "partial",
+      "claimed_state": "502sessionsx4=2008;2092financialweekdays",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "84 difference not actual missing prices; calendar/security/date sets unjoined",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post + Benchmark",
+      "dependency": "DD21",
+      "next_action": "Compare exact security/session dates,501/502 coverage, exceptional closures, early closes,DST and known schedule",
+      "acceptance_condition": "Row-level sets/versionedcalendar receipt classifies each extra/missing date; no holiday zero-fill",
+      "evidence": [
+        "E01",
+        "E07"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD02",
+      "arm_priority": "P0 wording / P1 financial",
+      "status": "partial",
+      "claimed_state": "45/37/36/424/500/844/8384 observed claims",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Separate grain/version counts; wording independent events/decisions/quotes/trades/NAV uncounted",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post + Benchmark",
+      "dependency": "DD08",
+      "next_action": "Publish six denominators incl amendment/news grouping and unknown/censored/excluded/no-trade/no-fill",
+      "acceptance_condition": "Exact source manifest and per-event/security/day cohort; no forced equality",
+      "evidence": [
+        "E01",
+        "E07",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD03",
+      "arm_priority": "P0 wording",
+      "status": "partial",
+      "claimed_state": "Conditional Post20bounds; Industry35current/37historical",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Assumed dissemination/byte equality/SEC+24h not evidenced public-by; earliest/actual historical receipt unknown",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Industry + Post",
+      "dependency": "DD08",
+      "next_action": "Bind exact source identity/hash/version to public-by evidence and explicit processing/latency or exclude",
+      "acceptance_condition": "Consumer per-row acceptance/exclusion; preserve clock unknowns",
+      "evidence": [
+        "E01",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD04",
+      "arm_priority": "P0 wording",
+      "status": "partial",
+      "claimed_state": "Post3008bars2023-25;Industry2024-25;structural2010-2026",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Coverage scopes differ; exact wording event/holding market joins pending",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post + Industry",
+      "dependency": "DD21",
+      "next_action": "Matrix per security/session/holding window with quote eligibility,price source conflicts/actions",
+      "acceptance_condition": "Accepted row joins and exclusion denominators, not date counts",
+      "evidence": [
+        "E01",
+        "E04",
+        "E08"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD05",
+      "arm_priority": "P0 comparison",
+      "status": "partial",
+      "claimed_state": "Postunadjusted close target vs Latticeadjusted16:00",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Target/clock/fold mismatch;752forecasts188dates,MSE1.0426 not tradingPnL",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post + Lattice",
+      "dependency": "DD04",
+      "next_action": "Reconcile adjustments/splits/dividends and 15:30/16:00/09:30/09:35 product clocks",
+      "acceptance_condition": "Separate target/fold/version receipts and no laterclose in earlier features",
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD06",
+      "arm_priority": "P0 equity",
+      "status": "partial",
+      "claimed_state": "EQUS1028190quotes/2510definitions;15080ts_eventnull",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "ts_event last trade,ts_recv vendorinterval endpoint; quote-update/our receipt unknown;componentvenue notNBBO",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Industry + Post",
+      "dependency": "DD04",
+      "next_action": "Qualify bidask,volume,spread,venue,nullsentinel,crossed/empty and execution/freshness policy",
+      "acceptance_condition": "Actual schema/row receipt and conservative fills; no last-trade-age freshness screen",
+      "evidence": [
+        "E01",
+        "E08"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD07",
+      "arm_priority": "P0 equity",
+      "status": "partial",
+      "claimed_state": "21degraded dates frozen historically",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Feature/holding propagation and historical membership/actions/delists not freshly accepted",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Industry + Post",
+      "dependency": "DD04,DD06",
+      "next_action": "Join intervals to decisions/holding; evidence security mapping/actions; retain adverse exclusions",
+      "acceptance_condition": "Consumer mask survives feature/order/fill/valuation joins and counts",
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD08",
+      "arm_priority": "P0 wording",
+      "status": "partial",
+      "claimed_state": "15docs/2391fragments/one truncated candidate",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Exact extraction/normalization/dedup/token/model/traincutoff/version available then not qualified freeze",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post; Benchmark inputs",
+      "dependency": "DD03,DD21",
+      "next_action": "Freeze existing candidate incl revisions,aggregation/model/prompt dictionary/trials; no new model",
+      "acceptance_condition": "Hash-pinned recipe before scoring; model later-version labelled conditional retrospective; no candidate=>unavailable",
+      "evidence": [
+        "E01",
+        "E03",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD09",
+      "arm_priority": "P0 policy/execution",
+      "status": "partial",
+      "claimed_state": "Human1m,longshort,equalabs,<=100%gross,0cash",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Policy choices resolved; order rounding/drift/gross enforcement/collateral/costs/borrow still unverified",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post",
+      "dependency": "DD03,DD06,DD07,DD08",
+      "next_action": "Freeze selection/rebalance/holding/delay/integerqty/costs/capacity/financing/borrow and no-fill; match baseline",
+      "acceptance_condition": "Immutable policy/orders quotes/multipliers/session/cost input hashes; unknown borrow costs neverzero",
+      "evidence": [
+        "E01",
+        "E02",
+        "E03",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD10",
+      "arm_priority": "P0 account/metrics",
+      "status": "missing",
+      "claimed_state": "No accepted regular costed USD1m netNAV evidenced",
+      "verified_state": "bounded evidence only; missing",
+      "discrepancy_counterexample": "Terminal/sparse marks and USD1000fixtures cannot support netstrategyPnL/Sharpe/winrate/drawdown",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post",
+      "dependency": "DD09",
+      "next_action": "Regular marks incl open/cash/flat/loss/no-fill/action/borrow flows; attribution and cash0 comparator",
+      "acceptance_condition": "Reconciled daily account ledger; cashzero variance Sharpe/delta undefined; unsupported metrics null/reason",
+      "evidence": [
+        "E01",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD11",
+      "arm_priority": "P0 inference",
+      "status": "partial",
+      "claimed_state": "Existing dependence-aware inference design;2024-25 DEVELOPMENT",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "No eligible netseries;trials/overlap/crossasset reduce confidence;finaltest remains locked",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Post + Sharpe lane",
+      "dependency": "DD10",
+      "next_action": "Registered HAC/studentized blockbootstrap jointpaths95CI; trial/fold ledger; failures supported/undefined/insufficient",
+      "acceptance_condition": "Netregular accepted cohort hash; block/HAC/sample/calibration metadata; no arbitrary human success cutoff; MC later",
+      "evidence": [
+        "E01",
+        "E02",
+        "E12"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD12",
+      "arm_priority": "P0 shared / P1 financial",
+      "status": "partial",
+      "claimed_state": "v2/V7/V8 handoffs coexist, livinghashes changed",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Historical snapshots vs current acceptance pins differ;human amendments newer thanseed",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Coordinator + owners",
+      "dependency": "DD17,DD19",
+      "next_action": "Mark supersession by exactcommit/hash/manifest/observedtime;deliberate downstream pins",
+      "acceptance_condition": "Current register references immutable human IDs and receiptversions;old failures/alpha hash preserved",
+      "evidence": [
+        "E01",
+        "E03",
+        "E06",
+        "E07"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD13",
+      "arm_priority": "P1 financial",
+      "status": "deferred",
+      "claimed_state": "AATMarchaggregate/June4facts;15warnings;AMToldperiod disclosedlater",
+      "verified_state": "bounded evidence only; deferred",
+      "discrepancy_counterexample": "Fiscalperiod/instant !=publictime;liabilities !=debt;source precedence unaccepted",
+      "consequence": "separate-arm qualification pending",
+      "owner": "Benchmark + Post",
+      "dependency": "DD03 financial,DD17",
+      "next_action": "Separate accession/unit/definition/period/publictime;no backdating or silent replacements",
+      "acceptance_condition": "Qualified native per-field/time receipt for separate financial arm, disabled until accepted",
+      "evidence": [
+        "E01",
+        "E07"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD14",
+      "arm_priority": "P1 macro",
+      "status": "deferred",
+      "claimed_state": "820macro818numeric2null;historicalqualifiedvintages0",
+      "verified_state": "bounded evidence only; deferred",
+      "discrepancy_counterexample": "Currentvalue/retrieval not vintage;BLSdashes null",
+      "consequence": "separate-arm qualification pending",
+      "owner": "Benchmark + Industry",
+      "dependency": "DD13",
+      "next_action": "Evidence firstrelease/revision/vintage/effective/public clock or keep disabled",
+      "acceptance_condition": "Exactasof vintage source/provenance consumer acceptance for separate arm",
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD15",
+      "arm_priority": "P2 universe",
+      "status": "deferred",
+      "claimed_state": "53SICcandidates/100configured/5observedoptions disjoint",
+      "verified_state": "bounded evidence only; deferred",
+      "discrepancy_counterexample": "Different universes;disjoint doesn't establish nonREIT classification",
+      "consequence": "separate-arm qualification pending",
+      "owner": "Industry + Post",
+      "dependency": "none firstarm",
+      "next_action": "Evidence historical classification/inclusion instrument mappings",
+      "acceptance_condition": "Versioned point-in-time universe/action/membership receipt",
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD16",
+      "arm_priority": "P2 derivatives",
+      "status": "deferred",
+      "claimed_state": "OPRA882288definitionrows292251ids vs259852151quotes;GLBX64622defs vs5063606BBO",
+      "verified_state": "bounded evidence only; deferred",
+      "discrepancy_counterexample": "Downloadintegrity not executionqualified;sentinelmultiplier/deliverables/calendars unaccepted",
+      "consequence": "separate-arm qualification pending",
+      "owner": "Industry + Post",
+      "dependency": "none firstarm",
+      "next_action": "Separate contractquote/definition/actions/deliverables/rolls/calendar/assignment/venue/capacity qualification",
+      "acceptance_condition": "Percontract window receipts before derivatives replay;no equitypilot dependency",
+      "evidence": [
+        "E01",
+        "E08"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD17",
+      "arm_priority": "P1 native;P0 only consumed",
+      "status": "partial",
+      "claimed_state": "110files109bindings8roles28tests;final690/0EXIT0frozen196 retained",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Descriptive/transport/runtime not canonical fieldclock or financialnumerical/economic acceptance",
+      "consequence": "separate-arm qualification pending",
+      "owner": "Post + Benchmark",
+      "dependency": "none firstarm unlessused",
+      "next_action": "Inspect finalmanifest/capsule/collectionverifier/logs;trace producertransportconsumerfieldclock",
+      "acceptance_condition": "Exact final receipt hashes/runtime retained,disabledregistry/canonical0gold0 explicit;no expensive rerun",
+      "evidence": [
+        "E01",
+        "E05",
+        "E06"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD18",
+      "arm_priority": "P2 storage",
+      "status": "not verifiable",
+      "claimed_state": "Remotev7archive14216041bytes fd39baea...a2dc1",
+      "verified_state": "bounded evidence only; not verifiable",
+      "discrepancy_counterexample": "Local thinmetadata not full archive;24KBpreparedpacket distinct;requested14MB not freshly rehashed",
+      "consequence": "separate-arm qualification pending",
+      "owner": "Benchmark + Post",
+      "dependency": "none firstarm",
+      "next_action": "Map remote/local roles and exacttransport receipt;small receipts first",
+      "acceptance_condition": "Archivepath/bytes/hash and acceptedtransportmanifest;no bulk localcopy",
+      "evidence": [
+        "E01",
+        "E07"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD19",
+      "arm_priority": "P0 decisions/delivery",
+      "status": "partial",
+      "claimed_state": "Seedoverstrict earliest/openrisk language;directPostdelivery failed",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Fresh human policy verified;all4auditrequests delivered afterchangedturn;sharedrecords refresh pending;Q4pending elsewhere",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Coordinator + Post",
+      "dependency": "DD12",
+      "next_action": "Refresh ownedregister with exacthumans and delayedboundgate;retain olddeliveryexceptions;do not duplicateQ4",
+      "acceptance_condition": "Freshsharedrecordcommit/hash and separate delivery vs consumeracceptance;allsettled branches preserved",
+      "evidence": [
+        "E01",
+        "E02",
+        "E03",
+        "E11"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD20",
+      "arm_priority": "P0 audit operations",
+      "status": "blocked",
+      "claimed_state": "C:disk full;OS112 shell+Node+planwritefail",
+      "verified_state": "bounded evidence only; blocked",
+      "discrepancy_counterexample": "Cannot inspect freshbytes,completeinventory/datesor save requested audit records",
+      "consequence": "audit completion blocked",
+      "owner": "Human storage action; audit owner verification",
+      "dependency": "allartifact checks",
+      "next_action": "Free user-selected storage;then resume scoped reads and write only audit docs",
+      "acceptance_condition": "Successful read/write preflight,checked complete ledger/inventory/links;no othersfiles deleted",
+      "evidence": [
+        "E10"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "DD21",
+      "arm_priority": "P0 wording alignment",
+      "status": "partial",
+      "claimed_state": "Owner reports7early2023wording vs2024-25newmarket",
+      "verified_state": "bounded evidence only; partial",
+      "discrepancy_counterexample": "Unresolved actual event/security/key/window mismatch;zero paired rows not independently proven",
+      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "owner": "Benchmark + Post + Industry",
+      "dependency": "DD03,DD04",
+      "next_action": "Inspect exact7accessions/events,priorPost2023bars and current quoteavailability;retain exclusions",
+      "acceptance_condition": "Actual joined cohort/entry/holding/fill/label coverage;marks alone not execution;no qualifying candidate=>unavailable",
+      "evidence": [
+        "E04",
+        "E08",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "requirement": "Accepted scope,firstarm/nextarm,results-firstUSD1m,historicalthenpaper",
+      "gap_ids": [
+        "DD08",
+        "DD09",
+        "DD11",
+        "DD19"
+      ]
+    },
+    {
+      "id": "R02",
+      "requirement": "Exact inventory/version/input-outputmanifesthashcommit observed evidenceclass unitscope",
+      "gap_ids": [
+        "DD01",
+        "DD02",
+        "DD04",
+        "DD12",
+        "DD17",
+        "DD18",
+        "DD20"
+      ]
+    },
+    {
+      "id": "R03",
+      "requirement": "Time meanings fiscal/event/publicby/earliest/effective/revision/vintage/providerreceive/ourretrievalprocess/signal/decision/quote/fill/valuation/label maturity,TZprecisionnullsentinel",
+      "gap_ids": [
+        "DD03",
+        "DD05",
+        "DD06",
+        "DD10",
+        "DD13",
+        "DD14"
+      ]
+    },
+    {
+      "id": "R04",
+      "requirement": "502calendar/security sessions,2092vs2008 actualsets,closures DST earlycloses knownschedules",
+      "gap_ids": [
+        "DD01",
+        "DD04",
+        "DD05",
+        "DD21"
+      ]
+    },
+    {
+      "id": "R05",
+      "requirement": "Sixdenominators,eventgroups amendments duplicates correlatedissuerday plus exclusions/censored/no-trade/no-fill",
+      "gap_ids": [
+        "DD02",
+        "DD07",
+        "DD10"
+      ]
+    },
+    {
+      "id": "R06",
+      "requirement": "Exacttext/hash/version public-bound and explicitlatency noSECacceptance assumptions promotion",
+      "gap_ids": [
+        "DD03",
+        "DD08"
+      ]
+    },
+    {
+      "id": "R07",
+      "requirement": "Daily2023-25 vsquotes2024-25 vsstructural2010-26 scopeandholding coverage",
+      "gap_ids": [
+        "DD04",
+        "DD21"
+      ]
+    },
+    {
+      "id": "R08",
+      "requirement": "Price targets adjusts actions folds eligiblecomparisons;MSE!=PnL",
+      "gap_ids": [
+        "DD05",
+        "DD07",
+        "DD11"
+      ]
+    },
+    {
+      "id": "R09",
+      "requirement": "Quote semantics15080missing events venue/freshness/actualreceipt,21dates masks",
+      "gap_ids": [
+        "DD06",
+        "DD07"
+      ]
+    },
+    {
+      "id": "R10",
+      "requirement": "Historical identity/membership/delists/splits/dividends liquidityvolume spreads sentinel multipliers",
+      "gap_ids": [
+        "DD06",
+        "DD07",
+        "DD09",
+        "DD16"
+      ]
+    },
+    {
+      "id": "R11",
+      "requirement": "Freeze existing signal extractionnormdeduptruncationtokenaggregationmodelpromptdictionarytraincutoffversion/trials",
+      "gap_ids": [
+        "DD08",
+        "DD11"
+      ]
+    },
+    {
+      "id": "R12",
+      "requirement": "Matched information/time/cohort baseline/cash and costs/sizing eligibility",
+      "gap_ids": [
+        "DD09",
+        "DD10"
+      ]
+    },
+    {
+      "id": "R13",
+      "requirement": "Producertransportconsumeracceptedfieldclocklabelorderfillaccountmetric fullchain",
+      "gap_ids": [
+        "DD03",
+        "DD04",
+        "DD09",
+        "DD10",
+        "DD17"
+      ]
+    },
+    {
+      "id": "R14",
+      "requirement": "690/196 exactretainedproof not rerun;native financialP1 unlessconsumed disabledfields",
+      "gap_ids": [
+        "DD17"
+      ]
+    },
+    {
+      "id": "R15",
+      "requirement": "FinancialAATMarchJune warnings AMT lateroldperiodunitsdefsinstants liabilitiesvsdebt",
+      "gap_ids": [
+        "DD13"
+      ]
+    },
+    {
+      "id": "R16",
+      "requirement": "Macrorevisionvintageszero historicqualification BLSdashes",
+      "gap_ids": [
+        "DD14"
+      ]
+    },
+    {
+      "id": "R17",
+      "requirement": "Derivativequote/definitionuniversesactionsdeliverablesmultipliercalendarrolls deferred",
+      "gap_ids": [
+        "DD15",
+        "DD16"
+      ]
+    },
+    {
+      "id": "R18",
+      "requirement": "Livingdocument supersession exactversions decisions capsules alphahash protected",
+      "gap_ids": [
+        "DD12",
+        "DD19"
+      ]
+    },
+    {
+      "id": "R19",
+      "requirement": "USD1m equalabsolute longshort100%gross noleverage0idlecash collateralshortproceeds qtydrift policy",
+      "gap_ids": [
+        "DD09",
+        "DD19"
+      ]
+    },
+    {
+      "id": "R20",
+      "requirement": "Entrydelay/holding spreadsfees/slippageimpactcapacity borrowfinancing recalls dividendsactionattribution lossesnofill",
+      "gap_ids": [
+        "DD07",
+        "DD09",
+        "DD10"
+      ]
+    },
+    {
+      "id": "R21",
+      "requirement": "Regularnet markedNAV openpositions/cash/flatdays dailyreturns versus terminalfixture",
+      "gap_ids": [
+        "DD10"
+      ]
+    },
+    {
+      "id": "R22",
+      "requirement": "Challenger/baseline/cash/incrementperiodcoverageinitialterminalgrossnetPnLdollarpercentage annualizationdrawdownexposureturnovercostwinratedenominatorSharpe95CI cashconvention unsupportednull",
+      "gap_ids": [
+        "DD10",
+        "DD11"
+      ]
+    },
+    {
+      "id": "R23",
+      "requirement": "Temporal/overlap/samedaycrossassetdependence HAC jointstudentizedbootstrap95CI trials/folds/samplelimits noarbitrarythreshold",
+      "gap_ids": [
+        "DD11"
+      ]
+    },
+    {
+      "id": "R24",
+      "requirement": "MCpathbootstrap !=strategybacktest enginepathregimecapacityscenarioslater noalpha claim",
+      "gap_ids": [
+        "DD11"
+      ]
+    },
+    {
+      "id": "R25",
+      "requirement": "Grillinginstalledsearch/publicfallback factsfirst exacthuman branches pendingQ4 noduplicatequestion",
+      "gap_ids": [
+        "DD19",
+        "DD20"
+      ]
+    },
+    {
+      "id": "R26",
+      "requirement": "Owner coordinationboundedstatus/receipts durableexceptions nointerruptdelivery!=acceptance",
+      "gap_ids": [
+        "DD12",
+        "DD19"
+      ]
+    },
+    {
+      "id": "R27",
+      "requirement": "Remote/fullthin metadata smallreads noheavyduplicated proofs/jobs;Tailscaletmuxlock2threads4GiB noLAN",
+      "gap_ids": [
+        "DD18",
+        "DD20"
+      ]
+    },
+    {
+      "id": "R28",
+      "requirement": "GPUexistingplan optionalCPUfirst indicesdependenceparity ownermethod netledgerrequired",
+      "gap_ids": [
+        "DD11",
+        "DD20"
+      ]
+    },
+    {
+      "id": "R29",
+      "requirement": "No paidacquisition/newmodel/finaltest/live/deploy/merges/sourcefixes/newchat;preserveedits",
+      "gap_ids": [
+        "DD08",
+        "DD11",
+        "DD19",
+        "DD20"
+      ]
+    },
+    {
+      "id": "R30",
+      "requirement": "Complete everyknownrequirement traced pending/deferredwithowner/reason neverproductionreadiness",
+      "gap_ids": [
+        "DD01",
+        "DD02",
+        "DD03",
+        "DD04",
+        "DD05",
+        "DD06",
+        "DD07",
+        "DD08",
+        "DD09",
+        "DD10",
+        "DD11",
+        "DD12",
+        "DD13",
+        "DD14",
+        "DD15",
+        "DD16",
+        "DD17",
+        "DD18",
+        "DD19",
+        "DD20",
+        "DD21"
+      ]
+    }
+  ],
+  "decision_frontier": {
+    "settled": [
+      "wordingfirst",
+      "financialnext",
+      "Postrecipe",
+      "USD1mresearch",
+      "longshort",
+      "equalabsolute",
+      "gross<=100%",
+      "noPassiveRevenue"
+    ],
+    "pending_existing_elsewhere": {
+      "thread": "01a1055f-309c-7682-a989-81dfeea8d6dd",
+      "question": "call_ucihXfwgKKFzigXOSokzs3kT",
+      "decision": "qualify headlines vs labelled provisional scenario"
+    },
+    "new_questions": [],
+    "fact_prerequisites": [
+      "DD03",
+      "DD04",
+      "DD06",
+      "DD08",
+      "DD10",
+      "DD21"
+    ]
+  },
+  "performance": {
+    "status": "notcomputed",
+    "initial_scenario_usd": 1000000,
+    "challenger": null,
+    "baseline": null,
+    "cash": null,
+    "incremental": null,
+    "reason": "No accepted costed regular net account replay; zero-yield cash Sharpe/delta undefined; Q4 pending"
+  }
+}

@@ -1,0 +1,36 @@
+REIT DOCUMENT URL EXPLANATIONS
+Researched 2026-10-03. Numbers match the lines in reit_document_urls.txt.
+
+1. SEC EDGAR company search. Search by company name, ticker, or CIK to find a REIT's filing history. Filter for 10-K, 10-Q, 8-K, and prospectuses. Starting point, not a single financial statement.
+
+2. SEC EDGAR API documentation. Explains the per-CIK Submissions and Company Facts JSON endpoints and bulk archives. Use these to build a filing manifest and pull standardized financial facts at scale; source filings still need review.
+
+3. SEC Financial Statement and Notes Data Sets. Downloadable ZIP files with detailed tagged financial statements and notes, including custom and dimensional facts. Useful for debt notes and large-scale extraction; large files and as-filed data require careful validation.
+
+4. Nareit REIT directory. Use to discover companies/sectors and reach issuer websites. This current member directory includes international firms and other public real-estate companies; validate REIT status and dated US listing separately. It is not a complete historical list of all US listed REITs or evidence of a particular loan.
+
+5. American Tower (AMT) Q2 2026 Form 10-Q. Direct SEC filing with cash-flow statements, liquidity, outstanding debt, borrowings, repayments, and capital spending. AMT is the REIT-classified name in the repository's configured 100-ticker options universe.
+
+6. American Tower September 2026 Form 8-K. Reports a completed senior-notes offering and intended uses of the proceeds. Use it to identify a financing event; confirm later repayments in subsequent filings rather than treating stated intentions as paid cash.
+
+7. American Assets Trust (AAT) April 2026 8-K filing index. Lists the filed 8-K and attached credit agreement (EX-10.1). The index is useful for identifying the exact source documents and their filing date.
+
+8. American Assets Trust credit agreement, Exhibit 10.1. The full agreement identifies borrower, guarantor, lenders, facility terms, interest, prepayment, maturity, and covenants. A stated credit limit is borrowing capacity, not the amount actually drawn.
+
+9. Blackstone Mortgage Trust (BXMT) Q2 2026 Form 10-Q. Direct SEC filing for a commercial mortgage REIT. Look for mortgage loans receivable, credit/risk ratings, loan activity, funding liabilities, cash flow, and allowances.
+
+10. Blackstone Mortgage Trust Q2 2026 investor exhibit. Filed presentation discussing investments, loan originations, repayments, portfolio composition, and financing. Match its management-defined activity metrics to the 10-Q before combining values.
+
+11. Arbor Realty Trust (ABR) 2025 Form 10-K. Audited annual SEC report with statements of cash flows, loan/investment portfolio, credit losses, debt, securitizations, and notes. A primary source for commercial mortgage lending activity.
+
+12. Arbor Realty Trust filed annual-report PDF. PDF version of the annual report for reading or PDF extraction. Useful for tables and loan schedules; link extracted figures back to the related SEC 10-K and exact pages.
+
+13. Equity Residential (EQR) Q2 2026 earnings release and supplemental information. Issuer webpage with debt summary, debt maturity schedule, covenants, rental/property measures, and capital expenditures. It is supplemental/unaudited, so compare key numbers with the 10-Q.
+
+14. Digital Realty (DLR) Q2 2026 earnings supplement PDF. Direct PDF with debt maturities, balance sheet, capital expenditures, acquisitions/dispositions, and real-estate operating tables. Useful for property REIT financing and investment flows.
+
+15. AGNC Investment (AGNC) Q2 2026 stockholder presentation PDF. Officially linked presentation for an agency mortgage REIT. Focus on mortgage-backed securities, repurchase-agreement financing, leverage, and hedges; its model differs from a whole-loan commercial lender. Validation on 2026-10-03 confirmed the official issuer link, but access to the PDF returned 403/tool errors; the content remains unverified in this live check.
+
+Public filings report material or aggregated financial activity. They do not provide a complete transaction-level bank ledger. Preserve filing date, reporting period, issuer CIK, currency, and document/page when recording any amount.
+
+See reit_source_validation_2026-10-03.txt for the dated source checks. Cached-file integrity and current live URL availability are separate checks; accessible discovery pages do not establish whole-universe coverage.

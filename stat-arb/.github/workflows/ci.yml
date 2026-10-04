@@ -1,0 +1,187 @@
+# ADR-020 asks for all four test layers to run in CI on both platforms.
+# Until now there was no CI at all, so every "green" was somebody running
+# the command by hand and remembering the answer.
+#
+# Two things make this workflow slower to write than a normal one:
+#
+#   1. vcpkg builds every dependency from source and Arrow takes 30-90
+#      minutes. Without a cache each run would burn that again, so the
+#      binary cache is exported to GitHub's Actions cache and restored on
+#      the next run. A cache miss is slow but correct; a cache hit is a
+#      couple of minutes.
+#   2. tools/vcpkg must sit at the pinned baseline commit. A newer ports
+#      tree fails resolution with "osqp does not exist" - measured, and it
+#      fails 27 minutes in, after everything else has built.
+#
+# The golden pipeline test fetches real prices from Yahoo (a documented,
+# deliberate exception to hermetic testing - it is the M1 exit criterion
+# "does ingestion actually work end to end"). Network flakiness in CI is
+# not a code regression, so it runs in its own step that is allowed to
+# fail without failing the build, and is reported separately.
+
+name: build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VCPKG_BINARY_SOURCES: "clear;files,${{ github.workspace }}/.vcpkg-cache,readwrite"
+
+jobs:
+  build:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: linux-gcc-release
+            os: ubuntu-24.04
+            preset: linux-gcc-release
+          - name: linux-gcc-asan
+            os: ubuntu-24.04
+            preset: linux-gcc-asan
+          - name: windows-msvc-release
+            os: windows-2022
+            preset: windows-msvc-release
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read the pinned vcpkg baseline
+        id: baseline
+        shell: bash
+        run: |
+          # The manifest is the single source of truth for which vcpkg
+          # commit this project builds against; parsing it here means the
+          # workflow can never drift from it.
+          baseline=$(grep '"builtin-baseline"' vcpkg.json | sed -E 's/.*"([0-9a-f]{40})".*/\1/')
+          test -n "$baseline"
+          echo "commit=$baseline" >> "$GITHUB_OUTPUT"
+
+      - name: Check out vcpkg AT the baseline
+        shell: bash
+        run: |
+          git clone https://github.com/microsoft/vcpkg.git tools/vcpkg
+          git -C tools/vcpkg checkout ${{ steps.baseline.outputs.commit }}
+
+      - name: Restore the dependency binary cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.vcpkg-cache
+          # Keyed on the baseline AND the manifest, so changing either
+          # invalidates it rather than silently reusing stale artifacts.
+          key: vcpkg-${{ matrix.name }}-${{ steps.baseline.outputs.commit }}-${{ hashFiles('vcpkg.json') }}
+          restore-keys: |
+            vcpkg-${{ matrix.name }}-${{ steps.baseline.outputs.commit }}-
+
+      - name: Linux build tooling
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          # Thrift (for Arrow's Parquet support) and glfw3's X11 backend
+          # need these at build time; see README's "Linux note on build
+          # tooling".
+          sudo apt-get install -y ninja-build autoconf automake libtool bison flex \
+            pkg-config libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev
+
+      - name: Bootstrap vcpkg
+        shell: bash
+        run: |
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            ./tools/vcpkg/bootstrap-vcpkg.bat -disableMetrics
+          else
+            ./tools/vcpkg/bootstrap-vcpkg.sh -disableMetrics
+          fi
+
+      - name: Enable MSVC
+        if: runner.os == 'Windows'
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Configure
+        run: cmake --preset ${{ matrix.preset }}
+
+      - name: Build
+        run: cmake --build --preset ${{ matrix.preset }}
+
+      - name: Test
+        shell: bash
+        run: |
+          # The golden pipeline test fetches live prices; excluded here and
+          # run separately below so a Yahoo outage cannot be mistaken for a
+          # code regression.
+          ctest --preset ${{ matrix.preset }} -j 2 -E "gm-run executes the full"
+
+      - name: Network-dependent golden pipeline (advisory)
+        id: golden
+        continue-on-error: true
+        shell: bash
+        run: ctest --preset ${{ matrix.preset }} -R "gm-run executes the full"
+
+      - name: Say so when the network test did not pass
+        if: steps.golden.outcome != 'success'
+        shell: bash
+        run: |
+          echo "::warning::The golden pipeline test did not pass. It fetches"
+          echo "::warning::live prices, so this may be an upstream outage"
+          echo "::warning::rather than a regression - check the log before"
+          echo "::warning::assuming either."
+
+  benchmarks:
+    name: benchmark regression gate
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read the pinned vcpkg baseline
+        id: baseline
+        shell: bash
+        run: |
+          baseline=$(grep '"builtin-baseline"' vcpkg.json | sed -E 's/.*"([0-9a-f]{40})".*/\1/')
+          echo "commit=$baseline" >> "$GITHUB_OUTPUT"
+
+      - name: Check out vcpkg AT the baseline
+        shell: bash
+        run: |
+          git clone https://github.com/microsoft/vcpkg.git tools/vcpkg
+          git -C tools/vcpkg checkout ${{ steps.baseline.outputs.commit }}
+
+      - name: Restore the dependency binary cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.vcpkg-cache
+          key: vcpkg-linux-gcc-release-${{ steps.baseline.outputs.commit }}-${{ hashFiles('vcpkg.json') }}
+          restore-keys: |
+            vcpkg-linux-gcc-release-${{ steps.baseline.outputs.commit }}-
+
+      - name: Linux build tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build autoconf automake libtool bison flex \
+            pkg-config libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev
+
+      - name: Bootstrap vcpkg
+        run: ./tools/vcpkg/bootstrap-vcpkg.sh -disableMetrics
+
+      - name: Configure and build
+        run: |
+          cmake --preset linux-gcc-release
+          cmake --build --preset linux-gcc-release --target gm-benchmarks
+
+      - name: Run the benchmarks against the committed baseline
+        # ADR-020 layer 4: a regression beyond the threshold fails the
+        # milestone. tools/check_benchmarks.py holds the comparison and
+        # the threshold; a shared CI runner is noisy, so the threshold is
+        # deliberately looser than the 10% the ADR names for a quiet
+        # machine - see that script's header.
+        run: |
+          ./build/linux-gcc-release/bin/gm-benchmarks \
+            --benchmark_format=json --benchmark_out=bench.json
+          python3 tools/check_benchmarks.py bench.json tests/benchmarks/baseline.json

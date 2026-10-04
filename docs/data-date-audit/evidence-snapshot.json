@@ -1,0 +1,157 @@
+{
+  "schema_version": "data-date-audit-seed-v1",
+  "audit_evidence_cutoff_utc": "2026-10-04T07:35:16Z",
+  "fingerprint_observation_window_utc": [
+    "2026-10-04T07:14:32Z",
+    "2026-10-04T07:18:47Z"
+  ],
+  "scope": "bounded metadata and handoff audit; no source mutation or new economic replay",
+  "project_id": "b5bf3c65-60cb-43e8-9765-7b3415a19fa0",
+  "parent_chat_id": "01a10571-d8fb-7aa0-b526-b792caffbde2",
+  "artifact_mtime_is_publication_evidence": false,
+  "snapshots_may_be_superseded_by_concurrent_owner_updates": true,
+  "economic_metrics_computed": false,
+  "protected_test_unlocked": false,
+  "source_fingerprints": [
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/docs/financial-pilot-scope.md",
+      "sha256": "77b53c3ed734738f429a0ea4f924b047aad1e768b8cff0ead56233a7ad6928e3",
+      "bytes": 8435,
+      "mtime_utc": "2026-10-04T07:14:48.3901296Z",
+      "kind": "mutable producer proposal"
+    },
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/examples/financial-pilot/minimum-source-scope.json",
+      "sha256": "8fb1866064f579d58ff38da0db10c31c41146b7f2c30fdaa9186702922d628f1",
+      "bytes": 13649,
+      "mtime_utc": "2026-10-04T07:10:56.5792323Z",
+      "kind": "proposal not registered for execution"
+    },
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/docs/completion-status-2026-10-04.md",
+      "sha256": "7359200bcbc339e421d2fa68b946dfb58bcf001ec6cabb613439ce4d9e7d9ac1",
+      "bytes": 10408,
+      "mtime_utc": "2026-10-04T07:13:31.2957763Z",
+      "kind": "mutable producer status"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/coordination/first-pilot-decision-register.md",
+      "sha256": "7f97b509d21628f024e03d89d9af45df6a4977abe5272ac807cd01610225d0e4",
+      "bytes": 8723,
+      "mtime_utc": "2026-10-04T07:11:07.9158667Z",
+      "kind": "mutable decision register"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/coordination/handoffs/benchmark.md",
+      "sha256": "79f68cf2906544dffa971de06bf6d8d1a2accad675b99fcefbc342859855f9fa",
+      "bytes": 1788,
+      "mtime_utc": "2026-10-04T03:13:44.5856338Z",
+      "kind": "older completion-v2 snapshot"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/coordination/handoffs/post-release-pilot.md",
+      "sha256": "548ad0d060661a135fb68bab322219c45e121c81dffab9dbc809121aa0d923ff",
+      "bytes": 2757,
+      "mtime_utc": "2026-10-04T07:11:07.9278246Z",
+      "kind": "mutable coordinator handoff"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/research/2026-10-04-alpha-pilot-and-lean-review.md",
+      "sha256": "9b6dbc6ab013f3a50c90af2e5072235ab29cabf50bc2875bd76dbe3e2140f25e",
+      "bytes": 25457,
+      "mtime_utc": "2026-10-04T07:07:41.8229288Z",
+      "kind": "hash-pinned decision evidence in producer proposal"
+    }
+  ],
+  "producer_proposal_observed": {
+    "schema_version": "financial-pilot-source-scope-v1",
+    "status": "proposal_not_registered_for_execution",
+    "producer_commit": "83eea30db9db13f00c6e10828aa775e16c4cf940",
+    "selected_first_arm": "post_release_wording_only_equity",
+    "next_separate_arm": "financial_benchmark_surprise",
+    "consumer_eligibility_granted_by_producer": false,
+    "historical_trading_ready_by_producer": false,
+    "earliest_public": null,
+    "economic_metrics": null
+  },
+  "known_gap_ids": [
+    "DD01",
+    "DD02",
+    "DD03",
+    "DD04",
+    "DD05",
+    "DD06",
+    "DD07",
+    "DD08",
+    "DD09",
+    "DD10",
+    "DD11",
+    "DD12",
+    "DD13",
+    "DD14",
+    "DD15",
+    "DD16",
+    "DD17",
+    "DD18",
+    "DD19"
+  ],
+  "refreshed_metadata_observed_utc": "2026-10-04T07:38:38Z",
+  "refreshed_source_fingerprints": [
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/docs/financial-pilot-scope.md",
+      "sha256": "607a02db922b21db92cca97a4c8066ba178fcb1e6426f07e62ffa129ed1a3151",
+      "bytes": 8628,
+      "mtime_utc": "2026-10-04T07:19:22.8409001Z",
+      "changed_since_seed": true,
+      "contents_reaudited": false
+    },
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/examples/financial-pilot/minimum-source-scope.json",
+      "sha256": "fdf4d9443937ae5cdf9f519c536d08c0ec3e09e45ada67f4ea796a3adcb5161a",
+      "bytes": 14933,
+      "mtime_utc": "2026-10-04T07:21:53.4315606Z",
+      "changed_since_seed": true,
+      "contents_reaudited": false
+    },
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/docs/completion-status-2026-10-04.md",
+      "sha256": "52472ba9eb56e4842cce0145ae1fc0c857f7fe8cd37895cab664dec19c8e4421",
+      "bytes": 10654,
+      "mtime_utc": "2026-10-04T07:19:22.8259008Z",
+      "changed_since_seed": true,
+      "contents_reaudited": false
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/coordination/first-pilot-decision-register.md",
+      "sha256": "aff06ba13a1352707c6985bd382912374daaee315deec58ef77529bd0b73a2fd",
+      "bytes": 9165,
+      "mtime_utc": "2026-10-04T07:31:37.3486374Z",
+      "changed_since_seed": true,
+      "contents_reaudited": false
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/coordination/handoffs/benchmark.md",
+      "sha256": "79f68cf2906544dffa971de06bf6d8d1a2accad675b99fcefbc342859855f9fa",
+      "bytes": 1788,
+      "mtime_utc": "2026-10-04T03:13:44.5856338Z",
+      "changed_since_seed": false,
+      "contents_reaudited": false
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/coordination/handoffs/post-release-pilot.md",
+      "sha256": "b4a5c0b2eb65701fc130779ad3177f345edfaccfd03bf537b3bc984767f11eeb",
+      "bytes": 3689,
+      "mtime_utc": "2026-10-04T07:31:37.3539204Z",
+      "changed_since_seed": true,
+      "contents_reaudited": false
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/research/2026-10-04-alpha-pilot-and-lean-review.md",
+      "sha256": "9b6dbc6ab013f3a50c90af2e5072235ab29cabf50bc2875bd76dbe3e2140f25e",
+      "bytes": 25457,
+      "mtime_utc": "2026-10-04T07:07:41.8229288Z",
+      "changed_since_seed": false,
+      "contents_reaudited": false
+    }
+  ]
+}

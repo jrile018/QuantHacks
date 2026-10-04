@@ -1,0 +1,16 @@
+LIVE URL VALIDATION — 2026-10-03
+
+181 original unique URL strings were inventoried from the 15-entry catalog, 53 source-map SEC browse links, 59 saved SEC receipt URLs, 35 SEC document manifest URLs, one Realty Income PDF URL, and additional REIT research references. The catalog was not changed.
+
+After normalizing citation punctuation and deduplicating, all 173 concrete source URLs were opened in sequential web-tool batches, plus one official AGNC event page used as context. Seven entries are unexpanded CIK/accession templates and have no concrete endpoint. No concrete source URL remains unattempted.
+
+Results: 95 source opens rendered content, plus the contextual AGNC event page. One explicit 403 was returned for the AGNC Q2 2026 presentation PDF. Its official issuer event page rendered as HTML and confirmed that the Q2 2026 Presentation link points to the exact PDF URL. This is access blocked, not evidence the link is dead. One SEC filing exceeded the web tool size cap, reported as tool error 400 (>4 MiB), not a source HTTP status. The remaining 76 opens returned tool-specific inaccessible errors without HTTP status. The web tool generally did not expose transport status for rendered pages. A direct ranged urllib probe timed out after 15 seconds; this does not prove sandbox network denial.
+
+Catalog coverage: EDGAR/API discovery, SEC financial-statement datasets, Nareit, AMT 10-Q and Sept. 14 8-K, AAT filing index and credit agreement, BXMT 10-Q and supplement, ABR 2025 10-K and 136-page annual report, EQR Q2 2026 results, DLR 30-page PDF, and AGNC Q2 presentation. Current tool outcomes include the BXMT size cap, ABR 10-K access error, and AGNC 403. Parent earlier review supplied the AAT borrower/guarantor/agent cue and the Nareit directory scope limitation.
+
+Source URLs are classified as collected source/retrieval endpoints, issuer-universe landing links, catalog examples, or auxiliary research citations. Auxiliary references include non-REIT technical and macro sources; they do not prove corpus ingestion. Rendered pages support observed page identity and relevance, not financial accuracy or REIT universe completeness. Cached byte integrity is separate and was verified offline.
+
+Per-URL detail: data/processed/reit_source_validation/20261003/live_urls.json
+
+
+Final normalization review: the CIK########## placeholder is a template. Duplicate context and notes-dataset variants were deduplicated; original strings are preserved. Final redirects are not established by rendered reference URLs.

@@ -1,0 +1,1 @@
+{"ticker": "O:AIG240920P00073000", "queryCount": 2, "resultsCount": 2, "adjusted": false, "results": [{"v": 258, "vw": 1.3427, "o": 0.99, "c": 1.03, "h": 1.4, "l": 0.99, "t": 1726200000000, "n": 48}, {"v": 2, "vw": 0.505, "o": 0.5, "c": 0.51, "h": 0.51, "l": 0.5, "t": 1726545600000, "n": 2}], "status": "OK", "request_id": "dd518f5f66cbd0b8fa1be0cb6def8708", "count": 2}

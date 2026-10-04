@@ -1,0 +1,50 @@
+{
+  "experiment_id": "lattice-strategies-v1-20261004",
+  "classification": "exploratory_reused_2024_2025_no_promotion",
+  "universe": ["AAPL", "MSFT", "AMZN", "GOOGL", "META", "NVDA", "JPM", "BAC", "XOM", "CVX", "UNH", "GD"],
+  "input_start": "2018-01-01",
+  "diagnostic_start": "2024-01-01",
+  "diagnostic_end": "2025-12-31",
+  "label_end": "2025-12-31",
+  "label_boundary": "Intentionally restrict labels to already inspected 2024/2025. Retain final h sessions as unobserved for horizon h; do not read a 2026 label tail.",
+  "primary_horizon_sessions": 1,
+  "secondary_horizons_sessions": [5, 20],
+  "target": "additive_sum_of_fractional_adjusted_close_returns",
+  "target_caveat": "One session is a fractional return; multi-session sums are additive path diagnostics, not compounded account returns.",
+  "clock": "completed_session_close_assumed_replay_availability_not_verified_receipt_or_executable_fill",
+  "residual": {
+    "formation_sessions": 126,
+    "calibration_sessions": 60,
+    "disjoint_windows": true,
+    "max_characteristic_reversion_sessions": 30,
+    "factor_forecast": "zero_future_factor_return",
+    "hedge": "signed_stock_and_leave_target_out_peer_weights",
+    "models": ["zero", "historical_mean", "own_return_ar1", "market_state", "mst_peer_state", "topcorr_peer_state", "distance_peer_state"],
+    "invalid_fit": "forecast_zero_explicit_no_trade",
+    "selection": "no_parameter_search"
+  },
+  "risk": {
+    "window_sessions": 126,
+    "fixed_book": "equal_weight_12_names_gross_one",
+    "estimators": ["diagonal_cov", "sample_cov", "ledoit_wolf", "one_factor", "mst_tree"],
+    "primary_loss": "QLIKE_on_same_fixed_book_next_squared_return",
+    "secondary_loss": "MSE_same_fixed_book",
+    "policies": ["equal_weight", "inverse_vol", "lw_min_variance", "tree_min_variance"],
+    "policy_scope": "secondary_assumed_mark_allocation_diagnostic_not_approved_capital",
+    "rebalance": "first_panel_session_of_ISO_week",
+    "max_weight": 0.25,
+    "cap_scope": "at allocation and weekly rebalance; holdings may drift between them",
+    "gross_exposure": 1.0
+  },
+  "cost_scenarios_one_way_bps": [0, 1, 5, 10],
+  "cost_scope": "Assumed per-traded-dollar sensitivity only; no claim of quote fills, borrow, taxes, financing, corporate actions or net account profit.",
+  "uncertainty": {"bootstrap_repetitions": 500, "primary_block_sessions": 20, "seed": 20261004, "paired_date_clusters": true, "intervals": "unadjusted_exploratory_all_registered_comparisons_disclosed"},
+  "missing_data": "retain_opportunities_and_abstentions_no_gap_bridging",
+  "new_orders": 0,
+  "promotion": false,
+  "deferred": {
+    "options": "Synced chains, term-matched IV inputs, deliverables, lifecycle and sufficient independent events unavailable.",
+    "futures": "Full equity-session synchronized dollar hedge PnL/costs/margin unavailable; current 09:36 marks use a different holding interval.",
+    "business_news": "Qualified dated signed exposures and first-public surprises unavailable."
+  }
+}

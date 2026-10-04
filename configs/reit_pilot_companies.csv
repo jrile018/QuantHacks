@@ -1,0 +1,5 @@
+company_name,cik,sic,tickers,reit_type,selection_reason,identity_source
+American Tower Corporation,0001053507,6798,AMT,equity_infrastructure,REIT in configured TOP_100 options universe,https://www.sec.gov/Archives/edgar/data/1053507/000105350726000133/0001053507-26-000133-index.htm
+"American Assets Trust, Inc.",0001500217,6798,AAT,equity_property,Contrast property debt and credit agreements,https://www.sec.gov/Archives/edgar/data/1500217/0001500217-26-000012-index.htm
+"Blackstone Mortgage Trust, Inc.",0001061630,6798,BXMT,commercial_mortgage,Contrast loans receivable and funding liabilities,https://www.sec.gov/Archives/edgar/data/1061630/000106163026000069/0001061630-26-000069-index.html
+AGNC Investment Corp.,0001423689,6798,AGNC,agency_mortgage,Contrast agency securities and repo funding,https://www.sec.gov/Archives/edgar/data/1423689/000142368926000099/0001423689-26-000099-index.htm

@@ -1,0 +1,20 @@
+{
+  "id": "contextual-lattice-links-v1",
+  "status": "exploratory_price_proxy_actual_news_blocked",
+  "prior_window_sessions": 63,
+  "event_threshold_prior_std": 2.0,
+  "prior_signed_relationship_min_correlation": 0.2,
+  "prior_half_relationship_min_correlation": 0.1,
+  "issuer_8k_recency_calendar_days": 5,
+  "equity_decision_clock": "16:00 America/New_York close-mark proxy unless decision_at supplied",
+  "futures_decision_clock": "supplied decision_at, normally 09:30 America/New_York",
+  "filing_availability": "max(SEC acceptance timestamp, filingDate plus one calendar day); proxy, not first-public proof",
+  "filing_monitoring": "complete means SEC 8-K inventory only; missing/incomplete remains unknown",
+  "eligible_universe": "all daily feature rows retained in audit, including unclear and no-trade",
+  "catchup_source_market": "CL crude-oil point-change price proxy only; factual announcement surprise unavailable",
+  "candidate_targets": ["XOM", "CVX"],
+  "economic_channel": "signed producer exposure requires a public-at-decision dated 10-K or equivalent source, effective interval and SHA-256; absent links block qualification",
+  "futures_context_units": "prior residual-scale approximation; do not divide by volatility control",
+  "native_h5_tags": "prohibited as at-decision labels; retrospective episode-end classification",
+  "trial_policy": "no tuning; changing the fixed constants creates a new registered trial"
+}

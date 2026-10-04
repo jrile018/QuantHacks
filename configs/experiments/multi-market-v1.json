@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "multi-market-lattice-v1-20261003",
+  "authorization": "User: test all futures families and numerical roles, recommendations first; explore valuable Lattice extensions.",
+  "stage": "historical_exploratory_then_reserved_then_forward",
+  "market_order": ["ES_MES_one_index_exposure", "ZN_rates", "CL_energy", "GC_metals", "matched_equity_options"],
+  "role_order": ["forecast", "risk_filter", "direct_signal"],
+  "separate_hedge_roles": true,
+  "daily_sample_protocol": {
+    "timezone": "America/New_York",
+    "decision_time": "09:30:00",
+    "entry_interval": ["09:35:00", "09:36:00"],
+    "exit_rule": "same fixed interval in the next eligible common US equity session; exact selected contract required",
+    "feature_cutoff": "previous completed eligible session; no same-entry-interval observation in decision features",
+    "execution_classification": "interval_sample_pricing_proxy_until_update_lifecycle_cost_capacity_gates_met",
+    "missing_exit": "excluded_from_label_with_missing_reason; never skip forward to a favorable mark",
+    "partial_fills": "initial policy all-or-none; inadequate displayed size is a nonfill"
+  },
+  "equity_close_diagnostic": {
+    "source": "remote native adjusted-close panel",
+    "tickers": ["AAPL", "MSFT", "AMZN", "GOOGL", "META", "NVDA", "JPM", "BAC", "XOM", "CVX", "UNH", "GD"],
+    "start": "2018-01-01",
+    "train_end": "2023-12-31",
+    "test_start": "2024-01-01",
+    "test_end": "2025-12-31",
+    "classification": "fixed-cohort exploratory close-to-close forecast and price-proxy diagnostics; not historically proven universe or executable returns",
+    "reserved_final_test": false
+  },
+  "numeric_packet": {
+    "window_sessions": 63,
+    "normalization": "past_only",
+    "model": "fixed_regularized_linear_model_without_hyperparameter_sweep",
+    "first_challengers": ["factor_residual_peer_and_spectral_state", "correlation_graph_stability"],
+    "ordinary_controls": ["own_price_momentum", "realized_volatility", "average_correlation", "factor_exposure", "liquidity_when_available"],
+    "future_packets": ["product_local_curve_state_depth", "option_IV_and_skew_residuals", "constrained_hedge_policy"],
+    "unlimited_coordinate_or_topology_sweeps": false
+  },
+  "futures_sample_diagnostic": {
+    "training_dates": ["2024-01-01", "2024-12-31"],
+    "diagnostic_dates": ["2025-01-01", "2025-12-31"],
+    "roots_fit_separately": ["ES", "ZN", "CL", "GC"],
+    "MES": "implementation comparison only, not a second independent exposure",
+    "selection": "provider volume rank zero based on previous-day trading volume; actual contract identity retained",
+    "calendar": "observed SPY MINI daily UTC bar dates, independent of interval quote validity",
+    "target": "selected actual-contract next-session sampled midpoint change divided by strictly prior 63-session point-change standard deviation",
+    "classification": "exploratory; original quote freshness, fees, capital and lifecycle economic gates remain",
+    "reserved_final_test": false
+  },
+  "trial_budget": {
+    "new_scalar_predictors_maximum": 6,
+    "registered_primary_cells_maximum": 22,
+    "feature_deletion_ablations_maximum": 6,
+    "ES_MES_execution_diagnostic_is_independent_alpha_cell": false,
+    "failed_or_abandoned_attempts_remain_in_ledger": true
+  },
+  "promotion": {
+    "forecast_relative_loss_improvement_floor": 0.01,
+    "risk_downside_variation_improvement_floor": 0.05,
+    "requires_paired_same_cohort_simple_substitute": true,
+    "requires_informative_dependence_aware_uncertainty": true,
+    "direct_or_hedge_economics": "blocked until actual contract, costs, capital, quote evidence, exposures and lifecycle reconcile",
+    "inconclusive_is_not_supported": true,
+    "forward_paper_requires_frozen_surviving_protocol": true
+  },
+  "acquisition": {
+    "total_databento_cap_usd_exclusive": 250,
+    "this_pilot_quote_cap_usd": 10,
+    "date_range": ["2024-01-01", "2026-01-01"],
+    "futures_symbols": ["ES.v.0", "MES.v.0", "ZN.v.0", "CL.v.0", "GC.v.0"],
+    "same_contract_roll_gapfill_symbols": ["ES.v.1", "ZN.v.1", "CL.v.1", "GC.v.1"],
+    "futures_schemas": ["statistics", "definition", "ohlcv-1d", "bbo-1m"],
+    "equity_counterpart": "EQUS.MINI SPY/QQQ daily plus SPY bbo-1m; EQUS.SUMMARY overlapping daily benchmark",
+    "no_duplicate_OPRA_request": true,
+    "quote_is_not_final_charge": true
+  },
+  "heavy_compute": "home-pc, detached tmux, versioned logs and hashes",
+  "source_warning": "Existing equity/CFO history has been inspected. Final-adjusted closes and replay timestamps have historical-vintage limitations. No result is broker-executed evidence."
+}

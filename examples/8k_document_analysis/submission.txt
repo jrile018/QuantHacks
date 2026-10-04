@@ -1,0 +1,32 @@
+<SEC-DOCUMENT>0000001234-24-000001.txt : 20240201
+<SEC-HEADER>
+ACCESSION NUMBER: 0000001234-24-000001
+FILER:
+ COMPANY DATA:
+  CENTRAL INDEX KEY: 0000001234
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>8-K
+<SEQUENCE>1
+<FILENAME>main.htm
+<TEXT>
+<html><body><h2>Item 2.02 Results of Operations and Financial Condition</h2>
+<p>This is a synthetic software demonstration, not a real company filing.</p>
+<p>The earnings release is furnished as Exhibit 99.1.</p>
+<h2>Item 9.01 Financial Statements and Exhibits</h2><p>Exhibit 99.1 Earnings release.</p></body></html>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-99.1
+<SEQUENCE>2
+<FILENAME>release.htm
+<TEXT>
+<html><body><h1>Quarterly earnings results — synthetic example</h1>
+<p>Revenue increased, but operating income declined.</p>
+<p>We do not expect demand to recover next quarter. Net loss was $2.3 million.</p>
+<table><tr><th>USD millions</th><th>Current quarter</th><th>Prior quarter</th></tr>
+<tr><td>Operating income</td><td>-2.3</td><td>1.4</td></tr></table>
+</body></html>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

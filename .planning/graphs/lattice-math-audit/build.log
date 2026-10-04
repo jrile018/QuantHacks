@@ -1,0 +1,12 @@
+  warning: 3 code file(s) yielded no symbols (0.00 MB) — a data file, or source this extractor models no symbols for: stat-arb/libs/gm-geometry/include/gm-geometry/correlation.hpp, stat-arb/libs/gm-geometry/include/gm-geometry/distance.hpp, stat-arb/libs/gm-signals/include/gm-signals/peer_basket.hpp
+Re-extracting code files in . (no LLM needed)...
+[graphify watch] 3 file(s) not classified (no supported extension or shebang), skipped: build.log, source-snapshot.zip, tmux-start.log
+[graphify watch] Rebuilt (no clustering): 579 nodes, 1061 edges
+[graphify watch] graph.json updated in graphify-out
+Code graph updated. For doc/paper/image changes run /graphify --update in your AI assistant.
+Tip: set GEMINI_API_KEY or GOOGLE_API_KEY to use Gemini for semantic extraction.
+Loading existing graph...
+Graph: 579 nodes, 1056 edges
+Re-clustering...
+Done - 23 communities. GRAPH_REPORT.md, graph.json and graph.html updated.
+EXIT_CODE:0

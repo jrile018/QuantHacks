@@ -1,0 +1,24 @@
+{
+  "run_id": "9dcbe287-4d69-429a-acd6-774e49e0d22e",
+  "checked_utc": "2026-10-04T04:11:09.067325+00:00",
+  "snapshot_source_files": 73,
+  "live_drift_count": 3,
+  "live_drift": [
+    {
+      "snapshot_path": "validation/scripts/run_8k_validation.py",
+      "snapshot_sha256": "52744b8edb068464d8404303c510d64709694c9abf8c6c227bb3325c8d2954cd",
+      "live_sha256": "4e9ed093669354a7c97aeda95b89ff3693bb673409b539b20deacda4b6d7c6a5"
+    },
+    {
+      "snapshot_path": "validation/src/research_validation/conditional_equity_diagnostic.py",
+      "snapshot_sha256": "428ecf7b2990936626106838aa1f2cf891c1844431ef6bde4b7de4bbbd1400e3",
+      "live_sha256": "537afac8bf12e1610382b6ba21f29b5d150ebfa4bcb7bea5f60e7e6e726097f2"
+    },
+    {
+      "snapshot_path": "validation/src/research_validation/peer_diagnostics.py",
+      "snapshot_sha256": "2ec74b98f225ef147f14a0bc3593e184cc756b385311eefa3a2c2235f7612c81",
+      "live_sha256": "12b1707923a9b57c2db11ae68992c121321b0c71ca3e4aff275dd458fe55ccbe"
+    }
+  ],
+  "meaning": "Graph was valid for the archived source snapshot. Changed live files may have outdated nodes or edges."
+}

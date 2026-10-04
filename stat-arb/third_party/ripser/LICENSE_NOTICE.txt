@@ -1,0 +1,4 @@
+Ripser (MIT License)
+Source: https://github.com/Ripser/ripser
+Copyright (c) 2015–2021 Ulrich Bauer
+Vendored per ADR-012 (single-header implementation, MIT licensed).

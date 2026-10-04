@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "contextual-lattice-v1-20261003",
+  "authorization": "User: test all of them, delegate ordering, allow unclear/no-trade, and track everything.",
+  "classification": "exploratory_reused_2024_2025_outcomes_no_final_test_promotion",
+  "order": ["catchup", "reversal", "movement", "chosen_option_pricing_audit"],
+  "market_groups": ["equities", "ES", "ZN", "CL", "GC"],
+  "mechanisms": {
+    "catchup": {"target": "signed_next_session_mark_change_in_asset_specific_units", "proxy_variant": "source_price_shock_and_reaction_gap", "full_variant": "dated_signed_economic_exposure_and_public_surprise", "full_variant_requires": ["dated_link", "pre_release_expectation", "public_at", "source_ready_before_decision"]},
+    "reversal": {"target": "signed_next_session_mark_change_in_asset_specific_units", "context": "prior_observed_peer_gap_and_cutoff_known_SEC_8K_state", "packet": "continuous_peer_gap_times_graph_stability_and_own_excursion; gap-event threshold is descriptive only", "future_news_exclusion": false, "missing_monitoring": "unknown_not_no_news"},
+    "movement": {"target": "absolute_next_session_mark_change_in_asset_specific_units", "required_baselines": ["own_prior_volatility", "own_prior_absolute_return_mean", "simple_ticker_mean"], "option_profit_implication": false}
+  },
+  "target_units": {"equities": "fractional adjusted-close next-session change; retrospective mark proxy", "futures": "same actual contract next-session point change divided by decision-time prior-window point-risk scale; dimensionless risk units, not percentage returns"},
+  "models": {"ridge": 1.0, "window_sessions": 63, "purge_sessions": 1, "source_shock_threshold_std": 2.0, "gap_threshold_std": 2.0, "gap_threshold_scope": "exported descriptive reversal_event only; not a cohort eligibility gate", "graph_stability_interaction": "continuous one-minus-edge-turnover; no thresholded stability gate", "fit_tuning": "none"},
+  "comparisons": ["ordinary_history_and_factors", "context_only", "Lattice_only_plus_ordinary_baseline", "context_plus_Lattice", "zero", "historical_ticker_mean"],
+  "lattice_only_columns": {"catchup": ["peer_reaction_gap", "prior_peer_stability"], "reversal": ["peer_reaction_gap", "graph_stability"], "movement": ["abs_peer_gap", "abs_peer_shock"]},
+  "equity_dates": {"train_start": "2018-01-01", "train_end": "2023-12-31", "diagnostic_start": "2024-01-01", "diagnostic_end": "2025-12-31", "clock": "session_close_statistical_mark_with_assumed_replay_availability"},
+  "futures_dates": {"train_start": "2024-01-01", "train_end": "2024-12-31", "diagnostic_start": "2025-01-01", "diagnostic_end": "2025-12-31", "clock": "09:30_ET_decision_prior_session_features_09:35_09:36_sampled_entry_next_same_contract_exit"},
+  "options": {"selected_contract_sample": true, "existing_primary_distinct_events": 18, "minimum_distinct_events": 20, "surface_or_execution_claim_requires": ["actual_underlying_provenance", "synchronized_marks", "rates_dividends", "exercise_deliverable_terms", "contract_adjustments", "lifecycle", "adequate_independent_events"], "long_maturity_implied_move_is_not_one_session_forecast": true},
+  "uncertainty": {"bootstrap_repetitions": 500, "block_sessions": 10, "seed": 20261003, "family_accounting": "retain_all_15_primary_market_hypothesis_cells_and_prior_trials_no_best_cell_promotion"},
+  "abstention": {"allowed": true, "missing_or_conflicting_context": "unclear_no_trade", "retain_every_decision": true, "report_coverage_and_missed_opportunity": true, "risk_direct_hedge_economics": "blocked_until_quote_cost_capital_and_exposure_gates"},
+  "tracking": {"freeze_before_fit": true, "source_code_config_hashes": true, "every_row_status_reason_prediction_outcome": true, "append_only_lifecycle_events": true, "failed_attempts_preserved": true, "separate_operational_retry_from_new_statistical_trial": true},
+  "compute": {"host": "home-pc", "detached_tmux": true, "max_cpu_threads": 2, "memory_limit_mb": 4096, "shared_lock": "/home/john-riley/.cache/quanthaxs-heavy-compute.lock"},
+  "spending": {"new_orders_in_this_pass": false, "standing_total_databento_cap_exclusive_usd": 250, "prior_verified_total_usd": 31.669410635902793}
+}

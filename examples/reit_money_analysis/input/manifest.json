@@ -1,0 +1,18 @@
+{
+  "run_status": "complete",
+  "companies": [],
+  "documents": [
+    {
+      "cik": "0000123456",
+      "accession": "0000123456-26-000001",
+      "filename": "synthetic_report.htm",
+      "url": "https://example.test/synthetic-report",
+      "source_path": "cache/synthetic_report.htm",
+      "sha256": "c4e7ee49e0da32ad03bd61c85cfce0b53081f7f2c47cf52bcf9c7734922bd993",
+      "form": "10-Q",
+      "filed": "2026-07-20",
+      "text_path": "text/synthetic_report.json"
+    }
+  ],
+  "synthetic": true
+}

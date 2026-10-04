@@ -1,0 +1,82 @@
+{
+  "contract_version": 1,
+  "frozen_at": "2026-10-03",
+  "status": "frozen_research_contract_no_validated_results",
+  "data_start": "2024-01-01",
+  "lanes": {
+    "strict_arbitrage": {
+      "claim": "A contractual payoff inequality executable at synchronized observed bid/ask and size after all costs",
+      "horizons": ["immediate_execution", "contractual_settlement"],
+      "families": ["same_underlying_same_expiry_conversion_reversal", "same_contract_vertical_bounds", "cashflow_matched_same_expiry_box"],
+      "american_contract_rule": "European parity is not an unconditional American equality; bound dividends, early exercise, assignment, borrow and funding over all permitted exercise paths",
+      "required_evidence": ["independent_underlying", "option_definitions", "multiplier", "deliverable", "dividends", "corporate_actions", "synchronized_quotes", "quote_sizes", "borrow", "financing", "margin", "assignment", "leg_risk"],
+      "no_claim_if": ["exchange_only_underlying_is_presented_as_NBBO", "midpoint_profit_only", "unknown_deliverable", "unknown_early_exercise_cost", "unavailable_borrow", "unmodeled_leg_execution"]
+    },
+    "repricing": {
+      "claim": "A probabilistic future price or relative-value effect; classify losses and hedge basis explicitly",
+      "families": {
+        "financing_events": {
+          "horizons": ["30_minutes", "next_session_close", "5_sessions"],
+          "rationale": "Announcement dissemination, next-session digestion for after-hours filings, and short financing-repricing persistence"
+        },
+        "network_counterparty": {
+          "horizons": ["1_session", "5_sessions", "21_sessions"],
+          "rationale": "Immediate counterparty read-through, one-week propagation, and one-month relationship repricing"
+        },
+        "maturity_pressure": {
+          "horizons": ["5_sessions", "21_sessions", "63_sessions"],
+          "rationale": "Financing response, monthly credit reassessment, and quarterly maturity/rollover pressure"
+        }
+      },
+      "equity_input": "Independent underlying market prices; option vendor underlying marks alone are insufficient",
+      "options_input": "Timestamped quotes and contract definitions with bid/ask/size, expiry, strike, right, multiplier and deliverable",
+      "futures_role": "Index and rate exposure hedges, never a company-specific exact contract match",
+      "outputs": ["net_return_by_horizon", "hedged_net_return", "option_spread_pnl", "basis_risk", "turnover", "capacity", "capital_usage", "stress_drawdown_frontier"]
+    }
+  },
+  "development": {
+    "start": "2024-01-01",
+    "end_exclusive": "2026-01-01",
+    "folds": [
+      {"train_end_exclusive": "2024-07-01", "validation_start": "2024-07-01", "validation_end_exclusive": "2025-01-01"},
+      {"train_end_exclusive": "2025-01-01", "validation_start": "2025-01-01", "validation_end_exclusive": "2025-07-01"},
+      {"train_end_exclusive": "2025-07-01", "validation_start": "2025-07-01", "validation_end_exclusive": "2026-01-01"}
+    ],
+    "fit_rule": "Fit thresholds, normalization, universe decisions and hedge ratios using only each fold's strictly prior matured labels",
+    "purge_rule": "Remove training events whose label information interval touches validation; split counterparty/event clusters together",
+    "embargo_rule": "Reserve 63 trading sessions between any training label end and validation entry, the largest frozen session horizon; 30-minute labels use timestamp intervals too",
+    "matured_labels": "Require observed label end before fit cutoff; exclude right-censored labels"
+  },
+  "holdout": {
+    "candidate_start": "2026-01-01",
+    "candidate_end_exclusive": "2027-01-01",
+    "status": "unaudited_do_not_claim_out_of_sample",
+    "required_audit": "Inventory prior 2026 queries, purchases, exploratory results, manual choices and model access before opening validation",
+    "if_consumed": "Treat consumed 2026 periods as development. Register a new prospective holdout beginning after freeze, including delayed label maturation; do not relabel consumed history as OOS",
+    "prospective_start_rule": "First untouched trading session after documented final strategy freeze and access-control audit"
+  },
+  "trial_register": {
+    "path": "data/processed/reit-market/trial_register.jsonl",
+    "append_before_run": true,
+    "required_fields": ["trial_id", "registered_at", "contract_sha256", "code_revision", "data_manifest_sha256", "family", "universe_rule", "horizon", "feature_recipe", "thresholds", "hedge_recipe", "cost_recipe", "fold", "seed", "contamination_audit"],
+    "report_all_trials": true,
+    "selection_rule": "Use development folds only; report multiple-testing-adjusted uncertainty, cluster resampling and failed/abandoned trials"
+  },
+  "execution": {
+    "entry": "First executable quote after public timestamp plus stated latency; after-hours events enter next eligible session",
+    "fills": "Buy ask and sell bid with executable size limits; no midpoint fills as primary evidence",
+    "costs": ["exchange_and_broker_fees", "spread", "slippage", "borrow_and_locate", "financing", "margin_and_capital", "assignment", "dividends", "hedge_roll", "leg_risk"],
+    "stress_frontier": {"fee_multipliers": [1, 2, 3], "spread_multipliers": [1, 1.5, 2], "capacity_fractions_of_displayed_size": [0.05, 0.1, 0.25], "financing_shock_bps": [0, 100, 300], "borrow_shock_bps": [0, 300, 1000]},
+    "decision_rule": "Report net-return, drawdown, capacity and capital frontier; do not optimize to a retrospectively preferred personal drawdown target",
+    "risk_failure_cases": ["rate_regime_shift", "credit_stress", "correlated_counterparty_events", "halt", "missing_quotes", "short_borrow_recall", "option_assignment", "hedge_basis_break"]
+  },
+  "acquisition": {
+    "total_cap_usd": "249.99",
+    "prior_spend_floor_usd": "23.14",
+    "mode_default": "quote",
+    "required_before_purchase": ["provider_dataset_availability", "provider_schema_availability", "provider_range_and_condition_receipts", "exact_cost_quote", "durable_reservation", "durable_submitting_state"],
+    "unknown_submission": "Hold funds and reconcile provider job; no automatic retry",
+    "dataset_policy": "Discover actual availability and quote quality. Exchange-only equity cannot be represented as consolidated NBBO",
+    "manifest_policy": "Nonzero records, size/SHA-256 verified files, measured coverage and independent quality audits required before research readiness"
+  }
+}

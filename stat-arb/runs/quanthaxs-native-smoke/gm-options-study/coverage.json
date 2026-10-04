@@ -1,0 +1,6 @@
+{
+  "atm_mark_event_buckets": 2,
+  "event_buckets": 2,
+  "matched_event_buckets": 0,
+  "missing_score_event_buckets": 2
+}

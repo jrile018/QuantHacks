@@ -1,0 +1,95 @@
+# Default full-scale run parameters (ADR.md §8.1). Distinct from
+# tests/fixtures/golden_run.toml.in, which is deliberately small/fast
+# for CI - this is the real M1 exit-criterion run: "15-year, 100-name
+# validated price panel builds locally; coverage stats reported."
+#
+# Paths here are relative to wherever gm-run is invoked from (the repo
+# root, by convention) rather than CMake-templated, since this file is
+# meant to be run by a human/script directly, not compiled into a test.
+
+[output]
+runs_base_dir = "runs"
+
+# Optional QuantHaxs contract study. If present, gm-run appends native
+# gm-options-ingest and gm-options-study stages after its equity stages.
+# Requires tools/requirements-options.txt in the configured Python environment.
+# [options]
+# study_dir = "../data/processed/smoke-options-native"
+# python_exe = "../.venv/Scripts/python.exe"
+
+[universe]
+snapshot_csv = "data/reference/sp500_constituents.csv"
+# Point-in-time membership, including names the index has since dropped
+# (tools/sp500_membership_history.py). Comment this out to fall back to the
+# current-constituent snapshot, which cannot see departures.
+membership_csv = "data/reference/sp500_membership.csv"
+# 2010-01-04 is the earliest trading day this ADR's date range targets
+# (ADR-002); end_date is intentionally left a few days behind "today" to
+# avoid requesting a partial/not-yet-closed final bar.
+start_date = "2010-01-04"
+end_date = "2026-08-28"
+
+[ingest]
+cache_dir = "data/raw/price_cache"
+# No max_tickers cap: fetch the full S&P 500 base pool candidate set
+# (~503 names) so liquidity ranking below has the full field to select
+# from, not a pre-truncated slice.
+liquidity_window_days = 60
+liquidity_top_n = 100
+
+# SEC XBRL fundamentals (ADR-022, ADR 8.2.1). Off by default: one request
+# per issuer, each companyfacts document 10-40 MB. Fetched for the LIQUID
+# universe only - the ~81 names everything downstream reads - not the
+# ~503-name candidate pool.
+#
+#   fetch_fundamentals       = true
+#   fundamentals_max_issuers = 12    (testing only; -1 or absent = no cap)
+fetch_fundamentals = false
+
+[geometry]
+window_days = 60
+embedding_dims = 3
+
+[boundaries]
+alpha = 0.05
+# Which views to score: any subset of the letters A, B and D. Defaults to
+# all three. Narrowing it exists so that investigating one view does not
+# cost the other two - a View A question is ~2 minutes on the full panel
+# and ~20 if View B is recomputed on the way past, and that difference
+# decides whether the question gets asked.
+#   views = "A"
+
+# ADR §6.4's default trailing-history length for View B (~3 years of
+# trading days).
+view_b_lookback_days = 756
+
+# Boundary surfaces (ADR §8.3). Off by default: the scores are the
+# analytical deliverable and do not depend on meshes existing at all,
+# and a full run's worth of them is real disk. Turn on to look at
+# anything in gm-view.
+#
+#   write_meshes           = true
+#   mesh_resolution        = 32     grid cells per axis
+#   mesh_frame_stride      = 1      View A: every Nth frame
+#   view_b_mesh_tickers    = ["AAPL", "NVDA", "XOM"]
+#   view_b_mesh_stride     = 5      View B: every Nth dated point, per name
+#
+# View D (ADR-022): the same causal question in valuation space. Needs
+# gm-features' valuation.parquet, which needs ingest.fetch_fundamentals
+# above; without it the view is skipped and the manifest says so.
+#
+#   view_d_axes = ["earnings_yield", "fcf_yield"]   (the default)
+#
+# Adding "ebitda_ev_yield" is one edit, and it is a trade rather than an
+# improvement: measured per ticker-day, E/P is present for 100% of days
+# with a market cap, FCF/P for 94%, EBITDA/EV for 57%. A boundary is fitted
+# in ONE space, so every point must carry every configured axis - the third
+# axis shrinks the cross-section rather than enriching the fit. The count
+# of ticker-days it costs is in the manifest either way.
+
+# View B is per-ticker and strided because it multiplies twice over: 81
+# names x 4129 dates is ~334k files, and each View B mesh is roughly 30x
+# the work of a View A one (fitted to ~756 training points against ~81).
+# Naming the handful being looked at makes the output size predictable
+# from the config alone. Setting view_b_mesh_tickers without
+# write_meshes is rejected rather than silently producing nothing.

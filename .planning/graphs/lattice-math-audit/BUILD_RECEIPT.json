@@ -1,0 +1,28 @@
+{
+  "scope": "lattice-math-audit",
+  "source_receipt_sha256": "085b6c3ad56441b2497b0f181630617ba72d5716b51517c2251541c5806788eb",
+  "snapshot_sha256": "effbca6e1e2bb8cb9710edeb98299958839538c85251378c2be633d97e867c41",
+  "root_git_head": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+  "native_git_head": "0d77fc4d15e1a84e0e6d5798617cc110c9f0390e",
+  "graphify_config_sha256": "5107862445c4c574d3e8ed91b4834f5a1524a7f5b3a9bbc14f3f46b03405802b",
+  "tool": {
+    "package": "graphifyy",
+    "version": "0.9.75",
+    "remote_executable_sha256": "0a4de96f1589b8fbbd72e8cb78e78e070ed75067e341fbed549f3a59e7fe8d6e"
+  },
+  "remote_snapshot_dir": "/home/john-riley/quanthaxs-lattice-math-graph/20261004-3f76ce20-0d77fc4d",
+  "commands": [
+    "graphify update . --no-cluster --force",
+    "graphify cluster-only . --no-label"
+  ],
+  "execution": "detached tmux under shared flock; two thread environment; 4 GiB virtual-memory limit; build.log EXIT_CODE:0",
+  "graph_json_sha256": "be1345aa5a9d6cfbbfd77a2e6bea88b54ca00903e6418af18cd35a8f5f832959",
+  "raw_link_count": 1061,
+  "graph_report_edge_count": 1056,
+  "report_count_note": "Graphify report projects links into a simple Graph; five same-endpoint relation variants collapse. The JSON retains all 1,061 links.",
+  "limits": [
+    "AST links are structural candidates, not verified runtime integration or dataflow.",
+    "Three headers yielded no extracted symbols: correlation.hpp, distance.hpp, peer_basket.hpp.",
+    "Fourteen links carry INFERRED confidence despite code-only, no-LLM extraction. Inspect before relying on them."
+  ]
+}

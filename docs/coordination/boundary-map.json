@@ -1,0 +1,791 @@
+{
+  "schema": "icm-boundary-map-v1",
+  "created_at_utc": "2026-10-04T03:52:49.224320+00:00",
+  "method": "manually curated source-backed ICM map, separate from actual Graphify AST output",
+  "scope": "selected source/contract/economic boundaries across three checkouts",
+  "nodes": [
+    {
+      "id": "evidence",
+      "label": "Evidence / source versions",
+      "owner": "Benchmark + industry + Post Benchmark",
+      "card": "objects/evidence-and-clocks.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/reit_source_quality.py",
+          "sha256": "77c23fc64998688aa80c400f36f0239f34f989fc407730cf5e82297d03d63e2e",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:scripts/build_reit_snapshot.py",
+          "sha256": "ce7afccfc08b6c0be70276b8583641a93eb70b63d9120b0ea80b0d2df7398eac",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:src/research_validation/sources.py",
+          "sha256": "82483c709325b873b79c2754c90eb641410a42fd27157e804e18eba0832b56e8",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "clocks",
+      "label": "Availability and release clocks",
+      "owner": "Post Benchmark",
+      "card": "objects/evidence-and-clocks.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/clocks.py",
+          "sha256": "a6688ddab473e5e00f4c1eefcf4878a8152f92ae3b8bb1fd568b8d807471c7ad",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:src/research_validation/records.py",
+          "sha256": "a550b6c1d582e76ee11e2edfac36cfa6717ec106a111c581b7d7d4f1a91f928e",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "financial",
+      "label": "Native financial producer",
+      "owner": "Benchmark",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "financial:src/financial_validation_bridge.py",
+          "sha256": "d82b9bf1fbc5bfb21a2ffcb68d2dab0bf7b7e7bbe4090b49078f90170770b64e",
+          "status": "source-only"
+        },
+        {
+          "source_id": "financial:src/native_financial_facts.py",
+          "sha256": "eb4fc953a57a1ed758abc9cd50c6d4c22ee2e9e886061e2fca4e66bb03cb8e57",
+          "status": "source-only"
+        },
+        {
+          "source_id": "financial:src/feature_matrix.py",
+          "sha256": "5aa1d45ed3a574f82a68271ed8880af498306be1366f4de85c4c524ae1b31ce0",
+          "status": "source-only"
+        }
+      ],
+      "settled_producer_note": "Local commit83eea30 and final document hashes verified; recorded V7/V8 producer evidence scoped; consumer eligibility false/first public unknown; full acceptance pending"
+    },
+    {
+      "id": "industry",
+      "label": "Industry role / history producer",
+      "owner": "Benchmark pt. 2 industry spec",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/reit_histories.py",
+          "sha256": "b064c8a7a3acd07c048ad5e64cf1da5fd54055deaec603f3ee7e08769f1e277e",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/reit_relationships.py",
+          "sha256": "092c3b5aebcb761d8dfe7fcf73a114130508a4b449d2efc53f304dad39b80482",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/reit_dataset.py",
+          "sha256": "83bff1f8e3de54f8956f7c95aa279b138ff61921dad295bf9579277b7caaa302",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "Dated security / instrument evidence",
+      "owner": "Benchmark + industry",
+      "card": "objects/instruments-and-decisions.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/reit_universe.py",
+          "sha256": "bea8a6301008f7e7c2c0b0440ff190f20580b39bcdcbaac6d717d7a22daccc6a",
+          "status": "source-only"
+        },
+        {
+          "source_id": "financial:src/universe_audit.py",
+          "sha256": "e88d5ccc624d382917d551a738bba7544822e17c713ef7da51a6b1e1c55dc3cc",
+          "status": "source-only"
+        }
+      ],
+      "live_freshness": {
+        "status": "changed-source claim requires affected-boundary recheck",
+        "source_ids": [
+          "financial:src/universe_audit.py"
+        ],
+        "receipt": "data/processed/chat_tracking/20261004T0534-source-freshness.json"
+      },
+      "live_claim_freshness": "stale after settled financial changes; consult latest source/consumer checks"
+    },
+    {
+      "id": "decisions",
+      "label": "Canonical decision and registry",
+      "owner": "Post Benchmark",
+      "card": "objects/instruments-and-decisions.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/records.py",
+          "sha256": "a550b6c1d582e76ee11e2edfac36cfa6717ec106a111c581b7d7d4f1a91f928e",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:configs/strategy_validation.json",
+          "sha256": "8004ed124d75ab6b41f19fad89e6eefc8e5eeaf17324c12abcbc25a95aeee038",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "label": "Canonical causal feature materializer",
+      "owner": "Post Benchmark",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/features.py",
+          "sha256": "b2ad4cb916967aaf5e00817b13af5189c17ce69bba2f54b0e4ec6df5dfc6ad0b",
+          "status": "source-only"
+        }
+      ],
+      "integration_detail": "feature-matrix-integration.md"
+    },
+    {
+      "id": "financial_adapter",
+      "label": "Native financial consumer adapter",
+      "owner": "Post Benchmark",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/financial_handoff.py",
+          "sha256": "edf1dcc04aa9b4e83af3892b2d6e6545d9aa76faaf1ee29920017c84b59e1dc1",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "industry_adapter",
+      "label": "Industry structural consumer / planned materializer",
+      "owner": "Post Benchmark + producer",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/industry_consumer.py",
+          "sha256": "aab515cfc6fec97935b40c1d7e591a585c5cb5774d586b58d0341228ecef5f96",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:data/processed/8k_validation/industry-consumer-v1/acceptance-capsule.json",
+          "sha256": "27efe1bee771dfc54bdc701a6ebcd4366e1e2ec3d5213df9a979643819191c79",
+          "status": "hash-bound-diagnostic-consumer-receipt"
+        }
+      ]
+    },
+    {
+      "id": "lattice",
+      "label": "Registered Lattice/context diagnostics",
+      "owner": "Assess Lattice repo fit",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/multi_market/features.py",
+          "sha256": "25982ff4b0e144b6541607587679e9d28c496025460a5986d49c83a13ebd58e2",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:docs/coordination/handoffs/lattice.md",
+          "sha256": "fd6a8bb1296e6ac00fecf2ba62252351ec51923ff81d8047abdd82479bf8266f",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "peer_adapter",
+      "label": "Thin diagnostics consumer",
+      "owner": "Post Benchmark",
+      "card": "processes/first-backtest.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:docs/coordination/handoffs/post-benchmark.md",
+          "sha256": "7af6bc06243ee94096402f38fc8b41152addfb94a620f6a9c077cdce1c9b9a87",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:src/research_validation/peer_diagnostics.py",
+          "sha256": "12b1707923a9b57c2db11ae68992c121321b0c71ca3e4aff275dd458fe55ccbe",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:data/processed/8k_validation/lattice-consumer-v2/acceptance-capsule.json",
+          "sha256": "99cd94357452de563eaaeacb9a669b5fbc31bc11cd39b0f79ea1fc9f27f30579",
+          "status": "hash-bound-diagnostic-consumer-receipt"
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "label": "Qualified market target importer",
+      "owner": "Post Benchmark",
+      "card": "objects/features-and-targets.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/market_handoff.py",
+          "sha256": "a5880c97c44f8c6102a067928b3160573c3bd8dbcdd7cb51ea9d13b14ddb556f",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "evaluator",
+      "label": "Matched forecast evaluator",
+      "owner": "Post Benchmark",
+      "card": "objects/evaluation-and-risk.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/evaluate.py",
+          "sha256": "33561e1702915b3a9d629e480fbc685f233628b1c8c80cecca9ae2e7555ce585",
+          "status": "source-only"
+        },
+        {
+          "source_id": "validation:src/research_validation/trials.py",
+          "sha256": "e35739d4860e37275c3c2cdf7393ae58dd6733889db6df9144adf6da17ed2df8",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "label": "Regime/risk to frozen orders",
+      "owner": "Integration/risk research",
+      "card": "objects/evaluation-and-risk.md",
+      "universe": "ghost",
+      "status": "stub",
+      "evidence": [
+        {
+          "source_id": "root:docs/research/2026-10-03-regime-risk-and-signal-optimization.md",
+          "sha256": "7a1aa33b953c84365383eaf82d19e6f967cbdc433f97b7300a3a6f3ca77c2ce9",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "portfolio",
+      "label": "Portfolio replay boundary",
+      "owner": "Post Benchmark",
+      "card": "objects/evaluation-and-risk.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "validation:src/research_validation/portfolio.py",
+          "sha256": "e16f0449c369a94db7b02a9f8fced2512f5bbc77373bd47e3417507d2998af01",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "capsule",
+      "label": "Accepted costed slice capsule",
+      "owner": "Post Benchmark",
+      "card": "processes/first-backtest.md",
+      "universe": "ghost",
+      "status": "stub",
+      "evidence": []
+    },
+    {
+      "id": "spend",
+      "label": "Atomic paid reservation gate",
+      "owner": "Benchmark pt. 2 industry spec",
+      "card": "objects/handoffs-and-resources.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/reit_budget.py",
+          "sha256": "64de0f63afb39276947be20f71f74c795304fc839fd38c1852af797e0499d10f",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/reit_market_data.py",
+          "sha256": "12d8a251cf0bd903a6ae9af60885fb601bd77a0e39d62e1ec2925b526bacabc5",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "legacy_buyer",
+      "label": "Legacy JSON reservation buyer",
+      "owner": "Assess Lattice repo fit",
+      "card": "objects/handoffs-and-resources.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:scripts/multi_market/acquire_pilot.py",
+          "sha256": "cc3b711685e9373a5b6891b18a75afbf1d70978616b30d2d4c21a1aad835a9b3",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "label": "Detached heavy job/shared lock",
+      "owner": "Each run owner",
+      "card": "objects/handoffs-and-resources.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:docs/coordination/architecture-contract.md",
+          "sha256": "f6a8f9a640e3b24b516256ca9fc78440a4f802de6f801fddcaf1f956230ddbf9",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "coordinator",
+      "label": "Architecture decisions and owner acceptance",
+      "owner": "Track work across project chats",
+      "card": "CONTEXT.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:docs/coordination/architecture-contract.md",
+          "sha256": "f6a8f9a640e3b24b516256ca9fc78440a4f802de6f801fddcaf1f956230ddbf9",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "ocr_wording",
+      "label": "OCR / exact evidence / frozen wording",
+      "owner": "Post Benchmark + Benchmark",
+      "card": "objects/evidence-and-clocks.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/document_transcript.py",
+          "sha256": "6ebaa1bc0752e4db466af4ada0baac2569a80865e3fc9ff2a789dcda95b9e7bb",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/document_evidence.py",
+          "sha256": "74f79ca882d410df30fc61e42684c73c7b6ec345de89e474e5ffc2e88ce43bb4",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/document_language.py",
+          "sha256": "1c84de0ec01e5a979e6b75f57706243876deea03e99c043e95234a15cf52b2d9",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/glm_document_ocr.py",
+          "sha256": "70e686734ae8c2fa02cd9bc4b8f7d713a3a824a8fbca485c32e14d66b0be17a5",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "ocr_training",
+      "label": "Reviewed OCR gold / LoRA gate",
+      "owner": "Benchmark + Post Benchmark",
+      "card": "objects/evidence-and-clocks.md",
+      "universe": "unknown",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:docs/hipergator-and-training-status.md",
+          "sha256": "22f275a7b2971d9e13acb748ecf5bf7046acbc77e2dbe8ae6d950394ddc70039",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:docs/options-model-training.md",
+          "sha256": "f5970bd8c59388978b6aa9a6149d48f6015b8dc24e6125c7595a598cd210f4d7",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "api_context",
+      "label": "General public API / macro context",
+      "owner": "Benchmark",
+      "card": "objects/evidence-and-clocks.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "financial:src/public_context_api.py",
+          "sha256": "408e7e415ee27e2642bc21dd68825fd2ecbf8afc9dfe22543d7a63e57fa9e42b",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "prediction_odds",
+      "label": "Optional prediction-market expectations check",
+      "owner": "Research/adapter owner unassigned",
+      "card": "objects/features-and-targets.md",
+      "universe": "ghost",
+      "status": "stub",
+      "evidence": [
+        {
+          "source_id": "root:docs/prediction-market-evidence-review.md",
+          "sha256": "57ad10e999dfbff3741147b110cfc687ce3098002c8368a2da32d43418117934",
+          "status": "source-only"
+        }
+      ]
+    },
+    {
+      "id": "options_learning",
+      "label": "Options learning / quote qualification",
+      "owner": "Post Benchmark + market owners",
+      "card": "objects/evaluation-and-risk.md",
+      "universe": "live",
+      "status": "partial",
+      "evidence": [
+        {
+          "source_id": "root:src/options_learning.py",
+          "sha256": "11a8d11c7706372f51bae296e562350dc54c87299bbc48402dad5e2290ee33c7",
+          "status": "source-only"
+        },
+        {
+          "source_id": "root:src/market_quote_collector.py",
+          "sha256": "1399967cc7464a3c7163f9436aa6cc2927cb830000490860ff5b8c9778bb5975",
+          "status": "source-only"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "source": "evidence",
+      "target": "clocks",
+      "relation": "qualifies",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "first-public evidence still incomplete"
+    },
+    {
+      "id": "E02",
+      "source": "financial",
+      "target": "financial_adapter",
+      "relation": "exports",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "owner-reported",
+      "condition": "exact native mapping/consumer accepted hashes pending"
+    },
+    {
+      "id": "E03",
+      "source": "industry",
+      "target": "industry_adapter",
+      "relation": "supplies structural samples; economic mapping pending",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "hash-bound-structural-consumer-receipt",
+      "condition": "three accepted structural rows; zero canonical joins/unknown availability; full materialization remains planned"
+    },
+    {
+      "id": "E04",
+      "source": "financial_adapter",
+      "target": "features",
+      "relation": "emits registered observations",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "native four-tag qualification remains per source"
+    },
+    {
+      "id": "E05",
+      "source": "industry_adapter",
+      "target": "features",
+      "relation": "would emit observations",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "consumer acceptance not yet established"
+    },
+    {
+      "id": "E06",
+      "source": "identity",
+      "target": "decisions",
+      "relation": "qualifies identity",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "dated historical shareclass/contract proof pending"
+    },
+    {
+      "id": "E07",
+      "source": "decisions",
+      "target": "clocks",
+      "relation": "defines cutoff",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "distinct asset protocols"
+    },
+    {
+      "id": "E08",
+      "source": "decisions",
+      "target": "features",
+      "relation": "registers identity/definitions",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "input version-specific"
+    },
+    {
+      "id": "E09",
+      "source": "clocks",
+      "target": "features",
+      "relation": "limits availability",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "observed/replay distinctions"
+    },
+    {
+      "id": "E10",
+      "source": "evidence",
+      "target": "features",
+      "relation": "quarantine must propagate",
+      "confidence": "AMBIGUOUS",
+      "evidence_kind": "acceptance-pending",
+      "condition": "industry end-to-end lineage check required"
+    },
+    {
+      "id": "E11",
+      "source": "lattice",
+      "target": "peer_adapter",
+      "relation": "delivers diagnostic fixture",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "hash-bound-diagnostic-consumer-receipt",
+      "condition": "lattice-consumer-v2 capsule/manifest hashes checked; three opportunities/18 candidates/three paired forecasts; diagnostics-only, no fit/trading/final qualification"
+    },
+    {
+      "id": "E12",
+      "source": "peer_adapter",
+      "target": "evaluator",
+      "relation": "preserves paired diagnostics",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "hash-bound-diagnostic-consumer-receipt",
+      "condition": "thin consumer source/capsule bound; per-row availability/identity/execution gates retained; cannot promote qualified label state"
+    },
+    {
+      "id": "E13",
+      "source": "features",
+      "target": "evaluator",
+      "relation": "supplies causal feature panel",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "common opportunity set required"
+    },
+    {
+      "id": "E14",
+      "source": "market",
+      "target": "evaluator",
+      "relation": "supplies unit/name/horizon targets",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-guard-and-hash-bound-reviewer-observations",
+      "condition": "two-sided source guard/hash verified; independent review receipt cleared, records prior reviewer-observed30tests with no raw retained log; canonical economic qualification pending"
+    },
+    {
+      "id": "E15",
+      "source": "clocks",
+      "target": "market",
+      "relation": "limits label identity/availability",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "quote/action/coverage qualification"
+    },
+    {
+      "id": "E16",
+      "source": "evaluator",
+      "target": "policy",
+      "relation": "would inform separate registered policy",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "forecast adaptation distinct from sizing"
+    },
+    {
+      "id": "E17",
+      "source": "policy",
+      "target": "portfolio",
+      "relation": "would compile frozen orders",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "no accepted policy compiler"
+    },
+    {
+      "id": "E18",
+      "source": "market",
+      "target": "portfolio",
+      "relation": "supplies instrument/quote assumptions",
+      "confidence": "INFERRED",
+      "evidence_kind": "acceptance-pending",
+      "condition": "equity quote opportunity not full fills/lifecycle"
+    },
+    {
+      "id": "E19",
+      "source": "portfolio",
+      "target": "capsule",
+      "relation": "would emit costed ledger",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "per-class lifecycle and mandate gates"
+    },
+    {
+      "id": "E20",
+      "source": "spend",
+      "target": "legacy_buyer",
+      "relation": "required gate adoption",
+      "confidence": "AMBIGUOUS",
+      "evidence_kind": "acceptance-pending",
+      "condition": "legacy JSON path still separate; serialize"
+    },
+    {
+      "id": "E21",
+      "source": "compute",
+      "target": "capsule",
+      "relation": "runs accepted snapshot",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "no capsule runtime implied"
+    },
+    {
+      "id": "E22",
+      "source": "coordinator",
+      "target": "capsule",
+      "relation": "records acceptance",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "coordination-active",
+      "condition": "user selected small costed slice; valid eligible no-edge comparison may complete with no trade; insufficient data remains insufficient"
+    },
+    {
+      "id": "E23",
+      "source": "coordinator",
+      "target": "peer_adapter",
+      "relation": "reconciles boundary",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "coordination-active",
+      "condition": "one central consumer owner"
+    },
+    {
+      "id": "E24",
+      "source": "evidence",
+      "target": "industry",
+      "relation": "retains conflicting representations",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "hash-bound-producer-receipt",
+      "condition": "main10K narrow equivalence receipt; two exhibit quarantines"
+    },
+    {
+      "id": "E25",
+      "source": "evidence",
+      "target": "ocr_wording",
+      "relation": "provides raw source / exact spans",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "source-only",
+      "condition": "OCR accuracy and wording price signal separate"
+    },
+    {
+      "id": "E26",
+      "source": "ocr_wording",
+      "target": "features",
+      "relation": "requires feature review/clock gate",
+      "confidence": "AMBIGUOUS",
+      "evidence_kind": "acceptance-pending",
+      "condition": "frozen text scores not qualified predictors"
+    },
+    {
+      "id": "E27",
+      "source": "ocr_training",
+      "target": "ocr_wording",
+      "relation": "would improve extraction",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "reviewed gold and actual training/evaluation required"
+    },
+    {
+      "id": "E28",
+      "source": "api_context",
+      "target": "clocks",
+      "relation": "requires release/vintage/receipt evidence",
+      "confidence": "EXTRACTED",
+      "evidence_kind": "owner-reported",
+      "condition": "cached observations not automatically historical-ready"
+    },
+    {
+      "id": "E29",
+      "source": "api_context",
+      "target": "features",
+      "relation": "needs registered materialization",
+      "confidence": "INFERRED",
+      "evidence_kind": "acceptance-pending",
+      "condition": "macro context cannot silently overwrite company facts"
+    },
+    {
+      "id": "E30",
+      "source": "prediction_odds",
+      "target": "features",
+      "relation": "would add expectations observations",
+      "confidence": "INFERRED",
+      "evidence_kind": "planned",
+      "condition": "coverage/rules/timestamps/calibration/redundancy and incremental value gates"
+    },
+    {
+      "id": "E31",
+      "source": "market",
+      "target": "options_learning",
+      "relation": "would qualify matched labels",
+      "confidence": "INFERRED",
+      "evidence_kind": "acceptance-pending",
+      "condition": "contract/deliverable/quote/lifecycle gates"
+    },
+    {
+      "id": "E32",
+      "source": "options_learning",
+      "target": "evaluator",
+      "relation": "requires matched options experiment",
+      "confidence": "INFERRED",
+      "evidence_kind": "acceptance-pending",
+      "condition": "software learner not evidence of fitted profitable model"
+    }
+  ],
+  "limits": [
+    "source presence/import syntax is not runtime acceptance",
+    "planned adapters are not proven wired",
+    "financial/economic eligibility and future performance not inferred from graph"
+  ],
+  "decisions": {
+    "first_milestone": "small validated slice with realistic costs, then expand",
+    "valid_no_edge": "explicit no-trade can complete validated research; insufficient data cannot",
+    "valid_no_edge_authority": "explicit user answer"
+  },
+  "updated_at_utc": "2026-10-04T05:03:27.478854+00:00",
+  "root_contract_refreshed_at_utc": "2026-10-04T05:22:10.063265+00:00",
+  "feature_matrix_clarification_at_utc": "2026-10-04T05:32:54.613171+00:00",
+  "last_bounded_financial_check_at_utc": "2026-10-04T06:55:24.696005+00:00"
+}

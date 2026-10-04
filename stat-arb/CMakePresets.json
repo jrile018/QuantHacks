@@ -1,0 +1,102 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 27, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "toolchainFile": "${sourceDir}/tools/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "cacheVariables": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "GM_BUILD_TESTS": "ON",
+        "GM_BUILD_BENCHMARKS": "ON"
+      }
+    },
+    {
+      "name": "windows-msvc-debug",
+      "inherits": "base",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "windows-msvc-release",
+      "inherits": "base",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "linux-gcc-release",
+      "inherits": "base",
+      "generator": "Unix Makefiles",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "VCPKG_TARGET_TRIPLET": "x64-linux",
+        "CMAKE_CXX_COMPILER": "g++-13"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
+      "name": "linux-gcc-asan",
+      "inherits": "linux-gcc-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "GM_SANITIZE": "ON"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "windows-msvc-debug", "configurePreset": "windows-msvc-debug" },
+    { "name": "windows-msvc-release", "configurePreset": "windows-msvc-release" },
+    { "name": "linux-gcc-release", "configurePreset": "linux-gcc-release" },
+    { "name": "linux-gcc-asan", "configurePreset": "linux-gcc-asan" }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-msvc-debug",
+      "configurePreset": "windows-msvc-debug",
+      "output": { "outputOnFailure": true },
+      "execution": { "noTestsAction": "error", "stopOnFailure": false }
+    },
+    {
+      "name": "windows-msvc-release",
+      "configurePreset": "windows-msvc-release",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "linux-gcc-release",
+      "configurePreset": "linux-gcc-release",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "linux-gcc-asan",
+      "configurePreset": "linux-gcc-asan",
+      "output": { "outputOnFailure": true }
+    }
+  ]
+}

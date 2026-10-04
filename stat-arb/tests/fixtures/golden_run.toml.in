@@ -1,0 +1,71 @@
+# Golden-pipeline fixture (ADR-020 layer 2; ADR.md §13 M0/M1 exit
+# criteria). Processed by CMake's configure_file() (tests/golden/CMakeLists.txt)
+# so @GM_REPO_ROOT@ resolves to an absolute, build-machine-correct path
+# regardless of ctest's working directory - a static committed TOML
+# can't know that path.
+#
+# As each stage graduates from an M0 stub to a real M1+ implementation,
+# this file grows the config section that stage now needs. The stages
+# still stubbed only need [output]; gm-universe (real as of M1) needs
+# [universe] too.
+
+[output]
+runs_base_dir = "runs"
+
+[universe]
+snapshot_csv = "@GM_REPO_ROOT@/data/reference/sp500_constituents.csv"
+# A small, fixed range so the golden test stays fast - the full
+# 15-year/100-name panel (ADR.md §13 M1 exit criterion) is a separate,
+# larger run on the remote box, not something re-run on every test pass.
+start_date = "2024-01-02"
+end_date = "2024-01-31"
+
+[ingest]
+# The "10-ticker golden fixture" named in ADR.md §13's M1 exit criterion.
+# NOTE: this makes the golden test genuinely network-dependent (real
+# fetches against Yahoo's chart endpoint, ADR §7.2) - a deliberate,
+# documented exception to gm-io's own unit tests staying hermetic
+# (libs/gm-io/tests/http_cache_test.cpp), because "does ingestion
+# actually work end to end" is exactly what this milestone's exit
+# criterion is asking to prove.
+max_tickers = 10
+cache_dir = "@GM_REPO_ROOT@/data/raw/price_cache"
+
+[geometry]
+# The fixture's date range is only ~21 trading days (Jan 2024), far
+# short of the real run's default 60-day window (config/params.toml) -
+# window_days sized down here so the golden test still gets multiple
+# real frames (and therefore genuinely exercises Procrustes chaining
+# across frames, not just a single-frame no-op) rather than zero.
+# embedding_dims stays at the ADR-standard 3 (geometry.parquet's x/y/z
+# schema, ADR §8.2) - only the window needed shrinking to fit the range.
+window_days = 10
+embedding_dims = 3
+
+[boundaries]
+# View B needs at least (lookback+1) frames of a ticker's own history
+# to score a single point; the fixture's geometry only produces ~12
+# frames total (21 trading days - window_days=10 + 1), so the real
+# run's default (756, ADR §6.4) would score nothing here. Small enough
+# to guarantee multiple real View B points against this fixture.
+alpha = 0.05
+view_b_lookback_days = 3
+
+[signals]
+# gm-signals' own default spread_fit_window_days (60, config/params.toml)
+# needs more trading days than this fixture's ~21 have at all - shrunk
+# the same way [geometry].window_days and [boundaries].view_b_lookback_days
+# already were, so gm-signals actually computes real spreads/z-scores
+# against this fixture instead of silently skipping every ticker (every
+# ticker's own history was always shorter than the unmodified 60-day
+# default, so spreads.parquet/excursions.parquet existed but held zero
+# rows - the earlier version of this test only checked the files EXIST,
+# never that they held content). z_entry/z_exit are dropped well below
+# the real run's defaults (2.0/0.5) so at least one real z-score
+# crossing episode is essentially guaranteed over 10 real tickers'
+# real January-2024 returns, which tests/golden/m0_pipeline_test.cpp's
+# ADR-012 consistency SECTION needs to be a meaningful (non-vacuous)
+# check.
+spread_fit_window_days = 5
+z_entry = 0.1
+z_exit = 0.05

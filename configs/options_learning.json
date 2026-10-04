@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "target_rule_id": "call_put_3to6m_5pct_next_session_v1",
+  "expiry_days": {"minimum": 90, "maximum": 180, "target": 120},
+  "call_spot_ratio": 1.05,
+  "put_spot_ratio": 0.95,
+  "max_quote_age_seconds": 60,
+  "max_spread_fraction": 0.3,
+  "cost_assumption_id": "research_cash_costs_usd_v1",
+  "cost_assumption_status": "research_assumptions_not_observed_execution_costs",
+  "execution_cost_currency": "USD",
+  "execution_costs": {
+    "entry_fees": 1.0, "exit_fees": 1.0,
+    "entry_slippage_cost": 2.0, "exit_slippage_cost": 2.0
+  },
+  "train_end_utc": "2024-12-31T23:59:59Z",
+  "validation_end_utc": "2025-12-31T23:59:59Z",
+  "test_end_utc": "2026-09-30T23:59:59Z",
+  "embargo_seconds": 0,
+  "min_train_events": 30,
+  "min_validation_events": 10,
+  "min_test_events": 10,
+  "ridge_alphas": [0.1, 1.0, 10.0, 100.0]
+}

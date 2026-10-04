@@ -1,0 +1,488 @@
+{
+  "schema_version": "data-date-audit-availability-time-v1",
+  "persistence": "saved bounded refresh; fresh per-packet checks pending",
+  "observed_at": "2026-10-04 07:51:14 UTC",
+  "packets": [
+    {
+      "id": "wording-candidate",
+      "owner": "Post / Benchmark",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "exact scoring manifest unavailable; 15doc/2391fragments owner report",
+      "purpose_arm": "wording first",
+      "unit_grain": "text/fragments vs independent event",
+      "scope_coverage": "reported seven early2023 disclosures",
+      "eligibility": "not accepted; model/version/texttime freeze unknown",
+      "gap_ids": [
+        "DD02",
+        "DD03",
+        "DD08",
+        "DD21"
+      ],
+      "evidence": [
+        "E04",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "issuer-calendar",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "exact calendar manifest unavailable",
+      "purpose_arm": "wording first/shared",
+      "unit_grain": "issuer/session",
+      "scope_coverage": "seed502sessionsx4=2008,2024-25 reference",
+      "eligibility": "actual security/date sets and schedules not freshly inspected",
+      "gap_ids": [
+        "DD01",
+        "DD04",
+        "DD05"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "post-daily-bars",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "exact daily-bar manifest unavailable",
+      "purpose_arm": "marks/lookback wording",
+      "unit_grain": "security/day OHLC",
+      "scope_coverage": "seed3008bars,752/company,2023-25",
+      "eligibility": "structural dailycoverage; no execution/cost claim",
+      "gap_ids": [
+        "DD04",
+        "DD05",
+        "DD07",
+        "DD21"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "post-publication-v3",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "publication-replay-v3 exact path/hash pending",
+      "purpose_arm": "wording clock candidate",
+      "unit_grain": "source/document public bound",
+      "scope_coverage": "reported20conditional bounds,2BXMTexcluded",
+      "eligibility": "dayend+historicalbyte-equality assumption; no evidenced exact-text bound",
+      "gap_ids": [
+        "DD03",
+        "DD08"
+      ],
+      "evidence": [
+        "E01",
+        "E09"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "industry-current-v2",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "clocks v2 candidate; outputhash not freshly inspected",
+      "purpose_arm": "clock candidate",
+      "unit_grain": "source/document rows",
+      "scope_coverage": "35rows;22uniqueexcluded43overlappingreasons;13proxy",
+      "eligibility": "knownactualfirstpublic0/ready0;publicuppernull,assumedSECproxy",
+      "gap_ids": [
+        "DD03"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "industry-history-v2",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "historical clocks v2 candidate; hash pending",
+      "purpose_arm": "financial history/conditionalclock",
+      "unit_grain": "document/accession rows",
+      "scope_coverage": "37rows36accessions",
+      "eligibility": "all37unqualified identities/publicavailability;SEC+24h assumption",
+      "gap_ids": [
+        "DD03",
+        "DD13"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "industry-market-scope",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs.json",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "SHA b1c0d821e6dc74fd7355f17cef56725f01ad8acf6d1c88317a419689f33453f6; currentv3 notinspected",
+      "purpose_arm": "equityfirst;derivativesdeferred",
+      "unit_grain": "files,quote rows,definition rows separate",
+      "scope_coverage": "sixjobs162files1992219328compressedbytes;2024-01-01to2026-01-01exclusive",
+      "eligibility": "scope/acquisition not consumerexecutionaccepted;128unscoredAMTcandidate report",
+      "gap_ids": [
+        "DD04",
+        "DD06",
+        "DD07",
+        "DD16",
+        "DD21"
+      ],
+      "evidence": [
+        "E08"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "industry-structural",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261003/market/structural_audit.md",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "structuraldocument,adapter/codeversion unknown",
+      "purpose_arm": "broaderstructure",
+      "unit_grain": "securityquote/definition",
+      "scope_coverage": "seed2010-01-04to2026-08-28;EQUS1028190quotes2510defs",
+      "eligibility": "not eventaligned economiccoverage;15080ts_eventnull;21degradeddate propagation pending",
+      "gap_ids": [
+        "DD04",
+        "DD06",
+        "DD07"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "benchmark-financial",
+      "owner": "Benchmark",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/examples/financial-pilot/minimum-source-scope.json",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "proposal schemafinancial-pilot-source-scope-v1;producer83eea30;livinghashes versioned",
+      "purpose_arm": "financial next;0requiredfirstarm",
+      "unit_grain": "originals/accessions/groups/XML/states/cells/issuerdates",
+      "scope_coverage": "45/37/36/424/500/844;8368history+16current=8384;2092issuerweekdayrows",
+      "eligibility": "proposal inactive;nativefieldclock eligibility disabled",
+      "gap_ids": [
+        "DD01",
+        "DD02",
+        "DD12",
+        "DD13",
+        "DD17"
+      ],
+      "evidence": [
+        "E01",
+        "E07"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "macro-cache",
+      "owner": "Benchmark / Industry",
+      "canonical_location": "canonical source path not freshly verified",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "version/manifest/hash unknown",
+      "purpose_arm": "financial next",
+      "unit_grain": "observation/vintage",
+      "scope_coverage": "seed820observations818numeric2null",
+      "eligibility": "historical-asofqualified0;BLSdashnull",
+      "gap_ids": [
+        "DD14"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "native-final-consumer",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/native-v7-acceptance-v1/acceptance-capsule-final-v1.json",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "0efcef5cc06c729f3743e820978d419485216f008530b4ff0bc773dd9f9c2777; finalcollection2c63d5f3... seedpin",
+      "purpose_arm": "financial descriptive acceptance",
+      "unit_grain": "source files/bindings/testcases/fixtures",
+      "scope_coverage": "690tests0skipsEXIT0frozen196; earlier110outputs109bindings",
+      "eligibility": "canonicalobservations0/humangold0;noeligiblefieldclock/strategyperformance",
+      "gap_ids": [
+        "DD17"
+      ],
+      "evidence": [
+        "E05",
+        "E06"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "native-remote-archive",
+      "owner": "Benchmark",
+      "canonical_location": "/home/john-riley/quant_hacks_financial_research/completion-20261004-v7/results/native-handoff-delivery-v7.tar.gz",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "seed14216041bytes;fd39baea32a63349eabb4e043e4710a38add56e14ad55d0bd3650d6f6a7a2dc1",
+      "purpose_arm": "remote native data",
+      "unit_grain": "archivebytes vs local thinmetadata",
+      "scope_coverage": "V7remote fullarchive; distinct24KBpreparedpacket",
+      "eligibility": "seedpin only; remote source not newly verified; no bulkcopied",
+      "gap_ids": [
+        "DD18"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "lattice-diagnostic",
+      "owner": "Lattice",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/grill-sessions/2026-10-03-contextual-lattice/task_plan.md",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "livingresearchplan; exactnumericoutputmanifest unknown",
+      "purpose_arm": "separate diagnostics",
+      "unit_grain": "forecast rows/adjustedclosereturns not netaccount",
+      "scope_coverage": "2024-25 inspected DEVELOPMENT;500bootstrap report",
+      "eligibility": "16:00adjustedclose study not comparable to earlierclock unadjustedtarget without reconciliation",
+      "gap_ids": [
+        "DD05",
+        "DD11"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "sharpe-inference-design",
+      "owner": "Sharpe lane",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/research/2026-10-04-sharpe-confidence-and-monte-carlo.md",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "existingdesign + docs/superpowers/plans/2026-10-04-sharpe-confidence-and-monte-carlo.md",
+      "purpose_arm": "inference afterledger",
+      "unit_grain": "joint daily netaccountreturns",
+      "scope_coverage": "no eligible netseries evidenced",
+      "eligibility": "method/planning only, no performance or MCexecution",
+      "gap_ids": [
+        "DD10",
+        "DD11"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    },
+    {
+      "id": "gpu-plan",
+      "owner": "GPU owner",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/superpowers/plans/2026-10-04-remote-gpu-math-optimization.md",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "existing CPUfirst optionalbackend plan; fullhashunavailable",
+      "purpose_arm": "deferred acceleration",
+      "unit_grain": "runtimeparity/indices cohorts",
+      "scope_coverage": "no install/job/measuredspeedup",
+      "eligibility": "acceptednetledger/registeredmethod and parity required; not economic blocker",
+      "gap_ids": [
+        "DD11"
+      ],
+      "evidence": [
+        "E12"
+      ],
+      "observed_at": "2026-10-04 07:51:14 UTC",
+      "exact_input_output_manifest_sha": null,
+      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+    }
+  ],
+  "time_fields": [
+    {
+      "field": "fiscal_period_instant",
+      "meaning": "accounting period or instant, not disclosure",
+      "packet_scope": "financial native",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "date-level expected; exactperiod/instant/precision perrow pending",
+      "gap_id": "DD13",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "event",
+      "meaning": "issuer economic event versus filing/accession; amendments separate",
+      "packet_scope": "wording/financial",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "date/time unknown by exactcandidate; cannot use filingdate as publictime",
+      "gap_id": "DD02",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "public_by",
+      "meaning": "conservative upper bound for exacttext/version",
+      "packet_scope": "wording/clock",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "current assumptions do not verify bound; earliestunknown allowed for delayed evidence",
+      "gap_id": "DD03",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "earliest_public",
+      "meaning": "actual firstpublic timestamp",
+      "packet_scope": "clock",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "0known seed; exactevent monitoring unknown",
+      "gap_id": "DD03",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "effective_revision_vintage",
+      "meaning": "revision/effective/firstrelease asof",
+      "packet_scope": "macro/source",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "zeroqualifiedhistoricalvintages; no backdating",
+      "gap_id": "DD14",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "provider_receive",
+      "meaning": "providerclock distinct from ours; EQUS interval endpoint",
+      "packet_scope": "market",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "UTC vendorfields; exactns precision/sentinel packet needed",
+      "gap_id": "DD06",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "our_retrieval",
+      "meaning": "actual ours downloaded bytes",
+      "packet_scope": "all",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "filesystemmtime not retrieval/publication proof; actual historicalreceipt unknown",
+      "gap_id": "DD03",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "our_processing",
+      "meaning": "actual extraction/replay-ready completion",
+      "packet_scope": "wording",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "processinglatency policy/log needed; assumedretrospective !=historicalactual",
+      "gap_id": "DD08",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "signal_availability",
+      "meaning": "after evidencedpubbound and latency",
+      "packet_scope": "wording",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "unknown until consumer accepts texttime; causal maxclock rule required",
+      "gap_id": "DD03",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "decision",
+      "meaning": "registered issuer15:30/equity16:00/future09:30or09:35",
+      "packet_scope": "calendar/replay",
+      "timezone": "America/New_York",
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "DST/earlyclose/product calendar and knownschedule; exact UTCconversion perrow pending",
+      "gap_id": "DD05",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "quote_update_interval_endpoint",
+      "meaning": "update time vs interval endpoint vs lasttrade",
+      "packet_scope": "market",
+      "timezone": "UTC vendor clock",
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "ts_event lasttrade;ts_recv endpoint;update freshness unknown;15080ts_eventnull",
+      "gap_id": "DD06",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "fill",
+      "meaning": "frozenqualified entry/exit/no-fill",
+      "packet_scope": "replay",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "no acceptedfilltimes evidenced; execution policy/latency needed",
+      "gap_id": "DD09",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "valuation",
+      "meaning": "regular accountmark incl cash/open/flatdays",
+      "packet_scope": "account",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "no acceptedregular series; endofday policy/quote staleness needed",
+      "gap_id": "DD10",
+      "status": "pending exact per-row packet check; unknown retained"
+    },
+    {
+      "field": "label_maturity",
+      "meaning": "forward holding return becomes observable",
+      "packet_scope": "labels/replay",
+      "timezone": null,
+      "min": null,
+      "max": null,
+      "coverage": null,
+      "precision_sentinel_null_evidence": "holding/foldpurgeembargo maturity not verified",
+      "gap_id": "DD11",
+      "status": "pending exact per-row packet check; unknown retained"
+    }
+  ]
+}

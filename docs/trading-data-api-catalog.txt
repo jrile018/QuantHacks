@@ -1,0 +1,234 @@
+TRADING DATA API CATALOG
+Research checked: 2026-10-03
+Project: QuantHaxs / Massive 8-K options study and 53 SIC-6798 REIT-labeled filers
+
+PURPOSE
+This list records every API/source named in our conversation, including EDGAR
+and the Massive API already used by the project, plus exactly 15 additional
+APIs researched for this company universe. These are possible inputs, not
+claims that data has been fetched, licensed, matched, or added to the database.
+
+Read each record's public-release time before using it in a backtest. CIK is
+the master key for SEC filers. Other systems use LEI, UEI, bank certificate,
+trial ID, facility ID, geography, or name; require a documented crosswalk.
+Company names and tickers alone are not reliable joins. A sector-level number
+is context, not a fact about a specific issuer.
+
+SECTION A - PREVIOUSLY DISCUSSED (15)
+
+01. SEC EDGAR public data APIs and filing archive
+    Provides: CIK-keyed filing history, 10-K/10-Q/8-K documents and exhibits,
+    XBRL Company Facts, annual audited statements, and SEC source timestamps.
+    Fit: Core source for the entire 1,630-CIK universe and all 53 REIT-labeled
+    filers. SEC public-data APIs need no key; use a declared contact User-Agent.
+    Docs: https://www.sec.gov/search-filings/edgar-application-programming-interfaces
+
+02. Massive stock filings and options API (existing project provider)
+    Provides: 8-K disclosure events and stock/option market data used by this
+    repository. Fit: Event and option-price side of the research. Access is
+    licensed/keyed; verify each dataset's entitlement and historical coverage.
+    Docs: https://massive.com/docs/rest/options/overview
+
+03. GLEIF LEI API
+    Provides: legal-entity identities, names, addresses, and parent/child
+    relationships. Fit: resolve REIT subsidiaries and issuer name changes.
+    Crosswalk from CIK must be verified; an LEI is not an SEC CIK.
+    Docs: https://www.gleif.org/en/lei-data/gleif-api/
+
+04. USAspending API
+    Provides: federal award/contract recipients, obligations, agencies, and
+    award dates. Fit: General Dynamics and other federal contractors. An
+    obligation is not automatically booked revenue. Public endpoints currently
+    do not require authorization.
+    Docs: https://api.usaspending.gov/docs/endpoints
+
+05. FDIC BankFind Suite API
+    Provides: insured-bank institution, branch, quarterly financial, failure,
+    and history data. Fit: bank issuers in the wider universe, rarely REITs.
+    Match bank certificate/institution to the public holding company carefully.
+    Docs: https://api.fdic.gov/banks/docs
+
+06. openFDA API
+    Provides: drug approvals, products, labels, recalls, shortages, and other
+    FDA public records. Fit: pharmaceutical and medical-device issuers. A key
+    is optional for basic use; sponsor/product names need manual validation.
+    Docs: https://open.fda.gov/apis/drug/
+
+07. ClinicalTrials.gov API v2
+    Provides: clinical-study sponsor, intervention, phase, status, dates, and
+    posted results. Fit: biotech/pharma issuers. A planned completion date is
+    not a confirmed announcement date or a successful result.
+    Docs: https://clinicaltrials.gov/data-api/api
+
+08. EPA ECHO web services
+    Provides: facility-level environmental compliance, inspections, and
+    enforcement history. Fit: industrial issuers and some REIT properties.
+    Facility ownership/operation must be checked against the actual issuer.
+    Docs: https://echo.epa.gov/tools/web-services
+
+09. CFPB Consumer Complaint Database API
+    Provides: published complaints and company responses for consumer finance.
+    Fit: lenders, servicers, banks, and some mortgage businesses. Complaints
+    are not a representative sample; normalize before comparing companies.
+    Docs: https://www.consumerfinance.gov/data-research/consumer-complaints/
+
+10. UK Companies House API
+    Provides: UK company profile and public filing records. Fit: UK entities
+    or subsidiaries of issuers in the universe, not universal U.S. coverage.
+    Registration and API authentication are required.
+    Docs: https://developer.company-information.service.gov.uk/get-started
+
+11. FRED / ALFRED API
+    Provides: rates, credit spreads, employment, housing, and historical data
+    vintages. Fit: interest-rate sensitivity of REITs and macro context for
+    options. An API key is required. Use ALFRED vintages for historical tests.
+    Docs: https://fred.stlouisfed.org/docs/api/fred/
+
+12. BLS Public Data API
+    Provides: labor, wage, CPI, and employment series. Fit: regional demand
+    context for REIT property markets. Version 1 has limited unregistered
+    access; version 2 requires registration and has higher limits.
+    Docs: https://www.bls.gov/developers/home.htm
+
+13. U.S. Census Economic Indicators API
+    Provides: monthly retail, construction, manufacturing, trade, and other
+    aggregate series. Fit: property-type demand and manufacturing context.
+    Match geography/industry and release date; it is not issuer revenue.
+    Docs: https://api.census.gov/data/timeseries.html
+
+14. EIA Open Data API
+    Provides: energy prices, electricity, natural gas, petroleum, and demand.
+    Fit: energy-sensitive properties, utilities, and oil/gas issuers. EIA data
+    is free with API registration/key; account for who pays utility costs.
+    Docs: https://www.eia.gov/opendata/
+
+15. Alpha Vantage earnings calendar API
+    Provides: expected upcoming earnings dates. Fit: option event windows
+    across listed companies. An API key is required; standard free use is
+    generally capped at 25 requests/day. Save each calendar snapshot because
+    expected dates can move.
+    Docs: https://www.alphavantage.co/documentation/
+    Limits: https://www.alphavantage.co/support/
+
+SECTION B - 15 ADDITIONAL RESEARCHED APIS
+
+16. SAM.gov Get Opportunities Public API
+    Provides: published federal procurement opportunities before award. Fit:
+    GD/defense and other federal contractors; complements USAspending awards.
+    Public SAM.gov account API key required. This is a bid opportunity, not a
+    contract win or revenue. The API supplies the latest active notice version.
+    Docs: https://open.gsa.gov/api/get-opportunities-public-api/
+
+17. USPTO Open Data Portal / Patent File Wrapper API
+    Provides: patent applications, public file-wrapper documents, status, and
+    patent bulk-data discovery. Fit: technology, pharma, medical-device, and
+    industrial companies. USPTO.gov registration and API key are required as
+    of 2026; assignee-name matching is not the same as public-company CIK.
+    Docs: https://data.uspto.gov/apis/bulk-data/search
+    File wrapper: https://data.uspto.gov/apis/patent-file-wrapper/documents
+
+18. FFIEC/CFPB HMDA Data Browser API
+    Provides: public mortgage loan/application records by reporting lender,
+    geography, and loan type. Fit: mortgage-market context and lenders; most
+    REITs are not HMDA reporters. Institutions can be filtered by LEI. Public
+    records are privacy-modified and published with reporting lag.
+    Docs: https://ffiec.cfpb.gov/data-browser/data/2025
+    Publication: https://ffiec.cfpb.gov/data-publication/
+
+19. HUD USER Fair Market Rents and Income Limits API
+    Provides: HUD rent benchmarks and income limits by county/metro/year.
+    Fit: residential REIT demand and affordability context. Requires HUD USER
+    account/access token. Fair Market Rent is a program benchmark, not a
+    property's actual rent or a forecast of the REIT's revenue.
+    Docs: https://www.huduser.gov/portal/dataset/fmr-api.html
+
+20. Bureau of Economic Analysis (BEA) API
+    Provides: state/county GDP, personal income, employment, and industry
+    input-output tables. Fit: local economic exposure of REIT portfolios and
+    manufacturing demand. Requires BEA API registration/key. Aggregate and
+    revisable data; align to release vintages for backtesting.
+    Docs: https://apps.bea.gov/api/signup/
+
+21. FINRA Query API: equity short interest / short-sale datasets
+    Provides: security-level short interest and selected short-sale data.
+    Fit: sentiment and crowding context for optionable REITs and GD. Developer
+    account/access and data terms apply. FINRA short interest is published
+    twice monthly with lag; daily short-sale volume is NOT short interest.
+    Docs: https://developer.finra.org/products/query-api
+    Short interest: https://www.finra.org/finra-data/browse-catalog/equity-short-interest
+
+22. CFTC Commitments of Traders public reporting API
+    Provides: weekly futures and options-on-futures positioning by contract.
+    Fit: rates, energy, and commodity regime context. It is market-level data,
+    not GD or REIT stock-option positions. CFTC says API use generally works
+    without a token; observe the report's actual publication date.
+    Docs: https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm
+
+23. U.S. Treasury FiscalData API
+    Provides: Treasury auction records, security terms, auction dates, and
+    yield/rate results. Fit: funding-cost and duration context for REITs,
+    especially mortgage REITs. Auction results are macro data, not a REIT's
+    own debt cost; use published rather than future auction data.
+    Docs: https://fiscaldata.treasury.gov/datasets/treasury-securities-auctions-data/
+
+24. CMS Provider Data Catalog API
+    Provides: hospital and nursing-home provider information, ownership,
+    staffing, quality, and penalties where available. Fit: healthcare REIT
+    tenant/operator due diligence. Join facilities/operators carefully; a
+    property's landlord is not necessarily the Medicare provider.
+    Docs: https://data.cms.gov/provider-data/docs
+    Nursing-home datasets: https://data.cms.gov/provider-data/topics/nursing-homes/
+
+25. NOAA Climate Data Online API v2
+    Provides: historical station/location temperature, precipitation, and
+    other weather observations. Fit: property-level weather stress and
+    catastrophe-event studies for REITs. Free token required; station data
+    are not parcel-level damage reports. NOAA documents 5 requests/second
+    and 10,000 requests/day per token.
+    Docs: https://www.ncei.noaa.gov/cdo-web/webservices/v2
+
+26. OpenFEMA API
+    Provides: disaster declarations, NFIP flood insurance claims/policies,
+    and other FEMA datasets. Fit: geographic flood/disaster exposure of REIT
+    properties. No API registration required. Claims are privacy-redacted;
+    geography does not prove a particular REIT building had a loss.
+    Docs: https://www.fema.gov/about/openfema
+    NFIP claims: https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2
+
+27. USGS Earthquake Catalog API
+    Provides: dated and located earthquakes, magnitude, and event updates.
+    Fit: event exposure for properties in seismic areas. Public query API;
+    an earthquake near a property is not proof of loss or impairment.
+    Docs: https://earthquake.usgs.gov/fdsnws/event/1/
+
+28. GDELT DOC 2.0 API
+    Provides: searchable global news coverage and article metadata. Fit:
+    supplemental event discovery for all companies, including REIT property
+    news. News mentions are noisy and do not validate issuer identity or
+    financial facts; retain the article URL and publication time.
+    Docs: https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/
+
+29. USITC DataWeb API
+    Provides: official U.S. import/export statistics by product, country, and
+    period. Fit: manufacturing, industrial/logistics REITs, and GD supply
+    chain context. Requires DataWeb account/API key (six-month key validity).
+    Trade flows are industry totals, not issuer sales or orders.
+    Docs: https://dataweb.usitc.gov/api-key
+
+30. NTSB Aviation API
+    Provides: public U.S. civil aviation accidents/incidents and safety
+    recommendations. Fit: aerospace/aviation industry context around GD's
+    Gulfstream business and aviation-related property tenants. Incident data
+    need aircraft/operator matching; they do not imply a GD financial impact.
+    Docs: https://developer.ntsb.gov/
+
+RECOMMENDED FIRST PILOTS
+For the current 8-K/options study: SEC EDGAR + existing Massive data remain
+the core. Pilot USAspending and SAM.gov on GD or other government contractors;
+pilot GLEIF for issuer/subsidiary resolution; pilot FINRA short interest for
+common-share crowding. For the 53 REIT-labeled filers, first establish a
+current common-stock/optionable subset and classify equity vs mortgage REITs.
+Then test FRED/ALFRED rates and HUD/BEA local-market data for property REITs,
+and rates/HMDA for mortgage REITs. Use NOAA/OpenFEMA/USGS only after mapping
+actual properties to reliable geographies. Each addition needs a dated,
+point-in-time signal and incremental value over the option price/spread.

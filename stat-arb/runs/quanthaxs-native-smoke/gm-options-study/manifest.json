@@ -1,0 +1,18 @@
+{
+  "atm_mark_event_buckets": 2,
+  "build_type": "research",
+  "compiler_id": "Python/pyarrow",
+  "created_at_utc": "2026-10-03T18:39:00.947117+00:00",
+  "event_buckets": 2,
+  "git_commit": "python-options-native",
+  "input_hashes": {
+    "gm-options-ingest/manifest.json": "807c16338e46eb4a45cbc94fc9c489fda77c5ebfe177285b86e0781321ccc41d"
+  },
+  "matched_event_buckets": 0,
+  "missing_score_event_buckets": 2,
+  "run_id": "quanthaxs-native-smoke",
+  "schema_version": "1.0.0",
+  "stage": "gm-options-study",
+  "status": "ok",
+  "wall_time_seconds": 0.0
+}

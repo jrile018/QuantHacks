@@ -1,0 +1,612 @@
+{
+  "run_id": "9dcbe287-4d69-429a-acd6-774e49e0d22e",
+  "created_utc": "2026-10-04T03:57:41.6660589Z",
+  "scope": "Whitelisted Python source only; checkout namespaces remain separate",
+  "checkouts": [
+    {
+      "namespace": "root",
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs",
+      "head": "3f76ce20b7b3e055b47e37478924a93eaaf1f126"
+    },
+    {
+      "namespace": "financial",
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs",
+      "head": null
+    },
+    {
+      "namespace": "validation",
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs",
+      "head": null
+    }
+  ],
+  "files": [
+    {
+      "namespace": "root",
+      "relative_path": "scripts/acquire_reit_market_data.py",
+      "snapshot_path": "root/scripts/acquire_reit_market_data.py",
+      "sha256": "11a3c863b01c0ccb3a134f6fef1383950747d3c97c159efd69df2be4b5c51b97",
+      "bytes": 5837,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/audit_reit_source_quality.py",
+      "snapshot_path": "root/scripts/audit_reit_source_quality.py",
+      "sha256": "9e5679c3a0697ab49c5f4cff60521f0d4f420b7629caa57cb22b87d6cf3fe825",
+      "bytes": 7948,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/contextual_lattice/build_context.py",
+      "snapshot_path": "root/scripts/contextual_lattice/build_context.py",
+      "sha256": "c17617d2f804ba736116aa43d2575f330b2e254520a734c6717d5ba67ade1a85",
+      "bytes": 4954,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/contextual_lattice/export_integration_fixture.py",
+      "snapshot_path": "root/scripts/contextual_lattice/export_integration_fixture.py",
+      "sha256": "8412099b9db62ad58be9456792600aee7b34d61d825c164caa1d12d60e66cc2c",
+      "bytes": 14277,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/contextual_lattice/export_sec_context.py",
+      "snapshot_path": "root/scripts/contextual_lattice/export_sec_context.py",
+      "sha256": "e7cdaf7d642694f509b0a3bf334c888ae4f89190d6e404f19b5d83b69a87d8d0",
+      "bytes": 5425,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/contextual_lattice/run_contextual_study.py",
+      "snapshot_path": "root/scripts/contextual_lattice/run_contextual_study.py",
+      "sha256": "b605d6f7220f49b810c3ed910eeddd639deb27a6f688ae4941c01426e9b7be8b",
+      "bytes": 13782,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/contextual_lattice/run_options.py",
+      "snapshot_path": "root/scripts/contextual_lattice/run_options.py",
+      "sha256": "6073fb686972cfa35d1c9c49194df48949132ed295948f7b24f1f6e6e2052da3",
+      "bytes": 7749,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/acquire_pilot.py",
+      "snapshot_path": "root/scripts/multi_market/acquire_pilot.py",
+      "sha256": "cc3b711685e9373a5b6891b18a75afbf1d70978616b30d2d4c21a1aad835a9b3",
+      "bytes": 16878,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/complete_risk_comparisons.py",
+      "snapshot_path": "root/scripts/multi_market/complete_risk_comparisons.py",
+      "sha256": "692b622474af3c97b6d8307c036390a9d14367c59bde7e4916cd8e8e37152240",
+      "bytes": 13760,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/complete_role_comparisons.py",
+      "snapshot_path": "root/scripts/multi_market/complete_role_comparisons.py",
+      "sha256": "f74973b2494fa3039c87b8c442eeee98ab9bba6c7833149de3ec48d5dcece2dd",
+      "bytes": 12506,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/download_remote_pilot.py",
+      "snapshot_path": "root/scripts/multi_market/download_remote_pilot.py",
+      "sha256": "ea476ab81736a9b11f45d38cce2490e3caaa5ae415140ef9579a5d5edc01e798",
+      "bytes": 4439,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/finalize_options_remote.py",
+      "snapshot_path": "root/scripts/multi_market/finalize_options_remote.py",
+      "sha256": "faefb58a04e4b60a6f66300c35d13fb324083692a370d96f0da7c0ced8bf4928",
+      "bytes": 12399,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/inspect_remote_artifacts.py",
+      "snapshot_path": "root/scripts/multi_market/inspect_remote_artifacts.py",
+      "sha256": "b9db431b586c66e50e0d2c1aebaf2b786a4b08ace5c60f6c80121f215c1a51e3",
+      "bytes": 2038,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/run_futures_study.py",
+      "snapshot_path": "root/scripts/multi_market/run_futures_study.py",
+      "sha256": "ad52c0eac2dd1836737dbad1fd29b0da34027d28ca26065cc3ebecb6d8486ec7",
+      "bytes": 1102,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/run_numeric_study.py",
+      "snapshot_path": "root/scripts/multi_market/run_numeric_study.py",
+      "sha256": "91f7aa673e06e12f57e667abb48b00ecb978815ebe7859765c57b36bc171568f",
+      "bytes": 8392,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/multi_market/run_options_matched_study.py",
+      "snapshot_path": "root/scripts/multi_market/run_options_matched_study.py",
+      "sha256": "e15d0a368f22e1f39e93dc1a3733b246922d21b6987b1cd169a9717682b829f3",
+      "bytes": 22395,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/query_reit_dataset.py",
+      "snapshot_path": "root/scripts/query_reit_dataset.py",
+      "sha256": "213f0096ae51bf11ef3b5020e8f40b6ae3fee8ff8ada0a1a7730072637c6e8d3",
+      "bytes": 3148,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "scripts/train_options_model.py",
+      "snapshot_path": "root/scripts/train_options_model.py",
+      "sha256": "3fb1957ac80265910119bfbccaecdd5c3db89ff03575d3050b848d40774d1b94",
+      "bytes": 6239,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/contextual_lattice/context.py",
+      "snapshot_path": "root/src/contextual_lattice/context.py",
+      "sha256": "e0f956d9c6c94ccb60512a1798265ab4658e122c877182d8e2e0616b4f498cc1",
+      "bytes": 15320,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/contextual_lattice/evaluation.py",
+      "snapshot_path": "root/src/contextual_lattice/evaluation.py",
+      "sha256": "dcd1999f01499e7911efe379eaa64f3797f7fc7238262a81a2401762adf696e9",
+      "bytes": 19026,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/contextual_lattice/options.py",
+      "snapshot_path": "root/src/contextual_lattice/options.py",
+      "sha256": "daa154506fecad7c466688bdb5fa67c4a47eb7b65a3214473f41d372eeaa4a7b",
+      "bytes": 11331,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/contextual_lattice/tracking.py",
+      "snapshot_path": "root/src/contextual_lattice/tracking.py",
+      "sha256": "75c9ac47db331f382fc4140892bbf043b0ddc5ad71c86e0ebad1e44ac0803093",
+      "bytes": 4644,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/document_evidence.py",
+      "snapshot_path": "root/src/document_evidence.py",
+      "sha256": "74f79ca882d410df30fc61e42684c73c7b6ec345de89e474e5ffc2e88ce43bb4",
+      "bytes": 2055,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/document_language.py",
+      "snapshot_path": "root/src/document_language.py",
+      "sha256": "1c84de0ec01e5a979e6b75f57706243876deea03e99c043e95234a15cf52b2d9",
+      "bytes": 8398,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/document_manifest.py",
+      "snapshot_path": "root/src/document_manifest.py",
+      "sha256": "66465abed1ca9229408091a14d4d62560857444981f0f56b5aaadd5b795bf979",
+      "bytes": 11801,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/document_transcript.py",
+      "snapshot_path": "root/src/document_transcript.py",
+      "sha256": "6ebaa1bc0752e4db466af4ada0baac2569a80865e3fc9ff2a789dcda95b9e7bb",
+      "bytes": 9891,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/glm_document_ocr.py",
+      "snapshot_path": "root/src/glm_document_ocr.py",
+      "sha256": "70e686734ae8c2fa02cd9bc4b8f7d713a3a824a8fbca485c32e14d66b0be17a5",
+      "bytes": 8496,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/market_quote_collector.py",
+      "snapshot_path": "root/src/market_quote_collector.py",
+      "sha256": "1399967cc7464a3c7163f9436aa6cc2927cb830000490860ff5b8c9778bb5975",
+      "bytes": 6174,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/multi_market/__init__.py",
+      "snapshot_path": "root/src/multi_market/__init__.py",
+      "sha256": "d812d28d846226c0d7d29c4543f765aab026861840ae9aa34c81cdf24f669f00",
+      "bytes": 74,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/multi_market/evaluation.py",
+      "snapshot_path": "root/src/multi_market/evaluation.py",
+      "sha256": "370be883261e57099316588c7d2996c0437fbca7ca8360fac55f221471fb1c13",
+      "bytes": 14280,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/multi_market/features.py",
+      "snapshot_path": "root/src/multi_market/features.py",
+      "sha256": "25982ff4b0e144b6541607587679e9d28c496025460a5986d49c83a13ebd58e2",
+      "bytes": 8309,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/multi_market/futures_study.py",
+      "snapshot_path": "root/src/multi_market/futures_study.py",
+      "sha256": "6a15a91cee5333d380c10394a59cf9d9dda4702ba75c7191554e1f8f1d8bf1d2",
+      "bytes": 26942,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/multi_market/labels.py",
+      "snapshot_path": "root/src/multi_market/labels.py",
+      "sha256": "546fa5ac7c58c703aaae8918da8ef75856ed9e4eb42c3ab8d83c543cbbdaeab9",
+      "bytes": 4690,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/options_learning.py",
+      "snapshot_path": "root/src/options_learning.py",
+      "sha256": "11a8d11c7706372f51bae296e562350dc54c87299bbc48402dad5e2290ee33c7",
+      "bytes": 29533,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_budget.py",
+      "snapshot_path": "root/src/reit_budget.py",
+      "sha256": "64de0f63afb39276947be20f71f74c795304fc839fd38c1852af797e0499d10f",
+      "bytes": 9243,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_dataset.py",
+      "snapshot_path": "root/src/reit_dataset.py",
+      "sha256": "83bff1f8e3de54f8956f7c95aa279b138ff61921dad295bf9579277b7caaa302",
+      "bytes": 19605,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_histories.py",
+      "snapshot_path": "root/src/reit_histories.py",
+      "sha256": "b064c8a7a3acd07c048ad5e64cf1da5fd54055deaec603f3ee7e08769f1e277e",
+      "bytes": 18564,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_market_data.py",
+      "snapshot_path": "root/src/reit_market_data.py",
+      "sha256": "12d8a251cf0bd903a6ae9af60885fb601bd77a0e39d62e1ec2925b526bacabc5",
+      "bytes": 25263,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_relationships.py",
+      "snapshot_path": "root/src/reit_relationships.py",
+      "sha256": "092c3b5aebcb761d8dfe7fcf73a114130508a4b449d2efc53f304dad39b80482",
+      "bytes": 31266,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_source_quality.py",
+      "snapshot_path": "root/src/reit_source_quality.py",
+      "sha256": "77c23fc64998688aa80c400f36f0239f34f989fc407730cf5e82297d03d63e2e",
+      "bytes": 18334,
+      "dirty": true
+    },
+    {
+      "namespace": "root",
+      "relative_path": "src/reit_universe.py",
+      "snapshot_path": "root/src/reit_universe.py",
+      "sha256": "bea8a6301008f7e7c2c0b0440ff190f20580b39bcdcbaac6d717d7a22daccc6a",
+      "bytes": 15079,
+      "dirty": true
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "scripts/build_feature_matrix.py",
+      "snapshot_path": "financial/scripts/build_feature_matrix.py",
+      "sha256": "58466dc692551f4144c0fadc6795804d2a95d7a937ccc6c9dd461537ca7e02d1",
+      "bytes": 4333,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/feature_matrix.py",
+      "snapshot_path": "financial/src/feature_matrix.py",
+      "sha256": "5aa1d45ed3a574f82a68271ed8880af498306be1366f4de85c4c524ae1b31ce0",
+      "bytes": 6773,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/financial_features.py",
+      "snapshot_path": "financial/src/financial_features.py",
+      "sha256": "d39fe9f1995b044250bcb8426777d7c09a45c2ddbfa39a34743a8cca957750ae",
+      "bytes": 17106,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/financial_math.py",
+      "snapshot_path": "financial/src/financial_math.py",
+      "sha256": "f2155ede97aa4589d47636cfaac45c281b0afe9bc823bd242aab9df13c3aae1a",
+      "bytes": 12481,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/financial_validation_bridge.py",
+      "snapshot_path": "financial/src/financial_validation_bridge.py",
+      "sha256": "d82b9bf1fbc5bfb21a2ffcb68d2dab0bf7b7e7bbe4090b49078f90170770b64e",
+      "bytes": 11637,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/native_financial_facts.py",
+      "snapshot_path": "financial/src/native_financial_facts.py",
+      "sha256": "eb4fc953a57a1ed758abc9cd50c6d4c22ee2e9e886061e2fca4e66bb03cb8e57",
+      "bytes": 16012,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/public_context_api.py",
+      "snapshot_path": "financial/src/public_context_api.py",
+      "sha256": "408e7e415ee27e2642bc21dd68825fd2ecbf8afc9dfe22543d7a63e57fa9e42b",
+      "bytes": 21756,
+      "dirty": false
+    },
+    {
+      "namespace": "financial",
+      "relative_path": "src/universe_audit.py",
+      "snapshot_path": "financial/src/universe_audit.py",
+      "sha256": "e88d5ccc624d382917d551a738bba7544822e17c713ef7da51a6b1e1c55dc3cc",
+      "bytes": 6054,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "scripts/evaluate_validation_panel.py",
+      "snapshot_path": "validation/scripts/evaluate_validation_panel.py",
+      "sha256": "e3ac40617c11eebc1af6f058eea153b51138add2f039c93ab908746f4fb734d0",
+      "bytes": 1831,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "scripts/export_validation_features.py",
+      "snapshot_path": "validation/scripts/export_validation_features.py",
+      "sha256": "5624663d0dc556b2407abc964ac36c594f46bd71fa366827917d1f4c4162ec21",
+      "bytes": 6418,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "scripts/import_financial_handoff.py",
+      "snapshot_path": "validation/scripts/import_financial_handoff.py",
+      "sha256": "d5e8066d8c2b631f115e59508e0ae7912e8adb0232d521631b32bd59be9443b6",
+      "bytes": 3113,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "scripts/import_market_handoff.py",
+      "snapshot_path": "validation/scripts/import_market_handoff.py",
+      "sha256": "74369026948f6ca531ee4aa596c6ed0ff8a378d5a57d66b76840cf602965f1c2",
+      "bytes": 3443,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "scripts/run_8k_validation.py",
+      "snapshot_path": "validation/scripts/run_8k_validation.py",
+      "sha256": "52744b8edb068464d8404303c510d64709694c9abf8c6c227bb3325c8d2954cd",
+      "bytes": 11736,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/__init__.py",
+      "snapshot_path": "validation/src/research_validation/__init__.py",
+      "sha256": "35d4953ec5ad4a4d31bb4fd8590bd5b3a2fb321e924e3062809527aaafc3deb3",
+      "bytes": 371,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/clocks.py",
+      "snapshot_path": "validation/src/research_validation/clocks.py",
+      "sha256": "a6688ddab473e5e00f4c1eefcf4878a8152f92ae3b8bb1fd568b8d807471c7ad",
+      "bytes": 13216,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/cohort.py",
+      "snapshot_path": "validation/src/research_validation/cohort.py",
+      "sha256": "c30f2002887001409b37fc5b0ce61a1e850218e22f2f73bc527d1ae8852ecd78",
+      "bytes": 6103,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/conditional_equity_diagnostic.py",
+      "snapshot_path": "validation/src/research_validation/conditional_equity_diagnostic.py",
+      "sha256": "428ecf7b2990936626106838aa1f2cf891c1844431ef6bde4b7de4bbbd1400e3",
+      "bytes": 13101,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/evaluate.py",
+      "snapshot_path": "validation/src/research_validation/evaluate.py",
+      "sha256": "33561e1702915b3a9d629e480fbc685f233628b1c8c80cecca9ae2e7555ce585",
+      "bytes": 19752,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/features.py",
+      "snapshot_path": "validation/src/research_validation/features.py",
+      "sha256": "b2ad4cb916967aaf5e00817b13af5189c17ce69bba2f54b0e4ec6df5dfc6ad0b",
+      "bytes": 27302,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/financial_handoff.py",
+      "snapshot_path": "validation/src/research_validation/financial_handoff.py",
+      "sha256": "edf1dcc04aa9b4e83af3892b2d6e6545d9aa76faaf1ee29920017c84b59e1dc1",
+      "bytes": 19637,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/industry_consumer.py",
+      "snapshot_path": "validation/src/research_validation/industry_consumer.py",
+      "sha256": "aab515cfc6fec97935b40c1d7e591a585c5cb5774d586b58d0341228ecef5f96",
+      "bytes": 10644,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/market_handoff.py",
+      "snapshot_path": "validation/src/research_validation/market_handoff.py",
+      "sha256": "a5880c97c44f8c6102a067928b3160573c3bd8dbcdd7cb51ea9d13b14ddb556f",
+      "bytes": 26966,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/ocr_gold_review.py",
+      "snapshot_path": "validation/src/research_validation/ocr_gold_review.py",
+      "sha256": "69c3f430d4370c5a1d13dc92d6ab3dd4fe287a0ed10d92b2a7a3c089b6bf93e7",
+      "bytes": 23918,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/peer_diagnostics.py",
+      "snapshot_path": "validation/src/research_validation/peer_diagnostics.py",
+      "sha256": "2ec74b98f225ef147f14a0bc3593e184cc756b385311eefa3a2c2235f7612c81",
+      "bytes": 7969,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/portfolio.py",
+      "snapshot_path": "validation/src/research_validation/portfolio.py",
+      "sha256": "e16f0449c369a94db7b02a9f8fced2512f5bbc77373bd47e3417507d2998af01",
+      "bytes": 15337,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/publication_replay.py",
+      "snapshot_path": "validation/src/research_validation/publication_replay.py",
+      "sha256": "fab0aa93194cfa22e4c40fa3f888bcade4115a8676ea8a7296686ecd820ced20",
+      "bytes": 14388,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/records.py",
+      "snapshot_path": "validation/src/research_validation/records.py",
+      "sha256": "a550b6c1d582e76ee11e2edfac36cfa6717ec106a111c581b7d7d4f1a91f928e",
+      "bytes": 7074,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/relationships.py",
+      "snapshot_path": "validation/src/research_validation/relationships.py",
+      "sha256": "5aa8be40a5bfd64f04e82a453c0ca7a17a981349b1bfccd0c893a49e53acc8fe",
+      "bytes": 6115,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/release_evidence.py",
+      "snapshot_path": "validation/src/research_validation/release_evidence.py",
+      "sha256": "01b9f049712ef3fa2db6acd7269aec4544c694a4875fd9700c6fbd2b52e68f99",
+      "bytes": 13631,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/security_identity.py",
+      "snapshot_path": "validation/src/research_validation/security_identity.py",
+      "sha256": "6ec367d7e356aad7e20bcab5fcc22251d0a6ba0ee746038049af5cdffa33b798",
+      "bytes": 18773,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/sources.py",
+      "snapshot_path": "validation/src/research_validation/sources.py",
+      "sha256": "82483c709325b873b79c2754c90eb641410a42fd27157e804e18eba0832b56e8",
+      "bytes": 7154,
+      "dirty": false
+    },
+    {
+      "namespace": "validation",
+      "relative_path": "src/research_validation/trials.py",
+      "snapshot_path": "validation/src/research_validation/trials.py",
+      "sha256": "e35739d4860e37275c3c2cdf7393ae58dd6733889db6df9144adf6da17ed2df8",
+      "bytes": 8325,
+      "dirty": false
+    }
+  ],
+  "limitations": [
+    "AST links do not prove runtime behavior",
+    "Cross-checkout imports may remain unresolved"
+  ]
+}

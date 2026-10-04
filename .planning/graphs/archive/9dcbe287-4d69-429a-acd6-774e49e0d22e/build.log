@@ -1,0 +1,11 @@
+Verified 73 scoped source files
+Re-extracting code files in . (no LLM needed)...
+[graphify watch] Rebuilt (no clustering): 940 nodes, 2309 edges
+[graphify watch] graph.json updated in graphify-out
+Code graph updated. For doc/paper/image changes run /graphify --update in your AI assistant.
+Tip: set GEMINI_API_KEY or GOOGLE_API_KEY to use Gemini for semantic extraction.
+Loading existing graph...
+Graph: 940 nodes, 2275 edges
+Re-clustering...
+Done - 23 communities. GRAPH_REPORT.md, graph.json and graph.html updated.
+EXIT_CODE:0

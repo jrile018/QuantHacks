@@ -1,0 +1,435 @@
+{
+  "schema": "icm-source-map-manifest-v1",
+  "captured_at_utc": "2026-10-04T03:52:49.224320+00:00",
+  "roots": {
+    "root": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs",
+    "financial": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs",
+    "validation": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs"
+  },
+  "files": [
+    {
+      "source_id": "root:src/reit_source_quality.py",
+      "root": "root",
+      "relative_path": "src/reit_source_quality.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_source_quality.py",
+      "sha256": "77c23fc64998688aa80c400f36f0239f34f989fc407730cf5e82297d03d63e2e",
+      "bytes": 18334
+    },
+    {
+      "source_id": "root:scripts/build_reit_snapshot.py",
+      "root": "root",
+      "relative_path": "scripts/build_reit_snapshot.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\scripts\\build_reit_snapshot.py",
+      "sha256": "ce7afccfc08b6c0be70276b8583641a93eb70b63d9120b0ea80b0d2df7398eac",
+      "bytes": 42538
+    },
+    {
+      "source_id": "validation:src/research_validation/sources.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/sources.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\sources.py",
+      "sha256": "82483c709325b873b79c2754c90eb641410a42fd27157e804e18eba0832b56e8",
+      "bytes": 7154
+    },
+    {
+      "source_id": "validation:src/research_validation/clocks.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/clocks.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\clocks.py",
+      "sha256": "a6688ddab473e5e00f4c1eefcf4878a8152f92ae3b8bb1fd568b8d807471c7ad",
+      "bytes": 13216
+    },
+    {
+      "source_id": "validation:src/research_validation/records.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/records.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\records.py",
+      "sha256": "a550b6c1d582e76ee11e2edfac36cfa6717ec106a111c581b7d7d4f1a91f928e",
+      "bytes": 7074
+    },
+    {
+      "source_id": "financial:src/financial_validation_bridge.py",
+      "root": "financial",
+      "relative_path": "src/financial_validation_bridge.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\financial_validation_bridge.py",
+      "sha256": "d82b9bf1fbc5bfb21a2ffcb68d2dab0bf7b7e7bbe4090b49078f90170770b64e",
+      "bytes": 11637
+    },
+    {
+      "source_id": "financial:src/native_financial_facts.py",
+      "root": "financial",
+      "relative_path": "src/native_financial_facts.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\native_financial_facts.py",
+      "sha256": "eb4fc953a57a1ed758abc9cd50c6d4c22ee2e9e886061e2fca4e66bb03cb8e57",
+      "bytes": 16012
+    },
+    {
+      "source_id": "financial:src/feature_matrix.py",
+      "root": "financial",
+      "relative_path": "src/feature_matrix.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\feature_matrix.py",
+      "sha256": "5aa1d45ed3a574f82a68271ed8880af498306be1366f4de85c4c524ae1b31ce0",
+      "bytes": 6773
+    },
+    {
+      "source_id": "root:src/reit_histories.py",
+      "root": "root",
+      "relative_path": "src/reit_histories.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_histories.py",
+      "sha256": "b064c8a7a3acd07c048ad5e64cf1da5fd54055deaec603f3ee7e08769f1e277e",
+      "bytes": 18564
+    },
+    {
+      "source_id": "root:src/reit_relationships.py",
+      "root": "root",
+      "relative_path": "src/reit_relationships.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_relationships.py",
+      "sha256": "092c3b5aebcb761d8dfe7fcf73a114130508a4b449d2efc53f304dad39b80482",
+      "bytes": 31266
+    },
+    {
+      "source_id": "root:src/reit_dataset.py",
+      "root": "root",
+      "relative_path": "src/reit_dataset.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_dataset.py",
+      "sha256": "83bff1f8e3de54f8956f7c95aa279b138ff61921dad295bf9579277b7caaa302",
+      "bytes": 19605
+    },
+    {
+      "source_id": "root:src/reit_universe.py",
+      "root": "root",
+      "relative_path": "src/reit_universe.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_universe.py",
+      "sha256": "bea8a6301008f7e7c2c0b0440ff190f20580b39bcdcbaac6d717d7a22daccc6a",
+      "bytes": 15079
+    },
+    {
+      "source_id": "financial:src/universe_audit.py",
+      "root": "financial",
+      "relative_path": "src/universe_audit.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\universe_audit.py",
+      "sha256": "e88d5ccc624d382917d551a738bba7544822e17c713ef7da51a6b1e1c55dc3cc",
+      "bytes": 6054
+    },
+    {
+      "source_id": "validation:configs/strategy_validation.json",
+      "root": "validation",
+      "relative_path": "configs/strategy_validation.json",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\strategy_validation.json",
+      "sha256": "8004ed124d75ab6b41f19fad89e6eefc8e5eeaf17324c12abcbc25a95aeee038",
+      "bytes": 1951
+    },
+    {
+      "source_id": "validation:src/research_validation/features.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/features.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\features.py",
+      "sha256": "b2ad4cb916967aaf5e00817b13af5189c17ce69bba2f54b0e4ec6df5dfc6ad0b",
+      "bytes": 27302
+    },
+    {
+      "source_id": "validation:src/research_validation/financial_handoff.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/financial_handoff.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\financial_handoff.py",
+      "sha256": "edf1dcc04aa9b4e83af3892b2d6e6545d9aa76faaf1ee29920017c84b59e1dc1",
+      "bytes": 19637
+    },
+    {
+      "source_id": "root:src/multi_market/features.py",
+      "root": "root",
+      "relative_path": "src/multi_market/features.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\multi_market\\features.py",
+      "sha256": "25982ff4b0e144b6541607587679e9d28c496025460a5986d49c83a13ebd58e2",
+      "bytes": 8309
+    },
+    {
+      "source_id": "root:docs/coordination/handoffs/lattice.md",
+      "root": "root",
+      "relative_path": "docs/coordination/handoffs/lattice.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\coordination\\handoffs\\lattice.md",
+      "sha256": "fd6a8bb1296e6ac00fecf2ba62252351ec51923ff81d8047abdd82479bf8266f",
+      "bytes": 2478
+    },
+    {
+      "source_id": "root:docs/coordination/handoffs/post-benchmark.md",
+      "root": "root",
+      "relative_path": "docs/coordination/handoffs/post-benchmark.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\coordination\\handoffs\\post-benchmark.md",
+      "sha256": "7af6bc06243ee94096402f38fc8b41152addfb94a620f6a9c077cdce1c9b9a87",
+      "bytes": 4080
+    },
+    {
+      "source_id": "validation:src/research_validation/market_handoff.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/market_handoff.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\market_handoff.py",
+      "sha256": "a5880c97c44f8c6102a067928b3160573c3bd8dbcdd7cb51ea9d13b14ddb556f",
+      "bytes": 26966
+    },
+    {
+      "source_id": "validation:src/research_validation/evaluate.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/evaluate.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\evaluate.py",
+      "sha256": "33561e1702915b3a9d629e480fbc685f233628b1c8c80cecca9ae2e7555ce585",
+      "bytes": 19752
+    },
+    {
+      "source_id": "validation:src/research_validation/trials.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/trials.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\trials.py",
+      "sha256": "e35739d4860e37275c3c2cdf7393ae58dd6733889db6df9144adf6da17ed2df8",
+      "bytes": 8325
+    },
+    {
+      "source_id": "root:docs/research/2026-10-03-regime-risk-and-signal-optimization.md",
+      "root": "root",
+      "relative_path": "docs/research/2026-10-03-regime-risk-and-signal-optimization.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-03-regime-risk-and-signal-optimization.md",
+      "sha256": "7a1aa33b953c84365383eaf82d19e6f967cbdc433f97b7300a3a6f3ca77c2ce9",
+      "bytes": 29988
+    },
+    {
+      "source_id": "validation:src/research_validation/portfolio.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/portfolio.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\portfolio.py",
+      "sha256": "e16f0449c369a94db7b02a9f8fced2512f5bbc77373bd47e3417507d2998af01",
+      "bytes": 15337
+    },
+    {
+      "source_id": "root:src/reit_budget.py",
+      "root": "root",
+      "relative_path": "src/reit_budget.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_budget.py",
+      "sha256": "64de0f63afb39276947be20f71f74c795304fc839fd38c1852af797e0499d10f",
+      "bytes": 9243
+    },
+    {
+      "source_id": "root:src/reit_market_data.py",
+      "root": "root",
+      "relative_path": "src/reit_market_data.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\reit_market_data.py",
+      "sha256": "12d8a251cf0bd903a6ae9af60885fb601bd77a0e39d62e1ec2925b526bacabc5",
+      "bytes": 25263
+    },
+    {
+      "source_id": "root:scripts/multi_market/acquire_pilot.py",
+      "root": "root",
+      "relative_path": "scripts/multi_market/acquire_pilot.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\scripts\\multi_market\\acquire_pilot.py",
+      "sha256": "cc3b711685e9373a5b6891b18a75afbf1d70978616b30d2d4c21a1aad835a9b3",
+      "bytes": 16878
+    },
+    {
+      "source_id": "root:docs/coordination/architecture-contract.md",
+      "root": "root",
+      "relative_path": "docs/coordination/architecture-contract.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\coordination\\architecture-contract.md",
+      "sha256": "f6a8f9a640e3b24b516256ca9fc78440a4f802de6f801fddcaf1f956230ddbf9",
+      "bytes": 21115
+    },
+    {
+      "source_id": "root:src/document_transcript.py",
+      "root": "root",
+      "relative_path": "src/document_transcript.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\document_transcript.py",
+      "sha256": "6ebaa1bc0752e4db466af4ada0baac2569a80865e3fc9ff2a789dcda95b9e7bb",
+      "bytes": 9891
+    },
+    {
+      "source_id": "root:src/document_evidence.py",
+      "root": "root",
+      "relative_path": "src/document_evidence.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\document_evidence.py",
+      "sha256": "74f79ca882d410df30fc61e42684c73c7b6ec345de89e474e5ffc2e88ce43bb4",
+      "bytes": 2055
+    },
+    {
+      "source_id": "root:src/document_language.py",
+      "root": "root",
+      "relative_path": "src/document_language.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\document_language.py",
+      "sha256": "1c84de0ec01e5a979e6b75f57706243876deea03e99c043e95234a15cf52b2d9",
+      "bytes": 8398
+    },
+    {
+      "source_id": "root:src/glm_document_ocr.py",
+      "root": "root",
+      "relative_path": "src/glm_document_ocr.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\glm_document_ocr.py",
+      "sha256": "70e686734ae8c2fa02cd9bc4b8f7d713a3a824a8fbca485c32e14d66b0be17a5",
+      "bytes": 8496
+    },
+    {
+      "source_id": "root:docs/hipergator-and-training-status.md",
+      "root": "root",
+      "relative_path": "docs/hipergator-and-training-status.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\hipergator-and-training-status.md",
+      "sha256": "22f275a7b2971d9e13acb748ecf5bf7046acbc77e2dbe8ae6d950394ddc70039",
+      "bytes": 15596
+    },
+    {
+      "source_id": "root:docs/options-model-training.md",
+      "root": "root",
+      "relative_path": "docs/options-model-training.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\options-model-training.md",
+      "sha256": "f5970bd8c59388978b6aa9a6149d48f6015b8dc24e6125c7595a598cd210f4d7",
+      "bytes": 13656
+    },
+    {
+      "source_id": "financial:src/public_context_api.py",
+      "root": "financial",
+      "relative_path": "src/public_context_api.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\public_context_api.py",
+      "sha256": "408e7e415ee27e2642bc21dd68825fd2ecbf8afc9dfe22543d7a63e57fa9e42b",
+      "bytes": 21756
+    },
+    {
+      "source_id": "root:docs/prediction-market-evidence-review.md",
+      "root": "root",
+      "relative_path": "docs/prediction-market-evidence-review.md",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\prediction-market-evidence-review.md",
+      "sha256": "57ad10e999dfbff3741147b110cfc687ce3098002c8368a2da32d43418117934",
+      "bytes": 10043
+    },
+    {
+      "source_id": "root:src/options_learning.py",
+      "root": "root",
+      "relative_path": "src/options_learning.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\options_learning.py",
+      "sha256": "11a8d11c7706372f51bae296e562350dc54c87299bbc48402dad5e2290ee33c7",
+      "bytes": 29533
+    },
+    {
+      "source_id": "root:src/market_quote_collector.py",
+      "root": "root",
+      "relative_path": "src/market_quote_collector.py",
+      "absolute_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\src\\market_quote_collector.py",
+      "sha256": "1399967cc7464a3c7163f9436aa6cc2927cb830000490860ff5b8c9778bb5975",
+      "bytes": 6174
+    },
+    {
+      "source_id": "validation:src/research_validation/peer_diagnostics.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/peer_diagnostics.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\peer_diagnostics.py",
+      "sha256": "12b1707923a9b57c2db11ae68992c121321b0c71ca3e4aff275dd458fe55ccbe",
+      "bytes": 9077
+    },
+    {
+      "source_id": "validation:src/research_validation/industry_consumer.py",
+      "root": "validation",
+      "relative_path": "src/research_validation/industry_consumer.py",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\src\\research_validation\\industry_consumer.py",
+      "sha256": "aab515cfc6fec97935b40c1d7e591a585c5cb5774d586b58d0341228ecef5f96",
+      "bytes": 10644
+    },
+    {
+      "source_id": "validation:data/processed/8k_validation/lattice-consumer-v2/acceptance-capsule.json",
+      "root": "validation",
+      "relative_path": "data/processed/8k_validation/lattice-consumer-v2/acceptance-capsule.json",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\lattice-consumer-v2\\acceptance-capsule.json",
+      "sha256": "99cd94357452de563eaaeacb9a669b5fbc31bc11cd39b0f79ea1fc9f27f30579",
+      "bytes": 63311
+    },
+    {
+      "source_id": "validation:data/processed/8k_validation/industry-consumer-v1/acceptance-capsule.json",
+      "root": "validation",
+      "relative_path": "data/processed/8k_validation/industry-consumer-v1/acceptance-capsule.json",
+      "absolute_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\industry-consumer-v1\\acceptance-capsule.json",
+      "sha256": "27efe1bee771dfc54bdc701a6ebcd4366e1e2ec3d5213df9a979643819191c79",
+      "bytes": 35187
+    }
+  ],
+  "directory_membership": {
+    "validation:src/research_validation": [
+      "__init__.py",
+      "clocks.py",
+      "cohort.py",
+      "conditional_equity_diagnostic.py",
+      "evaluate.py",
+      "features.py",
+      "financial_handoff.py",
+      "industry_consumer.py",
+      "market_handoff.py",
+      "ocr_gold_review.py",
+      "peer_diagnostics.py",
+      "portfolio.py",
+      "publication_replay.py",
+      "records.py",
+      "relationships.py",
+      "release_evidence.py",
+      "security_identity.py",
+      "sources.py",
+      "trials.py"
+    ],
+    "root:src/contextual_lattice": [
+      "context.py",
+      "evaluation.py",
+      "options.py",
+      "tracking.py"
+    ]
+  },
+  "updated_at_utc": "2026-10-04T05:03:27.478854+00:00",
+  "latest_refresh_reason": "accepted user sequencing/stopping rule and independent cold-walk corrections",
+  "live_directory_membership_status": {
+    "checkedAtUtc": "2026-10-04T04:57:22.956173+00:00",
+    "status": "partial snapshot; addition explicitly recorded",
+    "addedNotMapped": [
+      "validation:src/research_validation/native_fixture_consumer.py"
+    ],
+    "receipt": "data/processed/chat_tracking/20261004T0439-source-freshness.json",
+    "canonicalAcceptanceChanged": false
+  },
+  "coordination_contract_refreshed_at_utc": "2026-10-04T05:22:10.063265+00:00",
+  "latest_live_freshness_check": {
+    "receipt": "data/processed/chat_tracking/20261004T0534-source-freshness.json",
+    "checked_at_utc": "2026-10-04T05:48:35.558173+00:00",
+    "changed_declared_sources": 1,
+    "changed_matrix_trace_sources": 1,
+    "affected_matrix_readiness": "source snapshot retained; final-handoff refresh pending"
+  },
+  "settled_financial_check": {
+    "checked_at_utc": "2026-10-04T06:55:24.696005+00:00",
+    "commit": "83eea30db9db13f00c6e10828aa775e16c4cf940",
+    "receipt": "data/processed/chat_tracking/skill-audit-20261004/benchmark-settled-verification.json",
+    "checks": [
+      {
+        "source_id": "financial:src/financial_validation_bridge.py",
+        "snapshot_sha256": "d82b9bf1fbc5bfb21a2ffcb68d2dab0bf7b7e7bbe4090b49078f90170770b64e",
+        "current_sha256": "d82b9bf1fbc5bfb21a2ffcb68d2dab0bf7b7e7bbe4090b49078f90170770b64e",
+        "same": true
+      },
+      {
+        "source_id": "financial:src/native_financial_facts.py",
+        "snapshot_sha256": "eb4fc953a57a1ed758abc9cd50c6d4c22ee2e9e886061e2fca4e66bb03cb8e57",
+        "current_sha256": "eb4fc953a57a1ed758abc9cd50c6d4c22ee2e9e886061e2fca4e66bb03cb8e57",
+        "same": true
+      },
+      {
+        "source_id": "financial:src/feature_matrix.py",
+        "snapshot_sha256": "5aa1d45ed3a574f82a68271ed8880af498306be1366f4de85c4c524ae1b31ce0",
+        "current_sha256": "5aa1d45ed3a574f82a68271ed8880af498306be1366f4de85c4c524ae1b31ce0",
+        "same": true
+      },
+      {
+        "source_id": "financial:src/universe_audit.py",
+        "snapshot_sha256": "e88d5ccc624d382917d551a738bba7544822e17c713ef7da51a6b1e1c55dc3cc",
+        "current_sha256": "6f6b0de2c4d2904c9878071c60c8460d422ca8fe964fbaf87bf8df91bfbd529b",
+        "same": false
+      },
+      {
+        "source_id": "financial:src/public_context_api.py",
+        "snapshot_sha256": "408e7e415ee27e2642bc21dd68825fd2ecbf8afc9dfe22543d7a63e57fa9e42b",
+        "current_sha256": "408e7e415ee27e2642bc21dd68825fd2ecbf8afc9dfe22543d7a63e57fa9e42b",
+        "same": true
+      }
+    ],
+    "original_snapshot_hashes_retained": true,
+    "canonical_acceptance": "pending",
+    "graph_rebuilt": false
+  }
+}

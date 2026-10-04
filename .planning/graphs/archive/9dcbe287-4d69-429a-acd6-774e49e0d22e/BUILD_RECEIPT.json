@@ -1,0 +1,47 @@
+{
+  "run_id": "9dcbe287-4d69-429a-acd6-774e49e0d22e",
+  "state": "VALIDATED_GRAPHIFY_SNAPSHOT_WITH_LIVE_DRIFT",
+  "tool": "graphifyy==0.9.75",
+  "commands": [
+    "graphify update . --no-cluster",
+    "graphify cluster-only . --no-label"
+  ],
+  "remote_host_alias": "home-pc",
+  "source_files": 73,
+  "source_bytes": 864055,
+  "source_manifest_sha256": "6adff83845d82a48354d16867fc975388692b21e5e48744e0dfe2851fd604749",
+  "graph_sha256": "a044d5843225714f8b8aa0b54d0776c2f09580c811d4bbdc1c9829e3933fde2c",
+  "graph_html_sha256": "4066814a7f11fcdc24e0ab52dbde3aecf620080e091be29baefa02c0e0b4efdd",
+  "graph_report_sha256": "e13a91de016bac4228c370bf80d6cb28558d55ba4149683b33ace14d4b81a153",
+  "build_log_sha256": "2765fc48ea6582451ba38612af3a712edcedae6272d0d7f51905784d69ae3310",
+  "node_count": 940,
+  "edge_count": 2309,
+  "hyperedge_count": 0,
+  "community_count": 23,
+  "located_node_count": 832,
+  "limitations": [
+    "Graphify emits links rather than edges in its native NetworkX JSON; the GSD reader supports either.",
+    "AST relations are code structure, not runtime or architecture contract proof.",
+    "Cross-checkout imports are unresolved unless independently verified."
+  ],
+  "live_source_drift_count": 3,
+  "live_source_drift": [
+    {
+      "snapshot_path": "validation/scripts/run_8k_validation.py",
+      "snapshot_sha256": "52744b8edb068464d8404303c510d64709694c9abf8c6c227bb3325c8d2954cd",
+      "live_sha256": "4e9ed093669354a7c97aeda95b89ff3693bb673409b539b20deacda4b6d7c6a5"
+    },
+    {
+      "snapshot_path": "validation/src/research_validation/conditional_equity_diagnostic.py",
+      "snapshot_sha256": "428ecf7b2990936626106838aa1f2cf891c1844431ef6bde4b7de4bbbd1400e3",
+      "live_sha256": "537afac8bf12e1610382b6ba21f29b5d150ebfa4bcb7bea5f60e7e6e726097f2"
+    },
+    {
+      "snapshot_path": "validation/src/research_validation/peer_diagnostics.py",
+      "snapshot_sha256": "2ec74b98f225ef147f14a0bc3593e184cc756b385311eefa3a2c2235f7612c81",
+      "live_sha256": "12b1707923a9b57c2db11ae68992c121321b0c71ca3e4aff275dd458fe55ccbe"
+    }
+  ],
+  "snapshot_current_at_check": false,
+  "freshness_checked_utc": "2026-10-04T04:11:09.067325+00:00"
+}

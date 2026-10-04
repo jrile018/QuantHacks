@@ -1,0 +1,24 @@
+{
+  "bar_rows": 616,
+  "build_type": "research",
+  "capacity_rows": 12,
+  "compiler_id": "Python/pyarrow",
+  "contract_rows": 16,
+  "created_at_utc": "2026-10-03T18:38:51.253843+00:00",
+  "event_rows": 1,
+  "git_commit": "python-options-native",
+  "input_hashes": {
+    "capacity.csv": "1cdfc34f0ddc4e4f57fe741c9985ca2289b9812bbf53841841df111c2861f06b",
+    "events.csv": "a90f9870ef2c5c0a5e4114274faa0d5660f4b2b6f9f7287704e01afad3252c86",
+    "manifest.json": "aec1d2ac08c0f10e88a30595e88d8108e96fe63f0f16eea9064f460431a47f6c",
+    "option_bars.csv": "c8449fcfac92b987853b927795a4ff6a7039dc3b59332cb40f96fa8a84f47a63",
+    "option_legs.csv": "93d32bb8d94eebbad508a7ee23f9a56880450b1179dc4d51b17a4baf15ff2030",
+    "results.csv": "d69bec0bd56299a6f46f322878f3e73a4a35b320c49c9b1572b36b307821b763"
+  },
+  "outcome_rows": 102,
+  "run_id": "quanthaxs-native-smoke",
+  "schema_version": "1.0.0",
+  "stage": "gm-options-ingest",
+  "status": "ok",
+  "wall_time_seconds": 0.0
+}

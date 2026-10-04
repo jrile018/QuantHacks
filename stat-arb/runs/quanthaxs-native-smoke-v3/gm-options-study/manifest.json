@@ -1,0 +1,27 @@
+{
+  "atm_mark_event_buckets": 2,
+  "build_type": "research",
+  "compiler_id": "Python/pyarrow",
+  "created_at_utc": "2026-10-03T19:00:37.369138+00:00",
+  "event_buckets": 2,
+  "git_commit": "unknown",
+  "input_hashes": {
+    "gm-options-ingest/bars.parquet": "1b0d23e5e40daaaa69df6ab133e6055799dac01ff96a5205fff3157e343d36de",
+    "gm-options-ingest/capacity.parquet": "2c9f4ca3134f82e80d20adc7520631e266c92d32999c4d13be7427d8c3c1891c",
+    "gm-options-ingest/contracts.parquet": "6419bd8edf41bec08b1c576a041d88aed44fffba08a29fb6cf8a353133e75ca9",
+    "gm-options-ingest/events.parquet": "0614345c7167da3428379a002d497b56dc87ddc56c6fd786c5b5f4906bb12022",
+    "gm-options-ingest/manifest.json": "41d657aaf61d1e7050513b13f61f3a0365e73b37d81e2dcb905ec45e60503edf",
+    "gm-options-ingest/outcomes.parquet": "d1c3016635ced4981175ed425ec06d45a28361e42e43fa50bb1e80d3c5eb356f",
+    "tools/options_native.py": "594a00286bc05fadc3ab98fcd7ef94048027b3feb9ca0bb030442a9911c8bf8e"
+  },
+  "matched_event_buckets": 0,
+  "missing_estimator_pairs": 6,
+  "missing_score_absent_date": 0,
+  "missing_score_absent_ticker": 2,
+  "missing_score_event_buckets": 2,
+  "run_id": "quanthaxs-native-smoke-v3",
+  "schema_version": "1.0.0",
+  "stage": "gm-options-study",
+  "status": "ok",
+  "wall_time_seconds": 0.0
+}

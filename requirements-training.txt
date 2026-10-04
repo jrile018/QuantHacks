@@ -1,0 +1,3 @@
+# Optional only for --fit. Dataset audit uses the standard library.
+# Use the existing project environment; do not install GPU/training runtimes.
+numpy>=2.0

@@ -1,0 +1,308 @@
+{
+  "scripts/lattice_strategies/audit_frozen_targets.py": {
+    "mtime": 1791092948.431026,
+    "seen": 1791092948.80839,
+    "ast_hash": "9ca563cf9d75aa96dbbdbee4c9f77480",
+    "semantic_hash": ""
+  },
+  "scripts/lattice_strategies/run_study.py": {
+    "mtime": 1791092948.431102,
+    "seen": 1791092948.808391,
+    "ast_hash": "d4e3c6354eb254505499386485545a27",
+    "semantic_hash": ""
+  },
+  "scripts/lattice_strategies/verify_outputs.py": {
+    "mtime": 1791092948.4311514,
+    "seen": 1791092948.808392,
+    "ast_hash": "60af93fe0dce0f4a4c98719ba8620fb7",
+    "semantic_hash": ""
+  },
+  "src/contextual_lattice/context.py": {
+    "mtime": 1791092948.4312398,
+    "seen": 1791092948.8083925,
+    "ast_hash": "d5638bb0611642a02b80f2300b88ce82",
+    "semantic_hash": ""
+  },
+  "src/contextual_lattice/evaluation.py": {
+    "mtime": 1791092948.4313126,
+    "seen": 1791092948.8083928,
+    "ast_hash": "0a13ba1786071a2c94f263931f91c7f2",
+    "semantic_hash": ""
+  },
+  "src/contextual_lattice/options.py": {
+    "mtime": 1791092948.4313657,
+    "seen": 1791092948.8083932,
+    "ast_hash": "4cb338cf4337607d5a94967eff9e8a3c",
+    "semantic_hash": ""
+  },
+  "src/contextual_lattice/tracking.py": {
+    "mtime": 1791092948.4314034,
+    "seen": 1791092948.8083937,
+    "ast_hash": "30c8350915df4c14c94a54969534f9c2",
+    "semantic_hash": ""
+  },
+  "src/lattice_strategies/__init__.py": {
+    "mtime": 1791092948.4314415,
+    "seen": 1791092948.808394,
+    "ast_hash": "fa3417be735f01e56e0d6d28c7d1604b",
+    "semantic_hash": ""
+  },
+  "src/lattice_strategies/evaluation.py": {
+    "mtime": 1791092948.4314833,
+    "seen": 1791092948.8083944,
+    "ast_hash": "a6deeb9b34832a6cc887602ee0829545",
+    "semantic_hash": ""
+  },
+  "src/lattice_strategies/graphs.py": {
+    "mtime": 1791092948.4315124,
+    "seen": 1791092948.808395,
+    "ast_hash": "6795aadeb239083236d387e8223bfd21",
+    "semantic_hash": ""
+  },
+  "src/lattice_strategies/residuals.py": {
+    "mtime": 1791092948.4315548,
+    "seen": 1791092948.8083956,
+    "ast_hash": "4444b4db03e568ab3a928fff7db00748",
+    "semantic_hash": ""
+  },
+  "src/lattice_strategies/risk.py": {
+    "mtime": 1791092948.431608,
+    "seen": 1791092948.808396,
+    "ast_hash": "7b4e0783acf71f51b061140e1e7854e1",
+    "semantic_hash": ""
+  },
+  "src/multi_market/__init__.py": {
+    "mtime": 1791092948.4316473,
+    "seen": 1791092948.8083963,
+    "ast_hash": "6d6fc48bd4d4c8d52444d98b6c4515d1",
+    "semantic_hash": ""
+  },
+  "src/multi_market/evaluation.py": {
+    "mtime": 1791092948.4316995,
+    "seen": 1791092948.8083968,
+    "ast_hash": "6190b3cee516c74d5c787d6d6f87b14b",
+    "semantic_hash": ""
+  },
+  "src/multi_market/features.py": {
+    "mtime": 1791092948.4317398,
+    "seen": 1791092948.808397,
+    "ast_hash": "14271f1d614529eb257f91ca0e665ac2",
+    "semantic_hash": ""
+  },
+  "src/multi_market/futures_study.py": {
+    "mtime": 1791092948.4318252,
+    "seen": 1791092948.8083973,
+    "ast_hash": "5fa23e12dee9c1d24077f7df46bc4ec9",
+    "semantic_hash": ""
+  },
+  "src/multi_market/labels.py": {
+    "mtime": 1791092948.431859,
+    "seen": 1791092948.8083978,
+    "ast_hash": "cb53f39be60bdbca5dfe8653722a7aa3",
+    "semantic_hash": ""
+  },
+  "stat-arb/apps/gm-boundaries/main.cpp": {
+    "mtime": 1791092948.4320073,
+    "seen": 1791092948.8083982,
+    "ast_hash": "fbd990d86ad3bd1601e041ec58b72ace",
+    "semantic_hash": ""
+  },
+  "stat-arb/apps/gm-geometry/main.cpp": {
+    "mtime": 1791092948.4321082,
+    "seen": 1791092948.808399,
+    "ast_hash": "06861e4004dc557fdcb98b1cc3c118d9",
+    "semantic_hash": ""
+  },
+  "stat-arb/apps/gm-signals/main.cpp": {
+    "mtime": 1791092948.4322076,
+    "seen": 1791092948.8083992,
+    "ast_hash": "0268e9df8e6dc3fef25c526f6600c3c8",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/include/gm-boundaries/fastmcd.hpp": {
+    "mtime": 1791092948.4322834,
+    "seen": 1791092948.8083997,
+    "ast_hash": "38ef9d97c4769665bc0f44d5115809f5",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/include/gm-boundaries/kde.hpp": {
+    "mtime": 1791092948.4323132,
+    "seen": 1791092948.8084002,
+    "ast_hash": "e881af49785a7138fdc05be24a3b8c5a",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/include/gm-boundaries/mahalanobis.hpp": {
+    "mtime": 1791092948.4323409,
+    "seen": 1791092948.8084004,
+    "ast_hash": "ae49505c8531ffb7b582f16b8835d95e",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/src/fastmcd.cpp": {
+    "mtime": 1791092948.4324448,
+    "seen": 1791092948.8084009,
+    "ast_hash": "ac92a88e8f20b08bf75331b9e0a8b4cb",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/src/fastmcd_detail.hpp": {
+    "mtime": 1791092948.4324822,
+    "seen": 1791092948.808401,
+    "ast_hash": "9e0b6a670ebea59d8e6c095b323e1eac",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/src/kde.cpp": {
+    "mtime": 1791092948.4325147,
+    "seen": 1791092948.8084016,
+    "ast_hash": "29253736e9515e44c50c03d03ef9966d",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-boundaries/src/mahalanobis.cpp": {
+    "mtime": 1791092948.4325528,
+    "seen": 1791092948.8084018,
+    "ast_hash": "77050d7d11bbce4fb689e8692a22e428",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/correlation.hpp": {
+    "mtime": 1791092948.4326005,
+    "seen": 1791092948.808402,
+    "ast_hash": "b2663ff6fe1ee666528f1eac39988696",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/distance.hpp": {
+    "mtime": 1791092948.4326222,
+    "seen": 1791092948.8084028,
+    "ast_hash": "02382838e4f3c7ea9a6bc420bff9d2de",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/graph.hpp": {
+    "mtime": 1791092948.432648,
+    "seen": 1791092948.808403,
+    "ast_hash": "f019a953f67f7c7afaaec8174de853eb",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/mds.hpp": {
+    "mtime": 1791092948.4326696,
+    "seen": 1791092948.8084035,
+    "ast_hash": "74f2ec1888df9ccb6930faf36b4588de",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/procrustes.hpp": {
+    "mtime": 1791092948.4326916,
+    "seen": 1791092948.808404,
+    "ast_hash": "4e962c36980554d337095c46639dc874",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/rie.hpp": {
+    "mtime": 1791092948.43273,
+    "seen": 1791092948.8084042,
+    "ast_hash": "ff38b9a9cc28c70155b0674aa69ae6e6",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/rmt.hpp": {
+    "mtime": 1791092948.4327517,
+    "seen": 1791092948.8084047,
+    "ast_hash": "30942dd20296be2ba612da7a5deea2f8",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/include/gm-geometry/shrinkage.hpp": {
+    "mtime": 1791092948.4327724,
+    "seen": 1791092948.808405,
+    "ast_hash": "298d9a002a2450c1b9a91de2fd311941",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/correlation.cpp": {
+    "mtime": 1791092948.4328058,
+    "seen": 1791092948.8084054,
+    "ast_hash": "e16ccfe5524bdbd1c214b2425a53d6be",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/distance.cpp": {
+    "mtime": 1791092948.4328284,
+    "seen": 1791092948.8084059,
+    "ast_hash": "24e500c2adaf452ace2e3a9dd9deaee9",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/graph.cpp": {
+    "mtime": 1791092948.4328587,
+    "seen": 1791092948.8084064,
+    "ast_hash": "5775a7beb1b8a2dd78129a459e1e9ffe",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/mds.cpp": {
+    "mtime": 1791092948.4328828,
+    "seen": 1791092948.8084066,
+    "ast_hash": "10792129fd782b549eb818c9bf000867",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/procrustes.cpp": {
+    "mtime": 1791092948.432905,
+    "seen": 1791092948.808407,
+    "ast_hash": "711270c65f1fe5d0bb87e171e0e6fadd",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/rie.cpp": {
+    "mtime": 1791092948.432932,
+    "seen": 1791092948.8084073,
+    "ast_hash": "40282c9f5bbd89cd517524c3d6a08494",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/rmt.cpp": {
+    "mtime": 1791092948.4329572,
+    "seen": 1791092948.8084078,
+    "ast_hash": "4c4b5e77e3f544161cf5365ef03c2a3f",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-geometry/src/shrinkage.cpp": {
+    "mtime": 1791092948.4329832,
+    "seen": 1791092948.8084085,
+    "ast_hash": "49b731ed1fc8c5cd3a831a7ccf033267",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-signals/include/gm-signals/excursion.hpp": {
+    "mtime": 1791092948.4330287,
+    "seen": 1791092948.808409,
+    "ast_hash": "aacef2951871f78d6b1f0e3d8e791cd2",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-signals/include/gm-signals/ou_fit.hpp": {
+    "mtime": 1791092948.4330504,
+    "seen": 1791092948.8084095,
+    "ast_hash": "ad0f83785ce537b4f49ea0eddcdffc8d",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-signals/include/gm-signals/peer_basket.hpp": {
+    "mtime": 1791092948.433077,
+    "seen": 1791092948.8084097,
+    "ast_hash": "a316eed36ab2738ff27705321bc80959",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-signals/src/excursion.cpp": {
+    "mtime": 1791092948.4331055,
+    "seen": 1791092948.8084102,
+    "ast_hash": "ac53bae03c3afa652bfcc2cf7c763e35",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-signals/src/ou_fit.cpp": {
+    "mtime": 1791092948.4331357,
+    "seen": 1791092948.8084104,
+    "ast_hash": "a720c962575fdae08e9c6bf711061b0c",
+    "semantic_hash": ""
+  },
+  "stat-arb/libs/gm-signals/src/peer_basket.cpp": {
+    "mtime": 1791092948.4331765,
+    "seen": 1791092948.8084106,
+    "ast_hash": "08a17571cb277fbe5d09f0c85686925b",
+    "semantic_hash": ""
+  },
+  "stat-arb/tools/options_bridge.py": {
+    "mtime": 1791092948.4332278,
+    "seen": 1791092948.8084111,
+    "ast_hash": "9fb18138e42f0821dbff1b36106af389",
+    "semantic_hash": ""
+  },
+  "stat-arb/tools/options_native.py": {
+    "mtime": 1791092948.433297,
+    "seen": 1791092948.8084114,
+    "ast_hash": "f8b406ef151d87d0d4bf1d2c6f14227e",
+    "semantic_hash": ""
+  }
+}

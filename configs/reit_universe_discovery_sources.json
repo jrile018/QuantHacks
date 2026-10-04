@@ -1,0 +1,16 @@
+{
+  "schema_version": "reit-discovery-sources-1",
+  "research_date": "2026-10-03",
+  "verified_eligible_security_count": 0,
+  "imported_unverified_nareit_candidates": 126,
+  "imported_sec_exchange_rows": 10434,
+  "complete_universe_claim": false,
+  "sources": [
+    {"source_id": "nareit-tickers", "url": "https://www.reit.com/data-research/reit-indexes/reits-by-ticker-symbol", "observed_format": "HTML table: RTC Ticker, Company name", "source_sha256": "745cfd7fcd396ed2ff66a2db8b9c6bf5c645e027dd2e1d1d3aafc8f249ac7e79", "imported_candidate_count": 126, "purpose": "candidate_discovery", "limits": ["includes_REOCs", "current_snapshot_only", "no_CIK_or_common_class_proof"]},
+    {"source_id": "nareit-directory", "url": "https://www.reit.com/investing/reit-directory", "observed_format": "rendered directory with 156 displayed results and nine exposed rows", "purpose": "candidate_discovery", "limits": ["members_only", "international_members", "non_REIT_real_estate_companies", "pagination_not_acquired"]},
+    {"source_id": "nareit-reitwatch-202609", "url": "https://www.reit.com/sites/default/files/reitwatch/RW2609.pdf", "observed_format": "50-page PDF", "effective_date": "2026-08-31", "source_locator": "PDF page 5 industry fact sheet; constituent table starting printed page 21", "purpose": "dated_index_candidate_discovery", "source_reported_index_count": 180, "limits": ["index_membership_not_complete_US_universe", "publication_time_unverified", "CIK_security_identity_requires_primary_evidence"]},
+    {"source_id": "nareit-reitwatch-2024-archive", "url": "https://www.reit.com/investing/investing-tools/nareit-statistical-publications/reitwatch/reitwatch-2024", "observed_format": "HTML month links", "purpose": "historical_snapshot_discovery", "limits": ["monthly_snapshots_not_continuous_membership", "monthly_PDFs_not_yet_acquired"]},
+    {"source_id": "sec-exchange-map", "url": "https://www.sec.gov/files/company_tickers_exchange.json", "observed_format": "JSON fields/data with cik,name,ticker,exchange", "source_sha256": "2df6dbed748a66dfbb6ed403e1e88b4d7b5590e61188ea74d5548d0f8aec09c1", "imported_row_count": 10434, "purpose": "candidate_identity_lookup", "limits": ["current_snapshot_only", "no_REIT_status", "no_common_share_class", "ticker_not_stable_identity"]},
+    {"source_id": "sec-submissions-documentation", "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces", "observed_format": "official API documentation", "purpose": "metadata_format_contract", "limits": ["recent_arrays_are_not_full_history", "acceptance_not_verified_public_availability"]}
+  ]
+}

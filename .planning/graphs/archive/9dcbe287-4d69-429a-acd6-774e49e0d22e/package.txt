@@ -1,0 +1,10 @@
+Name: graphifyy
+Version: 0.9.75
+Summary: AI coding assistant skill (Claude Code, CodeBuddy, Codex, OpenCode, Kilo Code, Cursor, Gemini CLI, Aider, OpenClaw, Factory Droid, Trae, Hermes, Kiro, Pi, Devin CLI, Google Antigravity) - turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /home/john-riley/quanthaxs-architecture-graph/9dcbe287-4d69-429a-acd6-774e49e0d22e/venv/lib/python3.12/site-packages
+Requires: networkx, numpy, rapidfuzz, tree-sitter, tree-sitter-bash, tree-sitter-c, tree-sitter-c-sharp, tree-sitter-cpp, tree-sitter-elixir, tree-sitter-fortran, tree-sitter-go, tree-sitter-groovy, tree-sitter-java, tree-sitter-javascript, tree-sitter-json, tree-sitter-julia, tree-sitter-kotlin, tree-sitter-lua, tree-sitter-objc, tree-sitter-php, tree-sitter-powershell, tree-sitter-python, tree-sitter-ruby, tree-sitter-rust, tree-sitter-scala, tree-sitter-swift, tree-sitter-typescript, tree-sitter-verilog, tree-sitter-zig
+Required-by: 

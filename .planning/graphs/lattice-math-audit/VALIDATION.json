@@ -1,0 +1,44 @@
+{
+  "validated": true,
+  "source_file_count": 51,
+  "source_files_with_graph_evidence": 51,
+  "source_files_without_graph_evidence": [],
+  "node_count": 579,
+  "link_count": 1061,
+  "hyperedge_count": 0,
+  "community_count": 23,
+  "node_origins": {
+    "ast": 520,
+    "semantic": 59
+  },
+  "link_origins": {
+    "ast": 1061
+  },
+  "link_relations": {
+    "calls": 175,
+    "defines": 112,
+    "references": 282,
+    "imports": 220,
+    "imports_from": 37,
+    "contains": 177,
+    "inherits": 1,
+    "method": 4,
+    "rationale_for": 50,
+    "indirect_call": 2,
+    "uses": 1
+  },
+  "link_confidence": {
+    "EXTRACTED": 1047,
+    "INFERRED": 14
+  },
+  "source_location_count": 1455,
+  "cpp_node_count": 232,
+  "cpp_link_count": 616,
+  "artifact_sha256": {
+    "graph.json": "be1345aa5a9d6cfbbfd77a2e6bea88b54ca00903e6418af18cd35a8f5f832959",
+    "graph.html": "c91ed1e4a47ea19396d979eb901fbee3a53c375916873d05b1ab361824d4067d",
+    "GRAPH_REPORT.md": "0b7cb4dcdefd53be857dd5ce96bdd8c2e3ecc16f6e1223e06312a19e66b243ec",
+    "manifest.json": "63e8786525091d6cd360e20da505ac27e45090f54fa42278551798c97442c3a0",
+    "build.log": "d289487b420ee52c8a3444f5a5407057910ac898a0f14241d1caee6a9c1867a3"
+  }
+}

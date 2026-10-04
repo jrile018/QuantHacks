@@ -1,0 +1,155 @@
+{
+  "context": {
+    "date": "2026-09-05T14:34:10-04:00",
+    "host_name": "john-riley-X870-GAMING-WIFI6",
+    "executable": "./build/linux-gcc-release/bin/gm-benchmarks",
+    "num_cpus": 8,
+    "mhz_per_cpu": 4541,
+    "cpu_scaling_enabled": false,
+    "aslr_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 49152,
+        "num_sharing": 1
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1048576,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 100663296,
+        "num_sharing": 8
+      }
+    ],
+    "load_avg": [0.0771484,0.380859,0.593262],
+    "library_version": "v1.9.5",
+    "library_build_type": "release",
+    "json_schema_version": 1
+  },
+  "benchmarks": [
+    {
+      "name": "BM_Shrinkage",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "BM_Shrinkage",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 9802,
+      "real_time": 7.1440771771957836e+04,
+      "cpu_time": 7.1303755968169775e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_MantegnaDistance",
+      "family_index": 1,
+      "per_family_instance_index": 0,
+      "run_name": "BM_MantegnaDistance",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 49717,
+      "real_time": 1.4083304564020351e+04,
+      "cpu_time": 1.4077523724279419e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_ClassicalMds",
+      "family_index": 2,
+      "per_family_instance_index": 0,
+      "run_name": "BM_ClassicalMds",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 2361,
+      "real_time": 2.9649833502853033e+05,
+      "cpu_time": 2.9638156332062685e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_ProcrustesAlign",
+      "family_index": 3,
+      "per_family_instance_index": 0,
+      "run_name": "BM_ProcrustesAlign",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 840339,
+      "real_time": 8.3464443043048584e+02,
+      "cpu_time": 8.3433419727038745e+02,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_FitMahalanobis",
+      "family_index": 4,
+      "per_family_instance_index": 0,
+      "run_name": "BM_FitMahalanobis",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 448292,
+      "real_time": 1.5602989455825175e+03,
+      "cpu_time": 1.5596581870744967e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_FitKde",
+      "family_index": 5,
+      "per_family_instance_index": 0,
+      "run_name": "BM_FitKde",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 19022,
+      "real_time": 3.6803988324713864e+04,
+      "cpu_time": 3.6789410892650623e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_FitFastMcd",
+      "family_index": 6,
+      "per_family_instance_index": 0,
+      "run_name": "BM_FitFastMcd",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 9091,
+      "real_time": 7.7006953469601649e+04,
+      "cpu_time": 7.6977542074579236e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_FrameLoopEndToEnd",
+      "family_index": 7,
+      "per_family_instance_index": 0,
+      "run_name": "BM_FrameLoopEndToEnd",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 1738,
+      "real_time": 4.0285242975971330e+05,
+      "cpu_time": 4.0265242117376282e+05,
+      "time_unit": "ns"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# Build outputs
+build/
+build-*/
+build_*/
+out/
+
+# vcpkg tool + downloaded/built packages (bootstrapped locally, not committed)
+tools/vcpkg/
+tools/vcpkg_installed/
+tools/*.log
+
+# Data caches (large, timestamped, regenerable from source URLs)
+data/raw/*
+!data/raw/.gitkeep
+
+# Run artifacts (immutable but large; not source)
+runs/*
+!runs/.gitkeep
+
+# Editor / OS
+.vs/
+.vscode/
+*.user
+.DS_Store
+Thumbs.db
+
+# CMake
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+Testing/
+
+# ImGui writes its window layout beside the working directory it is run
+# from; it is per-developer UI state, not project configuration.
+imgui.ini
+
+# Python bytecode from the tools/ scripts
+__pycache__/
+*.pyc

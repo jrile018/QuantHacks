@@ -1,0 +1,263 @@
+{
+  "scope": "lattice-math-audit",
+  "root_git_head": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+  "native_git_head": "0d77fc4d15e1a84e0e6d5798617cc110c9f0390e",
+  "files": [
+    {
+      "path": "scripts/lattice_strategies/audit_frozen_targets.py",
+      "size": 3465,
+      "sha256": "f5005e596a4ef40e41e99f334f891fb1437abbff6f78dbed3348a170b4d23900"
+    },
+    {
+      "path": "scripts/lattice_strategies/run_study.py",
+      "size": 9458,
+      "sha256": "797733bee36aba62836bbf70e8c35301c0ebb4209d26962a9376c3a1584df3f9"
+    },
+    {
+      "path": "scripts/lattice_strategies/verify_outputs.py",
+      "size": 4175,
+      "sha256": "05a4830de1e21f85836d22de3782058bd47cbc90158d64aa41776ab6c5d5eb72"
+    },
+    {
+      "path": "src/contextual_lattice/context.py",
+      "size": 15320,
+      "sha256": "e0f956d9c6c94ccb60512a1798265ab4658e122c877182d8e2e0616b4f498cc1"
+    },
+    {
+      "path": "src/contextual_lattice/evaluation.py",
+      "size": 19026,
+      "sha256": "dcd1999f01499e7911efe379eaa64f3797f7fc7238262a81a2401762adf696e9"
+    },
+    {
+      "path": "src/contextual_lattice/options.py",
+      "size": 11331,
+      "sha256": "daa154506fecad7c466688bdb5fa67c4a47eb7b65a3214473f41d372eeaa4a7b"
+    },
+    {
+      "path": "src/contextual_lattice/tracking.py",
+      "size": 4644,
+      "sha256": "75c9ac47db331f382fc4140892bbf043b0ddc5ad71c86e0ebad1e44ac0803093"
+    },
+    {
+      "path": "src/lattice_strategies/__init__.py",
+      "size": 78,
+      "sha256": "9e1658f72e0318b9fd9e22130b87ba595cd4effb96c19c05ca142d10dfe8726a"
+    },
+    {
+      "path": "src/lattice_strategies/evaluation.py",
+      "size": 9535,
+      "sha256": "be0613d7ae9e4e3c9fd31656a241ae7b5696b029d3d56cd9aa3676e8697d1e7f"
+    },
+    {
+      "path": "src/lattice_strategies/graphs.py",
+      "size": 2452,
+      "sha256": "f8c60d5a67f682fe77c4c2988662803e223cc50f65394a8538752add9f46e126"
+    },
+    {
+      "path": "src/lattice_strategies/residuals.py",
+      "size": 11203,
+      "sha256": "7712a44f8b6c24c6ff86bc73b81ded17e288a7eab97f2da69aa3a264a4087f54"
+    },
+    {
+      "path": "src/lattice_strategies/risk.py",
+      "size": 12835,
+      "sha256": "766224f038ee97cdea9d688cb9a59475088d93329b4bdee7bf083b82fed6bbc4"
+    },
+    {
+      "path": "src/multi_market/__init__.py",
+      "size": 74,
+      "sha256": "d812d28d846226c0d7d29c4543f765aab026861840ae9aa34c81cdf24f669f00"
+    },
+    {
+      "path": "src/multi_market/evaluation.py",
+      "size": 14280,
+      "sha256": "370be883261e57099316588c7d2996c0437fbca7ca8360fac55f221471fb1c13"
+    },
+    {
+      "path": "src/multi_market/features.py",
+      "size": 8309,
+      "sha256": "25982ff4b0e144b6541607587679e9d28c496025460a5986d49c83a13ebd58e2"
+    },
+    {
+      "path": "src/multi_market/futures_study.py",
+      "size": 26942,
+      "sha256": "6a15a91cee5333d380c10394a59cf9d9dda4702ba75c7191554e1f8f1d8bf1d2"
+    },
+    {
+      "path": "src/multi_market/labels.py",
+      "size": 4690,
+      "sha256": "546fa5ac7c58c703aaae8918da8ef75856ed9e4eb42c3ab8d83c543cbbdaeab9"
+    },
+    {
+      "path": "stat-arb/apps/gm-boundaries/main.cpp",
+      "size": 44618,
+      "sha256": "a912e07584385c512a48fba970edc5e63fa045157d97523aafd09358fae61db4"
+    },
+    {
+      "path": "stat-arb/apps/gm-geometry/main.cpp",
+      "size": 28175,
+      "sha256": "ecf7300a24a594f46cddf2edf4b4b298d998c95b09c4c409ab65960797283e71"
+    },
+    {
+      "path": "stat-arb/apps/gm-signals/main.cpp",
+      "size": 31742,
+      "sha256": "40e4716ab20e747c4a8b8cc0292c19e690724a78a57e6a96288b608a6bc770ce"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/include/gm-boundaries/fastmcd.hpp",
+      "size": 7157,
+      "sha256": "e2f89fd721736ebf356b4e1047cb7d98b2b39fc28076eae21a2fb2aebc054a4a"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/include/gm-boundaries/kde.hpp",
+      "size": 3095,
+      "sha256": "cf035cbcb1e92febcb6c42beea0c36584890fbc2e8d807f72ce139d199991b9f"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/include/gm-boundaries/mahalanobis.hpp",
+      "size": 2633,
+      "sha256": "c6088d5c8da93ca105dbc88cf31c66b765ee1dba3461607649d0808207e312cd"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/src/fastmcd.cpp",
+      "size": 33477,
+      "sha256": "2c194e82b22c846575def5d6cbc4d3b419b2370034cebd326bb6b93002dd434b"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/src/fastmcd_detail.hpp",
+      "size": 2001,
+      "sha256": "ec23be3c94eb3f9a985ee2631f6222fe32f2367ef28ab63082557adff8f6a77e"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/src/kde.cpp",
+      "size": 5806,
+      "sha256": "ba22a5e511a90fa952d9b95f770f7f8de28a4e1827405f26ca0cccbb7a6d8d23"
+    },
+    {
+      "path": "stat-arb/libs/gm-boundaries/src/mahalanobis.cpp",
+      "size": 6919,
+      "sha256": "7eb8568cc17ceebeab3f5c7ed1c02a3dc9c82059f2d7ce4c462afed0151dd00c"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/correlation.hpp",
+      "size": 1328,
+      "sha256": "f15634a3dafd2b4495b68d3588596f8f0bea7852a71c4f0d94a1cfec39961b25"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/distance.hpp",
+      "size": 860,
+      "sha256": "46216f4463c3957492a16751e010a70d09c0041968c1db9e6fd1a39bd8bf1f86"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/graph.hpp",
+      "size": 2681,
+      "sha256": "698398a2d34b93d00e1ae175c967e07811a54b341021cdc15b59f027c32de9cb"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/mds.hpp",
+      "size": 1574,
+      "sha256": "c5cc4447717cfe1e145d5c74162376dbca00b2323875af5a80a05656123c48c6"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/procrustes.hpp",
+      "size": 1686,
+      "sha256": "f38062d97cd5d93b1214acff08d5045bfb9abddedfba78930706764d69eda088"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/rie.hpp",
+      "size": 3993,
+      "sha256": "172314e352f8435039b9526fdde3b6c8bef35bc0df2f0cf9f34fe04205aafc8b"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/rmt.hpp",
+      "size": 1516,
+      "sha256": "eaf4f83f15ba8da3427ef12315f24dcdd34faf896d35e16a6b10cba924f78185"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/include/gm-geometry/shrinkage.hpp",
+      "size": 1728,
+      "sha256": "9ba31c7b8dbed051ff7f9c04f18d536daa14f3155baeccad3e997fdc07cbd55d"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/correlation.cpp",
+      "size": 2613,
+      "sha256": "a319da992016dee5d42b284dec4681633fc0a323119a19616272106d76f88961"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/distance.cpp",
+      "size": 2107,
+      "sha256": "cba24be2f7ef23c7da900fb482a200206353299585b1287de41b19502477aee5"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/graph.cpp",
+      "size": 5631,
+      "sha256": "69b5f49ef3dcc873cbeca860e2a7d98cdc476c6180c06e9908cc7549afd17571"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/mds.cpp",
+      "size": 2328,
+      "sha256": "a3600de0db8a34854a837fc8ed1c2bd6816d51a744828fa820c2dad37d3b21b4"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/procrustes.cpp",
+      "size": 2248,
+      "sha256": "595e74a9c55a1d0654ae326f3889354bbdfbb609c733f41debc05860a2d9a2b1"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/rie.cpp",
+      "size": 5063,
+      "sha256": "6a160db5cab34011359187c3c15f7dab522b789eec4d7506a26f08115d49e1fe"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/rmt.cpp",
+      "size": 3483,
+      "sha256": "68b5bb96b3ca75ea82fd46e24f382f73e2784a12d0553924bef4db6c0e93fdf3"
+    },
+    {
+      "path": "stat-arb/libs/gm-geometry/src/shrinkage.cpp",
+      "size": 3866,
+      "sha256": "0c14242606e0c2c9391a2376fd074e884f87c979f2e120bc7993c0b1840fc0f7"
+    },
+    {
+      "path": "stat-arb/libs/gm-signals/include/gm-signals/excursion.hpp",
+      "size": 1756,
+      "sha256": "e3437708198c1bce14d34922c04d23a27edc85b5778f7366c95ad7f2e4073462"
+    },
+    {
+      "path": "stat-arb/libs/gm-signals/include/gm-signals/ou_fit.hpp",
+      "size": 1699,
+      "sha256": "f3d499ff4fff19e6d36c85895ce3da44e1e84a686765e030e56f7cecd8ff8870"
+    },
+    {
+      "path": "stat-arb/libs/gm-signals/include/gm-signals/peer_basket.hpp",
+      "size": 1431,
+      "sha256": "e0af0c4c458f045c4b11e1e80c51fc53e16aefcfe0468c2b6ea5b054ff3d9497"
+    },
+    {
+      "path": "stat-arb/libs/gm-signals/src/excursion.cpp",
+      "size": 2236,
+      "sha256": "35f642087c2ba73f3ab036affcca3f3fc64055726e6e18fe4abe97f4f9b23514"
+    },
+    {
+      "path": "stat-arb/libs/gm-signals/src/ou_fit.cpp",
+      "size": 5824,
+      "sha256": "1ae80f638d3323c3e7353fa09896bb25c4c7706a1d7d640c94a297bd6b7a0eff"
+    },
+    {
+      "path": "stat-arb/libs/gm-signals/src/peer_basket.cpp",
+      "size": 8743,
+      "sha256": "2308cd40ede62f3ba82529774f7e9be229a32616b6db570244b0e4d60e970206"
+    },
+    {
+      "path": "stat-arb/tools/options_bridge.py",
+      "size": 11049,
+      "sha256": "2035d1a8002577c0efc3d31589ecf420a1791aacc0955b85f09bf114fcd009eb"
+    },
+    {
+      "path": "stat-arb/tools/options_native.py",
+      "size": 27696,
+      "sha256": "b53b05b8c5112477f0a7a5d8c47be919334cc921b804cf5d9d7752b9facfbe44"
+    }
+  ],
+  "archive_sha256": "effbca6e1e2bb8cb9710edeb98299958839538c85251378c2be633d97e867c41"
+}

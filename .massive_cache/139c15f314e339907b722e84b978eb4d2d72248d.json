@@ -1,0 +1,1 @@
+{"ticker": "O:TMO250725P00435000", "queryCount": 2, "resultsCount": 2, "adjusted": false, "results": [{"v": 1, "vw": 20.05, "o": 20.05, "c": 20.05, "h": 20.05, "l": 20.05, "t": 1752552000000, "n": 1}, {"v": 5, "vw": 14.84, "o": 14.8, "c": 15, "h": 15, "l": 14.8, "t": 1753156800000, "n": 3}], "status": "OK", "request_id": "7fea2ff79d62d464973f7d01c054545a", "count": 2}

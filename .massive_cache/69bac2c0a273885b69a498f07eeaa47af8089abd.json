@@ -1,0 +1,1 @@
+{"ticker": "O:LLY240913C00870000", "queryCount": 2, "resultsCount": 2, "adjusted": false, "results": [{"v": 1, "vw": 49.17, "o": 49.17, "c": 49.17, "h": 49.17, "l": 49.17, "t": 1725508800000, "n": 1}, {"v": 3, "vw": 35.6067, "o": 34.34, "c": 39.3, "h": 39.3, "l": 33.18, "t": 1725595200000, "n": 3}], "status": "OK", "request_id": "e72fd1950fadc74454d3a883fc94565c", "count": 2}

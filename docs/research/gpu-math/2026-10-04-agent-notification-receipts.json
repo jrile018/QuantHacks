@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "timezone": "America/New_York",
+  "owner": "Check remote desktop GPU access",
+  "authorization": "optimize for all this and create a plan to implement all that and let all the agents know. do this in parallel",
+  "plan": "docs/superpowers/plans/2026-10-04-remote-gpu-math-optimization.md",
+  "delivery_attempts": [
+    {
+      "id": "01a1036f-6912-73f2-b9ff-513b7d6c8400",
+      "title": "Track work across project chats",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a1036f-6912-73f2-b9ff-513b7d6c8400\"}"
+    },
+    {
+      "id": "01a102c4-489a-7e80-acfe-9e545b25b99d",
+      "title": "Assess Lattice repo fit",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a102c4-489a-7e80-acfe-9e545b25b99d\"}"
+    },
+    {
+      "id": "01a10571-d8fb-7aa0-b526-b792caffbde2",
+      "title": "Research Sharpe confidence intervals",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a10571-d8fb-7aa0-b526-b792caffbde2\"}"
+    },
+    {
+      "id": "01a1029b-f907-7bc1-9127-bf22a03633cd",
+      "title": "Post Benchmark",
+      "ok": false,
+      "raw": "Cannot steer conversation 01a1029b-f907-7bc1-9127-bf22a03633cd without an active turn id"
+    },
+    {
+      "id": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+      "title": "Benchmark",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a1029e-8008-7d52-8f98-6c55f4aa739e\"}"
+    },
+    {
+      "id": "01a102d3-5cc5-7373-9620-523d2a1419a6",
+      "title": "Benchmark pt. 2 industry spec",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a102d3-5cc5-7373-9620-523d2a1419a6\"}"
+    },
+    {
+      "id": "01a1055f-309c-7682-a989-81dfeea8d6dd",
+      "title": "Organize Benchmark Data Push",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a1055f-309c-7682-a989-81dfeea8d6dd\"}"
+    },
+    {
+      "id": "01a1029b-f907-7bc1-9127-bf22a03633cd",
+      "title": "Post Benchmark",
+      "ok": true,
+      "raw": "{\"threadId\":\"01a1029b-f907-7bc1-9127-bf22a03633cd\"}",
+      "retryAfter": "fresh active turn 01a105d8-182c-78b2-bb39-e8e03bc8bf31"
+    }
+  ],
+  "delivered_peer_count": 7,
+  "acknowledgments_not_implied": true,
+  "implementation_not_executed": true
+}

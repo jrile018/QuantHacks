@@ -1,0 +1,29 @@
+{
+  "name": "geomarket",
+  "version": "0.1.0",
+  "description": "Geometric market manifold - equity relationship geometry for statistical arbitrage",
+  "builtin-baseline": "118bba14b94bc040c098c0c15e63c142148c05ca",
+  "dependencies": [
+    "eigen3",
+    "arrow",
+    "cpr",
+    "simdjson",
+    "nlohmann-json",
+    "tomlplusplus",
+    "spdlog",
+    "cli11",
+    "date",
+    "catch2",
+    "benchmark",
+    "osqp",
+    "boost-math",
+    "tbb",
+    {
+      "name": "imgui",
+      "features": ["glfw-binding", "opengl3-binding"]
+    },
+    "implot",
+    "glfw3",
+    "glad"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "note": "These Graphify links cross independent checkout namespaces. Treat each as an unresolved candidate, not verified runtime wiring.",
+  "count": 3,
+  "edges": [
+    {
+      "source_id": "validation_scripts_run_8k_validation_run",
+      "target_id": "root_scripts_multi_market_finalize_options_remote_sha",
+      "source_file": "validation/scripts/run_8k_validation.py",
+      "target_file": "root/scripts/multi_market/finalize_options_remote.py",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "source_location": "L113"
+    },
+    {
+      "source_id": "validation_src_research_validation_portfolio_replay_portfolio_price",
+      "target_id": "root_src_multi_market_labels_executable_price",
+      "source_file": "validation/src/research_validation/portfolio.py",
+      "target_file": "root/src/multi_market/labels.py",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "source_location": "L56"
+    },
+    {
+      "source_id": "validation_src_research_validation_portfolio_replay_portfolio",
+      "target_id": "root_src_multi_market_labels_quote",
+      "source_file": "validation/src/research_validation/portfolio.py",
+      "target_file": "root/src/multi_market/labels.py",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_location": "L50"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "account": null,
+  "qos": null,
+  "partition": null,
+  "gres": null,
+  "cpus_per_task": null,
+  "memory": null,
+  "time": null,
+  "workdir": null,
+  "python": null,
+  "environment_script": null,
+  "output_dir": null,
+  "model_cache": null,
+  "model_revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+  "dtype": "bfloat16",
+  "training_dataset_dir": null
+}
