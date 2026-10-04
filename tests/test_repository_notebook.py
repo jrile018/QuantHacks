@@ -31,6 +31,11 @@ class RepositoryNotebookTests(unittest.TestCase):
         self.assertIn("audit_exported_run", text)
         self.assertIn("run_simple_wording_backtest.py", text)
         self.assertIn("SYNTHETIC FABRICATED", text)
+        architecture = next(cell.source for cell in notebook.cells if cell.id == "strategy-universe-architecture")
+        for boundary in ("Signal and decision policy", "Security universe and market lifecycle", "Portfolio and execution policy", "Comparison and reporting gates"):
+            self.assertIn(boundary, architecture)
+        for contract in ("equities", "causal trade intents", "point-in-time", "single account ledger", "pricing units", "corporate-action", "cash/margin/collateral", "Futures", "independent qualification", "second account engine"):
+            self.assertIn(contract, architecture)
         for required in ("Continued OCR data", "Native HTML", "not a representative", "asset_period_context", "event_or_public_clock", "observed_window", "regime", "Turnover", "Maximum drawdown", "Win rate", "Sharpe", "sqrt(252)", "break-even", "collateral", "lookahead"):
             self.assertIn(required, text)
 

@@ -102,3 +102,18 @@ The notebook derives an asset/date context table from the frozen events, quotes,
 The notebook explains gross unit P&L versus full account net results, same-opportunity baseline, idle cash, integer-share exposure, fees, borrow/collateral, sparse marks, capacity and lookahead exclusions before the corresponding outputs. Sharpe, win rate, turnover and maximum drawdown remain N/A for real performance, with explicit definitions and missing-evidence reasons. It does not create fake headline metrics from synthetic tables.
 
 Continued OCR/model data is unavailable because the full PDF workload and reviewed historical coverage remain incomplete. Access/runtime/resource readiness, human gold labels and exact historical review are separate gaps. Native HTML can bypass OCR but cannot fill absent scanned information. Missing extraction is never neutral sentiment or zero return, and the retained subset is not a representative full-corpus sample.
+
+### Equity implementation and reuse across strategies and universes
+
+The bundled canonical engineering route runs on **equities**: wording signal -> historical eligibility -> frozen long/short target policy -> executable quotes, costs and borrow -> single account ledger -> complete-calendar NAV and matched baseline -> qualified metrics. This fixture exercises the wiring with fabricated data; it does not qualify historical trading performance.
+
+The architecture separates those responsibilities so the same account workflow can support other strategy definitions and security universes. Reuse requires each strategy to produce **causal trade intents** from accepted point-in-time features, and each universe to supply tested lifecycle adapters and a frozen protocol. It is not an arbitrary asset or strategy plug-in that becomes validated merely by producing a signal.
+
+| Boundary | Current equity route | Required for another strategy or universe |
+| --- | --- | --- |
+| Signal and decision policy | Frozen wording sign, eligibility, timing, equal-dollar integer-share long/short targets | Accepted point-in-time features, past-only selection, causal intents and frozen sizing/entry/exit rules; test unavailable or late information |
+| Security universe and market lifecycle | Dated equity identity, reference sessions, executable quotes and same-session corporate-action coverage | Dated security mapping, calendars/timezones, pricing units and multipliers, expiry/settlement/corporate-action lifecycle adapters and independent acceptance |
+| Portfolio and execution policy | Existing single account ledger, cash, restricted short proceeds, borrow, margin/collateral and costs | Tested cash/margin/collateral and cost/financing lifecycle adapters; accepted fills/no-fills, capacity, exposure and account reconciliation |
+| Comparison and reporting gates | Complete regular-calendar NAV, matched always-long/zero-cash baselines, withheld unqualified headlines | Same eligible opportunity set and valuation window, complete ledger/marks, relevant comparator and independently qualified metric evidence |
+
+The separate options example reports gross unit mechanics and does not inherit equity account qualification. Futures or other universes need their own dated contract/unit/settlement and margin adapters, frozen strategy protocols and independent qualification. They should reuse the existing account engine through tested adapters rather than introduce a second account engine. A reusable interface preserves missing-evidence gates; it does not erase asset-specific risks or imply that every strategy is implemented here.
