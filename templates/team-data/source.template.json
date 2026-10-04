@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "source_id": "REPLACE_SOURCE_ID",
+  "owner": "REPLACE_OWNER",
+  "stage": "discovery",
+  "engine": "native"
+}

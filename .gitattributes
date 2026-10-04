@@ -1,0 +1,3 @@
+examples/team_sources/** text eol=lf
+examples/team_data/*.txt text eol=lf
+examples/team_data/*.jsonl text eol=lf

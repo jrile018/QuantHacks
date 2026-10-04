@@ -87,3 +87,27 @@ python scripts/import_tiger.py --service-id YOUR_TIGER_SERVICE_ID
 ```
 
 Use `--dry-run` to see the file and row counts without writing. The importer uses the CLI's saved credentials; no database password enters the repository. It creates the `quant_hacks` schema with `source_files` (exact file bytes and SHA-256 hashes), `study_runs` (manifests), `study_rows` (CSV rows as JSON), and an `api_responses` JSON view. Repeating the import updates the same files and study run instead of adding duplicate rows. See [data/README.md](data/README.md) for example queries. Local files remain in place as a second copy.
+
+## Teammate sources and passing PR merges
+
+Benchmark and Benchmark Part 2 contributors use this repository's shared document schema and independent `codex/source-<source-id>-<owner>` branches. Start with the [team data guide](docs/team-data/README.md), [source contract](docs/team-data/source-contract.md) and [agent instructions](AGENTS.md). The guide includes a copyable agent prompt, source registration, OCR setup, synthetic fixtures, safe rebasing and exact-head merging.
+
+Register `configs/sources/<source-id>/{source.json,manifest.jsonl,README.md}` using the [source metadata](templates/team-data/source.template.json) and [manifest](templates/team-data/manifest.template.jsonl) templates. Commit URLs, adapters, matching tests and small synthetic fixtures. Download originals into ignored `data/raw/team_sources/<source-id>/` and write results into ignored `data/processed/team_sources/<source-id>/`; full-data storage will be decided later.
+
+Run these setup checks before opening a source PR:
+
+```powershell
+python scripts/validate_team_sources.py --repo-root .
+python scripts/run_document_batch.py --manifest examples/team_data/manifest.jsonl --output-dir data/processed/team_sources/onboarding-smoke --engine native
+python -m unittest tests.test_source_validation tests.test_source_pr_policy tests.test_shared_review tests.test_document_manifest tests.test_document_transcript tests.test_document_evidence tests.test_document_language tests.test_document_report tests.test_analyze_8k_documents
+git fetch origin
+python scripts/check_source_pr.py --repo-root . --base origin/main --head HEAD --branch YOUR_SOURCE_BRANCH
+```
+
+Run source adapter tests as well. The validator rejects missing metadata, unresolved placeholders, duplicate or unnamespaced IDs, invalid URLs/paths/hashes and invalid UTC fields. Sources marked extracted also need a hashed synthetic TXT/HTML fixture; validation runs extraction and checks transcript hashes and evidence slices. Discovery registrations can pass without downloading originals and do not claim OCR readiness.
+
+Teammate agents are authorized to merge passing **source-only** PRs using the [source PR checklist](.github/PULL_REQUEST_TEMPLATE/data-source.md). GitHub requires `source-configuration` and `Source adapter tests` on the current PR version. The first uses trusted base code to validate candidate configuration and source-only scope; the second runs the published offline suite and adapter tests without write credentials. Main must be up to date, and the merge command must use `--match-head-commit` as shown in the guide. Shared schema, pipeline, workflow or validator changes need a separate maintainer-reviewed PR.
+
+For shared changes, the repository owner must approve the current commit in GitHub. For a PR they authored, they can instead post the exact comment `approve-shared-change: FULL_HEAD_SHA`. The owner then applies or reapplies a label (for example, run-source-checks) to rerun the trusted check. A new push invalidates the previous approval. Using a different branch name does not bypass this review requirement.
+
+These checks establish configuration and reproducible intake behavior. Actual scanned-page recognition requires a local OCR pilot with the selected backend; accepted benchmark features still require the relevant producer/consumer checks.
