@@ -6,6 +6,7 @@ fetch missing API records. Disclosures are candidates, not verified AI adoption.
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ProcessPoolExecutor
 import csv
 import datetime as dt
 import hashlib
@@ -23,12 +24,17 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 from sec_common import SecClient
 
-FORMS = {"10-K", "10-Q", "10-K/A", "10-Q/A", "20-F", "20-F/A", "40-F", "40-F/A", "6-K", "6-K/A", "8-K", "8-K/A"}
+FORMS = {"10-K", "10-Q", "10-K/A", "10-Q/A", "20-F", "20-F/A", "40-F", "40-F/A", "6-K", "6-K/A", "8-K", "8-K/A",
+         "S-1", "S-1/A", "F-1", "F-1/A", "S-4", "S-4/A", "F-4", "F-4/A"}
 # Similar-sounding concepts are deliberately kept distinct.
 FLOWS = {
     "revenue": ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues", "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueNet"],
     "rd_expense": ["ResearchAndDevelopmentExpense", "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost"],
+    "software_rd_expense_excluding_acquired_in_process": ["ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost"],
     "sales_marketing": ["SellingAndMarketingExpense"],
+    "marketing_expense": ["MarketingExpense"],
+    "marketing_advertising_expense": ["MarketingAndAdvertisingExpense"],
+    "selling_expense": ["SellingExpense"],
     "cost_of_revenue": ["CostOfRevenue", "CostOfGoodsAndServicesSold"],
     "gross_profit": ["GrossProfit"],
     "operating_income": ["OperatingIncomeLoss"],
@@ -44,6 +50,10 @@ FLOWS = {
     "land_held_for_use_purchases": ["PaymentsToAcquireLandHeldForUse"],
     "building_purchases": ["PaymentsToAcquireBuildings"],
     "equipment_on_lease_purchases": ["PaymentsToAcquireEquipmentOnLease"],
+    "general_and_administrative": ["GeneralAndAdministrativeExpense"],
+    "selling_general_and_administrative": ["SellingGeneralAndAdministrativeExpense"],
+    "advertising_expense": ["AdvertisingExpense"],
+    "restructuring_charges": ["RestructuringCharges", "RestructuringAndRelatedCostIncurredCost"],
 }
 INSTANTS = {
     "total_assets": ["Assets"], "goodwill": ["Goodwill"],
@@ -61,12 +71,15 @@ INSTANTS = {
     "purchase_obligations": ["PurchaseObligation"],
     "purchase_obligations_next_12_months": ["PurchaseObligationDueInNextTwelveMonths"],
     "unrecorded_unconditional_purchase_obligations": ["UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"],
+    "deferred_revenue_noncurrent": ["ContractWithCustomerLiabilityNoncurrent", "DeferredRevenueNoncurrent"],
+    "long_term_debt_noncurrent": ["LongTermDebtNoncurrent"],
+    "long_term_debt_current": ["LongTermDebtCurrent"],
 }
 METRICS = {**FLOWS, **INSTANTS}
 ID = ["cik", "ticker", "name"]
 FACT_FIELDS = ID + ["metric", "taxonomy", "tag", "unit", "period_start", "period_end", "value", "filed_date", "available_date_conservative", "form", "accession", "source_url", "pre_2022_context"]
 PROVENANCE_FIELDS = ID + ["period_end", "metric", "basis", "value", "method", "quality", "available_date_conservative", "source_fact_ids"]
-RATIOS = ["rd_pct_rev", "sm_pct_rev", "sbc_pct_rev", "gross_margin", "physical_capex_pct_rev", "fcf_physical_capex_margin", "goodwill_to_assets", "purchase_obligations_pct_ttm_rev", "rev_growth_yoy_q"]
+RATIOS = ["rd_pct_rev", "software_rd_pct_rev", "sm_pct_rev", "sbc_pct_rev", "gross_margin", "physical_capex_pct_rev", "fcf_physical_capex_margin", "goodwill_to_assets", "purchase_obligations_pct_ttm_rev", "rev_growth_yoy_q"]
 QUARTER_FIELDS = ID + ["period_start", "period_end", "available_date_conservative", "history_limitation", "derivation_quality"] + [field for m in FLOWS for field in (f"q_{m}", f"ttm_{m}")] + list(INSTANTS) + RATIOS
 EVIDENCE_FIELDS = ID + ["evidence_id", "category", "classification", "review_status", "form", "accession", "filed_date", "available_date_conservative", "source_url", "local_path", "excerpt", "vendors_mentioned", "numeric_mentions_unvalidated", "amount_usd", "employee_seats", "first_seen_in_scanned_filings"]
 INLINE_FIELDS = ID + ["tag", "value", "raw_value", "unit", "period_start", "period_end", "dimensions", "form", "accession", "filed_date", "available_date_conservative", "source_url", "context_id", "numeric_status", "interpretation_status"]
@@ -163,15 +176,45 @@ def instant_series(facts):
     return result
 
 
-def trailing(series, end, quarter):
+def non_overlapping_quarters(series):
+    """Retain earliest available periods when later comparatives overlap calendars.
+
+    Preserve the excluded observations for review; do not invent transition
+    quarters or combine two historical fiscal calendars into one TTM sequence.
+    """
+    selected, excluded = {}, []
+    for q in sorted(series.values(), key=lambda q: (q['filed'], q['end'])):
+        conflicts = [p for p in selected.values()
+                     if min(p['end'],q['end']) >= max(p['start'],q['start'])
+                     and days(max(p['start'],q['start']),min(p['end'],q['end'])) > 3]
+        if conflicts:
+            excluded.append((q, conflicts))
+        else:
+            selected[q['end']] = q
+    return selected, excluded
+
+
+def trailing(series, end, quarter, facts=None):
+    """Prefer an available reported annual total over reconstructing that same year.
+
+    Annual observations can fill TTM even when intermediate quarters are absent.
+    Their actual filing date is retained, never the financial period end.
+    """
+    annuals = [f for f in (facts or []) if f.get("start") and f["end"] == end
+               and 350 <= days(f["start"], end) <= 380]
+    annual = min(annuals, key=lambda f: (f["filed"], f["priority"], f["accn"]), default=None)
+    direct = value_record(annual["val"], annual["start"], end, [annual], "reported_annual_ttm", "reported") if annual else None
     if end not in series or abs(days(series[end]["start"], quarter["start"])) > 3:
-        return None
+        return direct
     values = [series[e] for e in sorted(series) if e <= end][-4:]
     if len(values) != 4 or any(not 80 <= days(a["end"], b["end"]) <= 100 or abs(days(next_day(a["end"]), b["start"])) > 3 for a, b in zip(values, values[1:])):
-        return None
+        return direct
     refs = [f for v in values for f in v["facts"]]
     quality = "cross_filing_basis_unverified" if any(v["quality"] == "cross_filing_basis_unverified" for v in values) else "reported_or_same_filing_derived"
-    return value_record(sum(v["value"] for v in values), values[0]["start"], end, refs, "four_consecutive_quarters", quality)
+    derived = value_record(sum(v["value"] for v in values), values[0]["start"], end, refs, "four_consecutive_quarters", quality)
+    if direct and direct["start"] == derived["start"] and direct["filed"] <= derived["filed"]:
+        return direct
+    return derived
 
 
 def ratio(a, b):
@@ -179,7 +222,7 @@ def ratio(a, b):
 
 
 def build_quarters(company, facts, start, end):
-    flows = {m: quarterly_series(facts[m]) for m in FLOWS}
+    flows = {m: non_overlapping_quarters(quarterly_series(facts[m]))[0] for m in FLOWS}
     instants = {m: instant_series(facts[m]) for m in INSTANTS}
     rows, provenance = [], []
     for period_end, revenue in sorted(flows["revenue"].items()):
@@ -192,7 +235,7 @@ def build_quarters(company, facts, start, end):
             q = series.get(period_end)
             if q and abs(days(q["start"], revenue["start"])) > 3:
                 q = None
-            t = trailing(series, period_end, revenue)
+            t = trailing(series, period_end, revenue, facts[m])
             row[f"q_{m}"] = q["value"] if q else ""
             row[f"ttm_{m}"] = t["value"] if t else ""
             totals[m] = t["value"] if t else None
@@ -215,12 +258,20 @@ def build_quarters(company, facts, start, end):
                                    "quality": v["quality"], "available_date_conservative": next_day(v["filed"]),
                                    "source_fact_ids": v["facts"][0]["id"]})
         revenue_ttm = totals["revenue"]
+        # A fiscal transition may produce annual totals spanning a different year.
+        # Keep the raw metric but exclude such totals from ratios to revenue.
+        rev_t = trailing(flows["revenue"], period_end, revenue, facts["revenue"])
+        for m in FLOWS:
+            mt = trailing(flows[m], period_end, revenue, facts[m])
+            if mt and rev_t and abs(days(mt["start"], rev_t["start"])) > 3:
+                totals[m] = None
         gross = totals["gross_profit"]
         if gross is None and revenue_ttm is not None and totals["cost_of_revenue"] is not None:
             gross = revenue_ttm - totals["cost_of_revenue"]
         ocf, physical = totals["operating_cash_flow"], totals["physical_asset_purchases"]
         fcf = ocf - physical if ocf is not None and physical is not None else None
         row.update(rd_pct_rev=ratio(totals["rd_expense"], revenue_ttm),
+                   software_rd_pct_rev=ratio(totals["software_rd_expense_excluding_acquired_in_process"], revenue_ttm),
                    sm_pct_rev=ratio(totals["sales_marketing"], revenue_ttm),
                    sbc_pct_rev=ratio(totals["stock_comp"], revenue_ttm), gross_margin=ratio(gross, revenue_ttm),
                    physical_capex_pct_rev=ratio(physical, revenue_ttm), fcf_physical_capex_margin=ratio(fcf, revenue_ttm),
@@ -406,13 +457,33 @@ def write_csv(path, fields, rows):
         writer.writerows(rows)
 
 
+def scan_document(local_path):
+    """Independent filing parse, suitable for a bounded local worker pool."""
+    try:
+        raw = (ROOT / local_path).read_text(encoding="utf-8", errors="replace")
+        if not (AI.search(raw) or CLOUD.search(raw) or HARDWARE.search(raw)
+                or re.search(r"name=[\"'][^\"']*(?:Land|Building|Equipment|Hardware|Hosting|Cloud|Software)[^\"']*[\"']", raw, re.I)):
+            return [], "", ""
+        parser, text = parse_relevant_filing(raw)
+        return list(parser.tagged_facts()), text, ""
+    except Exception as exc:
+        return [], "", type(exc).__name__
+
+
+def bounded_scan(pool, filings, workers):
+    # Bound pending parsed text rather than queuing the entire archive in memory.
+    for offset in range(0, len(filings), workers * 4):
+        batch = filings[offset:offset + workers * 4]
+        yield from pool.map(scan_document, (f['local_path'] for f in batch), chunksize=2)
+
+
 def run(args):
     companies = csv_rows(args.companies)
     if len({c["cik"] for c in companies}) != len(companies):
         raise ValueError("Company CIKs must be unique")
     args.output.mkdir(parents=True, exist_ok=True)
     client = SecClient()
-    quarterly, provenance, coverage, errors, sources = [], [], [], [], []
+    quarterly, provenance, coverage, errors, sources, calendar_reviews, annual_reported = [], [], [], [], [], [], []
     fact_path = args.output / "reported_financial_facts.csv"
     with fact_path.open("w", newline="", encoding="utf-8") as output:
         writer = csv.DictWriter(output, fieldnames=["fact_id"] + FACT_FIELDS)
@@ -436,6 +507,26 @@ def run(args):
                 if int(data["cik"]) != int(company["cik"]):
                     raise ValueError("API response CIK differs from input company")
                 facts = collect_facts(company, data, args.end)
+                for metric in FLOWS:
+                    annual_best = {}
+                    for f in sorted(facts[metric],key=lambda f:(f['filed'],f['priority'],f['accn'])):
+                        if f.get('start') and args.start <= f['end'] <= args.end and 350 <= days(f['start'],f['end']) <= 380:
+                            annual_best.setdefault((f['start'],f['end']),f)
+                    for f in annual_best.values():
+                        annual_reported.append({**{k:company[k] for k in ID},'metric':metric,'period_start':f['start'],
+                                                'period_end':f['end'],'value':f['val'],'tag':f['tag'],'unit':'USD',
+                                                'form':f['form'],'filed_date':f['filed'],'available_date_conservative':next_day(f['filed']),
+                                                'source_fact_ids':f['id'],'source_url':source_url(company['cik'],f['accn']),
+                                                'quality':'direct_reported_annual_not_an_invented_quarter'})
+                for metric in FLOWS:
+                    _, excluded = non_overlapping_quarters(quarterly_series(facts[metric]))
+                    for observation, conflicts in excluded:
+                        calendar_reviews.append({**{k:company[k] for k in ID}, 'metric':metric,
+                                                 'excluded_start':observation['start'], 'excluded_end':observation['end'],
+                                                 'excluded_filed':observation['filed'],
+                                                 'retained_period_ends':';'.join(q['end'] for q in conflicts),
+                                                 'source_fact_ids':';'.join(f['id'] for f in observation['facts']),
+                                                 'reason':'later_available_overlapping_period_preserved_in_reported_facts'})
                 company_quarters, refs = build_quarters(company, facts, args.start, args.end)
                 quarterly.extend(company_quarters)
                 provenance.extend(refs)
@@ -463,15 +554,36 @@ def run(args):
                                  "first_period_end": min((f["end"] for f in selected), default=""),
                                  "last_period_end": max((f["end"] for f in selected), default="")})
     write_csv(args.output / "fundamentals_quarterly.csv", QUARTER_FIELDS, quarterly)
+    write_csv(args.output / 'reported_annual_metrics.csv', ID+['metric','period_start','period_end','value','tag','unit','form','filed_date','available_date_conservative','source_fact_ids','source_url','quality'],annual_reported)
+    write_csv(args.output / "quarter_calendar_review.csv", ID + ['metric','excluded_start','excluded_end','excluded_filed','retained_period_ends','source_fact_ids','reason'], calendar_reviews)
     write_csv(args.output / "quarterly_metric_sources.csv", PROVENANCE_FIELDS, provenance)
     write_csv(args.output / "financial_coverage.csv", ID + ["metric", "status", "reported_fact_count", "quarters_with_metric", "first_period_end", "last_period_end"], coverage)
+    if args.financial_only:
+        manifest_path = args.output / 'manifest.json'
+        manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+        manifest.update(financial_run_at=dt.datetime.now(dt.timezone.utc).isoformat(),
+                        start=args.start,end=args.end,company_count=len(companies),quarterly_rows=len(quarterly),
+                        financial_errors=errors,companyfacts_sources=sources,
+                        overlapping_calendar_observations_excluded=len(calendar_reviews))
+        manifest_path.write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+        print(f'Financial refresh: {len(quarterly)} quarterly rows, {len(calendar_reviews)} calendar review records, {len(errors)} errors',flush=True)
+        return int(bool(errors))
     index_path = args.sec / "filings_index.csv"
     filings = csv_rows(index_path) if index_path.exists() else []
     by_cik = {int(c["cik"]): c for c in companies}
     scanned, missing, evidence_counts, exhibits_scanned = Counter(), Counter(), Counter(), Counter()
     events, seen, inline_facts, inline_seen = [], set(), [], set()
     eligible = sorted((f for f in filings if int(f["cik"]) in by_cik and f["form"] in FORMS and args.start <= f["filing_date"] <= args.end), key=lambda f: (f["filing_date"], f["accession"]))
-    for i, filing in enumerate(eligible, 1):
+    valid = []
+    for filing in eligible:
+        path = (ROOT / filing["local_path"]).resolve()
+        if not path.is_relative_to(args.sec.resolve()) or not path.exists():
+            missing[by_cik[int(filing["cik"])]["cik"]] += 1
+        else:
+            valid.append(filing)
+    pool = ProcessPoolExecutor(max_workers=args.workers) if args.workers > 1 else None
+    results = bounded_scan(pool, valid, args.workers) if pool else map(scan_document, (f["local_path"] for f in valid))
+    for i, (filing, parsed) in enumerate(zip(valid, results), 1):
         if i == 1 or i % 250 == 0:
             print(f"Filing evidence {i}/{len(eligible)}", flush=True)
         company = by_cik[int(filing["cik"])]
@@ -479,24 +591,16 @@ def run(args):
         if not path.is_relative_to(args.sec.resolve()) or not path.exists():
             missing[company["cik"]] += 1
             continue
-        parser = FilingText()
-        try:
-            raw = path.read_text(encoding="utf-8", errors="replace")
-            # Most routine 8-Ks have no relevant text or inline asset facts.
-            if not (AI.search(raw) or CLOUD.search(raw) or HARDWARE.search(raw)
-                    or re.search(r"name=[\"'][^\"']*(?:Land|Building|Equipment|Hardware|Hosting|Cloud|Software)[^\"']*[\"']", raw, re.I)):
-                scanned[company["cik"]] += 1
-                continue
-            parser, text = parse_relevant_filing(raw)
-        except Exception as exc:
-            errors.append({"cik": company["cik"], "ticker": company["ticker"], "stage": "filing_text", "error": type(exc).__name__, "http_status": ""})
+        tagged_records, text, error = parsed
+        if error:
+            errors.append({"cik": company["cik"], "ticker": company["ticker"], "stage": "filing_text", "error": error, "http_status": ""})
             missing[company["cik"]] += 1
             continue
         scanned[company["cik"]] += 1
         if filing.get("document_role") == "linked_exhibit":
             exhibits_scanned[company["cik"]] += 1
         url = f"https://www.sec.gov/Archives/edgar/data/{int(company['cik'])}/{filing['accession'].replace('-', '')}/{filing['primary_document']}"
-        for tagged in parser.tagged_facts():
+        for tagged in tagged_records:
             if not tagged["period_end"] or not args.start <= tagged["period_end"] <= args.end:
                 continue
             key = (company["cik"], filing["accession"], tagged["tag"], tagged["context_id"], str(tagged["value"]), tagged["raw_value"])
@@ -522,6 +626,8 @@ def run(args):
                            "numeric_mentions_unvalidated": ";".join(NUMBER.findall(snippet)),
                            "amount_usd": "", "employee_seats": "", "first_seen_in_scanned_filings": True})
             evidence_counts[(company["cik"], category)] += 1
+    if pool:
+        pool.shutdown()
     write_csv(args.output / "disclosure_evidence.csv", EVIDENCE_FIELDS, events)
     write_csv(args.output / "filing_tagged_asset_and_cloud_facts.csv", INLINE_FIELDS, inline_facts)
     write_csv(args.output / "disclosure_coverage.csv", ID + ["filings_scanned", "linked_exhibits_scanned", "filings_missing", "ai_candidates", "cloud_candidates", "physical_asset_candidates", "status", "scope"],
@@ -551,6 +657,8 @@ def main():
     parser.add_argument("--start", default="2022-01-01")
     parser.add_argument("--end", default=dt.datetime.now(dt.timezone.utc).date().isoformat())
     parser.add_argument("--offline", action="store_true", help="Use only previously downloaded genuine SEC data")
+    parser.add_argument("--workers", type=int, default=1, choices=range(1, 9), help="Local filing parser processes")
+    parser.add_argument("--financial-only", action="store_true", help="Refresh financial tables without rescanning or replacing disclosure tables")
     parser.add_argument("--check-api", action="store_true", help="Verify your SEC contact header against the public Company Facts API, then exit")
     args = parser.parse_args()
     if args.check_api:

@@ -64,6 +64,42 @@ def main() -> int:
     signals = {r["ticker"]: r for r in read_rows(HERE / "output" / "filing_signals.csv")}
     fedreg = {r["ticker"]: r for r in read_rows(HERE / "output" / "federal_register_by_company.csv")}
     details = {r["ticker"]: r for r in read_rows(HERE / "output" / "ticker_details.csv")}
+
+    # Latest annual value per company for the XBRL gap metrics (public float, deal and
+    # contingency figures). Keyed on the newest period end.
+    xbrl_latest: dict[tuple[str, str], dict] = {}
+    for r in read_rows(HERE / "output" / "xbrl_gaps_annual.csv"):
+        key = (r["ticker"], r["metric"])
+        prev = xbrl_latest.get(key)
+        if prev is None or r["period_end"] > prev["period_end"]:
+            xbrl_latest[key] = r
+
+    # Customer concentration: only the trustworthy subset (a counted or single customer
+    # actually at or above the threshold), and the highest percentage stated
+    conc_max: dict[str, float] = {}
+    for r in read_rows(HERE / "output" / "customer_concentration.csv"):
+        if r.get("statement") == "customer_at_or_above" and r.get("specificity") == "counted_or_single":
+            pct = float(r["pct_of_revenue"])
+            conc_max[r["ticker"]] = max(conc_max.get(r["ticker"], 0.0), pct)
+
+    # Legal proceedings: size of the latest Item 3 discussion
+    legal_latest: dict[str, dict] = {}
+    for r in read_rows(HERE / "output" / "legal_proceedings.csv"):
+        prev = legal_latest.get(r["ticker"])
+        if prev is None or r["filing_date"] > prev["filing_date"]:
+            legal_latest[r["ticker"]] = r
+
+    departures: dict[str, dict[str, int]] = defaultdict(lambda: {"total": 0, "immediate": 0, "for_cause": 0})
+    for r in read_rows(HERE / "output" / "executive_departures.csv"):
+        d = departures[r["ticker"]]
+        d["total"] += 1
+        d["immediate"] += 1 if r.get("immediate") == "yes" else 0
+        d["for_cause"] += 1 if r.get("for_cause") == "yes" else 0
+
+    auditors = {r["ticker"]: r for r in read_rows(HERE / "output" / "company_auditors.csv")}
+    auditor_changes: dict[str, int] = defaultdict(int)
+    for r in read_rows(HERE / "output" / "auditor_changes.csv"):
+        auditor_changes[r["ticker"]] += 1
     enforcement = {r["ticker"]: r for r in read_rows(HERE / "output" / "sec_enforcement_by_company.csv")}
 
     # 10-K text flags: keep the latest filing per company, plus a count of filings scanned
@@ -91,6 +127,13 @@ def main() -> int:
                "insider_filings_since_2022", "ownership_filings_since_2022",
                "late_filing_notices_since_2022", "sec_comment_letters_since_2022",
                "federal_register_documents", "news_articles",
+               "public_float", "public_float_validation",
+               "goodwill_added_latest_year", "divestiture_proceeds_latest_year",
+               "loss_contingency_accrual", "convertible_debt_noncurrent",
+               "max_customer_pct_of_revenue", "latest_item3_chars",
+               "states_no_material_litigation",
+               "departure_filings", "departures_immediate", "departures_for_cause",
+               "auditor", "auditor_changes_since_2022",
                "tenk_filings_scanned", "latest_tenk_date"]
               + [f"tenk_{f}" for f in TENK_FLAGS]
               + [f"8k_item_{i.replace('.', '_')}" for i in ITEMS_8K])
@@ -128,6 +171,20 @@ def main() -> int:
             "late_filing_notices_since_2022": sig.get("late_filing_notices", ""),
             "sec_comment_letters_since_2022": sig.get("sec_comment_letters", ""),
             "federal_register_documents": fedreg.get(t, {}).get("total_matching_documents", ""),
+            "public_float": xbrl_latest.get((t, "public_float"), {}).get("value", ""),
+            "public_float_validation": xbrl_latest.get((t, "public_float"), {}).get("validation", ""),
+            "goodwill_added_latest_year": xbrl_latest.get((t, "goodwill_acquired_in_year"), {}).get("value", ""),
+            "divestiture_proceeds_latest_year": xbrl_latest.get((t, "divestiture_proceeds"), {}).get("value", ""),
+            "loss_contingency_accrual": xbrl_latest.get((t, "loss_contingency_accrual"), {}).get("value", ""),
+            "convertible_debt_noncurrent": xbrl_latest.get((t, "convertible_debt_noncurrent"), {}).get("value", ""),
+            "max_customer_pct_of_revenue": conc_max.get(t, ""),
+            "latest_item3_chars": legal_latest.get(t, {}).get("item3_chars", ""),
+            "states_no_material_litigation": legal_latest.get(t, {}).get("states_no_material_litigation", ""),
+            "departure_filings": departures[t]["total"] if t in departures else 0,
+            "departures_immediate": departures[t]["immediate"] if t in departures else 0,
+            "departures_for_cause": departures[t]["for_cause"] if t in departures else 0,
+            "auditor": auditors.get(t, {}).get("auditor", ""),
+            "auditor_changes_since_2022": auditor_changes.get(t, 0),
             "tenk_filings_scanned": tenk_count.get(t, 0),
             "latest_tenk_date": tenk.get("filing_date", ""),
             "latest_period_end": f.get("period_end", ""),

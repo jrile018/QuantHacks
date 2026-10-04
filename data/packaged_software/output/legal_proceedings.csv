@@ -1,0 +1,833 @@
+cik,ticker,name,form,filing_date,item3_found,item3_chars,states_no_material_litigation,case_patent,case_securities_class_action,case_shareholder_derivative,case_employment,case_privacy_data,case_contract_dispute,case_antitrust
+0000935036,ACIW,"ACI Worldwide, Inc.",10-K,2022-02-24,yes,208,no,0,0,0,0,0,0,0
+0000935036,ACIW,"ACI Worldwide, Inc.",10-K,2023-03-01,yes,208,no,0,0,0,0,0,0,0
+0000935036,ACIW,"ACI Worldwide, Inc.",10-K,2024-02-29,yes,208,no,0,0,0,0,0,0,0
+0000935036,ACIW,"ACI Worldwide, Inc.",10-K,2025-02-27,yes,208,no,0,0,0,0,0,0,0
+0000935036,ACIW,"ACI Worldwide, Inc.",10-K,2026-02-26,yes,208,no,0,0,0,0,0,0,0
+0000796343,ADBE,Adobe Inc.,10-K,2022-01-21,yes,164,no,0,0,0,0,0,0,0
+0000796343,ADBE,Adobe Inc.,10-K,2023-01-17,yes,164,no,0,0,0,0,0,0,0
+0000796343,ADBE,Adobe Inc.,10-K,2024-01-17,yes,164,no,0,0,0,0,0,0,0
+0000796343,ADBE,Adobe Inc.,10-K,2025-01-13,yes,164,no,0,0,0,0,0,0,0
+0000796343,ADBE,Adobe Inc.,10-K,2026-01-15,yes,164,no,0,0,0,0,0,0,0
+0000769397,ADSK,Autodesk Inc,10-K,2022-03-14,yes,1040,no,0,0,0,0,0,0,0
+0000769397,ADSK,Autodesk Inc,10-K,2023-03-14,yes,1061,no,0,0,0,0,0,0,0
+0000769397,ADSK,Autodesk Inc,10-K,2024-06-10,yes,3774,no,0,2,1,0,0,0,0
+0000769397,ADSK,Autodesk Inc,10-K,2025-03-06,yes,4928,no,0,4,4,0,0,0,0
+0000769397,ADSK,Autodesk Inc,10-K,2026-03-03,yes,5644,no,0,4,4,0,0,0,0
+0001362190,AEYE,"AudioEye, Inc. Common Stock",10-K,2022-03-11,yes,1474,no,0,0,0,0,0,0,0
+0001362190,AEYE,"AudioEye, Inc. Common Stock",10-K,2023-03-09,yes,1290,no,0,0,0,0,0,0,0
+0001362190,AEYE,"AudioEye, Inc. Common Stock",10-K,2024-03-07,yes,653,no,0,0,0,0,0,0,0
+0001362190,AEYE,"AudioEye, Inc. Common Stock",10-K,2025-03-12,yes,653,no,0,0,0,0,0,0,0
+0001362190,AEYE,"AudioEye, Inc. Common Stock",10-K,2026-03-12,yes,653,no,0,0,0,0,0,0,0
+0001362190,AEYE,"AudioEye, Inc. Common Stock",10-K/A,2026-04-30,no,0,no,,,,,,,
+0001577526,AI,"C3.ai, Inc.",10-K,2022-06-23,yes,744,no,0,0,0,0,0,0,0
+0001577526,AI,"C3.ai, Inc.",10-K,2023-06-22,yes,744,no,0,0,0,0,0,0,0
+0001577526,AI,"C3.ai, Inc.",10-K,2024-06-18,yes,608,no,0,0,0,0,0,0,0
+0001577526,AI,"C3.ai, Inc.",10-K,2025-06-23,yes,571,no,0,0,0,0,0,0,0
+0001577526,AI,"C3.ai, Inc.",10-K,2026-06-24,yes,571,no,0,0,0,0,0,0,0
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K,2022-04-12,yes,211,no,0,0,0,0,0,0,0
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K,2023-04-17,yes,1291,no,0,0,0,0,0,0,0
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K,2024-03-20,yes,201,no,0,0,0,0,0,0,0
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K,2025-04-03,yes,475,no,0,0,0,0,0,0,0
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K,2026-03-31,yes,475,no,0,0,0,0,0,0,0
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K/A,2022-05-02,no,0,no,,,,,,,
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",10-K/A,2023-05-01,no,0,no,,,,,,,
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",10-K,2022-04-06,yes,312,no,0,0,0,0,0,0,0
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",10-K,2023-03-31,yes,312,no,0,0,0,0,0,0,0
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",10-K,2024-04-01,no,0,no,,,,,,,
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",10-K,2025-02-28,no,0,no,,,,,,,
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",10-K,2026-02-17,no,0,no,,,,,,,
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",10-K/A,2025-03-11,no,0,no,,,,,,,
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",10-K,2022-02-25,yes,331,no,0,0,0,0,0,0,0
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",10-K,2023-02-24,yes,331,no,0,0,0,0,0,0,0
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",10-K,2024-02-29,yes,352,no,0,0,0,0,0,0,0
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",10-K,2025-02-28,yes,331,no,0,0,0,0,0,0,0
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",10-K,2026-02-26,yes,331,no,0,0,0,0,0,0,0
+0001459200,ALRM,"Alarm.com Holdings, Inc.",10-K,2022-02-24,yes,8892,no,1,0,0,0,0,0,0
+0001459200,ALRM,"Alarm.com Holdings, Inc.",10-K,2023-02-24,yes,10699,no,2,0,0,0,0,0,0
+0001459200,ALRM,"Alarm.com Holdings, Inc.",10-K,2024-02-22,yes,9455,no,3,0,0,0,0,0,0
+0001459200,ALRM,"Alarm.com Holdings, Inc.",10-K,2025-02-20,yes,6952,no,1,0,0,0,0,0,0
+0001459200,ALRM,"Alarm.com Holdings, Inc.",10-K,2026-02-19,yes,6169,no,0,0,0,0,0,0,0
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",10-K,2022-02-17,yes,4,no,0,0,0,0,0,0,0
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",10-K,2023-02-16,yes,4,no,0,0,0,0,0,0,0
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",10-K,2024-02-20,yes,4,no,0,0,0,0,0,0,0
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",10-K,2025-02-20,yes,4,no,0,0,0,0,0,0,0
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",10-K,2026-02-19,yes,4,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K,2022-09-28,yes,623,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K,2023-10-06,yes,623,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K,2024-09-30,yes,619,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K,2025-09-29,yes,619,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K,2026-09-23,yes,619,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K/A,2022-03-09,no,0,no,,,,,,,
+0001807166,AMST,Amesite Inc.,10-K/A,2025-01-02,yes,619,no,0,0,0,0,0,0,0
+0001807166,AMST,Amesite Inc.,10-K/A,2025-10-28,no,0,no,,,,,,,
+0001433195,APPF,"AppFolio, Inc. Class A",10-K,2022-02-28,yes,1105,no,0,0,0,0,0,0,0
+0001433195,APPF,"AppFolio, Inc. Class A",10-K,2023-02-09,yes,1112,no,0,0,0,0,0,0,0
+0001433195,APPF,"AppFolio, Inc. Class A",10-K,2024-02-01,yes,2129,no,0,0,0,0,0,0,0
+0001433195,APPF,"AppFolio, Inc. Class A",10-K,2025-02-06,yes,866,no,0,0,0,0,0,0,0
+0001433195,APPF,"AppFolio, Inc. Class A",10-K,2026-02-05,yes,870,no,0,0,0,0,0,0,0
+0001441683,APPN,Appian Corporation Class A Common Stock,10-K,2022-02-17,yes,6159,no,0,0,0,0,0,0,0
+0001441683,APPN,Appian Corporation Class A Common Stock,10-K,2023-02-16,yes,2534,no,0,0,0,0,0,0,0
+0001441683,APPN,Appian Corporation Class A Common Stock,10-K,2024-02-15,yes,2481,no,0,0,0,0,0,0,0
+0001441683,APPN,Appian Corporation Class A Common Stock,10-K,2025-02-19,yes,2695,no,0,0,0,0,0,0,0
+0001441683,APPN,Appian Corporation Class A Common Stock,10-K,2026-02-19,yes,2887,no,0,0,0,0,0,0,0
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",10-K,2022-03-24,yes,371,no,0,0,0,0,0,0,0
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",10-K,2023-03-24,yes,371,no,0,0,0,0,0,0,0
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",10-K,2024-03-14,yes,371,no,0,0,0,0,0,0,0
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",10-K,2025-03-18,yes,371,no,0,0,0,0,0,0,0
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",10-K,2026-03-13,yes,371,no,0,0,0,0,0,0,0
+0002026353,ATHR,"Aether Holdings, Inc. Common Stock",10-K,2025-12-17,yes,301,yes,0,0,0,0,0,0,0
+0001534154,AUID,authID Inc. Common Stock,10-K,2022-03-22,yes,364,no,0,0,0,0,0,0,0
+0001534154,AUID,authID Inc. Common Stock,10-K,2023-03-30,yes,364,no,0,0,0,0,0,0,0
+0001534154,AUID,authID Inc. Common Stock,10-K,2024-03-20,yes,364,no,0,0,0,0,0,0,0
+0001534154,AUID,authID Inc. Common Stock,10-K,2025-03-13,yes,364,no,0,0,0,0,0,0,0
+0001534154,AUID,authID Inc. Common Stock,10-K,2026-03-31,yes,364,no,0,0,0,0,0,0,0
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",10-K,2022-03-31,yes,760,no,0,0,0,0,0,0,0
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",10-K,2023-03-31,yes,469,no,0,0,0,0,0,0,0
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",10-K,2024-02-29,yes,395,no,0,0,0,0,0,0,0
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",10-K,2025-02-28,yes,395,no,0,0,0,0,0,0,0
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",10-K,2026-02-26,yes,391,no,0,0,0,0,0,0,0
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",10-K/A,2023-06-13,no,0,no,,,,,,,
+0001015739,AWRE,Aware Inc,10-K,2022-03-15,yes,212,no,0,0,0,0,0,0,0
+0001015739,AWRE,Aware Inc,10-K,2023-03-15,yes,4,no,0,0,0,0,0,0,0
+0001015739,AWRE,Aware Inc,10-K,2024-03-15,yes,4,no,0,0,0,0,0,0,0
+0001015739,AWRE,Aware Inc,10-K,2025-03-13,yes,4,no,0,0,0,0,0,0,0
+0001015739,AWRE,Aware Inc,10-K,2026-03-06,yes,4,no,0,0,0,0,0,0,0
+0001015739,AWRE,Aware Inc,10-K/A,2023-03-17,no,0,no,,,,,,,
+0001015739,AWRE,Aware Inc,10-K/A,2026-05-26,no,0,no,,,,,,,
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,10-K,2022-02-25,yes,2532,no,0,0,0,0,0,0,0
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,10-K,2023-02-23,yes,2214,no,1,0,0,0,0,0,0
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,10-K,2024-02-28,yes,2538,no,0,0,0,0,0,0,0
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,10-K,2025-02-20,yes,2197,no,0,0,0,0,0,0,0
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,10-K,2026-02-19,yes,1166,no,0,0,0,0,0,0,0
+0001070235,BB,BlackBerry Limited,10-K,2022-04-01,yes,140,no,0,0,0,0,0,0,0
+0001070235,BB,BlackBerry Limited,10-K,2023-03-31,yes,140,no,0,0,0,0,0,0,0
+0001070235,BB,BlackBerry Limited,10-K,2024-04-04,yes,140,no,0,0,0,0,0,0,0
+0001070235,BB,BlackBerry Limited,10-K,2025-04-02,yes,140,no,0,0,0,0,0,0,0
+0001070235,BB,BlackBerry Limited,10-K,2026-04-09,yes,143,no,0,0,0,0,0,0,0
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K,2022-03-31,yes,520,no,0,0,0,0,0,0,0
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K,2023-03-31,yes,541,no,0,0,0,0,0,0,0
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K,2024-03-15,yes,520,no,0,0,0,0,0,0,0
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K,2025-03-25,yes,520,no,0,0,0,0,0,0,0
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K,2026-03-02,yes,520,no,0,0,0,0,0,0,0
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K/A,2022-04-29,no,0,no,,,,,,,
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",10-K/A,2023-04-07,no,0,no,,,,,,,
+0001786352,BILL,"BILL Holdings, Inc.",10-K,2022-08-22,yes,800,yes,0,0,0,0,0,0,0
+0001786352,BILL,"BILL Holdings, Inc.",10-K,2023-08-29,yes,797,yes,0,0,0,0,0,0,0
+0001786352,BILL,"BILL Holdings, Inc.",10-K,2024-08-23,yes,800,yes,0,0,0,0,0,0,0
+0001786352,BILL,"BILL Holdings, Inc.",10-K,2025-08-28,yes,797,yes,0,0,0,0,0,0,0
+0001786352,BILL,"BILL Holdings, Inc.",10-K,2026-08-20,yes,797,yes,0,0,0,0,0,0,0
+0001786352,BILL,"BILL Holdings, Inc.",10-K/A,2023-05-26,no,0,no,,,,,,,
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K,2022-04-01,yes,210,no,0,0,0,0,0,0,0
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K,2023-06-01,yes,210,no,0,0,0,0,0,0,0
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K,2024-06-05,yes,210,no,0,0,0,0,0,0,0
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K,2025-04-23,yes,210,no,0,0,0,0,0,0,0
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K,2026-06-12,yes,210,no,0,0,0,0,0,0,0
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K/A,2024-06-20,no,0,no,,,,,,,
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",10-K/A,2026-06-15,yes,210,no,0,0,0,0,0,0,0
+0001666134,BL,"BlackLine, Inc. Common Stock",10-K,2022-02-25,yes,626,yes,0,0,0,0,0,0,0
+0001666134,BL,"BlackLine, Inc. Common Stock",10-K,2023-02-23,yes,626,yes,0,0,0,0,0,0,0
+0001666134,BL,"BlackLine, Inc. Common Stock",10-K,2024-02-23,yes,687,yes,0,0,0,0,0,0,0
+0001666134,BL,"BlackLine, Inc. Common Stock",10-K,2025-02-21,yes,687,yes,0,0,0,0,0,0,0
+0001666134,BL,"BlackLine, Inc. Common Stock",10-K,2026-02-26,yes,687,yes,0,0,0,0,0,0,0
+0001666134,BL,"BlackLine, Inc. Common Stock",10-K/A,2022-03-24,no,0,no,,,,,,,
+0001378590,BLIN,Bridgeline Digital Inc.,10-K,2022-12-21,yes,191,yes,0,0,0,0,0,0,0
+0001378590,BLIN,Bridgeline Digital Inc.,10-K,2023-12-27,yes,191,yes,0,0,0,0,0,0,0
+0001378590,BLIN,Bridgeline Digital Inc.,10-K,2024-12-26,yes,191,yes,0,0,0,0,0,0,0
+0001378590,BLIN,Bridgeline Digital Inc.,10-K,2025-12-19,yes,191,yes,0,0,0,0,0,0,0
+0001280058,BLKB,"Blackbaud, Inc.",10-K,2022-03-01,yes,113,no,0,0,0,0,0,0,0
+0001280058,BLKB,"Blackbaud, Inc.",10-K,2023-02-24,yes,165,no,0,0,0,0,0,0,0
+0001280058,BLKB,"Blackbaud, Inc.",10-K,2024-02-21,yes,113,no,0,0,0,0,0,0,0
+0001280058,BLKB,"Blackbaud, Inc.",10-K,2025-02-21,yes,113,no,0,0,0,0,0,0,0
+0001280058,BLKB,"Blackbaud, Inc.",10-K,2026-02-18,yes,113,no,0,0,0,0,0,0,0
+0001280058,BLKB,"Blackbaud, Inc.",10-K/A,2025-05-27,no,0,no,,,,,,,
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",10-K,2022-03-28,yes,566,no,0,0,0,0,0,0,0
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",10-K,2023-03-31,yes,496,no,0,0,0,0,0,0,0
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",10-K,2024-04-01,yes,475,no,0,0,0,0,0,0,0
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",10-K,2025-03-11,yes,475,no,0,0,0,0,0,0,0
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",10-K,2026-03-10,yes,496,no,0,0,0,0,0,0,0
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",10-K/A,2025-05-07,no,0,no,,,,,,,
+0001372612,BOX,"BOX, INC.",10-K,2022-03-16,yes,152,no,0,0,0,0,0,0,0
+0001372612,BOX,"BOX, INC.",10-K,2023-03-13,yes,152,no,0,0,0,0,0,0,0
+0001372612,BOX,"BOX, INC.",10-K,2024-03-11,yes,152,no,0,0,0,0,0,0,0
+0001372612,BOX,"BOX, INC.",10-K,2025-03-10,yes,152,no,0,0,0,0,0,0,0
+0001372612,BOX,"BOX, INC.",10-K,2026-03-09,yes,152,no,0,0,0,0,0,0,0
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",10-K,2022-03-31,yes,809,no,0,0,0,0,0,0,0
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",10-K,2023-03-31,yes,788,no,0,0,0,0,0,0,0
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",10-K,2024-04-01,yes,788,no,0,0,0,0,0,0,0
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",10-K,2025-03-31,yes,788,no,0,0,0,0,0,0,0
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",10-K,2026-03-25,yes,788,no,0,0,0,0,0,0,0
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",10-K,2022-03-01,yes,462,no,0,0,0,0,0,0,0
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",10-K,2023-02-28,yes,462,no,0,0,0,0,0,0,0
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",10-K,2024-02-27,yes,462,no,0,0,0,0,0,0,0
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",10-K,2025-02-26,yes,462,no,0,0,0,0,0,0,0
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",10-K,2026-02-26,yes,462,no,0,0,0,0,0,0,0
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,10-K,2022-03-01,yes,819,yes,0,0,1,0,0,0,0
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,10-K,2023-03-01,yes,820,yes,0,0,1,0,0,0,0
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,10-K,2024-02-28,yes,820,yes,0,0,1,0,0,0,0
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,10-K,2025-02-25,yes,820,yes,0,0,1,0,0,0,0
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,10-K,2026-02-24,yes,38815,yes,0,0,2,0,3,0,0
+0001582982,CCLD,"CareCloud, Inc. Common Stock",10-K,2022-03-14,yes,4928,no,0,0,0,0,0,1,0
+0001582982,CCLD,"CareCloud, Inc. Common Stock",10-K,2023-03-02,yes,4079,no,0,0,0,0,0,0,0
+0001582982,CCLD,"CareCloud, Inc. Common Stock",10-K,2024-03-21,yes,1414,no,0,0,0,0,0,1,0
+0001582982,CCLD,"CareCloud, Inc. Common Stock",10-K,2025-03-13,yes,2386,no,0,0,0,0,0,1,0
+0001582982,CCLD,"CareCloud, Inc. Common Stock",10-K,2026-03-12,yes,4085,no,0,0,0,0,0,1,0
+0001582982,CCLD,"CareCloud, Inc. Common Stock",10-K/A,2025-04-03,yes,2386,no,0,0,0,0,0,1,0
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",10-K,2022-04-15,yes,145,no,0,0,0,0,0,0,0
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",10-K,2023-03-31,yes,143,no,0,0,0,0,0,0,0
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",10-K,2024-02-28,yes,143,no,0,0,0,0,0,0,0
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",10-K,2025-02-20,yes,143,no,0,0,0,0,0,0,0
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",10-K,2026-02-13,yes,142,no,0,0,0,0,0,0,0
+0000813672,CDNS,Cadence Design Systems,10-K,2022-02-22,yes,1037,no,0,0,0,0,0,0,0
+0000813672,CDNS,Cadence Design Systems,10-K,2023-02-13,yes,3190,no,1,0,0,0,0,0,0
+0000813672,CDNS,Cadence Design Systems,10-K,2024-02-14,yes,257,no,0,0,0,0,0,0,0
+0000813672,CDNS,Cadence Design Systems,10-K,2025-02-21,yes,257,no,0,0,0,0,0,0,0
+0000813672,CDNS,Cadence Design Systems,10-K,2026-02-19,yes,257,no,0,0,0,0,0,0,0
+0001827090,CERT,"Certara, Inc. Common Stock",10-K,2022-03-01,yes,477,no,0,0,0,0,0,0,0
+0001827090,CERT,"Certara, Inc. Common Stock",10-K,2023-03-01,yes,477,no,0,0,0,0,0,0,0
+0001827090,CERT,"Certara, Inc. Common Stock",10-K,2024-02-29,yes,475,no,0,0,0,0,0,0,0
+0001827090,CERT,"Certara, Inc. Common Stock",10-K,2025-02-26,yes,244,no,0,0,0,0,0,0,0
+0001827090,CERT,"Certara, Inc. Common Stock",10-K,2026-02-26,yes,244,no,0,0,0,0,0,0,0
+0001827090,CERT,"Certara, Inc. Common Stock",10-K/A,2024-12-16,no,0,no,,,,,,,
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",10-K,2022-03-01,yes,285,no,0,0,0,0,0,0,0
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",10-K,2023-03-01,yes,4,no,0,0,0,0,0,0,0
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",10-K,2024-02-29,yes,4,no,0,0,0,0,0,0,0
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",10-K,2025-02-27,yes,4,no,0,0,0,0,0,0,0
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",10-K,2026-03-02,yes,4,no,0,0,0,0,0,0,0
+0001651562,COUR,"Coursera, Inc.",10-K,2022-03-03,yes,975,no,0,0,0,0,0,0,0
+0001651562,COUR,"Coursera, Inc.",10-K,2023-02-23,yes,737,no,0,0,0,0,0,0,0
+0001651562,COUR,"Coursera, Inc.",10-K,2024-02-22,yes,254,no,0,0,0,0,0,0,0
+0001651562,COUR,"Coursera, Inc.",10-K,2025-02-24,yes,254,no,0,0,0,0,0,0,0
+0001651562,COUR,"Coursera, Inc.",10-K,2026-02-23,yes,203,no,0,0,0,0,0,0,0
+0001651562,COUR,"Coursera, Inc.",10-K/A,2026-04-30,no,0,no,,,,,,,
+0001108524,CRM,"Salesforce, Inc.",10-K,2022-03-11,yes,1341,no,0,0,1,0,0,0,0
+0001108524,CRM,"Salesforce, Inc.",10-K,2023-03-08,yes,1291,no,0,0,0,0,0,0,0
+0001108524,CRM,"Salesforce, Inc.",10-K,2024-03-06,yes,1293,no,0,0,0,0,0,0,0
+0001108524,CRM,"Salesforce, Inc.",10-K,2025-03-05,yes,1294,no,0,0,0,0,0,0,0
+0001108524,CRM,"Salesforce, Inc.",10-K,2026-03-02,yes,1294,no,0,0,0,0,0,0,0
+0001768267,CRNC,Cerence Inc. Common Stock,10-K,2022-11-29,yes,4583,no,0,0,9,0,0,0,0
+0001768267,CRNC,Cerence Inc. Common Stock,10-K,2023-11-29,yes,7207,no,0,0,5,0,9,0,0
+0001768267,CRNC,Cerence Inc. Common Stock,10-K,2024-11-25,yes,8871,no,1,0,9,0,9,0,0
+0001768267,CRNC,Cerence Inc. Common Stock,10-K,2025-11-20,yes,7422,no,2,0,8,0,9,0,0
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",10-K,2022-03-16,yes,1302,no,0,0,0,0,0,0,0
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",10-K,2023-03-09,yes,1301,no,0,0,0,0,0,0,0
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",10-K,2024-03-07,yes,1280,no,0,0,0,0,0,0,0
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",10-K,2025-03-10,yes,1365,no,0,0,0,0,0,0,0
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",10-K,2026-03-05,yes,1365,no,0,0,0,0,0,0,0
+0001769628,CRWV,"CoreWeave, Inc. Class A Common Stock",10-K,2026-03-02,yes,243,no,0,0,0,0,0,0,0
+0001169561,CVLT,"Commault Systems, Inc.",10-K,2022-05-06,yes,288,no,0,0,0,0,0,0,0
+0001169561,CVLT,"Commault Systems, Inc.",10-K,2023-05-05,yes,288,no,0,0,0,0,0,0,0
+0001169561,CVLT,"Commault Systems, Inc.",10-K,2024-05-13,yes,288,no,0,0,0,0,0,0,0
+0001169561,CVLT,"Commault Systems, Inc.",10-K,2025-05-05,yes,288,no,0,0,0,0,0,0,0
+0001169561,CVLT,"Commault Systems, Inc.",10-K,2026-05-11,yes,288,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K,2022-03-30,yes,211,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K,2023-03-21,yes,211,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K,2024-05-24,yes,209,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K,2025-04-07,yes,209,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K,2026-03-30,yes,209,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K/A,2023-04-19,yes,211,no,0,0,0,0,0,0,0
+0001820875,CXAI,CXApp Inc. Class A Common Stock,10-K/A,2023-04-21,no,0,no,,,,,,,
+0001569345,CXM,"Sprinklr, Inc.",10-K,2022-04-11,yes,779,no,0,0,0,0,0,0,0
+0001569345,CXM,"Sprinklr, Inc.",10-K,2023-04-03,yes,623,no,0,0,0,0,0,0,0
+0001569345,CXM,"Sprinklr, Inc.",10-K,2024-03-29,yes,623,no,0,0,0,0,0,0,0
+0001569345,CXM,"Sprinklr, Inc.",10-K,2025-03-21,yes,642,no,0,0,0,0,0,0,0
+0001569345,CXM,"Sprinklr, Inc.",10-K,2026-03-19,yes,666,no,0,0,0,0,0,0,0
+0002032341,CYAB,"Cyabra, Inc. Common Stock",10-K,2026-03-26,yes,465,yes,0,0,0,0,0,0,0
+0001467623,DBX,"Dropbox, Inc. Class A",10-K,2022-02-18,yes,3600,no,0,0,0,0,0,0,0
+0001467623,DBX,"Dropbox, Inc. Class A",10-K,2023-02-23,yes,926,no,0,0,0,0,0,0,0
+0001467623,DBX,"Dropbox, Inc. Class A",10-K,2024-02-16,yes,3536,no,3,0,0,0,0,0,0
+0001467623,DBX,"Dropbox, Inc. Class A",10-K,2025-02-21,yes,3671,no,3,0,0,0,0,0,0
+0001467623,DBX,"Dropbox, Inc. Class A",10-K,2026-02-20,yes,3098,no,4,0,0,0,0,0,0
+0000910638,DDD,3D Systems Corporation,10-K,2022-03-01,yes,219,no,0,0,0,0,0,0,0
+0000910638,DDD,3D Systems Corporation,10-K,2023-03-16,yes,219,no,0,0,0,0,0,0,0
+0000910638,DDD,3D Systems Corporation,10-K,2024-08-13,yes,219,no,0,0,0,0,0,0,0
+0000910638,DDD,3D Systems Corporation,10-K,2025-03-27,yes,219,no,0,0,0,0,0,0,0
+0000910638,DDD,3D Systems Corporation,10-K,2026-03-09,yes,267,no,0,0,0,0,0,0,0
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",10-K,2022-02-25,yes,720,no,0,0,0,0,0,0,0
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",10-K,2023-02-24,yes,723,no,0,0,0,0,0,0,0
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",10-K,2024-02-23,yes,720,no,0,0,0,0,0,0,0
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",10-K,2025-02-20,yes,720,no,0,0,0,0,0,0,0
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",10-K,2026-02-18,yes,720,no,0,0,0,0,0,0,0
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,10-K,2022-03-15,yes,4,no,0,0,0,0,0,0,0
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,10-K,2023-02-27,yes,4,no,0,0,0,0,0,0,0
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,10-K,2024-02-28,yes,4,no,0,0,0,0,0,0,0
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,10-K,2025-02-27,yes,4,no,0,0,0,0,0,0,0
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,10-K,2026-02-26,yes,4,no,0,0,0,0,0,0,0
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,10-K/A,2023-08-14,no,0,no,,,,,,,
+0001261333,DOCU,"DocuSign, Inc. Common Stock",10-K,2022-03-25,yes,1844,no,0,1,0,0,0,0,0
+0001261333,DOCU,"DocuSign, Inc. Common Stock",10-K,2023-03-27,yes,6175,no,0,5,1,0,0,1,0
+0001261333,DOCU,"DocuSign, Inc. Common Stock",10-K,2024-03-21,yes,6554,no,0,5,1,0,0,1,0
+0001261333,DOCU,"DocuSign, Inc. Common Stock",10-K,2025-03-18,yes,19754,no,0,0,1,0,1,0,0
+0001261333,DOCU,"DocuSign, Inc. Common Stock",10-K,2026-03-18,yes,19653,no,0,0,1,0,1,0,0
+0001773383,DT,"Dynatrace, Inc.",10-K,2022-05-26,yes,475,yes,0,0,0,0,0,0,0
+0001773383,DT,"Dynatrace, Inc.",10-K,2023-05-25,yes,559,no,0,0,0,0,0,0,0
+0001773383,DT,"Dynatrace, Inc.",10-K,2024-05-23,yes,559,no,0,0,0,0,0,0,0
+0001773383,DT,"Dynatrace, Inc.",10-K,2025-05-22,yes,559,no,0,0,0,0,0,0,0
+0001773383,DT,"Dynatrace, Inc.",10-K,2026-05-20,yes,559,no,0,0,0,0,0,0,0
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",10-K,2022-03-04,yes,263,no,0,0,0,0,0,0,0
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",10-K,2023-03-01,yes,263,no,0,0,0,0,0,0,0
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",10-K,2024-02-29,yes,263,no,0,0,0,0,0,0,0
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",10-K,2025-02-28,yes,263,no,0,0,0,0,0,0,0
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",10-K,2026-02-27,yes,263,no,0,0,0,0,0,0,0
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",10-K,2022-03-31,yes,655,no,0,0,0,0,0,0,0
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",10-K,2023-03-31,yes,655,no,0,0,0,0,0,0,0
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",10-K,2024-04-01,yes,796,yes,0,0,0,0,0,0,0
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",10-K,2025-03-31,yes,796,yes,0,0,0,0,0,0,0
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",10-K,2026-03-31,yes,796,yes,0,0,0,0,0,0,0
+0001066194,EGAN,eGain Corporation,10-K,2022-09-13,no,0,no,,,,,,,
+0001066194,EGAN,eGain Corporation,10-K,2023-09-14,no,0,no,,,,,,,
+0001066194,EGAN,eGain Corporation,10-K,2024-09-12,no,0,no,,,,,,,
+0001066194,EGAN,eGain Corporation,10-K,2025-09-12,no,0,no,,,,,,,
+0001066194,EGAN,eGain Corporation,10-K,2026-09-10,no,0,no,,,,,,,
+0001707753,ESTC,Elastic N.V.,10-K,2022-06-21,yes,1385,yes,0,0,0,0,0,0,0
+0001707753,ESTC,Elastic N.V.,10-K,2023-06-16,yes,1409,yes,0,0,0,0,0,0,0
+0001707753,ESTC,Elastic N.V.,10-K,2024-06-14,yes,1409,yes,0,0,0,0,0,0,0
+0001707753,ESTC,Elastic N.V.,10-K,2025-06-10,yes,1489,yes,0,0,0,0,0,0,0
+0001707753,ESTC,Elastic N.V.,10-K,2026-06-08,yes,1510,yes,0,0,0,0,0,0,0
+0001853145,EVCM,EverCommerce Inc. Common Stock,10-K,2022-03-15,yes,350,no,0,0,0,0,0,0,0
+0001853145,EVCM,EverCommerce Inc. Common Stock,10-K,2023-03-16,yes,350,no,0,0,0,0,0,0,0
+0001853145,EVCM,EverCommerce Inc. Common Stock,10-K,2024-03-14,yes,359,no,0,0,0,0,0,0,0
+0001853145,EVCM,EverCommerce Inc. Common Stock,10-K,2025-03-13,yes,359,no,0,0,0,0,0,0,0
+0001853145,EVCM,EverCommerce Inc. Common Stock,10-K,2026-03-12,yes,359,no,0,0,0,0,0,0,0
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",10-K,2022-03-31,yes,809,no,0,0,0,0,0,0,0
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",10-K,2023-03-08,yes,1080,no,0,0,0,0,0,0,0
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",10-K,2024-02-27,yes,2154,no,0,1,0,0,0,0,0
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",10-K,2025-02-27,yes,4739,no,0,1,4,0,0,0,0
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",10-K,2026-02-26,yes,6723,no,0,1,5,0,0,0,0
+0001993400,FATN,"FatPipe, Inc. Common Stock",10-K,2025-06-30,yes,1046,no,0,0,0,0,0,0,0
+0001993400,FATN,"FatPipe, Inc. Common Stock",10-K,2026-05-18,yes,1005,yes,0,0,0,0,0,0,0
+0001579878,FIG,"Figma, Inc.",10-K,2026-02-18,yes,910,no,0,0,0,0,0,0,0
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",10-K,2022-05-31,yes,796,no,0,0,0,0,0,0,0
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",10-K,2023-05-30,yes,796,no,0,0,0,0,0,0,0
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",10-K,2024-05-29,yes,796,no,0,0,0,0,0,0,0
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",10-K,2025-05-29,yes,796,no,0,0,0,0,0,0,0
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",10-K,2026-05-29,yes,796,no,0,0,0,0,0,0,0
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",10-K/A,2023-08-31,no,0,no,,,,,,,
+0001800667,FROG,JFrog Ltd. Ordinary Shares,10-K,2022-02-11,yes,208,no,0,0,0,0,0,0,0
+0001800667,FROG,JFrog Ltd. Ordinary Shares,10-K,2023-02-09,yes,208,no,0,0,0,0,0,0,0
+0001800667,FROG,JFrog Ltd. Ordinary Shares,10-K,2024-02-15,yes,208,no,0,0,0,0,0,0,0
+0001800667,FROG,JFrog Ltd. Ordinary Shares,10-K,2025-02-14,yes,208,no,0,0,0,0,0,0,0
+0001800667,FROG,JFrog Ltd. Ordinary Shares,10-K,2026-02-13,yes,208,no,0,0,0,0,0,0,0
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,10-K,2022-02-23,yes,1079,no,0,0,0,0,0,0,0
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,10-K,2023-02-23,yes,1342,no,0,1,0,0,0,0,0
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,10-K,2024-02-16,yes,284,no,0,0,0,0,0,0,0
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,10-K,2025-02-20,yes,283,no,0,0,0,0,0,0,0
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,10-K,2026-02-26,yes,283,no,0,0,0,0,0,0,0
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",10-K,2022-03-01,yes,100,no,0,0,0,0,0,0,0
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",10-K,2023-02-27,yes,100,no,0,0,0,0,0,0,0
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",10-K,2024-02-22,yes,103,no,0,0,0,0,0,0,0
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",10-K,2025-02-26,yes,103,no,0,0,0,0,0,0,0
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",10-K,2026-02-25,yes,102,no,0,0,0,0,0,0,0
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K,2022-03-03,yes,847,yes,0,0,0,0,0,0,0
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K,2023-02-28,yes,850,yes,0,0,0,0,0,0,0
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K,2024-02-29,yes,843,yes,0,0,0,0,0,0,0
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K,2025-02-27,yes,780,yes,0,0,0,0,0,0,0
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K,2026-03-05,yes,780,yes,0,0,0,0,0,0,0
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K/A,2022-05-02,no,0,no,,,,,,,
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K/A,2023-05-01,no,0,no,,,,,,,
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K/A,2024-04-29,no,0,no,,,,,,,
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K/A,2025-04-29,no,0,no,,,,,,,
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",10-K/A,2026-04-30,no,0,no,,,,,,,
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",10-K,2022-09-12,yes,8,no,0,0,0,0,0,0,0
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",10-K,2023-09-20,yes,8,no,0,0,0,0,0,0,0
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",10-K,2024-08-29,yes,8,no,0,0,0,0,0,0,0
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",10-K,2025-09-02,yes,8,no,0,0,0,0,0,0,0
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",10-K,2026-08-26,yes,8,no,0,0,0,0,0,0,0
+0000849399,GEN,Gen Digital Inc. Common Stock,10-K,2022-05-20,yes,262,no,0,0,0,0,0,0,0
+0000849399,GEN,Gen Digital Inc. Common Stock,10-K,2023-05-25,yes,262,no,0,0,0,0,0,0,0
+0000849399,GEN,Gen Digital Inc. Common Stock,10-K,2024-05-16,yes,262,no,0,0,0,0,0,0,0
+0000849399,GEN,Gen Digital Inc. Common Stock,10-K,2025-05-15,yes,262,no,0,0,0,0,0,0,0
+0000849399,GEN,Gen Digital Inc. Common Stock,10-K,2026-05-21,yes,263,no,0,0,0,0,0,0,0
+0001653482,GTLB,GitLab Inc. Class A Common Stock,10-K,2022-04-08,yes,757,no,0,0,0,0,0,0,0
+0001653482,GTLB,GitLab Inc. Class A Common Stock,10-K,2023-03-30,yes,757,no,0,0,0,0,0,0,0
+0001653482,GTLB,GitLab Inc. Class A Common Stock,10-K,2024-03-26,yes,778,no,0,0,0,0,0,0,0
+0001653482,GTLB,GitLab Inc. Class A Common Stock,10-K,2025-03-21,yes,3108,no,0,2,0,0,0,0,0
+0001653482,GTLB,GitLab Inc. Class A Common Stock,10-K,2026-03-17,yes,3759,no,0,2,0,0,0,0,0
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,10-K,2022-02-24,yes,745,no,0,0,0,0,0,0,0
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,10-K,2023-02-16,yes,745,no,0,0,0,0,0,0,0
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,10-K,2024-02-15,yes,274,no,0,0,0,0,0,0,0
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,10-K,2025-02-25,yes,274,no,0,0,0,0,0,0,0
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,10-K,2026-02-12,yes,273,no,0,0,0,0,0,0,0
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,10-K/A,2024-12-20,no,0,no,,,,,,,
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",10-K,2022-09-26,yes,831,yes,0,0,0,0,0,0,0
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",10-K,2023-09-18,yes,831,yes,0,0,0,0,0,0,0
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",10-K,2024-09-16,yes,830,yes,0,0,0,0,0,0,0
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",10-K,2025-09-11,yes,830,yes,0,0,0,0,0,0,0
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",10-K,2026-09-11,yes,831,yes,0,0,0,0,0,0,0
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,10-K,2023-03-31,yes,489,no,0,0,0,0,0,0,0
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,10-K,2024-03-27,yes,489,no,0,0,0,0,0,0,0
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,10-K,2025-03-28,yes,489,no,0,0,0,0,0,0,0
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,10-K,2026-03-17,yes,489,no,0,0,0,0,0,0,0
+0001404655,HUBS,"HUBSPOT, INC.",10-K,2022-02-14,yes,568,no,0,0,0,0,0,0,0
+0001404655,HUBS,"HUBSPOT, INC.",10-K,2023-02-16,yes,568,no,0,0,0,0,0,0,0
+0001404655,HUBS,"HUBSPOT, INC.",10-K,2024-02-14,yes,568,no,0,0,0,0,0,0,0
+0001404655,HUBS,"HUBSPOT, INC.",10-K,2025-02-12,yes,568,no,0,0,0,0,0,0,0
+0001404655,HUBS,"HUBSPOT, INC.",10-K,2026-02-11,yes,568,no,0,0,0,0,0,0,0
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,10-K,2022-04-07,yes,454,yes,0,0,0,0,0,0,0
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,10-K,2023-03-30,yes,454,yes,0,0,0,0,0,0,0
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,10-K,2024-04-01,yes,454,yes,0,0,0,0,0,0,0
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,10-K,2025-03-31,yes,454,yes,0,0,0,0,0,0,0
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,10-K,2026-03-31,yes,475,yes,0,0,0,0,0,0,0
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,10-K/A,2022-12-22,no,0,no,,,,,,,
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K,2022-03-24,yes,170,yes,0,0,0,0,0,0,0
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K,2023-03-28,yes,170,yes,0,0,0,0,0,0,0
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K,2024-04-01,yes,170,yes,0,0,0,0,0,0,0
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K,2025-03-31,yes,170,yes,0,0,0,0,0,0,0
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K,2026-03-19,yes,723,yes,0,0,0,0,4,0,0
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K/A,2022-06-09,yes,170,yes,0,0,0,0,0,0,0
+0001040896,IDN,"Intellicheck, Inc. Common Stock",10-K/A,2022-06-17,no,0,no,,,,,,,
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",10-K,2022-11-18,yes,222,no,0,0,0,0,0,0,0
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",10-K,2023-11-22,yes,222,no,0,0,0,0,0,0,0
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",10-K,2024-11-25,yes,222,no,0,0,0,0,0,0,0
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",10-K,2025-11-21,yes,222,no,0,0,0,0,0,0,0
+0001081745,INLX,"Intellinetics, Inc.",10-K,2022-03-24,yes,192,yes,0,0,0,0,0,0,0
+0001081745,INLX,"Intellinetics, Inc.",10-K,2023-03-27,yes,192,yes,0,0,0,0,0,0,0
+0001081745,INLX,"Intellinetics, Inc.",10-K,2024-03-28,yes,192,yes,0,0,0,0,0,0,0
+0001081745,INLX,"Intellinetics, Inc.",10-K,2025-03-24,yes,192,yes,0,0,0,0,0,0,0
+0001081745,INLX,"Intellinetics, Inc.",10-K,2026-03-30,yes,192,yes,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K,2022-03-31,yes,419,no,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K,2023-03-16,yes,419,no,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K,2024-04-15,yes,1310,no,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K,2025-03-26,yes,907,no,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K,2026-03-10,yes,438,no,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K/A,2024-02-27,yes,419,no,0,0,0,0,0,0,0
+0001615063,INSE,"Inspired Entertainment, Inc.",10-K/A,2026-05-22,no,0,no,,,,,,,
+0001565687,INTA,"Intapp, Inc. Common Stock",10-K,2022-09-09,yes,1669,no,1,0,0,0,0,0,0
+0001565687,INTA,"Intapp, Inc. Common Stock",10-K,2023-09-07,yes,982,no,1,0,0,0,0,0,0
+0001565687,INTA,"Intapp, Inc. Common Stock",10-K,2024-08-26,yes,982,no,1,0,0,0,0,0,0
+0001565687,INTA,"Intapp, Inc. Common Stock",10-K,2025-08-20,yes,975,no,1,0,0,0,0,0,0
+0001565687,INTA,"Intapp, Inc. Common Stock",10-K,2026-08-14,yes,964,no,1,0,0,0,0,0,0
+0000896878,INTU,Intuit Inc,10-K,2022-09-02,yes,126,no,0,0,0,0,0,0,0
+0000896878,INTU,Intuit Inc,10-K,2023-09-01,yes,126,no,0,0,0,0,0,0,0
+0000896878,INTU,Intuit Inc,10-K,2024-09-04,yes,126,no,0,0,0,0,0,0,0
+0000896878,INTU,Intuit Inc,10-K,2025-09-03,yes,126,no,0,0,0,0,0,0,0
+0000896878,INTU,Intuit Inc,10-K,2026-09-09,yes,126,no,0,0,0,0,0,0,0
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",10-K,2022-03-31,yes,484,no,0,0,0,0,0,0,0
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",10-K,2023-03-31,yes,484,no,0,0,0,0,0,0,0
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",10-K,2024-04-01,yes,484,no,0,0,0,0,0,0,0
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",10-K,2025-04-15,yes,484,no,0,0,0,0,0,0,0
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",10-K,2026-03-31,yes,484,no,0,0,0,0,0,0,0
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",10-K/A,2025-06-16,yes,484,no,0,0,0,0,0,0,0
+0001432133,KLTR,"Kaltura, Inc. Common Stock",10-K,2022-02-25,yes,640,no,0,0,0,0,0,0,0
+0001432133,KLTR,"Kaltura, Inc. Common Stock",10-K,2023-02-24,yes,640,no,0,0,0,0,0,0,0
+0001432133,KLTR,"Kaltura, Inc. Common Stock",10-K,2024-02-22,yes,640,no,0,0,0,0,0,0,0
+0001432133,KLTR,"Kaltura, Inc. Common Stock",10-K,2025-02-20,yes,640,no,0,0,0,0,0,0,0
+0001432133,KLTR,"Kaltura, Inc. Common Stock",10-K,2026-03-16,yes,640,no,0,0,0,0,0,0,0
+0001835830,KVYO,"Klaviyo, Inc.",10-K,2024-02-29,yes,545,yes,0,0,0,0,0,0,0
+0001835830,KVYO,"Klaviyo, Inc.",10-K,2025-02-19,yes,545,yes,0,0,0,0,0,0,0
+0001835830,KVYO,"Klaviyo, Inc.",10-K,2026-02-10,yes,545,yes,0,0,0,0,0,0,0
+0001625641,LAW,"CS Disco, Inc.",10-K,2022-02-25,yes,726,no,0,0,0,0,0,0,0
+0001625641,LAW,"CS Disco, Inc.",10-K,2023-02-24,yes,747,no,0,0,0,0,0,0,0
+0001625641,LAW,"CS Disco, Inc.",10-K,2024-02-22,yes,2036,no,0,0,0,0,0,0,0
+0001625641,LAW,"CS Disco, Inc.",10-K,2025-02-20,yes,1575,no,0,0,0,0,0,0,0
+0001625641,LAW,"CS Disco, Inc.",10-K,2026-02-25,yes,197,no,0,0,0,0,0,0,0
+0001625641,LAW,"CS Disco, Inc.",10-K/A,2022-04-29,no,0,no,,,,,,,
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K,2022-04-01,yes,173,yes,0,0,0,0,0,0,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K,2023-06-15,yes,6849,no,0,0,0,0,0,2,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K,2024-04-03,yes,9217,no,0,0,0,0,0,2,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K,2025-04-21,yes,17589,no,0,0,0,0,0,3,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K,2026-07-10,yes,29182,no,0,0,0,0,0,3,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2023-05-10,no,0,no,,,,,,,
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2024-06-04,yes,10306,no,0,0,0,0,0,2,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2024-09-24,no,0,no,,,,,,,
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2025-04-09,yes,10306,no,0,0,0,0,0,2,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2025-04-22,yes,17589,no,0,0,0,0,0,3,0
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2025-05-13,no,0,no,,,,,,,
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,10-K/A,2026-07-31,no,0,no,,,,,,,
+0001056696,MANH,Manhattan Associates Inc,10-K,2022-02-07,yes,4,no,0,0,0,0,0,0,0
+0001056696,MANH,Manhattan Associates Inc,10-K,2023-02-06,yes,4,no,0,0,0,0,0,0,0
+0001056696,MANH,Manhattan Associates Inc,10-K,2024-02-06,yes,4,no,0,0,0,0,0,0,0
+0001056696,MANH,Manhattan Associates Inc,10-K,2025-02-07,yes,4,no,0,0,0,0,0,0,0
+0001056696,MANH,Manhattan Associates Inc,10-K,2026-02-04,yes,4,no,0,0,0,0,0,0,0
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,10-K,2023-03-09,yes,925,yes,0,0,0,0,0,0,0
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,10-K,2024-02-23,yes,2253,no,1,0,0,0,0,0,0
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,10-K,2025-02-13,yes,5331,no,1,0,6,0,0,0,0
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,10-K,2026-02-12,yes,9354,no,1,0,6,0,0,0,0
+0001224133,MCHX,"Marchex, Inc. Class B",10-K,2022-03-29,yes,322,yes,0,0,0,0,0,0,0
+0001224133,MCHX,"Marchex, Inc. Class B",10-K,2023-03-31,yes,140,no,0,0,0,0,0,0,0
+0001224133,MCHX,"Marchex, Inc. Class B",10-K,2024-04-01,yes,140,no,0,0,0,0,0,0,0
+0001224133,MCHX,"Marchex, Inc. Class B",10-K,2025-03-14,yes,149,no,0,0,0,0,0,0,0
+0001224133,MCHX,"Marchex, Inc. Class B",10-K,2026-03-26,yes,100,no,0,0,0,0,0,0,0
+0001224133,MCHX,"Marchex, Inc. Class B",10-K/A,2022-04-29,no,0,no,,,,,,,
+0001224133,MCHX,"Marchex, Inc. Class B",10-K/A,2023-05-01,no,0,no,,,,,,,
+0001224133,MCHX,"Marchex, Inc. Class B",10-K/A,2024-04-29,no,0,no,,,,,,,
+0001224133,MCHX,"Marchex, Inc. Class B",10-K/A,2025-04-18,no,0,no,,,,,,,
+0001224133,MCHX,"Marchex, Inc. Class B",10-K/A,2026-04-17,no,0,no,,,,,,,
+0001441816,MDB,"MongoDB, Inc. Class A",10-K,2022-03-18,yes,225,no,0,0,0,0,0,0,0
+0001441816,MDB,"MongoDB, Inc. Class A",10-K,2023-03-17,yes,225,no,0,0,0,0,0,0,0
+0001441816,MDB,"MongoDB, Inc. Class A",10-K,2024-03-15,yes,225,no,0,0,0,0,0,0,0
+0001441816,MDB,"MongoDB, Inc. Class A",10-K,2025-03-21,yes,225,no,0,0,0,0,0,0,0
+0001441816,MDB,"MongoDB, Inc. Class A",10-K,2026-03-11,yes,225,no,0,0,0,0,0,0,0
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",10-K,2022-03-10,yes,428,no,0,0,0,0,0,0,0
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",10-K,2023-03-31,yes,428,no,0,0,0,0,0,0,0
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",10-K,2024-03-07,yes,428,no,0,0,0,0,0,0,0
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",10-K,2025-03-06,yes,1322,no,0,0,0,0,0,0,0
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",10-K,2026-03-06,yes,1322,no,0,0,0,0,0,0,0
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",10-K/A,2023-04-28,no,0,no,,,,,,,
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",10-K,2022-03-11,yes,239,yes,0,0,0,0,0,0,0
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",10-K,2023-02-28,yes,239,yes,0,0,0,0,0,0,0
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",10-K,2024-02-28,yes,1647,no,0,0,0,0,0,0,0
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",10-K,2025-02-26,yes,3047,no,0,2,0,0,0,0,0
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",10-K,2026-02-24,yes,3949,no,0,2,2,0,0,0,0
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K,2023-01-30,yes,1381,yes,0,0,0,0,0,0,0
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K,2024-01-17,yes,1461,yes,0,0,0,0,0,0,0
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K,2025-03-24,yes,26025,yes,0,0,0,0,3,0,0
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K,2026-03-31,yes,22547,yes,0,0,0,0,3,0,0
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K/A,2025-04-29,no,0,no,,,,,,,
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K/A,2025-04-30,no,0,no,,,,,,,
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,10-K/A,2026-04-30,no,0,no,,,,,,,
+0000789019,MSFT,Microsoft Corp,10-K,2022-07-28,yes,177,no,0,0,0,0,0,0,0
+0000789019,MSFT,Microsoft Corp,10-K,2023-07-27,yes,177,no,0,0,0,0,0,0,0
+0000789019,MSFT,Microsoft Corp,10-K,2024-07-30,yes,177,no,0,0,0,0,0,0,0
+0000789019,MSFT,Microsoft Corp,10-K,2025-07-30,yes,177,no,0,0,0,0,0,0,0
+0000789019,MSFT,Microsoft Corp,10-K,2026-07-29,yes,177,no,0,0,0,0,0,0,0
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,10-K,2022-03-30,yes,799,no,0,0,0,0,0,0,0
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,10-K,2023-03-24,yes,869,no,0,0,0,0,0,0,0
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,10-K,2024-04-01,yes,836,no,0,0,0,0,0,0,0
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,10-K,2025-03-20,yes,836,no,0,0,0,0,0,0,0
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,10-K,2026-03-10,yes,836,no,0,0,0,0,0,0,0
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K,2022-03-03,yes,134,no,0,0,0,0,0,0,0
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K,2023-03-10,yes,137,no,0,0,0,0,0,0,0
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K,2024-03-12,yes,134,no,0,0,0,0,0,0,0
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K,2025-03-14,yes,185,no,0,0,0,0,0,0,0
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K,2026-03-16,yes,185,no,0,0,0,0,0,0,0
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K/A,2025-04-04,no,0,no,,,,,,,
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",10-K/A,2026-04-03,no,0,no,,,,,,,
+0001211805,MYSZ,"My Size, Inc",10-K,2022-03-18,yes,3593,no,0,0,0,0,0,0,0
+0001211805,MYSZ,"My Size, Inc",10-K,2023-04-14,yes,3156,no,0,0,0,0,0,0,0
+0001211805,MYSZ,"My Size, Inc",10-K,2024-04-01,yes,3516,no,0,0,0,0,0,0,0
+0001211805,MYSZ,"My Size, Inc",10-K,2025-03-27,yes,3804,no,0,0,0,0,0,0,0
+0001211805,MYSZ,"My Size, Inc",10-K,2026-04-15,yes,1097,no,0,0,0,0,0,0,0
+0001211805,MYSZ,"My Size, Inc",10-K/A,2023-02-03,no,0,no,,,,,,,
+0001834488,NABL,"N-able, Inc.",10-K,2022-03-08,yes,362,no,0,0,0,0,0,0,0
+0001834488,NABL,"N-able, Inc.",10-K,2023-03-14,yes,362,no,0,0,0,0,0,0,0
+0001834488,NABL,"N-able, Inc.",10-K,2024-02-29,yes,383,no,0,0,0,0,0,0,0
+0001834488,NABL,"N-able, Inc.",10-K,2025-03-07,yes,373,no,0,0,0,0,0,0,0
+0001834488,NABL,"N-able, Inc.",10-K,2026-02-26,yes,373,no,0,0,0,0,0,0,0
+0001834488,NABL,"N-able, Inc.",10-K/A,2022-08-09,no,0,no,,,,,,,
+0001834488,NABL,"N-able, Inc.",10-K/A,2026-08-10,yes,394,no,0,0,0,0,0,0,0
+0001639723,NAVN,"Navan, Inc. Class A Common Stock",10-K,2026-04-02,yes,263,no,0,0,0,0,0,0,0
+0001902733,NCNO,"nCino, Inc. Common Stock",10-K,2022-03-31,yes,2469,no,0,0,0,0,0,0,3
+0001902733,NCNO,"nCino, Inc. Common Stock",10-K,2023-03-28,yes,3772,no,0,0,0,0,0,0,2
+0001902733,NCNO,"nCino, Inc. Common Stock",10-K,2024-03-26,yes,450,no,0,0,0,0,0,0,0
+0001902733,NCNO,"nCino, Inc. Common Stock",10-K,2025-04-01,yes,413,no,0,0,0,0,0,0,0
+0001902733,NCNO,"nCino, Inc. Common Stock",10-K,2026-03-31,yes,413,no,0,0,0,0,0,0,0
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",10-K,2022-03-01,yes,1506,no,0,0,0,0,0,0,0
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",10-K,2023-02-24,yes,1621,no,0,0,0,0,0,0,0
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",10-K,2024-02-21,yes,1621,no,0,0,0,0,0,0,0
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",10-K,2025-02-20,yes,1619,no,0,0,0,0,0,0,0
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",10-K,2026-02-26,yes,1619,no,0,0,0,0,0,0,0
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",10-K/A,2026-04-29,no,0,no,,,,,,,
+0001373715,NOW,"SERVICENOW, INC.",10-K,2022-02-03,yes,422,no,0,0,0,0,0,0,0
+0001373715,NOW,"SERVICENOW, INC.",10-K,2023-01-31,yes,422,no,0,0,0,0,0,0,0
+0001373715,NOW,"SERVICENOW, INC.",10-K,2024-01-25,yes,544,no,0,0,0,0,0,0,0
+0001373715,NOW,"SERVICENOW, INC.",10-K,2025-01-30,yes,549,no,0,0,0,0,0,0,0
+0001373715,NOW,"SERVICENOW, INC.",10-K,2026-01-29,yes,581,no,0,0,0,0,0,0,0
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",10-K,2022-09-21,yes,224,no,0,0,0,0,0,0,0
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",10-K,2023-09-21,yes,224,no,0,0,0,0,0,0,0
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",10-K,2024-09-19,yes,224,no,0,0,0,0,0,0,0
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",10-K,2025-09-24,yes,224,no,0,0,0,0,0,0,0
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",10-K,2026-09-18,yes,224,no,0,0,0,0,0,0,0
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",10-K/A,2023-05-24,no,0,no,,,,,,,
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",10-K,2026-03-31,yes,4,no,0,0,0,0,0,0,0
+0001039280,NTWK,"NetSol Technologies, Inc.",10-K,2022-09-27,yes,6,no,0,0,0,0,0,0,0
+0001039280,NTWK,"NetSol Technologies, Inc.",10-K,2023-09-22,yes,6,no,0,0,0,0,0,0,0
+0001039280,NTWK,"NetSol Technologies, Inc.",10-K,2024-09-30,yes,6,no,0,0,0,0,0,0,0
+0001039280,NTWK,"NetSol Technologies, Inc.",10-K,2025-09-29,yes,6,no,0,0,0,0,0,0,0
+0001039280,NTWK,"NetSol Technologies, Inc.",10-K,2026-09-28,yes,6,no,0,0,0,0,0,0,0
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",10-K,2022-03-07,yes,213,yes,0,0,0,0,0,0,0
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",10-K,2023-03-03,yes,1853,no,0,0,0,0,0,0,0
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",10-K,2024-03-01,yes,3940,no,0,3,4,0,0,0,0
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",10-K,2025-03-05,yes,170,no,0,0,0,0,0,0,0
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",10-K,2026-03-05,yes,170,no,0,0,0,0,0,0,0
+0001341439,ORCL,Oracle Corp,10-K,2022-06-21,yes,314,no,0,0,0,0,0,0,0
+0001341439,ORCL,Oracle Corp,10-K,2023-06-20,yes,4,no,0,0,0,0,0,0,0
+0001341439,ORCL,Oracle Corp,10-K,2024-06-20,yes,4,no,0,0,0,0,0,0,0
+0001341439,ORCL,Oracle Corp,10-K,2025-06-18,yes,4,no,0,0,0,0,0,0,0
+0001341439,ORCL,Oracle Corp,10-K,2026-06-22,yes,4,no,0,0,0,0,0,0,0
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",10-K,2022-02-15,yes,253,no,0,0,0,0,0,0,0
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",10-K,2023-02-16,yes,253,no,0,0,0,0,0,0,0
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",10-K,2024-02-28,yes,253,no,0,0,0,0,0,0,0
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",10-K,2025-02-26,yes,253,no,0,0,0,0,0,0,0
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",10-K/A,2025-04-25,no,0,no,,,,,,,
+0001734722,PATH,"UiPath, Inc.",10-K,2022-04-04,yes,229,no,0,0,0,0,0,0,0
+0001734722,PATH,"UiPath, Inc.",10-K,2023-03-24,yes,229,no,0,0,0,0,0,0,0
+0001734722,PATH,"UiPath, Inc.",10-K,2024-03-27,yes,220,no,0,0,0,0,0,0,0
+0001734722,PATH,"UiPath, Inc.",10-K,2025-03-24,yes,218,no,0,0,0,0,0,0,0
+0001734722,PATH,"UiPath, Inc.",10-K,2026-03-25,yes,218,no,0,0,0,0,0,0,0
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",10-K,2022-02-17,yes,736,no,0,0,0,0,0,0,0
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",10-K,2023-02-16,yes,4,no,0,0,0,0,0,0,0
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",10-K,2024-02-15,yes,4,no,0,0,0,0,0,0,0
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",10-K,2025-02-20,yes,4,no,0,0,0,0,0,0,0
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",10-K,2026-02-19,yes,4,no,0,0,0,0,0,0,0
+0001611052,PCOR,"Procore Technologies, Inc.",10-K,2022-03-04,yes,374,no,0,0,0,0,0,0,0
+0001611052,PCOR,"Procore Technologies, Inc.",10-K,2023-03-01,yes,369,no,0,0,0,0,0,0,0
+0001611052,PCOR,"Procore Technologies, Inc.",10-K,2024-02-26,yes,369,no,0,0,0,0,0,0,0
+0001611052,PCOR,"Procore Technologies, Inc.",10-K,2025-02-26,yes,369,no,0,0,0,0,0,0,0
+0001611052,PCOR,"Procore Technologies, Inc.",10-K,2026-02-24,yes,369,no,0,0,0,0,0,0,0
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,10-K,2022-08-05,yes,285,no,0,0,0,0,0,0,0
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,10-K,2023-08-04,yes,285,no,0,0,0,0,0,0,0
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,10-K,2024-08-02,yes,293,no,0,0,0,0,0,0,0
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,10-K,2025-08-06,yes,293,no,0,0,0,0,0,0,0
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,10-K,2026-08-05,yes,293,no,0,0,0,0,0,0,0
+0001568100,PD,"PagerDuty, Inc.",10-K,2022-03-17,yes,372,no,0,0,0,0,0,0,0
+0001568100,PD,"PagerDuty, Inc.",10-K,2023-03-16,yes,393,no,0,0,0,0,0,0,0
+0001568100,PD,"PagerDuty, Inc.",10-K,2024-03-15,yes,372,no,0,0,0,0,0,0,0
+0001568100,PD,"PagerDuty, Inc.",10-K,2025-03-17,yes,372,no,0,0,0,0,0,0,0
+0001568100,PD,"PagerDuty, Inc.",10-K,2026-03-12,yes,372,no,0,0,0,0,0,0,0
+0001568100,PD,"PagerDuty, Inc.",10-K/A,2024-03-18,yes,372,no,0,0,0,0,0,0,0
+0001120914,PDFS,PDF Solutions Inc,10-K,2022-03-01,yes,955,no,0,0,0,0,0,0,0
+0001120914,PDFS,PDF Solutions Inc,10-K,2023-03-01,yes,1107,no,0,0,0,0,0,0,0
+0001120914,PDFS,PDF Solutions Inc,10-K,2024-02-27,yes,1148,no,0,0,0,0,0,0,0
+0001120914,PDFS,PDF Solutions Inc,10-K,2025-02-27,yes,1129,no,0,0,0,0,0,0,0
+0001120914,PDFS,PDF Solutions Inc,10-K,2026-02-24,yes,1538,no,0,0,0,0,0,0,0
+0001826681,PDYN,Palladyne AI Corp. Common Stock,10-K,2022-03-29,yes,433,no,0,0,0,0,0,0,0
+0001826681,PDYN,Palladyne AI Corp. Common Stock,10-K,2023-03-16,yes,432,no,0,0,0,0,0,0,0
+0001826681,PDYN,Palladyne AI Corp. Common Stock,10-K,2024-02-28,yes,432,no,0,0,0,0,0,0,0
+0001826681,PDYN,Palladyne AI Corp. Common Stock,10-K,2025-02-20,yes,435,no,0,0,0,0,0,0,0
+0001826681,PDYN,Palladyne AI Corp. Common Stock,10-K,2026-03-05,yes,435,no,0,0,0,0,0,0,0
+0001826681,PDYN,Palladyne AI Corp. Common Stock,10-K/A,2022-09-30,no,0,no,,,,,,,
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,10-K,2022-02-24,yes,947,no,0,0,0,0,0,0,0
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,10-K,2023-02-21,yes,947,no,0,0,0,0,0,0,0
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,10-K,2024-02-20,yes,947,no,0,0,0,0,0,0,0
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,10-K,2025-02-18,yes,947,no,0,0,0,0,0,0,0
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,10-K,2026-02-17,yes,968,no,0,0,0,0,0,0,0
+0001784535,PRCH,"Porch Group, Inc. Common Stock",10-K,2022-03-16,yes,38714,no,0,1,2,0,0,1,0
+0001784535,PRCH,"Porch Group, Inc. Common Stock",10-K,2023-03-16,yes,5288,no,0,0,1,0,0,1,0
+0001784535,PRCH,"Porch Group, Inc. Common Stock",10-K,2024-03-15,yes,2676,no,0,0,1,0,0,0,0
+0001784535,PRCH,"Porch Group, Inc. Common Stock",10-K,2025-02-25,yes,1059,no,0,0,1,0,0,0,0
+0001784535,PRCH,"Porch Group, Inc. Common Stock",10-K,2026-02-20,yes,1059,no,0,0,1,0,0,0,0
+0000876167,PRGS,Progress Software Corp (DE),10-K,2022-01-27,yes,386,no,0,0,0,0,0,0,0
+0000876167,PRGS,Progress Software Corp (DE),10-K,2023-01-27,yes,386,no,0,0,0,0,0,0,0
+0000876167,PRGS,Progress Software Corp (DE),10-K,2024-01-26,yes,236,no,0,0,0,0,0,0,0
+0000876167,PRGS,Progress Software Corp (DE),10-K,2025-01-21,yes,596,no,0,0,0,0,0,0,0
+0000876167,PRGS,Progress Software Corp (DE),10-K,2026-01-20,yes,545,no,0,0,0,0,0,0,0
+0000876167,PRGS,Progress Software Corp (DE),10-K/A,2022-03-30,no,0,no,,,,,,,
+0000857005,PTC,"PTC, INC",10-K,2022-11-15,yes,4,no,0,0,0,0,0,0,0
+0000857005,PTC,"PTC, INC",10-K,2023-11-20,yes,4,no,0,0,0,0,0,0,0
+0000857005,PTC,"PTC, INC",10-K,2024-11-14,yes,4,no,0,0,0,0,0,0,0
+0000857005,PTC,"PTC, INC",10-K,2025-11-21,yes,4,no,0,0,0,0,0,0,0
+0001040161,PXLW,Pixelworks Inc,10-K,2022-03-09,yes,417,no,0,0,0,0,0,0,0
+0001040161,PXLW,Pixelworks Inc,10-K,2023-03-08,yes,417,no,0,0,0,0,0,0,0
+0001040161,PXLW,Pixelworks Inc,10-K,2024-03-13,yes,417,no,0,0,0,0,0,0,0
+0001040161,PXLW,Pixelworks Inc,10-K,2025-03-13,yes,417,no,0,0,0,0,0,0,0
+0001040161,PXLW,Pixelworks Inc,10-K,2026-03-12,yes,417,no,0,0,0,0,0,0,0
+0001040161,PXLW,Pixelworks Inc,10-K/A,2025-03-19,no,0,no,,,,,,,
+0001107843,QLYS,"Qualys, Inc. Common Stock",10-K,2022-02-22,yes,732,no,0,0,0,0,0,0,0
+0001107843,QLYS,"Qualys, Inc. Common Stock",10-K,2023-02-23,yes,888,no,0,0,0,0,0,0,0
+0001107843,QLYS,"Qualys, Inc. Common Stock",10-K,2024-02-22,yes,852,no,0,0,0,0,0,0,0
+0001107843,QLYS,"Qualys, Inc. Common Stock",10-K,2025-02-21,yes,852,no,0,0,0,0,0,0,0
+0001107843,QLYS,"Qualys, Inc. Common Stock",10-K,2026-02-20,yes,852,no,0,0,0,0,0,0,0
+0001410384,QTWO,Q2 Holdings Inc,10-K,2022-02-16,yes,331,no,0,0,0,0,0,0,0
+0001410384,QTWO,Q2 Holdings Inc,10-K,2023-02-21,yes,331,no,0,0,0,0,0,0,0
+0001410384,QTWO,Q2 Holdings Inc,10-K,2024-02-21,yes,331,no,0,0,0,0,0,0,0
+0001410384,QTWO,Q2 Holdings Inc,10-K,2025-02-12,yes,331,no,0,0,0,0,0,0,0
+0001410384,QTWO,Q2 Holdings Inc,10-K,2026-02-11,yes,331,no,0,0,0,0,0,0,0
+0001758009,QUBT,Quantum Computing Inc. Common,10-K,2022-03-15,yes,607,yes,0,0,0,0,0,0,0
+0001758009,QUBT,Quantum Computing Inc. Common,10-K,2023-03-30,yes,4568,no,0,0,0,0,0,0,0
+0001758009,QUBT,Quantum Computing Inc. Common,10-K,2024-04-01,yes,6546,no,0,0,0,0,0,0,0
+0001758009,QUBT,Quantum Computing Inc. Common,10-K,2025-03-20,yes,6798,no,0,1,0,0,0,2,0
+0001758009,QUBT,Quantum Computing Inc. Common,10-K,2026-03-02,yes,10704,no,0,2,13,0,0,2,0
+0001758009,QUBT,Quantum Computing Inc. Common,10-K/A,2023-04-14,no,0,no,,,,,,,
+0001758009,QUBT,Quantum Computing Inc. Common,10-K/A,2023-06-26,no,0,no,,,,,,,
+0001758009,QUBT,Quantum Computing Inc. Common,10-K/A,2023-07-10,no,0,no,,,,,,,
+0001758009,QUBT,Quantum Computing Inc. Common,10-K/A,2024-09-11,no,0,no,,,,,,,
+0000797542,QXL,Quantum X Labs Inc. Common Stock,10-K,2022-03-17,yes,4,no,0,0,0,0,0,0,0
+0000797542,QXL,Quantum X Labs Inc. Common Stock,10-K,2023-03-24,yes,4,no,0,0,0,0,0,0,0
+0000797542,QXL,Quantum X Labs Inc. Common Stock,10-K,2024-03-25,yes,4,no,0,0,0,0,0,0,0
+0000797542,QXL,Quantum X Labs Inc. Common Stock,10-K,2025-03-21,yes,4,no,0,0,0,0,0,0,0
+0000797542,QXL,Quantum X Labs Inc. Common Stock,10-K,2026-03-27,yes,4,no,0,0,0,0,0,0,0
+0001315098,RBLX,Roblox Corporation,10-K,2022-02-25,yes,198,no,0,0,0,0,0,0,0
+0001315098,RBLX,Roblox Corporation,10-K,2023-02-28,yes,198,no,0,0,0,0,0,0,0
+0001315098,RBLX,Roblox Corporation,10-K,2024-02-21,yes,198,no,0,0,0,0,0,0,0
+0001315098,RBLX,Roblox Corporation,10-K,2025-02-18,yes,198,no,0,0,0,0,0,0,0
+0001315098,RBLX,Roblox Corporation,10-K,2026-02-11,yes,198,no,0,0,0,0,0,0,0
+0001943896,RBRK,"Rubrik, Inc.",10-K,2025-03-20,yes,741,no,0,0,0,0,0,0,0
+0001943896,RBRK,"Rubrik, Inc.",10-K,2026-03-19,yes,741,no,0,0,0,0,0,0,0
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",10-K,2022-07-27,yes,662,no,0,0,0,0,0,1,0
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",10-K,2023-07-27,yes,2034,no,0,0,0,0,0,2,0
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",10-K,2024-08-08,yes,2188,no,0,0,0,0,0,0,0
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",10-K,2026-03-19,yes,340,yes,0,0,0,0,0,0,0
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",10-K/A,2022-08-15,yes,662,no,0,0,0,0,0,1,0
+0001720116,RDVT,"Red Violet, Inc. Common Stock",10-K,2022-03-09,yes,1780,yes,0,0,0,0,0,0,0
+0001720116,RDVT,"Red Violet, Inc. Common Stock",10-K,2023-03-08,yes,1783,yes,0,0,0,0,0,0,0
+0001720116,RDVT,"Red Violet, Inc. Common Stock",10-K,2024-03-07,yes,1784,yes,0,0,0,0,0,0,0
+0001720116,RDVT,"Red Violet, Inc. Common Stock",10-K,2025-02-27,yes,381,no,0,0,0,0,0,0,0
+0001720116,RDVT,"Red Violet, Inc. Common Stock",10-K,2026-03-04,yes,381,no,0,0,0,0,0,0,0
+0002077709,ROC,Rank One Computing Corporation Common stock,10-K,2026-03-31,yes,1273,yes,0,0,0,0,0,0,0
+0001560327,RPD,"Rapid7, Inc. Common Stock",10-K,2022-02-24,yes,1214,no,1,0,0,0,0,0,0
+0001560327,RPD,"Rapid7, Inc. Common Stock",10-K,2023-02-24,yes,1195,no,1,0,0,0,0,0,0
+0001560327,RPD,"Rapid7, Inc. Common Stock",10-K,2024-02-26,yes,543,no,0,0,0,0,0,0,0
+0001560327,RPD,"Rapid7, Inc. Common Stock",10-K,2025-02-28,yes,543,no,0,0,0,0,0,0,0
+0001560327,RPD,"Rapid7, Inc. Common Stock",10-K,2026-02-19,yes,543,no,0,0,0,0,0,0,0
+0001560327,RPD,"Rapid7, Inc. Common Stock",10-K/A,2026-03-16,no,0,no,,,,,,,
+0001583708,S,"SentinelOne, Inc.",10-K,2022-04-07,yes,525,no,0,0,0,0,0,0,0
+0001583708,S,"SentinelOne, Inc.",10-K,2023-03-29,yes,525,no,0,0,0,0,0,0,0
+0001583708,S,"SentinelOne, Inc.",10-K,2024-03-27,yes,558,no,0,0,0,0,0,0,0
+0001583708,S,"SentinelOne, Inc.",10-K,2025-03-26,yes,557,no,0,0,0,0,0,0,0
+0001583708,S,"SentinelOne, Inc.",10-K,2026-03-19,yes,557,no,0,0,0,0,0,0,0
+0001627857,SAIL,"SailPoint, Inc. Common Stock",10-K,2022-02-28,yes,262,yes,0,0,0,0,0,0,0
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,10-K,2025-02-11,yes,253,no,0,0,0,0,0,0,0
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,10-K,2026-02-11,yes,253,no,0,0,0,0,0,0,0
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,10-K/A,2025-04-29,no,0,no,,,,,,,
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,10-K/A,2026-04-29,no,0,no,,,,,,,
+0001774675,SKIL,Skillsoft Corp.,10-K,2022-04-18,yes,266,no,0,0,0,0,0,0,0
+0001774675,SKIL,Skillsoft Corp.,10-K,2023-04-14,yes,266,no,0,0,0,0,0,0,0
+0001774675,SKIL,Skillsoft Corp.,10-K,2024-04-15,yes,266,no,0,0,0,0,0,0,0
+0001774675,SKIL,Skillsoft Corp.,10-K,2025-04-14,yes,266,no,0,0,0,0,0,0,0
+0001774675,SKIL,Skillsoft Corp.,10-K,2026-04-07,yes,260,no,0,0,0,0,0,0,0
+0001774675,SKIL,Skillsoft Corp.,10-K/A,2022-10-24,yes,475,no,0,0,0,0,0,0,0
+0001774675,SKIL,Skillsoft Corp.,10-K/A,2024-05-30,no,0,no,,,,,,,
+0000948708,SMSI,Smith Micro Software Inc,10-K,2022-03-11,yes,580,no,0,0,0,0,0,0,0
+0000948708,SMSI,Smith Micro Software Inc,10-K,2023-03-23,yes,580,no,0,0,0,0,0,0,0
+0000948708,SMSI,Smith Micro Software Inc,10-K,2024-02-26,yes,580,no,0,0,0,0,0,0,0
+0000948708,SMSI,Smith Micro Software Inc,10-K,2025-03-12,yes,601,no,0,0,0,0,0,0,0
+0000948708,SMSI,Smith Micro Software Inc,10-K,2026-03-05,yes,580,no,0,0,0,0,0,0,0
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",10-K,2023-03-29,yes,111,no,0,0,0,0,0,0,0
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",10-K,2024-04-01,yes,115,no,0,0,0,0,0,0,0
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",10-K,2025-03-26,yes,111,no,0,0,0,0,0,0,0
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",10-K,2026-03-19,yes,111,no,0,0,0,0,0,0,0
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",10-K/A,2026-03-31,no,0,no,,,,,,,
+0001640147,SNOW,Snowflake Inc.,10-K,2022-03-30,yes,975,no,0,0,0,0,0,0,0
+0001640147,SNOW,Snowflake Inc.,10-K,2023-03-29,yes,975,no,0,0,0,0,0,0,0
+0001640147,SNOW,Snowflake Inc.,10-K,2024-03-26,yes,1678,no,0,0,0,0,0,0,0
+0001640147,SNOW,Snowflake Inc.,10-K,2025-03-21,yes,4285,no,0,0,0,0,0,0,0
+0001640147,SNOW,Snowflake Inc.,10-K,2026-03-20,yes,5778,no,0,0,0,0,0,0,0
+0000883241,SNPS,Synopsys Inc,10-K,2022-12-12,yes,4427,no,1,0,0,0,0,0,0
+0000883241,SNPS,Synopsys Inc,10-K,2023-12-12,yes,3882,no,3,0,0,0,0,0,0
+0000883241,SNPS,Synopsys Inc,10-K,2024-12-19,yes,1024,no,0,0,0,0,0,0,0
+0000883241,SNPS,Synopsys Inc,10-K,2025-12-22,yes,2670,no,0,0,0,0,0,0,0
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",10-K,2022-03-09,yes,465,yes,0,0,0,0,0,0,0
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",10-K,2023-03-28,yes,163,no,0,0,0,0,0,0,0
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",10-K,2024-03-01,yes,163,no,0,0,0,0,0,0,0
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",10-K,2025-03-11,yes,163,no,0,0,0,0,0,0,0
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",10-K,2026-03-02,yes,163,no,0,0,0,0,0,0,0
+0001092699,SPSC,"SPS Commerce, Inc.",10-K,2022-02-22,yes,364,no,0,0,0,0,0,0,0
+0001092699,SPSC,"SPS Commerce, Inc.",10-K,2023-02-21,yes,368,no,0,0,0,0,0,0,0
+0001092699,SPSC,"SPS Commerce, Inc.",10-K,2024-02-21,yes,478,no,0,0,0,0,0,0,0
+0001092699,SPSC,"SPS Commerce, Inc.",10-K,2025-02-19,yes,478,no,0,0,0,0,0,0,0
+0001092699,SPSC,"SPS Commerce, Inc.",10-K,2026-02-19,yes,478,no,0,0,0,0,0,0,0
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",10-K,2022-02-23,yes,181,yes,0,0,0,0,0,0,0
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",10-K,2023-02-22,yes,181,yes,0,0,0,0,0,0,0
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",10-K,2024-02-23,yes,181,yes,0,0,0,0,0,0,0
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",10-K,2025-02-26,yes,266,no,0,0,0,0,0,0,0
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",10-K,2026-02-27,yes,267,no,0,0,0,0,0,0,0
+0001402436,SSNC,SS&C Technologies Inc,10-K,2022-02-25,yes,439,yes,0,0,0,0,0,0,0
+0001402436,SSNC,SS&C Technologies Inc,10-K,2023-02-28,yes,439,yes,0,0,0,0,0,0,0
+0001402436,SSNC,SS&C Technologies Inc,10-K,2024-02-28,yes,442,yes,0,0,0,0,0,0,0
+0001402436,SSNC,SS&C Technologies Inc,10-K,2025-03-03,yes,439,yes,0,0,0,0,0,0,0
+0001402436,SSNC,SS&C Technologies Inc,10-K,2026-02-26,yes,439,yes,0,0,0,0,0,0,0
+0001402436,SSNC,SS&C Technologies Inc,10-K/A,2025-03-04,no,0,no,,,,,,,
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",10-K,2022-03-29,yes,4,no,0,0,0,0,0,0,0
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",10-K,2023-03-14,yes,4,no,0,0,0,0,0,0,0
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",10-K,2024-04-01,yes,4,no,0,0,0,0,0,0,0
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",10-K,2025-03-31,yes,4,no,0,0,0,0,0,0,0
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",10-K,2026-03-30,yes,4,no,0,0,0,0,0,0,0
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",10-K,2025-03-05,yes,502,no,0,0,0,0,0,0,0
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",10-K,2026-03-12,yes,315,no,0,0,0,0,0,0,0
+0000816761,TDC,TERADATA CORPORATION,10-K,2022-02-25,yes,245,no,0,0,0,0,0,0,0
+0000816761,TDC,TERADATA CORPORATION,10-K,2023-02-24,yes,245,no,0,0,0,0,0,0,0
+0000816761,TDC,TERADATA CORPORATION,10-K,2024-02-23,yes,245,no,0,0,0,0,0,0,0
+0000816761,TDC,TERADATA CORPORATION,10-K,2025-02-21,yes,245,no,0,0,0,0,0,0,0
+0000816761,TDC,TERADATA CORPORATION,10-K,2026-02-27,yes,248,no,0,0,0,0,0,0,0
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,10-K,2023-08-18,yes,3699,no,0,1,0,0,0,0,0
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,10-K,2024-08-16,yes,4845,no,0,1,0,0,0,0,0
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,10-K,2025-08-15,yes,867,no,0,0,0,0,0,0,0
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,10-K,2026-08-14,yes,704,no,0,0,0,0,0,0,0
+0001660280,TENB,"Tenable Holdings, Inc.",10-K,2022-02-25,yes,979,no,0,0,0,0,0,0,0
+0001660280,TENB,"Tenable Holdings, Inc.",10-K,2023-02-24,yes,979,no,0,0,0,0,0,0,0
+0001660280,TENB,"Tenable Holdings, Inc.",10-K,2024-02-28,yes,979,no,0,0,0,0,0,0,0
+0001660280,TENB,"Tenable Holdings, Inc.",10-K,2025-02-24,yes,1000,no,0,0,0,0,0,0,0
+0001660280,TENB,"Tenable Holdings, Inc.",10-K,2026-02-27,yes,979,no,0,0,0,0,0,0,0
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",10-K,2025-04-02,yes,4,no,0,0,0,0,0,0,0
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",10-K,2026-03-25,yes,4,no,0,0,0,0,0,0,0
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",10-K/A,2026-09-08,no,0,no,,,,,,,
+0000946581,TTWO,Take-Two Interactive Software Inc,10-K,2022-05-17,yes,140,no,0,0,0,0,0,0,0
+0000946581,TTWO,Take-Two Interactive Software Inc,10-K,2023-05-26,yes,141,no,0,0,0,0,0,0,0
+0000946581,TTWO,Take-Two Interactive Software Inc,10-K,2024-05-22,yes,140,no,0,0,0,0,0,0,0
+0000946581,TTWO,Take-Two Interactive Software Inc,10-K,2025-05-20,yes,140,no,0,0,0,0,0,0,0
+0000946581,TTWO,Take-Two Interactive Software Inc,10-K,2026-05-22,yes,143,no,0,0,0,0,0,0,0
+0001447669,TWLO,Twilio Inc.,10-K,2022-02-22,yes,180,no,0,0,0,0,0,0,0
+0001447669,TWLO,Twilio Inc.,10-K,2023-02-27,yes,177,no,0,0,0,0,0,0,0
+0001447669,TWLO,Twilio Inc.,10-K,2024-02-27,yes,180,no,0,0,0,0,0,0,0
+0001447669,TWLO,Twilio Inc.,10-K,2025-02-26,yes,198,no,0,0,0,0,0,0,0
+0001447669,TWLO,Twilio Inc.,10-K,2026-02-24,yes,177,no,0,0,0,0,0,0,0
+0001447669,TWLO,Twilio Inc.,10-K/A,2022-04-22,no,0,no,,,,,,,
+0000860731,TYL,"Tyler Technologies, Inc.",10-K,2022-02-23,yes,177,yes,0,0,0,0,0,0,0
+0000860731,TYL,"Tyler Technologies, Inc.",10-K,2023-02-22,yes,1471,no,0,0,0,0,0,0,0
+0000860731,TYL,"Tyler Technologies, Inc.",10-K,2024-02-21,yes,1012,no,0,0,0,0,0,0,0
+0000860731,TYL,"Tyler Technologies, Inc.",10-K,2025-02-19,yes,1130,no,0,0,0,0,0,0,0
+0000860731,TYL,"Tyler Technologies, Inc.",10-K,2026-02-18,yes,1174,no,0,0,0,0,0,0,0
+0000860731,TYL,"Tyler Technologies, Inc.",10-K/A,2024-02-27,no,0,no,,,,,,,
+0001810806,U,Unity Software Inc.,10-K,2022-02-22,yes,176,yes,0,0,0,0,0,0,0
+0001810806,U,Unity Software Inc.,10-K,2023-02-27,yes,2993,no,0,0,4,0,0,0,0
+0001810806,U,Unity Software Inc.,10-K,2024-02-29,yes,129,no,0,0,0,0,0,0,0
+0001810806,U,Unity Software Inc.,10-K,2025-02-21,yes,129,no,0,0,0,0,0,0,0
+0001810806,U,Unity Software Inc.,10-K,2026-02-11,yes,129,no,0,0,0,0,0,0,0
+0001505155,UPLD,"Upland Software, Inc.",10-K,2022-02-24,yes,324,no,0,0,0,0,0,0,0
+0001505155,UPLD,"Upland Software, Inc.",10-K,2023-03-01,yes,324,no,0,0,0,0,0,0,0
+0001505155,UPLD,"Upland Software, Inc.",10-K,2024-02-22,yes,324,no,0,0,0,0,0,0,0
+0001505155,UPLD,"Upland Software, Inc.",10-K,2025-03-12,yes,324,no,0,0,0,0,0,0,0
+0001505155,UPLD,"Upland Software, Inc.",10-K,2026-03-03,yes,368,no,0,0,0,0,0,0,0
+0001505155,UPLD,"Upland Software, Inc.",10-K/A,2024-11-07,no,0,no,,,,,,,
+0001505155,UPLD,"Upland Software, Inc.",10-K/A,2025-07-31,no,0,no,,,,,,,
+0001393052,VEEV,Veeva Systems Inc.,10-K,2022-03-30,yes,2368,yes,0,0,0,0,0,0,0
+0001393052,VEEV,Veeva Systems Inc.,10-K,2023-03-30,yes,2698,yes,0,0,0,0,0,0,0
+0001393052,VEEV,Veeva Systems Inc.,10-K,2024-03-25,yes,2829,yes,0,0,0,0,0,0,0
+0001393052,VEEV,Veeva Systems Inc.,10-K,2025-03-24,yes,2006,yes,0,0,0,0,0,0,0
+0001393052,VEEV,Veeva Systems Inc.,10-K,2026-03-20,yes,871,yes,0,0,0,0,0,0,0
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",10-K,2022-03-16,yes,1734,no,0,0,0,0,0,0,0
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",10-K,2023-03-10,yes,1727,no,0,0,0,0,0,0,0
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",10-K,2024-02-29,yes,1621,no,0,0,0,0,0,0,0
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",10-K,2025-02-27,yes,1483,no,0,0,0,0,0,0,0
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",10-K,2026-02-24,yes,1483,no,0,0,0,0,0,0,0
+0001603015,VIA,"Via Transportation, Inc.",10-K,2026-03-06,yes,10895,no,1,0,0,1,0,0,0
+0001361113,VRNS,"Varonis Systems, Inc.",10-K,2022-02-08,yes,58,yes,0,0,0,0,0,0,0
+0001361113,VRNS,"Varonis Systems, Inc.",10-K,2023-02-07,yes,58,yes,0,0,0,0,0,0,0
+0001361113,VRNS,"Varonis Systems, Inc.",10-K,2024-02-06,yes,58,yes,0,0,0,0,0,0,0
+0001361113,VRNS,"Varonis Systems, Inc.",10-K,2025-02-06,yes,58,yes,0,0,0,0,0,0,0
+0001361113,VRNS,"Varonis Systems, Inc.",10-K,2026-02-04,yes,340,no,0,0,0,0,0,0,0
+0002038439,VWAV,"VisionWave Holdings, Inc. Common Stock",10-K,2025-12-31,yes,668,no,0,0,0,0,0,0,0
+0001609151,WEAV,"Weave Communications, Inc.",10-K,2022-03-23,yes,975,no,0,0,0,0,0,0,0
+0001609151,WEAV,"Weave Communications, Inc.",10-K,2023-03-16,yes,978,no,0,0,0,0,0,0,0
+0001609151,WEAV,"Weave Communications, Inc.",10-K,2024-03-13,yes,975,no,0,0,0,0,0,0,0
+0001609151,WEAV,"Weave Communications, Inc.",10-K,2025-03-13,yes,975,no,0,0,0,0,0,0,0
+0001609151,WEAV,"Weave Communications, Inc.",10-K,2026-03-05,yes,975,no,0,0,0,0,0,0,0
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K,2022-02-28,yes,376,no,0,0,0,0,0,0,0
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K,2023-02-23,yes,376,no,0,0,0,0,0,0,0
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K,2024-02-15,yes,376,no,0,0,0,0,0,0,0
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K,2025-02-20,yes,376,no,0,0,0,0,0,0,0
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K,2026-02-26,yes,376,no,0,0,0,0,0,0,0
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K/A,2022-04-05,no,0,no,,,,,,,
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K/A,2025-04-11,no,0,no,,,,,,,
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K/A,2026-04-06,no,0,no,,,,,,,
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",10-K/A,2026-09-09,no,0,no,,,,,,,
+0001445305,WK,Workiva Inc.,10-K,2022-02-22,yes,532,no,0,0,0,0,0,0,0
+0001445305,WK,Workiva Inc.,10-K,2023-02-21,yes,532,no,0,0,0,0,0,0,0
+0001445305,WK,Workiva Inc.,10-K,2024-02-20,yes,532,no,0,0,0,0,0,0,0
+0001445305,WK,Workiva Inc.,10-K,2025-02-25,yes,532,no,0,0,0,0,0,0,0
+0001445305,WK,Workiva Inc.,10-K,2026-02-19,yes,532,no,0,0,0,0,0,0,0
+0001788999,XPER,Xperi Inc,10-K,2023-03-06,yes,759,no,0,0,0,0,0,1,0
+0001788999,XPER,Xperi Inc,10-K,2024-03-01,yes,762,no,0,0,0,0,0,1,0
+0001788999,XPER,Xperi Inc,10-K,2025-02-27,yes,759,no,0,0,0,0,0,1,0
+0001788999,XPER,Xperi Inc,10-K,2026-02-26,yes,759,no,0,0,0,0,0,1,0
+0001512673,XYZ,"Block, Inc.",10-K,2022-02-24,yes,1106,no,0,0,0,0,0,0,0
+0001512673,XYZ,"Block, Inc.",10-K,2023-02-23,yes,1001,no,0,0,0,0,0,0,0
+0001512673,XYZ,"Block, Inc.",10-K,2024-02-22,yes,1004,no,0,0,0,0,0,0,0
+0001512673,XYZ,"Block, Inc.",10-K,2025-02-24,yes,1205,no,0,0,0,0,0,0,0
+0001512673,XYZ,"Block, Inc.",10-K,2026-02-26,yes,1238,no,0,0,0,0,0,0,0
+0001873951,XZO,"Exzeo Group, Inc.",10-K,2026-02-26,yes,4,no,0,0,0,0,0,0,0
+0001856314,YOU,"Clear Secure, Inc.",10-K,2022-03-30,yes,1271,no,0,0,0,1,1,0,0
+0001856314,YOU,"Clear Secure, Inc.",10-K,2023-03-02,yes,1284,no,0,0,0,1,1,0,0
+0001856314,YOU,"Clear Secure, Inc.",10-K,2024-02-28,yes,1284,no,0,0,0,1,1,0,0
+0001856314,YOU,"Clear Secure, Inc.",10-K,2025-02-26,yes,1284,no,0,0,0,1,1,0,0
+0001856314,YOU,"Clear Secure, Inc.",10-K,2026-02-25,yes,1284,no,0,0,0,1,1,0,0
+0001667313,ZDGE,"Zedge, Inc.",10-K,2022-11-14,yes,303,no,0,0,0,0,0,0,0
+0001667313,ZDGE,"Zedge, Inc.",10-K,2023-10-30,yes,303,no,0,0,0,0,0,0,0
+0001667313,ZDGE,"Zedge, Inc.",10-K,2024-10-29,yes,303,no,0,0,0,0,0,0,0
+0001667313,ZDGE,"Zedge, Inc.",10-K,2025-10-28,yes,323,no,0,0,0,0,0,0,0
+0001851003,ZETA,Zeta Global Holdings Corp.,10-K,2022-02-25,yes,934,yes,0,0,0,0,0,0,0
+0001851003,ZETA,Zeta Global Holdings Corp.,10-K,2023-02-24,yes,934,yes,0,0,0,0,0,0,0
+0001851003,ZETA,Zeta Global Holdings Corp.,10-K,2024-02-28,yes,1451,yes,0,0,0,0,0,0,0
+0001851003,ZETA,Zeta Global Holdings Corp.,10-K,2025-02-26,yes,4030,yes,0,0,1,0,0,0,0
+0001851003,ZETA,Zeta Global Holdings Corp.,10-K,2026-02-25,yes,4207,yes,0,2,1,0,0,0,0

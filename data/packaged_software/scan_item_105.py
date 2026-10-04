@@ -15,6 +15,8 @@ import html
 import re
 from pathlib import Path
 
+import sec_common
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 EXTRACT = HERE / "extracts" / "sec"
@@ -38,9 +40,7 @@ def main() -> int:
     scanned: dict[str, int] = {t: 0 for t in tickers}
     for ticker in tickers:
         for form in ("8-K", "8-K_A"):
-            for doc in (EXTRACT / ticker / form).glob("*/*"):
-                if not doc.is_file():
-                    continue
+            for _d, _f, doc in sec_common.filing_documents(EXTRACT / ticker, [form]):
                 scanned[ticker] += 1
                 text = read_text(doc)
                 m = ITEM_RE.search(text)

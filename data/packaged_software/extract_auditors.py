@@ -19,6 +19,8 @@ import html
 import re
 from pathlib import Path
 
+import sec_common
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 SEC = HERE / "extracts" / "sec"
@@ -47,8 +49,8 @@ def latest_10k(ticker: str) -> Path | None:
     base = SEC / ticker / "10-K"
     if not base.exists():
         return None
-    docs = sorted(base.glob("*/*.htm*"))
-    return docs[-1] if docs else None
+    docs = sec_common.filing_documents(SEC / ticker, ["10-K"])
+    return docs[-1][2] if docs else None
 
 
 def text_of(path: Path) -> str:

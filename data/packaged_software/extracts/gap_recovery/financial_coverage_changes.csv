@@ -1,0 +1,14 @@
+metric,previous_nonmissing_rows,new_nonmissing_rows,new_companies_with_value,previously_missing_values_recovered,values_now_blank_or_excluded
+ttm_revenue,2708,2722,161,14,0
+rd_pct_rev,2351,2375,145,24,0
+sm_pct_rev,2243,2256,136,13,0
+sbc_pct_rev,2537,2559,155,22,0
+gross_margin,2373,2392,146,19,0
+fcf_physical_capex_margin,2339,2371,152,32,0
+ttm_general_and_administrative,0,2371,145,2371,0
+ttm_selling_general_and_administrative,0,359,25,359,0
+ttm_advertising_expense,0,572,114,572,0
+ttm_restructuring_charges,0,512,65,512,0
+deferred_revenue_noncurrent,0,1772,113,1772,0
+long_term_debt_noncurrent,0,888,72,888,0
+long_term_debt_current,0,658,60,658,0

@@ -24,6 +24,8 @@ import html
 import re
 from pathlib import Path
 
+import sec_common
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 SEC = HERE / "extracts" / "sec"
@@ -77,10 +79,9 @@ def main() -> int:
             base = SEC / ticker / form
             if not base.exists():
                 continue
-            for doc in base.glob("*/*.htm*"):
-                date = doc.parent.name.split("_")[0]
+            for date, form_label, doc in sec_common.filing_documents(SEC / ticker, [form]):
                 if date >= START:
-                    filings.append((date, form.replace("_", "/"), doc))
+                    filings.append((date, form_label, doc))
         filings.sort()
 
         prior_name, prior_key = "", ""

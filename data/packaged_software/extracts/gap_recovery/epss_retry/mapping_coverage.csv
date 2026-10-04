@@ -1,0 +1,169 @@
+cik,ticker,name,cpe_vendors,observed_application_vendors,unconfirmed_aliases,mapping_status,current_matching_cve_count,notes
+0000935036,ACIW,"ACI Worldwide, Inc.",aciworldwide,,aciworldwide,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000796343,ADBE,Adobe Inc.,adobe,adobe,,curated_current_brand,7705,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000769397,ADSK,Autodesk Inc,autodesk,autodesk,,curated_current_brand,381,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001362190,AEYE,"AudioEye, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001577526,AI,"C3.ai, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001459200,ALRM,"Alarm.com Holdings, Inc.",alarm,,alarm,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001807166,AMST,Amesite Inc.,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001433195,APPF,"AppFolio, Inc. Class A",appfolio,,appfolio,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001441683,APPN,Appian Corporation Class A Common Stock,appian,appian,,curated_current_brand,1,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",asana,asana,,curated_current_brand,2,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0002026353,ATHR,"Aether Holdings, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001534154,AUID,authID Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",avepoint,,avepoint,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001015739,AWRE,Aware Inc,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001070235,BB,BlackBerry Limited,blackberry,blackberry,,curated_current_brand,71,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001786352,BILL,"BILL Holdings, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",bio-key,,bio-key,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001666134,BL,"BlackLine, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001378590,BLIN,Bridgeline Digital Inc.,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001280058,BLKB,"Blackbaud, Inc.",blackbaud,,blackbaud,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",backblaze,backblaze,,curated_current_brand,4,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001372612,BOX,"BOX, INC.",box,,box,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",bentley,bentley,,curated_current_brand,224,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001582982,CCLD,"CareCloud, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000813672,CDNS,Cadence Design Systems,cadence,,cadence,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001827090,CERT,"Certara, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001651562,COUR,"Coursera, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001108524,CRM,"Salesforce, Inc.",salesforce,salesforce,,curated_current_brand,20,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001768267,CRNC,Cerence Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",crowdstrike,crowdstrike,,curated_current_brand,1,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001769628,CRWV,"CoreWeave, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001169561,CVLT,"Commault Systems, Inc.",commvault,commvault,,curated_current_brand,30,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001820875,CXAI,CXApp Inc. Class A Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001569345,CXM,"Sprinklr, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0002032341,CYAB,"Cyabra, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001467623,DBX,"Dropbox, Inc. Class A",dropbox,dropbox,,curated_current_brand,16,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000910638,DDD,3D Systems Corporation,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",datadog,datadog,,curated_current_brand,1,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001261333,DOCU,"DocuSign, Inc. Common Stock",docusign,,docusign,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001773383,DT,"Dynatrace, Inc.",dynatrace,dynatrace,,curated_current_brand,3,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001066194,EGAN,eGain Corporation,egain,egain,,curated_current_brand,4,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001707753,ESTC,Elastic N.V.,elastic,elastic,,curated_current_brand,349,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001853145,EVCM,EverCommerce Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",expensify,,expensify,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001960355,EXYN,"Exyn Technologies, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001993400,FATN,"FatPipe, Inc. Common Stock",fatpipe,,fatpipe,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001579878,FIG,"Figma, Inc.",figma,figma,,curated_current_brand,1,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001800667,FROG,JFrog Ltd. Ordinary Shares,jfrog,jfrog,,curated_current_brand,70,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,freshworks,freshworks,,curated_current_brand,3,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",fastly,fastly,,curated_current_brand,3,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000849399,GEN,Gen Digital Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001653482,GTLB,GitLab Inc. Class A Common Stock,gitlab,gitlab,,curated_current_brand,1481,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",guidewire,,guidewire,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001404655,HUBS,"HUBSPOT, INC.",hubspot,hubspot,,curated_current_brand,7,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001040896,IDN,"Intellicheck, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001081745,INLX,"Intellinetics, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001615063,INSE,"Inspired Entertainment, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001565687,INTA,"Intapp, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000896878,INTU,Intuit Inc,intuit,intuit,,curated_current_brand,16,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001432133,KLTR,"Kaltura, Inc. Common Stock",kaltura,kaltura,,curated_current_brand,7,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001835830,KVYO,"Klaviyo, Inc.",klaviyo,klaviyo,,curated_current_brand,2,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001625641,LAW,"CS Disco, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001056696,MANH,Manhattan Associates Inc,manh,,manh,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001224133,MCHX,"Marchex, Inc. Class B",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001441816,MDB,"MongoDB, Inc. Class A",mongodb,mongodb,,curated_current_brand,301,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000789019,MSFT,Microsoft Corp,microsoft,microsoft,,curated_current_brand,7986,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001211805,MYSZ,"My Size, Inc",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001834488,NABL,"N-able, Inc.",n-able,n-able,,curated_current_brand,18,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001639723,NAVN,"Navan, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001902733,NCNO,"nCino, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",cloudflare,cloudflare,,curated_current_brand,62,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001373715,NOW,"SERVICENOW, INC.",servicenow,servicenow,,curated_current_brand,18,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",nutanix,,nutanix,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",netskope,netskope,,curated_current_brand,10,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001039280,NTWK,"NetSol Technologies, Inc.",netsol,,netsol,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0002083632,OCTV,Octave Intelligence plc Class B Ordinary Shares,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",okta,okta,,curated_current_brand,27,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001341439,ORCL,Oracle Corp,oracle,oracle,,curated_current_brand,12063,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001734722,PATH,"UiPath, Inc.",uipath,uipath,,curated_current_brand,6,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",paycom,,paycom,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001611052,PCOR,"Procore Technologies, Inc.",procore,,procore,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,paylocity,,paylocity,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001568100,PD,"PagerDuty, Inc.",pagerduty,pagerduty,,curated_current_brand,12,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001120914,PDFS,PDF Solutions Inc,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001826681,PDYN,Palladyne AI Corp. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,palantir,palantir,,curated_current_brand,29,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001784535,PRCH,"Porch Group, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000876167,PRGS,Progress Software Corp (DE),progress,progress,,curated_current_brand,294,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000857005,PTC,"PTC, INC",ptc,ptc,,curated_current_brand,35,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001040161,PXLW,Pixelworks Inc,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001107843,QLYS,"Qualys, Inc. Common Stock",qualys,qualys,,curated_current_brand,11,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001410384,QTWO,Q2 Holdings Inc,q2,,q2,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001758009,QUBT,Quantum Computing Inc. Common,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000797542,QXL,Quantum X Labs Inc. Common Stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001315098,RBLX,Roblox Corporation,roblox,,roblox,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001943896,RBRK,"Rubrik, Inc.",rubrik,rubrik,,curated_current_brand,4,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001720116,RDVT,"Red Violet, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0002077709,ROC,Rank One Computing Corporation Common stock,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001560327,RPD,"Rapid7, Inc. Common Stock",rapid7,rapid7,,curated_current_brand,91,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001583708,S,"SentinelOne, Inc.",sentinelone,,sentinelone,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001627857,SAIL,"SailPoint, Inc. Common Stock",sailpoint,sailpoint,,curated_current_brand,11,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,shopify,shopify,,curated_current_brand,21,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001774675,SKIL,Skillsoft Corp.,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000948708,SMSI,Smith Micro Software Inc,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001640147,SNOW,Snowflake Inc.,snowflake,snowflake,,curated_current_brand,38,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000883241,SNPS,Synopsys Inc,synopsys,synopsys,,curated_current_brand,7,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001092699,SPSC,"SPS Commerce, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001402436,SSNC,SS&C Technologies Inc,ssctech,ssctech,,curated_current_brand,7,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0002092574,SWMR,"Swarmer, Inc Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000816761,TDC,TERADATA CORPORATION,teradata,teradata,,curated_current_brand,5,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,atlassian,atlassian,,curated_current_brand,472,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001660280,TENB,"Tenable Holdings, Inc.",tenable,tenable,,curated_current_brand,179,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0000946581,TTWO,Take-Two Interactive Software Inc,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001447669,TWLO,Twilio Inc.,twilio,twilio,,curated_current_brand,2,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0000860731,TYL,"Tyler Technologies, Inc.",tylertech,tylertech,,curated_current_brand,13,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001810806,U,Unity Software Inc.,unity3d,unity3d,,curated_current_brand,2,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001505155,UPLD,"Upland Software, Inc.",uplandsoftware,,uplandsoftware,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001393052,VEEV,Veeva Systems Inc.,veeva,,veeva,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001603015,VIA,"Via Transportation, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001973062,VIDA,VIDA Global Inc.,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001361113,VRNS,"Varonis Systems, Inc.",varonis,,varonis,curated_current_brand,0,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0002038439,VWAV,"VisionWave Holdings, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001609151,WEAV,"Weave Communications, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001445305,WK,Workiva Inc.,workiva,workiva,,curated_current_brand,1,Limited to this application vendor; subsidiaries and historical ownership not covered. Alias is unconfirmed until NVD returns a directly vulnerable CPE.
+0001788999,XPER,Xperi Inc,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001512673,XYZ,"Block, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001873951,XZO,"Exzeo Group, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001856314,YOU,"Clear Secure, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001667313,ZDGE,"Zedge, Inc.",,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.
+0001851003,ZETA,Zeta Global Holdings Corp.,,,,unmapped,,Missing mapping is not evidence of no vulnerabilities.

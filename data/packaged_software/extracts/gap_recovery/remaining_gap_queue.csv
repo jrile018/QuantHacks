@@ -1,0 +1,11 @@
+gap,status,detail
+historical_prices,partially_recovered,2131 valid bars restored for 4 verified share histories; other aliases still need issuer/class evidence
+financial_standard_tags,expanded,"Additional distinct G&A, SG&A, advertising, restructuring, deferred revenue and debt metrics extracted without substituting unlike tags"
+annual_TTM,partially_verified,6071 existing unverified derived values replaced by directly reported values; other cross-filing calculations remain flagged
+quarter_calendars,overlap_removed,Earlier-available non-overlapping quarters selected; later overlapping comparatives preserved for review; no transition quarters fabricated
+SEC_archive_paths,repaired,Legacy index paths normalized to the moved archive; missing exhibit retry returned 404
+December_2024_EPSS,source_unavailable,Bulk and dated API retried; FIRST API returns 422. No substitute date or interpolation used
+EPSS_company_mappings,requires_entity_product_research,Unmapped companies and absent CVEs remain missing; no automatic name-based vendor attribution
+cloud_AI_spending,disclosure_candidates_only,"Rescanned public filings; amounts, seats and internal adoption require semantic/source confirmation"
+public_float_scale,7_source_reviewed_6_unresolved,Seven cover-page dollar amounts confirmed inconsistent XBRL scaling; corrected supplemental table retains raw API values and source excerpts. Six alerts remain unresolved
+historical_universe,not_resolved,Current 168-company universe is not historical membership; company snapshots are not backfilled historical observations

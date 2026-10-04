@@ -14,6 +14,40 @@ def fact(start, end, value, filed, accn="a", tag="Revenues", priority=0):
 
 
 class MetricsTests(unittest.TestCase):
+    def test_registration_financials_keep_actual_late_disclosure_date(self):
+        company={'cik':'1','ticker':'T','name':'Test'}
+        raw={'facts':{'us-gaap':{'Revenues':{'units':{'USD':[{'start':'2022-01-01','end':'2022-12-31','val':100,'form':'S-1','filed':'2025-01-01','accn':'a'}]}}}}}
+        facts=m.collect_facts(company,raw,'2026-01-01')
+        self.assertEqual(facts['revenue'][0]['filed'],'2025-01-01')
+        self.assertFalse(m.collect_facts(company,raw,'2024-12-31')['revenue'])
+
+    def test_software_rd_and_marketing_are_not_silent_generic_substitutes(self):
+        self.assertNotIn('ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost',m.FLOWS['rd_expense'])
+        self.assertNotIn('MarketingExpense',m.FLOWS['sales_marketing'])
+    def test_later_comparative_calendar_does_not_overlap_original_quarter(self):
+        fs = [fact('2023-05-01','2023-07-31',100,'2023-09-01'),
+              fact('2023-04-01','2023-06-30',200,'2024-08-01'),
+              fact('2024-04-01','2024-06-30',300,'2024-08-01')]
+        selected, excluded = m.non_overlapping_quarters(m.quarterly_series(fs))
+        self.assertNotIn('2023-06-30',selected)
+        self.assertIn('2023-07-31',selected)
+        self.assertIn('2024-06-30',selected)
+        self.assertEqual(len(excluded),1)
+    def test_annual_ttm_fills_missing_quarters_with_real_filing_date(self):
+        f = fact("2022-01-01", "2022-12-31", 500, "2023-03-01")
+        t = m.trailing({}, "2022-12-31", {"start": "2022-10-01"}, [f])
+        self.assertEqual(t["value"], 500)
+        self.assertEqual(t["filed"], "2023-03-01")
+        self.assertEqual(t["method"], "reported_annual_ttm")
+
+    def test_annual_ttm_does_not_replace_earlier_available_series(self):
+        fs = [fact(start, end, 100, "2023-02-01") for start, end in
+              [("2022-01-01", "2022-03-31"), ("2022-04-01", "2022-06-30"),
+               ("2022-07-01", "2022-09-30"), ("2022-10-01", "2022-12-31")]]
+        annual = fact("2022-01-01", "2022-12-31", 450, "2023-03-01")
+        t = m.trailing(m.quarterly_series(fs), "2022-12-31", {"start":"2022-10-01"}, fs+[annual])
+        self.assertEqual(t["value"], 400)
+
     def test_same_filing_restatement_basis_is_used_for_difference(self):
         facts = [fact("2022-01-01", "2022-03-31", 100, "2022-05-01", "a"),
                  fact("2022-01-01", "2022-03-31", 110, "2022-08-01", "b"),

@@ -20,6 +20,8 @@ import time
 import urllib.request
 from pathlib import Path
 
+import sec_common
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 CACHE = HERE / "extracts" / "identity" / "cache"
@@ -100,10 +102,10 @@ def cached_counts(cik: str, ua: str) -> dict[str, int]:
 
 
 def latest_10k_text(ticker: str) -> str:
-    folders = sorted((SEC / ticker / "10-K").glob("*/*.htm*")) if (SEC / ticker / "10-K").exists() else []
-    if not folders:
+    docs = sec_common.filing_documents(SEC / ticker, ["10-K"])
+    if not docs:
         return ""
-    raw = folders[-1].read_bytes().decode("utf-8", errors="ignore")
+    raw = docs[-1][2].read_bytes().decode("utf-8", errors="ignore")
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", raw)).split())
 
 

@@ -19,6 +19,8 @@ import html
 import re
 from pathlib import Path
 
+import sec_common
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 SEC = HERE / "extracts" / "sec"
@@ -111,9 +113,8 @@ def main() -> int:
             base = SEC / ticker / form_dir
             if not base.exists():
                 continue
-            for doc in sorted(base.glob("*/*")):
-                if not doc.is_file():
-                    continue
+            for doc in sec_common.filing_documents(SEC / ticker, [form_dir]):
+                doc = doc[2]
                 folder = doc.parent.name
                 text = read_text(doc)
                 row = {

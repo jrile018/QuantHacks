@@ -189,7 +189,10 @@ def main() -> int:
                     row["status"] = f"failed: {exc}"
                     failures.append({"ticker": ticker, "item": f"{fl['form']} {fl['accession']}", "error": str(exc)})
             index_rows.append(row)
-            if args.with_exhibits and local.exists() and fl["form"] in ("8-K", "8-K/A", "6-K", "6-K/A"):
+            # 10-Ks carry Exhibit 21 (subsidiary list) and Exhibit 10 (material contracts),
+            # which the checklist needs for the parent-child map and the customer network.
+            if args.with_exhibits and local.exists() and fl["form"] in (
+                    "8-K", "8-K/A", "6-K", "6-K/A", "10-K", "10-K/A", "20-F", "40-F"):
                 base = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{fl['accession'].replace('-', '')}/"
                 content = local.read_text(encoding="utf-8", errors="replace")
                 links = re.findall(r'href\s*=\s*[\"\']([^\"\']+)[\"\']', content, re.I)
@@ -199,7 +202,7 @@ def main() -> int:
                     parsed = urllib.parse.urlparse(absolute)
                     filename = Path(parsed.path).name
                     # Exhibit 2.x holds merger and purchase agreements (checklist item 5)
-                    if (absolute.startswith(base) and re.search(r'(?:ex(?:hibit)?[-_ ]?(?:99|10|2)|press[-_]?release)', filename, re.I)
+                    if (absolute.startswith(base) and re.search(r'(?:ex(?:hibit)?[-_ ]?(?:99|10|21|2)|press[-_]?release|subsidiar)', filename, re.I)
                             and filename != fl["primary_document"] and filename.lower().endswith((".htm", ".html", ".txt"))):
                         exhibits.add(filename)
                 for filename in sorted(exhibits):

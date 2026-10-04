@@ -19,6 +19,8 @@ import re
 import sys
 from pathlib import Path
 
+import sec_common
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 EXTRACT = HERE / "extracts" / "sec"
@@ -52,9 +54,7 @@ def main() -> int:
 
     for ticker in tickers:
         for form_dir in ("8-K", "8-K_A"):
-            for doc in (EXTRACT / ticker / form_dir).glob("*/*"):
-                if not doc.is_file():
-                    continue
+            for _d, _f, doc in sec_common.filing_documents(EXTRACT / ticker, [form_dir]):
                 docs_scanned += 1
                 text = read_text(doc)
                 found = {m.group(1) for m in ITEM_RE.finditer(text)}

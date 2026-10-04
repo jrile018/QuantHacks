@@ -1,8 +1,8 @@
 """Daily adjusted stock prices for the 168-company universe, 2022 onward, from Massive.
 
 Uses MASSIVE_API_KEY from .env. One aggregates request per ticker covers the whole window.
-Adjusted prices account for splits and dividends, so returns computed from them are total
-returns. Each ticker's response is cached under data/packaged_software/extracts/_cache/prices/.
+Adjusted prices account for splits, not dividends. Total returns require a separate
+dividend ledger. Each response is cached under data/packaged_software/extracts/_cache/prices/.
 
 Writes data/packaged_software/extracts/prices/daily_bars.csv with one row per ticker per trading day:
   ticker, date, open, high, low, close, volume, vwap, transactions

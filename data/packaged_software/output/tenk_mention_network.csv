@@ -1,0 +1,114 @@
+filer_cik,filer_ticker,filing_date,form,mentioned_ticker,mentioned_name,mention_count
+0000796343,ADBE,2025-01-13,10-K,TEAM,Atlassian Corporation Class A Common Stock,1
+0000769397,ADSK,2022-03-14,10-K,DDD,3D Systems Corporation,1
+0000769397,ADSK,2023-03-14,10-K,DDD,3D Systems Corporation,1
+0000769397,ADSK,2024-06-10,10-K,CDNS,Cadence Design Systems,1
+0000769397,ADSK,2024-06-10,10-K,DDD,3D Systems Corporation,1
+0000769397,ADSK,2024-06-10,10-K,GEN,Gen Digital Inc. Common Stock,1
+0000769397,ADSK,2024-06-10,10-K,INTU,Intuit Inc,2
+0000769397,ADSK,2025-03-06,10-K,DDD,3D Systems Corporation,1
+0000769397,ADSK,2026-03-03,10-K,DDD,3D Systems Corporation,1
+0000803578,AIFF,2025-04-03,10-K,DH,Definitive Healthcare Corp. Class A Common Stock,1
+0002026353,ATHR,2025-12-17,10-K,QUBT,Quantum Computing Inc. Common,2
+0001836981,BBAI,2022-03-31,10-K,PLTR,Palantir Technologies Inc. Class A Common Stock,1
+0001280058,BLKB,2022-03-01,10-K,MANH,Manhattan Associates Inc,1
+0001280058,BLKB,2022-03-01,10-K,TDC,TERADATA CORPORATION,1
+0001280058,BLKB,2023-02-24,10-K,MANH,Manhattan Associates Inc,1
+0001280058,BLKB,2023-02-24,10-K,TDC,TERADATA CORPORATION,1
+0001280058,BLKB,2024-02-21,10-K,MANH,Manhattan Associates Inc,1
+0001280058,BLKB,2024-02-21,10-K,TDC,TERADATA CORPORATION,1
+0001280058,BLKB,2025-02-21,10-K,MANH,Manhattan Associates Inc,1
+0001280058,BLKB,2025-02-21,10-K,TDC,TERADATA CORPORATION,1
+0001280058,BLKB,2026-02-18,10-K,MANH,Manhattan Associates Inc,1
+0001280058,BLKB,2026-02-18,10-K,TDC,TERADATA CORPORATION,1
+0001866633,CCSI,2026-02-13,10-K,DH,Definitive Healthcare Corp. Class A Common Stock,1
+0001866633,CCSI,2026-02-13,10-K,EVCM,EverCommerce Inc. Common Stock,1
+0001651562,COUR,2026-04-30,10-K/A,APPN,Appian Corporation Class A Common Stock,1
+0001651562,COUR,2026-04-30,10-K/A,MSFT,Microsoft Corp,1
+0001651562,COUR,2026-04-30,10-K/A,U,Unity Software Inc.,1
+0001535527,CRWD,2022-03-16,10-K,BB,BlackBerry Limited,2
+0001820875,CXAI,2022-03-30,10-K,QUBT,Quantum Computing Inc. Common,1
+0001853145,EVCM,2022-03-15,10-K,INTU,Intuit Inc,1
+0001743725,GDYN,2022-05-02,10-K/A,PDFS,PDF Solutions Inc,1
+0001743725,GDYN,2023-05-01,10-K/A,EGAN,eGain Corporation,1
+0001743725,GDYN,2023-05-01,10-K/A,PDFS,PDF Solutions Inc,1
+0001743725,GDYN,2024-04-29,10-K/A,EGAN,eGain Corporation,1
+0001743725,GDYN,2024-04-29,10-K/A,PDFS,PDF Solutions Inc,1
+0001743725,GDYN,2025-04-29,10-K/A,EGAN,eGain Corporation,1
+0001743725,GDYN,2025-04-29,10-K/A,PDFS,PDF Solutions Inc,1
+0001743725,GDYN,2026-04-30,10-K/A,EGAN,eGain Corporation,1
+0001743725,GDYN,2026-04-30,10-K/A,PDFS,PDF Solutions Inc,1
+0001528396,GWRE,2023-09-18,10-K,RBLX,Roblox Corporation,2
+0001528396,GWRE,2024-09-16,10-K,RBLX,Roblox Corporation,2
+0001528396,GWRE,2025-09-11,10-K,RBLX,Roblox Corporation,2
+0001528396,GWRE,2026-09-11,10-K,RBLX,Roblox Corporation,2
+0001718939,IDAI,2022-04-07,10-K,ROC,Rank One Computing Corporation Common stock,1
+0001718939,IDAI,2023-03-30,10-K,ROC,Rank One Computing Corporation Common stock,1
+0001718939,IDAI,2024-04-01,10-K,ROC,Rank One Computing Corporation Common stock,1
+0001718939,IDAI,2025-03-31,10-K,ROC,Rank One Computing Corporation Common stock,1
+0001718939,IDAI,2026-03-31,10-K,ROC,Rank One Computing Corporation Common stock,1
+0001728688,IIIV,2022-11-18,10-K,EVCM,EverCommerce Inc. Common Stock,1
+0001728688,IIIV,2023-11-22,10-K,EVCM,EverCommerce Inc. Common Stock,1
+0001728688,IIIV,2024-11-25,10-K,EVCM,EverCommerce Inc. Common Stock,1
+0001728688,IIIV,2025-11-21,10-K,EVCM,EverCommerce Inc. Common Stock,1
+0001081745,INLX,2022-03-24,10-K,BLIN,Bridgeline Digital Inc.,1
+0001081745,INLX,2023-03-27,10-K,BLIN,Bridgeline Digital Inc.,1
+0001081745,INLX,2024-03-28,10-K,BLIN,Bridgeline Digital Inc.,2
+0001081745,INLX,2025-03-24,10-K,BLIN,Bridgeline Digital Inc.,2
+0001081745,INLX,2026-03-30,10-K,EVCM,EverCommerce Inc. Common Stock,1
+0000896878,INTU,2022-09-02,10-K,TEAM,Atlassian Corporation Class A Common Stock,1
+0000896878,INTU,2023-09-01,10-K,TEAM,Atlassian Corporation Class A Common Stock,1
+0000896878,INTU,2024-09-04,10-K,TEAM,Atlassian Corporation Class A Common Stock,1
+0000896878,INTU,2025-09-03,10-K,TEAM,Atlassian Corporation Class A Common Stock,1
+0000896878,INTU,2026-09-09,10-K,TEAM,Atlassian Corporation Class A Common Stock,1
+0000789019,MSFT,2023-07-27,10-K,QUBT,Quantum Computing Inc. Common,1
+0000789019,MSFT,2024-07-30,10-K,QUBT,Quantum Computing Inc. Common,1
+0001823878,MYPS,2022-03-03,10-K,TTWO,Take-Two Interactive Software Inc,2
+0001823878,MYPS,2023-03-10,10-K,TTWO,Take-Two Interactive Software Inc,2
+0001823878,MYPS,2024-03-12,10-K,TTWO,Take-Two Interactive Software Inc,2
+0001823878,MYPS,2025-03-14,10-K,TTWO,Take-Two Interactive Software Inc,2
+0001823878,MYPS,2026-03-16,10-K,TTWO,Take-Two Interactive Software Inc,2
+0001477333,NET,2026-04-29,10-K/A,PLTR,Palantir Technologies Inc. Class A Common Stock,2
+0001477333,NET,2026-04-29,10-K/A,TEAM,Atlassian Corporation Class A Common Stock,1
+0001477333,NET,2026-04-29,10-K/A,U,Unity Software Inc.,2
+0001734722,PATH,2022-04-04,10-K,APPN,Appian Corporation Class A Common Stock,1
+0001734722,PATH,2023-03-24,10-K,APPN,Appian Corporation Class A Common Stock,1
+0001590955,PAYC,2022-02-17,10-K,PCTY,Paylocity Holding Corporation Common Stock,2
+0001590955,PAYC,2023-02-16,10-K,PCTY,Paylocity Holding Corporation Common Stock,2
+0001590955,PAYC,2024-02-15,10-K,PCTY,Paylocity Holding Corporation Common Stock,2
+0001590955,PAYC,2025-02-20,10-K,PCTY,Paylocity Holding Corporation Common Stock,2
+0001590955,PAYC,2026-02-19,10-K,PCTY,Paylocity Holding Corporation Common Stock,2
+0001590955,PAYC,2026-02-19,10-K,QUBT,Quantum Computing Inc. Common,1
+0001826681,PDYN,2022-03-29,10-K,PLTR,Palantir Technologies Inc. Class A Common Stock,1
+0001826681,PDYN,2023-03-16,10-K,PLTR,Palantir Technologies Inc. Class A Common Stock,1
+0000876167,PRGS,2022-03-30,10-K/A,APPN,Appian Corporation Class A Common Stock,1
+0000876167,PRGS,2022-03-30,10-K/A,MANH,Manhattan Associates Inc,1
+0000797542,QXL,2026-03-27,10-K,QUBT,Quantum Computing Inc. Common,62
+0000748268,RCAT,2026-03-19,10-K,PLTR,Palantir Technologies Inc. Class A Common Stock,1
+0001583708,S,2022-04-07,10-K,BB,BlackBerry Limited,29
+0001583708,S,2023-03-29,10-K,BB,BlackBerry Limited,28
+0001594805,SHOP,2025-04-29,10-K/A,ADSK,Autodesk Inc,1
+0001594805,SHOP,2025-04-29,10-K/A,INTU,Intuit Inc,1
+0001594805,SHOP,2025-04-29,10-K/A,TEAM,Atlassian Corporation Class A Common Stock,1
+0001594805,SHOP,2025-04-29,10-K/A,VEEV,Veeva Systems Inc.,1
+0001594805,SHOP,2026-04-29,10-K/A,ADSK,Autodesk Inc,1
+0001594805,SHOP,2026-04-29,10-K/A,INTU,Intuit Inc,1
+0001594805,SHOP,2026-04-29,10-K/A,PLTR,Palantir Technologies Inc. Class A Common Stock,2
+0001594805,SHOP,2026-04-29,10-K/A,TEAM,Atlassian Corporation Class A Common Stock,1
+0001594805,SHOP,2026-04-29,10-K/A,VEEV,Veeva Systems Inc.,3
+0000948708,SMSI,2024-02-26,10-K,EGAN,eGain Corporation,1
+0000883241,SNPS,2022-12-12,10-K,CDNS,Cadence Design Systems,3
+0000883241,SNPS,2023-12-12,10-K,CDNS,Cadence Design Systems,3
+0000883241,SNPS,2024-12-19,10-K,CDNS,Cadence Design Systems,3
+0000883241,SNPS,2025-12-22,10-K,CDNS,Cadence Design Systems,1
+0001840856,SOUN,2022-03-09,10-K,ORCL,Oracle Corp,1
+0001840856,SOUN,2026-03-02,10-K,FRSH,Freshworks Inc. Class A Common Stock,1
+0001943289,SVCO,2025-03-05,10-K,CDNS,Cadence Design Systems,2
+0001943289,SVCO,2025-03-05,10-K,QUBT,Quantum Computing Inc. Common,1
+0001943289,SVCO,2026-03-12,10-K,CDNS,Cadence Design Systems,4
+0001943289,SVCO,2026-03-12,10-K,QUBT,Quantum Computing Inc. Common,2
+0001650372,TEAM,2023-08-18,10-K,FRSH,Freshworks Inc. Class A Common Stock,2
+0001650372,TEAM,2024-08-16,10-K,FRSH,Freshworks Inc. Class A Common Stock,2
+0001638826,TTAN,2026-03-25,10-K,VEEV,Veeva Systems Inc.,1
+0001447669,TWLO,2022-04-22,10-K/A,INTU,Intuit Inc,2
+0001447669,TWLO,2022-04-22,10-K/A,VEEV,Veeva Systems Inc.,1
