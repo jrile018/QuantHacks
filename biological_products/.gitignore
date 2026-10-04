@@ -1,0 +1,15 @@
+# Too big for GitHub, or rebuilt by the scripts. Everything else in this folder is shared for the audit.
+data/raw/aact/
+data/raw/aact_extract/
+data/raw/aact_snapshots.csv
+data/raw/companyfacts/
+data/raw/research_cache/
+data/raw/research/
+data/raw/greenhouse_jobs/
+data/raw/ct_history/
+data/raw/research_build.log
+data/fds/*.pkl
+hpg_bundle/_to_delete/
+scratch/HANDOFF_before_audit_note.md
+__pycache__/
+*.pyc

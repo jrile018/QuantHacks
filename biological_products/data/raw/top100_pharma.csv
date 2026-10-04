@@ -1,0 +1,101 @@
+rank,company,aliases,ticker,revenue_2025_musd,source_url
+1,Johnson & Johnson,Johnson & Johnson;Janssen;Janssen Research & Development;Janssen Biotech;Janssen Pharmaceuticals;JNJ,JNJ,94193,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+2,Roche,Roche;Genentech;F. Hoffmann-La Roche;Hoffmann-La Roche,RHHBY,77510,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+3,Eli Lilly,Eli Lilly;Lilly;Eli Lilly and Company,LLY,65179,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+4,Pfizer,Pfizer;Pfizer Inc,PFE,62579,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+5,AbbVie,AbbVie;AbbVie Inc,ABBV,61160,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+6,AstraZeneca,AstraZeneca;Astra Zeneca;MedImmune,AZN,58739,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+7,Novartis,Novartis;Novartis Pharmaceuticals;Sandoz,NVS,54532,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+8,Bayer,Bayer,,53323,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+9,Sanofi,Sanofi;Sanofi Pasteur;Genzyme,SNY,51042,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+10,Novo Nordisk,Novo Nordisk;Novo Nordisk A/S,NVO,49450,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+11,Bristol-Myers Squibb,Bristol-Myers Squibb;Bristol Myers Squibb;BMS;Celgene,BMY,46756,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+12,Abbott,Abbott,,44328,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+13,GSK,GSK;GlaxoSmithKline;GlaxoSmithKine;GlaxoSmithKline Biologicals,GSK,43774,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+14,Shanghai Pharmaceuticals Holdings Co,Shanghai Pharmaceuticals Holdings Co,,39701,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+15,CR Pharma Segment,CR Pharma Segment,,37740,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+16,China Resource Pharma Segment,China Resource Pharma Segment,,37740,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+17,Amgen,Amgen;Amgen Inc,AMGN,36751,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+18,Boehringer Ingelheim,Boehringer Ingelheim,,32469,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+19,Takeda,Takeda;Takeda Pharmaceutical;Shire,TAK,29322,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+20,"Gilead Sciences, Inc.",Gilead Sciences;Gilead;Kite Pharma,GILD,28915,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+21,Fresenius,Fresenius,,26388,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+22,Merck,Merck & Co;Merck Sharp & Dohme;MSD,MRK,21102,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+23,Teva,Teva,,17258,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+24,CSL,CSL;CSL Behring;Seqirus,CSL.AX,15558,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+25,Regeneron,Regeneron;Regeneron Pharmaceuticals,REGN,14343,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+26,Viatris,Viatris,,14300,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+27,Daiichi Sankyo,Daiichi Sankyo,,12072,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+28,Vertex Pharmaceuticals,Vertex Pharmaceuticals;Vertex,VRTX,12001,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+29,Baxter Pharma,Baxter Pharma,,11244,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+30,Bausch Health,Bausch Health,,10156,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+31,Biogen,Biogen;Biogen Idec,BIIB,9891,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+32,Zoetis Inc,Zoetis Inc,,9467,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+33,UCB,UCB,,9057,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+34,Grifols,Grifols,,8803,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+35,"Chugai Pharmaceutical Co., Ltd.","Chugai Pharmaceutical Co., Ltd.",,8051,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+36,Servier,Servier,,8026,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+37,Organon,Organon,,6216,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+38,Sun Pharma,Sun Pharma,,6060,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+39,Fosun Pharma,Fosun Pharma,,5810,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+40,Yunnan Baiyao,Yunnan Baiyao,,5766,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+41,Eisai,Eisai,,5283,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+42,Galderma,Galderma,,5207,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+43,Incyte,Incyte,,5141,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+44,Elanco,Elanco,,4715,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+45,Sino Biopharma,Sino Biopharma,,4457,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+46,Jiangsu Hengrui Pharmaceuticals,Jiangsu Hengrui Pharmaceuticals,,4428,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+47,Ipsen1,Ipsen1,,430 1,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+48,STADA Arzneimittel AG,STADA Arzneimittel AG,,4300,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+49,Jazz Pharma,Jazz Pharma,,4268,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+50,Octapharma,Octapharma,,4258,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+51,Perrigo Company Plc,Perrigo Company Plc,,4253,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+52,Argenx,Argenx,,4248,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+53,Chiesi,Chiesi,,4241,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+54,Lundbeck,Lundbeck,,3941,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+55,Pierre Fabre,Pierre Fabre,,3744,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+56,Genmab,Genmab,,3720,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+57,Alnylam Pharma,Alnylam Pharma,,3714,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+58,CSPC Pharma,CSPC Pharma,,3641,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+59,Aurobindo,Aurobindo,,3594,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+60,Biontech,Biontech,,3358,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+61,Hikma,Hikma,,3349,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+62,United therapeutics,United therapeutics,,3183,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+63,Cipla,Cipla,,3153,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+64,Ono,Ono,,3116,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+65,Sobi,Sobi,,3106,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+66,Recordati,Recordati,,3064,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+67,Ferring,Ferring,,2945,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+68,Celltrion,Celltrion,,2872,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+69,Neurocrine,Neurocrine,,2861,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+70,Neurocrine Biosciences,Neurocrine Biosciences,,2861,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+71,Shionogi,Shionogi,,2805,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+72,Dr. Reddy's,Dr. Reddy's,,2680,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+73,Dainippon Sumitomo2,Dainippon Sumitomo2,,2553,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+74,Lupin,Lupin,,2545,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+75,Royalty Pharma,Royalty Pharma,,2378,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+76,Exelixis,Exelixis,,2320,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+77,Orion,Orion,,2211,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+78,Sarepta Therapeutics,Sarepta Therapeutics,,2198,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+79,Hansoh Pharma,Hansoh Pharma,,2104,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+80,Moderna,Moderna;ModernaTX,MRNA,1944,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+81,Kedrion,Kedrion,,1931,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+82,Santen,Santen,,1920,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+83,Zydus,Zydus,,1757,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+84,Biocon,Biocon,,1696,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+85,Changchun Tech,Changchun Tech,,1692,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+86,Otsuka,Otsuka,,1580,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+87,Keenova,Keenova,,1431,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+88,Halozyme Therapeutics,Halozyme Therapeutics,,1397,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+89,Torrent Pharma,Torrent Pharma,,1282,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+90,Zhifei Bio,Zhifei Bio,,1254,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+91,Ionis,Ionis,,944,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+92,Ascendis Pharma,Ascendis Pharma,,843,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+93,Emergent BioSolutions,Emergent BioSolutions,,743,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+94,Tianjin Pharmaceuticals Da Ren Tang Group Corp,Tianjin Pharmaceuticals Da Ren Tang Group Corp,,688,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+95,Gan& Lee Pharma,Gan& Lee Pharma,,567,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+96,SK Biopharma,SK Biopharma,,488,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+97,PharmaMar,PharmaMar,,257,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+98,CanSino Biologics,CanSino Biologics,,148,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+99,Astellas,Astellas,,12,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies
+100,WuXi AppTec,WuXi AppTec,,6,https://www.chemanalyst.com/ChemAnalyst/PharmaCompanies

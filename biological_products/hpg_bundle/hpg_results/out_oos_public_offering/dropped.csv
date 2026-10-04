@@ -1,0 +1,84 @@
+ticker,t_0,reason
+ESLA,2026-01-07,no option chain as of the pre-event session
+GLUE,2026-01-12,2m: no expiry 46-80 days out
+OCGN,2026-01-22,2m: ATM pair did not trade on or near the pre-event session
+OCGN,2026-01-22,3-6m: ATM pair did not trade on or near the pre-event session
+CHRS,2026-01-26,1m: ATM pair did not trade on or near the pre-event session
+CHRS,2026-01-26,2m: ATM pair did not trade on or near the pre-event session
+CHRS,2026-01-26,3-6m: ATM pair did not trade on or near the pre-event session
+PCVX,2026-02-03,3-6m: ATM pair did not trade on or near the pre-event session
+STRO,2026-02-11,1m: ATM pair did not trade on or near the pre-event session
+STRO,2026-02-11,2m: no expiry 46-80 days out
+STRO,2026-02-11,3-6m: ATM pair did not trade on or near the pre-event session
+CHRS,2026-02-18,2m: no expiry 46-80 days out
+CHRS,2026-02-18,3-6m: ATM pair did not trade on or near the pre-event session
+LIMN,2026-02-19,no option chain as of the pre-event session
+CADL,2026-02-24,3-6m: ATM pair did not trade on or near the pre-event session
+ZURA,2026-02-27,2m: ATM pair did not trade on or near the pre-event session
+ZURA,2026-02-27,3-6m: ATM pair did not trade on or near the pre-event session
+SANA,2026-03-04,1m: no expiry 21-45 days out
+CLDI,2026-03-12,no option chain as of the pre-event session
+LCTX,2026-03-12,1m: ATM pair did not trade on or near the pre-event session
+LCTX,2026-03-12,2m: no expiry 46-80 days out
+LCTX,2026-03-12,3-6m: ATM pair did not trade on or near the pre-event session
+HUMA,2026-03-20,2m: no expiry 46-80 days out
+HUMA,2026-03-20,3-6m: ATM pair did not trade on or near the pre-event session
+SABS,2026-03-20,1m: ATM pair did not trade on or near the pre-event session
+SABS,2026-03-20,2m: no expiry 46-80 days out
+SABS,2026-03-20,3-6m: ATM pair did not trade on or near the pre-event session
+INTS,2026-03-24,no option chain as of the pre-event session
+OTLK,2026-03-26,1m: no paired strikes near spot
+OTLK,2026-03-26,2m: no paired strikes near spot
+OTLK,2026-03-26,3-6m: no paired strikes near spot
+IPSC,2026-03-27,could not recover spot from the chain (no liquid near-dated pair)
+VIVS,2026-04-06,no option chain as of the pre-event session
+AIM,2026-04-13,no option chain as of the pre-event session
+ALLO,2026-04-14,2m: no expiry 46-80 days out
+ALLO,2026-04-16,2m: no expiry 46-80 days out
+MGTX,2026-04-17,1m: ATM pair did not trade on or near the pre-event session
+MGTX,2026-04-17,2m: no expiry 46-80 days out
+MGTX,2026-04-17,3-6m: ATM pair did not trade on or near the pre-event session
+MAZE,2026-04-23,2m: ATM pair did not trade on or near the pre-event session
+MAZE,2026-04-23,3-6m: ATM pair did not trade on or near the pre-event session
+OTLK,2026-04-24,1m: no paired strikes near spot
+OTLK,2026-04-24,2m: no paired strikes near spot
+OTLK,2026-04-24,3-6m: no paired strikes near spot
+CABA,2026-05-05,1m: no expiry 21-45 days out
+CABA,2026-05-05,3-6m: ATM pair did not trade on or near the pre-event session
+COAG,2026-05-05,no option chain as of the pre-event session
+AURA,2026-05-05,could not recover spot from the chain (no liquid near-dated pair)
+AURA,2026-05-06,1m: ATM pair did not trade on or near the pre-event session
+AURA,2026-05-06,2m: ATM pair did not trade on or near the pre-event session
+AURA,2026-05-06,3-6m: ATM pair did not trade on or near the pre-event session
+ARTV,2026-05-11,no option chain as of the pre-event session
+CVM,2026-05-14,no option chain as of the pre-event session
+RLAY,2026-05-22,2m: ATM pair did not trade on or near the pre-event session
+RLAY,2026-05-22,3-6m: ATM pair did not trade on or near the pre-event session
+AIM,2026-05-22,no option chain as of the pre-event session
+OTLK,2026-05-29,2m: no paired strikes near spot
+EXOZ,2026-06-09,no option chain as of the pre-event session
+BCDA,2026-06-09,no option chain as of the pre-event session
+HUMA,2026-06-12,1m: ATM pair did not trade on or near the pre-event session
+HUMA,2026-06-12,2m: no expiry 46-80 days out
+HUMA,2026-06-12,3-6m: ATM pair did not trade on or near the pre-event session
+AIM,2026-06-12,no option chain as of the pre-event session
+CVM,2026-06-17,no option chain as of the pre-event session
+EXOZ,2026-06-18,no option chain as of the pre-event session
+TSHA,2026-06-26,1m: ATM pair did not trade on or near the pre-event session
+TSHA,2026-06-26,2m: ATM pair did not trade on or near the pre-event session
+TSHA,2026-06-26,3-6m: ATM pair did not trade on or near the pre-event session
+EXOZ,2026-07-02,no option chain as of the pre-event session
+TWST,2026-08-06,1m: ATM pair did not trade on or near the pre-event session
+TWST,2026-08-06,2m: ATM pair did not trade on or near the pre-event session
+TWST,2026-08-06,3-6m: ATM pair did not trade on or near the pre-event session
+SLDB,2026-08-07,could not recover spot from the chain (no liquid near-dated pair)
+RLAY,2026-08-07,2m: no expiry 46-80 days out
+SRRK,2026-08-07,1m: ATM pair did not trade on or near the pre-event session
+SRRK,2026-08-07,2m: ATM pair did not trade on or near the pre-event session
+SRRK,2026-08-07,3-6m: ATM pair did not trade on or near the pre-event session
+REPL,2026-08-11,2m: ATM pair did not trade on or near the pre-event session
+SLXN,2026-08-14,no option chain as of the pre-event session
+OTLK,2026-08-17,2m: no expiry 46-80 days out
+DYAI,2026-08-17,could not recover spot from the chain (no liquid near-dated pair)
+GRML,2026-08-28,no option chain as of the pre-event session
+PLUR,2026-08-31,no option chain as of the pre-event session

@@ -1,0 +1,12 @@
+{
+  "tag": "public_offering",
+  "start": "2024-01-01",
+  "end": "2025-12-31",
+  "max_events": 8,
+  "universe_size": 139,
+  "event_count": 8,
+  "priced_count": 4,
+  "repo": "/blue/ai-workshop/kkatiyar/QuantHacks",
+  "pandas": "2.0.3",
+  "numpy": "1.26.2"
+}

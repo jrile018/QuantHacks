@@ -1,0 +1,157 @@
+column,block,unit,description
+px_ret_1d,market,fraction,adjusted close return over last 1 market days
+px_ret_5d,market,fraction,adjusted close return over last 5 market days
+px_ret_20d,market,fraction,adjusted close return over last 20 market days
+px_ret_60d,market,fraction,adjusted close return over last 60 market days
+px_ret_120d,market,fraction,adjusted close return over last 120 market days
+px_xs_5d,market,fraction,5d return minus XBI
+px_xs_20d,market,fraction,20d return minus XBI
+px_xs_60d,market,fraction,60d return minus XBI
+px_vol_20d,market,daily_std,"std of daily log returns, 20d"
+px_vol_60d,market,daily_std,"std of daily log returns, 60d"
+px_off_hi_252,market,fraction,distance below 252d high
+px_off_lo_252,market,fraction,distance above 252d low
+px_adv20_usd_m,market,usd_m,avg dollar volume 20d
+px_vol_spike,market,ratio,"today's volume / median volume of prior 20d (median floored at 1000 shares, ratio capped at 100)"
+px_gap_open,market,fraction,"open vs previous close, same day"
+px_range_20d,market,fraction,"mean (high-low)/close, 20d"
+px_trades_20d,market,count,"mean trades per day, 20d"
+px_bars_20d,market,count,days with a price bar in last 20 market days
+px_close_raw,market,usd,"close as delivered by the price source (already split adjusted to today), used for market cap"
+mkt_spy_ret_5d,market_state,fraction,SPY return 5d (same for all companies on a date)
+mkt_spy_ret_20d,market_state,fraction,SPY return 20d (same for all companies on a date)
+mkt_spy_vol_20d,market_state,daily_std,SPY 20d volatility
+mkt_xbi_ret_5d,market_state,fraction,XBI return 5d (same for all companies on a date)
+mkt_xbi_ret_20d,market_state,fraction,XBI return 20d (same for all companies on a date)
+mkt_xbi_ret_60d,market_state,fraction,XBI return 60d (same for all companies on a date)
+mkt_xbi_vol_20d,market_state,daily_std,XBI 20d volatility
+mkt_xbi_off_hi_252,market_state,fraction,XBI distance below 252d high
+cal_dow,calendar,0-4,"day of week, Monday=0"
+cal_month,calendar,1-12,month
+cal_doy,calendar,1-366,day of year
+cal_days_to_qend,calendar,days,days to calendar quarter end
+cal_days_since_qstart,calendar,days,days since calendar quarter start
+fin_assets_m,fin_balance,usd_m,"total assets, latest filed"
+fin_cur_assets_m,fin_balance,usd_m,current assets
+fin_cur_liab_m,fin_balance,usd_m,current liabilities
+fin_equity_m,fin_balance,usd_m,stockholders' equity
+fin_deficit_m,fin_balance,usd_m,accumulated deficit (negative = deficit)
+fin_debt_m,fin_balance,usd_m,long term debt as tagged (missing often means no debt tag)
+fin_cash_m,fin_balance,usd_m,cash and cash equivalents
+fin_float_m,fin_balance,usd_m,"public float from cover page (reported once a year, as of mid-year)"
+fin_shares_m,fin_balance,shares_m,shares outstanding from cover page
+fin_liab_m,fin_balance,usd_m,total liabilities (derived = assets - equity when not tagged)
+fin_liq_m,fin_balance,usd_m,cash + short term investments (same period only)
+fin_liq_def,fin_balance,code,1=combined tag 2=cash+ST investments 3=cash only (may understate) 4=cash+AFS securities
+fin_rd_ttm_m,fin_flow,usd_m,"R&D, trailing 12 months from filed periods"
+fin_ga_ttm_m,fin_flow,usd_m,"G&A, trailing 12 months from filed periods"
+fin_opex_ttm_m,fin_flow,usd_m,"operating expenses, trailing 12 months from filed periods"
+fin_opinc_ttm_m,fin_flow,usd_m,"operating income, trailing 12 months from filed periods"
+fin_ni_ttm_m,fin_flow,usd_m,"net income, trailing 12 months from filed periods"
+fin_opcf_ttm_m,fin_flow,usd_m,"operating cash flow, trailing 12 months from filed periods"
+fin_fincf_ttm_m,fin_flow,usd_m,"financing cash flow, trailing 12 months from filed periods"
+fin_stockproc_ttm_m,fin_flow,usd_m,"proceeds from common stock issuance, trailing 12 months from filed periods"
+fin_sbc_ttm_m,fin_flow,usd_m,"stock based compensation, trailing 12 months from filed periods"
+fin_rev_ttm_m,fin_flow,usd_m,"revenue TTM (Revenues, else contract revenue)"
+fin_age_bs_days,fin_meta,days,days since latest balance sheet date
+fin_age_pub_days,fin_meta,days,days since that balance sheet became public (filing date)
+fin_bs_aligned,fin_meta,flag,1 if cash and assets come from the same period
+fin_age_ttm_days,fin_meta,days,days since end of period behind the R&D TTM
+fin_burn_q_m,fin_derived,usd_m,quarterly cash burn (only when operating cash flow < 0)
+fin_runway_q,fin_derived,quarters,"liquidity / quarterly burn, capped at 40"
+fin_cur_ratio,fin_derived,ratio,current assets / current liabilities
+fin_liq_to_assets,fin_derived,ratio,liquidity / total assets
+fin_rd_share,fin_derived,ratio,R&D / operating expenses
+fin_debt_to_liq,fin_derived,ratio,debt / liquidity
+fin_raise_to_liq,fin_derived,ratio,stock proceeds TTM / liquidity (financing intensity)
+fin_equity_neg,fin_derived,flag,1 if equity below zero
+fin_shares_adj_m,fin_balance,shares_m,cover page shares in units of today (reverse splits applied)
+fin_mktcap_m,fin_derived,usd_m,split adjusted close x split adjusted cover page shares (approximate)
+fin_liq_to_mcap,fin_derived,ratio,liquidity / market cap (cash backing)
+fin_shares_chg_1y,fin_derived,fraction,change in cover page shares vs one year earlier (dilution)
+fin_log_mktcap,fin_derived,log_usd_m,log market cap
+fil_k8_n30,filings,count,8-K filings in last 30 days
+fil_k8_n90,filings,count,8-K filings in last 90 days
+fil_k8_n365,filings,count,8-K filings in last 365 days
+fil_k8_dsl,filings,days,days since last 8-K filing (none in coverage = NaN)
+fil_f4_n30,filings,count,Form 4 filings in last 30 days
+fil_f4_n90,filings,count,Form 4 filings in last 90 days
+fil_f4_dsl,filings,days,days since last Form 4 filing (none in coverage = NaN)
+fil_f144_n30,filings,count,Form 144 filings in last 30 days
+fil_f144_n90,filings,count,Form 144 filings in last 90 days
+fil_s13_n90,filings,count,13D/13G filings in last 90 days
+fil_p424b_n90,filings,count,424B prospectus filings in last 90 days
+fil_p424b_n365,filings,count,424B prospectus filings in last 365 days
+fil_p424b_dsl,filings,days,days since last 424B prospectus filing (none in coverage = NaN)
+fil_s3_n365,filings,count,S-3 filings in last 365 days
+fil_s1_n365,filings,count,S-1 filings in last 365 days
+fil_s8_n365,filings,count,S-8 filings in last 365 days
+fil_nt_n365,filings,count,late filing notice filings in last 365 days
+fil_seccorr_n180,filings,count,SEC comment letters filings in last 180 days
+fil_effect_n90,filings,count,registration effective filings in last 90 days
+fil_q10_dsl,filings,days,days since last 10-Q filing (none in coverage = NaN)
+fil_k10_dsl,filings,days,days since last 10-K filing (none in coverage = NaN)
+fil_f425_n180,filings,count,merger comms filings in last 180 days
+fil_proxy_n180,filings,count,proxy filings in last 180 days
+fil_k8_i1_01_n90,filings,count,8-Ks with item 1.01 in last 90 days
+fil_k8_i1_02_n90,filings,count,8-Ks with item 1.02 in last 90 days
+fil_k8_i1_03_n90,filings,count,8-Ks with item 1.03 in last 90 days
+fil_k8_i2_02_n90,filings,count,8-Ks with item 2.02 in last 90 days
+fil_k8_i2_03_n90,filings,count,8-Ks with item 2.03 in last 90 days
+fil_k8_i2_05_n90,filings,count,8-Ks with item 2.05 in last 90 days
+fil_k8_i3_01_n90,filings,count,8-Ks with item 3.01 in last 90 days
+fil_k8_i3_02_n90,filings,count,8-Ks with item 3.02 in last 90 days
+fil_k8_i4_01_n90,filings,count,8-Ks with item 4.01 in last 90 days
+fil_k8_i4_02_n90,filings,count,8-Ks with item 4.02 in last 90 days
+fil_k8_i5_02_n90,filings,count,8-Ks with item 5.02 in last 90 days
+fil_k8_i5_07_n90,filings,count,8-Ks with item 5.07 in last 90 days
+fil_k8_i7_01_n90,filings,count,8-Ks with item 7.01 in last 90 days
+fil_k8_i8_01_n90,filings,count,8-Ks with item 8.01 in last 90 days
+cat_trial_n90,category_history,count,8-Ks of type trial in last 90 days
+cat_trial_n365,category_history,count,8-Ks of type trial in last 365 days
+cat_trial_dsl,category_history,days,days since last 8-K of type trial
+cat_reg_n90,category_history,count,8-Ks of type reg in last 90 days
+cat_reg_n365,category_history,count,8-Ks of type reg in last 365 days
+cat_reg_dsl,category_history,days,days since last 8-K of type reg
+cat_offer_n90,category_history,count,8-Ks of type offer in last 90 days
+cat_offer_n365,category_history,count,8-Ks of type offer in last 365 days
+cat_offer_dsl,category_history,days,days since last 8-K of type offer
+cat_deal_n90,category_history,count,8-Ks of type deal in last 90 days
+cat_deal_n365,category_history,count,8-Ks of type deal in last 365 days
+cat_deal_dsl,category_history,days,days since last 8-K of type deal
+cat_mgmt_n90,category_history,count,8-Ks of type mgmt in last 90 days
+cat_mgmt_n365,category_history,count,8-Ks of type mgmt in last 365 days
+cat_listing_n90,category_history,count,8-Ks of type listing in last 90 days
+cat_listing_n365,category_history,count,8-Ks of type listing in last 365 days
+cat_earn_n90,category_history,count,8-Ks of type earn in last 90 days
+cat_earn_n365,category_history,count,8-Ks of type earn in last 365 days
+cat_earn_dsl,category_history,days,days since last 8-K of type earn
+cat_pres_n90,category_history,count,8-Ks of type pres in last 90 days
+cat_pres_n365,category_history,count,8-Ks of type pres in last 365 days
+cat_debt_n90,category_history,count,8-Ks of type debt in last 90 days
+cat_debt_n365,category_history,count,8-Ks of type debt in last 365 days
+ins_n_buy_30,insider,count,"open market buy transactions, 30d"
+ins_n_sell_30,insider,count,"sell transactions, 30d"
+ins_n_buy_90,insider,count,"open market buy transactions, 90d"
+ins_n_sell_90,insider,count,"sell transactions, 90d"
+ins_net_val_90_m,insider,usd_m,"buys minus sells in dollars, 90d (not 10b5-1 aware)"
+ins_n_officer_sell_90,insider,count,"officer sell transactions, 90d"
+news_n_5d,news,count,"articles usable by close, last 5 market days"
+news_n_20d,news,count,"articles usable by close, last 20 market days"
+news_n_60d,news,count,"articles usable by close, last 60 market days"
+news_sent_5d,news,score,"mean ML sentiment of articles, last 5 market days (NaN if none)"
+news_sent_20d,news,score,"mean ML sentiment of articles, last 20 market days (NaN if none)"
+news_neg_share_20d,news,fraction,"share of articles with sentiment < -0.1, 20d"
+news_spike,news,ratio,5d article count / typical 5d count over 60d
+tr_active,trials,count,trials started and not yet completed (by registry dates) [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_active_p3,trials,count,active phase 3 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_active_p2,trials,count,active phase 2 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_active_p1,trials,count,active phase 1 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_started_365,trials,count,trials started in last 365 days [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_pc_prev90,trials,count,trials with primary completion date in last 90 days [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_results_prev180,trials,count,trials with results posted in last 180 days [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_dsl_results,trials,days,days since last results posting [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_enroll_active_p3,trials,count,total enrollment of active phase 3 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+reg_pdufa_days_ahead,regulatory,days,"days to nearest FDA action date already mentioned in an earlier 8-K (regex, may include non-PDUFA dates)"
+reg_pdufa_n180,regulatory,count,known FDA action dates within next 180 days
+reg_fda_actions_365,regulatory,count,FDA approval records (openFDA) dated in last 365 days

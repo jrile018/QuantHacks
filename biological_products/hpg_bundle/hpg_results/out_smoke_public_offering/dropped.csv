@@ -1,0 +1,9 @@
+ticker,t_0,reason
+KYMR,2024-01-08,could not recover spot from the chain (no liquid near-dated pair)
+VYGR,2024-01-09,2m: no expiry 46-80 days out
+ATRA,2024-01-10,could not recover spot from the chain (no liquid near-dated pair)
+ALEC,2024-01-22,2m: ATM pair did not trade on or near the pre-event session
+SABS,2024-01-29,no option chain as of the pre-event session
+CGON,2024-01-31,no option chain as of the pre-event session
+PCVX,2024-02-01,could not recover spot from the chain (no liquid near-dated pair)
+IKT,2024-02-02,no option chain as of the pre-event session
