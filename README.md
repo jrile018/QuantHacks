@@ -2,7 +2,35 @@
 
 This repository contains a modular version of the Massive 8-K options challenge starter. The notebook remains the visual research walkthrough; `run_all.py` is a command-line entry point for one study window. Both use the same `src/` implementation and ship without saved results.
 
-## Run the notebook
+## Offline backtest and Jupyter notebook
+
+Start with [the reproducible backtest notebook](notebooks/repository-data-and-backtest.ipynb) and [its setup guide](docs/repository-data-workflow.md). It runs the existing options engine twice on a small SHA-256-pinned synthetic snapshot, verifies matching results, and displays its inputs, assumptions and outputs. It needs no API key or market-data download. The synthetic example demonstrates reproducibility; it does not establish qualified historical strategy performance, net portfolio NAV or Sharpe.
+
+Use Python 3.11 in a dedicated environment. On Windows:
+
+```powershell
+py -3.11 -m venv .venv-notebook
+.venv-notebook\Scripts\python.exe -m pip install -r requirements-notebook-lock.txt
+.venv-notebook\Scripts\python.exe -m ipykernel install --user --name quanthaxs-offline --display-name "QuantHaxs offline (Python 3.11)"
+.venv-notebook\Scripts\python.exe -m jupyterlab notebooks/repository-data-and-backtest.ipynb
+```
+
+On macOS/Linux, create the environment with `python3.11 -m venv .venv-notebook` and use `.venv-notebook/bin/python` for the remaining commands. Select **QuantHaxs offline (Python 3.11)** and run all cells from a fresh kernel. The pinned file contains direct package versions; installed versions are recorded in each run receipt.
+
+The notebook also invokes the existing canonical wording/account runner in engineering mode. Its frozen long/short protocol exports every 2024 calendar session for strategy and matched baseline, using explicitly fabricated inputs. Real historical use still requires the exact qualified text/model/source, executable market, cost, borrowing and account evidence.
+
+For a terminal replay or a headless notebook execution:
+
+```bash
+python scripts/reproduce_backtest.py --output-dir data/processed/replay-check/run-1
+python scripts/reproduce_backtest.py --output-dir data/processed/replay-check/run-2 --compare data/processed/replay-check/run-1
+python scripts/execute_repository_notebook.py --output data/processed/notebook-executions/repository-data-and-backtest.ipynb
+python scripts/run_simple_wording_backtest.py --root . --mode engineering --output-dir data/processed/wording-demo
+```
+
+Use your environment's Python and fresh output paths. The runner rejects changed input hashes and existing outputs. Generated data, executed notebooks and credentials stay outside Git. The Backtest and notebook workflow verifies the bundled replay and notebook on GitHub.
+
+## Run the licensed-data challenge notebook
 
 You need Python 3.10+ and a Massive API key with access to the challenge data.
 

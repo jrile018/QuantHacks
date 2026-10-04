@@ -9,3 +9,6 @@ data/processed/
 .venv/
 .ipynb_checkpoints/
 __pycache__/
+
+# Dedicated offline notebook environment
+.venv-notebook/

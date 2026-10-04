@@ -1,0 +1,229 @@
+{
+  "schema_version": "wording-equity-engineering-fixture-v1",
+  "synthetic_fixture_id": "wording_equity_engineering-v1",
+  "synthetic": true,
+  "claim": "FABRICATED ENGINEERING WIRING ONLY; NO ALPHA OR ECONOMIC CLAIM",
+  "candidates": [
+    {
+      "candidate_id": "FAKE-LONG",
+      "cik": "0001053507",
+      "accession": "SYNTH-LONG-A1",
+      "security_id": "FAKE-LONG",
+      "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "signal": 0.6,
+      "signal_recipe_id": "finbert_nonoverlap_character_weighted_positive_minus_negative_v1",
+      "form": "8-K",
+      "items": [
+        "2.02"
+      ],
+      "signal_document_role": "press_release_exhibit",
+      "source_quality": "qualified",
+      "public_clock_quality": "qualified",
+      "model_vintage_quality": "qualified",
+      "identity_quality": "qualified",
+      "public_by_utc": "2024-01-02T20:00:00Z",
+      "corporate_actions": {
+        "qualified": true,
+        "status": "verified_none",
+        "horizon_id": "post-release-next-session-intraday-v1",
+        "security_id": "FAKE-LONG",
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "start_at_utc": "2024-01-03T14:30:00Z",
+        "end_at_utc": "2024-01-03T21:00:00Z"
+      },
+      "costs": {
+        "qualified": true,
+        "currency": "USD",
+        "entry_fee": 1,
+        "exit_fee": 1,
+        "entry_slippage": 0,
+        "exit_slippage": 0,
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "valid_through_utc": "2024-01-03T21:00:00Z"
+      },
+      "borrow": {
+        "qualified": true,
+        "quantity": 100000,
+        "total_fee": 2,
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "valid_through_utc": "2024-01-03T21:00:00Z"
+      },
+      "margin": 100000,
+      "margin_available_at_utc": "2024-01-03T14:00:00Z"
+    },
+    {
+      "candidate_id": "FAKE-SHORT",
+      "cik": "0001061630",
+      "accession": "SYNTH-SHORT-A1",
+      "security_id": "FAKE-SHORT",
+      "source_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "signal": -0.5,
+      "signal_recipe_id": "finbert_nonoverlap_character_weighted_positive_minus_negative_v1",
+      "form": "8-K",
+      "items": [
+        "2.02"
+      ],
+      "signal_document_role": "press_release_exhibit",
+      "source_quality": "qualified",
+      "public_clock_quality": "qualified",
+      "model_vintage_quality": "qualified",
+      "identity_quality": "qualified",
+      "public_by_utc": "2024-01-02T20:00:00Z",
+      "corporate_actions": {
+        "qualified": true,
+        "status": "verified_none",
+        "horizon_id": "post-release-next-session-intraday-v1",
+        "security_id": "FAKE-SHORT",
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "start_at_utc": "2024-01-03T14:30:00Z",
+        "end_at_utc": "2024-01-03T21:00:00Z"
+      },
+      "costs": {
+        "qualified": true,
+        "currency": "USD",
+        "entry_fee": 1,
+        "exit_fee": 1,
+        "entry_slippage": 0,
+        "exit_slippage": 0,
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "valid_through_utc": "2024-01-03T21:00:00Z"
+      },
+      "borrow": {
+        "qualified": true,
+        "quantity": 100000,
+        "total_fee": 2,
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "valid_through_utc": "2024-01-03T21:00:00Z"
+      },
+      "margin": 100000,
+      "margin_available_at_utc": "2024-01-03T14:00:00Z"
+    },
+    {
+      "candidate_id": "FAKE-NEUTRAL",
+      "cik": "0001423689",
+      "accession": "SYNTH-NEUTRAL-A1",
+      "security_id": "FAKE-NEUTRAL",
+      "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "signal": 0,
+      "signal_recipe_id": "finbert_nonoverlap_character_weighted_positive_minus_negative_v1",
+      "form": "8-K",
+      "items": [
+        "2.02"
+      ],
+      "signal_document_role": "press_release_exhibit",
+      "source_quality": "qualified",
+      "public_clock_quality": "qualified",
+      "model_vintage_quality": "qualified",
+      "identity_quality": "qualified",
+      "public_by_utc": "2024-01-02T20:00:00Z",
+      "corporate_actions": {
+        "qualified": true,
+        "status": "verified_none",
+        "horizon_id": "post-release-next-session-intraday-v1",
+        "security_id": "FAKE-NEUTRAL",
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "start_at_utc": "2024-01-03T14:30:00Z",
+        "end_at_utc": "2024-01-03T21:00:00Z"
+      },
+      "costs": {
+        "qualified": true,
+        "currency": "USD",
+        "entry_fee": 1,
+        "exit_fee": 1,
+        "entry_slippage": 0,
+        "exit_slippage": 0,
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "valid_through_utc": "2024-01-03T21:00:00Z"
+      },
+      "borrow": {
+        "qualified": true,
+        "quantity": 100000,
+        "total_fee": 2,
+        "available_at_utc": "2024-01-03T14:00:00Z",
+        "valid_through_utc": "2024-01-03T21:00:00Z"
+      },
+      "margin": 100000,
+      "margin_available_at_utc": "2024-01-03T14:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "quote_id": "long-entry",
+      "instrument_id": "FAKE-LONG",
+      "at_utc": "2024-01-03T14:31:00Z",
+      "available_at_utc": "2024-01-03T14:31:00Z",
+      "bid": 99,
+      "ask": 100,
+      "bid_size": 100000,
+      "ask_size": 100000,
+      "evidence_kind": "update",
+      "currency": "USD",
+      "raw_price": true
+    },
+    {
+      "quote_id": "long-exit",
+      "instrument_id": "FAKE-LONG",
+      "at_utc": "2024-01-03T20:59:00Z",
+      "available_at_utc": "2024-01-03T20:59:00Z",
+      "bid": 101,
+      "ask": 102,
+      "bid_size": 100000,
+      "ask_size": 100000,
+      "evidence_kind": "update",
+      "currency": "USD",
+      "raw_price": true
+    },
+    {
+      "quote_id": "short-entry",
+      "instrument_id": "FAKE-SHORT",
+      "at_utc": "2024-01-03T14:31:00Z",
+      "available_at_utc": "2024-01-03T14:31:00Z",
+      "bid": 99,
+      "ask": 100,
+      "bid_size": 100000,
+      "ask_size": 100000,
+      "evidence_kind": "update",
+      "currency": "USD",
+      "raw_price": true
+    },
+    {
+      "quote_id": "short-exit",
+      "instrument_id": "FAKE-SHORT",
+      "at_utc": "2024-01-03T20:59:00Z",
+      "available_at_utc": "2024-01-03T20:59:00Z",
+      "bid": 101,
+      "ask": 102,
+      "bid_size": 100000,
+      "ask_size": 100000,
+      "evidence_kind": "update",
+      "currency": "USD",
+      "raw_price": true
+    },
+    {
+      "quote_id": "neutral-entry",
+      "instrument_id": "FAKE-NEUTRAL",
+      "at_utc": "2024-01-03T14:31:00Z",
+      "available_at_utc": "2024-01-03T14:31:00Z",
+      "bid": 99,
+      "ask": 100,
+      "bid_size": 100000,
+      "ask_size": 100000,
+      "evidence_kind": "update",
+      "currency": "USD",
+      "raw_price": true
+    },
+    {
+      "quote_id": "neutral-exit",
+      "instrument_id": "FAKE-NEUTRAL",
+      "at_utc": "2024-01-03T20:59:00Z",
+      "available_at_utc": "2024-01-03T20:59:00Z",
+      "bid": 101,
+      "ask": 102,
+      "bid_size": 100000,
+      "ask_size": 100000,
+      "evidence_kind": "update",
+      "currency": "USD",
+      "raw_price": true
+    }
+  ]
+}
