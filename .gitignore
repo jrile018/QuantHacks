@@ -34,3 +34,27 @@ data/packaged_software/extracts/**/public_sources/
 data/packaged_software/extracts/**/public_source_probe/
 data/packaged_software/extracts/**/companies_house/
 data/packaged_software/extracts/**/sec/
+
+# Backtest bulk data: local caches and raw bars stay on each machine.
+bento/
+backtesting_bundle.zip
+*.zip
+
+# Survivorship extracts are large raw pulls; the CSVs are re-included above by *.csv.
+data/packaged_software/extracts/survivorship/
+
+# Duplicate copy of a matrix that already lives in data/packaged_software/final.
+backtesting/feature_matrix_qualified_cov060.csv
+
+# Untracked backtest work for this branch: kept local, not shared through git.
+backtesting/
+data/packaged_software/backtest_survivorship_momentum.py
+data/packaged_software/backtest_thesis_composite.py
+data/packaged_software/build_qualified_matrix.py
+data/packaged_software/classify_departure_events.py
+data/packaged_software/event_study_departures.py
+data/packaged_software/extract_databento_daily.py
+data/packaged_software/extract_delisted_prices.py
+data/packaged_software/extract_delisted_software_tickers.py
+data/packaged_software/extract_delisting_reasons.py
+data/packaged_software/final/
