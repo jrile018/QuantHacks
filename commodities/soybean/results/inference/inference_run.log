@@ -1,0 +1,111 @@
+[32m2026-10-04 10:37:18.458[0m | [1mINFO    [0m | [36msoyweather.data.futures_prices[0m:[36m__init__[0m:[36m37[0m - [1mMarket data provider: Yahoo Finance (REAL DATA ONLY)[0m
+[32m2026-10-04 10:37:18.458[0m | [34m[1mDEBUG   [0m | [36msoyweather.data.cache[0m:[36mget[0m:[36m65[0m - [34m[1mCache HIT: d841e94bcdd5e6ea0f67ae6fe794cca0[0m
+[32m2026-10-04 10:37:18.459[0m | [1mINFO    [0m | [36msoyweather.data.futures_prices[0m:[36mfetch_futures_data[0m:[36m69[0m - [1mUsing cached data for soybeans[0m
+{
+  "full": {
+    "label": "full 2000-2026",
+    "days": 5794,
+    "sharpe_ann": 0.347119753015653,
+    "skew": 5.760750151445572,
+    "excess_kurtosis": 137.57221665658307,
+    "psr_vs_zero": 0.9610869776032223,
+    "dsr_n_trials": 47,
+    "dsr_expected_max_sr_daily": 0.0295919958316604,
+    "dsr": 0.2666323887889491,
+    "bootstrap_ci95_ann": [
+      -0.09650652601801557,
+      0.7413807435458009
+    ],
+    "bootstrap_p_one_sided": 0.0564,
+    "gross_sharpe_ann": 0.39215333531328783,
+    "permutation_p_gross": 0.0278,
+    "permutation_null_95pct_ann": [
+      -0.39004011513215425,
+      0.4021580306765986
+    ],
+    "episodes": 67,
+    "wins": 32,
+    "win_rate": 0.47761194029850745,
+    "win_rate_wilson95": [
+      0.36250188635242525,
+      0.5951501147316833
+    ],
+    "win_rate_binomial_p_two_sided": 0.8071946913670247
+  },
+  "holdout": {
+    "label": "holdout 2025-06 on",
+    "days": 336,
+    "sharpe_ann": 1.8091228351380244,
+    "skew": 3.4232501353756413,
+    "excess_kurtosis": 25.752111734337685,
+    "psr_vs_zero": 0.9936690522883087,
+    "dsr_n_trials": 47,
+    "dsr_expected_max_sr_daily": 0.12288358242858254,
+    "dsr": 0.42264593184138327,
+    "bootstrap_ci95_ann": [
+      0.5024580491162427,
+      3.2031506786300734
+    ],
+    "bootstrap_p_one_sided": 0.0158,
+    "gross_sharpe_ann": 2.017980093798549,
+    "permutation_p_gross": 0.0226,
+    "permutation_null_95pct_ann": [
+      -1.7218973938950526,
+      1.9897297798520996
+    ],
+    "episodes": 10,
+    "wins": 9,
+    "win_rate": 0.9,
+    "win_rate_wilson95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "win_rate_binomial_p_two_sided": 0.021484375
+  },
+  "return_definition_check": {
+    "engine_sharpe_full": 0.347119753015653,
+    "value_based_sharpe_full": 0.305983877373014,
+    "engine_total_full": 0.4166127901047012,
+    "value_based_total_full": 0.3493679467828168,
+    "engine_sharpe_holdout": 1.8091228351380244,
+    "value_based_sharpe_holdout": 1.7852971950205885
+  },
+  "pnl_concentration": {
+    "top10_days_share_of_gross_gains": 0.21821555742037263,
+    "active_days": 557,
+    "total_days": 5794
+  },
+  "vs_inseason_buy_hold": {
+    "full": {
+      "strategy_sharpe": 0.347119753015653,
+      "benchmark_sharpe": -0.45810349998933503,
+      "diff_ci95": [
+        0.23275944140936944,
+        1.3657085565326916
+      ],
+      "diff_p_one_sided": 0.0032
+    },
+    "holdout": {
+      "strategy_sharpe": 1.8091228351380244,
+      "benchmark_sharpe": 1.1740183567397564,
+      "diff_ci95": [
+        -0.7846615907759259,
+        2.2106183142375704
+      ],
+      "diff_p_one_sided": 0.2104
+    }
+  },
+  "forecast_skill_dev": {
+    "n": 860,
+    "spearman": -0.043522415367950644,
+    "p": 0.2022824865090472,
+    "sign_hit_rate": 0.5290697674418605
+  },
+  "sensitivity_grid_dev": {
+    "cells": 20,
+    "sharpe_min": 0.013350639359667,
+    "sharpe_max": 0.3676985740208651,
+    "share_positive": 1.0,
+    "frozen_cell_sharpe": 0.2713848667070827
+  }
+}

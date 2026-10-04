@@ -1,0 +1,44 @@
+{
+  "schema_version": "simple-wording-workflow-v1",
+  "mode_policy": {
+    "engineering": {
+      "fixture": {
+        "path": "tests/fixtures/wording_equity_engineering-v1.json",
+        "sha256": "eb52404074a658ba260f04f5f7eed704ced7d5d55b6f4299b8226301d83cad12"
+      },
+      "input_schema": "wording-equity-engineering-fixture-v1",
+      "scope": "synthetic_engineering"
+    },
+    "qualified": {
+      "producer_schema": "wording-equity-pilot-producer-packet-v1",
+      "market_schema": "pilot-market-packet-v1",
+      "approval_schema": "pilot-reviewed-evidence-receipt-v1",
+      "scope": "contract_only"
+    }
+  },
+  "protocol": {
+    "path": "configs/wording_equity_pilot-v2.json",
+    "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb"
+  },
+  "calendar": {
+    "path": "configs/wording_equity_calendar-2024-v1.json",
+    "sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53"
+  },
+  "transport_map_schema": "wording-artifact-transport-map-v1",
+  "max_trials": 1,
+  "final_test_enabled": false,
+  "source_mode": "qualified_only",
+  "reference_kind": "declared_zero",
+  "periods_per_year": 252,
+  "code_paths": [
+    "scripts/run_simple_wording_backtest.py",
+    "src/research_validation/pilot_intake.py",
+    "src/research_validation/wording_equity_pilot.py",
+    "src/research_validation/marked_account.py",
+    "src/research_validation/portfolio.py",
+    "src/research_validation/trials.py",
+    "src/research_validation/records.py",
+    "src/research_validation/evaluate.py",
+    "src/multi_market/labels.py"
+  ]
+}

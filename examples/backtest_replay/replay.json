@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "events.csv": "c35a4611e93474705635348a4c05fd97ba15a80572517b53af8443f06acfdc49",
+    "option_bars.csv": "0bf87c8b32965e948c3c353b370a49c558ef343474b433ca3e59ae87a9abacd1",
+    "option_legs.csv": "b5c89661a77ecccee828443e5359b2b193dd335b1c2a6400dd270fa793484e65"
+  },
+  "provenance": {
+    "description": "Invented DEMO event and option prices; engineering fixture only",
+    "kind": "synthetic"
+  },
+  "schema_version": 1,
+  "settings": {
+    "baseline_bucket": "3-6m",
+    "calendar_end": "2027-12-31",
+    "calendar_sha256": "18bab3be0d4a9583cfe797b73021472575aa87dc9e911538fbecda34fc18d772",
+    "calendar_start": "2021-06-01",
+    "capital": 100000,
+    "cost_haircut": 0.05,
+    "entry": "post",
+    "horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      21,
+      42,
+      63
+    ],
+    "max_stale_sessions": 3,
+    "otm_pcts": [
+      0.05
+    ],
+    "participation": 0.05,
+    "risk_fraction": 0.01,
+    "risk_free": 0.04
+  }
+}

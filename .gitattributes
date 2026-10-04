@@ -1,3 +1,11 @@
 examples/team_sources/** text eol=lf
 examples/team_data/*.txt text eol=lf
 examples/team_data/*.jsonl text eol=lf
+
+# Preserve exact input bytes (including existing CSV CRLF) for hash-pinned replays.
+examples/backtest_replay/** -text
+configs/simple_wording_workflow-v1.json -text
+configs/wording_equity_pilot-v2.json -text
+configs/wording_equity_calendar-2024-v1.json -text
+tests/fixtures/wording_equity_engineering-v1.json -text
+notebooks/*.ipynb text eol=lf

@@ -17,6 +17,7 @@ class Leg:
     kind: str                 # "call" or "put"
     strike: float
     bars: pd.DataFrame        # close, volume by session (only sessions with trades)
+    shares_per_contract: int  # from the selected reference contract
 
     def mark(self, day: pd.Timestamp) -> float:
         """Last traded close on or before `day`, if it is at most MAX_STALE_SESSIONS sessions old."""
@@ -51,6 +52,55 @@ class PricedEvent:
         T = max((self.expiry - pd.Timestamp(day)).days, 0) / 365
         return self.strikes["K"] * np.exp(-RISK_FREE * T) + m["C_K"] - m["P_K"]
 
+
+OPTION_LEG_COLUMNS = ("event_id", "bucket", "leg_code", "contract_ticker", "underlying_ticker",
+                      "contract_type", "strike", "expiration_date", "selection_date", "spot_pre",
+                      "shares_per_contract")
+OPTION_BAR_COLUMNS = ("contract_ticker", "session", "close", "volume")
+
+
+def option_leg_rows(events: pd.DataFrame, priced: list[PricedEvent]) -> pd.DataFrame:
+    """Export the exact selected contracts while the event-to-leg mapping is still in memory."""
+    event_ids = {}
+    for event in events.to_dict("records"):
+        key = (str(event["ticker"]), pd.Timestamp(event["event_date"]),
+               pd.Timestamp(event["t_pre"]), pd.Timestamp(event["t_0"]))
+        event_id = f"CIK:{str(event['cik']).zfill(10)}:{event['accession_number']}:{event['ticker']}"
+        if key in event_ids:
+            raise ValueError(f"ambiguous matching event for {key}")
+        event_ids[key] = event_id
+    rows = []
+    for pe in priced:
+        key = (pe.ticker, pd.Timestamp(pe.event_date), pd.Timestamp(pe.t_pre), pd.Timestamp(pe.t_0))
+        if key not in event_ids:
+            raise ValueError(f"no matching event for priced option legs: {key}")
+        for code, leg in pe.legs.items():
+            if leg.shares_per_contract != 100:
+                raise ValueError(f"unsupported contract multiplier for {leg.ticker}")
+            rows.append({"event_id": event_ids[key], "bucket": pe.bucket, "leg_code": code,
+                         "contract_ticker": leg.ticker, "underlying_ticker": pe.ticker,
+                         "contract_type": leg.kind, "strike": leg.strike,
+                         "expiration_date": pd.Timestamp(pe.expiry).date().isoformat(),
+                         "selection_date": pd.Timestamp(pe.t_pre).date().isoformat(),
+                         "spot_pre": pe.spot_pre, "shares_per_contract": leg.shares_per_contract})
+    return pd.DataFrame(rows, columns=OPTION_LEG_COLUMNS)
+
+
+def option_bar_rows(priced: list[PricedEvent]) -> pd.DataFrame:
+    """Export observed bars once per contract/session, even when a contract is reused."""
+    bars = {}
+    for pe in priced:
+        for leg in pe.legs.values():
+            for session, bar in leg.bars.iterrows():
+                key = (leg.ticker, pd.Timestamp(session).date().isoformat())
+                value = (float(bar["close"]), float(bar["volume"]))
+                if key in bars and bars[key] != value:
+                    raise ValueError(f"conflicting option bar for {key}")
+                bars[key] = value
+    rows = [{"contract_ticker": ticker, "session": session, "close": close, "volume": volume}
+            for (ticker, session), (close, volume) in sorted(bars.items())]
+    return pd.DataFrame(rows, columns=OPTION_BAR_COLUMNS)
+
 def price_event(ticker: str, t_pre: pd.Timestamp, t_0: pd.Timestamp, event_date: pd.Timestamp,
                 buckets: dict, otm_pcts: list[float]) -> tuple[list[PricedEvent], list[str]]:
     dte_hi = max(b[1] for b in buckets.values())
@@ -77,8 +127,10 @@ def price_event(ticker: str, t_pre: pd.Timestamp, t_0: pd.Timestamp, event_date:
             wanted[f"P_L{pct}"] = ("put", strikes[f"L{pct}"])
         legs = {}
         for key, (kind, k) in wanted.items():
-            tk = contract(e, k, kind)
-            legs[key] = Leg(tk, kind, k, option_bars(tk, t_pre - pd.Timedelta(days=10), expiry))
+            selected = e[(e.strike_price == k) & (e.contract_type == kind)].iloc[0]
+            tk = selected["ticker"]
+            legs[key] = Leg(tk, kind, k, option_bars(tk, t_pre - pd.Timedelta(days=10), expiry),
+                            int(selected["shares_per_contract"]))
         pe = PricedEvent(ticker, event_date, t_pre, t_0, name, expiry, CAL[CAL.searchsorted(expiry, side="right") - 1],
                          loc["spot"], strikes, legs)
         if np.isnan(pe.legs["C_K"].mark(t_pre)) or np.isnan(pe.legs["P_K"].mark(t_pre)):

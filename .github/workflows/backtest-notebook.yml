@@ -1,0 +1,31 @@
+name: Backtest notebook
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-notebook:
+    name: Offline replay and notebook
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11.9'
+          cache: pip
+          cache-dependency-path: requirements-notebook-lock.txt
+      - name: Install notebook dependencies
+        run: python -m pip install -r requirements-notebook-lock.txt
+      - name: Verify replay and catalog contracts
+        run: python -m unittest tests.test_backtest_replay tests.test_repository_data_catalog tests.test_simple_wording_backtest tests.test_wording_equity_pilot tests.test_marked_account tests.test_repository_notebook.RepositoryNotebookTests.test_notebook_is_valid_and_python_cells_compile tests.test_repository_notebook.RepositoryNotebookTests.test_executor_refuses_to_replace_existing_notebook
+      - name: Smoke existing canonical wording engineering CLI
+        run: python scripts/run_simple_wording_backtest.py --root . --mode engineering --output-dir data/processed/wording-engineering/ci
+      - name: Execute notebook in a fresh caller-interpreter kernel
+        run: python scripts/execute_repository_notebook.py --output data/processed/notebook-executions/ci.ipynb
