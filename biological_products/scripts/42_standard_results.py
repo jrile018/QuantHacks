@@ -27,22 +27,40 @@ ap.add_argument('--data', default=os.path.join(os.path.dirname(os.path.abspath(_
 ap.add_argument('--lead', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'hpg_bundle', 'hpg_results'))
 ap.add_argument('--boot', type=int, default=5000)
 ap.add_argument('--borrow', type=float, default=0.30)
-ap.add_argument('--offer_trades', default='offer_strategy_trades_v2.csv', help='offering short trade file in data/fds (v2 = leak-free, scripts 44 and 45)')
+# default windows: the 20 months in which the offering model has trades (Jan 2025 to Aug 2026), cut into two equal halves of 10 months.
+# the first team windows from src/config.py were 2024-01-01..2025-12-31 and 2026-01-01..2026-08-31 (pass them to get the earlier tables).
+ap.add_argument('--is_start', default='2025-01-01'); ap.add_argument('--is_end', default='2025-10-31')
+ap.add_argument('--os_start', default='2025-11-01'); ap.add_argument('--os_end', default='2026-08-31')
+ap.add_argument('--out', default='reports', help='output folder name inside biological_products')
+ap.add_argument('--offer_trades', default='offer_strategy_trades_v3.csv', help='offering short trade file in data/fds (v3 = dataset v2 + quote clock, scripts 48, 22, 45)')
 a = ap.parse_args()
-RAW = os.path.join(a.data, 'raw'); FDS = os.path.join(a.data, 'fds'); OUT = os.path.join(a.data, '..', 'reports'); os.makedirs(OUT, exist_ok=True)
-IS0, IS1, OS0, OS1 = pd.Timestamp('2024-01-01'), pd.Timestamp('2025-12-31'), pd.Timestamp('2026-01-01'), pd.Timestamp('2026-08-31')
-WIN = {'in sample 2024-2025': (IS0, IS1), 'out of sample Jan-Aug 2026': (OS0, OS1)}
+RAW = os.path.join(a.data, 'raw'); FDS = os.path.join(a.data, 'fds'); OUT = os.path.join(a.data, '..', a.out); os.makedirs(OUT, exist_ok=True)
+IS0, IS1, OS0, OS1 = pd.Timestamp(a.is_start), pd.Timestamp(a.is_end), pd.Timestamp(a.os_start), pd.Timestamp(a.os_end)
+DEFAULT = (a.is_start, a.is_end, a.os_start, a.os_end) == ('2024-01-01', '2025-12-31', '2026-01-01', '2026-08-31')
+fm = lambda d: d.strftime('%b %Y')
+LIS, LOS = ('in sample 2024-2025', 'out of sample Jan-Aug 2026') if DEFAULT else (f'in sample {fm(IS0)} to {fm(IS1)}', f'out of sample {fm(OS0)} to {fm(OS1)}')
+WIN = {LIS: (IS0, IS1), LOS: (OS0, OS1)}
 rng = np.random.default_rng(21)
 BLUE, ORANGE, INK, INK2, GRID, SURF = '#2a78d6', '#eb6834', '#0b0b0b', '#52514e', '#e4e3df', '#fcfcfb'
 plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 10, 'axes.edgecolor': GRID, 'axes.labelcolor': INK2, 'xtick.color': INK2,
                      'ytick.color': INK2, 'text.color': INK, 'figure.facecolor': SURF, 'axes.facecolor': SURF, 'savefig.facecolor': SURF})
 
-def ev_stats(x, hold):
-    x = np.asarray(x, float); x = x[np.isfinite(x)]
-    if len(x) < 8: return dict(trades=len(x), total_pnl_pct=np.nan, avg_trade_pct=np.nan, median_trade_pct=np.nan, win_rate=np.nan, sharpe=np.nan, ci_lo=np.nan, ci_hi=np.nan)
+def ev_stats(x, hold, dates=None):
+    """per trade stats. Two 95% intervals: ci_lo/ci_hi resample trades one by one (assumes independent trades, optimistic);
+    cib_lo/cib_hi resample whole signal WEEKS (trades in the same week overlap and share market shocks), the lead's audit A5."""
+    x = np.asarray(x, float); ok_ = np.isfinite(x); x = x[ok_]
+    if len(x) < 8: return dict(trades=len(x), total_pnl_pct=np.nan, avg_trade_pct=np.nan, median_trade_pct=np.nan, win_rate=np.nan, sharpe=np.nan, ci_lo=np.nan, ci_hi=np.nan, cib_lo=np.nan, cib_hi=np.nan)
     k = np.sqrt(252.0 / hold); xb = x[rng.integers(0, len(x), (a.boot, len(x)))]; sb = xb.mean(1) / xb.std(1, ddof=1) * k
-    return dict(trades=len(x), total_pnl_pct=x.sum() * 100, avg_trade_pct=x.mean() * 100, median_trade_pct=np.median(x) * 100, win_rate=(x > 0).mean(),
-                sharpe=x.mean() / x.std(ddof=1) * k, ci_lo=np.percentile(sb, 2.5), ci_hi=np.percentile(sb, 97.5))
+    res = dict(trades=len(x), total_pnl_pct=x.sum() * 100, avg_trade_pct=x.mean() * 100, median_trade_pct=np.median(x) * 100, win_rate=(x > 0).mean(),
+                sharpe=x.mean() / x.std(ddof=1) * k, ci_lo=np.percentile(sb, 2.5), ci_hi=np.percentile(sb, 97.5), cib_lo=np.nan, cib_hi=np.nan)
+    if dates is not None:
+        wk = pd.to_datetime(pd.Series(np.asarray(dates)[ok_])).dt.to_period('W').astype(str).values; groups = [x[wk == w] for w in np.unique(wk)]; G = len(groups)
+        if G >= 6:
+            out = np.empty(a.boot)
+            for b in range(a.boot):
+                xs = np.concatenate([groups[i] for i in rng.integers(0, G, G)]); out[b] = xs.mean() / xs.std(ddof=1) * k if xs.std(ddof=1) > 0 else np.nan
+            res['cib_lo'], res['cib_hi'] = np.nanpercentile(out, 2.5), np.nanpercentile(out, 97.5)
+    return res
 def sharpe_d(x): x = np.asarray(x, float); return x.mean() / x.std(ddof=1) * np.sqrt(252) if len(x) > 5 and x.std(ddof=1) > 0 else np.nan
 def ci_d(x, block=20):
     x = np.asarray(x, float); m = len(x); out = np.empty(a.boot)
@@ -88,7 +106,7 @@ rows, prow = [], []
 def add(strategy, engine, costs, hold, df, col, datecol):
     for w, (d0, d1) in WIN.items():
         g = df[(df[datecol] >= d0) & (df[datecol] <= d1)]
-        rows.append(dict(strategy=strategy, engine=engine, costs=costs, hold_days=hold, window=w, **ev_stats(g[col], hold)))
+        rows.append(dict(strategy=strategy, engine=engine, costs=costs, hold_days=hold, window=w, **ev_stats(g[col], hold, g[datecol])))
 
 P = pd.read_csv(os.path.join(RAW, 'prices.csv'), usecols=['ticker', 'date', 'open', 'close']); P['date'] = pd.to_datetime(P.date)
 O = P.pivot(index='date', columns='ticker', values='open'); C = P.pivot(index='date', columns='ticker', values='close')
@@ -101,13 +119,14 @@ def window_series(Gm, Nm, OPm, days, slot):
     if len(idx) == 0: return days[:0], np.array([]), np.array([])
     w = np.minimum(slot, 1.0 / np.maximum(nopen, 1)); sl = slice(idx[0], idx[-1] + 1)
     return days[sl], (Gm.sum(0) * w)[sl], (Nm.sum(0) * w)[sl]
-WTITLE = {'in sample 2024-2025': 'In sample: 2024 to 2025', 'out of sample Jan-Aug 2026': 'Out of sample: Jan to Aug 2026'}
+WTITLE = {LIS: 'In sample: 2024 to 2025', LOS: 'Out of sample: Jan to Aug 2026'} if DEFAULT else {LIS: f'In sample: {fm(IS0)} to {fm(IS1)}', LOS: f'Out of sample: {fm(OS0)} to {fm(OS1)}'}
 
 # ============ 1. offering short, our backtest (real bid/ask costs + borrow fee) ============
 T = pd.read_csv(os.path.join(FDS, a.offer_trades)); T['sig'] = pd.to_datetime(T.signal.astype(str))
 T['net_all'] = T.net - a.borrow * 5 / 252
 add('Offering short: short stocks the model flags, hedge XBI', 'our backtest', f'real bid/ask + {a.borrow*100:.0f}%/yr borrow', 5, T, 'net_all', 'sig')
-add('Offering short: short stocks the model flags, hedge XBI', 'our backtest', 'none', 5, T, 'gross', 'sig')
+add('Offering short: short stocks the model flags, hedge XBI', 'our backtest', 'none (quote mid to mid)', 5, T, 'gross', 'sig')
+if 'gross_bar' in T: add('Offering short: short stocks the model flags, hedge XBI', 'our backtest', 'none (daily bars, old clock)', 5, T, 'gross_bar', 'sig')
 add('Offering short, liquid subset: entry bid/ask spread under 2%', 'our backtest', f'real bid/ask + {a.borrow*100:.0f}%/yr borrow', 5, T[T.spread_in < 0.02], 'net_all', 'sig')
 T['e'] = pd.to_datetime(T.entry.astype(str)); T['x'] = pd.to_datetime(T.exit.astype(str)); T = T.reset_index(drop=True)
 ii, jj = T.e.map(pos).astype(int).values, T.x.map(pos).astype(int).values; f0, f1 = ii.min(), jj.max()
@@ -122,7 +141,7 @@ for w, (d0, d1) in WIN.items():
     m2 = m & (T.spread_in < 0.02).values; _, _, dn2 = window_series(Go[m2], No[m2], OPo[m2], cal[f0:f1 + 1], 0.20)
     prow.append(dict(strategy='Offering short, liquid subset', window=w, trades=int(m2.sum()), **port_stats(dn2)))
     ser[w] = ([(dd.values, (np.cumprod(1 + dg) - 1) * 100, ORANGE, 'Before costs'), (dd.values, (np.cumprod(1 + dn) - 1) * 100, BLUE, 'After costs')],
-              f'{int(m.sum())} trades. Portfolio Sharpe after costs {sharpe_d(dn):+.2f}' + ('\n(the model has no trades in 2024: it needs that year to train)' if d0 == IS0 else '\n'))
+              f'{int(m.sum())} trades. Portfolio Sharpe after costs {sharpe_d(dn):+.2f}' + ('\n(the model has no trades in 2024: it needs that year to train)' if (d0 == IS0 and IS0.year == 2024) else '\n'))
 two_panel('std_offering_short.png', 'Offering short (our backtest): equity curve, same windows as the team', ser)
 
 # ============ 2. trial registry stage, our backtest, one chain over the whole period ============
@@ -188,7 +207,8 @@ S = pd.DataFrame(rows); S.to_csv(os.path.join(OUT, 'standard_results.csv'), inde
 Pp = pd.DataFrame(prow); Pp.to_csv(os.path.join(OUT, 'standard_portfolio.csv'), index=False)
 pd.set_option('display.width', 260); pd.set_option('display.max_colwidth', 60)
 print('STANDARD RESULTS (per trade; same windows and same formula for every strategy)')
-print(S.assign(strategy=S.strategy.str.slice(0, 44))[['strategy', 'engine', 'costs', 'window', 'trades', 'total_pnl_pct', 'avg_trade_pct', 'median_trade_pct', 'win_rate', 'sharpe', 'ci_lo', 'ci_hi']].round(2).to_string(index=False))
+print(S.assign(strategy=S.strategy.str.slice(0, 44))[['strategy', 'engine', 'costs', 'window', 'trades', 'total_pnl_pct', 'avg_trade_pct', 'median_trade_pct', 'win_rate', 'sharpe', 'ci_lo', 'ci_hi', 'cib_lo', 'cib_hi']].round(2).to_string(index=False))
+print('ci = trades resampled one by one (independent trades assumed); cib = whole signal weeks resampled (allows for overlap and shared shocks)')
 print('\nPORTFOLIO VERSION (daily profit and loss, our own backtests, after costs)')
 print(Pp.round(2).to_string(index=False))
 print('\nwritten to', os.path.abspath(OUT))

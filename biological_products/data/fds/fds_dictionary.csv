@@ -17,7 +17,7 @@ px_gap_open,market,fraction,"open vs previous close, same day"
 px_range_20d,market,fraction,"mean (high-low)/close, 20d"
 px_trades_20d,market,count,"mean trades per day, 20d"
 px_bars_20d,market,count,days with a price bar in last 20 market days
-px_close_raw,market,usd,"close as delivered by the price source (already split adjusted to today), used for market cap"
+px_close_real,market,usd,real close as traders saw it that day (delivered close with later splits undone)
 mkt_spy_ret_5d,market_state,fraction,SPY return 5d (same for all companies on a date)
 mkt_spy_ret_20d,market_state,fraction,SPY return 20d (same for all companies on a date)
 mkt_spy_vol_20d,market_state,daily_std,SPY 20d volatility
@@ -65,8 +65,8 @@ fin_rd_share,fin_derived,ratio,R&D / operating expenses
 fin_debt_to_liq,fin_derived,ratio,debt / liquidity
 fin_raise_to_liq,fin_derived,ratio,stock proceeds TTM / liquidity (financing intensity)
 fin_equity_neg,fin_derived,flag,1 if equity below zero
-fin_shares_adj_m,fin_balance,shares_m,cover page shares in units of today (reverse splits applied)
-fin_mktcap_m,fin_derived,usd_m,split adjusted close x split adjusted cover page shares (approximate)
+fin_shares_now_m,fin_balance,shares_m,cover page shares in the units of this day (splits between the filing and this day applied)
+fin_mktcap_m,fin_derived,usd_m,real close x shares in the units of this day (approximate)
 fin_liq_to_mcap,fin_derived,ratio,liquidity / market cap (cash backing)
 fin_shares_chg_1y,fin_derived,fraction,change in cover page shares vs one year earlier (dilution)
 fin_log_mktcap,fin_derived,log_usd_m,log market cap
@@ -87,9 +87,7 @@ fil_s3_n365,filings,count,S-3 filings in last 365 days
 fil_s1_n365,filings,count,S-1 filings in last 365 days
 fil_s8_n365,filings,count,S-8 filings in last 365 days
 fil_nt_n365,filings,count,late filing notice filings in last 365 days
-fil_seccorr_n180,filings,count,SEC comment letters filings in last 180 days
 fil_effect_n90,filings,count,registration effective filings in last 90 days
-fil_q10_dsl,filings,days,days since last 10-Q filing (none in coverage = NaN)
 fil_k10_dsl,filings,days,days since last 10-K filing (none in coverage = NaN)
 fil_f425_n180,filings,count,merger comms filings in last 180 days
 fil_proxy_n180,filings,count,proxy filings in last 180 days
@@ -143,15 +141,16 @@ news_sent_5d,news,score,"mean ML sentiment of articles, last 5 market days (NaN 
 news_sent_20d,news,score,"mean ML sentiment of articles, last 20 market days (NaN if none)"
 news_neg_share_20d,news,fraction,"share of articles with sentiment < -0.1, 20d"
 news_spike,news,ratio,5d article count / typical 5d count over 60d
-tr_active,trials,count,trials started and not yet completed (by registry dates) [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_active_p3,trials,count,active phase 3 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_active_p2,trials,count,active phase 2 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_active_p1,trials,count,active phase 1 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_started_365,trials,count,trials started in last 365 days [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_pc_prev90,trials,count,trials with primary completion date in last 90 days [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_results_prev180,trials,count,trials with results posted in last 180 days [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_dsl_results,trials,days,days since last results posting [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
-tr_enroll_active_p3,trials,count,total enrollment of active phase 3 trials [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]
+tr_active,trials,count,"trials started and not yet completed, per the registry snapshot available that day [AACT monthly snapshots, point in time]"
+tr_active_p3,trials,count,"active phase 3 trials (snapshot) [AACT monthly snapshots, point in time]"
+tr_active_p2,trials,count,"active phase 2 trials (snapshot) [AACT monthly snapshots, point in time]"
+tr_active_p1,trials,count,"active phase 1 trials (snapshot) [AACT monthly snapshots, point in time]"
+tr_started_365,trials,count,"trials started in last 365 days (snapshot) [AACT monthly snapshots, point in time]"
+tr_pc_prev90,trials,count,"trials whose primary completion was marked ACTUAL within the last 90 days (snapshot) [AACT monthly snapshots, point in time]"
+tr_results_prev180,trials,count,"trials with results posted in last 180 days (snapshot) [AACT monthly snapshots, point in time]"
+tr_dsl_results,trials,days,"days since last results posting (snapshot) [AACT monthly snapshots, point in time]"
+tr_enroll_active_p3,trials,count,"enrollment of active phase 3 trials as shown in the snapshot [AACT monthly snapshots, point in time]"
+tr_snapshot_age_days,trials,days,"age of the registry snapshot used, in days (monthly snapshots, so 1 to about 35) [AACT monthly snapshots, point in time]"
 reg_pdufa_days_ahead,regulatory,days,"days to nearest FDA action date already mentioned in an earlier 8-K (regex, may include non-PDUFA dates)"
 reg_pdufa_n180,regulatory,count,known FDA action dates within next 180 days
 reg_fda_actions_365,regulatory,count,FDA approval records (openFDA) dated in last 365 days

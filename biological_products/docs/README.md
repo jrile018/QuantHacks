@@ -1,3 +1,5 @@
+> **SUPERSEDED (2026-10-04).** This file describes the first, per-filing pipeline (scripts 00 to 15). The current dataset is the daily FDS built by `scripts/16_build_fds.py`; read `data/fds/README_FDS.md` and `HANDOFF_BIOLOGICS.md` instead.
+
 # Biological Products (SIC 2836) data collection
 
 Goal: a feature matrix (one row per 8-K) for the 139 tickers in SIC 2836, using only information known before each filing,

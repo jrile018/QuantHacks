@@ -4,7 +4,9 @@
 
 One row per (company, market day). Decision clock = market close (21:00 UTC rule).
 Rule for anything that only has a DATE (SEC filings): usable from the NEXT calendar day.
-Timestamped items (news) are usable if published before 21:00 UTC that day.
+Timestamped items (news) are usable if published before 16:00 America/New_York that day (v2 fix: was a fixed 21:00 UTC, wrong in summer).
+v2 (2026-10-04): real (unadjusted) prices and market cap from the split history; trial features from monthly AACT registry snapshots;
+SEC comment letter counts dropped (released weeks after their date); spike filter no longer looks at the next day's bar.
 Features and labels are written to separate files so labels cannot leak into features.
 Matrix values are numeric only. Missing = NaN, with a reason code in fds_missing.csv.
 """
@@ -66,14 +68,9 @@ def clean_one(g, tk, logrows):
     n0 = len(g)
     g = g[(g.close > 0.02) & g.close.notna()].reset_index(drop=True)
     drop_low = n0 - len(g)
-    # reverting spikes (bad prints)
-    c = g.close.to_numpy()
+    # v2: the old 'reverting spike' filter looked at the NEXT day's close to decide whether a bar exists (look-ahead). It removed 1 bar
+    # in the whole dataset (ELOX). Removed. Bad prints are now left in and the real-price floor handles sub-dollar names.
     bad = np.zeros(len(g), bool)
-    for i in range(1, len(g) - 1):
-        r = c[i] / c[i - 1]
-        if (r > 3 or r < 1 / 3) and 0.5 < c[i + 1] / c[i - 1] < 2:
-            bad[i] = True
-    g = g[~bad].reset_index(drop=True)
     c = g.close.to_numpy()
     r = np.ones(len(g))
     r[1:] = c[1:] / c[:-1]
@@ -146,7 +143,17 @@ add('px_gap_open', at_t(ADJO / A.shift(1) - 1), block='market', unit='fraction',
 add('px_range_20d', at_t(RNG.rolling(20, min_periods=10).mean()), block='market', unit='fraction', desc='mean (high-low)/close, 20d')
 add('px_trades_20d', at_t(TRD.rolling(20, min_periods=10).mean()), block='market', unit='count', desc='mean trades per day, 20d')
 add('px_bars_20d', at_t(CLS.notna().astype(float).rolling(20, min_periods=1).sum()), block='market', unit='count', desc='days with a price bar in last 20 market days')
-add('px_close_raw', at_t(CLS), block='market', unit='usd', desc='close as delivered by the price source (already split adjusted to today), used for market cap')
+# v2: REAL price. The price source is adjusted for splits that happened LATER, so the delivered close is not what traders saw.
+# real close on day t = delivered close / product of (split_from / split_to) over all splits executed AFTER t  (data/raw/splits.csv, script 43)
+SPL = pd.read_csv(os.path.join(RAW, 'splits.csv'), parse_dates=['execution_date']); SPL['r'] = SPL.split_from / SPL.split_to
+RAFT = pd.DataFrame(1.0, index=cal, columns=CLS.columns)           # product of later split ratios, per (day, ticker)
+for tk_, g_ in SPL.groupby('ticker'):
+    if tk_ not in RAFT.columns: continue
+    for e_, r_ in zip(g_.execution_date, g_.r): RAFT.loc[RAFT.index < e_, tk_] *= r_
+assert (RAFT > 0).all().all()
+add('px_close_real', at_t(CLS / RAFT), block='market', unit='usd', desc='real close as traders saw it that day (delivered close with later splits undone)')
+F_RAFT = at_t(RAFT)   # kept for the market cap below; not a feature
+# the old px_close_raw (delivered, split adjusted to today) is NOT written: it reveals later reverse splits
 for nm, ser in (('spy', spy), ('xbi', xbi)):
     for n in (5, 20, 60):
         if nm == 'spy' and n == 60: continue
@@ -375,13 +382,23 @@ x = (fv('fin_equity_m') < 0).astype(float).where(fv('fin_equity_m').notna())
 add('fin_equity_neg', x, dcode(x, ['fin_equity_m']), 'fin_derived', 'flag', '1 if equity below zero')
 # The price source is already split adjusted to today. Cover page shares are in the units of their own date, so
 # earlier counts are divided by every LATER reverse split found in the share series (unit conversion only, not information).
-sh_adj = M['shares'].val / 1e6 / M['shares']['div']
-add('fin_shares_adj_m', sh_adj, np.where(sh_adj.notna(), C_OK, lvl_code('shares')), BS, 'shares_m', 'cover page shares in units of today (reverse splits applied)')
-mcap = pd.Series(F['px_close_raw']) * sh_adj
-add('fin_mktcap_m', mcap, dcode(mcap, ['fin_shares_adj_m']), 'fin_derived', 'usd_m', 'split adjusted close x split adjusted cover page shares (approximate)')
+# v2: shares in the units of day t = cover page shares, converted by the splits that happened between the filing date and day t
+# (both known by day t). The old version converted by ALL later splits (future information) and multiplied by the adjusted price.
+sh_filed = panel.date - pd.to_timedelta(pd.Series(F['fin_age_pub_days']).fillna(0).to_numpy(), unit='D')
+RSF = np.ones(N)
+for tk_, g_ in SPL.groupby('ticker'):
+    m_ = (panel.ticker == tk_).to_numpy()
+    if not m_.any(): continue
+    d_ = panel.date.to_numpy()[m_]; f_ = sh_filed.to_numpy()[m_]; rs_ = np.ones(m_.sum())
+    for e_, r_ in zip(g_.execution_date.to_numpy(), g_.r.to_numpy()): rs_[(f_ < e_) & (d_ >= e_)] *= r_
+    RSF[m_] = rs_
+sh_now = M['shares'].val / 1e6 / RSF
+add('fin_shares_now_m', sh_now, np.where(sh_now.notna(), C_OK, lvl_code('shares')), BS, 'shares_m', 'cover page shares in the units of this day (splits between the filing and this day applied)')
+mcap = pd.Series(F['px_close_real']) * sh_now
+add('fin_mktcap_m', mcap, dcode(mcap, ['fin_shares_now_m']), 'fin_derived', 'usd_m', 'real close x shares in the units of this day (approximate)')
 x = fv('fin_liq_m') / mcap.where(mcap > 0)
 add('fin_liq_to_mcap', x, dcode(x, ['fin_liq_m', 'fin_mktcap_m']), 'fin_derived', 'ratio', 'liquidity / market cap (cash backing)')
-x = sh_adj / (M['shares_1y'].val / 1e6 / M['shares_1y']['div']) - 1
+x = (M['shares'].val / M['shares']['div']) / (M['shares_1y'].val / M['shares_1y']['div']) - 1    # later splits cancel in the ratio; only splits between the two filings remain, known by day t
 add('fin_shares_chg_1y', x, np.where(x.notna(), C_OK, lvl_code('shares_1y')), 'fin_derived', 'fraction', 'change in cover page shares vs one year earlier (dilution)')
 lm = np.log(mcap.where(mcap > 0))
 add('fin_log_mktcap', lm, dcode(lm, ['fin_mktcap_m']), 'fin_derived', 'log_usd_m', 'log market cap')
@@ -432,7 +449,7 @@ def add_count(name, w, block, unit, desc):
     add(name, v, np.where(~np.isnan(v), C_OK, C_INAPP), block, unit, desc)
 
 SPEC = {'k8': (30, 90, 365, 'dsl'), 'f4': (30, 90, 'dsl'), 'f144': (30, 90), 's13': (90,), 'p424b': (90, 365, 'dsl'),
-        's3': (365,), 's1': (365,), 's8': (365,), 'nt': (365,), 'seccorr': (180,), 'effect': (90,), 'q10': ('dsl',),
+        's3': (365,), 's1': (365,), 's8': (365,), 'nt': (365,), 'effect': (90,),   # v2: 'seccorr' (CORRESP/UPLOAD) dropped: the SEC releases comment letters weeks after their index date 'q10': ('dsl',),
         'k10': ('dsl',), 'f425': (180,), 'proxy': (180,)}
 GN = {'k8': '8-K', 'f4': 'Form 4', 'f144': 'Form 144', 's13': '13D/13G', 'p424b': '424B prospectus', 's3': 'S-3', 's1': 'S-1', 's8': 'S-8',
       'nt': 'late filing notice', 'seccorr': 'SEC comment letters', 'effect': 'registration effective', 'q10': '10-Q', 'k10': '10-K', 'f425': 'merger comms', 'proxy': 'proxy'}
@@ -492,10 +509,11 @@ add_count('ins_n_officer_sell_90', roll_n(nso, 90), 'insider', 'count', 'officer
 log('news block')
 nw = pd.read_csv(os.path.join(PROC, 'news_scored.csv'), usecols=['ticker', 'published_utc', 'ml_sent'])
 nw = nw[nw.ticker.isin(STK)]
-ts = pd.to_datetime(nw.published_utc, utc=True).dt.tz_localize(None)
+ts_ny = pd.to_datetime(nw.published_utc, utc=True).dt.tz_convert('America/New_York')     # v2: the close is 16:00 New York, not a fixed UTC hour
+ts = ts_ny.dt.tz_localize(None)
 d0 = ts.dt.normalize()
 idx = cal.searchsorted(d0.values, side='left')
-after = ((ts - d0) > pd.Timedelta(hours=21)).to_numpy()
+after = ((ts - d0) >= pd.Timedelta(hours=16)).to_numpy()
 same = cal.values[np.minimum(idx, len(cal) - 1)] == d0.values
 idx = idx + (after & same).astype(int)
 keep = idx < len(cal)
@@ -515,51 +533,68 @@ c20 = cn.rolling(20, min_periods=1).sum()
 add('news_neg_share_20d', at_t(cg.rolling(20, min_periods=1).sum() / c20.where(c20 > 0)), block='news', unit='fraction', desc='share of articles with sentiment < -0.1, 20d')
 add('news_spike', at_t(cn.rolling(5, min_periods=1).sum() / (cn.rolling(60, min_periods=1).sum() / 12 + 0.5)), block='news', unit='ratio', desc='5d article count / typical 5d count over 60d')
 
-# ------------------------------------------------------------------ TRIALS (leak-safe subset only)
-log('trials block')
-tr = pd.read_csv(os.path.join(RAW, 'trials.csv'))
-for c_ in ('start', 'primary_completion', 'completion', 'results_first_posted'):
-    tr[c_] = pd.to_datetime(tr[c_], errors='coerce')
-tr['cik'] = tr.ticker.map(T2C)
-tr = tr[tr.cik.notna() & tr.start.notna()].copy(); tr['cik'] = tr.cik.astype(int)
-ph = tr.phase.fillna('')
-tr['ph3'] = ph.str.contains('PHASE3')
-tr['ph2'] = ph.str.contains('PHASE2') & ~tr.ph3
-tr['ph1'] = ph.str.contains('PHASE1') & ~tr.ph2 & ~tr.ph3
-tr['enr'] = tr.enrollment.fillna(0)
-cols = ['tr_active', 'tr_active_p3', 'tr_active_p2', 'tr_active_p1', 'tr_started_365', 'tr_pc_prev90', 'tr_results_prev180', 'tr_dsl_results', 'tr_enroll_active_p3']
-R = {c_: np.zeros(N) for c_ in cols}; R['tr_dsl_results'][:] = np.nan
-dates = panel.date.to_numpy()
-D1 = np.timedelta64(1, 'D')
+# ------------------------------------------------------------------ TRIALS (v2: from monthly AACT registry snapshots, point in time)
+# Each AACT snapshot is the registry as it stood on the snapshot date; it is usable from the next day. For day t we use the latest
+# snapshot dated before t and read that snapshot's dates, phase and enrollment. Nothing from a later registry version can reach day t.
+# A trial counts only once its first posting date is on or before the snapshot date. Month-only registry dates are the 1st in AACT;
+# we move start dates to the END of the month (conservative: a trial is not counted active before it certainly started).
+log('trials block (AACT snapshots)')
+tr0 = pd.read_csv(os.path.join(RAW, 'trials.csv'), usecols=['ticker', 'nct_id'])
+tr0['cik'] = tr0.ticker.map(T2C); tr0 = tr0[tr0.cik.notna()]; N2C = dict(zip(tr0.nct_id, tr0.cik.astype(int)))
+AS = pd.read_csv(os.path.join(RAW, 'aact_snapshots.csv'), dtype=str,
+                 usecols=['snapshot', 'nct_id', 'study_first_posted_date', 'start_date', 'start_date_type', 'completion_date', 'completion_date_type',
+                          'primary_completion_date', 'primary_completion_date_type', 'phase', 'enrollment', 'results_first_posted_date'])
+AS = AS[AS.nct_id.isin(N2C)].copy(); AS['cik'] = AS.nct_id.map(N2C)
+AS['snap'] = pd.to_datetime(AS.snapshot, format='%Y%m%d')
+for c_ in ('study_first_posted_date', 'start_date', 'completion_date', 'primary_completion_date', 'results_first_posted_date'):
+    AS[c_] = pd.to_datetime(AS[c_], errors='coerce')
+AS = AS[AS.study_first_posted_date.notna() & (AS.study_first_posted_date <= AS.snap) & AS.start_date.notna()].copy()
+AS['start_eom'] = AS.start_date + pd.offsets.MonthEnd(0)
+ph = AS.phase.fillna('').str.upper().str.replace(' ', '')
+AS['ph3'] = ph.str.contains('PHASE3'); AS['ph2'] = ph.str.contains('PHASE2') & ~AS.ph3; AS['ph1'] = ph.str.contains('PHASE1') & ~AS.ph2 & ~AS.ph3
+AS['enr'] = pd.to_numeric(AS.enrollment, errors='coerce').fillna(0)
+snaps = np.sort(AS.snap.unique())
+cols = ['tr_active', 'tr_active_p3', 'tr_active_p2', 'tr_active_p1', 'tr_started_365', 'tr_pc_prev90', 'tr_results_prev180', 'tr_dsl_results', 'tr_enroll_active_p3', 'tr_snapshot_age_days']
+R = {c_: np.full(N, np.nan) for c_ in cols}
+dates = panel.date.to_numpy(); D1 = np.timedelta64(1, 'D')
+snap_idx = np.searchsorted(snaps, dates, side='left') - 1          # latest snapshot strictly before day t
 for cik, ix in panel.groupby('cik').indices.items():
-    t = tr[tr.cik == cik]
-    dd = dates[ix]
-    for nm, mk_ in (('tr_active', pd.Series(True, index=t.index)), ('tr_active_p3', t.ph3), ('tr_active_p2', t.ph2), ('tr_active_p1', t.ph1)):
-        tt = t[mk_]
-        starts = np.sort(tt.start.values); ends = np.sort(tt.completion[tt.completion.notna()].values)
-        R[nm][ix] = np.searchsorted(starts, dd, side='right') - np.searchsorted(ends, dd, side='right')
-    s_ = np.sort(t.start.values)
-    R['tr_started_365'][ix] = np.searchsorted(s_, dd, side='right') - np.searchsorted(s_, dd - 365 * D1, side='right')
-    pc = np.sort(t.primary_completion.dropna().values)
-    R['tr_pc_prev90'][ix] = np.searchsorted(pc, dd, side='right') - np.searchsorted(pc, dd - 90 * D1, side='right')
-    rs = np.sort(t.results_first_posted.dropna().values)
-    R['tr_results_prev180'][ix] = np.searchsorted(rs, dd, side='right') - np.searchsorted(rs, dd - 180 * D1, side='right')
-    if len(rs):
-        j = np.searchsorted(rs, dd, side='right') - 1
-        R['tr_dsl_results'][ix] = np.where(j >= 0, (dd - rs[np.maximum(j, 0)]) / D1, np.nan)
-    e3 = np.zeros(len(ix))
-    for r_ in t[t.ph3].itertuples():
-        endv = r_.completion if pd.notna(r_.completion) else pd.Timestamp('2200-01-01')
-        e3 += np.where((dd >= np.datetime64(r_.start)) & (dd < np.datetime64(endv)), r_.enr, 0)
-    R['tr_enroll_active_p3'][ix] = e3
-TRD_DESC = {'tr_active': 'trials started and not yet completed (by registry dates)', 'tr_active_p3': 'active phase 3 trials',
-            'tr_active_p2': 'active phase 2 trials', 'tr_active_p1': 'active phase 1 trials', 'tr_started_365': 'trials started in last 365 days',
-            'tr_pc_prev90': 'trials with primary completion date in last 90 days', 'tr_results_prev180': 'trials with results posted in last 180 days',
-            'tr_dsl_results': 'days since last results posting', 'tr_enroll_active_p3': 'total enrollment of active phase 3 trials'}
+    T_ = AS[AS.cik == cik]
+    if T_.empty:
+        for c_ in cols:
+            if c_ != 'tr_dsl_results': R[c_][ix] = 0.0
+        R['tr_snapshot_age_days'][ix] = np.where(snap_idx[ix] >= 0, (dates[ix] - snaps[np.maximum(snap_idx[ix], 0)]) / D1, np.nan)
+        continue
+    for si in np.unique(snap_idx[ix]):
+        if si < 0: continue
+        sel = ix[snap_idx[ix] == si]; dd = dates[sel]; t = T_[T_.snap == snaps[si]]
+        R['tr_snapshot_age_days'][sel] = (dd - snaps[si]) / D1
+        for nm, mk_ in (('tr_active', pd.Series(True, index=t.index)), ('tr_active_p3', t.ph3), ('tr_active_p2', t.ph2), ('tr_active_p1', t.ph1)):
+            tt = t[mk_]; starts = np.sort(tt.start_eom.values); ends = np.sort(tt.completion_date[tt.completion_date.notna()].values)
+            R[nm][sel] = np.searchsorted(starts, dd, side='right') - np.searchsorted(ends, dd, side='right')
+        s_ = np.sort(t.start_eom.values)
+        R['tr_started_365'][sel] = np.searchsorted(s_, dd, side='right') - np.searchsorted(s_, dd - 365 * D1, side='right')
+        pc = np.sort(t.primary_completion_date[(t.primary_completion_date_type == 'ACTUAL')].dropna().values)   # only completions marked actual in that snapshot
+        R['tr_pc_prev90'][sel] = np.searchsorted(pc, dd, side='right') - np.searchsorted(pc, dd - 90 * D1, side='right')
+        rs = np.sort(t.results_first_posted_date.dropna().values)
+        R['tr_results_prev180'][sel] = np.searchsorted(rs, dd, side='left') - np.searchsorted(rs, dd - 180 * D1, side='left')   # posting dated t counts from t+1
+        if len(rs):
+            j = np.searchsorted(rs, dd, side='left') - 1
+            R['tr_dsl_results'][sel] = np.where(j >= 0, (dd - rs[np.maximum(j, 0)]) / D1, np.nan)
+        e3 = np.zeros(len(sel))
+        for r_ in t[t.ph3].itertuples():
+            endv = r_.completion_date if pd.notna(r_.completion_date) else pd.Timestamp('2200-01-01')
+            e3 += np.where((dd >= np.datetime64(r_.start_eom)) & (dd < np.datetime64(endv)), r_.enr, 0)
+        R['tr_enroll_active_p3'][sel] = e3
+TRD_DESC = {'tr_active': 'trials started and not yet completed, per the registry snapshot available that day', 'tr_active_p3': 'active phase 3 trials (snapshot)',
+            'tr_active_p2': 'active phase 2 trials (snapshot)', 'tr_active_p1': 'active phase 1 trials (snapshot)', 'tr_started_365': 'trials started in last 365 days (snapshot)',
+            'tr_pc_prev90': 'trials whose primary completion was marked ACTUAL within the last 90 days (snapshot)', 'tr_results_prev180': 'trials with results posted in last 180 days (snapshot)',
+            'tr_dsl_results': 'days since last results posting (snapshot)', 'tr_enroll_active_p3': 'enrollment of active phase 3 trials as shown in the snapshot',
+            'tr_snapshot_age_days': 'age of the registry snapshot used, in days (monthly snapshots, so 1 to about 35)'}
 for c_ in cols:
     v = R[c_]
-    add(c_, v, np.where(~np.isnan(v), C_OK, C_INAPP), 'trials', 'days' if 'dsl' in c_ else 'count',
-        TRD_DESC[c_] + ' [registry is an Oct 2026 snapshot; forward-looking and registration-time fields excluded]')
+    code_ = np.where(~np.isnan(v), C_OK, np.where(snap_idx < 0, C_NOTYET, C_INAPP))
+    add(c_, v, code_, 'trials', 'days' if ('dsl' in c_ or 'age' in c_) else 'count', TRD_DESC[c_] + ' [AACT monthly snapshots, point in time]')
 
 # ------------------------------------------------------------------ PDUFA and FDA actions
 log('regulatory block')

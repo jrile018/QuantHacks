@@ -1,0 +1,42 @@
+{
+ "reference": "/tmp/ref2",
+ "compared": [
+  {
+   "file": "standard_results.csv",
+   "rows_ref": 14,
+   "rows_new": 14,
+   "problems": 0
+  },
+  {
+   "file": "standard_portfolio.csv",
+   "rows_ref": 6,
+   "rows_new": 6,
+   "problems": 0
+  },
+  {
+   "file": "offer_trades_v2.csv",
+   "rows_ref": 198,
+   "rows_new": 198,
+   "problems": 0
+  }
+ ],
+ "inputs": {
+  "fds_features.csv": "c022ff5e1bca5e9b59e8ad01ae3cdf16ff78b9f9839aba18ab2193af12a1dc6d",
+  "fds_labels.csv": "fa0c54fe506e8cd3d438a0ba40b9c8273995bb9926d1f7c24d84477299c87cec",
+  "fds_options.csv": "5831fd4abd6e854b4c24146a3d3719bbca79e5ddf47af54efcb2e495f4ac242f",
+  "fds_lookup_cik_ticker.csv": "53c9d6a8b8c05f522cc1819a6a47aff4eae7d478c844981750ab7e416cba1e42",
+  "fds_realprice.csv": "2305cdbaa5c179a527a7fa558be21f5bc6c7a383d699f3e89dd6e721cf80cb85",
+  "stock_trades_real_v2.csv": "dc0237cddd99c1cbb02cad60a484e83dfe3b20d8580c0c3d38c8ee58f843b8ec",
+  "prices.csv": "8d90d73425adcf0e54a1b2ee117adb7787c46c338c7c9a877f7bda0abb9b17dd",
+  "splits.csv": "662100da070c6e568d8cb40b19b3f0ed8d2ea16de22df42ce2751bb679902648",
+  "events_8k.csv": "53d7c8851a1c414b3d562d8a6b5a6bb5f1235eeed65502ff984fda30970538cf"
+ },
+ "outputs": {
+  "standard_results.csv": "73b0d6e590395d177db6cc30eee29e3e8dd20d8ff2bde55401b8dcec8f7690a1",
+  "standard_results.csv (reference)": "73b0d6e590395d177db6cc30eee29e3e8dd20d8ff2bde55401b8dcec8f7690a1",
+  "standard_portfolio.csv": "289262e74286b0f0a734c98ef66e465992a0ba12a3d7398846ecad820230bad1",
+  "standard_portfolio.csv (reference)": "289262e74286b0f0a734c98ef66e465992a0ba12a3d7398846ecad820230bad1",
+  "offer_trades_v2.csv": "a3c29dc6743f0f303da89caa010811847868188d8837bed7ab384339af10eaa8",
+  "offer_trades_v2.csv (reference)": "a3c29dc6743f0f303da89caa010811847868188d8837bed7ab384339af10eaa8"
+ }
+}

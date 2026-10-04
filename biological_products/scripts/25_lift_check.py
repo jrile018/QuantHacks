@@ -23,7 +23,7 @@ def auc(y, p):
 
 
 def traded_slice(frame, probability):
-    liquid = frame.loc[(frame.px_adv20_usd_m >= 1) & (frame.px_close_raw >= 1),
+    liquid = frame.loc[(frame.px_adv20_usd_m >= 1) & (frame.px_close_real >= 1),
                        ["date", "cik", TARGET]].copy()
     liquid["probability"] = probability.loc[liquid.index].to_numpy()
     liquid = liquid.sort_values(["date", "probability", "cik"], ascending=[True, False, True])

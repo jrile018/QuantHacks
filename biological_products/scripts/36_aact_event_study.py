@@ -75,10 +75,10 @@ Rc = np.array([rets(t, i) for t, i in zip(agg.ticker, ri)])
 agg['c5'], agg['c20'], agg['c60'] = Rc[:, 0], Rc[:, 1], Rc[:, 2]
 
 # company situation on the event day (last feature row on or before the event date: no look ahead)
-F = pd.read_csv(os.path.join(FDS, 'fds_features.csv'), usecols=['cik', 'date', 'px_adv20_usd_m', 'px_close_raw', 'fin_runway_q', 'fin_mktcap_m', 'tr_active'])
+F = pd.read_csv(os.path.join(FDS, 'fds_features.csv'), usecols=['cik', 'date', 'px_adv20_usd_m', 'px_close_real', 'fin_runway_q', 'fin_mktcap_m', 'tr_active'])
 F['fd'] = pd.to_datetime(F.date.astype(str)); F = F.sort_values('fd').drop(columns='date')
 agg = pd.merge_asof(agg.sort_values('ed'), F, left_on='ed', right_on='fd', by='cik', direction='backward', tolerance=pd.Timedelta(days=10))
-agg['liquid'] = (agg.px_adv20_usd_m >= a.min_adv) & (agg.px_close_raw >= a.min_px)
+agg['liquid'] = (agg.px_adv20_usd_m >= a.min_adv) & (agg.px_close_real >= a.min_px)
 K = pd.read_csv(os.path.join(RAW, 'events_8k.csv'), usecols=['cik', 'filing_date']); K['kd'] = pd.to_datetime(K.filing_date)
 kset = {int(c): np.sort(g.kd.values.astype('int64')) for c, g in K.groupby('cik')}
 def near8k(c, e, days=2):

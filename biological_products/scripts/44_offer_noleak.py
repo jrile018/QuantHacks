@@ -21,9 +21,12 @@ ap.add_argument('--data', default=os.path.join(os.path.dirname(os.path.abspath(_
 ap.add_argument('--top', type=float, default=0.02); ap.add_argument('--min_adv', type=float, default=1.0); ap.add_argument('--min_px', type=float, default=1.0)
 ap.add_argument('--gap', type=int, default=12); ap.add_argument('--boot', type=int, default=5000); ap.add_argument('--borrow', type=float, default=0.30)
 ap.add_argument('--skip_old', action='store_true')
+ap.add_argument('--is_start', default='2025-01-01'); ap.add_argument('--is_end', default='2025-10-31')      # same default windows as script 42
+ap.add_argument('--os_start', default='2025-11-01'); ap.add_argument('--os_end', default='2026-08-31')
 a = ap.parse_args()
 fds = os.path.join(a.data, 'fds'); rng = np.random.default_rng(7)
-IS0, IS1, OS0, OS1 = pd.Timestamp('2024-01-01'), pd.Timestamp('2025-12-31'), pd.Timestamp('2026-01-01'), pd.Timestamp('2026-08-31')
+IS0, IS1, OS0, OS1 = pd.Timestamp(a.is_start), pd.Timestamp(a.is_end), pd.Timestamp(a.os_start), pd.Timestamp(a.os_end)
+print(f'windows: in sample {IS0.date()} to {IS1.date()} | out of sample {OS0.date()} to {OS1.date()}')
 LEAKY = ['px_close_raw', 'fin_shares_adj_m', 'fin_mktcap_m', 'fin_log_mktcap', 'fin_liq_to_mcap']
 
 X = pd.read_csv(os.path.join(fds, 'fds_features.csv')).merge(pd.read_csv(os.path.join(fds, 'fds_options.csv')), on=['cik', 'date'])

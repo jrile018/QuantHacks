@@ -1,220 +1,206 @@
-# Biologics (SIC 2836) hand-off
+# Biologics (SIC 2836) hand-off, version 3
 
-Owner: Abhay. Written 2026-10-04. Universe: 139 tickers, Biological Products (no diagnostic substances).
-Everything here uses public data. All numbers can be rerun with the commands in section 8.
+Owner: Abhay. Written 2026-10-04 (version 3, after the team lead's audit of commits 2d07581 and 583e472). Universe: 139 tickers, Biological Products (no diagnostic substances).
+Everything uses public data. Every number can be rerun with the commands in section 8. The previous versions of this document are in the git history (f3fc5cf1, 2d075817, 583e472b).
 
-## 0. READ FIRST: what our own check found, and what was fixed (2026-10-04)
+## 0. What changed since the audit, finding by finding
 
-A second, independent check of the first version of this document confirmed the arithmetic but found the problems below. The first version is in the git history (commit f3fc5cf1). **Every offering-short and trial-registry number in this document is now the corrected one.**
+The lead's audit found nine problems (A1 to A9). Status of each:
 
-1. **Future information in five dataset columns (fixed for the strategy, still present in `fds_features.csv`).** `px_close_raw`, `fin_shares_adj_m`, `fin_mktcap_m`, `fin_log_mktcap` and `fin_liq_to_mcap` are built from a price file that is adjusted for splits that happened later. For a company that later did a reverse split, the stored past price is far higher than what traders saw that day. Example: QNCX on 2026-02-12 is 45.1 in the data, the real quote was 0.27. 9,224 rows (10.3%) in 32 tickers are affected, and the stored market cap is off by more than 2 times in 6.4% of rows. The first model used these columns and a `px_close_raw >= 1` filter, so it could partly see which companies would later reverse split.
-   - Fix: script 43 pulls the split history (`data/raw/splits.csv`, 91 splits). Script 44 rebuilds the real price and real market cap (`data/fds/fds_realprice.csv`, same keys as the dataset) and retrains the model without the five columns.
-   - Check of the fix: the rebuilt real price matches the real Massive quotes of all 186 first-version trades (all within 15% at the open, all within 5% at the close).
-   - **Anyone using `fds_features.csv` should drop the five columns and join `fds_realprice.csv` instead.**
-2. **The $1 price floor is now applied before the trade**, on the real close of the signal day. The first version applied it afterwards to the entry quote. No trade is removed after the fact any more.
-3. **Hold length.** The 5 day hold was chosen in the first version with all results visible. With the corrected model every hold tested is positive before costs in both windows (Sharpe in sample / out of sample: 1 day 0.66 / 2.69, 3 days 1.48 / 1.85, 5 days 1.22 / 3.11, 10 days 0.98 / 2.45). 5 days is kept as the standard.
-4. **2026 is still not a perfectly clean out-of-sample test.** The rule (top 2% per day, 5 day hold, $1 and $1M volume floors) was set while 2026 results of the first version were visible. Nothing was tuned on the corrected results.
-5. **Training gap** raised from 7 to 12 days, so no training label reaches the test quarter.
-6. **How much the fix changed.** Before costs the first version showed Sharpe 2.25 in sample and 1.83 out of sample. Corrected: 1.20 and 3.11. Only 71 of the 198 trades are the same as before. The strategy trades 1 to 2 names a day, so a small change in the model swaps most of the names. This is a sign of fragility.
-7. **Trial registry (still rejected).** Three fixes in script 42: the "no 8-K" filter now looks back only (event day and 2 days before), market cap and price use the real values, and the per trade result is plain buy and hold (the old formula was wrong when a short lost more than 100% in a day). Windows are now assigned by the usable date. Result: Sharpe 0.11 in sample, -0.30 out of sample.
-8. **Where things ran.** All backtests ran on HiPerGator (section 6). Jobs 44673323 to 44675692 ran the first version and the team engine. Job 44679395 reran the corrected version (scripts 44, 45, 42) from this branch at commit 88a52022, and script 46 confirmed it matches the laptop run exactly: the same 198 trades and the same Sharpe in every row. Only the downloads (split history and real quotes, scripts 43 and 22) were done on a laptop. The team engine runs do not use our price file and are not affected by the leak. The "our signal priced by the team engine" run used the first version's signal days and was not rerun.
+| Finding | What it was | What was done | Where |
+|---|---|---|---|
+| A1 high: trial features used today's registry records | `tr_*` columns were built from a ClinicalTrials.gov pull made in Oct 2026 and placed on past days, so later edits reached the past | Rebuilt from the 35 monthly AACT snapshots (Nov 2023 to Sep 2026): day t uses the latest snapshot dated before t, only trials already posted by that snapshot, only ACTUAL completion dates, start dates moved to month end, results postings count from the next day. A new column `tr_snapshot_age_days` (1 to 35) records how old the registry view is | `scripts/16_build_fds.py` v2, trials block |
+| A1 extra, found by our own independent review | News block used 21:00 UTC as the close, which is 5pm New York in summer, so 4 to 5pm press releases counted as same day | Close is now 16:00 America/New_York. SEC comment letters (`fil_seccorr_n180`) dropped (released weeks after their date). Spike filter no longer looks at the next day's bar | same |
+| Split look-ahead (first audit) | five columns from a split-adjusted price file | Removed from the dataset itself: `px_close_real`, `fin_shares_now_m`, `fin_mktcap_m` (now real) replace them | same |
+| A2 high: portfolio windows leaked past their dates | daily curve took a trade's whole path into its signal window | Replaced by one continuous cash ledger (script 49); windows are clipped by calendar; a position open across the boundary puts its days in each window; idle days included; reconciliation to the cent is asserted | `scripts/49_ledger.py` |
+| A3 medium: mixed price clocks in costs | gross from daily bars, costs from quotes | Per trade gross and net now both from the quotes (mid to mid, and sell at bid / cover at ask / XBI at ask and bid). The bar version is printed next to it for comparison. Script 45 now stops on a date mismatch instead of warning | `scripts/45_offer_trades_v2.py` |
+| A4 medium: fixed daily weights implied free rebalancing | | Ledger holds fixed share counts from entry, converts shares across splits, charges borrow daily on short market value, no rebalancing, no interest on cash. Six fixtures with known answers run before every real run, including the audit's own 2-share example | `scripts/49_ledger.py --selftest` |
+| A5 medium: intervals assumed independent trades | | Per trade tables now show two intervals: trades resampled one by one, and whole signal weeks resampled. Ledger shows block bootstraps at 5, 10, 20 and 40 days. Wording changed (section 4) | `scripts/42_standard_results.py`, 49 |
+| A6 medium: shelf side study used the leaky market cap | | Rerun on dataset v2 (real market cap). Lift still zero (+0.0000 on every shelf feature) | `scripts/24_shelf_features.py`, `25_lift_check.py` |
+| A7: FINRA short interest coverage unverified | | Evidence script: 68 settlement dates 2023-11-15 to 2026-09-15, all 139 tickers present, 16 tickers on fewer than 80% of dates (new listings), exchange-listed names present, no zero rows. Values are as published at pull time (2026-10-04); FINRA corrections replace earlier values and cannot be undone | `scripts/52_finra_evidence.py` |
+| A8 medium: unsafe columns still in the dataset, stale docs, no source registration | | Dataset v2 no longer holds them; the dataset README lists the removed columns. Old `docs/README.md` marked superseded. Source registration bundle prepared for `configs/sources/biologics-fds-daily` (section 11) | `data/fds/README_FDS.md`, `source_registration/` |
+| A9 medium: the MATCH checker could pass unequal files | | Rewritten: same row sets required, every numeric column compared under tolerance, NaN pattern compared, ledger curve compared day by day, input and output hashes written to `reports/run_manifest.json`, exit 1 on DIFFERENT, exit 2 on a bad reference; the launcher uses `set -e` so a checker failure fails the job. The two false-pass fixtures are kept as regression tests (`--fixtures`) | `scripts/46_compare_run.py`, `hpg_bundle/run_noleak.sbatch` |
+| Matched controls (repair item 7) | | For each traded signal, up to 3 non-flagged names on the same day in the same market cap and runway bucket. See section 5 | `scripts/48_offer_v3.py` |
+| Borrow availability | | Still an assumption (30%/yr). No free source has 2025 history; iborrowdesk keeps one year; SEC filings hold no borrow data. Listed as the main open item | section 10 |
+
+**Not done, said plainly:** historical borrow rates and availability (no public source), a frozen never-touched holdout period (the hold length, the slice and the window split were all chosen with results visible; section 4), and the ten-trade team engine cross-check was not rerun on the new signal.
 
 ## 1. Bottom line
 
-1. **Dataset:** one row per company per market day, 2024-01-02 to 2026-10-02, numbers only. Five price and market cap columns carry future information and must be replaced by `fds_realprice.csv` (section 0, item 1).
-2. **Offering short, before costs:** our model flags stocks likely to announce a stock offering. Shorting them (hedged with XBI, 5 days) has a Sharpe of 1.20 in sample (-0.11 to 2.43) and 3.11 out of sample (1.62 to 4.71). The in-sample interval includes zero.
-3. **After real trading costs and a 30% borrow fee:** Sharpe 0.38 in sample (-1.02 to 1.61) and 1.59 out of sample (0.07 to 3.21). As a daily portfolio: 0.66 and 1.43, both intervals include zero. **In sample does not match out of sample, and in sample is not different from zero, so we do not claim a tradable edge.** The honest label is "promising in 2026, not confirmed in 2025".
-4. **Two other strategies were tested and rejected** by the same rule (in sample must match out of sample): the trial registry strategy and buying after an offering filing.
-5. **Where it ran:** HiPerGator (section 6). First the first version and the team engine (`run_all.py` code at PR #4, unchanged), then the corrected version in job 44679395. Every number in sections 1 to 5 for our own backtests is from that job.
+1. **Dataset (version 2):** one row per company per market day, 2024-01-02 to 2026-10-02, 89,151 rows, 155 numeric features plus keys, labels in a separate file. Built point in time as far as the sources allow; the known limits are in section 7. It is not called "leak-free" anywhere.
+2. **The offering model works as a predictor.** AUC 0.68 out of sample, quarterly walk forward. Of the company-days it flags, 12.4% are followed by an offering 8-K within 5 days, against 2.0% for all eligible company-days and 3.8% for matched controls (same day, same size and runway bucket).
+3. **Before costs the flagged stocks fall against matched peers.** Per trade Sharpe 1.13 in sample and 1.41 out of sample (quote mid to mid, 5 day hold, XBI hedge); matched controls -0.01 and -0.31. The two windows agree with each other.
+4. **After real bid/ask fills and a 30% yearly borrow fee there is nothing left.** Per trade Sharpe 0.30 and -0.01. As a real account (cash ledger, fixed shares, 20% of NAV per trade): return +3.2% and +3.9% over the two windows, Sharpe 0.31 and 0.31, every interval includes zero, drawdowns of -24% and -34%. **No tradable edge is claimed.**
+5. **Two other strategies were tested and rejected**: the trial registry strategy (Sharpe -0.13 and -0.43) and buying after an offering 8-K through the team engine (1.86 on 12 events, 0.11 on 21).
+6. **Where it ran.** Dataset build, model, quotes and all tables ran on a laptop first; the same code was then run as a frozen job on HiPerGator from this branch and compared file by file with the committed outputs (section 6).
 
 ## 2. The standard used for every result
 
-So that "in sample" and "out of sample" mean the same thing everywhere, every strategy uses the team's own windows from `src/config.py`:
+The lead asked for in-sample and out-of-sample windows of about equal size. The offering model needs 2024 to train, so it has trades from January 2025 to August 2026 (20 months), cut in half:
 
-| Window | Dates |
-|---|---|
-| In sample | 2024-01-01 to 2025-12-31 |
-| Out of sample | 2026-01-01 to 2026-08-31 |
+| Window | Dates | Months |
+|---|---|---|
+| In sample | 2025-01-01 to 2025-10-31 | 10 |
+| Out of sample | 2025-11-01 to 2026-08-31 | 10 |
 
-- A trade belongs to the window of its **signal date** (the day the information became usable). Its profit never counts in the other window.
-- **Sharpe (standard):** mean / standard deviation of the per trade result, times sqrt(252 / holding days).
-- **95% interval:** bootstrap over trades, 5,000 draws.
-- **Win rate:** share of trades with a positive result.
-- **Portfolio version** (our own backtests only): daily profit and loss, fixed share of capital per trade, 95% interval by block bootstrap (20 day blocks).
+- **Per trade tables (section 3):** a trade belongs to the window of its signal date. Sharpe = mean / standard deviation of the per trade result, times sqrt(252 / 5). Two 95% intervals: trades resampled one by one (assumes independent trades, optimistic) and whole signal weeks resampled (allows for overlap and shared market shocks). Win rate = share of trades above zero. These are event statistics, not account returns.
+- **Cash ledger (section 3):** one continuous account, every market day from the first trade to the last, idle days included. A window's result is the account's daily P&L on the days inside the window, so a position open across the boundary contributes its days to each side and nothing is counted twice. Intervals by stationary block bootstrap at 5, 10, 20 and 40 day blocks. This is the realistic number.
+- The window split was chosen after the first results were seen (the earlier document used 2024-2025 vs Jan-Aug 2026). Every script takes the dates as arguments.
 
 ## 3. Standard results
 
-### Per trade (same formula for every strategy)
+### Per trade
 
-| Strategy | Engine | Costs | Window | Trades | Avg per trade | Median | Win rate | Sharpe | 95% interval |
-|---|---|---|---|---|---|---|---|---|---|
-| Offering short | ours | none | in sample | 109 | +3.06% | +0.65% | 52% | 1.20 | -0.11 to 2.43 |
-| Offering short | ours | none | out of sample | 78 | +4.64% | +3.47% | 65% | 3.11 | 1.62 to 4.71 |
-| Offering short | ours | real bid/ask + 30%/yr borrow | in sample | 109 | +0.98% | -1.23% | 47% | 0.38 | -1.02 to 1.61 |
-| Offering short | ours | real bid/ask + 30%/yr borrow | out of sample | 78 | +2.39% | +1.33% | 55% | 1.59 | 0.07 to 3.21 |
-| Offering short, entry spread under 2% | ours | real bid/ask + 30%/yr borrow | in sample | 73 | +3.27% | +2.81% | 55% | 1.14 | -0.48 to 2.64 |
-| Offering short, entry spread under 2% | ours | real bid/ask + 30%/yr borrow | out of sample | 52 | +3.70% | +2.20% | 58% | 2.73 | 0.85 to 4.72 |
-| Trial registry stage | ours | 2% round trip + 15%/yr borrow | in sample | 184 | +2.63% | +4.11% | 55% | 0.11 | -0.20 to 0.40 |
-| Trial registry stage | ours | 2% round trip + 15%/yr borrow | out of sample | 68 | -5.42% | -4.94% | 44% | -0.30 | -0.78 to 0.18 |
-| Buy after an offering 8-K (stock, 10 days) | team engine | none | in sample | 35 | +5.94% | +0.18% | 51% | 1.17 | -0.48 to 2.31 |
-| Buy after an offering 8-K (stock, 10 days) | team engine | none | out of sample | 15 | -2.69% | -5.89% | 20% | -0.58 | -6.90 to 1.45 |
-| Offering short, first-version signal priced by the team engine | team engine | none | in sample | 10 | +6.39% | -1.95% | 40% | 2.04 | -5.62 to 4.81 |
-| Offering short, first-version signal priced by the team engine | team engine | none | out of sample | 10 | +0.90% | -0.01% | 50% | 0.46 | -4.47 to 4.98 |
+| Strategy | Engine | Costs | Window | Trades | Avg per trade | Median | Win rate | Sharpe | 95% (trades independent) | 95% (signal weeks resampled) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Offering short | ours | none (quote mid to mid) | in sample | 94 | +2.91% | +1.22% | 56% | 1.13 | -0.28 to 2.51 | -0.38 to 2.71 |
+| Offering short | ours | none (quote mid to mid) | out of sample | 90 | +2.46% | +1.96% | 59% | 1.41 | -0.05 to 3.03 | -0.11 to 2.99 |
+| Offering short | ours | none (daily bars, for comparison) | in sample | 94 | +2.97% | +1.48% | 53% | 1.17 | -0.27 to 2.57 | -0.39 to 2.67 |
+| Offering short | ours | none (daily bars, for comparison) | out of sample | 90 | +2.54% | +1.50% | 58% | 1.47 | 0.00 to 3.06 | -0.01 to 3.09 |
+| Offering short | ours | real bid/ask fills + 30%/yr borrow | in sample | 94 | +0.77% | -0.92% | 45% | 0.30 | -1.19 to 1.67 | -1.36 to 1.83 |
+| Offering short | ours | real bid/ask fills + 30%/yr borrow | out of sample | 90 | -0.02% | -0.27% | 48% | -0.01 | -1.46 to 1.51 | -1.45 to 1.51 |
+| Offering short, entry spread under 2% | ours | real bid/ask fills + 30%/yr borrow | in sample | 63 | +1.74% | -0.23% | 48% | 0.58 | -1.23 to 2.30 | -1.30 to 2.42 |
+| Offering short, entry spread under 2% | ours | real bid/ask fills + 30%/yr borrow | out of sample | 56 | +1.35% | +1.10% | 52% | 0.79 | -0.98 to 2.94 | -1.04 to 3.04 |
+| Trial registry stage | ours | 2% round trip + 15%/yr borrow | in sample | 83 | -2.74% | -2.80% | 47% | -0.13 | -0.59 to 0.32 | -0.60 to 0.34 |
+| Trial registry stage | ours | 2% round trip + 15%/yr borrow | out of sample | 81 | -7.39% | -7.22% | 40% | -0.43 | -0.91 to 0.00 | -0.88 to 0.01 |
+| Buy after an offering 8-K (stock, 10 days) | team engine | none | in sample | 12 | +13.42% | +5.06% | 58% | 1.86 | -0.71 to 4.00 | -0.79 to 4.24 |
+| Buy after an offering 8-K (stock, 10 days) | team engine | none | out of sample | 21 | +0.49% | -5.55% | 29% | 0.11 | -3.98 to 1.87 | -3.96 to 1.55 |
+| Offering short, first-version signal priced by the team engine | team engine | none | in sample | 7 | too few | | | | | |
+| Offering short, first-version signal priced by the team engine | team engine | none | out of sample | 13 | +0.67% | -0.94% | 46% | 0.38 | -4.20 to 4.12 | -3.95 to 4.30 |
 
-The offering model needs 2024 to train, so its in-sample trades are all in 2025.
+Per trade results for the offering short are quote based: gross = mid quote to mid quote, net = sell at the bid, cover at the ask, XBI bought at the ask and sold at the bid, then minus the borrow fee (30%/yr for 5 days = 0.60%). The team engine rows and the trial registry rows use daily bars and have no quote data.
 
-### Portfolio version (our own backtests, after costs)
+### Cash ledger (offering short, after costs, 20% of NAV per trade, at most 5 positions)
 
-| Strategy | Window | Trades | Total return | Sharpe | 95% interval | Max drawdown |
-|---|---|---|---|---|---|---|
-| Offering short | in sample | 109 | +20.1% | 0.66 | -1.16 to 2.54 | -23.8% |
-| Offering short | out of sample | 78 | +33.2% | 1.43 | -0.68 to 4.00 | -21.5% |
-| Offering short, entry spread under 2% | in sample | 73 | +67.7% | 1.68 | -0.54 to 3.80 | -20.0% |
-| Offering short, entry spread under 2% | out of sample | 52 | +41.3% | 2.30 | 0.19 to 4.46 | -10.2% |
-| Trial registry stage | in sample | 184 | +12.3% | 0.36 | -1.15 to 2.16 | -26.5% |
-| Trial registry stage | out of sample | 68 | -9.5% | -0.40 | -2.38 to 0.86 | -17.3% |
+| Window | Days in window | First and last mark | Return | Annualized | Sharpe | 95% (block 5d) | 95% (block 20d) | 95% (block 40d) | Max drawdown | Idle days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| In sample, 2025-01-01 to 2025-10-31 | 208 | 2025-01-03 to 2025-10-31 | +3.2% | +3.8% | 0.31 | -1.61 to 2.33 | -1.32 to 2.02 | -1.17 to 1.92 | -23.6% | 19 |
+| Out of sample, 2025-11-01 to 2026-08-31 | 207 | 2025-11-03 to 2026-08-31 | +3.9% | +4.7% | 0.31 | -1.81 to 2.51 | -1.40 to 2.15 | -1.07 to 1.90 | -33.8% | 20 |
 
-Offering short uses 20% of capital per trade (about 2 trades open at a time). Trial registry uses 5% per trade.
+Whole account 2025-01-03 to 2026-10-01: 184 trades taken (6 rejected because the entry bid was under $1), NAV +21.7%, Sharpe 0.49, max drawdown -33.8%, borrow fees paid 18.3% of initial NAV. Sum of trade P&L equals the NAV change to the cent (asserted by the script).
 
-### Equity curves (in `reports/`)
+### Charts (in `reports/`)
 
-- `std_offering_short.png`: offering short, both windows, before and after costs
-- `std_trial_registry.png`: trial registry stage, both windows
-- `std_engine_buy_after_offering.png`: team engine, buy after an offering 8-K
-- `std_engine_offering_short.png`: team engine priced on the first version's signal days (only 10 trades per window)
-- `equity_*.png`, `summary_table.csv` and `team_backtest_*.csv` are from the first version (before the leak fix) and are kept only for the record
+- `ledger_offering_short.png`: the cash ledger, one line, both windows shaded
+- `std_offering_short.png`: per trade cohort curves by window (descriptive only; a trade's whole path is drawn in its signal window)
+- `std_trial_registry.png`, `std_engine_buy_after_offering.png`, `std_engine_offering_short.png`: the rejected strategies
+- `equity_*.png`, `summary_table.csv`, `team_backtest_*.csv`: first version outputs, kept for the record only
 
 ## 4. Does in sample match out of sample?
 
-| Strategy | In sample | Out of sample | Verdict |
+| Strategy | In sample | Out of sample | Reading |
 |---|---|---|---|
-| Offering short, before costs | 1.20 | 3.11 | Positive in both, but far apart, and the in-sample interval includes zero. Does not match. |
-| Offering short, after real costs | 0.38 | 1.59 | Does not match. In sample is not different from zero. No edge claimed. |
-| Offering short, daily portfolio after costs | 0.66 | 1.43 | Same reading. Both intervals include zero. |
-| Trial registry stage | 0.11 | -0.30 | No edge in either window. Rejected. |
-| Buy after an offering 8-K | 1.17 | -0.58 | Does not match. Rejected. |
-| Offering short, first-version signal priced by the team engine | 2.04 | 0.46 | Only 10 trades per window. Too few to judge. |
+| Offering short, before costs (per trade) | 1.13 | 1.41 | Agree. Both positive, intervals overlap, the in-sample interval touches zero |
+| Offering short, after costs (per trade) | 0.30 | -0.01 | Agree on "about zero" |
+| Offering short, cash ledger after costs | 0.31 | 0.31 | Agree on "about zero". This is the number to quote |
+| Trial registry stage | -0.13 | -0.43 | No edge in either. Rejected |
+| Buy after an offering 8-K | 1.86 | 0.11 | 12 and 21 events. Rejected |
+
+On wording, following the audit: different point estimates with overlapping intervals do not show different distributions, and an interval that includes zero does not prove a zero effect. The justified statement is: the before-cost effect is consistent across the two windows and against matched controls; the after-cost result is indistinguishable from zero in both. This is a retrospective walk-forward evaluation with a reused evaluation window, not a clean holdout: the 5 day hold, the top 2% slice, the $1 and $1M floors and the window split were all settled with some results visible. The complete recipe (section 5) is frozen now for any future period.
 
 ## 5. Audit: why each number is what it is
 
-### Offering short (corrected version)
+### Offering short
 
-- **What it is.** A gradient boosted model, retrained each quarter on past data only (12 day gap), predicts "an offering 8-K within 5 market days". Each day the top 2% of company-days are shorted at the next open, XBI is bought for the same dollars, both are closed 5 market days after the signal. One position per company at a time. Only stocks with a real close of at least $1 and at least $1M average daily volume on the signal day.
-- **Model quality (out of sample, 2025Q1 to 2026Q3):** AUC 0.69. In the traded slice 11.7% of flagged days were followed by an offering versus a 2.0% base rate (11.2% in 2025, 12.3% in 2026). The leak did not create this: the AUC is the same with and without it.
-- **Timing is honest.** Every trade enters at least 1 day after the signal.
-- **Costs are measured, not assumed, for the bid/ask part.** 197 of the 198 trades are priced from Massive quotes (1 had no quote and is dropped): sell the short at the bid, buy back at the ask, and the same for the XBI hedge. Mean cost 1.54% per trade, median 1.05% (2025: 1.48%, 2026: 1.61%). The 30% yearly borrow fee is an assumption and adds 0.60% per trade.
-- **Unusual: in 2025 the model was no better than random.** Shorting random liquid company-days from the same universe with the same hedge gave Sharpe 1.22 before costs in sample (average +1.87% per trade), the same as the model (1.22, +3.08%). In 2026 the random version gave 0.43 and the model 3.11. Small biotechs fell against XBI in 2025 whatever you picked.
-- **Unusual: 3.11 out of sample is high, and should not be read as a real Sharpe of 3.** It is a per trade number: +4.6% average with a 10.6% standard deviation, scaled by sqrt(252/5). It is before costs and from 78 trades in 8 months. The daily portfolio after costs is 1.43 with an interval that includes zero.
-- **Unusual: the profit is concentrated.** After costs, in sample: the 5 best trades made +250% in summed returns against +107% for all 109, so without them the Sharpe is -0.67. Out of sample: without the best 5 it is 0.66, without the best 10 it is -0.34. Before costs the out-of-sample result is broader (46 companies, Sharpe 1.66 without the best 10).
-- **Unusual: the in-sample curve is flat, then jumps.** Two trades in August 2025 made about +70% each (CLDI signal 2025-08-13, OTLK signal 2025-08-26). The first half of 2025 lost (49 trades, -0.8% each after costs). The second half made +2.4% each, the first half of 2026 +2.3%, July and August 2026 +2.7%.
-- **Unusual: most of the profit did not come from offerings.** An offering was announced within 5 days in 15% of in-sample trades and 12% of out-of-sample trades. Trades with no offering made 92% of the after-cost profit in sample and 72% out of sample. The model mostly finds weak, cash-short companies that keep falling. The "offering" story is only part of the reason.
-- **Cost sensitivity (per trade Sharpe, in sample / out of sample).** No borrow fee 0.61 / 1.99. 30% borrow 0.38 / 1.59. 100% borrow -0.16 / 0.67. 200% borrow -0.93 / -0.66. Double bid/ask cost at 30% borrow -0.19 / 0.48.
-- **Tail risk.** Worst trades after costs: -35% (SLXN, 2025-03-03), -30% (DBVT, 2025-12-02), -29% (PALI, 2025-10-01), -28% (SCLX, 2026-07-06).
-- **Choices made with results visible:** the 5 day hold (section 0, item 3). The top 2% slice and the $1 and $1M floors were written into the first script before any trade result. Ten trades after August 2026 are in neither window.
+- **Recipe (frozen).** Gradient boosted classifier (`HistGradientBoostingClassifier`, depth 3, 200 rounds, learning rate 0.05, min leaf 200, L2 5), retrained at each quarter start on all rows dated at least 12 days before the quarter, target = offering 8-K within 5 market days. Eligible company-day: real close at least $1 and 20-day average dollar volume at least $1M on the signal day. Trade the top 2% of eligible company-days by predicted probability each day, one open position per company. Short at the first quote after 09:30:30 on the next session (at the bid), buy XBI for the same dollars (at the ask); close both at the last quote before 15:59:50 five sessions after the signal (cover at the ask, sell XBI at the bid). Borrow 30%/yr on the short market value. Ledger: 20% of NAV per trade, at most 5 positions, no rebalancing, no interest on cash.
+- **Model quality.** AUC by quarter 0.64 to 0.74, overall 0.68. Flagged company-days 437, hit rate 12.4% (54/437); among traded signals 12% in sample and 18% out of sample (different denominators: flagged days vs trades taken).
+- **Matched controls.** 415 control company-days for 67 of the traded signals (same day, same market cap and runway bucket, not flagged; up to 3 per signal; signals with no match in the bucket have no control). Controls: -0.03% per trade in sample, -0.53% out of sample, Sharpe -0.01 and -0.31, offering rate 3.8%. Model picks: +3.0% and +2.5% before costs, offering rate 15.2% among the matched signals. Random eligible names made +2.2% and +0.6%. So the model picks underperform peers, and the picks are not explained by size or runway alone. This is a comparison, not a causal claim.
+- **Costs are measured for the bid/ask part.** 190 of 191 trades have all four quotes (1 trade without quotes dropped). Mean cost 1.55% in sample and 1.84% out of sample (medians 1.34% and 1.00%); plus borrow 0.60%. Quote clock vs the old bar-plus-half-spread method: median difference 0.9 points per trade, 86 trades differ by more than 1 point. Quote timestamps and sizes were not saved by script 22 (known gap); a quoted price does not prove the size could be filled.
+- **Concentration.** After costs, in sample: 5 best trades sum to +233 points against +73 for all 94; without them the per trade Sharpe is -0.84. Out of sample: -2 points in total, 5 best +117, without them -0.84. In sample the trades WITH an offering made +11.9% and the others -0.7%; out of sample +3.8% and -0.9%. So after costs the only profitable trades are the ones where the offering actually came.
+- **Cost sensitivity (per trade Sharpe, in / out).** No borrow 0.52 / 0.32. 30% 0.30 / -0.01. 100% -0.23 / -0.78. 200% -0.99 / -1.87. Double spreads at 30% -0.30 / -0.99.
+- **Tail risk.** Worst trades after costs: CVM 2025-07-22 -43%, SLXN 2025-03-03 -38%, PALI 2025-10-01 -34%, DBVT 2025-12-02 -34%. The ledger drawdown out of sample is -34%.
+- **By half year, after costs, per trade average:** 2025 H1 +1.1%, 2025 H2 -0.4%, 2026 H1 +0.8%, Jul to Aug 2026 +2.6%.
+- **Choices made with results visible:** the 5 day hold (holds of 1, 3, 5, 10 all positive before costs in both windows on dataset v2: 1.02/1.45, 0.89/1.31, 1.18/1.47, 0.98/1.33 by bars), the window split, and the first-version floor and gap changes. The top 2% slice and the $1 and $1M floors were in the first script.
+- **How much the three rounds of fixes moved the numbers (before costs, per trade, in / out):** first version 2.25 / 1.83 (split leak, after-the-fact floor, old windows); after the split fix 1.26 / 2.51 (new windows); after the trial, news and clock fixes 1.13 / 1.41. After costs: 1.43 / 0.28, then 0.46 / 1.15, now 0.30 / -0.01. Each round removed information that should not have been there, and each round brought the two windows closer together.
 
 ### Trial registry stage (rejected)
 
-- **Idea.** Sponsors update ClinicalTrials.gov records quietly. Short a company under $2B when a record shows it is still building a trial (starts recruiting, adds 20%+ sites, raises its enrollment target), buy when enrollment is over. Hold 60 days, hedge with XBI, only when no 8-K was filed within 2 days.
-- **Data.** 35 monthly snapshots of the registry from AACT (Dec 2023 to Oct 2026). A change counts only when a new record version was posted, and it is dated by that posting date.
-- **What happened.** The rules were designed on events up to June 2025, where the portfolio Sharpe after costs was 1.19. On the events after that it was -1.62 (95% interval -3.0 to -0.5). Those two numbers are from scripts 38 and 39, before the fixes in section 0, item 7. On the team windows, with the fixes, it is 0.11 and -0.30 per trade.
-- **Why the design half looked good.** Five trades made most of the profit, seven companies made half the gains, and 71% of the profit came in the first half of 2024.
-- **Unusual: one short lost 219% of its stake.** Scholar Rock (SRRK): shorted on 2024-07-30 after it added sites, the stock rose from about 7 to 34 on 2024-10-07 when its trial succeeded. This is the tail risk of shorting a biotech before data. (An earlier version said 447%. That came from a compounding formula that is wrong for losses above 100%.)
-- **Unusual: the out-of-sample curve sinks.** Only 44% of trades won after costs. It is not one bad trade.
-- **Conclusion.** The pattern was not real. The held-out test caught it before we presented it.
+- **Idea.** Sponsors update ClinicalTrials.gov quietly. Short a company under $2B when a record shows it is still building a trial (starts recruiting, adds 20%+ sites, raises its enrollment target), buy when enrollment is over. Hold 60 days, hedge with XBI, only when no 8-K was filed on the event day or the 2 days before.
+- **Data.** 35 monthly AACT snapshots. A change counts only when a new record version was posted, dated by that posting date, usable the next day.
+- **Result.** Per trade Sharpe -0.13 in sample and -0.43 out of sample after costs; 0.05 and -0.21 before costs. Rules were designed on events up to June 2025 (so the in-sample window is not clean for this strategy either). One short lost 219% of its stake (SRRK, trial success on 2024-10-07; outside both windows). Conclusion unchanged: no edge.
 
 ### Buy after an offering 8-K, team engine (rejected)
 
-- **What ran.** `src.implementation.run_study` from the team repo at commit fa30fcb, unchanged, with tag `public_offering` and our 139 tickers as the universe.
-- **Coverage.** 166 filings in sample and 58 out of sample. The engine could price 63 and 23 of them. The rest have no option chain or no option trade near the filing date.
-- **Unusual: the in-sample average rests on one event.** IVVD rose 121% in 10 days after its August 2025 offering. Without it the average is +2.6%, without the top two +1.1%.
-- **Unusual: the out-of-sample average is held up by one event.** Without OTLK (+75%) it is -8.3%.
-- **Noticed after the run (not a claim):** selling a 5% out-of-the-money put and holding 5 days made about +1.2% per event in both windows (win rate 59% and 69%). Both intervals include zero, the engine has no trading costs, and our own test found bid/ask spreads on these options near 70% of the option price.
-- **Buying options loses** in most cells, which matches our own earlier test (long straddles around 8-Ks lost about 43% after costs).
-- Some cells show extreme Sharpe values (for example -11.6). They come from 8 events and mean nothing.
+- `src.implementation.run_study` from the team repo at fa30fcb, unchanged, tag `public_offering`, our 139 tickers. 12 events priced in sample and 21 out of sample on the current windows (166 and 58 filings, 63 and 23 priced, on the earlier windows). The in-sample average rests on one event (IVVD +121%); the out-of-sample average is held up by one (OTLK +75%). Rejected.
 
-### Offering short priced by the team engine (cross-check only)
+### Offering short priced by the team engine (cross-check, first-version signal, not rerun)
 
-- **What ran.** The 155 days the first version of the model flagged (before the leak fix, not rerun) were given to the team engine as events (`price_events` and `evaluate`, unchanged). The engine enters at the close of the session after the signal. Our trade is a short, so the result is minus the engine's "stock" number. No costs.
-- **Coverage.** The engine could price 34 of the 155 events (22 tickers). 91 had no option chain at all. In the standard cell (nearest expiry, 5 days) that leaves 10 trades in each window.
-- **Reading.** With 10 trades per window the intervals run from about -5 to +5, so this neither confirms nor contradicts anything.
-- **Why our own backtest is the better measurement for this strategy.** It prices the trades from real stock quotes with real costs. The team engine needs traded options, which most of these companies do not have.
+- 155 first-version signal days through `price_events` and `evaluate`, unchanged. 34 priced, 7 and 13 in the standard cell. Too few to read. Kept only as a record of the cross-check.
 
 ## 6. HiPerGator runs
 
 | Job | Node | What ran | Log |
 |---|---|---|---|
-| 44673323 | c0706a-s7 | Our backtests: offering short, trial registry (both halves) | `hpg_bundle/hpg_results/backtest_44673323.log` |
+| 44673323 | c0706a-s7 | First version: our backtests (scripts 39, 40) | `hpg_bundle/hpg_results/backtest_44673323.log` |
 | 44673985 | c0706a-s3 | Team engine smoke test, 8 events | `lead_backtest_44673985.log` |
-| 44674111 | c0702a-s7 | Team engine, `public_offering`, both windows | `lead_backtest_44674111.log` |
-| 44675692 | c0704a-s1 | Team engine priced on our model's 155 signal days (first version) | `lead_signal_44675692.log` |
-| 44679395 | c0710a-s3 | **Corrected run:** real prices, offering model without the leak, standard tables (scripts 44, 45, 42), then a comparison with the laptop run (script 46: MATCH) | `noleak_44679395.log` |
+| 44674111 | c0702a-s7 | Team engine, `public_offering`, our universe | `lead_backtest_44674111.log` |
+| 44675692 | c0704a-s1 | Team engine on the first-version signal days | `lead_signal_44675692.log` |
+| 44679395 | c0710a-s3 | Second version (split fix only), scripts 44, 45, 42; matched the laptop with the OLD checker (A9) | `noleak_44679395.log` |
+| TBD_JOB | TBD_NODE | **Version 3 frozen run**: scripts 48, 45, 42, 47, 49 (self test then real run), strict checker 46 with fixtures; input and output hashes in the log and in `reports/run_manifest.json` | `v3_TBD_JOB.log` |
 
-The first four jobs ran before the leak fix. Job 44679395 ran the corrected version straight from this branch (commit 88a52022, Python 3.10.8, scikit-learn 1.7.2, pandas 2.0.3, numpy 1.26.2) and reproduces the laptop numbers exactly: the same 198 trades, largest Sharpe difference 0.0000. The numbers in sections 1 to 5 for our own backtests are from that job.
-All logs and engine output folders are in `hpg_bundle/hpg_results/`.
+The version 3 job copies the committed laptop outputs as its reference before running, prints their hashes, reruns everything from the committed inputs, and fails unless every row and value of the compared files agrees within 1e-6. The quotes (`stock_trades_real_v3.csv`, Massive API) and split history were downloaded on a laptop and are committed inputs; the team engine outputs are reused from jobs 44674111 and 44675692.
 
-## 7. The dataset
+## 7. The dataset (version 2)
 
-Join key for every file: `cik` and `date` (integer YYYYMMDD). Files are in `biological_products/data/fds/`.
+Join key: `cik` and `date` (integer YYYYMMDD). Files in `biological_products/data/fds/`.
 
 | File | What it holds |
 |---|---|
-| `fds_features.csv` | 89,150 rows, 156 feature columns: prices, market, financials, filings, 8-K categories, insiders, news, trials, FDA |
+| `fds_features.csv` | 89,151 rows, 155 features: prices (real close, returns, volume), market, financials (filing date clock), filings, 8-K categories, insiders, news (16:00 New York clock), trials (monthly registry snapshots), PDUFA and FDA |
 | `fds_missing.csv` | Same shape. One reason code per cell: 0 present, 1 not public yet, 2 never reported, 3 stale, 4 insufficient history, 5 not collected, 6 inapplicable, 7 derived |
 | `fds_labels.csv` | Outcomes only. Never use as features |
-| `fds_realprice.csv` | Real (not split adjusted) close and real market cap per row. Use these instead of `px_close_raw`, `fin_shares_adj_m`, `fin_mktcap_m`, `fin_log_mktcap`, `fin_liq_to_mcap` |
 | `fds_options.csv` | Option spreads and straddle prices seen at earlier 8-K events |
-| `fds_shelf.csv` | Baby shelf limit features |
-| `fds_short.csv` | FINRA short volume and short interest |
-| `fds_trialchg.csv` | Trial registry change block (run script 37 to build it) |
-| `fds_dictionary.csv`, `README_FDS.md` | Column meanings, design choices, data fixes |
+| `fds_shelf.csv` | Baby shelf features (rebuilt on v2 market cap) |
+| `fds_short.csv` | FINRA short volume (lagged one day) and short interest (settlement + 14 days) |
+| `fds_realprice.csv` | Script 44's rebuild of the real price; identical to v2's `px_close_real` (kept for the record) |
+| `fds_dictionary.csv`, `README_FDS.md` | Column meanings, design choices, data fixes, the list of removed columns |
 
-Rules used throughout: decision clock is the market close; anything with only a date is usable from the next day; restatements are used as they were filed; every script recounts random rows from raw data and stops if a row uses information dated after it. That check did not catch the split adjustment in the price file (section 0, item 1).
+Removed in v2 (do not reintroduce): `px_close_raw`, `fin_shares_adj_m`, old `fin_mktcap_m`/`fin_log_mktcap`/`fin_liq_to_mcap`, `fil_seccorr_n180`, the current-snapshot `tr_*` columns.
+
+Known limits that remain: the universe is today's SIC 2836 list (survivorship); trial snapshots are monthly, so registry edits inside a month are seen up to 35 days late (`tr_snapshot_age_days` says how late); the news sentiment model's provenance is not recorded; 8-K categories are the vendor's current classification; PDUFA dates are parsed from 8-K text by regex; `px_adv20_usd_m` relies on the vendor adjusting volume for splits (checked on 31 reverse splits: dollar volume before and after a split is similar, as it should be if volume is adjusted).
 
 ## 8. How to rerun
 
 From `biological_products/scripts`:
 
 ```
-python 16_build_fds.py ; python 16b_write_fds.py     # dataset
-python 43_pull_splits.py                              # split history (needs MASSIVE_API_KEY)
-python 44_offer_noleak.py                             # real prices, corrected offering model, signal slice, old version next to it
-python 22_stock_real_costs.py --slice offer_signal_slice_v2.csv --out stock_trades_real_v2.csv   # real bid/ask (needs MASSIVE_API_KEY)
-python 45_offer_trades_v2.py                          # joins the trade list with the quotes
-# first version, kept for the record (has the leak): 21_stock_offer_test.py, 22_stock_real_costs.py, 40_offer_strategy_pnl.py
-python 34_aact_extract.py ; python 35_aact_events.py ; python 36_aact_event_study.py   # trial registry events (needs the AACT zips in data/raw/aact)
-python 39_strategy_audit.py                           # trial registry: design half
-python 39_strategy_audit.py --set holdout --confirm_holdout
-python 42_standard_results.py                         # the standard tables and charts in this document
+python 16_build_fds.py                                   # dataset v2 (about 6 minutes; needs data/raw incl. aact_snapshots.csv, splits.csv)
+python 48_offer_v3.py                                    # offering model on v2, matched controls, trade list
+python 22_stock_real_costs.py --slice offer_signal_slice_v3.csv --out stock_trades_real_v3.csv   # real quotes (needs MASSIVE_API_KEY)
+python 45_offer_trades_v2.py --version v3                # join trades with quotes, quote clock
+python 42_standard_results.py                            # standard per-trade tables and charts
+python 47_offer_audit.py --version v3                    # audit numbers in section 5
+python 49_ledger.py --selftest ; python 49_ledger.py --trades offer_strategy_trades_v3.csv --quotes stock_trades_real_v3.csv   # cash ledger
+python 46_compare_run.py --fixtures ; python 46_compare_run.py --ref <folder with reference outputs>   # strict comparison
+python 24_shelf_features.py ; python 25_lift_check.py --extra fds_shelf.csv ; python 52_finra_evidence.py   # side studies and evidence
+python 34_aact_extract.py ; python 35_aact_events.py ; python 36_aact_event_study.py   # trial registry events (needs the AACT zips)
 ```
 
-Corrected run on HiPerGator: check out this branch, `cd biological_products/hpg_bundle`, `sbatch run_noleak.sbatch` (about 2 minutes, no API key needed).
-
-First version on HiPerGator: copy `hpg_bundle/` to `~/qh_bio`, then `sbatch run_backtest.sbatch` (our backtests), `sbatch run_lead_backtest.sbatch` (team engine, needs `MASSIVE_API_KEY` exported in the shell first), `sbatch run_lead_signal.sbatch` (our signal through the team engine).
+On HiPerGator: check out this branch, `cd biological_products/hpg_bundle`, `sbatch run_noleak.sbatch`.
 
 ## 9. Other ideas tested and dropped
 
 | Idea | Result |
 |---|---|
-| Long option straddles around 8-Ks | Lose about 43% after bid/ask costs. Spreads are about 70% of the option price |
-| Baby shelf limit features | No gain in out-of-sample AUC (-0.0009, interval includes zero) |
+| Long option straddles around 8-Ks | Lose about 43% after bid/ask costs. Spreads near 70% of the option price |
+| Baby shelf limit features | No gain in out-of-sample AUC (rerun on v2: +0.0000) |
 | FINRA short volume and short interest | No gain in AUC (-0.0011, interval includes zero) |
 | Quiet expected-date delays on the registry | No stock move at 5, 20 or 60 days |
-| Australian trial registry | Only 5 events for our small companies in three years. Too few to test |
+| Australian trial registry | 5 events for our small companies in three years. Too few |
 
-## 10. Limits
+## 10. Limits and open items
 
-- The universe is today's SIC 2836 list, so there is survivorship bias.
-- The out-of-sample window is 8 months. Intervals are wide and most include zero.
-- Many small biotechs cannot be borrowed for shorting, or cost far more than 30% a year. This is the main unknown for the offering short.
-- The team engine prices from last option trades with no trading costs, and only for companies with traded options (about 4 in 10 of ours).
-- The trial registry data is monthly snapshots. A change is dated by its posting date, which is exact when one update happened in the month.
-- Several looks were taken at the data before the rules were fixed. Every such choice is named in sections 0 and 5.
-- The offering short trades 1 to 2 names a day. A small change in the model changes most of the trades (71 of 198 stayed the same after the leak fix), so the result is fragile.
+- **Borrow.** 30%/yr is an assumption. Many of these names cannot be borrowed at all, or cost far more. No public source has 2025 history (iborrowdesk: one year, blocks scripts; SEC: none; FINRA: positions only). Paid options: Ortex, QuantRocket; academic: WRDS Markit Securities Finance if UF subscribes. Until then no trade here is "executable", only "priced".
+- **Fill size.** Quotes were saved without timestamps or sizes. A quote proves a price, not that 20% of a portfolio could trade at it.
+- **Holdout.** Reused evaluation window; see section 4. The recipe is frozen now; the next clean test is any period after September 2026.
+- **Survivorship**, monthly trial snapshots, sentiment model provenance: section 7.
+- **Team engine cross-check** was not rerun on the version 3 signal.
+- The standard windows cut 2024 (no model trades) and September 2026 (6 trades) out of both tables.
 
-## 11. Housekeeping
+## 11. Housekeeping and integration
 
-- This folder is on the branch `biological-products-audit`, built on `main` at fa30fcb (PR #4).
-- Not in the repo because of size (see `biological_products/.gitignore`): `data/raw/aact/` (70 GB of AACT zips), `data/raw/aact_extract/`, `data/raw/aact_snapshots.csv`, `data/raw/companyfacts/`, `data/raw/research_cache/`. Scripts 00 and 34 rebuild them. No file holds an API key.
-- The Massive API key was shared in chat earlier and should be rotated.
-- `hpg_bundle/_to_delete/` and the `_stage.pkl`, `_tld*.pkl` files in `data/fds/` can be deleted.
-- Still to do in the dataset itself: remove the five leaky columns from `fds_features.csv` and `fds_missing.csv` and merge in `fds_realprice.csv` (rebuild with script 16).
+- Branch `biological-products-audit`, built on `main` at fa30fcb (PR #4). Shared code (`src/`, `run_all.py`) is untouched.
+- Not in the repo because of size: `data/raw/aact/` (70 GB), `data/raw/aact_extract/`, `data/raw/aact_snapshots.csv`, `data/raw/companyfacts/`, `data/raw/research_cache/`. Scripts 00 and 34 rebuild them. No file holds an API key. The Massive key used during the work was exposed in a chat and should be rotated.
+- **Source registration.** A bundle for `configs/sources/biologics-fds-daily/` (source.json, manifest.jsonl, README.md), a minimal adapter and tests, prepared per `docs/team-data/source-contract.md`, passes `scripts/validate_team_sources.py` in a test copy, stage `discovery`. It is in `biological_products/source_registration/` and NOT yet placed at the repo root, because the contract requires its own `codex/source-biologics-fds-daily-abhay` branch and a source-only PR. `source_registration/TODO.md` lists the fields a human must fill (URLs, hashes).
+- `docs/README.md` and `docs/DATA_DICTIONARY.md` describe the first (per filing) pipeline and are superseded by `data/fds/README_FDS.md`.
+- Old launchers `run_backtest.sbatch`, `run_lead_*.sbatch` are first-version; `run_noleak.sbatch` is the current one.
