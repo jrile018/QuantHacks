@@ -48,6 +48,192 @@ class FakeTesseract:
 
 @unittest.skipUnless(Image is not None, "optional Pillow dependency is not installed")
 class DocumentOCRTests(unittest.TestCase):
+    def _hybrid(self, bounds, **options):
+        header = "Schedule of mortgage loans and property collateral as of year end."
+        class TextPage:
+            def get_text_bounded(self): return header
+            def close(self): pass
+        class Obj:
+            def get_bounds(self): return bounds
+        class Bitmap:
+            def to_pil(self): return Image.new("RGB", (100, 100), "white")
+            def close(self): pass
+        class Page:
+            def get_textpage(self): return TextPage()
+            def get_size(self): return (100, 100)
+            def get_objects(self, filter): return iter([Obj()])
+            def render(self, **kwargs): return Bitmap()
+            def close(self): pass
+        class PDF:
+            def __init__(self, source): pass
+            def __len__(self): return 1
+            def __getitem__(self, index): return Page()
+            def close(self): pass
+        fake = FakeTesseract()
+        module = types.SimpleNamespace(PdfDocument=PDF, raw=types.SimpleNamespace(FPDF_PAGEOBJ_IMAGE=3),
+                                       PYPDFIUM_INFO="wrapper-1", PDFIUM_INFO="renderer-2")
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "hybrid.pdf"
+            source.write_bytes(b"fake")
+            with patch.dict(sys.modules, {"pypdfium2": module}), patch.object(document_ocr, "_load_tesseract", return_value=fake):
+                result = document_ocr.extract_document(source, **options)
+        return result, fake
+
+    def test_large_image_table_under_native_header_is_ocred(self):
+        result, fake = self._hybrid((0, 0, 100, 80))
+        self.assertEqual(fake.calls, 1)
+        self.assertIn("Schedule of mortgage", result.text)
+        self.assertIn("revenue", result.text)
+        self.assertIn("native_and_ocr_text_overlap_possible", result.pages[0].quality_flags)
+        self.assertIn("substantial_image_coverage", result.pages[0].quality_flags)
+        self.assertIn("unverified_table_or_reading_order", result.pages[0].quality_flags)
+        self.assertEqual(result.settings["engine_versions"]["pdfium"], "renderer-2")
+        self.assertEqual(result.pages[0].words[0]["left"], 10)
+        self.assertEqual(result.pages[0].words[0]["confidence"], 80.5)
+
+    def test_small_logo_uses_native_text(self):
+        result, fake = self._hybrid((0, 0, 10, 10))
+        self.assertEqual(fake.calls, 0)
+        self.assertEqual(result.pages[0].method, "native_pdf_text")
+
+    def test_force_ocr_and_segmentation_override(self):
+        result, fake = self._hybrid((0, 0, 10, 10), force_ocr=True, psm=11)
+        self.assertEqual(fake.calls, 1)
+        self.assertIn("--psm 11", result.settings["tesseract_config"])
+        self.assertTrue(result.settings["force_ocr"])
+        self.assertEqual(result.settings["extraction_revision"], document_ocr.EXTRACTION_REVISION)
+
+    def test_low_confidence_and_empty_ocr_require_review_and_close_images(self):
+        class LowTesseract(FakeTesseract):
+            def image_to_data(self, image, **kwargs):
+                self.prepared = image
+                return {"text": ["loan"], "conf": ["22"], "left": [1], "top": [2],
+                        "width": [3], "height": [4]}
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "scan.png"
+            Image.new("RGB", (20, 20), "white").save(source)
+            fake = LowTesseract()
+            with patch.object(document_ocr, "_load_tesseract", return_value=fake):
+                result = document_ocr.extract_document(source)
+            self.assertIn("low_ocr_confidence", result.pages[0].quality_flags)
+            self.assertEqual(result.pages[0].words[0]["top"], 2)
+            self.assertEqual(result.pages[0].words[0]["height"], 4)
+            with self.assertRaises(ValueError):
+                fake.prepared.getpixel((0, 0))
+            with patch.object(document_ocr, "_load_tesseract", return_value=FakeTesseract()) as loader:
+                loader.return_value.image_to_data = lambda *args, **kwargs: {"text": [], "conf": []}
+                empty = document_ocr.extract_document(source)
+            self.assertIn("empty_text", empty.pages[0].quality_flags)
+
+    def test_nonempty_ocr_without_confidence_requires_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "scan.png"
+            Image.new("RGB", (20, 20), "white").save(source)
+            fake = FakeTesseract()
+            fake.image_to_data = lambda *args, **kwargs: {"text": ["Loan"], "conf": ["bad"]}
+            with patch.object(document_ocr, "_load_tesseract", return_value=fake):
+                result = document_ocr.extract_document(source)
+            self.assertIn("ocr_confidence_unavailable", result.pages[0].quality_flags)
+
+    def test_mixed_pdf_uses_native_text_then_ocrs_only_scanned_page(self):
+        rendered = []
+
+        class TextPage:
+            def __init__(self, text):
+                self.text = text
+
+            def get_text_bounded(self):
+                return self.text
+
+            def close(self):
+                pass
+
+        class Bitmap:
+            def to_pil(self):
+                return Image.new("RGB", (20, 20), "white")
+
+            def close(self):
+                pass
+
+        class Page:
+            def __init__(self, number):
+                self.number = number
+
+            def get_textpage(self):
+                return TextPage("Cash provided by operating activities was $123 million. " if self.number == 0 else "")
+
+            def get_size(self):
+                return (612, 792)
+
+            def render(self, *, scale):
+                rendered.append(self.number)
+                return Bitmap()
+
+            def close(self):
+                pass
+
+        class PDF:
+            def __init__(self, source):
+                pass
+
+            def __len__(self):
+                return 2
+
+            def __getitem__(self, number):
+                return Page(number)
+
+            def close(self):
+                pass
+
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "filing.pdf"
+            source.write_bytes(b"fake PDF")
+            fake = FakeTesseract()
+            with patch.dict(sys.modules, {"pypdfium2": types.SimpleNamespace(PdfDocument=PDF)}), \
+                 patch.object(document_ocr, "_load_tesseract", return_value=fake):
+                result = document_ocr.extract_document(source)
+        self.assertEqual(fake.calls, 1)
+        self.assertEqual(rendered, [1])
+        self.assertEqual([page.method for page in result.pages], ["native_pdf_text", "tesseract_ocr"])
+        self.assertIn("Cash provided", result.pages[0].text)
+
+    def test_native_pdf_does_not_load_tesseract(self):
+        class TextPage:
+            def get_text_bounded(self):
+                return "A sufficiently long digital text page with financial details."
+
+            def close(self):
+                pass
+
+        class Page:
+            def get_textpage(self):
+                return TextPage()
+
+            def close(self):
+                pass
+
+        class PDF:
+            def __init__(self, source):
+                pass
+
+            def __len__(self):
+                return 1
+
+            def __getitem__(self, number):
+                return Page()
+
+            def close(self):
+                pass
+
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "digital.pdf"
+            source.write_bytes(b"fake PDF")
+            with patch.dict(sys.modules, {"pypdfium2": types.SimpleNamespace(PdfDocument=PDF)}), \
+                 patch.object(document_ocr, "_load_tesseract", side_effect=AssertionError("OCR invoked")):
+                result = document_ocr.extract_document(source)
+        self.assertEqual(result.engine, "pdfium")
+        self.assertEqual(result.pages[0].method, "native_pdf_text")
+
     def test_multipage_tiff_preserves_pages_and_source_hash(self):
         with tempfile.TemporaryDirectory() as tmp:
             source = Path(tmp) / "filing.tiff"
