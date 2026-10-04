@@ -1,5 +1,7 @@
 # Biologics FDS dataset (SIC 2836)
 
+> **Known problem (found 2026-10-04).** Five columns carry future information: `px_close_raw`, `fin_shares_adj_m`, `fin_mktcap_m`, `fin_log_mktcap`, `fin_liq_to_mcap`. They come from a price file that is adjusted for splits that happened later, so a past price can reveal a future reverse split. Drop these five and join `fds_realprice.csv` (same `cik` and `date` keys: `px_close_real`, `fin_mktcap_real_m`, `fin_log_mktcap_real`, `fin_liq_to_mcap_real`), built by `scripts/44_offer_noleak.py` from `data/raw/splits.csv`. Return and ratio columns are not affected. Dollar volume is not affected (the source adjusts volume too).
+
 Point in time company snapshot. One row per company per market day. 89,150 rows, 139 companies, 2024-01-02 to 2026-10-02.
 
 ## Files (data/fds/)

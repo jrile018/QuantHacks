@@ -24,9 +24,11 @@ ap.add_argument('--hold', type=int, default=5)
 ap.add_argument('--limit', type=int, default=0)
 ap.add_argument('--workers', type=int, default=6)
 ap.add_argument('--summary_only', action='store_true')
+ap.add_argument('--slice', default='offer_signal_slice.csv', help='signal file in data/fds (script 44 writes offer_signal_slice_v2.csv)')
+ap.add_argument('--out', default='stock_trades_real.csv', help='output file in data/fds')
 a = ap.parse_args()
 FDS = os.path.join(a.data, 'fds'); H = a.hold
-OUT = os.path.join(FDS, 'stock_trades_real.csv')
+OUT = os.path.join(FDS, a.out)
 
 def nth_sunday(y, m, n):
     d = dt.date(y, m, 1); d += dt.timedelta(days=(6 - d.weekday()) % 7); return d + dt.timedelta(weeks=n - 1)
@@ -61,7 +63,7 @@ def last_before(tk, t):   # last valid quote at or before t (same day, within 60
 
 # ---------- build the trade list the same way as script 21 ----------
 lk = pd.read_csv(os.path.join(FDS, 'fds_lookup_cik_ticker.csv')); c2t = dict(zip(lk.cik.astype(int), lk.ticker))
-S = pd.read_csv(os.path.join(FDS, 'offer_signal_slice.csv'))
+S = pd.read_csv(os.path.join(FDS, a.slice))
 S['d'] = pd.to_datetime(S.date.astype(str)); S = S.sort_values('d')
 cal = pd.DatetimeIndex(sorted(pd.read_csv(os.path.join(a.data, 'raw', 'prices.csv'), usecols=['ticker', 'date']).query("ticker=='SPY'").date.pipe(pd.to_datetime).unique()))
 pos = {d: i for i, d in enumerate(cal)}
