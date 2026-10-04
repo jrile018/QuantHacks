@@ -1,0 +1,206 @@
+168 companies, filings on or after 2022-01-01
+[1/168] ACIW: 75 filings
+[2/168] ADBE: 98 filings
+[3/168] ADSK: 76 filings
+[4/168] AEYE: 82 filings
+[5/168] AI: 78 filings
+[6/168] AIFF: 108 filings
+[7/168] AISP: 102 filings
+[8/168] ALKT: 77 filings
+[9/168] ALRM: 66 filings
+[10/168] AMPL: 68 filings
+[11/168] AMST: 98 filings
+[12/168] APPF: 75 filings
+[13/168] APPN: 77 filings
+[14/168] ASAN: 79 filings
+[15/168] ATHR: 27 filings
+[16/168] AUID: 89 filings
+[17/168] AVPT: 64 filings
+[18/168] AWRE: 79 filings
+[19/168] BAND: 79 filings
+[20/168] BB: 92 filings
+[21/168] BBAI: 136 filings
+[22/168] BILL: 88 filings
+[23/168] BKYI: 107 filings
+[24/168] BL: 90 filings
+[25/168] BLIN: 76 filings
+[26/168] BLKB: 98 filings
+[27/168] BLZE: 81 filings
+[28/168] BOX: 75 filings
+[29/168] BRZE: 66 filings
+[30/168] BSY: 76 filings
+[31/168] CCC: 95 filings
+[32/168] CCLD: 137 filings
+[33/168] CCSI: 70 filings
+[34/168] CDNS: 88 filings
+[35/168] CERT: 81 filings
+[36/168] CMRC: 92 filings
+[37/168] COUR: 104 filings
+[38/168] CRM: 98 filings
+[39/168] CRNC: 88 filings
+[40/168] CRWD: 71 filings
+[41/168] CRWV: 79 filings
+[42/168] CVLT: 71 filings
+[43/168] CXAI: 96 filings
+[44/168] CXM: 82 filings
+[45/168] CYAB: 25 filings
+[46/168] DBX: 75 filings
+[47/168] DDD: 120 filings
+[48/168] DDOG: 64 filings
+[49/168] DH: 84 filings
+[50/168] DOCU: 89 filings
+[51/168] DT: 83 filings
+[52/168] DUOL: 70 filings
+[53/168] DUOT: 133 filings
+[54/168] EGAN: 58 filings
+[55/168] ESTC: 69 filings
+[56/168] EVCM: 76 filings
+[57/168] EXFY: 73 filings
+[58/168] EXYN: 20 filings
+[59/168] FATN: 25 filings
+[60/168] FIG: 20 filings
+[61/168] FNGR: 137 filings
+[62/168] FROG: 65 filings
+[63/168] FRSH: 79 filings
+[64/168] FSLY: 81 filings
+[65/168] GDYN: 73 filings
+[66/168] GEG: 71 filings
+[67/168] GEN: 93 filings
+[68/168] GTLB: 75 filings
+[69/168] GTM: 80 filings
+[70/168] GWRE: 70 filings
+[71/168] GXAI: 61 filings
+[72/168] HUBS: 72 filings
+[73/168] IDAI: 146 filings
+[74/168] IDN: 79 filings
+[75/168] IIIV: 67 filings
+[76/168] INLX: 90 filings
+[77/168] INSE: 81 filings
+[78/168] INTA: 68 filings
+[79/168] INTU: 73 filings
+[80/168] IVDA: 61 filings
+[81/168] KLTR: 73 filings
+[82/168] KVYO: 51 filings
+[83/168] LAW: 76 filings
+[84/168] LTRYW: 159 filings
+[85/168] MANH: 65 filings
+[86/168] MBLY: 71 filings
+[87/168] MCHX: 96 filings
+[88/168] MDB: 72 filings
+[89/168] MKTW: 110 filings
+[90/168] MQ: 86 filings
+[91/168] MRDN: 145 filings
+[92/168] MSFT: 74 filings
+[93/168] MSGM: 134 filings
+[94/168] MYPS: 83 filings
+[95/168] MYSZ: 95 filings
+[96/168] NABL: 72 filings
+[97/168] NAVN: 20 filings
+[98/168] NCNO: 80 filings
+[99/168] NET: 76 filings
+[100/168] NOW: 92 filings
+[101/168] NTNX: 88 filings
+[102/168] NTSK: 17 filings
+[103/168] NTWK: 66 filings
+[104/168] OCTV: 6 filings
+[105/168] OKTA: 76 filings
+[106/168] ORCL: 76 filings
+[107/168] PARA: 90 filings
+[108/168] PATH: 76 filings
+[109/168] PAYC: 100 filings
+[110/168] PCOR: 75 filings
+[111/168] PCTY: 69 filings
+[112/168] PD: 83 filings
+[113/168] PDFS: 61 filings
+[114/168] PDYN: 109 filings
+[115/168] PLTR: 67 filings
+[116/168] PRCH: 96 filings
+[117/168] PRGS: 79 filings
+[118/168] PTC: 76 filings
+[119/168] PXLW: 102 filings
+[120/168] QLYS: 65 filings
+[121/168] QTWO: 65 filings
+[122/168] QUBT: 107 filings
+[123/168] QXL: 69 filings
+[124/168] RBLX: 83 filings
+[125/168] RBRK: 35 filings
+[126/168] RCAT: 117 filings
+[127/168] RDVT: 64 filings
+[128/168] ROC: 18 filings
+[129/168] RPD: 77 filings
+[130/168] S: 77 filings
+[131/168] SAIL: 27 filings
+[132/168] SHOP: 82 filings
+[133/168] SKIL: 117 filings
+[134/168] SMSI: 102 filings
+[135/168] SNAL: 77 filings
+[136/168] SNOW: 72 filings
+[137/168] SNPS: 128 filings
+[138/168] SOUN: 119 filings
+[139/168] SPSC: 69 filings
+[140/168] SPT: 76 filings
+[141/168] SSNC: 77 filings
+[142/168] SSTI: 72 filings
+[143/168] SVCO: 60 filings
+[144/168] SWMR: 18 filings
+[145/168] TDC: 79 filings
+[146/168] TEAM: 79 filings
+[147/168] TENB: 79 filings
+[148/168] TTAN: 34 filings
+[149/168] TTWO: 107 filings
+[150/168] TWLO: 83 filings
+[151/168] TYL: 71 filings
+[152/168] U: 118 filings
+[153/168] UPLD: 83 filings
+[154/168] VEEV: 84 filings
+[155/168] VERX: 70 filings
+[156/168] VIA: 17 filings
+[157/168] VIDA: 9 filings
+[158/168] VRNS: 69 filings
+[159/168] VWAV: 102 filings
+[160/168] WEAV: 83 filings
+[161/168] WFCF: 62 filings
+[162/168] WK: 74 filings
+[163/168] XPER: 72 filings
+[164/168] XYZ: 84 filings
+[165/168] XZO: 21 filings
+[166/168] YOU: 66 filings
+[167/168] ZDGE: 68 filings
+[168/168] ZETA: 71 filings
+{
+  "run_at": "2026-10-03T19:36:20",
+  "companies": 168,
+  "forms": [
+    "10-K",
+    "10-K/A",
+    "10-Q",
+    "10-Q/A",
+    "20-F",
+    "20-F/A",
+    "40-F",
+    "40-F/A",
+    "425",
+    "6-K",
+    "6-K/A",
+    "8-K",
+    "8-K/A",
+    "DEF 14A",
+    "DEFA14A",
+    "DEFM14A",
+    "PREM14A",
+    "S-1",
+    "S-1/A",
+    "S-3",
+    "S-3/A",
+    "S-4",
+    "S-4/A",
+    "S-8"
+  ],
+  "start": "2022-01-01",
+  "end": "2026-10-03",
+  "with_linked_exhibits": true,
+  "filings_listed": 18727,
+  "downloaded": 131,
+  "already_on_disk": 18595,
+  "failures": 1
+}

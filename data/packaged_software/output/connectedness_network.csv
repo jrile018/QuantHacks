@@ -1,0 +1,7 @@
+layer,nodes_with_an_edge,edges,density,mean_degree,max_degree,mean_clustering,components_with_edges,largest_component,degree_assortativity,mean_icm_reach
+news_comention,155,2931,0.2089,34.89,115,0.541,1,155,-0.1136,129.051
+tenk_mention,94,152,0.0108,1.81,27,0.0605,3,90,-0.2309,7.777
+return_corr,77,747,0.0533,8.89,52,0.2834,1,77,-0.1166,25.591
+shared_auditor,137,1425,0.1016,16.96,29,0.7798,13,30,1.0,17.737
+shared_agency,7,7,0.0005,0.08,5,0.0125,1,7,-0.5909,1.038
+common_ownership_13f,131,1159,0.0826,13.8,67,0.3802,2,129,0.1074,73.964

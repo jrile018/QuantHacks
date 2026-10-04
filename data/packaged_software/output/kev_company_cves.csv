@@ -1,0 +1,1092 @@
+cik,ticker,name,cve_id,kev_vendor_project,kev_product,vulnerability_name,date_added,due_date,known_ransomware_use,in_window_2022_onward
+0000796343,ADBE,Adobe Inc.,CVE-2021-21017,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Heap-based Buffer Overflow Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2021-21017,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Heap-based Buffer Overflow Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2021-28550,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Use-After-Free Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2021-28550,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Use-After-Free Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2018-4939,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2018-4939,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2018-15961,Adobe,ColdFusion,Adobe ColdFusion Unrestricted File Upload Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2018-15961,Adobe,ColdFusion,Adobe ColdFusion Unrestricted File Upload Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000796343,ADBE,Adobe Inc.,CVE-2018-4878,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2021-11-03,2022-05-03,Known,no
+0000796343,ADBE,Adobe Inc.,CVE-2018-4878,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2021-11-03,2022-05-03,Known,no
+0000796343,ADBE,Adobe Inc.,CVE-2022-24086,Adobe,Commerce and Magento Open Source,Adobe Commerce and Magento Open Source Improper Input Validation Vulnerability,2022-02-15,2022-03-01,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2022-24086,Adobe,Commerce and Magento Open Source,Adobe Commerce and Magento Open Source Improper Input Validation Vulnerability,2022-02-15,2022-03-01,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2018-15982,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-02-15,2022-08-15,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2018-15982,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-02-15,2022-08-15,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2017-11292,Adobe,Flash Player,Adobe Flash Player Type Confusion Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2017-11292,Adobe,Flash Player,Adobe Flash Player Type Confusion Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-7855,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-7855,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-4117,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-4117,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-1019,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-1019,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-7645,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-7645,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-5119,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-5119,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-3043,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-3043,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0496,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0496,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-3346,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-3346,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0641,Adobe,Reader,Adobe Reader Buffer Overflow Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0641,Adobe,Reader,Adobe Reader Buffer Overflow Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0640,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0640,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0632,Adobe,ColdFusion,Adobe ColdFusion Authentication Bypass Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0632,Adobe,ColdFusion,Adobe ColdFusion Authentication Bypass Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-1535,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-1535,Adobe,Flash Player,Adobe Flash Player Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2011-0611,Adobe,Flash Player,Adobe Flash Player Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2011-0611,Adobe,Flash Player,Adobe Flash Player Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-0188,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-0188,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2008-2992,Adobe,Acrobat and Reader,Adobe Reader and Acrobat Input Validation Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2008-2992,Adobe,Acrobat and Reader,Adobe Reader and Acrobat Input Validation Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0631,Adobe,ColdFusion,Adobe ColdFusion Information Disclosure Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0631,Adobe,ColdFusion,Adobe ColdFusion Information Disclosure Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0629,Adobe,ColdFusion,Adobe ColdFusion Directory Traversal Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0629,Adobe,ColdFusion,Adobe ColdFusion Directory Traversal Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0625,Adobe,ColdFusion,Adobe ColdFusion Authentication Bypass Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0625,Adobe,ColdFusion,Adobe ColdFusion Authentication Bypass Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-3960,Adobe,BlazeDS,Adobe BlazeDS Information Disclosure Vulnerability,2022-03-07,2022-09-07,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-3960,Adobe,BlazeDS,Adobe BlazeDS Information Disclosure Vulnerability,2022-03-07,2022-09-07,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-7892,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-7892,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-4171,Adobe,Flash Player,Adobe Flash Player Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-4171,Adobe,Flash Player,Adobe Flash Player Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-2861,Adobe,ColdFusion,Adobe ColdFusion Directory Traversal Vulnerability,2022-03-25,2022-04-15,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-2861,Adobe,ColdFusion,Adobe ColdFusion Directory Traversal Vulnerability,2022-03-25,2022-04-15,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-0927,Adobe,Reader and Acrobat,Adobe Reader and Adobe Acrobat Stack-Based Buffer Overflow Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-0927,Adobe,Reader and Acrobat,Adobe Reader and Adobe Acrobat Stack-Based Buffer Overflow Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-2729,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Arbitrary Integer Overflow Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-2729,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Arbitrary Integer Overflow Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-2034,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-2034,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-5123,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-5123,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-5122,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-5122,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-3113,Adobe,Flash Player,Adobe Flash Player Heap-Based Buffer Overflow Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-3113,Adobe,Flash Player,Adobe Flash Player Heap-Based Buffer Overflow Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-0313,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-0313,Adobe,Flash Player,Adobe Flash Player Use-After-Free Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-0311,Adobe,Flash Player,Adobe Flash Player Remote Code Execution Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-0311,Adobe,Flash Player,Adobe Flash Player Remote Code Execution Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-9163,Adobe,Flash Player,Adobe Flash Player Stack-Based Buffer Overflow Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-9163,Adobe,Flash Player,Adobe Flash Player Stack-Based Buffer Overflow Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2018-5002,Adobe,Flash Player,Adobe Flash Player Stack-based Buffer Overflow Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2018-5002,Adobe,Flash Player,Adobe Flash Player Stack-based Buffer Overflow Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-1010,Adobe,Flash Player and AIR,Adobe Flash Player and AIR Integer Overflow Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-1010,Adobe,Flash Player and AIR,Adobe Flash Player and AIR Integer Overflow Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-0984,Adobe,Flash Player and AIR,Adobe Flash Player and AIR Use-After-Free Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2016-0984,Adobe,Flash Player and AIR,Adobe Flash Player and AIR Use-After-Free Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-0310,Adobe,Flash Player,Adobe Flash Player ASLR Bypass Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-0310,Adobe,Flash Player,Adobe Flash Player ASLR Bypass Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-8651,Adobe,Flash Player,Adobe Flash Player Integer Overflow Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2015-8651,Adobe,Flash Player,Adobe Flash Player Integer Overflow Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-8439,Adobe,Flash Player,Adobe Flash Player Dereferenced Pointer Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-8439,Adobe,Flash Player,Adobe Flash Player Dereferenced Pointer Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0546,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Sandbox Bypass Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0546,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Sandbox Bypass Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2018-4990,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Double Free Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2018-4990,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Double Free Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-5054,Adobe,Flash Player,Adobe Flash Player Integer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-5054,Adobe,Flash Player,Adobe Flash Player Integer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-0767,Adobe,Flash Player,Adobe Flash Player Cross-Site Scripting (XSS) Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-0767,Adobe,Flash Player,Adobe Flash Player Cross-Site Scripting (XSS) Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-0754,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2012-0754,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2011-2462,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Universal 3D Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2011-2462,Adobe,Reader and Acrobat,Adobe Reader and Acrobat Universal 3D Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2011-0609,Adobe,Flash Player,Adobe Flash Player Unspecified Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2011-0609,Adobe,Flash Player,Adobe Flash Player Unspecified Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-2883,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Stack-Based Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-2883,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Stack-Based Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-1297,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2010-1297,Adobe,Flash Player,Adobe Flash Player Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-4324,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Use-After-Free Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-4324,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Use-After-Free Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-3953,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Universal 3D Remote Code Execution Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-3953,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Universal 3D Remote Code Execution Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-1862,Adobe,"Acrobat and Reader, Flash Player","Adobe Acrobat and Reader, Flash Player Unspecified Vulnerability",2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-1862,Adobe,"Acrobat and Reader, Flash Player","Adobe Acrobat and Reader, Flash Player Unspecified Vulnerability",2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2008-0655,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Unspecified Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2008-0655,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Unspecified Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2007-5659,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2007-5659,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-26360,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2023-03-15,2023-04-05,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-26360,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2023-03-15,2023-04-05,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-29298,Adobe,ColdFusion,Adobe ColdFusion Improper Access Control Vulnerability,2023-07-20,2023-08-10,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-29298,Adobe,ColdFusion,Adobe ColdFusion Improper Access Control Vulnerability,2023-07-20,2023-08-10,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-38205,Adobe,ColdFusion,Adobe ColdFusion Improper Access Control Vulnerability,2023-07-20,2023-08-10,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-38205,Adobe,ColdFusion,Adobe ColdFusion Improper Access Control Vulnerability,2023-07-20,2023-08-10,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-26359,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2023-08-21,2023-09-11,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-26359,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2023-08-21,2023-09-11,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-26369,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Out-of-Bounds Write Vulnerability,2023-09-14,2023-10-05,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-26369,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Out-of-Bounds Write Vulnerability,2023-09-14,2023-10-05,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-21608,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Use-After-Free Vulnerability,2023-10-10,2023-10-31,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-21608,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Use-After-Free Vulnerability,2023-10-10,2023-10-31,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-29300,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2024-01-08,2024-01-29,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-29300,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2024-01-08,2024-01-29,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-38203,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2024-01-08,2024-01-29,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2023-38203,Adobe,ColdFusion,Adobe ColdFusion Deserialization of Untrusted Data Vulnerability,2024-01-08,2024-01-29,Known,yes
+0000796343,ADBE,Adobe Inc.,CVE-2024-34102,Adobe,Commerce and Magento Open Source,Adobe Commerce and Magento Open Source Improper Restriction of XML External Entity Reference (XXE) Vulnerability,2024-07-17,2024-08-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2024-34102,Adobe,Commerce and Magento Open Source,Adobe Commerce and Magento Open Source Improper Restriction of XML External Entity Reference (XXE) Vulnerability,2024-07-17,2024-08-07,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0502,Adobe,Flash Player,Adobe Flash Player Double Free Vulnerablity,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0502,Adobe,Flash Player,Adobe Flash Player Double Free Vulnerablity,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0648,Adobe,Flash Player,Adobe Flash Player Code Execution Vulnerability,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0648,Adobe,Flash Player,Adobe Flash Player Code Execution Vulnerability,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0643,Adobe,Flash Player,Adobe Flash Player Incorrect Default Permissions Vulnerability,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2013-0643,Adobe,Flash Player,Adobe Flash Player Incorrect Default Permissions Vulnerability,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0497,Adobe,Flash Player,Adobe Flash Player Integer Underflow Vulnerablity,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2014-0497,Adobe,Flash Player,Adobe Flash Player Integer Underflow Vulnerablity,2024-09-17,2024-10-08,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2024-20767,Adobe,ColdFusion,Adobe ColdFusion Improper Access Control Vulnerability,2024-12-16,2025-01-06,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2024-20767,Adobe,ColdFusion,Adobe ColdFusion Improper Access Control Vulnerability,2024-12-16,2025-01-06,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2017-3066,Adobe,ColdFusion,Adobe ColdFusion Deserialization Vulnerability,2025-02-24,2025-03-17,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2017-3066,Adobe,ColdFusion,Adobe ColdFusion Deserialization Vulnerability,2025-02-24,2025-03-17,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2025-54253,Adobe,Experience Manager (AEM) Forms,Adobe Experience Manager Forms Code Execution Vulnerability,2025-10-15,2025-11-05,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2025-54253,Adobe,Experience Manager (AEM) Forms,Adobe Experience Manager Forms Code Execution Vulnerability,2025-10-15,2025-11-05,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2025-54236,Adobe,Commerce and Magento,Adobe Commerce and Magento Improper Input Validation Vulnerability,2025-10-24,2025-11-14,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2025-54236,Adobe,Commerce and Magento,Adobe Commerce and Magento Improper Input Validation Vulnerability,2025-10-24,2025-11-14,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2020-9715,Adobe,Acrobat,Adobe Acrobat Use-After-Free Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2020-9715,Adobe,Acrobat,Adobe Acrobat Use-After-Free Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-34621,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Prototype Pollution Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-34621,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Prototype Pollution Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-3459,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2009-3459,Adobe,Acrobat and Reader,Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-48282,Adobe,ColdFusion,Adobe ColdFusion Path Traversal Vulnerability,2026-07-07,2026-07-10,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-48282,Adobe,ColdFusion,Adobe ColdFusion Path Traversal Vulnerability,2026-07-07,2026-07-10,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-75650,Adobe,Commerce and Magento,Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability,2026-09-08,2026-09-11,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-75650,Adobe,Commerce and Magento,Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability,2026-09-08,2026-09-11,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-71362,Adobe,Commerce and Magento ,Adobe Commerce and Magento Incorrect Authorization Vulnerability ,2026-09-24,2026-09-27,Unknown,yes
+0000796343,ADBE,Adobe Inc.,CVE-2026-71362,Adobe,Commerce and Magento ,Adobe Commerce and Magento Incorrect Authorization Vulnerability ,2026-09-24,2026-09-27,Unknown,yes
+0001169561,CVLT,"Commault Systems, Inc.",CVE-2025-3928,Commvault,Web Server,Commvault Web Server Unspecified Vulnerability,2025-04-28,2025-05-19,Unknown,yes
+0001169561,CVLT,"Commault Systems, Inc.",CVE-2025-34028,Commvault,Command Center,Commvault Command Center Path Traversal Vulnerability,2025-05-02,2025-05-23,Unknown,yes
+0001707753,ESTC,Elastic N.V.,CVE-2019-7609,Elastic,Kibana,Kibana Arbitrary Code Execution,2022-01-10,2022-07-10,Unknown,yes
+0001707753,ESTC,Elastic N.V.,CVE-2015-1427,Elastic,Elasticsearch,Elasticsearch Groovy Scripting Engine Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0001707753,ESTC,Elastic N.V.,CVE-2014-3120,Elastic,Elasticsearch,Elasticsearch Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0001993400,FATN,"FatPipe, Inc. Common Stock",CVE-2021-27860,FatPipe,"WARP, IPVPN, and MPVPN software","FatPipe WARP, IPVPN, and MPVPN Configuration Upload exploit",2022-01-10,2022-01-24,Unknown,yes
+0001800667,FROG,JFrog Ltd. Ordinary Shares,CVE-2026-66384,JFrog,Artifactory,JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability,2026-08-27,2026-09-10,Unknown,yes
+0001800667,FROG,JFrog Ltd. Ordinary Shares,CVE-2026-82329,JFrog,Artifactory,JFrog Artifactory Improper Authentication Vulnerability,2026-09-02,2026-09-05,Unknown,yes
+0001800667,FROG,JFrog Ltd. Ordinary Shares,CVE-2026-42016,JFrog,Artifactory,JFrog Artifactory Incorrect Authorization Vulnerability,2026-09-11,2026-09-25,Unknown,yes
+0001800667,FROG,JFrog Ltd. Ordinary Shares,CVE-2026-42018,JFrog,Artifactory,JFrog Artifactory Improper Authentication Vulnerability,2026-09-11,2026-09-25,Unknown,yes
+0001653482,GTLB,GitLab Inc. Class A Common Stock,CVE-2021-22205,GitLab,Community and Enterprise Editions,GitLab Community and Enterprise Editions Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0001653482,GTLB,GitLab Inc. Class A Common Stock,CVE-2023-7028,GitLab,GitLab CE/EE,GitLab Community and Enterprise Editions Improper Access Control Vulnerability,2024-05-01,2024-05-22,Unknown,yes
+0001653482,GTLB,GitLab Inc. Class A Common Stock,CVE-2021-39935,GitLab,Community and Enterprise Editions,GitLab Community and Enterprise Editions Server-Side Request Forgery (SSRF) Vulnerability,2026-02-03,2026-02-24,Unknown,yes
+0001653482,GTLB,GitLab Inc. Class A Common Stock,CVE-2021-22175,GitLab,GitLab,GitLab Server-Side Request Forgery (SSRF) Vulnerability,2026-02-18,2026-03-11,Unknown,yes
+0001653482,GTLB,GitLab Inc. Class A Common Stock,CVE-2026-85706,GitLab,Community Edition and Enterprise Edition,GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability,2026-09-11,2026-09-14,Unknown,yes
+0001441816,MDB,"MongoDB, Inc. Class A",CVE-2019-10758,MongoDB,mongo-express,MongoDB mongo-express Remote Code Execution Vulnerability,2021-12-10,2022-06-10,Unknown,no
+0001441816,MDB,"MongoDB, Inc. Class A",CVE-2025-14847,MongoDB,MongoDB and MongoDB Server,MongoDB and MongoDB Server Improper Handling of Length Parameter Inconsistency Vulnerability,2025-12-29,2026-01-19,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-1812,Microsoft,Windows,Microsoft Windows Group Policy Preferences Password Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2014-1812,Microsoft,Windows,Microsoft Windows Group Policy Preferences Password Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38647,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38647,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-0167,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-0167,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0878,Microsoft,Edge and Internet Explorer,Microsoft Edge and Internet Explorer Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0878,Microsoft,Edge and Internet Explorer,Microsoft Edge and Internet Explorer Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31955,Microsoft,Windows,Microsoft Windows Kernel Information Disclosure Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31955,Microsoft,Windows,Microsoft Windows Kernel Information Disclosure Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-1647,Microsoft,Defender,Microsoft Defender Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-1647,Microsoft,Defender,Microsoft Defender Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-33739,Microsoft,Windows,Microsoft Desktop Window Manager (DWM) Core Library Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-33739,Microsoft,Windows,Microsoft Desktop Window Manager (DWM) Core Library Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-0185,Microsoft,Windows,Microsoft Windows Media Center Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-0185,Microsoft,Windows,Microsoft Windows Media Center Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0683,Microsoft,Windows,Microsoft Windows Installer Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0683,Microsoft,Windows,Microsoft Windows Installer Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-17087,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-17087,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-33742,Microsoft,Windows,Microsoft Windows MSHTML Platform Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-33742,Microsoft,Windows,Microsoft Windows MSHTML Platform Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31199,Microsoft,Enhanced Cryptographic Provider,Microsoft Enhanced Cryptographic Provider Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31199,Microsoft,Enhanced Cryptographic Provider,Microsoft Enhanced Cryptographic Provider Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-33771,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-33771,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31956,Microsoft,Windows,Microsoft Windows NTFS Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31956,Microsoft,Windows,Microsoft Windows NTFS Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31201,Microsoft,Enhanced Cryptographic Provider,Microsoft Enhanced Cryptographic Provider Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31201,Microsoft,Enhanced Cryptographic Provider,Microsoft Enhanced Cryptographic Provider Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31979,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31979,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0938,Microsoft,Windows,Microsoft Windows Adobe Font Manager Library Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0938,Microsoft,Windows,Microsoft Windows Adobe Font Manager Library Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-17144,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-17144,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0986,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0986,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1020,Microsoft,Windows,Microsoft Windows Adobe Font Manager Library Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1020,Microsoft,Windows,Microsoft Windows Adobe Font Manager Library Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38645,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38645,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34523,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34523,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-7269,Microsoft,Internet Information Services (IIS),Microsoft Windows Server Buffer Overflow Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-7269,Microsoft,Internet Information Services (IIS),Microsoft Windows Server Buffer Overflow Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-36948,Microsoft,Windows,Microsoft Windows Update Medic Service Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-36948,Microsoft,Windows,Microsoft Windows Update Medic Service Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38649,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38649,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0688,Microsoft,Exchange Server,Microsoft Exchange Server Validation Key Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0688,Microsoft,Exchange Server,Microsoft Exchange Server Validation Key Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-0143,Microsoft,Windows,Microsoft Windows Server Message Block (SMBv1) Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-0143,Microsoft,Windows,Microsoft Windows Server Message Block (SMBv1) Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-7255,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-7255,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0708,Microsoft,Remote Desktop Services,Microsoft Remote Desktop Services Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0708,Microsoft,Remote Desktop Services,Microsoft Remote Desktop Services Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34473,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34473,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1464,Microsoft,Windows,Microsoft Windows Spoofing Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1464,Microsoft,Windows,Microsoft Windows Spoofing Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-1732,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-1732,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34527,Microsoft,Windows,Microsoft Windows Print Spooler Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34527,Microsoft,Windows,Microsoft Windows Print Spooler Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31207,Microsoft,Exchange Server,Microsoft Exchange Server Security Feature Bypass Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-31207,Microsoft,Exchange Server,Microsoft Exchange Server Security Feature Bypass Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0803,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0803,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1040,Microsoft,Hyper-V RemoteFX,Microsoft Hyper-V RemoteFX vGPU Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1040,Microsoft,Hyper-V RemoteFX,Microsoft Hyper-V RemoteFX vGPU Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-28310,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-28310,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1350,Microsoft,Windows,Microsoft Windows DNS Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1350,Microsoft,Windows,Microsoft Windows DNS Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26411,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26411,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0859,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0859,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-40444,Microsoft,MSHTML,Microsoft MSHTML Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-40444,Microsoft,MSHTML,Microsoft MSHTML Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-8759,Microsoft,.NET Framework,Microsoft .NET Framework Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-8759,Microsoft,.NET Framework,Microsoft .NET Framework Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2018-8653,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2018-8653,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0797,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0797,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-36942,Microsoft,Windows,Microsoft Windows Local Security Authority (LSA) Spoofing Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-36942,Microsoft,Windows,Microsoft Windows Local Security Authority (LSA) Spoofing Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1215,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1215,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2018-0798,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2018-0798,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2018-0802,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2018-0802,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2012-0158,Microsoft,MSCOMCTL.OCX,Microsoft MSCOMCTL.OCX Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2012-0158,Microsoft,MSCOMCTL.OCX,Microsoft MSCOMCTL.OCX Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2015-1641,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2015-1641,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-27085,Microsoft,Internet Explorer,Microsoft Internet Explorer Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-27085,Microsoft,Internet Explorer,Microsoft Internet Explorer Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0541,Microsoft,MSHTML,Microsoft MSHTML Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0541,Microsoft,MSHTML,Microsoft MSHTML Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-11882,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-11882,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0674,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0674,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-27059,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-27059,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1367,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1367,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-0199,Microsoft,Office and WordPad,Microsoft Office and WordPad Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-0199,Microsoft,Office and WordPad,Microsoft Office and WordPad Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1380,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1380,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1429,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1429,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-11774,Microsoft,Office,Microsoft Office Outlook Security Feature Bypass Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2017-11774,Microsoft,Office,Microsoft Office Outlook Security Feature Bypass Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0968,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0968,Microsoft,Internet Explorer,Microsoft Internet Explorer Scripting Engine Memory Corruption Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1472,Microsoft,Netlogon,Microsoft Netlogon Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1472,Microsoft,Netlogon,Microsoft Netlogon Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26855,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26855,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26858,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26858,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-27065,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-27065,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1054,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1054,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-1675,Microsoft,Windows,Microsoft Windows Print Spooler Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-1675,Microsoft,Windows,Microsoft Windows Print Spooler Remote Code Execution Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34448,Microsoft,Windows,Microsoft Windows Scripting Engine Memory Corruption Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-34448,Microsoft,Windows,Microsoft Windows Scripting Engine Memory Corruption Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0601,Microsoft,Windows,Microsoft Windows CryptoAPI Spoofing Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0601,Microsoft,Windows,Microsoft Windows CryptoAPI Spoofing Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0604,Microsoft,SharePoint,Microsoft SharePoint Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0604,Microsoft,SharePoint,Microsoft SharePoint Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0646,Microsoft,.NET Framework,Microsoft .NET Framework Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-0646,Microsoft,.NET Framework,Microsoft .NET Framework Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0808,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0808,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26857,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-26857,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1147,Microsoft,".NET Framework, SharePoint, Visual Studio","Microsoft .NET Framework, SharePoint, and Visual Studio Remote Code Execution Vulnerability",2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2020-1147,Microsoft,".NET Framework, SharePoint, Visual Studio","Microsoft .NET Framework, SharePoint, and Visual Studio Remote Code Execution Vulnerability",2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1214,Microsoft,Windows,Microsoft Windows Privilege Common Log File System (CLFS) Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1214,Microsoft,Windows,Microsoft Windows Privilege Common Log File System (CLFS) Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-3235,Microsoft,Office,Microsoft Office OLE DLL Side Loading Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2016-3235,Microsoft,Office,Microsoft Office OLE DLL Side Loading Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0863,Microsoft,Windows,Microsoft Windows Error Reporting (WER) Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-0863,Microsoft,Windows,Microsoft Windows Error Reporting (WER) Privilege Escalation Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-36955,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-36955,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38648,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-38648,Microsoft,Open Management Infrastructure (OMI),Microsoft Open Management Infrastructure (OMI) Privilege Escalation Vulnerability,2021-11-03,2021-11-17,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-40449,Microsoft,Windows,Microsoft Windows Win32k Privilege Escalation Vulnerability,2021-11-17,2021-12-01,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-40449,Microsoft,Windows,Microsoft Windows Win32k Privilege Escalation Vulnerability,2021-11-17,2021-12-01,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-42321,Microsoft,Exchange,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-17,2021-12-01,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-42321,Microsoft,Exchange,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-11-17,2021-12-01,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-42292,Microsoft,Office,Microsoft Excel Security Feature Bypass,2021-11-17,2021-12-01,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-42292,Microsoft,Office,Microsoft Excel Security Feature Bypass,2021-11-17,2021-12-01,Unknown,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-43890,Microsoft,Windows,Microsoft Windows AppX Installer Spoofing Vulnerability,2021-12-15,2021-12-29,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2021-43890,Microsoft,Windows,Microsoft Windows AppX Installer Spoofing Vulnerability,2021-12-15,2021-12-29,Known,no
+0000789019,MSFT,Microsoft Corp,CVE-2019-1458,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-01-10,2022-07-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1458,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-01-10,2022-07-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3900,Microsoft,WinVerifyTrust function,Microsoft WinVerifyTrust function Remote Code Execution,2022-01-10,2022-07-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3900,Microsoft,WinVerifyTrust function,Microsoft WinVerifyTrust function Remote Code Execution,2022-01-10,2022-07-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-33766,Microsoft,Exchange Server,Microsoft Exchange Server Information Disclosure,2022-01-18,2022-02-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-33766,Microsoft,Exchange Server,Microsoft Exchange Server Information Disclosure,2022-01-18,2022-02-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8453,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-01-21,2022-07-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8453,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-01-21,2022-07-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0787,Microsoft,Windows,Microsoft Windows Background Intelligent Transfer Service (BITS) Improper Privilege Management Vulnerability,2022-01-28,2022-07-28,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0787,Microsoft,Windows,Microsoft Windows Background Intelligent Transfer Service (BITS) Improper Privilege Management Vulnerability,2022-01-28,2022-07-28,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-1776,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-01-28,2022-07-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-1776,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-01-28,2022-07-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21882,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-02-04,2022-02-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21882,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-02-04,2022-02-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-36934,Microsoft,Windows,Microsoft Windows SAM Local Privilege Escalation Vulnerability,2022-02-10,2022-02-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-36934,Microsoft,Windows,Microsoft Windows SAM Local Privilege Escalation Vulnerability,2022-02-10,2022-02-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0796,Microsoft,SMBv3,Microsoft SMBv3 Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0796,Microsoft,SMBv3,Microsoft SMBv3 Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8464,Microsoft,Windows,Microsoft Windows Shell (.lnk) Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8464,Microsoft,Windows,Microsoft Windows Shell (.lnk) Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0263,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0263,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0262,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0262,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0145,Microsoft,SMBv1,Microsoft SMBv1 Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0145,Microsoft,SMBv1,Microsoft SMBv1 Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0144,Microsoft,SMBv1,Microsoft SMBv1 Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0144,Microsoft,SMBv1,Microsoft SMBv1 Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1635,Microsoft,HTTP.sys,Microsoft HTTP.sys Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1635,Microsoft,HTTP.sys,Microsoft HTTP.sys Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0752,Microsoft,Internet Explorer,Microsoft Internet Explorer Type Confusion Vulnerability,2022-02-15,2022-08-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0752,Microsoft,Internet Explorer,Microsoft Internet Explorer Type Confusion Vulnerability,2022-02-15,2022-08-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8174,Microsoft,Windows,Microsoft Windows VBScript Engine Out-of-Bounds Write Vulnerability,2022-02-15,2022-08-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8174,Microsoft,Windows,Microsoft Windows VBScript Engine Out-of-Bounds Write Vulnerability,2022-02-15,2022-08-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-1761,Microsoft,Word,Microsoft Word Memory Corruption Vulnerability,2022-02-15,2022-08-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-1761,Microsoft,Word,Microsoft Word Memory Corruption Vulnerability,2022-02-15,2022-08-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3906,Microsoft,Graphics Component,Microsoft Graphics Component Memory Corruption Vulnerability,2022-02-15,2022-08-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3906,Microsoft,Graphics Component,Microsoft Graphics Component Memory Corruption Vulnerability,2022-02-15,2022-08-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8570,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2022-02-25,2022-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8570,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2022-02-25,2022-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0222,Microsoft,Internet Explorer,Microsoft Internet Explorer Remote Code Execution Vulnerability,2022-02-25,2022-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0222,Microsoft,Internet Explorer,Microsoft Internet Explorer Remote Code Execution Vulnerability,2022-02-25,2022-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-6352,Microsoft,Windows,Microsoft Windows Code Injection Vulnerability,2022-02-25,2022-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-6352,Microsoft,Windows,Microsoft Windows Code Injection Vulnerability,2022-02-25,2022-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-41379,Microsoft,Windows,Microsoft Windows Installer Privilege Escalation Vulnerability,2022-03-03,2022-03-17,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-41379,Microsoft,Windows,Microsoft Windows Installer Privilege Escalation Vulnerability,2022-03-03,2022-03-17,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1297,Microsoft,Excel,Microsoft Excel Remote Code Execution Vulnerability,2022-03-03,2022-03-17,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1297,Microsoft,Excel,Microsoft Excel Remote Code Execution Vulnerability,2022-03-03,2022-03-17,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8581,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2022-03-03,2022-03-17,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8581,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2022-03-03,2022-03-17,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8540,Microsoft,Malware Protection Engine,Microsoft Malware Protection Engine Improper Restriction of Operations Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8540,Microsoft,Malware Protection Engine,Microsoft Malware Protection Engine Improper Restriction of Operations Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-11826,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-11826,Microsoft,Office,Microsoft Office Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0261,Microsoft,Office,Microsoft Office Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0261,Microsoft,Office,Microsoft Office Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0001,Microsoft,Graphics Device Interface (GDI),Microsoft Graphics Device Interface (GDI) Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0001,Microsoft,Graphics Device Interface (GDI),Microsoft Graphics Device Interface (GDI) Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7262,Microsoft,Excel,Microsoft Office Security Feature Bypass Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7262,Microsoft,Excel,Microsoft Office Security Feature Bypass Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7193,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7193,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0099,Microsoft,Windows,Microsoft Windows Secondary Logon Service Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0099,Microsoft,Windows,Microsoft Windows Secondary Logon Service Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2545,Microsoft,Office,Microsoft Office Malformed EPS File Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2545,Microsoft,Office,Microsoft Office Malformed EPS File Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2424,Microsoft,PowerPoint,Microsoft PowerPoint Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2424,Microsoft,PowerPoint,Microsoft PowerPoint Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2387,Microsoft,ATM Font Driver,Microsoft ATM Font Driver Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2387,Microsoft,ATM Font Driver,Microsoft ATM Font Driver Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1701,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1701,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1642,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1642,Microsoft,Office,Microsoft Office Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4114,Microsoft,Windows,Microsoft Windows Object Linking & Embedding (OLE) Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4114,Microsoft,Windows,Microsoft Windows Object Linking & Embedding (OLE) Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-5065,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-5065,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3897,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3897,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-1347,Microsoft,Internet Explorer,Microsoft Internet Explorer Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-1347,Microsoft,Internet Explorer,Microsoft Internet Explorer Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-1856,Microsoft,Office,Microsoft Office MSCOMCTL.OCX Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-1856,Microsoft,Office,Microsoft Office MSCOMCTL.OCX Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2011-1889,Microsoft,Forefront Threat Management Gateway (TMG),Microsoft Forefront TMG Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2011-1889,Microsoft,Forefront Threat Management Gateway (TMG),Microsoft Forefront TMG Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-3333,Microsoft,Office,Microsoft Office Stack-based Buffer Overflow Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-3333,Microsoft,Office,Microsoft Office Stack-based Buffer Overflow Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-0232,Microsoft,Windows,Microsoft Windows Kernel Exception Handler Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-0232,Microsoft,Windows,Microsoft Windows Kernel Exception Handler Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-3129,Microsoft,Excel,Microsoft Excel Featheader Record Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-3129,Microsoft,Excel,Microsoft Excel Featheader Record Memory Corruption Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-1123,Microsoft,Windows,Microsoft Windows Improper Input Validation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-1123,Microsoft,Windows,Microsoft Windows Improper Input Validation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2004-0210,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2004-0210,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2002-0367,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2002-0367,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1405,Microsoft,Windows,Microsoft Windows Universal Plug and Play (UPnP) Service Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1405,Microsoft,Windows,Microsoft Windows Universal Plug and Play (UPnP) Service Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1322,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1322,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1315,Microsoft,Windows,Microsoft Windows Error Reporting Manager Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1315,Microsoft,Windows,Microsoft Windows Error Reporting Manager Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1253,Microsoft,Windows,Microsoft Windows AppX Deployment Server Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1253,Microsoft,Windows,Microsoft Windows AppX Deployment Server Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1132,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1132,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1129,Microsoft,Windows,Microsoft Windows AppX Deployment Service (AppXSVC) Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1129,Microsoft,Windows,Microsoft Windows AppX Deployment Service (AppXSVC) Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1069,Microsoft,Task Scheduler,Microsoft Task Scheduler Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1069,Microsoft,Task Scheduler,Microsoft Task Scheduler Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1064,Microsoft,Windows,Microsoft Windows AppX Deployment Service (AppXSVC) Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1064,Microsoft,Windows,Microsoft Windows AppX Deployment Service (AppXSVC) Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0841,Microsoft,Windows,Microsoft Windows AppX Deployment Service (AppXSVC) Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0841,Microsoft,Windows,Microsoft Windows AppX Deployment Service (AppXSVC) Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0543,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0543,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8120,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8120,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0101,Microsoft,Windows,Microsoft Windows Transaction Manager Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0101,Microsoft,Windows,Microsoft Windows Transaction Manager Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3309,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3309,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2546,Microsoft,Win32k,Microsoft Win32k Memory Corruption Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2546,Microsoft,Win32k,Microsoft Win32k Memory Corruption Vulnerability,2022-03-15,2022-04-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21999,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability,2022-03-25,2022-04-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21999,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability,2022-03-25,2022-04-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0903,Microsoft,Graphics Device Interface (GDI),Microsoft GDI Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0903,Microsoft,Graphics Device Interface (GDI),Microsoft GDI Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8414,Microsoft,Windows,Microsoft Windows Shell Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8414,Microsoft,Windows,Microsoft Windows Shell Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8373,Microsoft,Internet Explorer Scripting Engine,Microsoft Scripting Engine Memory Corruption Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8373,Microsoft,Internet Explorer Scripting Engine,Microsoft Scripting Engine Memory Corruption Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0146,Microsoft,Windows,Microsoft Windows SMB Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0146,Microsoft,Windows,Microsoft Windows SMB Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-6332,Microsoft,Windows,Microsoft Windows Object Linking & Embedding (OLE) Automation Array Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-6332,Microsoft,Windows,Microsoft Windows Object Linking & Embedding (OLE) Automation Array Remote Code Execution Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-6324,Microsoft,Kerberos Key Distribution Center (KDC),Microsoft Kerberos Key Distribution Center (KDC) Privilege Escalation Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-6324,Microsoft,Kerberos Key Distribution Center (KDC),Microsoft Kerberos Key Distribution Center (KDC) Privilege Escalation Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-38646,Microsoft,Office,Microsoft Office Access Connectivity Engine Remote Code Execution Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-38646,Microsoft,Office,Microsoft Office Access Connectivity Engine Remote Code Execution Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-34486,Microsoft,Windows,Microsoft Windows Event Tracing Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-34486,Microsoft,Windows,Microsoft Windows Event Tracing Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8440,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8440,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8406,Microsoft,DirectX Graphics Kernel (DXGKRNL),Microsoft DirectX Graphics Kernel Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8406,Microsoft,DirectX Graphics Kernel (DXGKRNL),Microsoft DirectX Graphics Kernel Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8405,Microsoft,DirectX Graphics Kernel (DXGKRNL),Microsoft DirectX Graphics Kernel Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8405,Microsoft,DirectX Graphics Kernel (DXGKRNL),Microsoft DirectX Graphics Kernel Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0213,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0213,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0059,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0059,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0037,Microsoft,Edge and Internet Explorer,Microsoft Edge and Internet Explorer Type Confusion Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0037,Microsoft,Edge and Internet Explorer,Microsoft Edge and Internet Explorer Type Confusion Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7201,Microsoft,Edge,Microsoft Edge Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7201,Microsoft,Edge,Microsoft Edge Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7200,Microsoft,Edge,Microsoft Edge Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7200,Microsoft,Edge,Microsoft Edge Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0189,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0189,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0151,Microsoft,Client-Server Run-time Subsystem (CSRSS),Microsoft Windows CSRSS Security Feature Bypass Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0151,Microsoft,Client-Server Run-time Subsystem (CSRSS),Microsoft Windows CSRSS Security Feature Bypass Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0040,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0040,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2426,Microsoft,Windows,Microsoft Windows Adobe Type Manager Library Remote Code Execution Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2426,Microsoft,Windows,Microsoft Windows Adobe Type Manager Library Remote Code Execution Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2419,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2419,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1770,Microsoft,Office,Microsoft Office Uninitialized Memory Use Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1770,Microsoft,Office,Microsoft Office Uninitialized Memory Use Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3660,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3660,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-2551,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-2551,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-03-28,2022-04-18,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-2539,Microsoft,Word,Microsoft Word Remote Code Execution Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-2539,Microsoft,Word,Microsoft Word Remote Code Execution Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2011-2005,Microsoft,Ancillary Function Driver (afd.sys),Microsoft Ancillary Function Driver (afd.sys) Improper Input Validation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2011-2005,Microsoft,Ancillary Function Driver (afd.sys),Microsoft Ancillary Function Driver (afd.sys) Improper Input Validation Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-4398,Microsoft,Windows,Microsoft Windows Kernel Stack-Based Buffer Overflow Vulnerability,2022-03-28,2022-04-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-4398,Microsoft,Windows,Microsoft Windows Kernel Stack-Based Buffer Overflow Vulnerability,2022-03-28,2022-04-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-34484,Microsoft,Windows,Microsoft Windows User Profile Service Privilege Escalation Vulnerability,2022-03-31,2022-04-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-34484,Microsoft,Windows,Microsoft Windows User Profile Service Privilege Escalation Vulnerability,2022-03-31,2022-04-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-31166,Microsoft,HTTP Protocol Stack,Microsoft HTTP Protocol Stack Remote Code Execution Vulnerability,2022-04-06,2022-04-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-31166,Microsoft,HTTP Protocol Stack,Microsoft HTTP Protocol Stack Remote Code Execution Vulnerability,2022-04-06,2022-04-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0148,Microsoft,SMBv1 server,Microsoft SMBv1 Server Remote Code Execution Vulnerability,2022-04-06,2022-04-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0148,Microsoft,SMBv1 server,Microsoft SMBv1 Server Remote Code Execution Vulnerability,2022-04-06,2022-04-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-42287,Microsoft,Active Directory,Microsoft Active Directory Domain Services Privilege Escalation Vulnerability,2022-04-11,2022-05-02,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-42287,Microsoft,Active Directory,Microsoft Active Directory Domain Services Privilege Escalation Vulnerability,2022-04-11,2022-05-02,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-42278,Microsoft,Active Directory,Microsoft Active Directory Domain Services Privilege Escalation Vulnerability,2022-04-11,2022-05-02,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-42278,Microsoft,Active Directory,Microsoft Active Directory Domain Services Privilege Escalation Vulnerability,2022-04-11,2022-05-02,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-24521,Microsoft,Windows,Microsoft Windows CLFS Driver Privilege Escalation Vulnerability,2022-04-13,2022-05-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-24521,Microsoft,Windows,Microsoft Windows CLFS Driver Privilege Escalation Vulnerability,2022-04-13,2022-05-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2502,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2502,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-04-13,2022-05-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-22718,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability,2022-04-19,2022-05-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-22718,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability,2022-04-19,2022-05-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-26904,Microsoft,Windows,Microsoft Windows User Profile Service Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-26904,Microsoft,Windows,Microsoft Windows User Profile Service Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21919,Microsoft,Windows,Microsoft Windows User Profile Service Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21919,Microsoft,Windows,Microsoft Windows User Profile Service Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-41357,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-41357,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-40450,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-40450,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-04-25,2022-05-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4113,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-05-04,2022-05-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4113,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-05-04,2022-05-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-0322,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-05-04,2022-05-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-0322,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-05-04,2022-05-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-1027,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-1027,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0638,Microsoft,Update Notification Manager,Microsoft Update Notification Manager Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0638,Microsoft,Update Notification Manager,Microsoft Update Notification Manager Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0676,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0676,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0703,Microsoft,Windows,Microsoft Windows SMB Information Disclosure Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0703,Microsoft,Windows,Microsoft Windows SMB Information Disclosure Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0880,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-0880,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1385,Microsoft,Windows,Microsoft Windows AppX Deployment Extensions Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1385,Microsoft,Windows,Microsoft Windows AppX Deployment Extensions Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1130,Microsoft,Windows,Microsoft Windows AppX Deployment Service Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1130,Microsoft,Windows,Microsoft Windows AppX Deployment Service Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8589,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8589,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-05-23,2022-06-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8611,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8611,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0147,Microsoft,SMBv1 server,Microsoft Windows SMBv1 Information Disclosure Vulnerability,2022-05-24,2022-06-14,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0147,Microsoft,SMBv1 server,Microsoft Windows SMBv1 Information Disclosure Vulnerability,2022-05-24,2022-06-14,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0022,Microsoft,XML Core Services,Microsoft XML Core Services Information Disclosure Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0022,Microsoft,XML Core Services,Microsoft XML Core Services Information Disclosure Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0005,Microsoft,Windows,Microsoft Windows Graphics Device Interface (GDI) Privilege Escalation Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0005,Microsoft,Windows,Microsoft Windows Graphics Device Interface (GDI) Privilege Escalation Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0149,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0149,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0210,Microsoft,Internet Explorer,Microsoft Internet Explorer Privilege Escalation Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-0210,Microsoft,Internet Explorer,Microsoft Internet Explorer Privilege Escalation Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8543,Microsoft,Windows,Microsoft Windows Search Remote Code Execution Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2017-8543,Microsoft,Windows,Microsoft Windows Search Remote Code Execution Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0162,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0162,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3351,Microsoft,Internet Explorer and Edge,Microsoft Internet Explorer and Edge Information Disclosure Vulnerability,2022-05-24,2022-06-14,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3351,Microsoft,Internet Explorer and Edge,Microsoft Internet Explorer and Edge Information Disclosure Vulnerability,2022-05-24,2022-06-14,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3298,Microsoft,Internet Explorer,Microsoft Internet Explorer Messaging API Information Disclosure Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3298,Microsoft,Internet Explorer,Microsoft Internet Explorer Messaging API Information Disclosure Vulnerability,2022-05-24,2022-06-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3393,Microsoft,Windows,Microsoft Windows Graphics Device Interface (GDI) Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-3393,Microsoft,Windows,Microsoft Windows Graphics Device Interface (GDI) Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7256,Microsoft,Windows,Microsoft Windows Open Type Font Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-7256,Microsoft,Windows,Microsoft Windows Open Type Font Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0034,Microsoft,Silverlight,Microsoft Silverlight Runtime Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0034,Microsoft,Silverlight,Microsoft Silverlight Runtime Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-0016,Microsoft,Windows,Microsoft Windows TS WebProxy Directory Traversal Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-0016,Microsoft,Windows,Microsoft Windows TS WebProxy Directory Traversal Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-0071,Microsoft,Internet Explorer,Microsoft Internet Explorer ASLR Bypass Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-0071,Microsoft,Internet Explorer,Microsoft Internet Explorer ASLR Bypass Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2360,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2360,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2425,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-2425,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1769,Microsoft,Windows,Microsoft Windows Mount Manager Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1769,Microsoft,Windows,Microsoft Windows Mount Manager Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-6175,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-6175,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1671,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2015-1671,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4148,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4148,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4123,Microsoft,Internet Explorer,Microsoft Internet Explorer Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4123,Microsoft,Internet Explorer,Microsoft Internet Explorer Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-2817,Microsoft,Internet Explorer,Microsoft Internet Explorer Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-2817,Microsoft,Internet Explorer,Microsoft Internet Explorer Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4077,Microsoft,Input Method Editor (IME) Japanese,Microsoft IME Japanese Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2014-4077,Microsoft,Input Method Editor (IME) Japanese,Microsoft IME Japanese Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-7331,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-7331,Microsoft,Internet Explorer,Microsoft Internet Explorer Information Disclosure Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3896,Microsoft,Silverlight,Microsoft Silverlight Information Disclosure Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3896,Microsoft,Silverlight,Microsoft Silverlight Information Disclosure Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-0074,Microsoft,Silverlight,Microsoft Silverlight Double Dereference Vulnerability,2022-05-25,2022-06-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-0074,Microsoft,Silverlight,Microsoft Silverlight Double Dereference Vulnerability,2022-05-25,2022-06-15,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-1331,Microsoft,Office,Microsoft Office Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-1331,Microsoft,Office,Microsoft Office Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-4969,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-4969,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-1889,Microsoft,XML Core Services,Microsoft XML Core Services Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-1889,Microsoft,XML Core Services,Microsoft XML Core Services Memory Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-0151,Microsoft,Windows,Microsoft Windows Authenticode Signature Verification Remote Code Execution Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-0151,Microsoft,Windows,Microsoft Windows Authenticode Signature Verification Remote Code Execution Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-2572,Microsoft,PowerPoint,Microsoft PowerPoint Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-2572,Microsoft,PowerPoint,Microsoft PowerPoint Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0563,Microsoft,Office,Microsoft Office Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0563,Microsoft,Office,Microsoft Office Buffer Overflow Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0557,Microsoft,Office,Microsoft Office Object Record Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0557,Microsoft,Office,Microsoft Office Object Record Corruption Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2006-2492,Microsoft,Word,Microsoft Word Malformed Object Pointer Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2006-2492,Microsoft,Word,Microsoft Word Malformed Object Pointer Vulnerability,2022-06-08,2022-06-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-30190,Microsoft,Windows,Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability,2022-06-14,2022-07-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-30190,Microsoft,Windows,Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability,2022-06-14,2022-07-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-26925,Microsoft,Windows,Microsoft Windows LSA Spoofing Vulnerability,2022-07-01,2022-07-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-26925,Microsoft,Windows,Microsoft Windows LSA Spoofing Vulnerability,2022-07-01,2022-07-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-22047,Microsoft,Windows,Microsoft Windows Client Server Runtime Subsystem (CSRSS) Privilege Escalation Vulnerability,2022-07-12,2022-08-02,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-22047,Microsoft,Windows,Microsoft Windows Client Server Runtime Subsystem (CSRSS) Privilege Escalation Vulnerability,2022-07-12,2022-08-02,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-34713,Microsoft,Windows,Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability,2022-08-09,2022-08-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-34713,Microsoft,Windows,Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability,2022-08-09,2022-08-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-26923,Microsoft,Active Directory,Microsoft Active Directory Domain Services Privilege Escalation Vulnerability,2022-08-18,2022-09-08,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-26923,Microsoft,Active Directory,Microsoft Active Directory Domain Services Privilege Escalation Vulnerability,2022-08-18,2022-09-08,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21971,Microsoft,Windows,Microsoft Windows Runtime Remote Code Execution Vulnerability,2022-08-18,2022-09-08,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-21971,Microsoft,Windows,Microsoft Windows Runtime Remote Code Execution Vulnerability,2022-08-18,2022-09-08,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-37969,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2022-09-14,2022-10-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-37969,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2022-09-14,2022-10-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-2568,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2022-09-15,2022-10-06,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-2568,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2022-09-15,2022-10-06,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41082,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2022-09-30,2022-10-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41082,Microsoft,Exchange Server,Microsoft Exchange Server Remote Code Execution Vulnerability,2022-09-30,2022-10-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41040,Microsoft,Exchange Server,Microsoft Exchange Server Server-Side Request Forgery Vulnerability,2022-09-30,2022-10-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41040,Microsoft,Exchange Server,Microsoft Exchange Server Server-Side Request Forgery Vulnerability,2022-09-30,2022-10-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41033,Microsoft,Windows COM+ Event System Service,Microsoft Windows COM+ Event System Service Privilege Escalation Vulnerability,2022-10-11,2022-11-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41033,Microsoft,Windows COM+ Event System Service,Microsoft Windows COM+ Event System Service Privilege Escalation Vulnerability,2022-10-11,2022-11-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41091,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Security Feature Bypass Vulnerability,2022-11-08,2022-12-09,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41091,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Security Feature Bypass Vulnerability,2022-11-08,2022-12-09,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41073,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability,2022-11-08,2022-12-09,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41073,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability,2022-11-08,2022-12-09,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41125,Microsoft,Windows,Microsoft Windows CNG Key Isolation Service Privilege Escalation Vulnerability,2022-11-08,2022-12-09,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41125,Microsoft,Windows,Microsoft Windows CNG Key Isolation Service Privilege Escalation Vulnerability,2022-11-08,2022-12-09,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41128,Microsoft,Windows,Microsoft Windows Scripting Languages Remote Code Execution Vulnerability,2022-11-08,2022-12-09,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41128,Microsoft,Windows,Microsoft Windows Scripting Languages Remote Code Execution Vulnerability,2022-11-08,2022-12-09,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41049,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Security Feature Bypass Vulnerability,2022-11-14,2022-12-09,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41049,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Security Feature Bypass Vulnerability,2022-11-14,2022-12-09,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-44698,Microsoft,Defender,Microsoft Defender SmartScreen Security Feature Bypass Vulnerability,2022-12-13,2023-01-03,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-44698,Microsoft,Defender,Microsoft Defender SmartScreen Security Feature Bypass Vulnerability,2022-12-13,2023-01-03,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41080,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2023-01-10,2023-01-31,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-41080,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2023-01-10,2023-01-31,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21674,Microsoft,Windows,Microsoft Windows Advanced Local Procedure Call (ALPC) Privilege Escalation Vulnerability,2023-01-10,2023-01-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21674,Microsoft,Windows,Microsoft Windows Advanced Local Procedure Call (ALPC) Privilege Escalation Vulnerability,2023-01-10,2023-01-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21715,Microsoft,Office,Microsoft Office Publisher Security Feature Bypass Vulnerability,2023-02-14,2023-03-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21715,Microsoft,Office,Microsoft Office Publisher Security Feature Bypass Vulnerability,2023-02-14,2023-03-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-23376,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2023-02-14,2023-03-07,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-23376,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2023-02-14,2023-03-07,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21823,Microsoft,Windows,Microsoft Windows Graphic Component Privilege Escalation Vulnerability,2023-02-14,2023-03-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21823,Microsoft,Windows,Microsoft Windows Graphic Component Privilege Escalation Vulnerability,2023-02-14,2023-03-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-23397,Microsoft,Office,Microsoft Office Outlook Privilege Escalation Vulnerability,2023-03-14,2023-04-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-23397,Microsoft,Office,Microsoft Office Outlook Privilege Escalation Vulnerability,2023-03-14,2023-04-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-24880,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2023-03-14,2023-04-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-24880,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2023-03-14,2023-04-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3163,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2023-03-30,2023-04-20,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3163,Microsoft,Internet Explorer,Microsoft Internet Explorer Memory Corruption Vulnerability,2023-03-30,2023-04-20,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1388,Microsoft,Windows,Microsoft Windows Certificate Dialog Privilege Escalation Vulnerability,2023-04-07,2023-04-28,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1388,Microsoft,Windows,Microsoft Windows Certificate Dialog Privilege Escalation Vulnerability,2023-04-07,2023-04-28,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-28252,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2023-04-11,2023-05-02,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-28252,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability,2023-04-11,2023-05-02,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-29336,Microsoft,Win32k,Microsoft Win32K Privilege Escalation Vulnerability,2023-05-09,2023-05-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-29336,Microsoft,Win32k,Microsoft Win32K Privilege Escalation Vulnerability,2023-05-09,2023-05-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0165,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2023-06-22,2023-07-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2016-0165,Microsoft,Win32k,Microsoft Win32k Privilege Escalation Vulnerability,2023-06-22,2023-07-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-32046,Microsoft,Windows,Microsoft Windows MSHTML Platform Privilege Escalation Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-32046,Microsoft,Windows,Microsoft Windows MSHTML Platform Privilege Escalation Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-32049,Microsoft,Windows,Microsoft Windows Defender SmartScreen Security Feature Bypass Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-32049,Microsoft,Windows,Microsoft Windows Defender SmartScreen Security Feature Bypass Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-35311,Microsoft,Outlook,Microsoft Outlook Security Feature Bypass Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-35311,Microsoft,Outlook,Microsoft Outlook Security Feature Bypass Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36874,Microsoft,Windows,Microsoft Windows Error Reporting Service Privilege Escalation Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36874,Microsoft,Windows,Microsoft Windows Error Reporting Service Privilege Escalation Vulnerability,2023-07-11,2023-08-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36884,Microsoft,Windows,Microsoft Windows Search Remote Code Execution Vulnerability,2023-07-17,2023-08-29,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36884,Microsoft,Windows,Microsoft Windows Search Remote Code Execution Vulnerability,2023-07-17,2023-08-29,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-38180,Microsoft,.NET Core and Visual Studio,Microsoft .NET Core and Visual Studio Denial-of-Service Vulnerability,2023-08-09,2023-08-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-38180,Microsoft,.NET Core and Visual Studio,Microsoft .NET Core and Visual Studio Denial-of-Service Vulnerability,2023-08-09,2023-08-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36761,Microsoft,Word,Microsoft Word Information Disclosure Vulnerability,2023-09-12,2023-10-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36761,Microsoft,Word,Microsoft Word Information Disclosure Vulnerability,2023-09-12,2023-10-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36802,Microsoft,Streaming Service Proxy,Microsoft Streaming Service Proxy Privilege Escalation Vulnerability,2023-09-12,2023-10-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36802,Microsoft,Streaming Service Proxy,Microsoft Streaming Service Proxy Privilege Escalation Vulnerability,2023-09-12,2023-10-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-28229,Microsoft,Windows CNG Key Isolation Service,Microsoft Windows CNG Key Isolation Service Privilege Escalation Vulnerability,2023-10-04,2023-10-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-28229,Microsoft,Windows CNG Key Isolation Service,Microsoft Windows CNG Key Isolation Service Privilege Escalation Vulnerability,2023-10-04,2023-10-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-41763,Microsoft,Skype for Business,Microsoft Skype for Business Privilege Escalation Vulnerability,2023-10-10,2023-10-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-41763,Microsoft,Skype for Business,Microsoft Skype for Business Privilege Escalation Vulnerability,2023-10-10,2023-10-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36563,Microsoft,WordPad,Microsoft WordPad Information Disclosure Vulnerability,2023-10-10,2023-10-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36563,Microsoft,WordPad,Microsoft WordPad Information Disclosure Vulnerability,2023-10-10,2023-10-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36033,Microsoft,Windows,Microsoft Windows Desktop Window Manager (DWM) Core Library Privilege Escalation Vulnerability,2023-11-14,2023-12-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36033,Microsoft,Windows,Microsoft Windows Desktop Window Manager (DWM) Core Library Privilege Escalation Vulnerability,2023-11-14,2023-12-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36025,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2023-11-14,2023-12-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36025,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2023-11-14,2023-12-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36036,Microsoft,Windows,Microsoft Windows Cloud Files Mini Filter Driver Privilege Escalation Vulnerability,2023-11-14,2023-12-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36036,Microsoft,Windows,Microsoft Windows Cloud Files Mini Filter Driver Privilege Escalation Vulnerability,2023-11-14,2023-12-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36584,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Security Feature Bypass Vulnerability,2023-11-16,2023-12-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36584,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Security Feature Bypass Vulnerability,2023-11-16,2023-12-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-29357,Microsoft,SharePoint Server,Microsoft SharePoint Server Privilege Escalation Vulnerability,2024-01-10,2024-01-31,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-29357,Microsoft,SharePoint Server,Microsoft SharePoint Server Privilege Escalation Vulnerability,2024-01-10,2024-01-31,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21412,Microsoft,Windows,Microsoft Windows Internet Shortcut Files Security Feature Bypass Vulnerability,2024-02-13,2024-03-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21412,Microsoft,Windows,Microsoft Windows Internet Shortcut Files Security Feature Bypass Vulnerability,2024-02-13,2024-03-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21351,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2024-02-13,2024-03-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21351,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2024-02-13,2024-03-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21410,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2024-02-15,2024-03-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21410,Microsoft,Exchange Server,Microsoft Exchange Server Privilege Escalation Vulnerability,2024-02-15,2024-03-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-29360,Microsoft,Streaming Service,Microsoft Streaming Service Untrusted Pointer Dereference Vulnerability,2024-02-29,2024-03-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-29360,Microsoft,Streaming Service,Microsoft Streaming Service Untrusted Pointer Dereference Vulnerability,2024-02-29,2024-03-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21338,Microsoft,Windows,Microsoft Windows Kernel Exposed IOCTL with Insufficient Access Control Vulnerability,2024-03-04,2024-03-25,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21338,Microsoft,Windows,Microsoft Windows Kernel Exposed IOCTL with Insufficient Access Control Vulnerability,2024-03-04,2024-03-25,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-24955,Microsoft,SharePoint Server,Microsoft SharePoint Server Code Injection Vulnerability,2024-03-26,2024-04-16,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-24955,Microsoft,SharePoint Server,Microsoft SharePoint Server Code Injection Vulnerability,2024-03-26,2024-04-16,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-38028,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability ,2024-04-23,2024-05-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2022-38028,Microsoft,Windows,Microsoft Windows Print Spooler Privilege Escalation Vulnerability ,2024-04-23,2024-05-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-29988,Microsoft,SmartScreen Prompt,Microsoft SmartScreen Prompt Security Feature Bypass Vulnerability,2024-04-30,2024-05-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-29988,Microsoft,SmartScreen Prompt,Microsoft SmartScreen Prompt Security Feature Bypass Vulnerability,2024-04-30,2024-05-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-30040,Microsoft,Windows,Microsoft Windows MSHTML Platform Security Feature Bypass Vulnerability,2024-05-14,2024-06-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-30040,Microsoft,Windows,Microsoft Windows MSHTML Platform Security Feature Bypass Vulnerability,2024-05-14,2024-06-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-30051,Microsoft,DWM Core Library, Microsoft DWM Core Library Privilege Escalation Vulnerability,2024-05-14,2024-06-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-30051,Microsoft,DWM Core Library, Microsoft DWM Core Library Privilege Escalation Vulnerability,2024-05-14,2024-06-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-26169,Microsoft,Windows,Microsoft Windows Error Reporting Service Improper Privilege Management Vulnerability,2024-06-13,2024-07-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-26169,Microsoft,Windows,Microsoft Windows Error Reporting Service Improper Privilege Management Vulnerability,2024-06-13,2024-07-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38080,Microsoft,Windows ,Microsoft Windows Hyper-V Privilege Escalation Vulnerability,2024-07-09,2024-07-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38080,Microsoft,Windows ,Microsoft Windows Hyper-V Privilege Escalation Vulnerability,2024-07-09,2024-07-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38112,Microsoft,Windows,Microsoft Windows MSHTML Platform Spoofing Vulnerability,2024-07-09,2024-07-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38112,Microsoft,Windows,Microsoft Windows MSHTML Platform Spoofing Vulnerability,2024-07-09,2024-07-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-4792,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2024-07-23,2024-08-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-4792,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2024-07-23,2024-08-13,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-0824,Microsoft,Windows,Microsoft COM for Windows Deserialization of Untrusted Data Vulnerability,2024-08-05,2024-08-26,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-0824,Microsoft,Windows,Microsoft COM for Windows Deserialization of Untrusted Data Vulnerability,2024-08-05,2024-08-26,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38107,Microsoft,Windows,Microsoft Windows Power Dependency Coordinator Privilege Escalation Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38107,Microsoft,Windows,Microsoft Windows Power Dependency Coordinator Privilege Escalation Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38106,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38106,Microsoft,Windows,Microsoft Windows Kernel Privilege Escalation Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38193,Microsoft,Windows,Microsoft Windows Ancillary Function Driver for WinSock Privilege Escalation Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38193,Microsoft,Windows,Microsoft Windows Ancillary Function Driver for WinSock Privilege Escalation Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38213,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38213,Microsoft,Windows,Microsoft Windows SmartScreen Security Feature Bypass Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38178,Microsoft,Windows,Microsoft Windows Scripting Engine Memory Corruption Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38178,Microsoft,Windows,Microsoft Windows Scripting Engine Memory Corruption Vulnerability,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38189,Microsoft,Project,Microsoft Project Remote Code Execution Vulnerability ,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38189,Microsoft,Project,Microsoft Project Remote Code Execution Vulnerability ,2024-08-13,2024-09-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-31196,Microsoft,Exchange Server,Microsoft Exchange Server Information Disclosure Vulnerability,2024-08-21,2024-09-11,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-31196,Microsoft,Exchange Server,Microsoft Exchange Server Information Disclosure Vulnerability,2024-08-21,2024-09-11,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38217,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Protection Mechanism Failure Vulnerability,2024-09-10,2024-10-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38217,Microsoft,Windows,Microsoft Windows Mark of the Web (MOTW) Protection Mechanism Failure Vulnerability,2024-09-10,2024-10-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38014,Microsoft,Windows,Microsoft Windows Installer Improper Privilege Management Vulnerability,2024-09-10,2024-10-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38014,Microsoft,Windows,Microsoft Windows Installer Improper Privilege Management Vulnerability,2024-09-10,2024-10-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38226,Microsoft,Publisher,Microsoft Publisher Protection Mechanism Failure Vulnerability,2024-09-10,2024-10-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38226,Microsoft,Publisher,Microsoft Publisher Protection Mechanism Failure Vulnerability,2024-09-10,2024-10-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43461,Microsoft,Windows,Microsoft Windows MSHTML Platform Spoofing Vulnerability,2024-09-16,2024-10-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43461,Microsoft,Windows,Microsoft Windows MSHTML Platform Spoofing Vulnerability,2024-09-16,2024-10-07,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0618,Microsoft,SQL Server,Microsoft SQL Server Reporting Services Remote Code Execution Vulnerability,2024-09-18,2024-10-09,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2020-0618,Microsoft,SQL Server,Microsoft SQL Server Reporting Services Remote Code Execution Vulnerability,2024-09-18,2024-10-09,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43573,Microsoft,Windows,Microsoft Windows MSHTML Platform Spoofing Vulnerability,2024-10-08,2024-10-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43573,Microsoft,Windows,Microsoft Windows MSHTML Platform Spoofing Vulnerability,2024-10-08,2024-10-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43572,Microsoft,Windows,Microsoft Windows Management Console Remote Code Execution Vulnerability,2024-10-08,2024-10-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43572,Microsoft,Windows,Microsoft Windows Management Console Remote Code Execution Vulnerability,2024-10-08,2024-10-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-30088,Microsoft,Windows ,Microsoft Windows Kernel TOCTOU Race Condition Vulnerability,2024-10-15,2024-11-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-30088,Microsoft,Windows ,Microsoft Windows Kernel TOCTOU Race Condition Vulnerability,2024-10-15,2024-11-05,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38094,Microsoft,SharePoint,Microsoft SharePoint Deserialization Vulnerability,2024-10-22,2024-11-12,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-38094,Microsoft,SharePoint,Microsoft SharePoint Deserialization Vulnerability,2024-10-22,2024-11-12,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43451,Microsoft,Windows,Microsoft Windows NTLMv2 Hash Disclosure Spoofing Vulnerability,2024-11-12,2024-12-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43451,Microsoft,Windows,Microsoft Windows NTLMv2 Hash Disclosure Spoofing Vulnerability,2024-11-12,2024-12-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-49039,Microsoft,Windows,Microsoft Windows Task Scheduler Privilege Escalation Vulnerability,2024-11-12,2024-12-03,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-49039,Microsoft,Windows,Microsoft Windows Task Scheduler Privilege Escalation Vulnerability,2024-11-12,2024-12-03,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-49138,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Heap-Based Buffer Overflow Vulnerability,2024-12-10,2024-12-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-49138,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Heap-Based Buffer Overflow Vulnerability,2024-12-10,2024-12-31,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-35250,Microsoft,Windows,Microsoft Windows Kernel-Mode Driver Untrusted Pointer Dereference Vulnerability ,2024-12-16,2025-01-06,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-35250,Microsoft,Windows,Microsoft Windows Kernel-Mode Driver Untrusted Pointer Dereference Vulnerability ,2024-12-16,2025-01-06,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21335,Microsoft,Windows,Microsoft Windows Hyper-V NT Kernel Integration VSP Use-After-Free Vulnerability,2025-01-14,2025-02-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21335,Microsoft,Windows,Microsoft Windows Hyper-V NT Kernel Integration VSP Use-After-Free Vulnerability,2025-01-14,2025-02-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21334,Microsoft,Windows,Microsoft Windows Hyper-V NT Kernel Integration VSP Use-After-Free Vulnerability,2025-01-14,2025-02-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21334,Microsoft,Windows,Microsoft Windows Hyper-V NT Kernel Integration VSP Use-After-Free Vulnerability,2025-01-14,2025-02-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21333,Microsoft,Windows,Microsoft Windows Hyper-V NT Kernel Integration VSP Heap-based Buffer Overflow Vulnerability,2025-01-14,2025-02-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21333,Microsoft,Windows,Microsoft Windows Hyper-V NT Kernel Integration VSP Heap-based Buffer Overflow Vulnerability,2025-01-14,2025-02-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-29059,Microsoft,.NET Framework,Microsoft .NET Framework Information Disclosure Vulnerability,2025-02-04,2025-02-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-29059,Microsoft,.NET Framework,Microsoft .NET Framework Information Disclosure Vulnerability,2025-02-04,2025-02-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21413,Microsoft,Office Outlook,Microsoft Outlook Improper Input Validation Vulnerability,2025-02-06,2025-02-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-21413,Microsoft,Office Outlook,Microsoft Outlook Improper Input Validation Vulnerability,2025-02-06,2025-02-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21418,Microsoft,Windows,Microsoft Windows Ancillary Function Driver for WinSock Heap-Based Buffer Overflow Vulnerability,2025-02-11,2025-03-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21418,Microsoft,Windows,Microsoft Windows Ancillary Function Driver for WinSock Heap-Based Buffer Overflow Vulnerability,2025-02-11,2025-03-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21391,Microsoft,Windows,Microsoft Windows Storage Link Following Vulnerability,2025-02-11,2025-03-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-21391,Microsoft,Windows,Microsoft Windows Storage Link Following Vulnerability,2025-02-11,2025-03-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24989,Microsoft,Power Pages,Microsoft Power Pages Improper Access Control Vulnerability,2025-02-21,2025-03-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24989,Microsoft,Power Pages,Microsoft Power Pages Improper Access Control Vulnerability,2025-02-21,2025-03-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-49035,Microsoft,Partner Center,Microsoft Partner Center Improper Access Control Vulnerability,2025-02-25,2025-03-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-49035,Microsoft,Partner Center,Microsoft Partner Center Improper Access Control Vulnerability,2025-02-25,2025-03-18,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8639,Microsoft,Windows,Microsoft Windows Win32k Improper Resource Shutdown or Release Vulnerability,2025-03-03,2025-03-24,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2018-8639,Microsoft,Windows,Microsoft Windows Win32k Improper Resource Shutdown or Release Vulnerability,2025-03-03,2025-03-24,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24993,Microsoft,Windows,Microsoft Windows NTFS Heap-Based Buffer Overflow Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24993,Microsoft,Windows,Microsoft Windows NTFS Heap-Based Buffer Overflow Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24991,Microsoft,Windows,Microsoft Windows NTFS Out-Of-Bounds Read Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24991,Microsoft,Windows,Microsoft Windows NTFS Out-Of-Bounds Read Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24985,Microsoft,Windows,Microsoft Windows Fast FAT File System Driver Integer Overflow Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24985,Microsoft,Windows,Microsoft Windows Fast FAT File System Driver Integer Overflow Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24984,Microsoft,Windows,Microsoft Windows NTFS Information Disclosure Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24984,Microsoft,Windows,Microsoft Windows NTFS Information Disclosure Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24983,Microsoft,Windows,Microsoft Windows Win32k Use-After-Free Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24983,Microsoft,Windows,Microsoft Windows Win32k Use-After-Free Vulnerability,2025-03-11,2025-04-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-26633,Microsoft,Windows,Microsoft Windows Management Console (MMC) Improper Neutralization Vulnerability,2025-03-11,2025-04-01,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-26633,Microsoft,Windows,Microsoft Windows Management Console (MMC) Improper Neutralization Vulnerability,2025-03-11,2025-04-01,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-29824,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Use-After-Free Vulnerability,2025-04-08,2025-04-29,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-29824,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Use-After-Free Vulnerability,2025-04-08,2025-04-29,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24054,Microsoft,Windows,Microsoft Windows NTLM Hash Disclosure Spoofing Vulnerability,2025-04-17,2025-05-08,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24054,Microsoft,Windows,Microsoft Windows NTLM Hash Disclosure Spoofing Vulnerability,2025-04-17,2025-05-08,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-32709,Microsoft,Windows,Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-32709,Microsoft,Windows,Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-30397,Microsoft,Windows,Microsoft Windows Scripting Engine Type Confusion Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-30397,Microsoft,Windows,Microsoft Windows Scripting Engine Type Confusion Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-32706,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Heap-Based Buffer Overflow Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-32706,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Heap-Based Buffer Overflow Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-32701,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Use-After-Free Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-32701,Microsoft,Windows,Microsoft Windows Common Log File System (CLFS) Driver Use-After-Free Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-30400,Microsoft,Windows,Microsoft Windows DWM Core Library Use-After-Free Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-30400,Microsoft,Windows,Microsoft Windows DWM Core Library Use-After-Free Vulnerability,2025-05-13,2025-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-33053,Microsoft,Windows, Microsoft Windows External Control of File Name or Path Vulnerability,2025-06-10,2025-07-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-33053,Microsoft,Windows, Microsoft Windows External Control of File Name or Path Vulnerability,2025-06-10,2025-07-01,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-53770,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability,2025-07-20,2025-07-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-53770,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability,2025-07-20,2025-07-21,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-49704,Microsoft,SharePoint,Microsoft SharePoint Code Injection Vulnerability,2025-07-22,2025-07-23,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-49704,Microsoft,SharePoint,Microsoft SharePoint Code Injection Vulnerability,2025-07-22,2025-07-23,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-49706,Microsoft,SharePoint,Microsoft SharePoint Improper Authentication Vulnerability,2025-07-22,2025-07-23,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-49706,Microsoft,SharePoint,Microsoft SharePoint Improper Authentication Vulnerability,2025-07-22,2025-07-23,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2007-0671,Microsoft,Office,Microsoft Office Excel Remote Code Execution Vulnerability,2025-08-12,2025-09-02,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2007-0671,Microsoft,Office,Microsoft Office Excel Remote Code Execution Vulnerability,2025-08-12,2025-09-02,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3893,Microsoft,Internet Explorer,Microsoft Internet Explorer Resource Management Errors Vulnerability,2025-08-12,2025-09-02,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3893,Microsoft,Internet Explorer,Microsoft Internet Explorer Resource Management Errors Vulnerability,2025-08-12,2025-09-02,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-3962,Microsoft,Internet Explorer,Microsoft Internet Explorer Uninitialized Memory Corruption Vulnerability,2025-10-06,2025-10-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-3962,Microsoft,Internet Explorer,Microsoft Internet Explorer Uninitialized Memory Corruption Vulnerability,2025-10-06,2025-10-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-43226,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2025-10-06,2025-10-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2021-43226,Microsoft,Windows,Microsoft Windows Privilege Escalation Vulnerability,2025-10-06,2025-10-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3918,Microsoft,Windows,Microsoft Windows Out-of-Bounds Write Vulnerability,2025-10-06,2025-10-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2013-3918,Microsoft,Windows,Microsoft Windows Out-of-Bounds Write Vulnerability,2025-10-06,2025-10-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2011-3402,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2025-10-06,2025-10-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2011-3402,Microsoft,Windows,Microsoft Windows Remote Code Execution Vulnerability,2025-10-06,2025-10-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24990,Microsoft,Windows,Microsoft Windows Untrusted Pointer Dereference Vulnerability,2025-10-14,2025-11-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-24990,Microsoft,Windows,Microsoft Windows Untrusted Pointer Dereference Vulnerability,2025-10-14,2025-11-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-59230,Microsoft,Windows,Microsoft Windows Improper Access Control Vulnerability,2025-10-14,2025-11-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-59230,Microsoft,Windows,Microsoft Windows Improper Access Control Vulnerability,2025-10-14,2025-11-04,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-33073,Microsoft,Windows,Microsoft Windows SMB Client Improper Access Control Vulnerability,2025-10-20,2025-11-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-33073,Microsoft,Windows,Microsoft Windows SMB Client Improper Access Control Vulnerability,2025-10-20,2025-11-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-59287,Microsoft,Windows,Microsoft Windows Server Update Service (WSUS) Deserialization of Untrusted Data Vulnerability,2025-10-24,2025-11-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-59287,Microsoft,Windows,Microsoft Windows Server Update Service (WSUS) Deserialization of Untrusted Data Vulnerability,2025-10-24,2025-11-14,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-62215,Microsoft,Windows,Microsoft Windows Race Condition Vulnerability,2025-11-12,2025-12-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-62215,Microsoft,Windows,Microsoft Windows Race Condition Vulnerability,2025-11-12,2025-12-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-62221,Microsoft,Windows,Microsoft Windows Use After Free Vulnerability,2025-12-09,2025-12-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-62221,Microsoft,Windows,Microsoft Windows Use After Free Vulnerability,2025-12-09,2025-12-30,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0556,Microsoft,Office,Microsoft Office PowerPoint Code Injection Vulnerability,2026-01-07,2026-01-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0556,Microsoft,Office,Microsoft Office PowerPoint Code Injection Vulnerability,2026-01-07,2026-01-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-20805,Microsoft,Windows,Microsoft Windows Information Disclosure Vulnerability,2026-01-13,2026-02-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-20805,Microsoft,Windows,Microsoft Windows Information Disclosure Vulnerability,2026-01-13,2026-02-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21509,Microsoft,Office,Microsoft Office Security Feature Bypass Vulnerability,2026-01-26,2026-02-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21509,Microsoft,Office,Microsoft Office Security Feature Bypass Vulnerability,2026-01-26,2026-02-16,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21513,Microsoft,Windows,Microsoft MSHTML Framework Protection Mechanism Failure Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21513,Microsoft,Windows,Microsoft MSHTML Framework Protection Mechanism Failure Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21525,Microsoft,Windows,Microsoft Windows NULL Pointer Dereference Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21525,Microsoft,Windows,Microsoft Windows NULL Pointer Dereference Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21510,Microsoft,Windows,Microsoft Windows Shell Protection Mechanism Failure Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21510,Microsoft,Windows,Microsoft Windows Shell Protection Mechanism Failure Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21533,Microsoft,Windows,Microsoft Windows Improper Privilege Management Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21533,Microsoft,Windows,Microsoft Windows Improper Privilege Management Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21519,Microsoft,Windows,Microsoft Windows Type Confusion Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21519,Microsoft,Windows,Microsoft Windows Type Confusion Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21514,Microsoft,Office,Microsoft Office Word Reliance on Untrusted Inputs in a Security Decision Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-21514,Microsoft,Office,Microsoft Office Word Reliance on Untrusted Inputs in a Security Decision Vulnerability,2026-02-10,2026-03-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43468,Microsoft,Configuration Manager,Microsoft Configuration Manager SQL Injection Vulnerability,2026-02-12,2026-03-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2024-43468,Microsoft,Configuration Manager,Microsoft Configuration Manager SQL Injection Vulnerability,2026-02-12,2026-03-05,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2008-0015,Microsoft,Windows, Microsoft Windows Video ActiveX Control Remote Code Execution Vulnerability,2026-02-17,2026-03-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2008-0015,Microsoft,Windows, Microsoft Windows Video ActiveX Control Remote Code Execution Vulnerability,2026-02-17,2026-03-10,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-20963,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability,2026-03-18,2026-03-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-20963,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability,2026-03-18,2026-03-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-1854,Microsoft,Visual Basic for Applications (VBA),Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2012-1854,Microsoft,Visual Basic for Applications (VBA),Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-60710,Microsoft,Windows,Microsoft Windows Link Following Vulnerability,2026-04-13,2026-04-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2025-60710,Microsoft,Windows,Microsoft Windows Link Following Vulnerability,2026-04-13,2026-04-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21529,Microsoft,Exchange Server,Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability,2026-04-13,2026-04-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-21529,Microsoft,Exchange Server,Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability,2026-04-13,2026-04-27,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36424,Microsoft,Windows,Microsoft Windows Out-of-Bounds Read Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2023-36424,Microsoft,Windows,Microsoft Windows Out-of-Bounds Read Vulnerability,2026-04-13,2026-04-27,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0238,Microsoft,Office,Microsoft Office Remote Code Execution,2026-04-14,2026-04-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-0238,Microsoft,Office,Microsoft Office Remote Code Execution,2026-04-14,2026-04-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-32201,Microsoft,SharePoint Server,Microsoft SharePoint Server Improper Input Validation Vulnerability,2026-04-14,2026-04-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-32201,Microsoft,SharePoint Server,Microsoft SharePoint Server Improper Input Validation Vulnerability,2026-04-14,2026-04-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-33825,Microsoft,Defender,Microsoft Defender Insufficient Granularity of Access Control Vulnerability,2026-04-22,2026-05-06,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-33825,Microsoft,Defender,Microsoft Defender Insufficient Granularity of Access Control Vulnerability,2026-04-22,2026-05-06,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-32202,Microsoft,Windows,Microsoft Windows Protection Mechanism Failure Vulnerability,2026-04-28,2026-05-12,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-32202,Microsoft,Windows,Microsoft Windows Protection Mechanism Failure Vulnerability,2026-04-28,2026-05-12,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-42897,Microsoft,Microsoft,Microsoft Exchange Server Cross-Site Scripting Vulnerability,2026-05-15,2026-05-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-42897,Microsoft,Microsoft,Microsoft Exchange Server Cross-Site Scripting Vulnerability,2026-05-15,2026-05-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2008-4250,Microsoft,Windows,Microsoft Windows Buffer Overflow Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2008-4250,Microsoft,Windows,Microsoft Windows Buffer Overflow Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-1537,Microsoft,DirectX,Microsoft DirectX NULL Byte Overwrite Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2009-1537,Microsoft,DirectX,Microsoft DirectX NULL Byte Overwrite Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-0249,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-0249,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-0806,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2010-0806,Microsoft,Internet Explorer,Microsoft Internet Explorer Use-After-Free Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-41091,Microsoft,Defender,Microsoft Defender Link Following Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-41091,Microsoft,Defender,Microsoft Defender Link Following Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-45498,Microsoft,Defender,Microsoft Defender Denial of Service Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-45498,Microsoft,Defender,Microsoft Defender Denial of Service Vulnerability,2026-05-20,2026-06-03,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-45659,Microsoft,SharePoint Server,Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability,2026-07-01,2026-07-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-45659,Microsoft,SharePoint Server,Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability,2026-07-01,2026-07-04,Known,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-56155,Microsoft,Active Directory Federation Services,Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ,2026-07-14,2026-07-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-56155,Microsoft,Active Directory Federation Services,Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ,2026-07-14,2026-07-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-56164,Microsoft,SharePoint Server,Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability,2026-07-14,2026-07-17,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-56164,Microsoft,SharePoint Server,Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability,2026-07-14,2026-07-17,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-58644,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability,2026-07-16,2026-07-19,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-58644,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability,2026-07-16,2026-07-19,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-50522,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ,2026-07-22,2026-07-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-50522,Microsoft,SharePoint,Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ,2026-07-22,2026-07-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-68820,Microsoft,Windows Ancillary Function Driver for WinSock ,Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability,2026-08-11,2026-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-68820,Microsoft,Windows Ancillary Function Driver for WinSock ,Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability,2026-08-11,2026-08-25,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-33824,Microsoft,Internet Key Exchange (IKE) Service Extensions,Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability,2026-08-18,2026-08-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-33824,Microsoft,Internet Key Exchange (IKE) Service Extensions,Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability,2026-08-18,2026-08-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-55040,Microsoft,SharePoint,Microsoft SharePoint Weak Authentication Vulnerability,2026-08-18,2026-08-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-55040,Microsoft,SharePoint,Microsoft SharePoint Weak Authentication Vulnerability,2026-08-18,2026-08-21,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1068,Microsoft,SQL Server,Microsoft SQL Server Remote Code Execution Vulnerability,2026-08-26,2026-08-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2019-1068,Microsoft,SQL Server,Microsoft SQL Server Remote Code Execution Vulnerability,2026-08-26,2026-08-29,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-81963,Microsoft,Windows,Microsoft Windows Link Following Vulnerability,2026-09-08,2026-09-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-81963,Microsoft,Windows,Microsoft Windows Link Following Vulnerability,2026-09-08,2026-09-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-85880,Microsoft,Windows,Microsoft Windows Heap-Based Buffer Overflow Vulnerability,2026-09-08,2026-09-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-85880,Microsoft,Windows,Microsoft Windows Heap-Based Buffer Overflow Vulnerability,2026-09-08,2026-09-22,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-65660,Microsoft,SharePoint,Microsoft SharePoint Code Injection Vulnerability,2026-09-25,2026-09-28,Unknown,yes
+0000789019,MSFT,Microsoft Corp,CVE-2026-65660,Microsoft,SharePoint,Microsoft SharePoint Code Injection Vulnerability,2026-09-25,2026-09-28,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2025-8876,N-able,N-Central,N-able N-Central Command Injection Vulnerability,2025-08-13,2025-08-20,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2025-8876,N-able,N-Central,N-able N-Central Command Injection Vulnerability,2025-08-13,2025-08-20,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2025-8875,N-able,N-Central,N-able N-Central Insecure Deserialization Vulnerability,2025-08-13,2025-08-20,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2025-8875,N-able,N-Central,N-able N-Central Insecure Deserialization Vulnerability,2025-08-13,2025-08-20,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2026-18577,N-able,N-central,N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability,2026-08-03,2026-08-06,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2026-18577,N-able,N-central,N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability,2026-08-03,2026-08-06,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2026-18556,N-able,N-central,N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability,2026-08-04,2026-08-07,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2026-18556,N-able,N-central,N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability,2026-08-04,2026-08-07,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2026-86218,N-able,N-central,N-able N-central Static Code Injection Vulnerability,2026-09-08,2026-09-11,Unknown,yes
+0001834488,NABL,"N-able, Inc.",CVE-2026-86218,N-able,N-central,N-able N-central Static Code Injection Vulnerability,2026-09-08,2026-09-11,Unknown,yes
+0001373715,NOW,"SERVICENOW, INC.",CVE-2024-5217,ServiceNow,"Utah, Vancouver, and Washington DC Now Platform",ServiceNow Incomplete List of Disallowed Inputs Vulnerability,2024-07-29,2024-08-19,Unknown,yes
+0001373715,NOW,"SERVICENOW, INC.",CVE-2024-5217,ServiceNow,"Utah, Vancouver, and Washington DC Now Platform",ServiceNow Incomplete List of Disallowed Inputs Vulnerability,2024-07-29,2024-08-19,Unknown,yes
+0001373715,NOW,"SERVICENOW, INC.",CVE-2024-4879,ServiceNow,"Utah, Vancouver, and Washington DC Now Platform",ServiceNow Improper Input Validation Vulnerability,2024-07-29,2024-08-19,Unknown,yes
+0001373715,NOW,"SERVICENOW, INC.",CVE-2024-4879,ServiceNow,"Utah, Vancouver, and Washington DC Now Platform",ServiceNow Improper Input Validation Vulnerability,2024-07-29,2024-08-19,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-2555,Oracle,Multiple Products,Oracle Multiple Products Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-2555,Oracle,Multiple Products,Oracle Multiple Products Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2012-3152,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2012-3152,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14871,Oracle,Solaris and Zettabyte File System (ZFS),Oracle Solaris and Zettabyte File System (ZFS) Unspecified Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14871,Oracle,Solaris and Zettabyte File System (ZFS),Oracle Solaris and Zettabyte File System (ZFS) Unspecified Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2015-4852,Oracle,WebLogic Server,Oracle WebLogic Server Deserialization of Untrusted Data Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2015-4852,Oracle,WebLogic Server,Oracle WebLogic Server Deserialization of Untrusted Data Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14750,Oracle,WebLogic Server,Oracle WebLogic Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14750,Oracle,WebLogic Server,Oracle WebLogic Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14882,Oracle,WebLogic Server,Oracle WebLogic Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14882,Oracle,WebLogic Server,Oracle WebLogic Server Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14883,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2020-14883,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001341439,ORCL,Oracle Corp,CVE-2019-2725,Oracle,WebLogic Server,"Oracle WebLogic Server, Injection",2022-01-10,2022-07-10,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2019-2725,Oracle,WebLogic Server,"Oracle WebLogic Server, Injection",2022-01-10,2022-07-10,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-14864,Oracle,Intelligence Enterprise Edition,Oracle Business Intelligence Enterprise Edition Path Transversal,2022-01-18,2022-07-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-14864,Oracle,Intelligence Enterprise Edition,Oracle Business Intelligence Enterprise Edition Path Transversal,2022-01-18,2022-07-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2017-10271,Oracle,WebLogic Server,Oracle Corporation WebLogic Server Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2017-10271,Oracle,WebLogic Server,Oracle Corporation WebLogic Server Remote Code Execution Vulnerability,2022-02-10,2022-08-10,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2015-4902,Oracle,Java SE,Oracle Java SE Integrity Check Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2015-4902,Oracle,Java SE,Oracle Java SE Integrity Check Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2015-2590,Oracle,Java SE,Oracle Java SE and Java SE Embedded Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2015-2590,Oracle,Java SE,Oracle Java SE and Java SE Embedded Remote Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-4681,Oracle,Java SE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-4681,Oracle,Java SE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-1723,Oracle,Java SE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-1723,Oracle,Java SE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-0507,Oracle,Java SE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-0507,Oracle,Java SE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2011-3544,Oracle,Java SE JDK and JRE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2011-3544,Oracle,Java SE JDK and JRE,Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2008-3431,Oracle,VirtualBox,Oracle VirtualBox Insufficient Input Validation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2008-3431,Oracle,VirtualBox,Oracle VirtualBox Insufficient Input Validation Vulnerability,2022-03-03,2022-03-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2019-2616,Oracle,BI Publisher (Formerly XML Publisher),Oracle BI Publisher Unauthorized Access Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2019-2616,Oracle,BI Publisher (Formerly XML Publisher),Oracle BI Publisher Unauthorized Access Vulnerability,2022-03-25,2022-04-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-2465,Oracle,Java SE,Oracle Java SE Unspecified Vulnerability,2022-03-28,2022-04-18,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-2465,Oracle,Java SE,Oracle Java SE Unspecified Vulnerability,2022-03-28,2022-04-18,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-5076,Oracle,Java SE,Oracle Java SE Sandbox Bypass Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-5076,Oracle,Java SE,Oracle Java SE Sandbox Bypass Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-0518,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-0518,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2022-03-28,2022-04-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2019-3010,Oracle,Solaris,Oracle Solaris Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2019-3010,Oracle,Solaris,Oracle Solaris Privilege Escalation Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-2423,Oracle,Java Runtime Environment (JRE),Oracle JRE Unspecified Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-2423,Oracle,Java Runtime Environment (JRE),Oracle JRE Unspecified Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-0431,Oracle,Java Runtime Environment (JRE),Oracle JRE Sandbox Bypass Vulnerability,2022-05-25,2022-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-0431,Oracle,Java Runtime Environment (JRE),Oracle JRE Sandbox Bypass Vulnerability,2022-05-25,2022-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-0422,Oracle,Java Runtime Environment (JRE),Oracle JRE Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2013-0422,Oracle,Java Runtime Environment (JRE),Oracle JRE Remote Code Execution Vulnerability,2022-05-25,2022-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-1710,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2022-05-25,2022-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2012-1710,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2022-05-25,2022-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2010-0840,Oracle,Java Runtime Environment (JRE),Oracle JRE Unspecified Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2010-0840,Oracle,Java Runtime Environment (JRE),Oracle JRE Unspecified Vulnerability,2022-05-25,2022-06-15,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2018-2628,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2022-09-08,2022-09-29,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2018-2628,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2022-09-08,2022-09-29,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2021-35587,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2022-11-28,2022-12-19,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2021-35587,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2022-11-28,2022-12-19,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2022-21587,Oracle,E-Business Suite,Oracle E-Business Suite Unspecified Vulnerability,2023-02-02,2023-02-23,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2022-21587,Oracle,E-Business Suite,Oracle E-Business Suite Unspecified Vulnerability,2023-02-02,2023-02-23,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2023-21839,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2023-05-01,2023-05-22,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2023-21839,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2023-05-01,2023-05-22,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2016-3427,Oracle,Java SE and JRockit,Oracle Java SE and JRockit Unspecified Vulnerability,2023-05-12,2023-06-02,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2016-3427,Oracle,Java SE and JRockit,Oracle Java SE and JRockit Unspecified Vulnerability,2023-05-12,2023-06-02,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-2551,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2023-11-16,2023-12-07,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-2551,Oracle,Fusion Middleware,Oracle Fusion Middleware Unspecified Vulnerability,2023-11-16,2023-12-07,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2017-3506,Oracle,WebLogic Server,Oracle WebLogic Server OS Command Injection Vulnerability,2024-06-03,2024-06-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2017-3506,Oracle,WebLogic Server,Oracle WebLogic Server OS Command Injection Vulnerability,2024-06-03,2024-06-24,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-14644,Oracle,WebLogic Server,Oracle WebLogic Server Remote Code Execution Vulnerability,2024-09-18,2024-10-09,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-14644,Oracle,WebLogic Server,Oracle WebLogic Server Remote Code Execution Vulnerability,2024-09-18,2024-10-09,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2022-21445,Oracle,ADF Faces,Oracle ADF Faces Deserialization of Untrusted Data Vulnerability,2024-09-18,2024-10-09,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2022-21445,Oracle,ADF Faces,Oracle ADF Faces Deserialization of Untrusted Data Vulnerability,2024-09-18,2024-10-09,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2024-21287,Oracle,Agile Product Lifecycle Management (PLM),Oracle Agile Product Lifecycle Management (PLM) Incorrect Authorization Vulnerability,2024-11-21,2024-12-12,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2024-21287,Oracle,Agile Product Lifecycle Management (PLM),Oracle Agile Product Lifecycle Management (PLM) Incorrect Authorization Vulnerability,2024-11-21,2024-12-12,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-2883,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2025-01-07,2025-01-28,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2020-2883,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2025-01-07,2025-01-28,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2024-20953,Oracle,Agile Product Lifecycle Management (PLM),Oracle Agile Product Lifecycle Management (PLM) Deserialization Vulnerability,2025-02-24,2025-03-17,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2024-20953,Oracle,Agile Product Lifecycle Management (PLM),Oracle Agile Product Lifecycle Management (PLM) Deserialization Vulnerability,2025-02-24,2025-03-17,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2025-61882,Oracle,E-Business Suite,Oracle E-Business Suite Unspecified Vulnerability,2025-10-06,2025-10-27,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2025-61882,Oracle,E-Business Suite,Oracle E-Business Suite Unspecified Vulnerability,2025-10-06,2025-10-27,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2025-61884,Oracle,E-Business Suite,Oracle E-Business Suite Server-Side Request Forgery (SSRF) Vulnerability,2025-10-20,2025-11-10,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2025-61884,Oracle,E-Business Suite,Oracle E-Business Suite Server-Side Request Forgery (SSRF) Vulnerability,2025-10-20,2025-11-10,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2025-61757,Oracle,Fusion Middleware,Oracle Fusion Middleware Missing Authentication for Critical Function Vulnerability,2025-11-21,2025-12-12,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2025-61757,Oracle,Fusion Middleware,Oracle Fusion Middleware Missing Authentication for Critical Function Vulnerability,2025-11-21,2025-12-12,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2024-21182,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2026-06-01,2026-06-04,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2024-21182,Oracle,WebLogic Server,Oracle WebLogic Server Unspecified Vulnerability,2026-06-01,2026-06-04,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2026-35273,Oracle, PeopleSoft Enterprise PeopleTools,Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability,2026-06-12,2026-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2026-35273,Oracle, PeopleSoft Enterprise PeopleTools,Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability,2026-06-12,2026-06-15,Known,yes
+0001341439,ORCL,Oracle Corp,CVE-2026-46817,Oracle,E-Business Suite,Oracle E-Business Suite Improper Privilege Management Vulnerability,2026-07-15,2026-07-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2026-46817,Oracle,E-Business Suite,Oracle E-Business Suite Improper Privilege Management Vulnerability,2026-07-15,2026-07-18,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2026-21962,Oracle,HTTP Server and Oracle Weblogic Server Proxy Plug-in,Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability,2026-08-24,2026-08-27,Unknown,yes
+0001341439,ORCL,Oracle Corp,CVE-2026-21962,Oracle,HTTP Server and Oracle Weblogic Server Proxy Plug-in,Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability,2026-08-24,2026-08-27,Unknown,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2019-18935,Progress,Telerik UI for ASP.NET AJAX,Progress Telerik UI for ASP.NET AJAX Deserialization of Untrusted Data Vulnerability,2021-11-03,2022-05-03,Known,no
+0000876167,PRGS,Progress Software Corp (DE),CVE-2017-9248,Progress,ASP.NET AJAX and Sitefinity,Progress Telerik UI for ASP.NET AJAX and Sitefinity Cryptographic Weakness Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0000876167,PRGS,Progress Software Corp (DE),CVE-2023-34362,Progress,MOVEit Transfer,Progress MOVEit Transfer SQL Injection Vulnerability,2023-06-02,2023-06-23,Known,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2023-40044,Progress,WS_FTP Server,Progress WS_FTP Server Deserialization of Untrusted Data Vulnerability,2023-10-05,2023-10-26,Known,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2024-4358,Progress,Telerik Report Server,Progress Telerik Report Server Authentication Bypass by Spoofing Vulnerability,2024-06-13,2024-07-04,Unknown,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2024-6670,Progress,WhatsUp Gold,Progress WhatsUp Gold SQL Injection Vulnerability,2024-09-16,2024-10-07,Known,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2024-1212,Progress,Kemp LoadMaster,Progress Kemp LoadMaster OS Command Injection Vulnerability,2024-11-18,2024-12-09,Unknown,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2024-4885,Progress,WhatsUp Gold,Progress WhatsUp Gold Path Traversal Vulnerability,2025-03-03,2025-03-24,Unknown,yes
+0000876167,PRGS,Progress Software Corp (DE),CVE-2026-8037,Progress,LoadMaster,Progress LoadMaster Command Injection Vulnerability,2026-08-07,2026-08-10,Unknown,yes
+0000857005,PTC,"PTC, INC",CVE-2026-12569,PTC,Windchill and FlexPLM,PTC Windchill and FlexPLM Improper Input Validation Vulnerability,2026-06-25,2026-06-28,Known,yes
+0000857005,PTC,"PTC, INC",CVE-2026-12569,PTC,Windchill and FlexPLM,PTC Windchill and FlexPLM Improper Input Validation Vulnerability,2026-06-25,2026-06-28,Known,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2019-3398,Atlassian,Confluence Server and Data Center,Atlassian Confluence Server and Data Center Path Traversal Vulnerability,2021-11-03,2022-05-03,Unknown,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2021-26084,Atlassian,Confluence Server and Data Center,Atlassian Confluence Server and Data Center Object-Graph Navigation Language (OGNL) Injection Vulnerability,2021-11-03,2021-11-17,Known,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2019-11580,Atlassian,Crowd and Crowd Data Center,Atlassian Crowd and Crowd Data Center Remote Code Execution Vulnerability,2021-11-03,2022-05-03,Known,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2019-3396,Atlassian,Confluence Server and Data Server,Atlassian Confluence Server and Data Center Server-Side Template Injection Vulnerability,2021-11-03,2022-05-03,Known,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2019-11581,Atlassian,Jira Server and Data Center,Atlassian Jira Server and Data Center Server-Side Template Injection Vulnerability,2022-03-07,2022-09-07,Unknown,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2021-26085,Atlassian,Confluence Server,Atlassian Confluence Server Pre-Authorization Arbitrary File Read Vulnerability,2022-03-28,2022-04-18,Known,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2022-26134,Atlassian,Confluence Server/Data Center,Atlassian Confluence Server and Data Center Remote Code Execution Vulnerability,2022-06-02,2022-06-06,Known,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2022-26138,Atlassian,Confluence,Atlassian Questions For Confluence App Hard-coded Credentials Vulnerability,2022-07-29,2022-08-19,Unknown,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2022-36804,Atlassian,Bitbucket Server and Data Center,Atlassian Bitbucket Server and Data Center Command Injection Vulnerability,2022-09-30,2022-10-21,Unknown,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2023-22515,Atlassian,Confluence Data Center and Server,Atlassian Confluence Data Center and Server Broken Access Control Vulnerability,2023-10-05,2023-10-13,Known,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2023-22518,Atlassian,Confluence Data Center and Server,Atlassian Confluence Data Center and Server Improper Authorization Vulnerability,2023-11-07,2023-11-28,Known,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2023-22527,Atlassian,Confluence Data Center and Server,Atlassian Confluence Data Center and Server Template Injection Vulnerability,2024-01-24,2024-02-14,Known,yes
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,CVE-2021-26086,Atlassian,Jira Server and Data Center,Atlassian Jira Server and Data Center Path Traversal Vulnerability,2024-11-12,2024-12-03,Unknown,yes
+0001447669,TWLO,Twilio Inc.,CVE-2024-39891,Twilio,Authy,Twilio Authy Information Disclosure Vulnerability,2024-07-23,2024-08-13,Unknown,yes
+0001447669,TWLO,Twilio Inc.,CVE-2024-39891,Twilio,Authy,Twilio Authy Information Disclosure Vulnerability,2024-07-23,2024-08-13,Unknown,yes

@@ -1,0 +1,285 @@
+{
+  "review_date": "2026-10-03",
+  "cloud_clause_records_reviewed": [
+    "a49acf07cec7db9d620fdcfe",
+    "bd8a3bdc0a1cdc76a71daffe",
+    "9f3edf84bdde3660a62b3c48",
+    "5b1d6d7f4ef06c1d1bd90ae0",
+    "c37282fbd81cf00f92d677bd",
+    "c909d7ac4042b9a1da6feb81",
+    "533438717f1dc27c9cdef917",
+    "88d740306d05c473962bea73",
+    "950bf2a28c0f40e938cd9c9c",
+    "a19897195038208514a6f77c",
+    "a8b4dbb6de05db3438064125",
+    "ff5c0b230ac93c6962463f1a",
+    "ed538f7276a0e9f79185c18f"
+  ],
+  "external_events": [
+    {
+      "ticker": "INTU",
+      "publication_date": "2026-02-24",
+      "event_type": "employee_AI_deployment_in_progress",
+      "provider": "Anthropic",
+      "product": "Claude Code",
+      "scope": "engineering organization",
+      "claim": "Intuit reported an engineering rollout of Claude Code alongside its broader Anthropic partnership.",
+      "source_url": "https://investors.intuit.com/news-events/press-releases/detail/1305/intuit-and-anthropic-partner-to-bring-trusted-financial-intelligence-and-custom-ai-agents-to-consumers-and-businesses",
+      "evidence_excerpt": "Intuit is also deploying Claude Code across its engineering organization",
+      "licensed_seats": null,
+      "active_usage_fraction": null,
+      "spend_usd": null
+    },
+    {
+      "ticker": "HUBS",
+      "publication_date": null,
+      "event_type": "reported_employee_AI_usage",
+      "provider": "Anthropic",
+      "product": "Claude; Claude Code",
+      "scope": "engineering, marketing and customer success",
+      "claim": "The supplier case study describes HubSpot staff using Claude for coding, marketing work and customer-success preparation.",
+      "source_url": "https://claude.com/customers/hubspot",
+      "evidence_excerpt": "Claude now supports multiple teams across HubSpot's organization.",
+      "licensed_seats": null,
+      "active_usage_fraction": null,
+      "spend_usd": null
+    },
+    {
+      "ticker": "JAMF",
+      "publication_date": null,
+      "event_type": "reported_companywide_employee_AI_rollout",
+      "provider": "Anthropic; AWS Marketplace",
+      "product": "Claude Enterprise",
+      "scope": "licensed employees; companywide launch",
+      "claim": "The supplier case study reports 89 percent active usage among licensed staff after eight weeks and expansion to 2000 licenses.",
+      "source_url": "https://claude.com/customers/jamf",
+      "evidence_excerpt": "89% active usage among licensed employees; Expansion from 1,000 to 2,000 licenses in two months",
+      "licensed_seats": 2000,
+      "active_usage_fraction": 0.89,
+      "spend_usd": null
+    },
+    {
+      "ticker": "GTLB",
+      "publication_date": "2026-09-02",
+      "event_type": "reported_internal_AI_enablement_program",
+      "provider": null,
+      "product": null,
+      "scope": "technical teams; internal governance and training",
+      "claim": "GitLab describes an internal AI governance and staff training program, with tools already available to its teams.",
+      "source_url": "https://about.gitlab.com/blog/how-gitlab-fosters-ai-fluent-teams/",
+      "evidence_excerpt": "our team had AI tools at their fingertips",
+      "licensed_seats": null,
+      "active_usage_fraction": null,
+      "spend_usd": null
+    },
+    {
+      "ticker": "CRM",
+      "publication_date": "2025-06-17",
+      "event_type": "reported_internal_AI_usage",
+      "provider": "Salesforce",
+      "product": "Agentforce",
+      "scope": "internal finance, engineering and sales workflows",
+      "claim": "Salesforce reports using Agentforce in its own internal workflows and teams.",
+      "source_url": "https://www.salesforce.com/news/stories/human-ai-collaboration-blueprint/",
+      "evidence_excerpt": "We embed Agentforce, Salesforce’s digital labor platform, into our internal workflows, projects, and teams",
+      "licensed_seats": null,
+      "active_usage_fraction": null,
+      "spend_usd": null
+    },
+    {
+      "ticker": "TWLO",
+      "publication_date": "2025-12-01",
+      "event_type": "reported_internal_AI_enablement_and_governance",
+      "provider": null,
+      "product": null,
+      "scope": "staff training and bounded internal experimentation",
+      "claim": "Twilio describes introducing internal AI tools with training and restrictions on customer data.",
+      "source_url": "https://www.twilio.com/en-us/blog/insights/scaling-ai-securely",
+      "evidence_excerpt": "At Twilio, when we introduce new AI tools internally, we don’t just announce them.",
+      "licensed_seats": null,
+      "active_usage_fraction": null,
+      "spend_usd": null
+    }
+  ],
+  "SEC_employee_evidence_reviewed": [
+    {
+      "ticker": "ZDGE",
+      "evidence_id": "f0f95c2a3048f096fa3ac0c5",
+      "event_type": "reported_internal_AI_usage",
+      "claim": "Zedge reports incorporating AI into internal operations as well as products; no enterprise-model contract amount is disclosed."
+    },
+    {
+      "ticker": "ALRM",
+      "evidence_id": "28dd1f4fa695f227eb306935",
+      "event_type": "reported_internal_AI_usage",
+      "claim": "Alarm.com reports using AI to increase efficiency in internal operations; the model provider and spend are unspecified."
+    },
+    {
+      "ticker": "SPSC",
+      "evidence_id": "20fffc6c8f16a885a2629663",
+      "event_type": "deployed_AI_enabled_employee_learning_platform",
+      "claim": "SPS Commerce reports deploying an AI-enabled employee learning platform. Generative-model procurement is not established."
+    },
+    {
+      "ticker": "QUBT",
+      "evidence_id": "e8195c67190c4e29a4316d22",
+      "event_type": "reported_employee_generative_AI_use_not_confirmed_procurement",
+      "claim": "Quantum Computing reports employees using generative AI for work; an approved enterprise contract is not established."
+    }
+  ],
+  "registry_matches": [
+    {
+      "parent_ticker": "APPN",
+      "subsidiary_name": "Appian Europe Limited",
+      "company_number": "05866355",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/05866355",
+      "status": "name_match_accounts_and_parent_link_require_review"
+    },
+    {
+      "parent_ticker": "INTA",
+      "subsidiary_name": "Intapp Limited",
+      "company_number": "06680562",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/06680562",
+      "status": "name_match_accounts_and_parent_link_require_review"
+    }
+  ],
+  "property_events": [
+    {
+      "ticker": "ADBE",
+      "publication_date": "2023-03-08",
+      "event_type": "office_tower_opening",
+      "location": "San Jose, California",
+      "claim": "Adobe announced the opening of Founders Tower and reported added campus capacity.",
+      "source_url": "https://blog.adobe.com/en/publish/2023/03/08/expanding-adobe-presence-commitments-san-jose",
+      "cost_usd": null,
+      "reported_added_area_sqft": 1250000,
+      "reported_added_employee_capacity": 4000,
+      "municipal_project_id": "H18-037",
+      "municipal_parcel_ids": "259-39-116;259-39-118;259-39-123",
+      "municipal_source_url": "https://www.sanjoseca.gov/your-government/departments-offices/planning-building-code-enforcement/planning-division/environmental-planning/environmental-review/active-eirs/adobe-north-tower",
+      "limitation": "Municipal permit dimensions differ from the company opening announcement; no construction spend or land purchase price inferred."
+    }
+  ],
+  "additional_cloud_commitment_reviews": [
+    {
+      "ticker": "PLTR",
+      "evidence_id": "a5a5dbb9db676eb1cb68e75f",
+      "amount_usd": 1490000000,
+      "source_pattern": "minimum annual commitment to purchase cloud hosting services of at least \\$ 1\\.49 billion over six contract years[^.]*\\.",
+      "source_sha256": "68fcd69924ca23531f50864a8159a76d35dae2c3496136c6cda860418222410f",
+      "scope_note": "Reported six-contract-year amount; annual minimum schedule and carryover conditions exist. Do not multiply this amount by six.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "CRWD",
+      "evidence_id": "15c5dd48db836c6a384a4b18",
+      "amount_usd": 600000000,
+      "source_pattern": "Under the new pricing addendum, the minimum commitment is \\$ 600\\.0 million of cloud services from AWS through September 2026\\.",
+      "source_sha256": "8dedcf1515c79272c04bd32c8283ce185715dc8d69bd406e70fe61c0779335e8",
+      "scope_note": "AWS contract minimum, not remaining obligations or annual expense.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "PATH",
+      "evidence_id": "c0506c2f1b20f171de9e4dcd",
+      "amount_usd": 138100000,
+      "source_pattern": "we made commitments to purchase \\$ 138\\.1 million of cloud infrastructure services from a third-party vendor",
+      "source_sha256": "3ce4f6086d2d7a582609576e176c162c56baddd4e970d7ddd409e5fafca7653c",
+      "scope_note": "Separate $35.8m alliance service-credit commitments are excluded; mixed total purchase-obligation table is excluded.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "SOUN",
+      "evidence_id": "2057f8c14b989eaceffa082d",
+      "amount_usd": 98000000,
+      "source_pattern": "Company committed to pay a minimum of \\$ 98\\.0 million in cloud costs over a seven-year period subject to variable increases based on usage\\.",
+      "source_sha256": "b9b1ac7097f276b005c5858a7037e59f8974f28a42feb7dbcafe29f7f08e94a7",
+      "scope_note": "Seven-year platform-hosting minimum; variable usage increases and remaining obligations are distinct.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "GWRE",
+      "evidence_id": "c2b6967f320efb6c340731d3",
+      "amount_usd": 600000000,
+      "source_pattern": "entered into a new agreement with a cloud infrastructure services provider for a total obligation of \\$ 600 million over a five-year period\\.",
+      "source_sha256": "a7ece74e888b3621e0d6acc546a849169bcc110bc41c42f6649e55ccdc6a09a9",
+      "scope_note": "Replacement five-year agreement; not $600m annual expenditure.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "ESTC",
+      "evidence_id": "f76c4177bdbafc37cd59b0c6",
+      "amount_usd": 270000000,
+      "source_pattern": "amendment to a non-cancelable cloud hosting capacity agreement, effective December 31, 2022, for a total purchase commitment of \\$ 270\\.0 million payable over the four years following the date of the agreement\\.",
+      "source_sha256": "0d48c690e50a8be7e0dbc727aa39865c215fa2bbed806e6453ef0f8b47a66a70",
+      "scope_note": "Four-year amended cloud-hosting commitment.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "S",
+      "evidence_id": "07aa7f1a61b8ac06a2e066d4",
+      "amount_usd": 860000000,
+      "source_pattern": "agreement with a cloud infrastructure vendor, under which we committed to spend an aggregate of at least \\$860\\.0 million between March 2023 and February 2029\\.",
+      "source_sha256": "0a1fa5edb1b444237197abd1138648c929722f1f368523c2e7bcbf8bcfbb3196",
+      "scope_note": "Contract interval stated as months; source references a March 2023 annual report, so this observed June filing is not claimed as the first disclosure.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "NOW",
+      "evidence_id": "9f7ca983407a90b000879bb6",
+      "amount_usd": 805000000,
+      "source_pattern": "agreements with cloud service providers, under which we have committed to spend an aggregate of \\$ 805 million through 2029 on cloud services\\.",
+      "source_sha256": "a1c86a7e066c451d43bd96e308c373a8afdbc4768502ba44a0f18f58c0bad448",
+      "scope_note": "Aggregate cloud agreements; adjacent general operating commitments and debt principal are excluded.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "AI",
+      "evidence_id": "d8da432e953893f6385979c5",
+      "amount_usd": 355000000,
+      "source_pattern": "remaining purchase commitments of \\$ 355\\.0 million related to cloud hosting and associated services",
+      "source_sha256": "44353f558d2e8914a29303c66b260fcffd66ed13cdf813d493f39151a776b11f",
+      "scope_note": "Cloud and associated services remaining commitment. Separate $43.5m professional services excluded. Adjacent incurred costs cover both arrangements and are not treated as cloud-only expense.",
+      "metric": "cloud_remaining_obligations",
+      "measure_type": "remaining_cloud_and_associated_services_commitment_not_cash_paid"
+    },
+    {
+      "ticker": "GTLB",
+      "evidence_id": "f0a1a34a78626788bdcfad2d",
+      "amount_usd": 130000000,
+      "source_pattern": "new \\$ 130 million, five-year cloud infrastructure agreement entered into during the three months ended April 30, 2025",
+      "source_sha256": "7b11dc20096ef476ca72cbe9d36dac8e58362095cfb0ae745723890b47bbea81",
+      "scope_note": "Cloud agreement amount only; mixed $238.5m total purchase obligations excluded. Annual minimum range is not actual annual spending.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "FIG",
+      "evidence_id": "6cecef13fa45fd45440c2892",
+      "amount_usd": 545000000,
+      "source_pattern": "Company committed to purchase a minimum of \\$ 545\\.0 million in cloud hosting services over the next five years",
+      "source_sha256": "f73e178fd4f738af805c3434f747402779bace5de41309d425b29d306de2c76b",
+      "scope_note": "May 2025 replacement contract total; $535.8m June remaining minimum obligations are distinct.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    },
+    {
+      "ticker": "MDB",
+      "evidence_id": "5d2c2e9a39bc8ac5eea444c9",
+      "amount_usd": 300000000,
+      "source_pattern": "renewal agreement with a cloud infrastructure provider that includes a non-cancelable commitment of \\$ 300 million to be paid over a period from October 2025 through October 2028\\.",
+      "source_sha256": "a1ec68055243e015f01959aa2ef393e30da2ab330616c2bf972261a5a5cfb78b",
+      "scope_note": "Three-year cloud renewal minimum; month-only dates preserved in source text.",
+      "metric": "cloud_contract_minimum_total",
+      "measure_type": "contract_total_not_period_expense"
+    }
+  ]
+}

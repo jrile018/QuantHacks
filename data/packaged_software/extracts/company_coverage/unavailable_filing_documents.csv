@@ -1,0 +1,9 @@
+ticker,cik,form,filing_date,acceptance_datetime,accession,primary_document,document_role,local_path,status
+CMRC,0001626450,10-K,2022-03-01,2022-03-01T22:02:24.000Z,0001564590-22-008093,bigc-ex1017_6.htm,linked_exhibit,data/packaged_software/extracts/sec/CMRC/10-K/2022-03-01_0001564590-22-008093/bigc-ex1017_6.htm,failed
+QUBT,0001758009,8-K,2023-06-26,2023-06-26T21:11:42.000Z,0001213900-23-051740,ea180802ex10-2_quantum.htm,linked_exhibit,data/packaged_software/extracts/sec/QUBT/8-K/2023-06-26_0001213900-23-051740/ea180802ex10-2_quantum.htm,failed
+SVCO,0001943289,10-K,2025-03-05,2025-03-05T22:14:20.000Z,0001628280-25-010567,q3202410-qexhibit101.htm,linked_exhibit,data/packaged_software/extracts/sec/SVCO/10-K/2025-03-05_0001628280-25-010567/q3202410-qexhibit101.htm,failed
+SVCO,0001943289,10-K,2025-03-05,2025-03-05T22:14:20.000Z,0001628280-25-010567,q3202410-qexhibit102.htm,linked_exhibit,data/packaged_software/extracts/sec/SVCO/10-K/2025-03-05_0001628280-25-010567/q3202410-qexhibit102.htm,failed
+SVCO,0001943289,10-K,2025-03-05,2025-03-05T22:14:20.000Z,0001628280-25-010567,q3202410-qexhibit103.htm,linked_exhibit,data/packaged_software/extracts/sec/SVCO/10-K/2025-03-05_0001628280-25-010567/q3202410-qexhibit103.htm,failed
+SVCO,0001943289,10-K,2025-03-05,2025-03-05T22:14:20.000Z,0001628280-25-010567,q3202410-qexhibit104.htm,linked_exhibit,data/packaged_software/extracts/sec/SVCO/10-K/2025-03-05_0001628280-25-010567/q3202410-qexhibit104.htm,failed
+SVCO,0001943289,10-K,2025-03-05,2025-03-05T22:14:20.000Z,0001628280-25-010567,q3202410-qexhibit105.htm,linked_exhibit,data/packaged_software/extracts/sec/SVCO/10-K/2025-03-05_0001628280-25-010567/q3202410-qexhibit105.htm,failed
+SVCO,0001943289,10-K,2025-03-05,2025-03-05T22:14:20.000Z,0001628280-25-010567,q3202410-qexhibit106.htm,linked_exhibit,data/packaged_software/extracts/sec/SVCO/10-K/2025-03-05_0001628280-25-010567/q3202410-qexhibit106.htm,failed

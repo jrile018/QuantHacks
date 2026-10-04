@@ -1,0 +1,22 @@
+{
+  "version": "reviewed-diagnostic-v2-financial-density",
+  "rows": 3192,
+  "companies": 168,
+  "quarters": 19,
+  "raw_features": 94,
+  "populated_feature_cells": 120248,
+  "total_feature_cells": 300048,
+  "labelled_rows": 2300,
+  "label_status_counts": {
+    "diagnostic_price_return_not_executable_or_total_return_certified": 2300,
+    "missing_price_in_matched_session_window": 380,
+    "outcome_not_mature_or_factor_calendar_unavailable": 336,
+    "dated_price_identity_requires_review": 176
+  },
+  "legacy_quarter_only_clock_cells": 28132,
+  "cloud_source_files_hash_checked": 56,
+  "original_rows": 2334,
+  "original_features": 37,
+  "financial_max_age_days": 400,
+  "command": ".\\venv\\Scripts\\python.exe data/packaged_software/rebuild_reviewed_matrix.py"
+}

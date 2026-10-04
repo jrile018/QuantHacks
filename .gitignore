@@ -7,5 +7,54 @@ data/raw/
 data/processed/
 
 .venv/
+venv/
 .ipynb_checkpoints/
 __pycache__/
+*.log
+logs/
+
+# Raw downloads, caches and logs stay local. Only the CSV tables are shared.
+# Tables are kept under data/packaged_software/extracts and data/packaged_software/output.
+data/packaged_software/extracts/**
+!data/packaged_software/extracts/**/
+!data/packaged_software/extracts/**/*.csv
+data/packaged_software/extracts/sec/**
+!data/packaged_software/extracts/sec/
+!data/packaged_software/extracts/sec/filings_index.csv
+data/packaged_software/extracts/_cache/
+data/packaged_software/extracts/**/*.json
+
+# Cache, raw-download and probe folders hold API responses and may contain CSVs.
+# Directory patterns exclude their contents even though *.csv is re-included above.
+data/packaged_software/extracts/**/*cache*/
+data/packaged_software/extracts/**/raw/
+data/packaged_software/extracts/**/completed/
+data/packaged_software/extracts/**/cves/
+data/packaged_software/extracts/**/public_sources/
+data/packaged_software/extracts/**/public_source_probe/
+data/packaged_software/extracts/**/companies_house/
+data/packaged_software/extracts/**/sec/
+
+# Backtest bulk data: local caches and raw bars stay on each machine.
+bento/
+backtesting_bundle.zip
+*.zip
+
+# Survivorship extracts are large raw pulls; the CSVs are re-included above by *.csv.
+data/packaged_software/extracts/survivorship/
+
+# Duplicate copy of a matrix that already lives in data/packaged_software/final.
+backtesting/feature_matrix_qualified_cov060.csv
+
+# Untracked backtest work for this branch: kept local, not shared through git.
+backtesting/
+data/packaged_software/backtest_survivorship_momentum.py
+data/packaged_software/backtest_thesis_composite.py
+data/packaged_software/build_qualified_matrix.py
+data/packaged_software/classify_departure_events.py
+data/packaged_software/event_study_departures.py
+data/packaged_software/extract_databento_daily.py
+data/packaged_software/extract_delisted_prices.py
+data/packaged_software/extract_delisted_software_tickers.py
+data/packaged_software/extract_delisting_reasons.py
+data/packaged_software/final/

@@ -1,0 +1,13 @@
+{
+  "frozen_on": "2026-10-04",
+  "strategies_file": "data/packaged_software/backtest_feature_strategies.py",
+  "specs_sha256": "f591d580e1ae48ee0a26ae00ed6b0678e5aa0f299dcf93252e53e1a2f5518233",
+  "specs": "SPECS = {\n    'operating_profitability': [('q_operating_margin', 1)],\n    'cash_flow_quality': [('q_fcf_physical_capex_margin', 1)],\n    'revenue_growth': [('rev_growth_yoy_q', 1)],\n    'quality_growth': [('q_operating_margin', 1), ('rev_growth_yoy_q', 1), ('q_sbc_pct_rev', -1)],\n    'capital_efficiency': [('q_fcf_physical_capex_margin', 1), ('capex_cash_ttm_to_revenue', -1)],\n    'lease_discipline': [('operating_lease_liability_growth_yoy', -1)],\n    'quality_capex_discipline': [('q_operating_margin', 1), ('operating_lease_liability_growth_yoy', -1), ('capex_cash_ttm_to_revenue', -1)],\n    'momentum_6m': [('momentum_6m', 1)],\n}",
+  "matrix": "data/packaged_software/final/feature_matrix_qualified.csv",
+  "seen_windows": [
+    "2024 selection (formation 2023Q4-2024Q3)",
+    "2025-01 to 2026-07 chronological test"
+  ],
+  "holdout": "entries after 2026-08-31 only; no such formation period exists yet, so no holdout result can be reported today",
+  "rule": "Do not add or edit specs against holdout results. Any new strategy starts a new freeze file."
+}

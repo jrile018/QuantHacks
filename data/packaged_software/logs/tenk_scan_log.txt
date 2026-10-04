@@ -1,0 +1,15 @@
+Wrote 832 filings for 164 companies, years ['2022', '2023', '2024', '2025', '2026']
+  item_1c_cyber_section: 464 filings, 163 companies
+  substantial_doubt_going_concern: 92 filings, 26 companies
+  going_concern_any_mention: 166 filings, 41 companies
+  material_weakness_any_mention: 708 filings, 154 companies
+  material_weakness_identified: 189 filings, 66 companies
+  restatement_any_mention: 824 filings, 164 companies
+  restated_own_financials: 21 filings, 10 companies
+  customer_pct_of_revenue: 361 filings, 95 companies
+  artificial_intelligence: 651 filings, 159 companies
+  cloud_provider_mention: 426 filings, 109 companies
+  patent_infringement: 241 filings, 59 companies
+  securities_class_action_any_mention: 542 filings, 128 companies
+  class_action_filed_against_company: 54 filings, 22 companies
+Snippets for checking: 4739 in C:\Users\kkati\Kushagra\Projects\hackathons\QuantHacks\data\packaged_software\output\tenk_flag_snippets.csv

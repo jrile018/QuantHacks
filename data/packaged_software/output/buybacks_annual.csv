@@ -1,0 +1,831 @@
+cik,ticker,name,metric,source_tag,fiscal_year_end,value,unit,accession,filed
+0000935036,ACIW,"ACI Worldwide, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,206537000,USD,0000935036-25-000006,2025-02-27
+0000935036,ACIW,"ACI Worldwide, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,27587000,USD,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,127670000,USD,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,202638000,USD,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2022-12-31,8624238,shares,0000935036-25-000006,2025-02-27
+0000935036,ACIW,"ACI Worldwide, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,939567,shares,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,3946537,shares,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,4179747,shares,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-12-31,206537000,USD,0000935036-25-000006,2025-02-27
+0000935036,ACIW,"ACI Worldwide, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,27587000,USD,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,128454000,USD,0000935036-26-000011,2026-02-26
+0000935036,ACIW,"ACI Worldwide, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,203849000,USD,0000935036-26-000011,2026-02-26
+0000796343,ADBE,Adobe Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-02,6550000000,USD,0000796343-25-000004,2025-01-13
+0000796343,ADBE,Adobe Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-01,4400000000,USD,0000796343-26-000003,2026-01-15
+0000796343,ADBE,Adobe Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-11-29,9500000000,USD,0000796343-26-000003,2026-01-15
+0000796343,ADBE,Adobe Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-11-28,11281000000,USD,0000796343-26-000003,2026-01-15
+0000796343,ADBE,Adobe Inc.,shares_repurchased,TreasuryStockSharesAcquired,2022-12-02,15700000,shares,0000796343-25-000004,2025-01-13
+0000796343,ADBE,Adobe Inc.,shares_repurchased,TreasuryStockSharesAcquired,2023-12-01,11500000,shares,0000796343-25-000004,2025-01-13
+0000796343,ADBE,Adobe Inc.,shares_repurchased,TreasuryStockSharesAcquired,2024-11-29,17500000,shares,0000796343-25-000004,2025-01-13
+0000796343,ADBE,Adobe Inc.,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-12-02,6550000000,USD,0000796343-25-000004,2025-01-13
+0000796343,ADBE,Adobe Inc.,value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-01,4414000000,USD,0000796343-26-000003,2026-01-15
+0000796343,ADBE,Adobe Inc.,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-11-29,9574000000,USD,0000796343-26-000003,2026-01-15
+0000796343,ADBE,Adobe Inc.,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-11-28,11386000000,USD,0000796343-26-000003,2026-01-15
+0000769397,ADSK,Autodesk Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,1079000000,USD,0000769397-24-000090,2024-06-10
+0000769397,ADSK,Autodesk Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,1101000000,USD,0000769397-25-000019,2025-03-06
+0000769397,ADSK,Autodesk Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,795000000,USD,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,852000000,USD,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,1402000000,USD,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-01-31,4000000,shares,0000769397-24-000090,2024-06-10
+0000769397,ADSK,Autodesk Inc,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-01-31,5000000,shares,0000769397-25-000019,2025-03-06
+0000769397,ADSK,Autodesk Inc,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-01-31,4000000,shares,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-01-31,3000000,shares,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-01-31,5000000,shares,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-01-31,1090000000,USD,0000769397-24-000090,2024-06-10
+0000769397,ADSK,Autodesk Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-01-31,1082000000,USD,0000769397-25-000019,2025-03-06
+0000769397,ADSK,Autodesk Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-01-31,795000000,USD,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-01-31,858000000,USD,0000769397-26-000015,2026-03-03
+0000769397,ADSK,Autodesk Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,1403000000,USD,0000769397-26-000015,2026-03-03
+0001362190,AEYE,"AudioEye, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,756000,USD,0001410578-24-000150,2024-03-07
+0001362190,AEYE,"AudioEye, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,1122000,USD,0001558370-25-002819,2025-03-12
+0001362190,AEYE,"AudioEye, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,2016000,USD,0001104659-26-027159,2026-03-12
+0001362190,AEYE,"AudioEye, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,4575000,USD,0001104659-26-027159,2026-03-12
+0001362190,AEYE,"AudioEye, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,756000,USD,0001410578-24-000150,2024-03-07
+0001362190,AEYE,"AudioEye, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,1122000,USD,0001558370-25-002819,2025-03-12
+0001362190,AEYE,"AudioEye, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,2016000,USD,0001104659-26-027159,2026-03-12
+0001362190,AEYE,"AudioEye, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,4575000,USD,0001104659-26-027159,2026-03-12
+0001577526,AI,"C3.ai, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-04-30,15000000,USD,0001628280-24-028786,2024-06-18
+0001577526,AI,"C3.ai, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-04-30,0,USD,0001628280-24-028786,2024-06-18
+0001577526,AI,"C3.ai, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-04-30,0,USD,0001628280-24-028786,2024-06-18
+0001577526,AI,"C3.ai, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-04-30,15000000,USD,0001628280-24-028786,2024-06-18
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-10-16,355,shares,0001437749-25-010818,2025-04-03
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,0,USD,0001437749-25-010818,2025-04-03
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001529274-24-000029,2024-02-29
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001529274-24-000029,2024-02-29
+0001459200,ALRM,"Alarm.com Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,78844000,USD,0001459200-25-000004,2025-02-20
+0001459200,ALRM,"Alarm.com Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,27298000,USD,0001459200-26-000005,2026-02-19
+0001459200,ALRM,"Alarm.com Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,75000000,USD,0001459200-26-000005,2026-02-19
+0001459200,ALRM,"Alarm.com Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,41561000,USD,0001459200-26-000005,2026-02-19
+0001459200,ALRM,"Alarm.com Holdings, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,78844000,USD,0001459200-25-000004,2025-02-20
+0001459200,ALRM,"Alarm.com Holdings, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,27298000,USD,0001459200-25-000004,2025-02-20
+0001459200,ALRM,"Alarm.com Holdings, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,75394000,USD,0001459200-25-000004,2025-02-20
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,648000,USD,0001193125-26-057847,2026-02-19
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001193125-26-057847,2026-02-19
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,30739000,USD,0001193125-26-057847,2026-02-19
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,23900000,USD,0001193125-26-057847,2026-02-19
+0001433195,APPF,"AppFolio, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001433195-23-000021,2023-02-09
+0001433195,APPF,"AppFolio, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,145723000,USD,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",shares_repurchased,TreasuryStockSharesAcquired,2025-03-31,445311,shares,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",shares_repurchased,TreasuryStockSharesAcquired,2025-06-30,243987,shares,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",shares_repurchased,TreasuryStockSharesAcquired,2025-09-30,0,shares,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-03-31,95800000,USD,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-06-30,50000000,USD,0001433195-26-000011,2026-02-05
+0001433195,APPF,"AppFolio, Inc. Class A",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,146724000,USD,0001433195-26-000011,2026-02-05
+0001441683,APPN,Appian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001441683-25-000017,2025-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,50019000,USD,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,20000000,USD,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2024-03-31,1300000,shares,0001441683-25-000017,2025-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2025-06-30,300000,shares,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2025-09-30,300000,shares,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-03-31,50000000,USD,0001441683-25-000017,2025-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,50019000,USD,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-06-30,10000000,USD,0001441683-26-000013,2026-02-19
+0001441683,APPN,Appian Corporation Class A Common Stock,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-09-30,10000000,USD,0001441683-26-000013,2026-02-19
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,40000,USD,0001477720-24-000011,2024-03-14
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,9000,USD,0001477720-25-000045,2025-03-18
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001477720-26-000021,2026-03-13
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,78354000,USD,0001477720-26-000021,2026-03-13
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,132206000,USD,0001477720-26-000021,2026-03-13
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2025-01-31,6213000,shares,0001477720-26-000021,2026-03-13
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2026-01-31,9725000,shares,0001477720-26-000021,2026-03-13
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-01-31,78354000,USD,0001477720-26-000021,2026-03-13
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,132206000,USD,0001477720-26-000021,2026-03-13
+0002026353,ATHR,"Aether Holdings, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-09-30,218267,USD,0001493152-25-028195,2025-12-17
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,19927000,USD,0001437749-25-005526,2025-02-28
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,39036000,USD,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,33053000,USD,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,49750000,USD,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-12-31,6719032,shares,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-12-31,3262065,shares,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,3409119,shares,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,33053000,USD,0001437749-26-005907,2026-02-26
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,49749000,USD,0001437749-26-005907,2026-02-26
+0001015739,AWRE,Aware Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,1312000,USD,0000950170-24-032239,2024-03-15
+0001015739,AWRE,Aware Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,506000,USD,0000950170-25-038714,2025-03-13
+0001015739,AWRE,Aware Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,207000,USD,0001193125-26-096448,2026-03-06
+0001015739,AWRE,Aware Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,115000,USD,0001193125-26-096448,2026-03-06
+0001015739,AWRE,Aware Inc,value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,1312000,USD,0000950170-24-032239,2024-03-15
+0001015739,AWRE,Aware Inc,value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,506000,USD,0000950170-25-038714,2025-03-13
+0001015739,AWRE,Aware Inc,value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,207000,USD,0001193125-26-096448,2026-03-06
+0001015739,AWRE,Aware Inc,value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,115000,USD,0001193125-26-096448,2026-03-06
+0001070235,BB,BlackBerry Limited,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-02-29,0,USD,0001070235-26-000039,2026-04-09
+0001070235,BB,BlackBerry Limited,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-02-28,0,USD,0001070235-26-000039,2026-04-09
+0001070235,BB,BlackBerry Limited,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-02-28,60700000,USD,0001070235-26-000039,2026-04-09
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,100896000,USD,0001628280-25-014752,2025-03-25
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001628280-25-014752,2025-03-25
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001628280-25-014752,2025-03-25
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,57350000,USD,0001628280-25-014752,2025-03-25
+0001786352,BILL,"BILL Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-06-30,0,USD,0001786352-24-000035,2024-08-23
+0001786352,BILL,"BILL Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-06-30,87615000,USD,0001786352-25-000037,2025-08-28
+0001786352,BILL,"BILL Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,211902000,USD,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-06,200000000,USD,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,430002000,USD,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,560485000,USD,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-06-30,1077445,shares,0001786352-25-000037,2025-08-28
+0001786352,BILL,"BILL Holdings, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-06-30,2882634,shares,0001786352-25-000037,2025-08-28
+0001786352,BILL,"BILL Holdings, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-06-30,13688000,shares,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-06-30,87615000,USD,0001786352-25-000037,2025-08-28
+0001786352,BILL,"BILL Holdings, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-06-30,211902000,USD,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-06-30,437655000,USD,0001628280-26-058238,2026-08-20
+0001786352,BILL,"BILL Holdings, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-06-30,567267000,USD,0001628280-26-058238,2026-08-20
+0001666134,BL,"BlackLine, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001628280-26-011915,2026-02-26
+0001666134,BL,"BlackLine, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,235543000,USD,0001628280-26-011915,2026-02-26
+0001666134,BL,"BlackLine, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,4500000,shares,0001628280-26-011915,2026-02-26
+0001666134,BL,"BlackLine, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,237122000,USD,0001628280-26-011915,2026-02-26
+0001280058,BLKB,"Blackbaud, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001280058-25-000010,2025-02-21
+0001280058,BLKB,"Blackbaud, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,18831000,USD,0001280058-26-000006,2026-02-18
+0001280058,BLKB,"Blackbaud, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,418034000,USD,0001280058-26-000006,2026-02-18
+0001280058,BLKB,"Blackbaud, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,217152000,USD,0001280058-26-000006,2026-02-18
+0001280058,BLKB,"Blackbaud, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2022-12-31,0,shares,0001280058-23-000006,2023-02-24
+0001280058,BLKB,"Blackbaud, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,18831000,USD,0001280058-26-000006,2026-02-18
+0001280058,BLKB,"Blackbaud, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,421209000,USD,0001280058-26-000006,2026-02-18
+0001280058,BLKB,"Blackbaud, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,215473000,USD,0001280058-26-000006,2026-02-18
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001628280-26-016395,2026-03-10
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001628280-26-016395,2026-03-10
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,1983000,USD,0001628280-26-016395,2026-03-10
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,1983000,USD,0001628280-26-016395,2026-03-10
+0001372612,BOX,"BOX, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,561571000,USD,0000950170-24-029241,2024-03-11
+0001372612,BOX,"BOX, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,274172000,USD,0000950170-25-036261,2025-03-10
+0001372612,BOX,"BOX, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,177131000,USD,0001193125-26-098466,2026-03-09
+0001372612,BOX,"BOX, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,211060000,USD,0001193125-26-098466,2026-03-09
+0001372612,BOX,"BOX, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,289845000,USD,0001193125-26-098466,2026-03-09
+0001372612,BOX,"BOX, INC.",value_repurchased,StockRepurchasedDuringPeriodValue,2022-01-31,568792000,USD,0000950170-24-029241,2024-03-11
+0001372612,BOX,"BOX, INC.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-01-31,267054000,USD,0000950170-25-036261,2025-03-10
+0001372612,BOX,"BOX, INC.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-01-31,177131000,USD,0001193125-26-098466,2026-03-09
+0001372612,BOX,"BOX, INC.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-01-31,211692000,USD,0001193125-26-098466,2026-03-09
+0001372612,BOX,"BOX, INC.",value_repurchased,StockRepurchasedDuringPeriodValue,2026-01-31,294010000,USD,0001193125-26-098466,2026-03-09
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001676238-24-000049,2024-04-01
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001676238-24-000049,2024-04-01
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,165000,USD,0001676238-24-000049,2024-04-01
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,28250000,USD,0001031308-25-000002,2025-02-26
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001031308-26-000007,2026-02-26
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,64359000,USD,0001031308-26-000007,2026-02-26
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,125057000,USD,0001031308-26-000007,2026-02-26
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,64359000,USD,0001031308-26-000007,2026-02-26
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,125057000,USD,0001031308-26-000007,2026-02-26
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0000950170-25-026848,2025-02-25
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,328453000,USD,0001193125-26-067448,2026-02-24
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001193125-26-067448,2026-02-24
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,600567000,USD,0001193125-26-067448,2026-02-24
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,328453000,USD,0001193125-26-067448,2026-02-24
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,600567000,USD,0001193125-26-067448,2026-02-24
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,7600000,USD,0001866633-24-000004,2024-02-28
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,23700000,USD,0001866633-25-000004,2025-02-20
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,1000000,USD,0001866633-26-000004,2026-02-13
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,23200000,USD,0001866633-26-000004,2026-02-13
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,7596000,USD,0001866633-25-000004,2025-02-20
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,23686000,USD,0001866633-26-000004,2026-02-13
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,1031000,USD,0001866633-26-000004,2026-02-13
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,23163000,USD,0001866633-26-000004,2026-02-13
+0000813672,CDNS,Cadence Design Systems,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-01,612297000,USD,0000813672-24-000034,2024-02-14
+0000813672,CDNS,Cadence Design Systems,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,1050091000,USD,0000813672-25-000024,2025-02-21
+0000813672,CDNS,Cadence Design Systems,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,700134000,USD,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,550026000,USD,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,925034000,USD,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,shares_repurchased,TreasuryStockSharesAcquired,2022-01-01,4401000,shares,0000813672-24-000034,2024-02-14
+0000813672,CDNS,Cadence Design Systems,shares_repurchased,TreasuryStockSharesAcquired,2022-12-31,6602000,shares,0000813672-25-000024,2025-02-21
+0000813672,CDNS,Cadence Design Systems,shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,3145000,shares,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,1930000,shares,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,3165000,shares,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-01-01,612297000,USD,0000813672-24-000034,2024-02-14
+0000813672,CDNS,Cadence Design Systems,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-12-31,1020091000,USD,0000813672-25-000024,2025-02-21
+0000813672,CDNS,Cadence Design Systems,value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,641041000,USD,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,550026000,USD,0000813672-26-000016,2026-02-19
+0000813672,CDNS,Cadence Design Systems,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,928162000,USD,0000813672-26-000016,2026-02-19
+0001827090,CERT,"Certara, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001827090-26-000011,2026-02-26
+0001827090,CERT,"Certara, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001827090-26-000011,2026-02-26
+0001827090,CERT,"Certara, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,42610000,USD,0001827090-26-000011,2026-02-26
+0001827090,CERT,"Certara, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,43036000,USD,0001827090-26-000011,2026-02-26
+0001651562,COUR,"Coursera, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001651562-25-000013,2025-02-24
+0001651562,COUR,"Coursera, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,58500000,USD,0001651562-26-000015,2026-02-23
+0001651562,COUR,"Coursera, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,36700000,USD,0001651562-26-000015,2026-02-23
+0001651562,COUR,"Coursera, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,0,USD,0001651562-26-000015,2026-02-23
+0001651562,COUR,"Coursera, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,58452000,USD,0001651562-25-000013,2025-02-24
+0001651562,COUR,"Coursera, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,36707000,USD,0001651562-25-000013,2025-02-24
+0001651562,COUR,"Coursera, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,36700000,USD,0001651562-26-000015,2026-02-23
+0001108524,CRM,"Salesforce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001108524-24-000005,2024-03-06
+0001108524,CRM,"Salesforce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,4000000000,USD,0001108524-25-000006,2025-03-05
+0001108524,CRM,"Salesforce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,7620000000,USD,0001108524-26-000060,2026-03-02
+0001108524,CRM,"Salesforce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,7829000000,USD,0001108524-26-000060,2026-03-02
+0001108524,CRM,"Salesforce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,12596000000,USD,0001108524-26-000060,2026-03-02
+0001108524,CRM,"Salesforce, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-01-31,4000000000,USD,0001108524-25-000006,2025-03-05
+0001108524,CRM,"Salesforce, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-01-31,7692000000,USD,0001108524-26-000060,2026-03-02
+0001108524,CRM,"Salesforce, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-01-31,7815000000,USD,0001108524-26-000060,2026-03-02
+0001108524,CRM,"Salesforce, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2026-01-31,12721000000,USD,0001108524-26-000060,2026-03-02
+0001768267,CRNC,Cerence Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-09-30,49003000,USD,0000950170-24-130642,2024-11-25
+0001768267,CRNC,Cerence Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-09-30,4894000,USD,0001628280-25-053372,2025-11-20
+0001768267,CRNC,Cerence Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-09-30,9865000,USD,0001628280-25-053372,2025-11-20
+0001768267,CRNC,Cerence Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-09-30,2380000,USD,0001628280-25-053372,2025-11-20
+0001769628,CRWV,"CoreWeave, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,32000000,USD,0001769628-26-000104,2026-03-02
+0001169561,CVLT,"Commault Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-03-31,305239000,USD,0001169561-24-000039,2024-05-13
+0001169561,CVLT,"Commault Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-03-31,150921000,USD,0001169561-25-000034,2025-05-05
+0001169561,CVLT,"Commault Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-03-31,184021000,USD,0001169561-26-000017,2026-05-11
+0001169561,CVLT,"Commault Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-03-31,165015000,USD,0001169561-26-000017,2026-05-11
+0001169561,CVLT,"Commault Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-03-31,446106000,USD,0001169561-26-000017,2026-05-11
+0001169561,CVLT,"Commault Systems, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-03-31,150921000,USD,0001169561-25-000034,2025-05-05
+0001169561,CVLT,"Commault Systems, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-03-31,185018000,USD,0001169561-26-000017,2026-05-11
+0001169561,CVLT,"Commault Systems, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-03-31,165084000,USD,0001169561-26-000017,2026-05-11
+0001169561,CVLT,"Commault Systems, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-03-31,449379000,USD,0001169561-26-000017,2026-05-11
+0001820875,CXAI,CXApp Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,275102280,USD,0001410578-23-000307,2023-03-21
+0001569345,CXM,"Sprinklr, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001569345-24-000019,2024-03-29
+0001569345,CXM,"Sprinklr, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001569345-25-000019,2025-03-21
+0001569345,CXM,"Sprinklr, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,26684000,USD,0001569345-26-000015,2026-03-19
+0001569345,CXM,"Sprinklr, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,273873000,USD,0001569345-26-000015,2026-03-19
+0001569345,CXM,"Sprinklr, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,152263000,USD,0001569345-26-000015,2026-03-19
+0001569345,CXM,"Sprinklr, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-01-31,29579000,USD,0001569345-24-000019,2024-03-29
+0001467623,DBX,"Dropbox, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,795400000,USD,0001467623-25-000011,2025-02-21
+0001467623,DBX,"Dropbox, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,539900000,USD,0001467623-26-000008,2026-02-20
+0001467623,DBX,"Dropbox, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,1241600000,USD,0001467623-26-000008,2026-02-20
+0001467623,DBX,"Dropbox, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,1713900000,USD,0001467623-26-000008,2026-02-20
+0001467623,DBX,"Dropbox, Inc. Class A",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,542800000,USD,0001467623-26-000008,2026-02-20
+0001467623,DBX,"Dropbox, Inc. Class A",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,1248900000,USD,0001467623-26-000008,2026-02-20
+0001467623,DBX,"Dropbox, Inc. Class A",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,1718900000,USD,0001467623-26-000008,2026-02-20
+0000910638,DDD,3D Systems Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001628280-26-015997,2026-03-09
+0000910638,DDD,3D Systems Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001628280-26-015997,2026-03-09
+0000910638,DDD,3D Systems Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,14960000,USD,0001628280-26-015997,2026-03-09
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0000950170-25-029086,2025-02-27
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001193125-26-076782,2026-02-26
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,22366000,USD,0001193125-26-076782,2026-02-26
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,49452000,USD,0001193125-26-076782,2026-02-26
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,22366000,USD,0001193125-26-076782,2026-02-26
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,49452000,USD,0001193125-26-076782,2026-02-26
+0001261333,DOCU,"DocuSign, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001261333-24-000045,2024-03-21
+0001261333,DOCU,"DocuSign, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,63041000,USD,0001261333-25-000024,2025-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,145515000,USD,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,683528000,USD,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,869086000,USD,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-01-31,1100000,shares,0001261333-24-000045,2024-03-21
+0001261333,DOCU,"DocuSign, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-01-31,3058000,shares,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-01-31,10954000,shares,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-01-31,11840000,shares,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-01-31,63041000,USD,0001261333-25-000024,2025-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-01-31,145515000,USD,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-01-31,684990000,USD,0001261333-26-000021,2026-03-18
+0001261333,DOCU,"DocuSign, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,874859000,USD,0001261333-26-000021,2026-03-18
+0001773383,DT,"Dynatrace, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-03-31,0,USD,0001773383-25-000065,2025-05-22
+0001773383,DT,"Dynatrace, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-03-31,0,USD,0001773383-26-000019,2026-05-20
+0001773383,DT,"Dynatrace, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-03-31,172618000,USD,0001773383-26-000019,2026-05-20
+0001773383,DT,"Dynatrace, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-03-31,478708000,USD,0001773383-26-000019,2026-05-20
+0001773383,DT,"Dynatrace, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-03-31,3400000,shares,0001773383-26-000019,2026-05-20
+0001773383,DT,"Dynatrace, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-03-31,11400000,shares,0001773383-26-000019,2026-05-20
+0001773383,DT,"Dynatrace, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-03-31,66000,USD,0001773383-23-000055,2023-05-25
+0001773383,DT,"Dynatrace, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-03-31,15000,USD,0001773383-23-000055,2023-05-25
+0001773383,DT,"Dynatrace, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-03-31,172600000,USD,0001773383-26-000019,2026-05-20
+0001773383,DT,"Dynatrace, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-03-31,478700000,USD,0001773383-26-000019,2026-05-20
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001562088-24-000050,2024-02-29
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001562088-24-000050,2024-02-29
+0001066194,EGAN,eGain Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-06-30,5763000,USD,0001558370-24-012767,2024-09-12
+0001066194,EGAN,eGain Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,17268000,USD,0001104659-25-089540,2025-09-12
+0001066194,EGAN,eGain Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,15781000,USD,0001104659-26-106739,2026-09-10
+0001066194,EGAN,eGain Corporation,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,11510000,USD,0001104659-26-106739,2026-09-10
+0001066194,EGAN,eGain Corporation,value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-06-30,5763000,USD,0001558370-24-012767,2024-09-12
+0001066194,EGAN,eGain Corporation,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-06-30,17268000,USD,0001104659-25-089540,2025-09-12
+0001066194,EGAN,eGain Corporation,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-06-30,15781000,USD,0001104659-26-106739,2026-09-10
+0001066194,EGAN,eGain Corporation,value_repurchased,TreasuryStockValueAcquiredCostMethod,2026-06-30,11510000,USD,0001104659-26-106739,2026-09-10
+0001707753,ESTC,Elastic N.V.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-04-30,0,USD,0001707753-26-000018,2026-06-08
+0001707753,ESTC,Elastic N.V.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-04-30,0,USD,0001707753-26-000018,2026-06-08
+0001707753,ESTC,Elastic N.V.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-04-30,340088000,USD,0001707753-26-000018,2026-06-08
+0001707753,ESTC,Elastic N.V.,shares_repurchased,TreasuryStockSharesAcquired,2026-04-30,4420666,shares,0001707753-26-000018,2026-06-08
+0001707753,ESTC,Elastic N.V.,value_repurchased,TreasuryStockValueAcquiredCostMethod,2026-04-30,340088000,USD,0001707753-26-000018,2026-06-08
+0001853145,EVCM,EverCommerce Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,42994000,USD,0001853145-25-000009,2025-03-13
+0001853145,EVCM,EverCommerce Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,67283000,USD,0001853145-26-000010,2026-03-12
+0001853145,EVCM,EverCommerce Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,57712000,USD,0001853145-26-000010,2026-03-12
+0001853145,EVCM,EverCommerce Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,85141000,USD,0001853145-26-000010,2026-03-12
+0001853145,EVCM,EverCommerce Inc. Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-12-31,4951966,shares,0001853145-23-000011,2023-03-16
+0001853145,EVCM,EverCommerce Inc. Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-12-31,6900000,shares,0001853145-24-000026,2024-03-14
+0001853145,EVCM,EverCommerce Inc. Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-12-31,5700000,shares,0001853145-25-000009,2025-03-13
+0001853145,EVCM,EverCommerce Inc. Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,8200000,shares,0001853145-26-000010,2026-03-12
+0001853145,EVCM,EverCommerce Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,42994000,USD,0001853145-25-000009,2025-03-13
+0001853145,EVCM,EverCommerce Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,67621000,USD,0001853145-26-000010,2026-03-12
+0001853145,EVCM,EverCommerce Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,57909000,USD,0001853145-26-000010,2026-03-12
+0001853145,EVCM,EverCommerce Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,85639000,USD,0001853145-26-000010,2026-03-12
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,6000000,USD,0001476840-25-000018,2025-02-27
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,3000000,USD,0001476840-25-000018,2025-02-27
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,1510000,USD,0001476840-26-000009,2026-02-26
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,9095000,USD,0001476840-26-000009,2026-02-26
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,6000000,USD,0001476840-25-000018,2025-02-27
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,3000000,USD,0001476840-25-000018,2025-02-27
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,1510000,USD,0001476840-26-000009,2026-02-26
+0001579878,FIG,"Figma, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,2000,USD,0001628280-26-009228,2026-02-18
+0001579878,FIG,"Figma, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,861000,USD,0001628280-26-009228,2026-02-18
+0001579878,FIG,"Figma, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,0,USD,0001628280-26-009228,2026-02-18
+0001579878,FIG,"Figma, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,0,USD,0001628280-26-009228,2026-02-18
+0001579878,FIG,"Figma, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,861000,USD,0001628280-26-009228,2026-02-18
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-02-28,-75000,USD,0001520138-22-000237,2022-05-31
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001544522-25-000010,2025-02-20
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001544522-26-000036,2026-02-26
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,13693000,USD,0001544522-26-000036,2026-02-26
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,386306000,USD,0001544522-26-000036,2026-02-26
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,985234,shares,0001544522-25-000010,2025-02-20
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,15535000,USD,0001544522-26-000036,2026-02-26
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,387426000,USD,0001544522-26-000036,2026-02-26
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001628280-23-005637,2023-02-28
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001743725-26-000007,2026-03-05
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001743725-26-000007,2026-03-05
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,2000000,USD,0001743725-26-000007,2026-03-05
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,200249,shares,0001743725-26-000007,2026-03-05
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,2000000,USD,0001743725-26-000007,2026-03-05
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,2104000,USD,0001193125-25-194119,2025-09-02
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,7239000,USD,0001193125-26-368246,2026-08-26
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,6800000,USD,0001193125-26-368246,2026-08-26
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2024-06-30,2104000,USD,0001193125-25-194119,2025-09-02
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-06-30,7239000,USD,0001193125-26-368246,2026-08-26
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2026-06-30,6800000,USD,0001193125-26-368246,2026-08-26
+0000849399,GEN,Gen Digital Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-04-01,0,USD,0000849399-24-000036,2024-05-16
+0000849399,GEN,Gen Digital Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-03-31,904000000,USD,0000849399-25-000033,2025-05-15
+0000849399,GEN,Gen Digital Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-03-29,441000000,USD,0000849399-26-000017,2026-05-21
+0000849399,GEN,Gen Digital Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-03-28,272000000,USD,0000849399-26-000017,2026-05-21
+0000849399,GEN,Gen Digital Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-04-03,634000000,USD,0000849399-26-000017,2026-05-21
+0000849399,GEN,Gen Digital Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-03-29,444000000,USD,0000849399-26-000017,2026-05-21
+0000849399,GEN,Gen Digital Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-03-28,274000000,USD,0000849399-26-000017,2026-05-21
+0000849399,GEN,Gen Digital Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-04-03,639000000,USD,0000849399-26-000017,2026-05-21
+0001653482,GTLB,GitLab Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,590000,USD,0001628280-24-012963,2024-03-26
+0001653482,GTLB,GitLab Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001628280-24-012963,2024-03-26
+0001653482,GTLB,GitLab Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001628280-24-012963,2024-03-26
+0001653482,GTLB,GitLab Inc. Class A Common Stock,value_repurchased,StockRepurchasedDuringPeriodValue,2022-01-31,590000,USD,0001628280-24-012963,2024-03-26
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001794515-25-000045,2025-02-25
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,400100000,USD,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,565600000,USD,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,411100000,USD,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-12-31,22627664,shares,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-09-30,12431216,shares,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-12-31,46801742,shares,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,40462670,shares,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,400100000,USD,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-09-30,125000000,USD,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,562300000,USD,0001794515-26-000012,2026-02-12
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,407000000,USD,0001794515-26-000012,2026-02-12
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-07-31,37451000,USD,0001528396-24-000105,2024-09-16
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-07-31,261807000,USD,0001528396-25-000221,2025-09-11
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-07-31,0,USD,0001528396-26-000046,2026-09-11
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-07-31,0,USD,0001528396-26-000046,2026-09-11
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-07-31,606309000,USD,0001528396-26-000046,2026-09-11
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-07-31,4085350,shares,0001528396-26-000046,2026-09-11
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-07-31,37451000,USD,0001528396-24-000105,2024-09-16
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-07-31,261807000,USD,0001528396-25-000221,2025-09-11
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-07-31,609430000,USD,0001528396-26-000046,2026-09-11
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,99736,USD,0001213900-24-026681,2024-03-27
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,19602,USD,0001213900-26-029223,2026-03-17
+0001404655,HUBS,"HUBSPOT, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,500019000,USD,0001193125-26-046646,2026-02-11
+0001404655,HUBS,"HUBSPOT, INC.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,500019000,USD,0001193125-26-046646,2026-02-11
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-09-30,0,USD,0001728688-25-000122,2025-11-21
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-09-30,0,USD,0001728688-25-000122,2025-11-21
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-09-30,37604000,USD,0001728688-25-000122,2025-11-21
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-09-30,37979000,USD,0001728688-25-000122,2025-11-21
+0001615063,INSE,"Inspired Entertainment, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,10400000,USD,0001641172-25-000737,2025-03-26
+0001615063,INSE,"Inspired Entertainment, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,1600000,USD,0001641172-25-000737,2025-03-26
+0001615063,INSE,"Inspired Entertainment, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,400000,USD,0001493152-26-009479,2026-03-10
+0001615063,INSE,"Inspired Entertainment, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,-10400000,USD,0001641172-25-000737,2025-03-26
+0001615063,INSE,"Inspired Entertainment, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,-1600000,USD,0001641172-25-000737,2025-03-26
+0001615063,INSE,"Inspired Entertainment, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,-400000,USD,0001493152-26-009479,2026-03-10
+0001565687,INTA,"Intapp, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,0,USD,0001565687-26-000073,2026-08-14
+0001565687,INTA,"Intapp, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,0,USD,0001565687-26-000073,2026-08-14
+0001565687,INTA,"Intapp, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,275168000,USD,0001565687-26-000073,2026-08-14
+0001565687,INTA,"Intapp, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-06-30,8400000,shares,0001565687-26-000073,2026-08-14
+0001565687,INTA,"Intapp, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-06-30,276889000,USD,0001565687-26-000073,2026-08-14
+0000896878,INTU,Intuit Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-07-31,1861000000,USD,0000896878-24-000039,2024-09-04
+0000896878,INTU,Intuit Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-07-31,1967000000,USD,0000896878-25-000035,2025-09-03
+0000896878,INTU,Intuit Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-07-31,1988000000,USD,0000896878-26-000037,2026-09-09
+0000896878,INTU,Intuit Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-07-31,2772000000,USD,0000896878-26-000037,2026-09-09
+0000896878,INTU,Intuit Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-07-31,5412000000,USD,0000896878-26-000037,2026-09-09
+0000896878,INTU,Intuit Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-07-31,1854000000,USD,0000896878-24-000039,2024-09-04
+0000896878,INTU,Intuit Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-07-31,1967000000,USD,0000896878-25-000035,2025-09-03
+0000896878,INTU,Intuit Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-07-31,1978000000,USD,0000896878-26-000037,2026-09-09
+0000896878,INTU,Intuit Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-07-31,2793000000,USD,0000896878-26-000037,2026-09-09
+0000896878,INTU,Intuit Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2026-07-31,5463000000,USD,0000896878-26-000037,2026-09-09
+0001432133,KLTR,"Kaltura, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001432133-25-000025,2025-02-20
+0001432133,KLTR,"Kaltura, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001628280-26-018182,2026-03-16
+0001432133,KLTR,"Kaltura, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,2920000,USD,0001628280-26-018182,2026-03-16
+0001432133,KLTR,"Kaltura, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,26205000,USD,0001628280-26-018182,2026-03-16
+0001432133,KLTR,"Kaltura, Inc. Common Stock",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,2920000,USD,0001628280-26-018182,2026-03-16
+0001432133,KLTR,"Kaltura, Inc. Common Stock",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,26205000,USD,0001628280-26-018182,2026-03-16
+0001835830,KVYO,"Klaviyo, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001835830-24-000022,2024-02-29
+0001835830,KVYO,"Klaviyo, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001835830-24-000022,2024-02-29
+0001625641,LAW,"CS Disco, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,264000,USD,0001625641-24-000043,2024-02-22
+0001625641,LAW,"CS Disco, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,89000,USD,0001625641-25-000027,2025-02-20
+0001625641,LAW,"CS Disco, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,127000,USD,0001625641-26-000044,2026-02-25
+0001625641,LAW,"CS Disco, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,105000,USD,0001625641-26-000044,2026-02-25
+0001625641,LAW,"CS Disco, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,264000,USD,0001625641-24-000043,2024-02-22
+0001625641,LAW,"CS Disco, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,89000,USD,0001625641-25-000027,2025-02-20
+0001625641,LAW,"CS Disco, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,127000,USD,0001625641-26-000044,2026-02-25
+0001625641,LAW,"CS Disco, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,103000,USD,0001625641-26-000044,2026-02-25
+0001056696,MANH,Manhattan Associates Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,204460000,USD,0000950170-25-016295,2025-02-07
+0001056696,MANH,Manhattan Associates Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,196047000,USD,0001193125-26-037138,2026-02-04
+0001056696,MANH,Manhattan Associates Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,286366000,USD,0001193125-26-037138,2026-02-04
+0001056696,MANH,Manhattan Associates Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,315162000,USD,0001193125-26-037138,2026-02-04
+0001056696,MANH,Manhattan Associates Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,196047000,USD,0001193125-26-037138,2026-02-04
+0001056696,MANH,Manhattan Associates Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,285257000,USD,0001193125-26-037138,2026-02-04
+0001056696,MANH,Manhattan Associates Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,313579000,USD,0001193125-26-037138,2026-02-04
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-27,100000000,USD,0001104659-26-014300,2026-02-12
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-27,100000000,USD,0001104659-26-014300,2026-02-12
+0001441816,MDB,"MongoDB, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001441816-23-000027,2023-03-17
+0001441816,MDB,"MongoDB, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001441816-23-000027,2023-03-17
+0001441816,MDB,"MongoDB, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001628280-26-016799,2026-03-11
+0001441816,MDB,"MongoDB, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001628280-26-016799,2026-03-11
+0001441816,MDB,"MongoDB, Inc. Class A",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,400333000,USD,0001628280-26-016799,2026-03-11
+0001441816,MDB,"MongoDB, Inc. Class A",shares_repurchased,TreasuryStockSharesAcquired,2026-01-31,1576109,shares,0001628280-26-016799,2026-03-11
+0001441816,MDB,"MongoDB, Inc. Class A",value_repurchased,TreasuryStockValueAcquiredCostMethod,2026-01-31,400333000,USD,0001628280-26-016799,2026-03-11
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,13054000,USD,0001628280-25-010781,2025-03-06
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001805651-26-000016,2026-03-06
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,10803000,USD,0001805651-26-000016,2026-03-06
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,3379000,USD,0001805651-26-000016,2026-03-06
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,13054000,USD,0001628280-25-010781,2025-03-06
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,10803000,USD,0001805651-26-000016,2026-03-06
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,3379000,USD,0001805651-26-000016,2026-03-06
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,78136000,USD,0001628280-25-008232,2025-02-26
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,190420000,USD,0001522540-26-000017,2026-02-24
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,154425000,USD,0001522540-26-000017,2026-02-24
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,391366000,USD,0001522540-26-000017,2026-02-24
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-12-31,11700000,shares,0001522540-23-000015,2023-02-28
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,79201000,USD,0001628280-25-008232,2025-02-26
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,190348000,USD,0001522540-26-000017,2026-02-24
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,153525000,USD,0001522540-26-000017,2026-02-24
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,393966000,USD,0001522540-26-000017,2026-02-24
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-10-31,0,USD,0001477932-24-000230,2024-01-17
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-10-31,32322,USD,0001477932-24-000230,2024-01-17
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,3000000,USD,0001477932-26-001750,2026-03-31
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2023-10-31,14594,shares,0001477932-24-000230,2024-01-17
+0000789019,MSFT,Microsoft Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-06-30,32696000000,USD,0000950170-24-087843,2024-07-30
+0000789019,MSFT,Microsoft Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-06-30,22245000000,USD,0000950170-25-100235,2025-07-30
+0000789019,MSFT,Microsoft Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,17254000000,USD,0001193125-26-323660,2026-07-29
+0000789019,MSFT,Microsoft Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,18420000000,USD,0001193125-26-323660,2026-07-29
+0000789019,MSFT,Microsoft Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,22271000000,USD,0001193125-26-323660,2026-07-29
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,4272000,USD,0001823878-24-000005,2024-03-12
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,15452000,USD,0001823878-25-000017,2025-03-14
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,31200000,USD,0001823878-26-000020,2026-03-16
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,3499000,USD,0001823878-26-000020,2026-03-16
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,4643000,USD,0001823878-24-000005,2024-03-12
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,15452000,USD,0001823878-24-000005,2024-03-12
+0001834488,NABL,"N-able, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2023-12-31,0,USD,0001834488-26-000007,2026-02-26
+0001834488,NABL,"N-able, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2024-12-31,0,USD,0001834488-26-000007,2026-02-26
+0001834488,NABL,"N-able, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2025-12-31,30038000,USD,0001834488-26-000007,2026-02-26
+0001834488,NABL,"N-able, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,0,USD,0001834488-26-000007,2026-02-26
+0001834488,NABL,"N-able, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,0,USD,0001834488-26-000007,2026-02-26
+0001834488,NABL,"N-able, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,30038000,USD,0001834488-26-000007,2026-02-26
+0001902733,NCNO,"nCino, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001902733-26-000022,2026-03-31
+0001902733,NCNO,"nCino, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001902733-26-000022,2026-03-31
+0001902733,NCNO,"nCino, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,125097000,USD,0001902733-26-000022,2026-03-31
+0001902733,NCNO,"nCino, Inc. Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2025-01-31,0,shares,0001902733-26-000022,2026-03-31
+0001902733,NCNO,"nCino, Inc. Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2026-01-31,4964054,shares,0001902733-26-000022,2026-03-31
+0001902733,NCNO,"nCino, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2026-01-31,125600000,USD,0001902733-26-000022,2026-03-31
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,3000,USD,0001477333-25-000043,2025-02-20
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,34000,USD,0001477333-26-000016,2026-02-26
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001477333-26-000016,2026-02-26
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,0,USD,0001477333-26-000016,2026-02-26
+0001373715,NOW,"SERVICENOW, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001373715-25-000010,2025-01-30
+0001373715,NOW,"SERVICENOW, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,538000000,USD,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,696000000,USD,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,1840000000,USD,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,900000,shares,0001373715-25-000010,2025-01-30
+0001373715,NOW,"SERVICENOW, INC.",shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,4000000,shares,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,10300000,shares,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,538000000,USD,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,696000000,USD,0001373715-26-000007,2026-01-29
+0001373715,NOW,"SERVICENOW, INC.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,1840000000,USD,0001373715-26-000007,2026-01-29
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-07-31,58570000,USD,0000950170-24-108159,2024-09-19
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-07-31,0,USD,0001193125-25-213801,2025-09-24
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-07-31,131139000,USD,0001193125-26-394793,2026-09-18
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-07-31,307900000,USD,0001193125-26-394793,2026-09-18
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-07-31,483543000,USD,0001193125-26-394793,2026-09-18
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-07-31,58570000,USD,0000950170-24-108159,2024-09-19
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-07-31,131139000,USD,0001193125-26-394793,2026-09-18
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-07-31,307900000,USD,0001193125-26-394793,2026-09-18
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-07-31,483543000,USD,0001193125-26-394793,2026-09-18
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001193125-26-135011,2026-03-31
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001193125-26-135011,2026-03-31
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,565000,USD,0001193125-26-135011,2026-03-31
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,565000,USD,0001193125-26-135011,2026-03-31
+0001039280,NTWK,"NetSol Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-06-30,100106,USD,0001493152-23-033429,2023-09-22
+0001039280,NTWK,"NetSol Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-06-30,61124,USD,0001493152-24-038751,2024-09-30
+0001039280,NTWK,"NetSol Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,1503662,USD,0001493152-25-015950,2025-09-29
+0001039280,NTWK,"NetSol Technologies, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-06-30,100106,USD,0001493152-23-033429,2023-09-22
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001660134-26-000020,2026-03-05
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001660134-26-000020,2026-03-05
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,73000000,USD,0001660134-26-000020,2026-03-05
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-01-31,875150,shares,0001660134-26-000020,2026-03-05
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,79000000,USD,0001660134-26-000020,2026-03-05
+0001341439,ORCL,Oracle Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-05-31,16248000000,USD,0000950170-24-075605,2024-06-20
+0001341439,ORCL,Oracle Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-05-31,1300000000,USD,0000950170-25-087926,2025-06-18
+0001341439,ORCL,Oracle Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-05-31,1202000000,USD,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-05-31,600000000,USD,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-05-31,95000000,USD,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-05-31,185800000,shares,0000950170-24-075605,2024-06-20
+0001341439,ORCL,Oracle Corp,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-05-31,17000000,shares,0000950170-25-087926,2025-06-18
+0001341439,ORCL,Oracle Corp,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-05-31,10600000,shares,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-05-31,3900000,shares,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-05-31,400000,shares,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-05-31,16200000000,USD,0000950170-24-075605,2024-06-20
+0001341439,ORCL,Oracle Corp,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-05-31,1286000000,USD,0000950170-25-087926,2025-06-18
+0001341439,ORCL,Oracle Corp,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-05-31,1200000000,USD,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-05-31,600000000,USD,0001193125-26-277521,2026-06-22
+0001341439,ORCL,Oracle Corp,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-05-31,93000000,USD,0001193125-26-277521,2026-06-22
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0000813828-23-000005,2023-02-16
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2022-12-31,0,shares,0000813828-25-000005,2025-02-26
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,0,shares,0000813828-25-000005,2025-02-26
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,0,shares,0000813828-25-000005,2025-02-26
+0001734722,PATH,"UiPath, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001734722-24-000011,2024-03-27
+0001734722,PATH,"UiPath, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001734722-25-000007,2025-03-24
+0001734722,PATH,"UiPath, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,102615000,USD,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,390751000,USD,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,329101000,USD,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2025-01-31,31800000,shares,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2026-01-31,30900000,shares,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-01-31,102615000,USD,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-01-31,392164000,USD,0001734722-26-000012,2026-03-25
+0001734722,PATH,"UiPath, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2026-01-31,339126000,USD,0001734722-26-000012,2026-03-25
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,94700000,USD,0000950170-25-024136,2025-02-20
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,286600000,USD,0001193125-26-059372,2026-02-19
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,122800000,USD,0001193125-26-059372,2026-02-19
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,325500000,USD,0001193125-26-059372,2026-02-19
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-12-31,99800000,USD,0000950170-25-024136,2025-02-20
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,303100000,USD,0000950170-25-024136,2025-02-20
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,145400000,USD,0000950170-25-024136,2025-02-20
+0001611052,PCOR,"Procore Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001628280-26-011055,2026-02-24
+0001611052,PCOR,"Procore Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001628280-26-011055,2026-02-24
+0001611052,PCOR,"Procore Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,128838000,USD,0001628280-26-011055,2026-02-24
+0001611052,PCOR,"Procore Technologies, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,1903854,shares,0001628280-26-011055,2026-02-24
+0001611052,PCOR,"Procore Technologies, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,128839000,USD,0001628280-26-011055,2026-02-24
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-06-30,0,USD,0001591698-24-000151,2024-08-02
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-06-30,0,USD,0001591698-25-000087,2025-08-06
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,150000000,USD,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,149638000,USD,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,398113000,USD,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-06-30,1050000,shares,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-06-30,787000,shares,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2026-06-30,2752000,shares,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-06-30,150340000,USD,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-06-30,149957000,USD,0001591698-26-000069,2026-08-05
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-06-30,401207000,USD,0001591698-26-000069,2026-08-05
+0001568100,PD,"PagerDuty, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001568100-24-000013,2024-03-15
+0001568100,PD,"PagerDuty, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001568100-25-000023,2025-03-17
+0001568100,PD,"PagerDuty, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,50000000,USD,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,100104000,USD,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,134916000,USD,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2023-10-31,2331002,shares,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-10-31,50000000,USD,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-01-31,50000000,USD,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-01-31,100104000,USD,0001568100-26-000012,2026-03-12
+0001568100,PD,"PagerDuty, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2026-01-31,137082000,USD,0001568100-26-000012,2026-03-12
+0001120914,PDFS,PDF Solutions Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,22471000,USD,0001558370-25-001813,2025-02-27
+0001120914,PDFS,PDF Solutions Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,743000,USD,0001437749-26-005366,2026-02-24
+0001120914,PDFS,PDF Solutions Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,6899000,USD,0001437749-26-005366,2026-02-24
+0001120914,PDFS,PDF Solutions Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,244000,USD,0001437749-26-005366,2026-02-24
+0001120914,PDFS,PDF Solutions Inc,value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,22471000,USD,0001558370-24-001843,2024-02-27
+0001120914,PDFS,PDF Solutions Inc,value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,743000,USD,0001558370-24-001843,2024-02-27
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001321655-25-000022,2025-02-18
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001321655-26-000011,2026-02-17
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,64196000,USD,0001321655-26-000011,2026-02-17
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,74985000,USD,0001321655-26-000011,2026-02-17
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,64196000,USD,0001321655-26-000011,2026-02-17
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,74985000,USD,0001321655-26-000011,2026-02-17
+0001784535,PRCH,"Porch Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,1813000,USD,0001784535-25-000011,2025-02-25
+0001784535,PRCH,"Porch Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,5608000,USD,0001784535-26-000008,2026-02-20
+0001784535,PRCH,"Porch Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001784535-26-000008,2026-02-20
+0001784535,PRCH,"Porch Group, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,0,USD,0001784535-26-000008,2026-02-20
+0001784535,PRCH,"Porch Group, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-12-31,2139241,shares,0001558370-23-004016,2023-03-16
+0001784535,PRCH,"Porch Group, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-01-31,249515,shares,0001558370-23-004016,2023-03-16
+0001784535,PRCH,"Porch Group, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-03-31,1400000,shares,0001784535-24-000019,2024-03-15
+0001784535,PRCH,"Porch Group, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-12-31,1400000,shares,0001784535-26-000008,2026-02-20
+0001784535,PRCH,"Porch Group, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,3100000,USD,0001784535-26-000008,2026-02-20
+0000876167,PRGS,Progress Software Corp (DE),cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-11-30,77041000,USD,0000876167-25-000010,2025-01-21
+0000876167,PRGS,Progress Software Corp (DE),cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-11-30,33962000,USD,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-11-30,86777000,USD,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-11-30,105156000,USD,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-11-30,1700000,shares,0000876167-25-000010,2025-01-21
+0000876167,PRGS,Progress Software Corp (DE),shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-11-30,600000,shares,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-11-30,1600000,shares,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-11-30,2100000,shares,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-11-30,77041000,USD,0000876167-25-000010,2025-01-21
+0000876167,PRGS,Progress Software Corp (DE),value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-11-30,33962000,USD,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-11-30,86777000,USD,0000876167-26-000008,2026-01-20
+0000876167,PRGS,Progress Software Corp (DE),value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-11-30,105156000,USD,0000876167-26-000008,2026-01-20
+0000857005,PTC,"PTC, INC",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-09-30,125000000,USD,0000950170-24-127231,2024-11-14
+0000857005,PTC,"PTC, INC",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-09-30,0,USD,0001193125-25-291326,2025-11-21
+0000857005,PTC,"PTC, INC",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-09-30,0,USD,0001193125-25-291326,2025-11-21
+0000857005,PTC,"PTC, INC",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-09-30,299998000,USD,0001193125-25-291326,2025-11-21
+0000857005,PTC,"PTC, INC",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-09-30,1050000,shares,0000950170-24-127231,2024-11-14
+0000857005,PTC,"PTC, INC",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-09-30,0,shares,0001193125-25-291326,2025-11-21
+0000857005,PTC,"PTC, INC",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-09-30,0,shares,0001193125-25-291326,2025-11-21
+0000857005,PTC,"PTC, INC",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-09-30,1650000,shares,0001193125-25-291326,2025-11-21
+0000857005,PTC,"PTC, INC",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-09-30,125000000,USD,0000950170-24-127231,2024-11-14
+0000857005,PTC,"PTC, INC",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-09-30,301090000,USD,0001193125-25-291326,2025-11-21
+0001107843,QLYS,"Qualys, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,317344000,USD,0001107843-25-000009,2025-02-21
+0001107843,QLYS,"Qualys, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,170800000,USD,0001107843-26-000008,2026-02-20
+0001107843,QLYS,"Qualys, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,139875000,USD,0001107843-26-000008,2026-02-20
+0001107843,QLYS,"Qualys, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,183425000,USD,0001107843-26-000008,2026-02-20
+0001107843,QLYS,"Qualys, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2022-12-31,2500000,shares,0001107843-25-000009,2025-02-21
+0001107843,QLYS,"Qualys, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2023-12-31,1300000,shares,0001107843-25-000009,2025-02-21
+0001107843,QLYS,"Qualys, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-12-31,1000000,shares,0001107843-25-000009,2025-02-21
+0001107843,QLYS,"Qualys, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,317300000,USD,0001107843-25-000009,2025-02-21
+0001107843,QLYS,"Qualys, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,171219000,USD,0001107843-26-000008,2026-02-20
+0001107843,QLYS,"Qualys, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,140773000,USD,0001107843-26-000008,2026-02-20
+0001107843,QLYS,"Qualys, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,183931000,USD,0001107843-26-000008,2026-02-20
+0001410384,QTWO,Q2 Holdings Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001410384-26-000006,2026-02-11
+0001410384,QTWO,Q2 Holdings Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001410384-26-000006,2026-02-11
+0001410384,QTWO,Q2 Holdings Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,5000000,USD,0001410384-26-000006,2026-02-11
+0001410384,QTWO,Q2 Holdings Inc,shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,69000,shares,0001410384-26-000006,2026-02-11
+0001410384,QTWO,Q2 Holdings Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,5000000,USD,0001410384-26-000006,2026-02-11
+0001943896,RBRK,"Rubrik, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,6000,USD,0001943896-25-000012,2025-03-20
+0001943896,RBRK,"Rubrik, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001943896-25-000012,2025-03-20
+0001943896,RBRK,"Rubrik, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001943896-25-000012,2025-03-20
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2025-12-31,106000,shares,0001628280-26-019861,2026-03-19
+0001720116,RDVT,"Red Violet, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,878000,USD,0000950170-24-028115,2024-03-07
+0001720116,RDVT,"Red Violet, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,3711000,USD,0000950170-25-029184,2025-02-27
+0001720116,RDVT,"Red Violet, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,5853000,USD,0001193125-26-091708,2026-03-04
+0001720116,RDVT,"Red Violet, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,915000,USD,0001193125-26-091708,2026-03-04
+0001720116,RDVT,"Red Violet, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,878000,USD,0000950170-24-028115,2024-03-07
+0001720116,RDVT,"Red Violet, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,3755000,USD,0000950170-25-029184,2025-02-27
+0001720116,RDVT,"Red Violet, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,5809000,USD,0001193125-26-091708,2026-03-04
+0001720116,RDVT,"Red Violet, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,915000,USD,0001193125-26-091708,2026-03-04
+0001560327,RPD,"Rapid7, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,0,USD,0001560327-25-000021,2025-02-28
+0001560327,RPD,"Rapid7, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,0,USD,0001560327-26-000008,2026-02-19
+0001560327,RPD,"Rapid7, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,0,USD,0001560327-26-000008,2026-02-19
+0001583708,S,"SentinelOne, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001583708-26-000020,2026-03-19
+0001583708,S,"SentinelOne, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001583708-26-000020,2026-03-19
+0001583708,S,"SentinelOne, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,200012000,USD,0001583708-26-000020,2026-03-19
+0001583708,S,"SentinelOne, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-01-31,0,USD,0001583708-26-000020,2026-03-19
+0001583708,S,"SentinelOne, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2026-01-31,200012000,USD,0001583708-26-000020,2026-03-19
+0001774675,SKIL,Skillsoft Corp.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001437749-24-012054,2024-04-15
+0001774675,SKIL,Skillsoft Corp.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,2845000,USD,0001437749-25-011912,2025-04-14
+0001774675,SKIL,Skillsoft Corp.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,8046000,USD,0001437749-26-011602,2026-04-07
+0001774675,SKIL,Skillsoft Corp.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001437749-26-011602,2026-04-07
+0001774675,SKIL,Skillsoft Corp.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,0,USD,0001437749-26-011602,2026-04-07
+0001774675,SKIL,Skillsoft Corp.,value_repurchased,StockRepurchasedDuringPeriodValue,2022-01-31,1000,USD,0001558370-22-005527,2022-04-18
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2022-12-31,3414713,USD,0001493152-24-012392,2024-04-01
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2023-12-31,257093,USD,0001641172-25-000784,2025-03-26
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,3414713,USD,0001493152-24-012392,2024-04-01
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,257093,USD,0001641172-25-000784,2025-03-26
+0001640147,SNOW,Snowflake Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-01-31,0,USD,0001640147-24-000101,2024-03-26
+0001640147,SNOW,Snowflake Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-01-31,0,USD,0001640147-25-000052,2025-03-21
+0001640147,SNOW,Snowflake Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,591732000,USD,0001640147-26-000008,2026-03-20
+0001640147,SNOW,Snowflake Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,1932333000,USD,0001640147-26-000008,2026-03-20
+0001640147,SNOW,Snowflake Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,873537000,USD,0001640147-26-000008,2026-03-20
+0001640147,SNOW,Snowflake Inc.,shares_repurchased,TreasuryStockSharesAcquired,2024-01-31,500000,shares,0001640147-26-000008,2026-03-20
+0001640147,SNOW,Snowflake Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-01-31,523433000,USD,0001640147-26-000008,2026-03-20
+0001640147,SNOW,Snowflake Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-01-31,1932333000,USD,0001640147-26-000008,2026-03-20
+0001640147,SNOW,Snowflake Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,873537000,USD,0001640147-26-000008,2026-03-20
+0000883241,SNPS,Synopsys Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-10-31,1100000000,USD,0000883241-24-000024,2024-12-19
+0000883241,SNPS,Synopsys Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-10-31,1160724000,USD,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-10-31,0,USD,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-10-31,0,USD,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,shares_repurchased,TreasuryStockSharesAcquired,2022-10-31,3609000,shares,0000883241-24-000024,2024-12-19
+0000883241,SNPS,Synopsys Inc,shares_repurchased,TreasuryStockSharesAcquired,2023-10-31,2992000,shares,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,shares_repurchased,TreasuryStockSharesAcquired,2024-10-31,74000,shares,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,shares_repurchased,TreasuryStockSharesAcquired,2025-10-31,0,shares,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-10-31,1135000000,USD,0000883241-24-000024,2024-12-19
+0000883241,SNPS,Synopsys Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-10-31,1160724000,USD,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-10-31,45000000,USD,0000883241-25-000028,2025-12-22
+0000883241,SNPS,Synopsys Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-10-31,0,USD,0000883241-25-000028,2025-12-22
+0001092699,SPSC,"SPS Commerce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,43215000,USD,0001092699-25-000011,2025-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,37567000,USD,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,114277000,USD,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2022-12-31,361745,shares,0001092699-25-000011,2025-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,0,shares,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,205331,shares,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,969965,shares,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-12-31,43215000,USD,0001092699-25-000011,2025-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,0,USD,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,37567000,USD,0001092699-26-000012,2026-02-19
+0001092699,SPSC,"SPS Commerce, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,115010000,USD,0001092699-26-000012,2026-02-19
+0001402436,SSNC,SS&C Technologies Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,476100000,USD,0000950170-25-030421,2025-03-03
+0001402436,SSNC,SS&C Technologies Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,471600000,USD,0001193125-26-076745,2026-02-26
+0001402436,SSNC,SS&C Technologies Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,737500000,USD,0001193125-26-076745,2026-02-26
+0001402436,SSNC,SS&C Technologies Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,1036000000,USD,0001193125-26-076745,2026-02-26
+0001402436,SSNC,SS&C Technologies Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-12-31,476100000,USD,0000950170-25-030421,2025-03-03
+0001402436,SSNC,SS&C Technologies Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,474100000,USD,0001193125-26-076745,2026-02-26
+0001402436,SSNC,SS&C Technologies Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,736000000,USD,0001193125-26-076745,2026-02-26
+0001402436,SSNC,SS&C Technologies Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,1037500000,USD,0001193125-26-076745,2026-02-26
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,3084000,USD,0000950170-25-047539,2025-03-31
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,5595000,USD,0001193125-26-132104,2026-03-30
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,6000000,USD,0001193125-26-132104,2026-03-30
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,2974000,USD,0001193125-26-132104,2026-03-30
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,3084000,USD,0000950170-25-047539,2025-03-31
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,5595000,USD,0001193125-26-132104,2026-03-30
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,6000000,USD,0001193125-26-132104,2026-03-30
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,2974000,USD,0001193125-26-132104,2026-03-30
+0000816761,TDC,TERADATA CORPORATION,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,387000000,USD,0000816761-25-000027,2025-02-21
+0000816761,TDC,TERADATA CORPORATION,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,308000000,USD,0001628280-26-012671,2026-02-27
+0000816761,TDC,TERADATA CORPORATION,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,215000000,USD,0001628280-26-012671,2026-02-27
+0000816761,TDC,TERADATA CORPORATION,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,140000000,USD,0001628280-26-012671,2026-02-27
+0000816761,TDC,TERADATA CORPORATION,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,308000000,USD,0001628280-26-012671,2026-02-27
+0000816761,TDC,TERADATA CORPORATION,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,216000000,USD,0001628280-26-012671,2026-02-27
+0000816761,TDC,TERADATA CORPORATION,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,140000000,USD,0001628280-26-012671,2026-02-27
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-06-30,0,USD,0001650372-24-000036,2024-08-16
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-06-30,150006000,USD,0001650372-25-000036,2025-08-15
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-06-30,395256000,USD,0001650372-26-000036,2026-08-14
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-06-30,779439000,USD,0001650372-26-000036,2026-08-14
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-06-30,1800485000,USD,0001650372-26-000036,2026-08-14
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2023-06-30,1000000,shares,0001650372-23-000040,2023-08-18
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2024-06-30,2200000,shares,0001650372-24-000036,2024-08-16
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2025-06-30,4000000,shares,0001650372-25-000036,2025-08-15
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,shares_repurchased,TreasuryStockSharesAcquired,2026-06-30,19100000,shares,0001650372-26-000036,2026-08-14
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-06-30,154173000,USD,0001650372-25-000036,2025-08-15
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-06-30,394033000,USD,0001650372-26-000036,2026-08-14
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-06-30,780662000,USD,0001650372-26-000036,2026-08-14
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-06-30,1809685000,USD,0001650372-26-000036,2026-08-14
+0001660280,TENB,"Tenable Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001660280-25-000034,2025-02-24
+0001660280,TENB,"Tenable Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,14934000,USD,0001660280-26-000005,2026-02-27
+0001660280,TENB,"Tenable Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,99977000,USD,0001660280-26-000005,2026-02-27
+0001660280,TENB,"Tenable Holdings, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,247468000,USD,0001660280-26-000005,2026-02-27
+0001660280,TENB,"Tenable Holdings, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,400000,shares,0001660280-25-000034,2025-02-24
+0001660280,TENB,"Tenable Holdings, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,2300000,shares,0001660280-25-000034,2025-02-24
+0001660280,TENB,"Tenable Holdings, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-12-31,14934000,USD,0001660280-26-000005,2026-02-27
+0001660280,TENB,"Tenable Holdings, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-12-31,99977000,USD,0001660280-26-000005,2026-02-27
+0001660280,TENB,"Tenable Holdings, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,362400000,USD,0001660280-26-000005,2026-02-27
+0000946581,TTWO,Take-Two Interactive Software Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-03-31,200000000,USD,0001628280-24-024623,2024-05-22
+0000946581,TTWO,Take-Two Interactive Software Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-03-31,0,USD,0001628280-24-024623,2024-05-22
+0000946581,TTWO,Take-Two Interactive Software Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-03-31,0,USD,0001628280-24-024623,2024-05-22
+0000946581,TTWO,Take-Two Interactive Software Inc,value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-03-31,200000000,USD,0001628280-24-024623,2024-05-22
+0001447669,TWLO,Twilio Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001447669-25-000035,2025-02-26
+0001447669,TWLO,Twilio Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,668751000,USD,0001447669-26-000021,2026-02-24
+0001447669,TWLO,Twilio Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,2334400000,USD,0001447669-26-000021,2026-02-24
+0001447669,TWLO,Twilio Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,868939000,USD,0001447669-26-000021,2026-02-24
+0001447669,TWLO,Twilio Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,674706000,USD,0001447669-26-000021,2026-02-24
+0001447669,TWLO,Twilio Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,2346671000,USD,0001447669-26-000021,2026-02-24
+0001447669,TWLO,Twilio Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,854297000,USD,0001447669-26-000021,2026-02-24
+0000860731,TYL,"Tyler Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0000860731-24-000006,2024-02-21
+0000860731,TYL,"Tyler Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0000860731-26-000016,2026-02-18
+0000860731,TYL,"Tyler Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0000860731-26-000016,2026-02-18
+0000860731,TYL,"Tyler Technologies, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,174650000,USD,0000860731-26-000016,2026-02-18
+0000860731,TYL,"Tyler Technologies, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2022-12-31,0,shares,0000860731-24-000006,2024-02-21
+0000860731,TYL,"Tyler Technologies, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2023-12-31,0,shares,0000860731-26-000016,2026-02-18
+0000860731,TYL,"Tyler Technologies, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2024-12-31,0,shares,0000860731-26-000016,2026-02-18
+0000860731,TYL,"Tyler Technologies, Inc.",shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,303000,shares,0000860731-26-000016,2026-02-18
+0000860731,TYL,"Tyler Technologies, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,174700000,USD,0000860731-26-000016,2026-02-18
+0001810806,U,Unity Software Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,1500000000,USD,0001810806-25-000026,2025-02-21
+0001810806,U,Unity Software Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,250000000,USD,0001810806-26-000011,2026-02-11
+0001810806,U,Unity Software Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001810806-26-000011,2026-02-11
+0001810806,U,Unity Software Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,0,USD,0001810806-26-000011,2026-02-11
+0001810806,U,Unity Software Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,1500000000,USD,0001810806-25-000026,2025-02-21
+0001810806,U,Unity Software Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,250000000,USD,0001810806-26-000011,2026-02-11
+0001505155,UPLD,"Upland Software, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,14201000,USD,0001505155-26-000007,2026-03-03
+0001505155,UPLD,"Upland Software, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,10796000,USD,0001505155-26-000007,2026-03-03
+0001505155,UPLD,"Upland Software, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,137000,USD,0001505155-26-000007,2026-03-03
+0001393052,VEEV,Veeva Systems Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-01-31,0,USD,0001393052-26-000014,2026-03-20
+0001393052,VEEV,Veeva Systems Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-01-31,0,USD,0001393052-26-000014,2026-03-20
+0001393052,VEEV,Veeva Systems Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2026-01-31,169949000,USD,0001393052-26-000014,2026-03-20
+0001393052,VEEV,Veeva Systems Inc.,shares_repurchased,TreasuryStockSharesAcquired,2026-01-31,801735,shares,0001393052-26-000014,2026-03-20
+0001393052,VEEV,Veeva Systems Inc.,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2026-01-31,179942000,USD,0001393052-26-000014,2026-03-20
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,10094000,USD,0001104659-26-019165,2026-02-24
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",shares_repurchased,TreasuryStockSharesAcquired,2025-12-31,504000,shares,0001104659-26-019165,2026-02-24
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-12-31,10094000,USD,0001104659-26-019165,2026-02-24
+0001361113,VRNS,"Varonis Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,56444000,USD,0001628280-25-004187,2025-02-06
+0001361113,VRNS,"Varonis Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,43522000,USD,0001628280-26-005450,2026-02-04
+0001361113,VRNS,"Varonis Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001628280-26-005450,2026-02-04
+0001361113,VRNS,"Varonis Systems, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,115000000,USD,0001628280-26-005450,2026-02-04
+0001361113,VRNS,"Varonis Systems, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,56445000,USD,0001628280-25-004187,2025-02-06
+0001361113,VRNS,"Varonis Systems, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,43522000,USD,0001628280-26-005450,2026-02-04
+0001361113,VRNS,"Varonis Systems, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,115000000,USD,0001628280-26-005450,2026-02-04
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,3456000,USD,0001493152-24-006846,2024-02-15
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,3956000,USD,0001493152-25-007682,2025-02-20
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,2243000,USD,0001493152-26-008155,2026-02-26
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,2166000,USD,0001493152-26-008155,2026-02-26
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-03-31,80201,shares,0001493152-26-008155,2026-02-26
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-03-31,1000000,USD,0001493152-26-008155,2026-02-26
+0001445305,WK,Workiva Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001445305-26-000016,2026-02-19
+0001445305,WK,Workiva Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,0,USD,0001445305-26-000016,2026-02-19
+0001445305,WK,Workiva Inc.,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,71628000,USD,0001445305-26-000016,2026-02-19
+0001445305,WK,Workiva Inc.,value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,71628000,USD,0001445305-26-000016,2026-02-19
+0001788999,XPER,Xperi Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,0,USD,0001193125-26-076849,2026-02-26
+0001788999,XPER,Xperi Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,19990000,USD,0001193125-26-076849,2026-02-26
+0001788999,XPER,Xperi Inc,cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,0,USD,0001193125-26-076849,2026-02-26
+0001788999,XPER,Xperi Inc,value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,19990000,USD,0001193125-26-076849,2026-02-26
+0001512673,XYZ,"Block, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-12-31,0,USD,0001628280-25-007376,2025-02-24
+0001512673,XYZ,"Block, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,156812000,USD,0001628280-26-012254,2026-02-26
+0001512673,XYZ,"Block, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,1170339000,USD,0001628280-26-012254,2026-02-26
+0001512673,XYZ,"Block, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,2330661000,USD,0001628280-26-012254,2026-02-26
+0001512673,XYZ,"Block, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,156812000,USD,0001628280-26-012254,2026-02-26
+0001512673,XYZ,"Block, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,1170339000,USD,0001628280-26-012254,2026-02-26
+0001512673,XYZ,"Block, Inc.",value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,2341161000,USD,0001628280-26-012254,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-12-31,352000,USD,0001193125-26-076686,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-12-31,481000,USD,0001193125-26-076686,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-12-31,1490000,USD,0001193125-26-076686,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",shares_repurchased,StockRepurchasedAndRetiredDuringPeriodShares,2024-12-31,329333,shares,0001193125-26-076686,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,352000,USD,0001193125-26-076686,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,481000,USD,0001193125-26-076686,2026-02-26
+0001873951,XZO,"Exzeo Group, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,1490000,USD,0001193125-26-076686,2026-02-26
+0001856314,YOU,"Clear Secure, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2022-12-31,4902000,USD,0001856314-25-000008,2025-02-26
+0001856314,YOU,"Clear Secure, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2023-12-31,69673000,USD,0001856314-26-000006,2026-02-25
+0001856314,YOU,"Clear Secure, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2024-12-31,272920000,USD,0001856314-26-000006,2026-02-25
+0001856314,YOU,"Clear Secure, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfEquity,2025-12-31,126345000,USD,0001856314-26-000006,2026-02-25
+0001856314,YOU,"Clear Secure, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2022-12-31,4902000,USD,0001856314-25-000008,2025-02-26
+0001856314,YOU,"Clear Secure, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2023-12-31,69673000,USD,0001856314-26-000006,2026-02-25
+0001856314,YOU,"Clear Secure, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2024-12-31,272920000,USD,0001856314-26-000006,2026-02-25
+0001856314,YOU,"Clear Secure, Inc.",value_repurchased,StockRepurchasedAndRetiredDuringPeriodValue,2025-12-31,126345000,USD,0001856314-26-000006,2026-02-25
+0001667313,ZDGE,"Zedge, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2022-07-31,232000,USD,0001213900-23-081544,2023-10-30
+0001667313,ZDGE,"Zedge, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2023-07-31,1596000,USD,0001213900-24-091735,2024-10-29
+0001667313,ZDGE,"Zedge, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2024-07-31,646000,USD,0001213900-25-103098,2025-10-28
+0001667313,ZDGE,"Zedge, Inc.",cash_paid_for_repurchases,PaymentsForRepurchaseOfCommonStock,2025-07-31,4433000,USD,0001213900-25-103098,2025-10-28
+0001667313,ZDGE,"Zedge, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2022-07-31,232000,USD,0001213900-23-081544,2023-10-30
+0001667313,ZDGE,"Zedge, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2023-07-31,1596000,USD,0001213900-24-091735,2024-10-29
+0001667313,ZDGE,"Zedge, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2024-07-31,646000,USD,0001213900-25-103098,2025-10-28
+0001667313,ZDGE,"Zedge, Inc.",value_repurchased,TreasuryStockValueAcquiredCostMethod,2025-07-31,4433000,USD,0001213900-25-103098,2025-10-28
+0001851003,ZETA,Zeta Global Holdings Corp.,value_repurchased,StockRepurchasedDuringPeriodValue,2022-12-31,9607000,USD,0000950170-25-027338,2025-02-26
+0001851003,ZETA,Zeta Global Holdings Corp.,value_repurchased,StockRepurchasedDuringPeriodValue,2023-12-31,15421000,USD,0001193125-26-068598,2026-02-25
+0001851003,ZETA,Zeta Global Holdings Corp.,value_repurchased,StockRepurchasedDuringPeriodValue,2024-12-31,41080000,USD,0001193125-26-068598,2026-02-25
+0001851003,ZETA,Zeta Global Holdings Corp.,value_repurchased,StockRepurchasedDuringPeriodValue,2025-12-31,120094000,USD,0001193125-26-068598,2026-02-25

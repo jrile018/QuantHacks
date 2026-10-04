@@ -4,6 +4,7 @@
 pandas>=2.2        # tested 3.0.5
 numpy>=2.0         # tested 2.5.2
 requests>=2.31     # tested 2.34.2
+pypdf>=6.0        # public PJM/FERC report extraction
 matplotlib>=3.8    # tested 3.11.1
 
 # Running the notebook
@@ -11,3 +12,4 @@ ipykernel>=6.29    # tested 7.3.0
 jupyterlab>=4.0    # skip if you use VS Code with the Jupyter extension
 
 massive
+statsmodels>=0.14.6  # cointegration diagnostics for walk-forward mean-reversion research

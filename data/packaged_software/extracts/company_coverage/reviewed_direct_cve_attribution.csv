@@ -1,0 +1,9 @@
+ticker,cve,evidence_url,attribution
+FATN,CVE-2021-27855,https://nvd.nist.gov/vuln/detail/CVE-2021-27855,reviewed_firmware_CPE_vendor
+FATN,CVE-2021-27856,https://nvd.nist.gov/vuln/detail/CVE-2021-27856,reviewed_firmware_CPE_vendor
+FATN,CVE-2021-27857,https://nvd.nist.gov/vuln/detail/CVE-2021-27857,reviewed_firmware_CPE_vendor
+FATN,CVE-2021-27858,https://nvd.nist.gov/vuln/detail/CVE-2021-27858,reviewed_firmware_CPE_vendor
+FATN,CVE-2021-27859,https://nvd.nist.gov/vuln/detail/CVE-2021-27859,reviewed_firmware_CPE_vendor
+FATN,CVE-2021-27860,https://nvd.nist.gov/vuln/detail/CVE-2021-27860,reviewed_firmware_CPE_vendor
+DOCU,CVE-2024-52276,https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/52xxx/CVE-2024-52276.json,reviewed_primary_CVE_named_vendor_no_CPE_required
+DOCU,CVE-2024-52269,https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2024/52xxx/CVE-2024-52269.json,reviewed_primary_CVE_named_vendor_no_CPE_required

@@ -1,3 +1,5 @@
-# Pulled federal award data and API response cache stay local
-output/
+__pycache__/
 cache/
+# Only the CSV tables in output/ are shared. Logs and JSON stay local.
+output/*
+!output/*.csv

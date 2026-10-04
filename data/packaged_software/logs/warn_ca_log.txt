@@ -1,0 +1,16 @@
+12 California WARN PDFs listed
+warn-report-for-7-1-2015-to-06-30-2016.pdf: 429 notices
+warn-report-for-7-1-2016-to-06-30-2017.pdf: 414 notices
+warn-report-for-7-1-2017-to-06-30-2018.pdf: 343 notices
+warn-report-for-7-1-2018-to-06-30-2019.pdf: 435 notices
+warn-report-for-7-1-2019-to-6-30-2020.pdf: 4596 notices
+warn-report-for-7-1-2020-to-06-30-2021.pdf: 2005 notices
+warn-report-for-7-1-2021-to-06-30-2022.pdf: 595 notices
+warn-report-for-7-1-2022-to-06-30-2023.pdf: 1423 notices
+warn-report-for-7-1-2023-to-06-30-2024.pdf: 1807 notices
+warn-report-for-7-1-2024-to-06-30-2025.pdf: 1495 notices
+warn-report-for-7-1-25-to-6-30-26.pdf: 1576 notices
+warnreportfor7-1-2014to06-30-2015.pdf: 453 notices
+Notices from 2022-07-01: 6289
+Matched 66 notices to 8 of 168 companies
+Wrote warn_ca_notices.csv and warn_ca_by_company.csv

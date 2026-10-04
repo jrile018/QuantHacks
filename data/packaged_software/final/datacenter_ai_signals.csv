@@ -1,0 +1,15 @@
+signal,period,quarters,mean_ic,t_stat_across_quarters,share_quarters_positive,tests_in_family,bonferroni_critical_t,passes_bonferroni
+capex_pct_rev,2022-2023,7,0.069,1.09,0.71,14,2.91,no
+capex_pct_rev,2024-onward,10,0.0383,1.39,0.5,14,2.91,no
+capex_pct_rev,all,17,0.0509,1.71,0.59,14,2.91,no
+purchase_oblig_pct,2024-onward,7,-0.0859,-1.48,0.29,14,2.91,no
+purchase_oblig_pct,all,8,-0.0416,-0.62,0.38,14,2.91,no
+cloud_mentions,2022-2023,8,0.0486,0.94,0.62,14,2.91,no
+cloud_mentions,2024-onward,10,0.0226,0.5,0.4,14,2.91,no
+cloud_mentions,all,18,0.0342,1.04,0.5,14,2.91,no
+ai_mentions_per_k,2022-2023,8,0.0122,0.57,0.5,14,2.91,no
+ai_mentions_per_k,2024-onward,10,0.0315,0.97,0.6,14,2.91,no
+ai_mentions_per_k,all,18,0.0229,1.14,0.56,14,2.91,no
+ai_mentions_change,2022-2023,4,0.0523,1.05,0.5,14,2.91,no
+ai_mentions_change,2024-onward,10,0.0039,0.13,0.4,14,2.91,no
+ai_mentions_change,all,14,0.0177,0.69,0.43,14,2.91,no

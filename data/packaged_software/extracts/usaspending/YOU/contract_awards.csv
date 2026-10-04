@@ -1,0 +1,3 @@
+cik,company_name,recipient_name,exact_name_match,award_id,start_date,end_date,award_amount,awarding_agency,awarding_sub_agency,description,usaspending_internal_id
+0001856314,"Clear Secure, Inc.","ISOTEK SYSTEMS, LLC",False,DEAC0504OR22860,2003-10-09,2028-12-31,925174733.99,Department of Energy,Department of Energy,"U-233 DISPOSITION AND BUILDING 3019-PLANNING AND DESIGN (PHASE I) FOR PROCESSING OF MATERIAL, BUILDING SHUTDOWN (PHASES II AND III)",CONT_AWD_DEAC0504OR22860_8900_-NONE-_-NONE-
+0001856314,"Clear Secure, Inc.",ATKINSREALIS NUCLEAR SECURED LLC,False,N4215825PE022,2024-11-25,2024-12-31,44500.0,Department of Defense,Department of the Navy,RAD WASTE TRAINING,CONT_AWD_N4215825PE022_9700_-NONE-_-NONE-

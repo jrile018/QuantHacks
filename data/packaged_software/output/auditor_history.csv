@@ -1,0 +1,833 @@
+cik,ticker,name,filing_date,form,auditor,changed_from_prior
+0000935036,ACIW,"ACI Worldwide, Inc.",2022-02-24,10-K,DELOITTE & TOUCHE LLP,no
+0000935036,ACIW,"ACI Worldwide, Inc.",2023-03-01,10-K,Deloitte & Touche LLP,no
+0000935036,ACIW,"ACI Worldwide, Inc.",2024-02-29,10-K,Deloitte & Touche LLP,no
+0000935036,ACIW,"ACI Worldwide, Inc.",2025-02-27,10-K,Deloitte & Touche LLP,no
+0000935036,ACIW,"ACI Worldwide, Inc.",2026-02-26,10-K,Deloitte & Touche LLP,no
+0000796343,ADBE,Adobe Inc.,2022-01-21,10-K,,no
+0000796343,ADBE,Adobe Inc.,2023-01-17,10-K,KPMG LLP,no
+0000796343,ADBE,Adobe Inc.,2024-01-17,10-K,KPMG LLP,no
+0000796343,ADBE,Adobe Inc.,2025-01-13,10-K,KPMG LLP,no
+0000796343,ADBE,Adobe Inc.,2026-01-15,10-K,KPMG LLP,no
+0000769397,ADSK,Autodesk Inc,2022-03-14,10-K,Ernst & Young LLP,no
+0000769397,ADSK,Autodesk Inc,2023-03-14,10-K,Ernst & Young LLP,no
+0000769397,ADSK,Autodesk Inc,2024-06-10,10-K,Ernst & Young LLP,no
+0000769397,ADSK,Autodesk Inc,2025-03-06,10-K,Ernst & Young LLP,no
+0000769397,ADSK,Autodesk Inc,2026-03-03,10-K,Ernst & Young LLP,no
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2022-03-11,10-K,"MaloneBailey, LLP",no
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2023-03-09,10-K,"MaloneBailey, LLP",no
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2024-03-07,10-K,"MaloneBailey, LLP",no
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2025-03-12,10-K,"MaloneBailey, LLP",no
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2026-03-12,10-K,"MaloneBailey, LLP",no
+0001362190,AEYE,"AudioEye, Inc. Common Stock",2026-04-30,10-K/A,,no
+0001577526,AI,"C3.ai, Inc.",2022-06-23,10-K,DELOITTE & TOUCHE LLP,no
+0001577526,AI,"C3.ai, Inc.",2023-06-22,10-K,DELOITTE & TOUCHE LLP,no
+0001577526,AI,"C3.ai, Inc.",2024-06-18,10-K,DELOITTE & TOUCHE LLP,no
+0001577526,AI,"C3.ai, Inc.",2025-06-23,10-K,DELOITTE & TOUCHE LLP,no
+0001577526,AI,"C3.ai, Inc.",2026-06-24,10-K,DELOITTE & TOUCHE LLP,no
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2022-04-12,10-K,CohnReznick LLP,no
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2022-05-02,10-K/A,CohnReznick LLP,no
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2023-04-17,10-K,CohnReznick LLP,no
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2023-05-01,10-K/A,CohnReznick LLP,no
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2024-03-20,10-K,CohnReznick LLP,no
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2025-04-03,10-K,MARCUM CANADA LLP,yes
+0000803578,AIFF,"Firefly Neuroscience, Inc. Common Stock",2026-03-31,10-K,CBIZ Canada LLP,yes
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2022-04-06,10-K,Marcum llp,no
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2023-03-31,10-K,Marcum llp,no
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2024-04-01,10-K,BPM LLP,yes
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2025-02-28,10-K,BPM LLP,no
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2025-03-11,10-K/A,,no
+0001842566,AISP,"Airship AI Holdings, Inc. Class A Common Stock",2026-02-17,10-K,BPM LLP,no
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",2022-02-25,10-K,Ernst & Young LLP,no
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",2023-02-24,10-K,Ernst & Young LLP,no
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",2024-02-29,10-K,Ernst & Young LLP,no
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",2025-02-28,10-K,Ernst & Young LLP,no
+0001529274,ALKT,"Alkami Technology, Inc. Common Stock",2026-02-26,10-K,Ernst & Young LLP,no
+0001459200,ALRM,"Alarm.com Holdings, Inc.",2022-02-24,10-K,PricewaterhouseCoopers LLP,no
+0001459200,ALRM,"Alarm.com Holdings, Inc.",2023-02-24,10-K,PricewaterhouseCoopers LLP,no
+0001459200,ALRM,"Alarm.com Holdings, Inc.",2024-02-22,10-K,PricewaterhouseCoopers LLP,no
+0001459200,ALRM,"Alarm.com Holdings, Inc.",2025-02-20,10-K,PricewaterhouseCoopers LLP,no
+0001459200,ALRM,"Alarm.com Holdings, Inc.",2026-02-19,10-K,PricewaterhouseCoopers LLP,no
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",2022-02-17,10-K,KPMG LLP,no
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",2023-02-16,10-K,KPMG LLP,no
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",2024-02-20,10-K,KPMG LLP,no
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",2025-02-20,10-K,KPMG LLP,no
+0001866692,AMPL,"Amplitude, Inc. Class A Common Stock",2026-02-19,10-K,KPMG LLP,no
+0001807166,AMST,Amesite Inc.,2022-03-09,10-K/A,,no
+0001807166,AMST,Amesite Inc.,2022-09-28,10-K,Deloitte and Touche LLP,no
+0001807166,AMST,Amesite Inc.,2023-10-06,10-K,"Turner, Stone & Company, L.L.P",yes
+0001807166,AMST,Amesite Inc.,2024-09-30,10-K,"Turner, Stone & Company, L.L.P.",no
+0001807166,AMST,Amesite Inc.,2025-01-02,10-K/A,"Turner, Stone & Company, L.L.P.",no
+0001807166,AMST,Amesite Inc.,2025-09-29,10-K,Novogradac & Company LLP,yes
+0001807166,AMST,Amesite Inc.,2025-10-28,10-K/A,,no
+0001807166,AMST,Amesite Inc.,2026-09-23,10-K,Novogradac & Company LLP,no
+0001433195,APPF,"AppFolio, Inc. Class A",2022-02-28,10-K,PricewaterhouseCoopers LLP,no
+0001433195,APPF,"AppFolio, Inc. Class A",2023-02-09,10-K,PricewaterhouseCoopers LLP,no
+0001433195,APPF,"AppFolio, Inc. Class A",2024-02-01,10-K,PricewaterhouseCoopers LLP,no
+0001433195,APPF,"AppFolio, Inc. Class A",2025-02-06,10-K,PricewaterhouseCoopers LLP,no
+0001433195,APPF,"AppFolio, Inc. Class A",2026-02-05,10-K,PricewaterhouseCoopers LLP,no
+0001441683,APPN,Appian Corporation Class A Common Stock,2022-02-17,10-K,"BDO USA, LLP",no
+0001441683,APPN,Appian Corporation Class A Common Stock,2023-02-16,10-K,"BDO USA, LLP",no
+0001441683,APPN,Appian Corporation Class A Common Stock,2024-02-15,10-K,"BDO USA, P.C.",no
+0001441683,APPN,Appian Corporation Class A Common Stock,2025-02-19,10-K,"BDO USA, P.C.",no
+0001441683,APPN,Appian Corporation Class A Common Stock,2026-02-19,10-K,"BDO USA, P.C.",no
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",2022-03-24,10-K,PricewaterhouseCoopers LLP,no
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",2023-03-24,10-K,PricewaterhouseCoopers LLP,no
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",2024-03-14,10-K,PricewaterhouseCoopers LLP,no
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",2025-03-18,10-K,PricewaterhouseCoopers LLP,no
+0001477720,ASAN,"Asana, Inc. Class A Common Stock",2026-03-13,10-K,PricewaterhouseCoopers LLP,no
+0002026353,ATHR,"Aether Holdings, Inc. Common Stock",2025-12-17,10-K,"ZH CPA, LLC",no
+0001534154,AUID,authID Inc. Common Stock,2022-03-22,10-K,Cherry Bekaert LLP,no
+0001534154,AUID,authID Inc. Common Stock,2023-03-30,10-K,Cherry Bekaert LLP,no
+0001534154,AUID,authID Inc. Common Stock,2024-03-20,10-K,Cherry Bekaert LLP,no
+0001534154,AUID,authID Inc. Common Stock,2025-03-13,10-K,Cherry Bekaert LLP,no
+0001534154,AUID,authID Inc. Common Stock,2026-03-31,10-K,Cherry Bekaert LLP,no
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2022-03-31,10-K,DELOITTE & TOUCHE LLP,no
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2023-03-31,10-K,Deloitte & Touche LLP,no
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2023-06-13,10-K/A,"Consent of Deloitte & Touche, LLP",no
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2024-02-29,10-K,Deloitte & Touche LLP,no
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2025-02-28,10-K,Deloitte & Touche LLP,no
+0001777921,AVPT,"AvePoint, Inc. Class A Common Stock",2026-02-26,10-K,Deloitte & Touche LLP,no
+0001015739,AWRE,Aware Inc,2022-03-15,10-K,RSM US LLP,no
+0001015739,AWRE,Aware Inc,2023-03-15,10-K,RSM US LLP,no
+0001015739,AWRE,Aware Inc,2023-03-17,10-K/A,RSM US LLP,no
+0001015739,AWRE,Aware Inc,2024-03-15,10-K,RSM US LLP,no
+0001015739,AWRE,Aware Inc,2025-03-13,10-K,RSM US LLP,no
+0001015739,AWRE,Aware Inc,2026-03-06,10-K,RSM US LLP,no
+0001015739,AWRE,Aware Inc,2026-05-26,10-K/A,,no
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,2022-02-25,10-K,Ernst & Young LLP,no
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,2023-02-23,10-K,Ernst & Young LLP,no
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,2024-02-28,10-K,Ernst & Young LLP,no
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,2025-02-20,10-K,Ernst & Young LLP,no
+0001514416,BAND,Bandwidth Inc. Class A Common Stock,2026-02-19,10-K,Ernst & Young LLP,no
+0001070235,BB,BlackBerry Limited,2022-04-01,10-K,PricewaterhouseCoopers LLP,no
+0001070235,BB,BlackBerry Limited,2023-03-31,10-K,PricewaterhouseCoopers LLP,no
+0001070235,BB,BlackBerry Limited,2024-04-04,10-K,PricewaterhouseCoopers LLP,no
+0001070235,BB,BlackBerry Limited,2025-04-02,10-K,PricewaterhouseCoopers LLP,no
+0001070235,BB,BlackBerry Limited,2026-04-09,10-K,PricewaterhouseCoopers LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2022-03-31,10-K,GRANT THORNTON LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2022-04-29,10-K/A,GRANT THORNTON LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2023-03-31,10-K,GRANT THORNTON LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2023-04-07,10-K/A,GRANT THORNTON LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2024-03-15,10-K,GRANT THORNTON LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2025-03-25,10-K,GRANT THORNTON LLP,no
+0001836981,BBAI,"BigBear.ai Holdings, Inc.",2026-03-02,10-K,GRANT THORNTON LLP,no
+0001786352,BILL,"BILL Holdings, Inc.",2022-08-22,10-K,Ernst & Young LLP,no
+0001786352,BILL,"BILL Holdings, Inc.",2023-05-26,10-K/A,Ernst & Young LLP,no
+0001786352,BILL,"BILL Holdings, Inc.",2023-08-29,10-K,Ernst & Young LLP,no
+0001786352,BILL,"BILL Holdings, Inc.",2024-08-23,10-K,PricewaterhouseCoopers LLP,yes
+0001786352,BILL,"BILL Holdings, Inc.",2025-08-28,10-K,PricewaterhouseCoopers LLP,no
+0001786352,BILL,"BILL Holdings, Inc.",2026-08-20,10-K,PricewaterhouseCoopers LLP,no
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2022-04-01,10-K,"Rotenberg Meril Solomon Bertiger & Guttilla, P.C.",no
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2023-06-01,10-K,Marcum LLC.,yes
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2024-06-05,10-K,Bush and Associates CPA,yes
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2024-06-20,10-K/A,Bush & Associates CPA LLC,no
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2025-04-23,10-K,Bush & Associates CPA LLC,no
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2026-06-12,10-K,Bush and Associates CPA.,no
+0001019034,BKYI,"BIO-key International, Inc. Common Stock",2026-06-15,10-K/A,,no
+0001666134,BL,"BlackLine, Inc. Common Stock",2022-02-25,10-K,PricewaterhouseCoopers LLP,no
+0001666134,BL,"BlackLine, Inc. Common Stock",2022-03-24,10-K/A,PricewaterhouseCoopers LLP,no
+0001666134,BL,"BlackLine, Inc. Common Stock",2023-02-23,10-K,PricewaterhouseCoopers LLP,no
+0001666134,BL,"BlackLine, Inc. Common Stock",2024-02-23,10-K,PricewaterhouseCoopers LLP,no
+0001666134,BL,"BlackLine, Inc. Common Stock",2025-02-21,10-K,PricewaterhouseCoopers LLP,no
+0001666134,BL,"BlackLine, Inc. Common Stock",2026-02-26,10-K,PricewaterhouseCoopers LLP,no
+0001378590,BLIN,Bridgeline Digital Inc.,2022-12-21,10-K,"PKF O'Connor Davies, LLP",no
+0001378590,BLIN,Bridgeline Digital Inc.,2023-12-27,10-K,"PKF O'Connor Davies, LLP",no
+0001378590,BLIN,Bridgeline Digital Inc.,2024-12-26,10-K,"PKF O'Connor Davies, LLP",no
+0001378590,BLIN,Bridgeline Digital Inc.,2025-12-19,10-K,"PKF O'Connor Davies, LLP",no
+0001280058,BLKB,"Blackbaud, Inc.",2022-03-01,10-K,PricewaterhouseCoopers LLP,no
+0001280058,BLKB,"Blackbaud, Inc.",2023-02-24,10-K,Ernst & Young LLP,yes
+0001280058,BLKB,"Blackbaud, Inc.",2024-02-21,10-K,Ernst & Young LLP,no
+0001280058,BLKB,"Blackbaud, Inc.",2025-02-21,10-K,Ernst & Young LLP,no
+0001280058,BLKB,"Blackbaud, Inc.",2025-05-27,10-K/A,,no
+0001280058,BLKB,"Blackbaud, Inc.",2026-02-18,10-K,Ernst & Young LLP,no
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2022-03-28,10-K,"BDO USA, LLP",no
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2023-03-31,10-K,"BDO USA, LLP",no
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2024-04-01,10-K,"BDO USA, P.C.",no
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2025-03-11,10-K,"BDO USA, P.C.",no
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2025-05-07,10-K/A,,no
+0001462056,BLZE,"Backblaze, Inc. Class A Common Stock",2026-03-10,10-K,Deloitte & Touche LLP,yes
+0001372612,BOX,"BOX, INC.",2022-03-16,10-K,Ernst & Young LLP,no
+0001372612,BOX,"BOX, INC.",2023-03-13,10-K,Ernst & Young LLP,no
+0001372612,BOX,"BOX, INC.",2024-03-11,10-K,Ernst & Young LLP,no
+0001372612,BOX,"BOX, INC.",2025-03-10,10-K,Ernst & Young LLP,no
+0001372612,BOX,"BOX, INC.",2026-03-09,10-K,Ernst & Young LLP,no
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",2022-03-31,10-K,Ernst & Young LLP,no
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",2023-03-31,10-K,Ernst & Young LLP,no
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",2024-04-01,10-K,Ernst & Young LLP,no
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",2025-03-31,10-K,Ernst & Young LLP,no
+0001676238,BRZE,"Braze, Inc. Class A Common Stock",2026-03-25,10-K,Ernst & Young LLP,no
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",2022-03-01,10-K,KPMG LLP,no
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",2023-02-28,10-K,KPMG LLP,no
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",2024-02-27,10-K,KPMG LLP,no
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",2025-02-26,10-K,KPMG LLP,no
+0001031308,BSY,"Bentley Systems, Incorporated Class B Common Stock",2026-02-26,10-K,KPMG LLP,no
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,2022-03-01,10-K,Deloitte & Touche LLP,no
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,2023-03-01,10-K,Deloitte & Touche LLP,no
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,2024-02-28,10-K,Deloitte & Touche LLP,no
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,2025-02-25,10-K,Deloitte & Touche LLP,no
+0001818201,CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,2026-02-24,10-K,Deloitte & Touche LLP,no
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2022-03-14,10-K,"Grant Thornton, LLP",no
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2023-03-02,10-K,GRANT THORNTON LLP,no
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2024-03-21,10-K,GRANT THORNTON LLP,no
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2025-03-13,10-K,"Rosenberg Rich Baker Berman,",yes
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2025-04-03,10-K/A,"Rosenberg Rich Baker Berman, P.A.",no
+0001582982,CCLD,"CareCloud, Inc. Common Stock",2026-03-12,10-K,Tanner LLP,yes
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",2022-04-15,10-K,"BDO USA, LLP",no
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",2023-03-31,10-K,"BDO USA, LLP",no
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",2024-02-28,10-K,DELOITTE & TOUCHE LLP,yes
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",2025-02-20,10-K,DELOITTE & TOUCHE LLP,no
+0001866633,CCSI,"Consensus Cloud Solutions, Inc. Common Stock",2026-02-13,10-K,DELOITTE & TOUCHE LLP,no
+0000813672,CDNS,Cadence Design Systems,2022-02-22,10-K,PricewaterhouseCoopers LLP,no
+0000813672,CDNS,Cadence Design Systems,2023-02-13,10-K,PricewaterhouseCoopers LLP,no
+0000813672,CDNS,Cadence Design Systems,2024-02-14,10-K,PricewaterhouseCoopers LLP,no
+0000813672,CDNS,Cadence Design Systems,2025-02-21,10-K,PricewaterhouseCoopers LLP,no
+0000813672,CDNS,Cadence Design Systems,2026-02-19,10-K,PricewaterhouseCoopers LLP,no
+0001827090,CERT,"Certara, Inc. Common Stock",2022-03-01,10-K,CohnReznick LLP,no
+0001827090,CERT,"Certara, Inc. Common Stock",2023-03-01,10-K,RSM US LLP,yes
+0001827090,CERT,"Certara, Inc. Common Stock",2024-02-29,10-K,RSM US LLP,no
+0001827090,CERT,"Certara, Inc. Common Stock",2024-12-16,10-K/A,,no
+0001827090,CERT,"Certara, Inc. Common Stock",2025-02-26,10-K,RSM US LLP,no
+0001827090,CERT,"Certara, Inc. Common Stock",2026-02-26,10-K,RSM US LLP,no
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",2022-03-01,10-K,Ernst and Young LLP,no
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",2023-03-01,10-K,Ernst and Young LLP,no
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",2024-02-29,10-K,Ernst and Young LLP,no
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",2025-02-27,10-K,Ernst and Young LLP,no
+0001626450,CMRC,"Commerce.com, Inc. Series 1 Common Stock",2026-03-02,10-K,Ernst and Young LLP,no
+0001651562,COUR,"Coursera, Inc.",2022-03-03,10-K,DELOITTE & TOUCHE LLP,no
+0001651562,COUR,"Coursera, Inc.",2023-02-23,10-K,DELOITTE & TOUCHE LLP,no
+0001651562,COUR,"Coursera, Inc.",2024-02-22,10-K,DELOITTE & TOUCHE LLP,no
+0001651562,COUR,"Coursera, Inc.",2025-02-24,10-K,DELOITTE & TOUCHE LLP,no
+0001651562,COUR,"Coursera, Inc.",2026-02-23,10-K,DELOITTE & TOUCHE LLP,no
+0001651562,COUR,"Coursera, Inc.",2026-04-30,10-K/A,,no
+0001108524,CRM,"Salesforce, Inc.",2022-03-11,10-K,Ernst & Young LLP,no
+0001108524,CRM,"Salesforce, Inc.",2023-03-08,10-K,Ernst & Young LLP,no
+0001108524,CRM,"Salesforce, Inc.",2024-03-06,10-K,Ernst & Young LLP,no
+0001108524,CRM,"Salesforce, Inc.",2025-03-05,10-K,Ernst & Young LLP,no
+0001108524,CRM,"Salesforce, Inc.",2026-03-02,10-K,Ernst & Young LLP,no
+0001768267,CRNC,Cerence Inc. Common Stock,2022-11-29,10-K,"BDO USA, LLP",no
+0001768267,CRNC,Cerence Inc. Common Stock,2023-11-29,10-K,"BDO USA, P.C.",no
+0001768267,CRNC,Cerence Inc. Common Stock,2024-11-25,10-K,"BDO USA, P.C.",no
+0001768267,CRNC,Cerence Inc. Common Stock,2025-11-20,10-K,"BDO USA, P.C.",no
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",2022-03-16,10-K,PricewaterhouseCoopers LLP,no
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",2023-03-09,10-K,PricewaterhouseCoopers LLP,no
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",2024-03-07,10-K,PricewaterhouseCoopers LLP,no
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",2025-03-10,10-K,PricewaterhouseCoopers LLP,no
+0001535527,CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",2026-03-05,10-K,PricewaterhouseCoopers LLP,no
+0001769628,CRWV,"CoreWeave, Inc. Class A Common Stock",2026-03-02,10-K,Deloitte & Touche LLP,no
+0001169561,CVLT,"Commault Systems, Inc.",2022-05-06,10-K,Ernst & Young LLP,no
+0001169561,CVLT,"Commault Systems, Inc.",2023-05-05,10-K,Ernst & Young LLP,no
+0001169561,CVLT,"Commault Systems, Inc.",2024-05-13,10-K,Ernst & Young LLP,no
+0001169561,CVLT,"Commault Systems, Inc.",2025-05-05,10-K,Ernst & Young LLP,no
+0001169561,CVLT,"Commault Systems, Inc.",2026-05-11,10-K,Ernst & Young LLP,no
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2022-03-30,10-K,WithumSmith+Brown,no
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2023-03-21,10-K,WithumSmith+Brown,no
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2023-04-19,10-K/A,"WithumSmith+Brown, PC",no
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2023-04-21,10-K/A,"WithumSmith+Brown, PC",no
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2024-05-24,10-K,Marcum LLP,yes
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2025-04-07,10-K,"WithumSmith+Brown, PC",yes
+0001820875,CXAI,CXApp Inc. Class A Common Stock,2026-03-30,10-K,"WithumSmith+Brown, PC",no
+0001569345,CXM,"Sprinklr, Inc.",2022-04-11,10-K,KPMG LLP,no
+0001569345,CXM,"Sprinklr, Inc.",2023-04-03,10-K,KPMG LLP,no
+0001569345,CXM,"Sprinklr, Inc.",2024-03-29,10-K,KPMG LLP,no
+0001569345,CXM,"Sprinklr, Inc.",2025-03-21,10-K,KPMG LLP,no
+0001569345,CXM,"Sprinklr, Inc.",2026-03-19,10-K,KPMG LLP,no
+0002032341,CYAB,"Cyabra, Inc. Common Stock",2026-03-26,10-K,CBIZ CPAs P.C.,no
+0001467623,DBX,"Dropbox, Inc. Class A",2022-02-18,10-K,Ernst & Young LLP,no
+0001467623,DBX,"Dropbox, Inc. Class A",2023-02-23,10-K,Ernst & Young LLP,no
+0001467623,DBX,"Dropbox, Inc. Class A",2024-02-16,10-K,Ernst & Young LLP,no
+0001467623,DBX,"Dropbox, Inc. Class A",2025-02-21,10-K,Ernst & Young LLP,no
+0001467623,DBX,"Dropbox, Inc. Class A",2026-02-20,10-K,Ernst & Young LLP,no
+0000910638,DDD,3D Systems Corporation,2022-03-01,10-K,"BDO USA, LLP",no
+0000910638,DDD,3D Systems Corporation,2023-03-16,10-K,"BDO USA, LLP",no
+0000910638,DDD,3D Systems Corporation,2024-08-13,10-K,"BDO USA, P.C.",no
+0000910638,DDD,3D Systems Corporation,2025-03-27,10-K,Deloitte & Touche LLP,yes
+0000910638,DDD,3D Systems Corporation,2026-03-09,10-K,Deloitte & Touche LLP,no
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",2022-02-25,10-K,Deloitte & Touche LLP,no
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",2023-02-24,10-K,Deloitte & Touche LLP,no
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",2024-02-23,10-K,Deloitte & Touche LLP,no
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",2025-02-20,10-K,Deloitte & Touche LLP,no
+0001561550,DDOG,"Datadog, Inc. Class A Common Stock",2026-02-18,10-K,Deloitte & Touche LLP,no
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2022-03-15,10-K,Deloitte & Touche LLP,no
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2023-02-27,10-K,Deloitte & Touche LLP,no
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2023-08-14,10-K/A,Deloitte & Touche LLP,no
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2024-02-28,10-K,Deloitte & Touche LLP,no
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2025-02-27,10-K,Deloitte & Touche LLP,no
+0001861795,DH,Definitive Healthcare Corp. Class A Common Stock,2026-02-26,10-K,Deloitte & Touche LLP,no
+0001261333,DOCU,"DocuSign, Inc. Common Stock",2022-03-25,10-K,PricewaterhouseCoopers LLP,no
+0001261333,DOCU,"DocuSign, Inc. Common Stock",2023-03-27,10-K,PricewaterhouseCoopers LLP,no
+0001261333,DOCU,"DocuSign, Inc. Common Stock",2024-03-21,10-K,PricewaterhouseCoopers LLP,no
+0001261333,DOCU,"DocuSign, Inc. Common Stock",2025-03-18,10-K,PricewaterhouseCoopers LLP,no
+0001261333,DOCU,"DocuSign, Inc. Common Stock",2026-03-18,10-K,PricewaterhouseCoopers LLP,no
+0001773383,DT,"Dynatrace, Inc.",2022-05-26,10-K,"BDO USA, LLP",no
+0001773383,DT,"Dynatrace, Inc.",2023-05-25,10-K,"Ernst & Young, LLP",yes
+0001773383,DT,"Dynatrace, Inc.",2024-05-23,10-K,"Ernst & Young, LLP",no
+0001773383,DT,"Dynatrace, Inc.",2025-05-22,10-K,"Ernst & Young, LLP",no
+0001773383,DT,"Dynatrace, Inc.",2026-05-20,10-K,"Ernst & Young, LLP",no
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",2022-03-04,10-K,Deloitte & Touche LLP,no
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",2023-03-01,10-K,Deloitte & Touche LLP,no
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",2024-02-29,10-K,Deloitte & Touche LLP,no
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",2025-02-28,10-K,Deloitte & Touche LLP,no
+0001562088,DUOL,"Duolingo, Inc. Class A Common Stock",2026-02-27,10-K,Deloitte & Touche LLP,no
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",2022-03-31,10-K,"SALBERG & COMPANY, P.A.",no
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",2023-03-31,10-K,"SALBERG & COMPANY, P.A.",no
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",2024-04-01,10-K,"SALBERG & COMPANY, P.A.",no
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",2025-03-31,10-K,"SALBERG & COMPANY, P.A.",no
+0001396536,DUOT,"Duos Technologies Group, Inc. Common Stock",2026-03-31,10-K,"SALBERG & COMPANY, P.A.",no
+0001066194,EGAN,eGain Corporation,2022-09-13,10-K,BPM LLP,no
+0001066194,EGAN,eGain Corporation,2023-09-14,10-K,BPM LLP,no
+0001066194,EGAN,eGain Corporation,2024-09-12,10-K,BPM LLP,no
+0001066194,EGAN,eGain Corporation,2025-09-12,10-K,BPM LLP,no
+0001066194,EGAN,eGain Corporation,2026-09-10,10-K,BPM LLP,no
+0001707753,ESTC,Elastic N.V.,2022-06-21,10-K,PricewaterhouseCoopers LLP,no
+0001707753,ESTC,Elastic N.V.,2023-06-16,10-K,PricewaterhouseCoopers LLP,no
+0001707753,ESTC,Elastic N.V.,2024-06-14,10-K,PricewaterhouseCoopers LLP,no
+0001707753,ESTC,Elastic N.V.,2025-06-10,10-K,PricewaterhouseCoopers LLP,no
+0001707753,ESTC,Elastic N.V.,2026-06-08,10-K,PricewaterhouseCoopers LLP,no
+0001853145,EVCM,EverCommerce Inc. Common Stock,2022-03-15,10-K,Ernst & Young,no
+0001853145,EVCM,EverCommerce Inc. Common Stock,2023-03-16,10-K,Ernst & Young,no
+0001853145,EVCM,EverCommerce Inc. Common Stock,2024-03-14,10-K,Ernst & Young,no
+0001853145,EVCM,EverCommerce Inc. Common Stock,2025-03-13,10-K,Ernst & Young LLP,no
+0001853145,EVCM,EverCommerce Inc. Common Stock,2026-03-12,10-K,Ernst & Young LLP,no
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",2022-03-31,10-K,Ernst & Young LLP,no
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",2023-03-08,10-K,Ernst & Young LLP,no
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",2024-02-27,10-K,Ernst & Young LLP,no
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",2025-02-27,10-K,Ernst & Young LLP,no
+0001476840,EXFY,"Expensify, Inc. Class A Common Stock",2026-02-26,10-K,KPMG LLP,yes
+0001993400,FATN,"FatPipe, Inc. Common Stock",2025-06-30,10-K,"Suri & Co., Chartered Accountants",no
+0001993400,FATN,"FatPipe, Inc. Common Stock",2026-05-18,10-K,"Suri & Co., Chartered Accountants",no
+0001579878,FIG,"Figma, Inc.",2026-02-18,10-K,Ernst & Young LLP,no
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2022-05-31,10-K,Centurion ZD CPA & Co.,no
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2023-05-30,10-K,Centurion ZD CPA & Co.,no
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2023-08-31,10-K/A,Centurion ZD CPA & Co.,no
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2024-05-29,10-K,Centurion ZD CPA & Co.,no
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2025-05-29,10-K,CT International LLP,yes
+0001602409,FNGR,"FingerMotion, Inc. Common Stock",2026-05-29,10-K,CT International LLP,no
+0001800667,FROG,JFrog Ltd. Ordinary Shares,2022-02-11,10-K,KOST FORER GABBAY & KASIERER,no
+0001800667,FROG,JFrog Ltd. Ordinary Shares,2023-02-09,10-K,KOST FORER GABBAY & KASIERER,no
+0001800667,FROG,JFrog Ltd. Ordinary Shares,2024-02-15,10-K,KOST FORER GABBAY & KASIERER,no
+0001800667,FROG,JFrog Ltd. Ordinary Shares,2025-02-14,10-K,KOST FORER GABBAY & KASIERER,no
+0001800667,FROG,JFrog Ltd. Ordinary Shares,2026-02-13,10-K,KOST FORER GABBAY & KASIERER,no
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,2022-02-23,10-K,DELOITTE & TOUCHE LLP,no
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,2023-02-23,10-K,DELOITTE & TOUCHE LLP,no
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,2024-02-16,10-K,Deloitte & Touche LLP,no
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,2025-02-20,10-K,Deloitte & Touche LLP,no
+0001544522,FRSH,Freshworks Inc. Class A Common Stock,2026-02-26,10-K,Deloitte & Touche LLP,no
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",2022-03-01,10-K,Deloitte & Touche LLP,no
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",2023-02-27,10-K,Deloitte & Touche LLP,no
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",2024-02-22,10-K,Deloitte & Touche LLP,no
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",2025-02-26,10-K,Deloitte & Touche LLP,no
+0001517413,FSLY,"Fastly, Inc. Class A Common Stock",2026-02-25,10-K,Deloitte & Touche LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2022-03-03,10-K,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2022-05-02,10-K/A,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2023-02-28,10-K,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2023-05-01,10-K/A,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2024-02-29,10-K,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2024-04-29,10-K/A,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2025-02-27,10-K,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2025-04-29,10-K/A,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2026-03-05,10-K,GRANT THORNTON LLP,no
+0001743725,GDYN,"Grid Dynamics Holdings, Inc. Class A Common Stock",2026-04-30,10-K/A,GRANT THORNTON LLP,no
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",2022-09-12,10-K,Grant Thornton LLP,no
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",2023-09-20,10-K,Grant Thornton LLP,no
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",2024-08-29,10-K,Grant Thornton LLP,no
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",2025-09-02,10-K,Deloitte & Touche LLP,yes
+0001831096,GEG,"Great Elm Group, Inc. Common Stock",2026-08-26,10-K,Deloitte & Touche LLP,no
+0000849399,GEN,Gen Digital Inc. Common Stock,2022-05-20,10-K,"KPMG, LLC",no
+0000849399,GEN,Gen Digital Inc. Common Stock,2023-05-25,10-K,"KPMG, LLP",no
+0000849399,GEN,Gen Digital Inc. Common Stock,2024-05-16,10-K,"KPMG, LLP",no
+0000849399,GEN,Gen Digital Inc. Common Stock,2025-05-15,10-K,KPMG LLP,no
+0000849399,GEN,Gen Digital Inc. Common Stock,2026-05-21,10-K,KPMG LLP,no
+0001653482,GTLB,GitLab Inc. Class A Common Stock,2022-04-08,10-K,KPMG LLP,no
+0001653482,GTLB,GitLab Inc. Class A Common Stock,2023-03-30,10-K,KPMG LLP,no
+0001653482,GTLB,GitLab Inc. Class A Common Stock,2024-03-26,10-K,KPMG LLP,no
+0001653482,GTLB,GitLab Inc. Class A Common Stock,2025-03-21,10-K,KPMG LLP,no
+0001653482,GTLB,GitLab Inc. Class A Common Stock,2026-03-17,10-K,KPMG LLP,no
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2022-02-24,10-K,KPMG LLP,no
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2023-02-16,10-K,KPMG LLP,no
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2024-02-15,10-K,KPMG LLP,no
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2024-12-20,10-K/A,,no
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2025-02-25,10-K,KPMG LLP,no
+0001794515,GTM,ZoomInfo Technologies Inc Common Stock,2026-02-12,10-K,KPMG LLP,no
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",2022-09-26,10-K,KPMG LLP,no
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",2023-09-18,10-K,KPMG LLP,no
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",2024-09-16,10-K,KPMG LLP,no
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",2025-09-11,10-K,KPMG LLP,no
+0001528396,GWRE,"GUIDEWIRE SOFTWARE, INC.",2026-09-11,10-K,KPMG LLP,no
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,2023-03-31,10-K,"D. Brooks and Associates CPAs, P.A",no
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,2024-03-27,10-K,"SALBERG & COMPANY, P.A.",yes
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,2025-03-28,10-K,"SALBERG & COMPANY, P.A.",no
+0001895618,GXAI,Gaxos.ai Inc. Common Stock,2026-03-17,10-K,"Salberg & Company, P.A.",no
+0001404655,HUBS,"HUBSPOT, INC.",2022-02-14,10-K,PricewaterhouseCoopers LLP,no
+0001404655,HUBS,"HUBSPOT, INC.",2023-02-16,10-K,PricewaterhouseCoopers LLP,no
+0001404655,HUBS,"HUBSPOT, INC.",2024-02-14,10-K,PricewaterhouseCoopers LLP,no
+0001404655,HUBS,"HUBSPOT, INC.",2025-02-12,10-K,PricewaterhouseCoopers LLP,no
+0001404655,HUBS,"HUBSPOT, INC.",2026-02-11,10-K,PricewaterhouseCoopers LLP,no
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2022-04-07,10-K,Cherry Bekaert LLP,no
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2022-12-22,10-K/A,Cherry Bekaert LLP,no
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2023-03-30,10-K,Marcum LLP,yes
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2024-04-01,10-K,Marcum LLP,no
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2025-03-31,10-K,Marcum LLP,no
+0001718939,IDAI,T Stamp Inc. Class A Common Stock,2026-03-31,10-K,CBIZ CPAs P.C.,yes
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2022-03-24,10-K,EISNERAMPER LLP,no
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2022-06-09,10-K/A,EISNERAMPER LLP,no
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2022-06-17,10-K/A,EisnerAmper LLP,no
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2023-03-28,10-K,"FORVIS, LLP",yes
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2024-04-01,10-K,"FORVIS, LLP",no
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2025-03-31,10-K,"Forvis Mazars, LLP",yes
+0001040896,IDN,"Intellicheck, Inc. Common Stock",2026-03-19,10-K,"Forvis Mazars, LLP",no
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",2022-11-18,10-K,Deloitte & Touche LLP,no
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",2023-11-22,10-K,Deloitte & Touche LLP,no
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",2024-11-25,10-K,Deloitte & Touche LLP,no
+0001728688,IIIV,"i3 Verticals, Inc. Class A Common Stock",2025-11-21,10-K,Deloitte & Touche LLP,no
+0001081745,INLX,"Intellinetics, Inc.",2022-03-24,10-K,GBQ Partners LLC,no
+0001081745,INLX,"Intellinetics, Inc.",2023-03-27,10-K,GBQ Partners LLC,no
+0001081745,INLX,"Intellinetics, Inc.",2024-03-28,10-K,GBQ Partners LLC,no
+0001081745,INLX,"Intellinetics, Inc.",2025-03-24,10-K,GBQ Partners LLC,no
+0001081745,INLX,"Intellinetics, Inc.",2026-03-30,10-K,GBQ Partners LLC,no
+0001615063,INSE,"Inspired Entertainment, Inc.",2022-03-31,10-K,Marcum LLP,no
+0001615063,INSE,"Inspired Entertainment, Inc.",2023-03-16,10-K,Marcum LLP,no
+0001615063,INSE,"Inspired Entertainment, Inc.",2024-02-27,10-K/A,Marcum,no
+0001615063,INSE,"Inspired Entertainment, Inc.",2024-04-15,10-K,Marcum,no
+0001615063,INSE,"Inspired Entertainment, Inc.",2025-03-26,10-K,Marcum LLP,no
+0001615063,INSE,"Inspired Entertainment, Inc.",2026-03-10,10-K,CBIZ CPAs P.C.,yes
+0001615063,INSE,"Inspired Entertainment, Inc.",2026-05-22,10-K/A,CBIZ CPAs P.C.,no
+0001565687,INTA,"Intapp, Inc. Common Stock",2022-09-09,10-K,Deloitte & Touche LLP,no
+0001565687,INTA,"Intapp, Inc. Common Stock",2023-09-07,10-K,Deloitte & Touche LLP,no
+0001565687,INTA,"Intapp, Inc. Common Stock",2024-08-26,10-K,Deloitte & Touche LLP,no
+0001565687,INTA,"Intapp, Inc. Common Stock",2025-08-20,10-K,Deloitte & Touche LLP,no
+0001565687,INTA,"Intapp, Inc. Common Stock",2026-08-14,10-K,Deloitte & Touche LLP,no
+0000896878,INTU,Intuit Inc,2022-09-02,10-K,Ernst & Young LLP,no
+0000896878,INTU,Intuit Inc,2023-09-01,10-K,Ernst & Young LLP,no
+0000896878,INTU,Intuit Inc,2024-09-04,10-K,Ernst & Young LLP,no
+0000896878,INTU,Intuit Inc,2025-09-03,10-K,Ernst & Young LLP,no
+0000896878,INTU,Intuit Inc,2026-09-09,10-K,Ernst & Young LLP,no
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2022-03-31,10-K,BF Borgers CPA PC,no
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2023-03-31,10-K,BF Borgers CPA PC,no
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2024-04-01,10-K,BF Borgers CPA PC,no
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2025-04-15,10-K,"Weinberg & Company, P.A.",yes
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2025-06-16,10-K/A,"Weinberg & Company, P.A.",no
+0001397183,IVDA,"Iveda Solutions, Inc. Common Stock",2026-03-31,10-K,"Weinberg & Company, P.A.",no
+0001432133,KLTR,"Kaltura, Inc. Common Stock",2022-02-25,10-K,KOST FORER GABBAY & KASIERER,no
+0001432133,KLTR,"Kaltura, Inc. Common Stock",2023-02-24,10-K,KOST FORER GABBAY & KASIERER,no
+0001432133,KLTR,"Kaltura, Inc. Common Stock",2024-02-22,10-K,KOST FORER GABBAY & KASIERER,no
+0001432133,KLTR,"Kaltura, Inc. Common Stock",2025-02-20,10-K,KOST FORER GABBAY & KASIERER,no
+0001432133,KLTR,"Kaltura, Inc. Common Stock",2026-03-16,10-K,KOST FORER GABBAY & KASIERER,no
+0001835830,KVYO,"Klaviyo, Inc.",2024-02-29,10-K,Deloitte & Touche LLP,no
+0001835830,KVYO,"Klaviyo, Inc.",2025-02-19,10-K,Deloitte & Touche LLP,no
+0001835830,KVYO,"Klaviyo, Inc.",2026-02-10,10-K,Deloitte & Touche LLP,no
+0001625641,LAW,"CS Disco, Inc.",2022-02-25,10-K,"Ernst & Young, LLP",no
+0001625641,LAW,"CS Disco, Inc.",2022-04-29,10-K/A,Ernst & Young LLP,no
+0001625641,LAW,"CS Disco, Inc.",2023-02-24,10-K,"Ernst & Young, LLP",no
+0001625641,LAW,"CS Disco, Inc.",2024-02-22,10-K,"Ernst & Young, LLP",no
+0001625641,LAW,"CS Disco, Inc.",2025-02-20,10-K,"Ernst & Young, LLP",no
+0001625641,LAW,"CS Disco, Inc.",2026-02-25,10-K,Ernst & Young LLP,no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2022-04-01,10-K,Armanino LLP,no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2023-05-10,10-K/A,"Yusufali & Associates, LLC",yes
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2023-06-15,10-K,"Yusufali & Associates, LLC",no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2024-04-03,10-K,,no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2024-06-04,10-K/A,"Yusufali & Associates, LLC",no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2024-09-24,10-K/A,"Yusufali & Associates, LLC",no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2025-04-09,10-K/A,"Yusufali & Associates, LLC",no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2025-04-21,10-K,,no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2025-04-22,10-K/A,Boladale Lawal,yes
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2025-05-13,10-K/A,,no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2026-07-10,10-K,Boladale Lawal,no
+0001673481,LTRYW,Sports Entertainment Gaming Global Corporation Warrants,2026-07-31,10-K/A,,no
+0001056696,MANH,Manhattan Associates Inc,2022-02-07,10-K,Ernst & Young,no
+0001056696,MANH,Manhattan Associates Inc,2023-02-06,10-K,Ernst & Young,no
+0001056696,MANH,Manhattan Associates Inc,2024-02-06,10-K,Ernst & Young LLP,no
+0001056696,MANH,Manhattan Associates Inc,2025-02-07,10-K,Ernst & Young LLP,no
+0001056696,MANH,Manhattan Associates Inc,2026-02-04,10-K,Ernst & Young LLP,no
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,2023-03-09,10-K,Kesselman & Kesselman C.P.A.s,no
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,2024-02-23,10-K,Kesselman & Kesselman C.P.A.s,no
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,2025-02-13,10-K,Kesselman & Kesselman C.P.A.s,no
+0001910139,MBLY,Mobileye Global Inc. Class A Common Stock,2026-02-12,10-K,Kesselman & Kesselman C.P.A.s,no
+0001224133,MCHX,"Marchex, Inc. Class B",2022-03-29,10-K,Moss Adams LLP,no
+0001224133,MCHX,"Marchex, Inc. Class B",2022-04-29,10-K/A,Moss Adams LLP,no
+0001224133,MCHX,"Marchex, Inc. Class B",2023-03-31,10-K,RSM US LLP,yes
+0001224133,MCHX,"Marchex, Inc. Class B",2023-05-01,10-K/A,RSM US LLP (“RSM”),no
+0001224133,MCHX,"Marchex, Inc. Class B",2024-04-01,10-K,RSM US LLP,no
+0001224133,MCHX,"Marchex, Inc. Class B",2024-04-29,10-K/A,RSM US LLP (“RSM”),no
+0001224133,MCHX,"Marchex, Inc. Class B",2025-03-14,10-K,RSM US LLP,no
+0001224133,MCHX,"Marchex, Inc. Class B",2025-04-18,10-K/A,RSM US LLP (“RSM”),no
+0001224133,MCHX,"Marchex, Inc. Class B",2026-03-26,10-K,RSM US LLP,no
+0001224133,MCHX,"Marchex, Inc. Class B",2026-04-17,10-K/A,RSM US LLP,no
+0001441816,MDB,"MongoDB, Inc. Class A",2022-03-18,10-K,PricewaterhouseCoopers LLP,no
+0001441816,MDB,"MongoDB, Inc. Class A",2023-03-17,10-K,PricewaterhouseCoopers LLP,no
+0001441816,MDB,"MongoDB, Inc. Class A",2024-03-15,10-K,PricewaterhouseCoopers LLP,no
+0001441816,MDB,"MongoDB, Inc. Class A",2025-03-21,10-K,PricewaterhouseCoopers LLP,no
+0001441816,MDB,"MongoDB, Inc. Class A",2026-03-11,10-K,PricewaterhouseCoopers LLP,no
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2022-03-10,10-K,Deloitte & Touche LLP,no
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2023-03-31,10-K,Deloitte & Touche LLP,no
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2023-04-28,10-K/A,Deloitte & Touche LLP,no
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2024-03-07,10-K,Deloitte & Touche LLP,no
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2025-03-06,10-K,Deloitte & Touche LLP,no
+0001805651,MKTW,"MarketWise, Inc. Class A Common Stock",2026-03-06,10-K,Grant Thornton LLP,yes
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",2022-03-11,10-K,Ernst & Young LLP,no
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",2023-02-28,10-K,Ernst & Young LLP,no
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",2024-02-28,10-K,Ernst & Young LLP,no
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",2025-02-26,10-K,KPMG LLP,yes
+0001522540,MQ,"Marqeta, Inc. Class A Common Stock",2026-02-24,10-K,KPMG LLP,no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2023-01-30,10-K,"M&K CPAS, PLLC",no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2024-01-17,10-K,"M&K CPAS, PLLC",no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2025-03-24,10-K,"M&K CPAS, PLLC",no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2025-04-29,10-K/A,,no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2025-04-30,10-K/A,,no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2026-03-31,10-K,"M&K CPAS, PLLC",no
+0001437925,MRDN,Meridian Holdings Inc. Common Stock,2026-04-30,10-K/A,,no
+0000789019,MSFT,Microsoft Corp,2022-07-28,10-K,DELOITTE & TOUCHE LLP,no
+0000789019,MSFT,Microsoft Corp,2023-07-27,10-K,DELOITTE & TOUCHE LLP,no
+0000789019,MSFT,Microsoft Corp,2024-07-30,10-K,DELOITTE & TOUCHE LLP,no
+0000789019,MSFT,Microsoft Corp,2025-07-30,10-K,DELOITTE & TOUCHE LLP,no
+0000789019,MSFT,Microsoft Corp,2026-07-29,10-K,DELOITTE & TOUCHE LLP,no
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,2022-03-30,10-K,GRANT THORNTON LLP,no
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,2023-03-24,10-K,GRANT THORNTON LLP,no
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,2024-04-01,10-K,GRANT THORNTON LLP,no
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,2025-03-20,10-K,"GRASSI & CO., CPAs, P.C",yes
+0001821175,MSGM,Motorsport Games Inc. Class A Common Stock,2026-03-10,10-K,"GRASSI & CO., CPAs, P.C.",no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2022-03-03,10-K,Deloitte & Touche LLP,no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2023-03-10,10-K,Deloitte & Touche LLP,no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2024-03-12,10-K,Deloitte & Touche LLP,no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2025-03-14,10-K,Deloitte & Touche LLP,no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2025-04-04,10-K/A,,no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2026-03-16,10-K,Deloitte & Touche LLP,no
+0001823878,MYPS,"PLAYSTUDIOS, Inc. Class A Common Stock",2026-04-03,10-K/A,,no
+0001211805,MYSZ,"My Size, Inc",2022-03-18,10-K,Somekh Chaikin,no
+0001211805,MYSZ,"My Size, Inc",2023-02-03,10-K/A,Somekh Chaikin,no
+0001211805,MYSZ,"My Size, Inc",2023-04-14,10-K,Somekh Chaikin,no
+0001211805,MYSZ,"My Size, Inc",2024-04-01,10-K,Somekh Chaikin,no
+0001211805,MYSZ,"My Size, Inc",2025-03-27,10-K,Somekh Chaikin,no
+0001211805,MYSZ,"My Size, Inc",2026-04-15,10-K,Somekh Chaikin,no
+0001834488,NABL,"N-able, Inc.",2022-03-08,10-K,PricewaterhouseCoopers LLP,no
+0001834488,NABL,"N-able, Inc.",2022-08-09,10-K/A,PricewaterhouseCoopers LLP,no
+0001834488,NABL,"N-able, Inc.",2023-03-14,10-K,PricewaterhouseCoopers LLP,no
+0001834488,NABL,"N-able, Inc.",2024-02-29,10-K,PricewaterhouseCoopers LLP,no
+0001834488,NABL,"N-able, Inc.",2025-03-07,10-K,PricewaterhouseCoopers LLP,no
+0001834488,NABL,"N-able, Inc.",2026-02-26,10-K,PricewaterhouseCoopers LLP,no
+0001834488,NABL,"N-able, Inc.",2026-08-10,10-K/A,PricewaterhouseCoopers LLP,no
+0001639723,NAVN,"Navan, Inc. Class A Common Stock",2026-04-02,10-K,PricewaterhouseCoopers LLP,no
+0001902733,NCNO,"nCino, Inc. Common Stock",2022-03-31,10-K,Ernst & Young LLP,no
+0001902733,NCNO,"nCino, Inc. Common Stock",2023-03-28,10-K,Ernst & Young LLP,no
+0001902733,NCNO,"nCino, Inc. Common Stock",2024-03-26,10-K,Ernst & Young LLP,no
+0001902733,NCNO,"nCino, Inc. Common Stock",2025-04-01,10-K,Ernst & Young LLP,no
+0001902733,NCNO,"nCino, Inc. Common Stock",2026-03-31,10-K,Ernst & Young LLP,no
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2022-03-01,10-K,KPMG LLP,no
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2023-02-24,10-K,KPMG LLP,no
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2024-02-21,10-K,KPMG LLP,no
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2025-02-20,10-K,KPMG LLP,no
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2026-02-26,10-K,KPMG LLP,no
+0001477333,NET,"Cloudflare, Inc. Class A common stock, par value $0.001 per share",2026-04-29,10-K/A,,no
+0001373715,NOW,"SERVICENOW, INC.",2022-02-03,10-K,PricewaterhouseCoopers LLP,no
+0001373715,NOW,"SERVICENOW, INC.",2023-01-31,10-K,PricewaterhouseCoopers LLP,no
+0001373715,NOW,"SERVICENOW, INC.",2024-01-25,10-K,PricewaterhouseCoopers LLP,no
+0001373715,NOW,"SERVICENOW, INC.",2025-01-30,10-K,PricewaterhouseCoopers LLP,no
+0001373715,NOW,"SERVICENOW, INC.",2026-01-29,10-K,PricewaterhouseCoopers LLP,no
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2022-09-21,10-K,DELOITTE & TOUCHE LLP,no
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2023-05-24,10-K/A,DELOITTE & TOUCHE LLP,no
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2023-09-21,10-K,DELOITTE & TOUCHE LLP,no
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2024-09-19,10-K,DELOITTE & TOUCHE LLP,no
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2025-09-24,10-K,DELOITTE & TOUCHE LLP,no
+0001618732,NTNX,"Nutanix, Inc. Class A Common Stock",2026-09-18,10-K,DELOITTE & TOUCHE LLP,no
+0002063196,NTSK,"Netskope, Inc. Class A Common Stock",2026-03-31,10-K,KPMG LLP,no
+0001039280,NTWK,"NetSol Technologies, Inc.",2022-09-27,10-K,BF Borgers CPA PC,no
+0001039280,NTWK,"NetSol Technologies, Inc.",2023-09-22,10-K,BF Borgers CPA PC,no
+0001039280,NTWK,"NetSol Technologies, Inc.",2024-09-30,10-K,"Fortune CPA, Inc",yes
+0001039280,NTWK,"NetSol Technologies, Inc.",2025-09-29,10-K,"Fortune CPA, Inc",no
+0001039280,NTWK,"NetSol Technologies, Inc.",2026-09-28,10-K,"Fortune CPA, Inc",no
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",2022-03-07,10-K,Ernst & Young LLP,no
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",2023-03-03,10-K,Ernst & Young LLP,no
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",2024-03-01,10-K,Ernst & Young LLP,no
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",2025-03-05,10-K,Ernst & Young LLP,no
+0001660134,OKTA,"Okta, Inc. Class A Common Stock",2026-03-05,10-K,Ernst & Young LLP,no
+0001341439,ORCL,Oracle Corp,2022-06-21,10-K,Ernst & Young LLP,no
+0001341439,ORCL,Oracle Corp,2023-06-20,10-K,Ernst & Young LLP,no
+0001341439,ORCL,Oracle Corp,2024-06-20,10-K,Ernst & Young LLP,no
+0001341439,ORCL,Oracle Corp,2025-06-18,10-K,Ernst & Young LLP,no
+0001341439,ORCL,Oracle Corp,2026-06-22,10-K,Ernst & Young LLP,no
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",2022-02-15,10-K,PricewaterhouseCoopers LLP,no
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",2023-02-16,10-K,PricewaterhouseCoopers LLP,no
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",2024-02-28,10-K,PricewaterhouseCoopers LLP,no
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",2025-02-26,10-K,PricewaterhouseCoopers LLP,no
+0000813828,PARA,"Banzai International, Inc. Class A Common Stock",2025-04-25,10-K/A,,no
+0001734722,PATH,"UiPath, Inc.",2022-04-04,10-K,GRANT THORNTON LLP,no
+0001734722,PATH,"UiPath, Inc.",2023-03-24,10-K,KPMG LLP,yes
+0001734722,PATH,"UiPath, Inc.",2024-03-27,10-K,KPMG LLP,no
+0001734722,PATH,"UiPath, Inc.",2025-03-24,10-K,KPMG LLP,no
+0001734722,PATH,"UiPath, Inc.",2026-03-25,10-K,KPMG LLP,no
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",2022-02-17,10-K,GRANT THORNTON LLP,no
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",2023-02-16,10-K,GRANT THORNTON LLP,no
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",2024-02-15,10-K,GRANT THORNTON LLP,no
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",2025-02-20,10-K,GRANT THORNTON LLP,no
+0001590955,PAYC,"PAYCOM SOFTWARE, INC.",2026-02-19,10-K,GRANT THORNTON LLP,no
+0001611052,PCOR,"Procore Technologies, Inc.",2022-03-04,10-K,PricewaterhouseCoopers LLP,no
+0001611052,PCOR,"Procore Technologies, Inc.",2023-03-01,10-K,PricewaterhouseCoopers LLP,no
+0001611052,PCOR,"Procore Technologies, Inc.",2024-02-26,10-K,PricewaterhouseCoopers LLP,no
+0001611052,PCOR,"Procore Technologies, Inc.",2025-02-26,10-K,PricewaterhouseCoopers LLP,no
+0001611052,PCOR,"Procore Technologies, Inc.",2026-02-24,10-K,PricewaterhouseCoopers LLP,no
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,2022-08-05,10-K,KPMG LLP,no
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,2023-08-04,10-K,KPMG LLP,no
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,2024-08-02,10-K,KPMG LLP,no
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,2025-08-06,10-K,KPMG LLP,no
+0001591698,PCTY,Paylocity Holding Corporation Common Stock,2026-08-05,10-K,KPMG LLP,no
+0001568100,PD,"PagerDuty, Inc.",2022-03-17,10-K,Ernst & Young LLP,no
+0001568100,PD,"PagerDuty, Inc.",2023-03-16,10-K,Ernst & Young LLP,no
+0001568100,PD,"PagerDuty, Inc.",2024-03-15,10-K,Ernst & Young LLP,no
+0001568100,PD,"PagerDuty, Inc.",2024-03-18,10-K/A,Ernst & Young LLP,no
+0001568100,PD,"PagerDuty, Inc.",2025-03-17,10-K,PricewaterhouseCoopers LLP,yes
+0001568100,PD,"PagerDuty, Inc.",2026-03-12,10-K,PricewaterhouseCoopers LLP,no
+0001120914,PDFS,PDF Solutions Inc,2022-03-01,10-K,BPM LLP,no
+0001120914,PDFS,PDF Solutions Inc,2023-03-01,10-K,BPM LLP,no
+0001120914,PDFS,PDF Solutions Inc,2024-02-27,10-K,BPM LLP,no
+0001120914,PDFS,PDF Solutions Inc,2025-02-27,10-K,BPM LLP,no
+0001120914,PDFS,PDF Solutions Inc,2026-02-24,10-K,BPM LLP,no
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2022-03-29,10-K,Ernst & Young LLP,no
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2022-09-30,10-K/A,Ernst & Young LLP,no
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2023-03-16,10-K,Ernst & Young LLP,no
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2024-02-28,10-K,Ernst & Young LLP,no
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2025-02-20,10-K,KPMG LLP,yes
+0001826681,PDYN,Palladyne AI Corp. Common Stock,2026-03-05,10-K,KPMG LLP,no
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,2022-02-24,10-K,Ernst & Young LLP,no
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,2023-02-21,10-K,Ernst & Young LLP,no
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,2024-02-20,10-K,Ernst & Young LLP,no
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,2025-02-18,10-K,Ernst & Young LLP,no
+0001321655,PLTR,Palantir Technologies Inc. Class A Common Stock,2026-02-17,10-K,Ernst & Young LLP,no
+0001784535,PRCH,"Porch Group, Inc. Common Stock",2022-03-16,10-K,Ernst & Young LLP,no
+0001784535,PRCH,"Porch Group, Inc. Common Stock",2023-03-16,10-K,Ernst & Young LLP,no
+0001784535,PRCH,"Porch Group, Inc. Common Stock",2024-03-15,10-K,GRANT THORNTON LLP,yes
+0001784535,PRCH,"Porch Group, Inc. Common Stock",2025-02-25,10-K,GRANT THORNTON LLP,no
+0001784535,PRCH,"Porch Group, Inc. Common Stock",2026-02-20,10-K,GRANT THORNTON LLP,no
+0000876167,PRGS,Progress Software Corp (DE),2022-01-27,10-K,,no
+0000876167,PRGS,Progress Software Corp (DE),2022-03-30,10-K/A,,no
+0000876167,PRGS,Progress Software Corp (DE),2023-01-27,10-K,Deloitte & Touche LLP,no
+0000876167,PRGS,Progress Software Corp (DE),2024-01-26,10-K,Deloitte & Touche LLP,no
+0000876167,PRGS,Progress Software Corp (DE),2025-01-21,10-K,Deloitte & Touche LLP,no
+0000876167,PRGS,Progress Software Corp (DE),2026-01-20,10-K,Deloitte & Touche LLP,no
+0000857005,PTC,"PTC, INC",2022-11-15,10-K,PricewaterhouseCoopers LLP,no
+0000857005,PTC,"PTC, INC",2023-11-20,10-K,PricewaterhouseCoopers LLP,no
+0000857005,PTC,"PTC, INC",2024-11-14,10-K,PricewaterhouseCoopers LLP,no
+0000857005,PTC,"PTC, INC",2025-11-21,10-K,PricewaterhouseCoopers LLP,no
+0001040161,PXLW,Pixelworks Inc,2022-03-09,10-K,Armanino,no
+0001040161,PXLW,Pixelworks Inc,2023-03-08,10-K,Armanino,no
+0001040161,PXLW,Pixelworks Inc,2024-03-13,10-K,GRANT THORNTON LLP,yes
+0001040161,PXLW,Pixelworks Inc,2025-03-13,10-K,GRANT THORNTON LLP,no
+0001040161,PXLW,Pixelworks Inc,2025-03-19,10-K/A,,no
+0001040161,PXLW,Pixelworks Inc,2026-03-12,10-K,GRANT THORNTON LLP,no
+0001107843,QLYS,"Qualys, Inc. Common Stock",2022-02-22,10-K,GRANT THORNTON LLP,no
+0001107843,QLYS,"Qualys, Inc. Common Stock",2023-02-23,10-K,GRANT THORNTON LLP,no
+0001107843,QLYS,"Qualys, Inc. Common Stock",2024-02-22,10-K,GRANT THORNTON LLP,no
+0001107843,QLYS,"Qualys, Inc. Common Stock",2025-02-21,10-K,GRANT THORNTON LLP,no
+0001107843,QLYS,"Qualys, Inc. Common Stock",2026-02-20,10-K,GRANT THORNTON LLP,no
+0001410384,QTWO,Q2 Holdings Inc,2022-02-16,10-K,Ernst & Young LLP,no
+0001410384,QTWO,Q2 Holdings Inc,2023-02-21,10-K,Ernst & Young LLP,no
+0001410384,QTWO,Q2 Holdings Inc,2024-02-21,10-K,Ernst & Young LLP,no
+0001410384,QTWO,Q2 Holdings Inc,2025-02-12,10-K,Ernst & Young LLP,no
+0001410384,QTWO,Q2 Holdings Inc,2026-02-11,10-K,Ernst & Young LLP,no
+0001758009,QUBT,Quantum Computing Inc. Common,2022-03-15,10-K,BF Borgers CPA PC,no
+0001758009,QUBT,Quantum Computing Inc. Common,2023-03-30,10-K,BF Borgers CPA PC,no
+0001758009,QUBT,Quantum Computing Inc. Common,2023-04-14,10-K/A,BF Borgers CPA PC,no
+0001758009,QUBT,Quantum Computing Inc. Common,2023-06-26,10-K/A,BF Borgers CPA PC,no
+0001758009,QUBT,Quantum Computing Inc. Common,2023-07-10,10-K/A,BF Borgers CPA PC,no
+0001758009,QUBT,Quantum Computing Inc. Common,2024-04-01,10-K,BF Borgers CPA PC,no
+0001758009,QUBT,Quantum Computing Inc. Common,2024-09-11,10-K/A,BPM LLP,yes
+0001758009,QUBT,Quantum Computing Inc. Common,2025-03-20,10-K,BPM LLP,no
+0001758009,QUBT,Quantum Computing Inc. Common,2026-03-02,10-K,BPM LLP,no
+0000797542,QXL,Quantum X Labs Inc. Common Stock,2022-03-17,10-K,Brightman Almagor Zohar & Co.,no
+0000797542,QXL,Quantum X Labs Inc. Common Stock,2023-03-24,10-K,Brightman Almagor Zohar & Co.,no
+0000797542,QXL,Quantum X Labs Inc. Common Stock,2024-03-25,10-K,Brightman Almagor Zohar & Co,no
+0000797542,QXL,Quantum X Labs Inc. Common Stock,2025-03-21,10-K,Brightman Almagor Zohar & Co.,no
+0000797542,QXL,Quantum X Labs Inc. Common Stock,2026-03-27,10-K,Brightman Almagor Zohar & Co.,no
+0001315098,RBLX,Roblox Corporation,2022-02-25,10-K,DELOITTE & TOUCHE LLP,no
+0001315098,RBLX,Roblox Corporation,2023-02-28,10-K,DELOITTE & TOUCHE LLP,no
+0001315098,RBLX,Roblox Corporation,2024-02-21,10-K,DELOITTE & TOUCHE LLP,no
+0001315098,RBLX,Roblox Corporation,2025-02-18,10-K,DELOITTE & TOUCHE LLP,no
+0001315098,RBLX,Roblox Corporation,2026-02-11,10-K,DELOITTE & TOUCHE LLP,no
+0001943896,RBRK,"Rubrik, Inc.",2025-03-20,10-K,KPMG LLP,no
+0001943896,RBRK,"Rubrik, Inc.",2026-03-19,10-K,KPMG LLP,no
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",2022-07-27,10-K,BF Borgers CPA PC,no
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",2022-08-15,10-K/A,BF Borgers CPA PC,no
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",2023-07-27,10-K,BF Borgers CPA PC,no
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",2024-08-08,10-K,dbbmckennon,yes
+0000748268,RCAT,"Red Cat Holdings, Inc. Common Stock",2026-03-19,10-K,KPMG LLP,yes
+0001720116,RDVT,"Red Violet, Inc. Common Stock",2022-03-09,10-K,GRANT THORNTON LLP,no
+0001720116,RDVT,"Red Violet, Inc. Common Stock",2023-03-08,10-K,GRANT THORNTON LLP,no
+0001720116,RDVT,"Red Violet, Inc. Common Stock",2024-03-07,10-K,GRANT THORNTON LLP,no
+0001720116,RDVT,"Red Violet, Inc. Common Stock",2025-02-27,10-K,GRANT THORNTON LLP,no
+0001720116,RDVT,"Red Violet, Inc. Common Stock",2026-03-04,10-K,GRANT THORNTON LLP,no
+0002077709,ROC,Rank One Computing Corporation Common stock,2026-03-31,10-K,Rosenberg Rich Baker Berman P.A,no
+0001560327,RPD,"Rapid7, Inc. Common Stock",2022-02-24,10-K,KPMG LLP,no
+0001560327,RPD,"Rapid7, Inc. Common Stock",2023-02-24,10-K,KPMG LLP,no
+0001560327,RPD,"Rapid7, Inc. Common Stock",2024-02-26,10-K,KPMG LLP,no
+0001560327,RPD,"Rapid7, Inc. Common Stock",2025-02-28,10-K,KPMG LLP,no
+0001560327,RPD,"Rapid7, Inc. Common Stock",2026-02-19,10-K,KPMG LLP,no
+0001560327,RPD,"Rapid7, Inc. Common Stock",2026-03-16,10-K/A,,no
+0001583708,S,"SentinelOne, Inc.",2022-04-07,10-K,DELOITTE & TOUCHE LLP,no
+0001583708,S,"SentinelOne, Inc.",2023-03-29,10-K,DELOITTE & TOUCHE LLP,no
+0001583708,S,"SentinelOne, Inc.",2024-03-27,10-K,DELOITTE & TOUCHE LLP,no
+0001583708,S,"SentinelOne, Inc.",2025-03-26,10-K,DELOITTE & TOUCHE LLP,no
+0001583708,S,"SentinelOne, Inc.",2026-03-19,10-K,DELOITTE & TOUCHE LLP,no
+0001627857,SAIL,"SailPoint, Inc. Common Stock",2022-02-28,10-K,GRANT THORNTON LLP,no
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,2025-02-11,10-K,PricewaterhouseCoopers LLP,no
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,2025-04-29,10-K/A,,no
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,2026-02-11,10-K,PricewaterhouseCoopers LLP,no
+0001594805,SHOP,Shopify Inc. Class A subordinate voting shares,2026-04-29,10-K/A,,no
+0001774675,SKIL,Skillsoft Corp.,2022-04-18,10-K,Ernst & Young LLP,no
+0001774675,SKIL,Skillsoft Corp.,2022-10-24,10-K/A,,no
+0001774675,SKIL,Skillsoft Corp.,2023-04-14,10-K,Ernst & Young LLP,no
+0001774675,SKIL,Skillsoft Corp.,2024-04-15,10-K,Ernst & Young LLP,no
+0001774675,SKIL,Skillsoft Corp.,2024-05-30,10-K/A,Ernst & Young LLP,no
+0001774675,SKIL,Skillsoft Corp.,2025-04-14,10-K,Ernst & Young LLP,no
+0001774675,SKIL,Skillsoft Corp.,2026-04-07,10-K,Ernst & Young LLP,no
+0000948708,SMSI,Smith Micro Software Inc,2022-03-11,10-K,SingerLewak LLP,no
+0000948708,SMSI,Smith Micro Software Inc,2023-03-23,10-K,SingerLewak LLP,no
+0000948708,SMSI,Smith Micro Software Inc,2024-02-26,10-K,SingerLewak LLP,no
+0000948708,SMSI,Smith Micro Software Inc,2025-03-12,10-K,SingerLewak LLP,no
+0000948708,SMSI,Smith Micro Software Inc,2026-03-05,10-K,SingerLewak LLP,no
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",2023-03-29,10-K,"BDO USA, LLP",no
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",2024-04-01,10-K,"BDO USA, P.C.",no
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",2025-03-26,10-K,"BDO USA, P.C",no
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",2026-03-19,10-K,"BDO USA, P.C.",no
+0001886894,SNAL,"Snail, Inc. Class A Common Stock",2026-03-31,10-K/A,,no
+0001640147,SNOW,Snowflake Inc.,2022-03-30,10-K,PricewaterhouseCoopers LLP,no
+0001640147,SNOW,Snowflake Inc.,2023-03-29,10-K,PricewaterhouseCoopers LLP,no
+0001640147,SNOW,Snowflake Inc.,2024-03-26,10-K,PricewaterhouseCoopers LLP,no
+0001640147,SNOW,Snowflake Inc.,2025-03-21,10-K,PricewaterhouseCoopers LLP,no
+0001640147,SNOW,Snowflake Inc.,2026-03-20,10-K,PricewaterhouseCoopers LLP,no
+0000883241,SNPS,Synopsys Inc,2022-12-12,10-K,KPMG LLP,no
+0000883241,SNPS,Synopsys Inc,2023-12-12,10-K,KPMG LLP,no
+0000883241,SNPS,Synopsys Inc,2024-12-19,10-K,KPMG LLP,no
+0000883241,SNPS,Synopsys Inc,2025-12-22,10-K,KPMG LLP,no
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",2022-03-09,10-K,UHY LLP,no
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",2023-03-28,10-K,Armanino LLP,yes
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",2024-03-01,10-K,PricewaterhouseCoopers LLP,yes
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",2025-03-11,10-K,PricewaterhouseCoopers LLP,no
+0001840856,SOUN,"SoundHound AI, Inc. Class A Common Stock",2026-03-02,10-K,PricewaterhouseCoopers LLP,no
+0001092699,SPSC,"SPS Commerce, Inc.",2022-02-22,10-K,"KPMG, LLP",no
+0001092699,SPSC,"SPS Commerce, Inc.",2023-02-21,10-K,"KPMG, LLP",no
+0001092699,SPSC,"SPS Commerce, Inc.",2024-02-21,10-K,"KPMG, LLP",no
+0001092699,SPSC,"SPS Commerce, Inc.",2025-02-19,10-K,"KPMG, LLP",no
+0001092699,SPSC,"SPS Commerce, Inc.",2026-02-19,10-K,"KPMG, LLP",no
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",2022-02-23,10-K,PricewaterhouseCoopers LLP,no
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",2023-02-22,10-K,PricewaterhouseCoopers LLP,no
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",2024-02-23,10-K,PricewaterhouseCoopers LLP,no
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",2025-02-26,10-K,PricewaterhouseCoopers LLP,no
+0001517375,SPT,"Sprout Social, Inc Class A Common Stock",2026-02-27,10-K,PricewaterhouseCoopers LLP,no
+0001402436,SSNC,SS&C Technologies Inc,2022-02-25,10-K,PricewaterhouseCoopers LLP,no
+0001402436,SSNC,SS&C Technologies Inc,2023-02-28,10-K,PricewaterhouseCoopers LLP,no
+0001402436,SSNC,SS&C Technologies Inc,2024-02-28,10-K,PricewaterhouseCoopers LLP,no
+0001402436,SSNC,SS&C Technologies Inc,2025-03-03,10-K,PricewaterhouseCoopers LLP,no
+0001402436,SSNC,SS&C Technologies Inc,2025-03-04,10-K/A,PricewaterhouseCoopers LLP,no
+0001402436,SSNC,SS&C Technologies Inc,2026-02-26,10-K,PricewaterhouseCoopers LLP,no
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",2022-03-29,10-K,"Baker Tilly US, LLP",no
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",2023-03-14,10-K,"Baker Tilly US, LLP",no
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",2024-04-01,10-K,"Baker Tilly US, LLP",no
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",2025-03-31,10-K,"Baker Tilly US, LLP",no
+0001351636,SSTI,"SoundThinking, Inc. Common Stock",2026-03-30,10-K,"Baker Tilly US, LLP",no
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",2025-03-05,10-K,Moss Adams LLP,no
+0001943289,SVCO,"Silvaco Group, Inc. Common Stock",2026-03-12,10-K,"Baker Tilly US, LLP",yes
+0000816761,TDC,TERADATA CORPORATION,2022-02-25,10-K,PricewaterhouseCoopers LLP,no
+0000816761,TDC,TERADATA CORPORATION,2023-02-24,10-K,PricewaterhouseCoopers LLP,no
+0000816761,TDC,TERADATA CORPORATION,2024-02-23,10-K,PricewaterhouseCoopers LLP,no
+0000816761,TDC,TERADATA CORPORATION,2025-02-21,10-K,PricewaterhouseCoopers LLP,no
+0000816761,TDC,TERADATA CORPORATION,2026-02-27,10-K,PricewaterhouseCoopers LLP,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,2023-08-18,10-K,Ernst & Young LLP,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,2024-08-16,10-K,Ernst & Young LLP,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,2025-08-15,10-K,Ernst & Young LLP,no
+0001650372,TEAM,Atlassian Corporation Class A Common Stock,2026-08-14,10-K,Ernst & Young LLP,no
+0001660280,TENB,"Tenable Holdings, Inc.",2022-02-25,10-K,Ernst & Young LLP,no
+0001660280,TENB,"Tenable Holdings, Inc.",2023-02-24,10-K,Ernst & Young LLP,no
+0001660280,TENB,"Tenable Holdings, Inc.",2024-02-28,10-K,Ernst & Young LLP,no
+0001660280,TENB,"Tenable Holdings, Inc.",2025-02-24,10-K,Ernst & Young LLP,no
+0001660280,TENB,"Tenable Holdings, Inc.",2026-02-27,10-K,Ernst & Young LLP,no
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",2025-04-02,10-K,PricewaterhouseCoopers LLP,no
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",2026-03-25,10-K,PricewaterhouseCoopers LLP,no
+0001638826,TTAN,"ServiceTitan, Inc. Class A Common Stock",2026-09-08,10-K/A,,no
+0000946581,TTWO,Take-Two Interactive Software Inc,2022-05-17,10-K,Ernst & Young LLP,no
+0000946581,TTWO,Take-Two Interactive Software Inc,2023-05-26,10-K,Ernst & Young LLP,no
+0000946581,TTWO,Take-Two Interactive Software Inc,2024-05-22,10-K,Ernst & Young LLP,no
+0000946581,TTWO,Take-Two Interactive Software Inc,2025-05-20,10-K,Ernst & Young LLP,no
+0000946581,TTWO,Take-Two Interactive Software Inc,2026-05-22,10-K,Ernst & Young LLP,no
+0001447669,TWLO,Twilio Inc.,2022-02-22,10-K,KPMG LLP,no
+0001447669,TWLO,Twilio Inc.,2022-04-22,10-K/A,KPMG LLP,no
+0001447669,TWLO,Twilio Inc.,2023-02-27,10-K,KPMG LLP,no
+0001447669,TWLO,Twilio Inc.,2024-02-27,10-K,KPMG LLP,no
+0001447669,TWLO,Twilio Inc.,2025-02-26,10-K,KPMG LLP,no
+0001447669,TWLO,Twilio Inc.,2026-02-24,10-K,KPMG LLP,no
+0000860731,TYL,"Tyler Technologies, Inc.",2022-02-23,10-K,ERNST & YOUNG LLP,no
+0000860731,TYL,"Tyler Technologies, Inc.",2023-02-22,10-K,ERNST & YOUNG LLP,no
+0000860731,TYL,"Tyler Technologies, Inc.",2024-02-21,10-K,Ernst & Young LLP,no
+0000860731,TYL,"Tyler Technologies, Inc.",2024-02-27,10-K/A,Ernst & Young LLP,no
+0000860731,TYL,"Tyler Technologies, Inc.",2025-02-19,10-K,Ernst & Young LLP,no
+0000860731,TYL,"Tyler Technologies, Inc.",2026-02-18,10-K,Ernst & Young LLP,no
+0001810806,U,Unity Software Inc.,2022-02-22,10-K,Ernst & Young LLP,no
+0001810806,U,Unity Software Inc.,2023-02-27,10-K,Ernst & Young LLP,no
+0001810806,U,Unity Software Inc.,2024-02-29,10-K,Ernst & Young LLP,no
+0001810806,U,Unity Software Inc.,2025-02-21,10-K,Ernst & Young LLP,no
+0001810806,U,Unity Software Inc.,2026-02-11,10-K,Ernst & Young LLP,no
+0001505155,UPLD,"Upland Software, Inc.",2022-02-24,10-K,Ernst & Young LLP,no
+0001505155,UPLD,"Upland Software, Inc.",2023-03-01,10-K,Ernst & Young LLP,no
+0001505155,UPLD,"Upland Software, Inc.",2024-02-22,10-K,Ernst & Young LLP,no
+0001505155,UPLD,"Upland Software, Inc.",2024-11-07,10-K/A,Ernst & Young LLP,no
+0001505155,UPLD,"Upland Software, Inc.",2025-03-12,10-K,Ernst & Young LLP,no
+0001505155,UPLD,"Upland Software, Inc.",2025-07-31,10-K/A,,no
+0001505155,UPLD,"Upland Software, Inc.",2026-03-03,10-K,Ernst & Young LLP,no
+0001393052,VEEV,Veeva Systems Inc.,2022-03-30,10-K,KPMG LLP,no
+0001393052,VEEV,Veeva Systems Inc.,2023-03-30,10-K,KPMG LLP,no
+0001393052,VEEV,Veeva Systems Inc.,2024-03-25,10-K,KPMG LLP,no
+0001393052,VEEV,Veeva Systems Inc.,2025-03-24,10-K,KPMG LLP,no
+0001393052,VEEV,Veeva Systems Inc.,2026-03-20,10-K,KPMG LLP,no
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",2022-03-16,10-K,Crowe LLP,no
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",2023-03-10,10-K,Crowe LLP,no
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",2024-02-29,10-K,Crowe LLP,no
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",2025-02-27,10-K,Crowe LLP,no
+0001806837,VERX,"Vertex, Inc. Class A Common Stock",2026-02-24,10-K,Crowe LLP,no
+0001603015,VIA,"Via Transportation, Inc.",2026-03-06,10-K,Deloitte & Touche LLP,no
+0001361113,VRNS,"Varonis Systems, Inc.",2022-02-08,10-K,KOST FORER GABBAY & KASIERER,no
+0001361113,VRNS,"Varonis Systems, Inc.",2023-02-07,10-K,KOST FORER GABBAY & KASIERER,no
+0001361113,VRNS,"Varonis Systems, Inc.",2024-02-06,10-K,KOST FORER GABBAY & KASIERER,no
+0001361113,VRNS,"Varonis Systems, Inc.",2025-02-06,10-K,KOST FORER GABBAY & KASIERER,no
+0001361113,VRNS,"Varonis Systems, Inc.",2026-02-04,10-K,KOST FORER GABBAY & KASIERER,no
+0002038439,VWAV,"VisionWave Holdings, Inc. Common Stock",2025-12-31,10-K,RBSM LLP,no
+0001609151,WEAV,"Weave Communications, Inc.",2022-03-23,10-K,PricewaterhouseCoopers LLP,no
+0001609151,WEAV,"Weave Communications, Inc.",2023-03-16,10-K,PricewaterhouseCoopers LLP,no
+0001609151,WEAV,"Weave Communications, Inc.",2024-03-13,10-K,PricewaterhouseCoopers LLP,no
+0001609151,WEAV,"Weave Communications, Inc.",2025-03-13,10-K,PricewaterhouseCoopers LLP,no
+0001609151,WEAV,"Weave Communications, Inc.",2026-03-05,10-K,PricewaterhouseCoopers LLP,no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2022-02-28,10-K,"Causey Demgen & Moore, P.C.",no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2022-04-05,10-K/A,,no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2023-02-23,10-K,"Causey Demgen & Moore, P.C",no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2024-02-15,10-K,"Causey Demgen & Moore, P.C.",no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2025-02-20,10-K,Haynie & Company,yes
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2025-04-11,10-K/A,,no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2026-02-26,10-K,Haynie,no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2026-04-06,10-K/A,,no
+0001360565,WFCF,"Where Food Comes From, Inc. Common Stock",2026-09-09,10-K/A,,no
+0001445305,WK,Workiva Inc.,2022-02-22,10-K,Ernst & Young LLP,no
+0001445305,WK,Workiva Inc.,2023-02-21,10-K,Ernst & Young LLP,no
+0001445305,WK,Workiva Inc.,2024-02-20,10-K,Ernst & Young LLP,no
+0001445305,WK,Workiva Inc.,2025-02-25,10-K,Ernst & Young LLP,no
+0001445305,WK,Workiva Inc.,2026-02-19,10-K,Ernst & Young LLP,no
+0001788999,XPER,Xperi Inc,2023-03-06,10-K,PricewaterhouseCoopers LLP,no
+0001788999,XPER,Xperi Inc,2024-03-01,10-K,PricewaterhouseCoopers LLP,no
+0001788999,XPER,Xperi Inc,2025-02-27,10-K,Deloitte & Touche LLP,yes
+0001788999,XPER,Xperi Inc,2026-02-26,10-K,Deloitte & Touche LLP,no
+0001512673,XYZ,"Block, Inc.",2022-02-24,10-K,Ernst & Young LLP,no
+0001512673,XYZ,"Block, Inc.",2023-02-23,10-K,Ernst & Young LLP,no
+0001512673,XYZ,"Block, Inc.",2024-02-22,10-K,Ernst & Young LLP,no
+0001512673,XYZ,"Block, Inc.",2025-02-24,10-K,Ernst & Young LLP,no
+0001512673,XYZ,"Block, Inc.",2026-02-26,10-K,Ernst & Young LLP,no
+0001873951,XZO,"Exzeo Group, Inc.",2026-02-26,10-K,"Forvis Mazars, LLP",no
+0001856314,YOU,"Clear Secure, Inc.",2022-03-30,10-K,Ernst & Young LLP,no
+0001856314,YOU,"Clear Secure, Inc.",2023-03-02,10-K,Ernst & Young LLP,no
+0001856314,YOU,"Clear Secure, Inc.",2024-02-28,10-K,Ernst & Young LLP,no
+0001856314,YOU,"Clear Secure, Inc.",2025-02-26,10-K,Ernst & Young LLP,no
+0001856314,YOU,"Clear Secure, Inc.",2026-02-25,10-K,Ernst & Young LLP,no
+0001667313,ZDGE,"Zedge, Inc.",2022-11-14,10-K,Mayer Hoffman McCann,no
+0001667313,ZDGE,"Zedge, Inc.",2023-10-30,10-K,Friedman LLP,yes
+0001667313,ZDGE,"Zedge, Inc.",2024-10-29,10-K,UHY LLP,yes
+0001667313,ZDGE,"Zedge, Inc.",2025-10-28,10-K,UHY LLP,no
+0001851003,ZETA,Zeta Global Holdings Corp.,2022-02-25,10-K,Deloitte & Touche LLP,no
+0001851003,ZETA,Zeta Global Holdings Corp.,2023-02-24,10-K,Deloitte & Touche LLP,no
+0001851003,ZETA,Zeta Global Holdings Corp.,2024-02-28,10-K,Deloitte & Touche LLP,no
+0001851003,ZETA,Zeta Global Holdings Corp.,2025-02-26,10-K,Deloitte & Touche LLP,no
+0001851003,ZETA,Zeta Global Holdings Corp.,2026-02-25,10-K,Deloitte & Touche LLP,no
