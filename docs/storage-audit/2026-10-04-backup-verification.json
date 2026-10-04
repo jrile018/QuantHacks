@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-04T08:41:56.3668500Z",
+  "snapshot_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+  "snapshot_files": 29102,
+  "snapshot_bytes": 5107124230,
+  "original_base": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+  "git_lfs_fsck": "OK",
+  "git_lfs_files": 7054,
+  "git_remote": "https://github.com/jrile018/QuantHacks.git",
+  "branch": "riley",
+  "verified_remote_head": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+  "archive": "home-pc:/home/john-riley/quanthaxs-archives/20261004-riley/workspace.tar.gz",
+  "archive_sha256": "f184b7a1d49307456de182c946742c00d4995c8eec96735b039ad5e5f2eb3686",
+  "manifest": "home-pc:/home/john-riley/quanthaxs-archives/20261004-riley/backup-file-manifest.jsonl",
+  "manifest_sha256": "f6cf757623ac38daca31825b0ed788d0b8a23feb4e293ab346bbf3ab1b5a3674",
+  "exclusions": [
+    ".env",
+    ".git administrative directories",
+    "data/processed/sun_biz_aggregator_review/src/extractors/auto_label_ucc.py"
+  ],
+  "local_working_files_preserved": true
+}

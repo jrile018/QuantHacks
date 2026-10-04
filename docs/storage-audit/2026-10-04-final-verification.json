@@ -1,0 +1,26 @@
+{
+  "verified_at_utc": "2026-10-04T08:50:41.829439+00:00",
+  "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+  "initial_removed_files": 6948,
+  "final_pass_removed_files": 42,
+  "total_removed_files": 6990,
+  "total_removed_logical_bytes": 3993178095,
+  "backup_reconciliation_mismatches": [],
+  "remaining_protected_paths": 1185,
+  "unexpected_missing_protected_paths": [],
+  "final_pass_removed_paths_present": [],
+  "initial_pass_cache_paths_present_now": [
+    "src/__pycache__/__init__.cpython-311.pyc",
+    "src/__pycache__/config.cpython-311.pyc",
+    "src/__pycache__/data.cpython-311.pyc",
+    "src/__pycache__/document_language.cpython-311.pyc",
+    "src/__pycache__/document_manifest.cpython-311.pyc",
+    "src/__pycache__/market_quote_collector.cpython-311.pyc",
+    "src/__pycache__/reit_acquisition.cpython-311.pyc"
+  ],
+  "disk_free_bytes": 3689390080,
+  "skipped_changed_sqlite_exists": true,
+  "credentials_retained_locally_and_excluded_from_public_snapshot": true,
+  "initial_journal_sha256": "17dc627fa04ce6bd19cb642140f0de61019c523f0484409f8ea392f07468caa5",
+  "final_journal_sha256": "d181ce266670710c8b9848888b4ecf077a4fd8b2fd1bee50c00ecdd6653f1be2"
+}

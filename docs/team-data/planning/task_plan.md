@@ -27,11 +27,25 @@ The new wording-only-first planning request is recorded in pilot-handoff.md with
 Continue this existing owner-specific planning workflow. The completed source-intake release above remains complete. This review refers to the coordinator decision register and Post Benchmark's canonical plan; it does not replace either owner's plan.
 
 1. Restore current plans, live chat inventory and human choices; distinguish older broad scope from the wording-first priority. DONE.
-2. Independently review canonical acceptance, producer/industry packets, and numerical/inference/hardware receipts. IN PROGRESS; three read-only helpers, no new jobs.
-3. Reconcile local implementation, delivered packets, accepted consumer results and merged GitHub state; identify concrete missing gates. IN PROGRESS.
-4. Grill only unsettled decisions, preserving existing answers. Human settled: Post chooses/freezes the feasible recipe; equity longs and shorts, equal positions, maximum100% gross exposure with no leverage; idle cash/outside yield0%. Financial/market qualification and short accounting remain canonical gates.
-5. Save one bounded audit and ordered owner actions, then deliver a scoped handoff through the existing coordinator where human authorization supports it. PENDING.
+2. Independently review canonical acceptance, producer/industry packets, and numerical/inference/hardware receipts. DONE; three read-only audits and focused semantic review, no new jobs.
+3. Reconcile local implementation, delivered packets, accepted consumer results and merged GitHub state; identify concrete missing gates. DONE; qualified economic inputs remain insufficient.
+4. Grill only unsettled decisions, preserving existing answers. DONE: Q4 resolved on 2026-10-04, wait for qualified inputs before reporting performance. Human settled: Post chooses/freezes the feasible recipe; equity longs and shorts, equal positions, maximum100% gross exposure with no leverage; idle cash/outside yield0%. Financial/market qualification and short accounting remain canonical gates.
+5. Save one bounded audit and ordered owner actions, then deliver a scoped handoff through the existing coordinator where human authorization supports it. DONE: restored locally, file/link/hash verification passed, independent wording review corrected, and pinned handoff delivered to the coordinator, Post and riley publishing owner. Human Q4 is now resolved in checkpoint 4.
 
 Sources: docs/coordination/first-pilot-decision-register.md; docs/coordination/architecture-contract.md; docs/research/2026-10-04-alpha-pilot-and-lean-review.md; canonical managed checkout and exact acceptance receipts. Sharpe is already preparing the human-requested gap chat; do not create a competing gap owner here.
 
 Resource checkpoint: C: free 76,746,752 bytes in this review. Bulk artifacts stay remote; preserve other owners' files and active jobs.
+
+
+Continuation2026-10-04: local capacity recovered to310,816,768 bytes. Audit restored at ../project-review-2026-10-04.md; small owned files only. Post's earnings-release/next-session recipe is owner-reported, no new accepted economic result. New riley/storage chat retains publishing/cleanup ownership. Q4 was subsequently resolved by the human: wait for qualified inputs before reporting performance. GSD progress uses the existing owned-plan fallback; no second root/phase plan.
+
+## Parallel dependency closure — direct authorization 2026-10-04
+
+Human permits additional needed data and desktop SSH/GPU OCR if needed, plus independent unfinished work in parallel. Qualified inputs before performance remains fixed. Continue this existing owned workflow.
+
+1. Check live owners/jobs and preserve their source/replay/storage scopes. DONE: Post adapter/NAV active, Benchmark February scoring active, Industry retained two2024 originals remote-verified, GPU owner previously idle.
+2. Resume the existing GPU owner for bounded runtime/OCR readiness and actual OCR only on a needed retained image/PDF; continue Industry/Benchmark/Post independent work. DISPATCHED; results not yet verified.
+3. Execute a separate bounded free historical-capture proof search for the exact AMT2024 release version on home-pc. IN PROGRESS: root worker owns only docs/team-data/public-bound-proof-20261004/ and public-bound-proof-2026-10-04.md; no duplicate originals/scoring/market job.
+4. Verify compact job/output receipts, review proposed-public-bound versus accepted state, and deliver actual results to existing owners. PENDING.
+
+Heavy work: home-pc/Tailscale detached tmux/shared lock,2threads/4GiB, unique scratch/session/logs; bulk remote. Existing jobs and riley/storage operations retained. No source/availability flag is qualified by OCR alone; exact-version timing, model, execution/cost/short/account gates remain canonical. Free needed source work is authorized; existing paid budget/reservation, live capital and protected-test gates remain. Optional numerical GPU expansion does not displace source OCR. Record any concrete blocked boundary and prepared remedy without repeated unchanged checks.

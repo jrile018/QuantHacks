@@ -1,0 +1,191 @@
+{
+  "schema_version": "data-date-calendar-reconciliation-v1",
+  "observed_at_utc": "2026-10-04T08:12:11.884381+00:00",
+  "evidence_class": "inspected artifacts and fresh actual date-set comparison",
+  "priority": "P1 financial-grid; structural shared-calendar check only",
+  "input_files": [
+    {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\financial-source-completion\\stage-v7\\inputs\\historical-matrix\\matrix.csv",
+      "bytes": 265657,
+      "sha256": "305ad3708b1423520bf4f02289f37d5048873f90df22093e2ae11b7edf6f5300"
+    },
+    {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\remote-v3\\results\\integrated-v3\\sessions.json",
+      "bytes": 451797,
+      "sha256": "761acab4e6531c1197345b335f018388e72fec9a3f685e77cd44b9b9860548ab"
+    }
+  ],
+  "financial_rows": 2092,
+  "financial_unique_dates": 523,
+  "per_issuer_dates": {
+    "0001053507": 523,
+    "0001061630": 523,
+    "0001423689": 523,
+    "0001500217": 523
+  },
+  "issuer_sets_equal": true,
+  "reference_sessions": 502,
+  "session_year_counts": {
+    "2024": 252,
+    "2025": 250
+  },
+  "issuer_session_rows": 2008,
+  "difference_rows": 84,
+  "financial_dates_absent_calendar": [
+    "2024-01-01",
+    "2024-01-15",
+    "2024-02-19",
+    "2024-03-29",
+    "2024-05-27",
+    "2024-06-19",
+    "2024-07-04",
+    "2024-09-02",
+    "2024-11-28",
+    "2024-12-25",
+    "2025-01-01",
+    "2025-01-09",
+    "2025-01-20",
+    "2025-02-17",
+    "2025-04-18",
+    "2025-05-26",
+    "2025-06-19",
+    "2025-07-04",
+    "2025-09-01",
+    "2025-11-27",
+    "2025-12-25"
+  ],
+  "calendar_dates_absent_financial": [],
+  "extra_date_rows": [
+    {
+      "date": "2024-01-01",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-01-15",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-02-19",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-03-29",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-05-27",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-06-19",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-07-04",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-09-02",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-11-28",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2024-12-25",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-01-01",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-01-09",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-01-20",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-02-17",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-04-18",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-05-26",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-06-19",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-07-04",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-09-01",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-11-27",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    },
+    {
+      "date": "2025-12-25",
+      "issuer_rows": 4,
+      "classification": "financial weekday absent canonical XNYS session"
+    }
+  ],
+  "early_close_dates": [
+    "2024-07-03",
+    "2024-11-29",
+    "2024-12-24",
+    "2025-07-03",
+    "2025-11-28",
+    "2025-12-24"
+  ],
+  "calendar_sources": {
+    "regular": "https://ir.theice.com/press/news-details/2022/NYSE-Group-Announces-2023-2024-and-2025-Holiday-and-Early-Closings-Calendar/default.aspx",
+    "exceptions": [
+      {
+        "url": "https://www.nyse.com/publicdocs/nyse/markets/american-options/rule-interpretations/2025/National_Day_of_Mourning_20250102.pdf",
+        "published_date": "2025-01-02",
+        "role": "2025-01-09 exceptional closure"
+      },
+      {
+        "url": "https://www.nyse.com/trade/hours-calendars",
+        "role": "regular cash equity core hours"
+      }
+    ]
+  },
+  "calendar_use": "retrospective_realized_horizon_only",
+  "financial_decision_clock": "21:00:00Z diagnostic_no_outcome scaffold; not issuer1530 or financial public time",
+  "economic_price_missing_claim": false,
+  "no_zero_fill": true
+}

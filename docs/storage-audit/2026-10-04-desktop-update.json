@@ -1,0 +1,14 @@
+{
+  "store_inventory_verified_at_utc": "2026-10-04T08:51:10.5593020Z",
+  "package_name": "OpenAI.Codex",
+  "package_version": "26.930.2377.0",
+  "updater_result_observed_in_this_session": {
+    "channel": "prod",
+    "build": 12776,
+    "installed_version": "26.930.21537",
+    "status": "restart_required"
+  },
+  "earlier_agent_store_upgrade_check": "No available upgrade found for 9PLM9XGG6VKS",
+  "runtime_restart_performed": false,
+  "remaining_action": "Use the desktop app normal restart flow to activate the installed update; other project chats are running"
+}

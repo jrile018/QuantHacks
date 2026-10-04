@@ -2,46 +2,843 @@
   "schema_version": "post-evidence-audit-v1",
   "observed_at_utc": "2026-10-04T07:58:35Z",
   "canonical_root": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
-  "current_commit": null,
-  "audit_status": "partial_inspected_metadata_hash_recomputation_blocked_by_disk",
+  "current_commit": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+  "audit_status": "targeted_metadata_and_eight_retained_receipt_hashes_verified",
   "runtime_activity": "No new jobs, suites, replay, protected test or producer execution",
   "readiness": "No accepted economic readiness established by this audit",
   "inventory": [
-    {"owner":"Post/Benchmark", "canonical_path":"data/processed/8k_validation/wording_inputs_v2/manifest.json", "purpose_arm":"wording_input", "schema_code_version":"manifest schema inspected; source/extraction version remains in per-document transcripts", "input_output_manifest_hash_commit":{"declared_manifest_sha256":"0a4668449f6950738ba03d66e2828bcd6bb258def462c06a76dcab14adb216e2","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact", "unit_grain":"15 documents /8 accessions /4 CIKs /8 primary8Ks /7 exhibits", "scope_eligibility":"2023 accession cohort; no2024 accession; unqualified", "time_fields":{"sec_accepted_at_utc":{"meaning":"administrative SEC acceptance","min":"2023-01-05T21:40:33Z","max":"2023-03-01T11:38:13Z","timezone":"UTC","precision":"second","null_sentinel":"null for7 exhibits","evidence":"manifest primary rows"},"earliest_public_at_utc":{"meaning":"first public availability","min":null,"max":null,"timezone":null,"precision":null,"null_sentinel":"null unknown","evidence":"manifest"},"historical_receipt_at_utc":{"meaning":"actual historical receipt","min":null,"max":null,"timezone":null,"precision":null,"null_sentinel":"null unknown","evidence":"manifest"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/remote-v3/results/integrated-v3/sessions.json", "purpose_arm":"shared_reference_calendar", "schema_code_version":"XNYS-core/nyse-2022-notice-plus-2025-mourning-v1", "input_output_manifest_hash_commit":{"declared_sha256":"761acab4e6531c1197345b335f018388e72fec9a3f685e77cd44b9b9860548ab","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact_and_fresh_metadata_set_comparison", "unit_grain":"502 unique reference sessions", "scope_eligibility":"retrospective realized horizon only", "time_fields":{"session_id":{"meaning":"local exchange date","min":"2024-01-02","max":"2025-12-31","timezone":"America/New_York","precision":"day","null_sentinel":"none observed","evidence":"actual502 rows"},"open_at_utc_close_at_utc":{"meaning":"scheduled open/actual session close","min":"2024-01-02T14:30:00+00:00","max":"2025-12-31T21:00:00+00:00","timezone":"UTC from America/New_York","precision":"second","null_sentinel":"none observed","evidence":"DST shifts, six early closes, mourning exclusion inspected"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/remote-v3/results/integrated-v3/decisions.json", "purpose_arm":"document_entity_decisions", "schema_code_version":"protocol_version1", "input_output_manifest_hash_commit":{"sha256":null,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact_and_fresh_metadata_set_comparison", "unit_grain":"2008 issuer/session decisions,4 identical502-date sets", "scope_eligibility":"document-only, not qualified tradable observations", "time_fields":{"decision_at_utc":{"meaning":"information cutoff","min":null,"max":null,"timezone":"UTC","precision":"second","null_sentinel":"none observed","evidence":"zero decisions later than their own session close; exact early-close local times unprinted"},"outcome_end_utc":{"meaning":"next session horizon endpoint","min":null,"max":null,"timezone":"UTC","precision":"second","null_sentinel":"unknown final-horizon behavior","evidence":"sample2024-01-02 decision endpoint2024-01-03T21:00:00Z"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/publication-replay-v3/lane-report.json", "purpose_arm":"conditional_publication_replay", "schema_code_version":"publication-replay-lane-v1/SEC_assigned_filing_day_end_normal_dissemination_v1", "input_output_manifest_hash_commit":{"publication_replay_declared_sha256":"a7a5ee99a7d8af28d16767c1cdbe68fe3c1d19a4dc072713c8db1fac65084c23","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact", "unit_grain":"22sources/20conditional/2quarantined;13conditionalwordingdocs/2248fragments", "scope_eligibility":"zero historically qualified wording features; no observed ready or first-public/monitoring proof", "time_fields":{"created_at_utc":{"meaning":"artifact generation","min":"2026-10-04T03:36:36.274055+00:00","max":"2026-10-04T03:36:36.274055+00:00","timezone":"UTC","precision":"microsecond","null_sentinel":"none","evidence":"lane report"},"conditional_source_assumed_available_at_utc":{"meaning":"assumed assigned-filing-day-end plus60s","min":null,"max":null,"timezone":"UTC","precision":"second","null_sentinel":"null quarantined","evidence":"wording-source-join; assumption, not verified public bound"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/wording_results_v2/results/wording-v2/run-report.json", "purpose_arm":"frozen_teacher_wording", "schema_code_version":"ProsusAI/finbert@db38d3727cbaed87c9aed72df7b3519e2ba5cca1", "input_output_manifest_hash_commit":{"declared_report_sha256":"9d005dfb3d71175bcf95bd0b2180a92c6a4c1a7dc4b04a09aedd25c7ef58ca9b","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact plus retained owner totals", "unit_grain":"15docs;2391fragments;0failed;1truncated", "scope_eligibility":"scored teacher outputs, historical model cutoff/version unqualified", "time_fields":{"completed_at_utc":{"meaning":"actual model run completion","min":"2026-10-04T02:22:47.209449+00:00","max":"2026-10-04T02:22:47.209449+00:00","timezone":"UTC","precision":"microsecond","null_sentinel":"none","evidence":"runreport"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/stock_bars_2023_2025/collection-report.json", "purpose_arm":"conditional_equity_price_diagnostic", "schema_code_version":"Massive unadjusted daily bars; collector SHAff9ccfa86e729724180acc1ff7c703fcca3b3462770ae51a0cc29ff570c7d9da", "input_output_manifest_hash_commit":{"per_security_source_hashes":"retained in collectionreport","commit":null,"recomputed":false}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact", "unit_grain":"3008bars=752per4tickers", "scope_eligibility":"not qualified1530features or execution; no complete historical availability", "time_fields":{"bar_dates":{"meaning":"daily market candidate dates","min":"2023-01-03","max":"2025-12-31","timezone":"provider daily clock semantics require qualification","precision":"day","null_sentinel":"none reported","evidence":"collectionreport"},"produced_at_utc":{"meaning":"processing generation","min":"2026-10-04T01:31:35.633740+00:00","max":"2026-10-04T01:31:35.633740+00:00","timezone":"UTC","precision":"microsecond","null_sentinel":"none","evidence":"collectionreport"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/conditional-diagnostic-run-v2/stage/prepared/recipe.json", "purpose_arm":"conditional_raw_close_forecast", "schema_code_version":"conditional-equity-diagnostic-recipe-v1", "input_output_manifest_hash_commit":{"freeze_declared_recipe_sha256":"6754f5d6795273688241c67cbaaeb9ea7bb4aecb983d1e6a88c46fe1b2e11480","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact", "unit_grain":"1008opportunities/920preparedrows;retained752predictions188dates4stocks", "scope_eligibility":"2024development only; no text/dividends/execution; no model selection", "time_fields":{"fold_intervals":{"meaning":"separate Q1trainQ2validation,Q2trainQ3validation,Q3trainQ4validation","min":"2024-01-01T00:00:00Z","max":"2025-01-01T00:00:00Z","timezone":"UTC","precision":"second","null_sentinel":"none","evidence":"recipe"}}},
-    {"owner":"Post", "canonical_path":"configs/wording_equity_pilot-v1.json", "purpose_arm":"first_wording_equity_protocol", "schema_code_version":"wording-equity-pilot-protocol-v1", "input_output_manifest_hash_commit":{"declared_sha256":"4828922c88a423c41326578b715b1feae59bb451d86eced97dc363875a1095d9","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_artifact", "unit_grain":"one linked Item2.02 exhibit per accession; equal-dollar eligible position/account-day", "scope_eligibility":"qualified_only; USD1m,longshort,<=100%gross,zeroidlecash; current economic chain pending", "time_fields":{"frozen_at_utc":{"meaning":"policy freeze","min":"2026-10-04T07:48:23.407632+00:00","max":"2026-10-04T07:48:23.407632+00:00","timezone":"UTC","precision":"microsecond","null_sentinel":"none","evidence":"protocol"},"allowed_event_window":{"meaning":"development cohort only","min":"2024-01-01","max":"2024-12-31","timezone":"reference exchange sessions","precision":"day","null_sentinel":"missing source evidence excluded","evidence":"date_from/protected_from"},"entry_exit":{"meaning":"first qualifying open+60s to actualclose-60s","min":null,"max":null,"timezone":"UTC reference clock","precision":"second","null_sentinel":"unknown/unqualified/no-fill retained","evidence":"protocol; no current acceptedfills or netledger inspected"}}},
-    {"owner":"Post", "canonical_path":"data/processed/8k_validation/native-v7-acceptance-v1/collection-verification-final-v1.json", "purpose_arm":"P1_native_descriptive_delivery", "schema_code_version":"native-v7-final-collection-verification-v1", "input_output_manifest_hash_commit":{"declared_sha256":"2c63d5f3a35a66e5b692855b8bcd123db94c09c25f575f5acd44fe7ed93bd553","run_sha256":"808da15b3d7c90a8a9f21255025647bd3cac4d54545c36d67e74947f6ff2942f","regression_log_sha256":"15f8458de46d5ca8a630b3b8ed36a1af73b2fa9024322d955957e05de715cf8a","source_manifest_sha256":"3850d35b2ed9eaafb57869a6232791cc80cbb125851da78d2fb259d261213ead","recomputed":false,"commit":null}, "observed_at":"2026-10-04T07:58:35Z", "evidence_class":"inspected_runtime_receipt_contents; independent_hash_recheck_pending", "unit_grain":"690unittests/196frozenfiles/8receipts/237346bytes;3descriptivegroups/4nodes/1state/0eligibleobservations", "scope_eligibility":"descriptive only; no economic gate; disabled benchmark_native_as_filed namespace", "time_fields":{"verified_at_utc":{"meaning":"collection verification time","min":"2026-10-04T07:19:19.208151+00:00","max":"2026-10-04T07:19:19.208151+00:00","timezone":"UTC","precision":"microsecond","null_sentinel":"none","evidence":"receipt"},"finished_at_utc":{"meaning":"actual remote gate completion","min":"2026-10-04T07:08:15.952644+00:00","max":"2026-10-04T07:08:15.952644+00:00","timezone":"UTC","precision":"microsecond","null_sentinel":"none","evidence":"collectedfinalrun"},"public_first_public":{"meaning":"historical availability","min":null,"max":null,"timezone":null,"precision":null,"null_sentinel":"unknown","evidence":"finalcapsule preserves unknown"}}}
+    {
+      "owner": "Post/Benchmark",
+      "canonical_path": "data/processed/8k_validation/wording_inputs_v2/manifest.json",
+      "purpose_arm": "wording_input",
+      "schema_code_version": "manifest schema inspected; source/extraction version remains in per-document transcripts",
+      "input_output_manifest_hash_commit": {
+        "declared_manifest_sha256": "0a4668449f6950738ba03d66e2828bcd6bb258def462c06a76dcab14adb216e2",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact",
+      "unit_grain": "15 documents /8 accessions /4 CIKs /8 primary8Ks /7 exhibits",
+      "scope_eligibility": "2023 accession cohort; no2024 accession; unqualified",
+      "time_fields": {
+        "sec_accepted_at_utc": {
+          "meaning": "administrative SEC acceptance",
+          "min": "2023-01-05T21:40:33Z",
+          "max": "2023-03-01T11:38:13Z",
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "null for7 exhibits",
+          "evidence": "manifest primary rows"
+        },
+        "earliest_public_at_utc": {
+          "meaning": "first public availability",
+          "min": null,
+          "max": null,
+          "timezone": null,
+          "precision": null,
+          "null_sentinel": "null unknown",
+          "evidence": "manifest"
+        },
+        "historical_receipt_at_utc": {
+          "meaning": "actual historical receipt",
+          "min": null,
+          "max": null,
+          "timezone": null,
+          "precision": null,
+          "null_sentinel": "null unknown",
+          "evidence": "manifest"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/remote-v3/results/integrated-v3/sessions.json",
+      "purpose_arm": "shared_reference_calendar",
+      "schema_code_version": "XNYS-core/nyse-2022-notice-plus-2025-mourning-v1",
+      "input_output_manifest_hash_commit": {
+        "declared_sha256": "761acab4e6531c1197345b335f018388e72fec9a3f685e77cd44b9b9860548ab",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact_and_fresh_metadata_set_comparison",
+      "unit_grain": "502 unique reference sessions",
+      "scope_eligibility": "retrospective realized horizon only",
+      "time_fields": {
+        "session_id": {
+          "meaning": "local exchange date",
+          "min": "2024-01-02",
+          "max": "2025-12-31",
+          "timezone": "America/New_York",
+          "precision": "day",
+          "null_sentinel": "none observed",
+          "evidence": "actual502 rows"
+        },
+        "open_at_utc_close_at_utc": {
+          "meaning": "scheduled open/actual session close",
+          "min": "2024-01-02T14:30:00+00:00",
+          "max": "2025-12-31T21:00:00+00:00",
+          "timezone": "UTC from America/New_York",
+          "precision": "second",
+          "null_sentinel": "none observed",
+          "evidence": "DST shifts, six early closes, mourning exclusion inspected"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/remote-v3/results/integrated-v3/decisions.json",
+      "purpose_arm": "document_entity_decisions",
+      "schema_code_version": "protocol_version1",
+      "input_output_manifest_hash_commit": {
+        "sha256": null,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact_and_fresh_metadata_set_comparison",
+      "unit_grain": "2008 issuer/session decisions,4 identical502-date sets",
+      "scope_eligibility": "document-only, not qualified tradable observations",
+      "time_fields": {
+        "decision_at_utc": {
+          "meaning": "information cutoff",
+          "min": null,
+          "max": null,
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "none observed",
+          "evidence": "zero decisions later than their own session close; exact early-close local times unprinted"
+        },
+        "outcome_end_utc": {
+          "meaning": "next session horizon endpoint",
+          "min": null,
+          "max": null,
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "unknown final-horizon behavior",
+          "evidence": "sample2024-01-02 decision endpoint2024-01-03T21:00:00Z"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/publication-replay-v3/lane-report.json",
+      "purpose_arm": "conditional_publication_replay",
+      "schema_code_version": "publication-replay-lane-v1/SEC_assigned_filing_day_end_normal_dissemination_v1",
+      "input_output_manifest_hash_commit": {
+        "publication_replay_declared_sha256": "a7a5ee99a7d8af28d16767c1cdbe68fe3c1d19a4dc072713c8db1fac65084c23",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact",
+      "unit_grain": "22sources/20conditional/2quarantined;13conditionalwordingdocs/2248fragments",
+      "scope_eligibility": "zero historically qualified wording features; no observed ready or first-public/monitoring proof",
+      "time_fields": {
+        "created_at_utc": {
+          "meaning": "artifact generation",
+          "min": "2026-10-04T03:36:36.274055+00:00",
+          "max": "2026-10-04T03:36:36.274055+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "lane report"
+        },
+        "conditional_source_assumed_available_at_utc": {
+          "meaning": "assumed assigned-filing-day-end plus60s",
+          "min": null,
+          "max": null,
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "null quarantined",
+          "evidence": "wording-source-join; assumption, not verified public bound"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/wording_results_v2/results/wording-v2/run-report.json",
+      "purpose_arm": "frozen_teacher_wording",
+      "schema_code_version": "ProsusAI/finbert@db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+      "input_output_manifest_hash_commit": {
+        "declared_report_sha256": "9d005dfb3d71175bcf95bd0b2180a92c6a4c1a7dc4b04a09aedd25c7ef58ca9b",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact plus retained owner totals",
+      "unit_grain": "15docs;2391fragments;0failed;1truncated",
+      "scope_eligibility": "scored teacher outputs, historical model cutoff/version unqualified",
+      "time_fields": {
+        "completed_at_utc": {
+          "meaning": "actual model run completion",
+          "min": "2026-10-04T02:22:47.209449+00:00",
+          "max": "2026-10-04T02:22:47.209449+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "runreport"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/stock_bars_2023_2025/collection-report.json",
+      "purpose_arm": "conditional_equity_price_diagnostic",
+      "schema_code_version": "Massive unadjusted daily bars; collector SHAff9ccfa86e729724180acc1ff7c703fcca3b3462770ae51a0cc29ff570c7d9da",
+      "input_output_manifest_hash_commit": {
+        "per_security_source_hashes": "retained in collectionreport",
+        "commit": null,
+        "recomputed": false
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact",
+      "unit_grain": "3008bars=752per4tickers",
+      "scope_eligibility": "not qualified1530features or execution; no complete historical availability",
+      "time_fields": {
+        "bar_dates": {
+          "meaning": "daily market candidate dates",
+          "min": "2023-01-03",
+          "max": "2025-12-31",
+          "timezone": "provider daily clock semantics require qualification",
+          "precision": "day",
+          "null_sentinel": "none reported",
+          "evidence": "collectionreport"
+        },
+        "produced_at_utc": {
+          "meaning": "processing generation",
+          "min": "2026-10-04T01:31:35.633740+00:00",
+          "max": "2026-10-04T01:31:35.633740+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "collectionreport"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/conditional-diagnostic-run-v2/stage/prepared/recipe.json",
+      "purpose_arm": "conditional_raw_close_forecast",
+      "schema_code_version": "conditional-equity-diagnostic-recipe-v1",
+      "input_output_manifest_hash_commit": {
+        "freeze_declared_recipe_sha256": "6754f5d6795273688241c67cbaaeb9ea7bb4aecb983d1e6a88c46fe1b2e11480",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact",
+      "unit_grain": "1008opportunities/920preparedrows;retained752predictions188dates4stocks",
+      "scope_eligibility": "2024development only; no text/dividends/execution; no model selection",
+      "time_fields": {
+        "fold_intervals": {
+          "meaning": "separate Q1trainQ2validation,Q2trainQ3validation,Q3trainQ4validation",
+          "min": "2024-01-01T00:00:00Z",
+          "max": "2025-01-01T00:00:00Z",
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "none",
+          "evidence": "recipe"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "configs/wording_equity_pilot-v1.json",
+      "purpose_arm": "first_wording_equity_protocol",
+      "schema_code_version": "wording-equity-pilot-protocol-v1",
+      "input_output_manifest_hash_commit": {
+        "declared_sha256": "4828922c88a423c41326578b715b1feae59bb451d86eced97dc363875a1095d9",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_artifact",
+      "unit_grain": "one linked Item2.02 exhibit per accession; equal-dollar eligible position/account-day",
+      "scope_eligibility": "qualified_only; USD1m,longshort,<=100%gross,zeroidlecash; current economic chain pending",
+      "time_fields": {
+        "frozen_at_utc": {
+          "meaning": "policy freeze",
+          "min": "2026-10-04T07:48:23.407632+00:00",
+          "max": "2026-10-04T07:48:23.407632+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "protocol"
+        },
+        "allowed_event_window": {
+          "meaning": "development cohort only",
+          "min": "2024-01-01",
+          "max": "2024-12-31",
+          "timezone": "reference exchange sessions",
+          "precision": "day",
+          "null_sentinel": "missing source evidence excluded",
+          "evidence": "date_from/protected_from"
+        },
+        "entry_exit": {
+          "meaning": "first qualifying open+60s to actualclose-60s",
+          "min": null,
+          "max": null,
+          "timezone": "UTC reference clock",
+          "precision": "second",
+          "null_sentinel": "unknown/unqualified/no-fill retained",
+          "evidence": "protocol; no current acceptedfills or netledger inspected"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "data/processed/8k_validation/native-v7-acceptance-v1/collection-verification-final-v1.json",
+      "purpose_arm": "P1_native_descriptive_delivery",
+      "schema_code_version": "native-v7-final-collection-verification-v1",
+      "input_output_manifest_hash_commit": {
+        "declared_sha256": "2c63d5f3a35a66e5b692855b8bcd123db94c09c25f575f5acd44fe7ed93bd553",
+        "run_sha256": "808da15b3d7c90a8a9f21255025647bd3cac4d54545c36d67e74947f6ff2942f",
+        "regression_log_sha256": "15f8458de46d5ca8a630b3b8ed36a1af73b2fa9024322d955957e05de715cf8a",
+        "source_manifest_sha256": "3850d35b2ed9eaafb57869a6232791cc80cbb125851da78d2fb259d261213ead",
+        "recomputed": false,
+        "commit": null
+      },
+      "observed_at": "2026-10-04T07:58:35Z",
+      "evidence_class": "inspected_runtime_receipt_contents; independent_hash_recheck_pending",
+      "unit_grain": "690unittests/196frozenfiles/8receipts/237346bytes;3descriptivegroups/4nodes/1state/0eligibleobservations",
+      "scope_eligibility": "descriptive only; no economic gate; disabled benchmark_native_as_filed namespace",
+      "time_fields": {
+        "verified_at_utc": {
+          "meaning": "collection verification time",
+          "min": "2026-10-04T07:19:19.208151+00:00",
+          "max": "2026-10-04T07:19:19.208151+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "receipt"
+        },
+        "finished_at_utc": {
+          "meaning": "actual remote gate completion",
+          "min": "2026-10-04T07:08:15.952644+00:00",
+          "max": "2026-10-04T07:08:15.952644+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "collectedfinalrun"
+        },
+        "public_first_public": {
+          "meaning": "historical availability",
+          "min": null,
+          "max": null,
+          "timezone": null,
+          "precision": null,
+          "null_sentinel": "unknown",
+          "evidence": "finalcapsule preserves unknown"
+        }
+      }
+    },
+    {
+      "owner": "Post",
+      "canonical_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+      "purpose_arm": "first_wording_equity_current_protocol",
+      "schema_code_version": "wording-equity-pilot-protocol-v2",
+      "input_output_manifest_hash_commit": {
+        "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+        "bytes": 6225,
+        "recomputed": true,
+        "commit": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+        "supersedes_sha256": "4828922c88a423c41326578b715b1feae59bb451d86eced97dc363875a1095d9",
+        "calendar_file_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+        "calendar_rows_sha256": "dab36daed9c3ce207b1189c2f3b45d7d4a46d8ed031f486adbc12a4ef2f97d9e"
+      },
+      "observed_at": "2026-10-04T08:19:52.372295+00:00",
+      "evidence_class": "inspected_static_contract_and_fresh_byte_hash",
+      "unit_grain": "one eligible event opportunity;252 reference account sessions",
+      "scope_eligibility": "qualified_only current v2; static header and hashes are not actual consumer acceptance",
+      "time_fields": {
+        "frozen_at_utc": {
+          "meaning": "v2 protocol freeze",
+          "min": "2026-10-04T08:00:11.116997+00:00",
+          "max": "2026-10-04T08:00:11.116997+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json"
+        },
+        "calendar_dates": {
+          "meaning": "2024 reference sessions",
+          "min": "2024-01-02",
+          "max": "2024-12-31",
+          "timezone": "America/New_York",
+          "precision": "day",
+          "null_sentinel": "none in observed dates",
+          "evidence": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_calendar-2024-v1.json"
+        }
+      }
+    }
   ],
   "primary_accession_acceptance_chronology": [
-    ["0001500217-23-000003", "0001500217", "2023-01-05T21:40:33Z"],
-    ["0001423689-23-000003", "0001423689", "2023-01-30T21:09:12Z"],
-    ["0001193125-23-021619", "0001061630", "2023-02-01T21:31:09Z"],
-    ["0001423689-23-000008", "0001423689", "2023-02-03T21:14:28Z"],
-    ["0001500217-23-000006", "0001500217", "2023-02-07T21:19:40Z"],
-    ["0001061630-23-000011", "0001061630", "2023-02-08T11:48:40Z"],
-    ["0001053507-23-000021", "0001053507", "2023-02-23T12:06:38Z"],
-    ["0001053507-23-000037", "0001053507", "2023-03-01T11:38:13Z"]
+    [
+      "0001500217-23-000003",
+      "0001500217",
+      "2023-01-05T21:40:33Z"
+    ],
+    [
+      "0001423689-23-000003",
+      "0001423689",
+      "2023-01-30T21:09:12Z"
+    ],
+    [
+      "0001193125-23-021619",
+      "0001061630",
+      "2023-02-01T21:31:09Z"
+    ],
+    [
+      "0001423689-23-000008",
+      "0001423689",
+      "2023-02-03T21:14:28Z"
+    ],
+    [
+      "0001500217-23-000006",
+      "0001500217",
+      "2023-02-07T21:19:40Z"
+    ],
+    [
+      "0001061630-23-000011",
+      "0001061630",
+      "2023-02-08T11:48:40Z"
+    ],
+    [
+      "0001053507-23-000021",
+      "0001053507",
+      "2023-02-23T12:06:38Z"
+    ],
+    [
+      "0001053507-23-000037",
+      "0001053507",
+      "2023-03-01T11:38:13Z"
+    ]
   ],
-  "conditional_cohort_taxonomy": {"all_accessions":8,"all_primary_documents":8,"all_exhibits":7,"all_documents":15,"quarantined_accession":"0001193125-23-021619","quarantined_documents":2,"conditional_accessions":7,"conditional_primary_documents":7,"conditional_exhibits":6,"conditional_documents":13,"conditional_fragments":2248,"historically_qualified_wording_features":0,"acceptance_is_public_time":false},
-  "calendar_metadata_check": {"command_id":null,"command_id_reason":"Stable shell command ID not exposed in captured audit output","inspected_paths":["data/processed/8k_validation/remote-v3/results/integrated-v3/sessions.json","data/processed/8k_validation/remote-v3/results/integrated-v3/decisions.json"],"checks":"len(s); yearCounter; explicitclosuremembership; perinstrument sessionsets; sum(decision_at>ownsessionclose)","sessions":502,"per_year":{"2024":252,"2025":250},"early_close_dates":["2024-07-03","2024-11-29","2024-12-24","2025-07-03","2025-11-28","2025-12-24"],"same_502_session_set_for_four_issuers":true,"decisions_after_own_session_close":0,"new_suite_run":false},
+  "conditional_cohort_taxonomy": {
+    "all_accessions": 8,
+    "all_primary_documents": 8,
+    "all_exhibits": 7,
+    "all_documents": 15,
+    "quarantined_accession": "0001193125-23-021619",
+    "quarantined_documents": 2,
+    "conditional_accessions": 7,
+    "conditional_primary_documents": 7,
+    "conditional_exhibits": 6,
+    "conditional_documents": 13,
+    "conditional_fragments": 2248,
+    "historically_qualified_wording_features": 0,
+    "acceptance_is_public_time": false
+  },
+  "calendar_metadata_check": {
+    "command_id": null,
+    "command_id_reason": "Stable shell command ID not exposed in captured audit output",
+    "inspected_paths": [
+      "data/processed/8k_validation/remote-v3/results/integrated-v3/sessions.json",
+      "data/processed/8k_validation/remote-v3/results/integrated-v3/decisions.json"
+    ],
+    "checks": "len(s); yearCounter; explicitclosuremembership; perinstrument sessionsets; sum(decision_at>ownsessionclose)",
+    "sessions": 502,
+    "per_year": {
+      "2024": 252,
+      "2025": 250
+    },
+    "early_close_dates": [
+      "2024-07-03",
+      "2024-11-29",
+      "2024-12-24",
+      "2025-07-03",
+      "2025-11-28",
+      "2025-12-24"
+    ],
+    "same_502_session_set_for_four_issuers": true,
+    "decisions_after_own_session_close": 0,
+    "new_suite_run": false,
+    "early_close_decisions": [
+      {
+        "date": "2024-07-03",
+        "decision_utc": "2024-07-03T16:30:00Z",
+        "decision_local": "2024-07-03T12:30:00-04:00",
+        "close_utc": "2024-07-03T17:00:00+00:00",
+        "outcome_end": "2024-07-05T20:00:00Z"
+      },
+      {
+        "date": "2024-11-29",
+        "decision_utc": "2024-11-29T17:30:00Z",
+        "decision_local": "2024-11-29T12:30:00-05:00",
+        "close_utc": "2024-11-29T18:00:00+00:00",
+        "outcome_end": "2024-12-02T21:00:00Z"
+      },
+      {
+        "date": "2024-12-24",
+        "decision_utc": "2024-12-24T17:30:00Z",
+        "decision_local": "2024-12-24T12:30:00-05:00",
+        "close_utc": "2024-12-24T18:00:00+00:00",
+        "outcome_end": "2024-12-26T21:00:00Z"
+      },
+      {
+        "date": "2025-07-03",
+        "decision_utc": "2025-07-03T16:30:00Z",
+        "decision_local": "2025-07-03T12:30:00-04:00",
+        "close_utc": "2025-07-03T17:00:00+00:00",
+        "outcome_end": "2025-07-07T20:00:00Z"
+      },
+      {
+        "date": "2025-11-28",
+        "decision_utc": "2025-11-28T17:30:00Z",
+        "decision_local": "2025-11-28T12:30:00-05:00",
+        "close_utc": "2025-11-28T18:00:00+00:00",
+        "outcome_end": "2025-12-01T21:00:00Z"
+      },
+      {
+        "date": "2025-12-24",
+        "decision_utc": "2025-12-24T17:30:00Z",
+        "decision_local": "2025-12-24T12:30:00-05:00",
+        "close_utc": "2025-12-24T18:00:00+00:00",
+        "outcome_end": "2025-12-26T21:00:00Z"
+      }
+    ],
+    "local_time_basis": "Offset derived from registered13:00 earlyclose and retained UTCclose; no new tzdata installation"
+  },
   "gap_states": [
-    {"id":"DD21","status":"verified_gap","priority":"P0_existing_wording_candidate","claimed":"Existing frozen wording candidate can be evaluated in2024onlyprotocol","verified":"all8primaries have2023accessions and2023acceptance instants;protocol date_from2024-01-01/protected_from2025-01-01","discrepancy":"inspected existing accession-event cohort contains no2024 event","consequence":"candidate period empty under currentprotocol;not a globallyempty quote/text claim","dependency":"samecandidate dated eligibleeventset or deliberate studywindowrevision","owner":"Post/Benchmark","action":"reconcile existingcandidate/protocolwindow without newmodel or protectedtest access","acceptance_evidence":"hash-pinned dated accepted eventmanifest within exact frozen protocol or explicit approved versionedwindowrevision preserving developmentexposure"},
-    {"id":"DD01","status":"partial","priority":"P0_shared_calendar_only","claimed":"502reference_sessions","verified":"502 actual unique dates;252+250;DST and exceptionalclosure preserved;4same date sets;zero late decisions","discrepancy":"no observed shared calendar date-set discrepancy","consequence":"calendar metadata does not prove executable quotes or known-at-decision schedule","dependency":"accepted event/security/holding-window intersection","owner":"Post","action":"retain exact calendar and cohort exclusionreceipt","acceptance_evidence":"hash-pinned calendar/session/cohort sets"},
-    {"id":"DD02","status":"partial","priority":"P0_wording_taxonomy","claimed":"15docs/2391fragments","verified":"15docs/8accessions/8primaries/7exhibits/4CIKs;2008issuer-session decisions separate","discrepancy":"source documents/fragments not independent events;no2024accession in inspected inputmanifest","consequence":"cannot turn reused2023text into2024 independent event counts","dependency":"eventaggregation and grouping","owner":"Benchmark/Post","action":"publish accession/eventdate/dedup/exclusionmanifest","acceptance_evidence":"exact event document session prediction episode NAV denominators"},
-    {"id":"DD03","status":"open","priority":"P0_wording","claimed":"20conditionalbounds","verified":"day-end plus byte-equality assumption;0historicallyqualifiedfeatures;first-public/monitoring false","discrepancy":"conditional assumed bounds are not exact-version supported historical public bounds","consequence":"qualified_only replay remains unaccepted","dependency":"source/publicbyversionproof","owner":"Industry/Post","action":"qualify exact-text bounds or label conditional retrospectivestudy","acceptance_evidence":"evidenced supportedpublicupperbound;unknown actualfirst/receipt preserved"},
-    {"id":"DD04","status":"open","priority":"P0_wording_join","claimed":"Post2023-25barcoverage","verified":"3008unadjusted bars752perticker2023-01-03..2025-12-31;wording cohort2023;new protocol2024only","discrepancy":"inspected existing text-event dates do not intersect2024onlyprotocol","consequence":"no accepted matched firstpilot opportunityset","dependency":"owner dated text/market windowqualification","owner":"Benchmark/Industry/Post","action":"publish bounded admissible intersection without newmodel","acceptance_evidence":"eventpriceactionidentityhashjoinedcohort with exclusions"},
-    {"id":"DD05","status":"partial","priority":"P0_if_wording_target_consumed","claimed":"price forecast diagnostic","verified":"raw unadjusted nextsessionclose return excluding dividendcash;quarterly2024folds;text absent","discrepancy":"forecast MSE not tradingPnL or comparable wordingtarget","consequence":"cannot report diagnostic as alpha/Sharpe/winrate","dependency":"matched frozen target and baseline","owner":"Post/Lattice","action":"retain targetunits/folds/adjustment distinctions","acceptance_evidence":"hash-pinned matched price target and horizon"},
-    {"id":"DD08","status":"open","priority":"P0_execution","claimed":"protocol requires qualifiedquote/cost/fill evidence","verified":"frozen rule exists;no actual acceptedfills inspected","discrepancy":"policy alone does not prove execution","consequence":"nofill/censored/unknown outcomes and metrics remain unknown","dependency":"borrow/collateral/fee/spread/actionquotes","owner":"Industry/Post","action":"retain orderfillnofillreceipts","acceptance_evidence":"exact-horizon executablequotes and fullyreconciled reservedorders"},
-    {"id":"DD09","status":"open","priority":"P0_signal","claimed":"frozenFinBERTscores","verified":"modelrevision/runtime pointer and protocol aggregation frozen;historicalmodelqualification false","discrepancy":"trainingcutoff/version availability and fragmentsemantic acceptance unproven","consequence":"qualified historical signal unavailable","dependency":"frozen teacher historicalvintage","owner":"Benchmark/Post","action":"publish training/versionavailability and exactfragmentdeduptruncationaggregationproof","acceptance_evidence":"hash-pinned permissible model and exact span eventaggregate"},
-    {"id":"DD10","status":"partial","priority":"P0_policy","claimed":"smallUSD1mresearchpolicy","verified":"protocol frozen2026-10-04T07:48:23.407632Z;longshort<=100%gross equalintegerdollars zeroidlecash","discrepancy":"policy closure does not close data/executiongates","consequence":"no repeated humanpolicyquestions necessary","dependency":"activePost replay acceptance","owner":"Post","action":"retain same exactpolicy alongside inputs/orders","acceptance_evidence":"frozen policyhash and exante opportunities"},
-    {"id":"DD11","status":"open","priority":"P0_accountmetrics","claimed":"regularaccountmarksrequired","verified":"protocol requires flat-sessiondailyUSD1maccountmarks;no accepted current ledger inspected","discrepancy":"terminal or fixtureledger cannot establish regularnetreturns","consequence":"PnL/Sharpe/CI/drawdown/winrate unsupported null","dependency":"qualifiedfills costs lifecycle and regularmarks","owner":"Post/Sharpe","action":"retain challenger baselinecash regularnetledgers","acceptance_evidence":"reconciled USD1m account includingflat/no-tradedays and matchedmetricdenominators"},
-    {"id":"DD17","status":"partial","priority":"P1_nativefinancial","claimed":"690pass196matches","verified":"actual retained finalrun/collection/capsule metadata inspected;hash recomputation blocked","discrepancy":"stale659/187report superseded;freshauditbytecheckpending","consequence":"descriptive native gate not economic eligibility","dependency":"diskcapacity for smallhashcheck","owner":"Post","action":"recompute eightreceipt hashes and frozen sourcechecks withoutsuite rerun","acceptance_evidence":"matching exact finalrun log manifest pins;zeroeligible preserved"}
+    {
+      "id": "DD21",
+      "status": "missing",
+      "priority": "P0_existing_wording_candidate",
+      "claimed": "Existing frozen wording candidate can be evaluated in2024onlyprotocol",
+      "verified": "Currentv2 stays2024only;inspected existing primaryaccessions all2023;actual linked252session2024calendar freshlyhashed",
+      "discrepancy": "inspected existing accession-event cohort contains no2024 event",
+      "consequence": "candidate period empty under currentprotocol;not a globallyempty quote/text claim",
+      "dependency": "samecandidate dated eligibleeventset or deliberate studywindowrevision",
+      "owner": "Post/Benchmark",
+      "action": "Reconcile existingcandidate eventperiod or deliberate versionedstudywindowrevision;no newmodel/protectedtest",
+      "acceptance_evidence": "hash-pinned dated accepted eventmanifest within exact frozen protocol or explicit approved versionedwindowrevision preserving developmentexposure"
+    },
+    {
+      "id": "DD01",
+      "status": "partial",
+      "priority": "P0_shared_calendar_only",
+      "claimed": "502reference_sessions",
+      "verified": "502 actual unique dates;252+250;DST and exceptionalclosure preserved;4same date sets;zero late decisions",
+      "discrepancy": "no observed shared calendar date-set discrepancy",
+      "consequence": "calendar metadata does not prove executable quotes or known-at-decision schedule",
+      "dependency": "accepted event/security/holding-window intersection",
+      "owner": "Post",
+      "action": "retain exact calendar and cohort exclusionreceipt",
+      "acceptance_evidence": "hash-pinned calendar/session/cohort sets"
+    },
+    {
+      "id": "DD02",
+      "status": "partial",
+      "priority": "P0_wording_taxonomy",
+      "claimed": "15docs/2391fragments",
+      "verified": "15docs/8accessions/8primaries/7exhibits/4CIKs;2008issuer-session decisions separate",
+      "discrepancy": "source documents/fragments not independent events;no2024accession in inspected inputmanifest",
+      "consequence": "cannot turn reused2023text into2024 independent event counts",
+      "dependency": "eventaggregation and grouping",
+      "owner": "Benchmark/Post",
+      "action": "publish accession/eventdate/dedup/exclusionmanifest",
+      "acceptance_evidence": "exact event document session prediction episode NAV denominators"
+    },
+    {
+      "id": "DD03",
+      "status": "partial",
+      "priority": "P0_wording",
+      "claimed": "20conditionalbounds",
+      "verified": "day-end plus byte-equality assumption;0historicallyqualifiedfeatures;first-public/monitoring false",
+      "discrepancy": "conditional assumed bounds are not exact-version supported historical public bounds",
+      "consequence": "qualified_only replay remains unaccepted",
+      "dependency": "source/publicbyversionproof",
+      "owner": "Industry/Post",
+      "action": "qualify exact-text bounds or label conditional retrospectivestudy",
+      "acceptance_evidence": "evidenced supportedpublicupperbound;unknown actualfirst/receipt preserved"
+    },
+    {
+      "id": "DD04",
+      "status": "partial",
+      "priority": "P0_wording_join",
+      "claimed": "Post2023-25barcoverage",
+      "verified": "3008unadjusted bars752perticker2023-01-03..2025-12-31;wording cohort2023;new protocol2024only",
+      "discrepancy": "inspected existing text-event dates do not intersect2024onlyprotocol",
+      "consequence": "no accepted matched firstpilot opportunityset",
+      "dependency": "owner dated text/market windowqualification",
+      "owner": "Benchmark/Industry/Post",
+      "action": "publish bounded admissible intersection without newmodel",
+      "acceptance_evidence": "eventpriceactionidentityhashjoinedcohort with exclusions"
+    },
+    {
+      "id": "DD05",
+      "status": "partial",
+      "priority": "P0_if_wording_target_consumed",
+      "claimed": "price forecast diagnostic",
+      "verified": "raw unadjusted nextsessionclose return excluding dividendcash;quarterly2024folds;text absent",
+      "discrepancy": "forecast MSE not tradingPnL or comparable wordingtarget",
+      "consequence": "cannot report diagnostic as alpha/Sharpe/winrate",
+      "dependency": "matched frozen target and baseline",
+      "owner": "Post/Lattice",
+      "action": "retain targetunits/folds/adjustment distinctions",
+      "acceptance_evidence": "hash-pinned matched price target and horizon"
+    },
+    {
+      "id": "DD09",
+      "status": "partial",
+      "priority": "P0_execution",
+      "claimed": "protocol requires qualifiedquote/cost/fill evidence",
+      "verified": "frozen rule exists;no actual acceptedfills inspected",
+      "discrepancy": "policy alone does not prove execution",
+      "consequence": "nofill/censored/unknown outcomes and metrics remain unknown",
+      "dependency": "borrow/collateral/fee/spread/actionquotes",
+      "owner": "Industry/Post",
+      "action": "retain orderfillnofillreceipts",
+      "acceptance_evidence": "exact-horizon executablequotes and fullyreconciled reservedorders",
+      "finding_key": "execution_evidence"
+    },
+    {
+      "id": "DD08",
+      "status": "partial",
+      "priority": "P0_signal",
+      "claimed": "frozenFinBERTscores",
+      "verified": "modelrevision/runtime pointer and protocol aggregation frozen;historicalmodelqualification false",
+      "discrepancy": "trainingcutoff/version availability and fragmentsemantic acceptance unproven",
+      "consequence": "qualified historical signal unavailable",
+      "dependency": "frozen teacher historicalvintage",
+      "owner": "Benchmark/Post",
+      "action": "publish training/versionavailability and exactfragmentdeduptruncationaggregationproof",
+      "acceptance_evidence": "hash-pinned permissible model and exact span eventaggregate",
+      "finding_key": "signal_model_qualification"
+    },
+    {
+      "id": "DD09",
+      "status": "partial",
+      "priority": "P0_policy",
+      "claimed": "smallUSD1mresearchpolicy",
+      "verified": "Currentv2 protocol freshlyhashed;v1 superseded;explicit external/short-lifecycle/continuousintradaygross qualification;zero cashyield preserves balances andflatmarks",
+      "discrepancy": "policy closure does not close data/executiongates",
+      "consequence": "no repeated humanpolicyquestions necessary",
+      "dependency": "activePost replay acceptance",
+      "owner": "Post",
+      "action": "retain same exactpolicy alongside inputs/orders",
+      "acceptance_evidence": "Currentv2 hash,252calendar binding plus actualexternal consumeracceptance/order/account proof;staticheader alone insufficient",
+      "finding_key": "frozen_policy"
+    },
+    {
+      "id": "DD10",
+      "status": "partial",
+      "priority": "P0_accountmetrics",
+      "claimed": "regularaccountmarksrequired",
+      "verified": "protocol requires flat-sessiondailyUSD1maccountmarks;no accepted current ledger inspected",
+      "discrepancy": "terminal or fixtureledger cannot establish regularnetreturns",
+      "consequence": "PnL/Sharpe/CI/drawdown/winrate unsupported null",
+      "dependency": "qualifiedfills costs lifecycle and regularmarks",
+      "owner": "Post/Sharpe",
+      "action": "retain challenger baselinecash regularnetledgers",
+      "acceptance_evidence": "reconciled USD1m account includingflat/no-tradedays and matchedmetricdenominators",
+      "finding_key": "regular_account_metrics"
+    },
+    {
+      "id": "DD17",
+      "status": "done",
+      "priority": "P1_nativefinancial",
+      "claimed": "690pass196matches",
+      "verified": "Eight collected receipt hashes freshlymatch;currentHEAD and capsulehashes recorded",
+      "discrepancy": "No8receipt mismatch;196source statement retained owner verification",
+      "consequence": "descriptive native gate not economic eligibility",
+      "dependency": "none firstwordingarm",
+      "owner": "Post",
+      "action": "Preserve descriptive scope",
+      "acceptance_evidence": "Fresh8SHA256matches;no suite rerun"
+    },
+    {
+      "id": "DD11",
+      "finding_key": "inference_after_net_series",
+      "status": "missing",
+      "priority": "P0_if_metrics_reported",
+      "claimed": "Registered inference follows accepted net series",
+      "verified": "No accepted current net series or CI inspected",
+      "discrepancy": "Accepted inference input missing",
+      "consequence": "No empirical Sharpe CI",
+      "dependency": "DD10 accepted regular net series",
+      "owner": "Post/Sharpe",
+      "action": "Apply registered plan after account acceptance",
+      "acceptance_evidence": "Pinned method/cohort/dependence-aware interval or explicit undefined"
+    }
   ],
-  "unknown_or_censored": ["CurrentGitHEAD", "freshfilehashcomparisons", "exact early-close localdecisiontime distribution", "accepted qualifying2024wordingeventset", "earliestpublic and historicalreceipt", "historicalmodelavailability/trainingcutoff", "currentqualifiedorders/fills/nofills", "regularUSD1mnetaccountledger and supportedmetrics"],
-  "progress": {"goal":"canonicalPost data/date/economicreadiness evidenceaudit","project_role":"read-only consumer/clock/cohort audit","checkpoints":[{"name":"canonical_inventory_time_cohort","state":"partial"},{"name":"exact_retained_receipt_hash_verification","state":"partial blocked by disk"},{"name":"write_owned_audit_receipts","state":"written"}],"fully_verified_checkpoints":1,"total_checkpoints":3,"next_dependency":"Small hash/commit read when C shellcapacity restored"}
+  "unknown_or_censored": [
+    "freshfilehashcomparisons",
+    "exact early-close localdecisiontime distribution",
+    "accepted qualifying2024wordingeventset",
+    "earliestpublic and historicalreceipt",
+    "historicalmodelavailability/trainingcutoff",
+    "currentqualifiedorders/fills/nofills",
+    "regularUSD1mnetaccountledger and supportedmetrics"
+  ],
+  "progress": {
+    "goal": "canonicalPost data/date/economicreadiness evidenceaudit",
+    "project_role": "read-only consumer/clock/cohort audit",
+    "checkpoints": [
+      {
+        "name": "canonical_inventory_time_cohort",
+        "state": "partial"
+      },
+      {
+        "name": "exact_retained_receipt_hash_verification",
+        "state": "done"
+      },
+      {
+        "name": "write_owned_audit_receipts",
+        "state": "written"
+      }
+    ],
+    "fully_verified_checkpoints": 2,
+    "total_checkpoints": 3,
+    "next_dependency": "Small hash/commit read when C shellcapacity restored"
+  },
+  "fresh_hash_verification": {
+    "observed_at_utc": "2026-10-04T08:12:25.337401+00:00",
+    "checks": [
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\namespace-mapping.json",
+        "bytes": 2817,
+        "sha256": "b62e33d88b0d8d9fe7cb2d654ac9093563b5a23e34e63e916cf78ef1189abb76",
+        "expected": "b62e33d88b0d8d9fe7cb2d654ac9093563b5a23e34e63e916cf78ef1189abb76",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\merged-registry.json",
+        "bytes": 16548,
+        "sha256": "2fa096258ca94f11a7528119092ee1f8870c851959fd7f99c4f09a71a86638fa",
+        "expected": "2fa096258ca94f11a7528119092ee1f8870c851959fd7f99c4f09a71a86638fa",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\adapter-result.json",
+        "bytes": 77755,
+        "sha256": "10ed27164eff7596e1c010c0a6b83b572779333628bbce65ec5c72334795df84",
+        "expected": "10ed27164eff7596e1c010c0a6b83b572779333628bbce65ec5c72334795df84",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\run.json",
+        "bytes": 1007,
+        "sha256": "808da15b3d7c90a8a9f21255025647bd3cac4d54545c36d67e74947f6ff2942f",
+        "expected": "808da15b3d7c90a8a9f21255025647bd3cac4d54545c36d67e74947f6ff2942f",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\source-manifest.json",
+        "bytes": 21417,
+        "sha256": "3850d35b2ed9eaafb57869a6232791cc80cbb125851da78d2fb259d261213ead",
+        "expected": "3850d35b2ed9eaafb57869a6232791cc80cbb125851da78d2fb259d261213ead",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\regression.log",
+        "bytes": 111375,
+        "sha256": "15f8458de46d5ca8a630b3b8ed36a1af73b2fa9024322d955957e05de715cf8a",
+        "expected": "15f8458de46d5ca8a630b3b8ed36a1af73b2fa9024322d955957e05de715cf8a",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\runner.log",
+        "bytes": 6348,
+        "sha256": "544b2bce8627d5c4bed056a4d1c866c39718193084c8e17c83f32c9bd77927a5",
+        "expected": "544b2bce8627d5c4bed056a4d1c866c39718193084c8e17c83f32c9bd77927a5",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collected-final-v1\\bootstrap.log",
+        "bytes": 79,
+        "sha256": "c9b72c95f936ef7bda03d80a839a9577dc27d409cb8828fad80c2620c9934d75",
+        "expected": "c9b72c95f936ef7bda03d80a839a9577dc27d409cb8828fad80c2620c9934d75",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\collection-verification-final-v1.json",
+        "bytes": 23325,
+        "sha256": "2c63d5f3a35a66e5b692855b8bcd123db94c09c25f575f5acd44fe7ed93bd553"
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\native-v7-acceptance-v1\\acceptance-capsule-final-v1.json",
+        "bytes": 9539,
+        "sha256": "0efcef5cc06c729f3743e820978d419485216f008530b4ff0bc773dd9f9c2777"
+      }
+    ],
+    "all_eight_match": true,
+    "full196source_reaudit": false,
+    "suite_rerun": false
+  },
+  "gap_id_correction": {
+    "at_utc": "2026-10-04T08:12:25.337401+00:00",
+    "note": "Corrected initial lane IDs to seed: DD08 signal/model, DD09 policy/execution, DD10 account, DD11 inference. Facts unchanged."
+  },
+  "protocol_supersession_v2": {
+    "observed_at_utc": "2026-10-04T08:19:52.372295+00:00",
+    "protocol_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+    "protocol_bytes": 6225,
+    "protocol_sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+    "protocol_declared_match": true,
+    "calendar_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_calendar-2024-v1.json",
+    "calendar_bytes": 237555,
+    "calendar_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+    "calendar_file_hash_match": true,
+    "row_array_key": "rows",
+    "calendar_rows_sha256": "dab36daed9c3ce207b1189c2f3b45d7d4a46d8ed031f486adbc12a4ef2f97d9e",
+    "calendar_row_hash_match": true,
+    "header": {
+      "calendar_id": "XNYS-core",
+      "complete": true,
+      "date_from": "2024-01-01",
+      "date_to": "2024-12-31",
+      "schema_version": "wording-pilot-calendar-v1"
+    },
+    "session_count": 252,
+    "first_date": "2024-01-02",
+    "last_date": "2024-12-31",
+    "first_row": {
+      "calendar_exception_sources": [
+        {
+          "published_date": "2025-01-02",
+          "role": "2025-01-09 exceptional closure",
+          "url": "https://www.nyse.com/publicdocs/nyse/markets/american-options/rule-interpretations/2025/National_Day_of_Mourning_20250102.pdf"
+        },
+        {
+          "role": "regular cash equity core hours",
+          "url": "https://www.nyse.com/trade/hours-calendars"
+        }
+      ],
+      "calendar_id": "XNYS-core",
+      "calendar_source": "https://ir.theice.com/press/news-details/2022/NYSE-Group-Announces-2023-2024-and-2025-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "calendar_use": "retrospective_realized_horizon_only",
+      "calendar_version": "nyse-2022-notice-plus-2025-mourning-v1",
+      "close_at_utc": "2024-01-02T21:00:00+00:00",
+      "early_close": false,
+      "open_at_utc": "2024-01-02T14:30:00+00:00",
+      "session_id": "2024-01-02"
+    },
+    "last_row": {
+      "calendar_exception_sources": [
+        {
+          "published_date": "2025-01-02",
+          "role": "2025-01-09 exceptional closure",
+          "url": "https://www.nyse.com/publicdocs/nyse/markets/american-options/rule-interpretations/2025/National_Day_of_Mourning_20250102.pdf"
+        },
+        {
+          "role": "regular cash equity core hours",
+          "url": "https://www.nyse.com/trade/hours-calendars"
+        }
+      ],
+      "calendar_id": "XNYS-core",
+      "calendar_source": "https://ir.theice.com/press/news-details/2022/NYSE-Group-Announces-2023-2024-and-2025-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "calendar_use": "retrospective_realized_horizon_only",
+      "calendar_version": "nyse-2022-notice-plus-2025-mourning-v1",
+      "close_at_utc": "2024-12-31T21:00:00+00:00",
+      "early_close": false,
+      "open_at_utc": "2024-12-31T14:30:00+00:00",
+      "session_id": "2024-12-31"
+    },
+    "static_contract_not_consumer_acceptance": true,
+    "cash_force_investment": false,
+    "cash_policy": "Zero passive yield; balances and no-trade flat session marks retained;100%gross is a cap, not mandatory investment",
+    "period_route": "No feasible existing accession-event route evidenced: v2 remains2024only while inspected wording inputs are2023; no new accepted event handoff inspected"
+  }
 }

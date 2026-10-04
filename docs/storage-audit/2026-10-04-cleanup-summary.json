@@ -1,0 +1,107 @@
+{
+  "cleanup_time_utc": "2026-10-04T08:32:44.313052+00:00",
+  "workspace_root": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs",
+  "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+  "permanent_archive": "home-pc:/home/john-riley/quanthaxs-archives/20261004-riley/workspace.tar.gz",
+  "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
+  "candidate_count": 6949,
+  "outcome_counts": {
+    "deleted": 6948,
+    "skipped_size_changed": 1
+  },
+  "removed_files": 6948,
+  "removed_logical_bytes": 3990201540,
+  "skipped_files": 1,
+  "skipped_logical_bytes": 1036288,
+  "disk_free_before_bytes": 145534976,
+  "disk_free_after_bytes": 4121636864,
+  "disk_free_delta_bytes": 3976101888,
+  "retained_or_held_file_counts_bytes": {
+    "retain_markdown": {
+      "files": 24,
+      "bytes": 977954
+    },
+    "hold_unknown": {
+      "files": 352,
+      "bytes": 265740792
+    },
+    "retain_code": {
+      "files": 560,
+      "bytes": 6288864
+    },
+    "retain_databento_derived": {
+      "files": 45,
+      "bytes": 17424114
+    },
+    "hold_mixed_provider": {
+      "files": 67,
+      "bytes": 16294481
+    },
+    "retain_databento": {
+      "files": 179,
+      "bytes": 256822631
+    }
+  },
+  "journal": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\storage-audit\\2026-10-04-cleanup.jsonl",
+  "post_cleanup_validation": {
+    "checked_at_utc": "2026-10-04T08:33:51.295579+00:00",
+    "protected_or_held_files": 1227,
+    "missing_paths": [],
+    "changed_size_paths": [
+      {
+        "path": "data/processed/chat_tracking/monitor-state.json",
+        "inventory_bytes": 27439,
+        "observed_bytes": 28179,
+        "classification": "hold_unknown"
+      },
+      {
+        "path": "data/processed/chat_tracking/progress-rollup-20261004/github-verification.json",
+        "inventory_bytes": 823,
+        "observed_bytes": 822,
+        "classification": "hold_unknown"
+      }
+    ],
+    "counts_by_classification": {
+      "retain_markdown": {
+        "files": 24,
+        "bytes": 977954,
+        "present": 24,
+        "same_size": 24
+      },
+      "hold_unknown": {
+        "files": 352,
+        "bytes": 265740792,
+        "present": 352,
+        "same_size": 350
+      },
+      "retain_code": {
+        "files": 560,
+        "bytes": 6288864,
+        "present": 560,
+        "same_size": 560
+      },
+      "retain_databento_derived": {
+        "files": 45,
+        "bytes": 17424114,
+        "present": 45,
+        "same_size": 45
+      },
+      "hold_mixed_provider": {
+        "files": 67,
+        "bytes": 16294481,
+        "present": 67,
+        "same_size": 67
+      },
+      "retain_databento": {
+        "files": 179,
+        "bytes": 256822631,
+        "present": 179,
+        "same_size": 179
+      }
+    },
+    "all_retained_markdown_and_source_files_exist": true,
+    "all_databento_originals_and_derived_exist": true,
+    "disk_free_recheck_bytes": 4118106112
+  },
+  "disk_free_recheck_bytes": 4118106112
+}

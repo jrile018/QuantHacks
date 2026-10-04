@@ -1,0 +1,60 @@
+{
+  "schema_version": "data-date-audit-verification-v1",
+  "observed_at_utc": "2026-10-04T08:49:04.007189+00:00",
+  "commands": [
+    "python docs/data-date-audit/refresh-audit.py",
+    "python docs/data-date-audit/verify-audit.py"
+  ],
+  "result": "pass",
+  "json_files_parsed": [
+    "artifact-manifest.json",
+    "availability-date-matrix.json",
+    "closure-receipts.json",
+    "evidence-snapshot.json",
+    "first-arm-blocker-map.json",
+    "gap-ledger.json",
+    "performance-availability.json",
+    "receipts/calendar-reconciliation.json",
+    "receipts/final-handoff.json",
+    "receipts/financial-evidence.json",
+    "receipts/first-arm-owner-refresh.json",
+    "receipts/industry-evidence.json",
+    "receipts/lattice-evidence.json",
+    "receipts/post-evidence.json",
+    "receipts/reporting-decision.json",
+    "receipts/root-evidence.json",
+    "receipts/storage-binding-evidence.json",
+    "verification.json"
+  ],
+  "gap_count": 22,
+  "requirement_count": 30,
+  "packet_count": 23,
+  "time_field_count": 17,
+  "references_valid": true,
+  "findings_local_links_checked": [
+    "./receipts/reporting-decision.json",
+    "./gap-ledger.json",
+    "./availability-date-matrix.json",
+    "./performance-availability.json",
+    "./receipts/calendar-reconciliation.json",
+    "./receipts/post-evidence.md",
+    "./receipts/industry-evidence.json",
+    "./receipts/financial-evidence.json",
+    "./receipts/first-arm-owner-refresh.json",
+    "./first-arm-blocker-map.json"
+  ],
+  "all_performance_values_null_with_reasons": true,
+  "reporting_choice_directly_verified": "01a1060a-c9cb-7b91-9a3f-0668dbd47fae",
+  "alpha_review_sha256_unchanged": "9b6dbc6ab013f3a50c90af2e5072235ab29cabf50bc2875bd76dbe3e2140f25e",
+  "original_seed_snapshot_handoff_preserved_by_action_scope": true,
+  "source_snapshot_hash_domain": "Current owned file bytes; initial seed byte hash was not independently captured by this verifier",
+  "source_suite_or_job_rerun": false,
+  "storage_notice_does_not_negate_historical_proofs": true,
+  "C_free_bytes_at_check": 3693826048,
+  "independent_review": {
+    "agent": "/root/audit_review",
+    "reviewed_generated_recorded_at_utc": "2026-10-04T08:35:18.708514+00:00",
+    "result": "no remaining must-fix claim or reference issue",
+    "later_changes": "Exact human qualified-only reporting answer and nonblocking label polish; final structure/link/hash check covers current outputs"
+  }
+}

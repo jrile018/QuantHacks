@@ -322,3 +322,66 @@ Human Q4 was directly verified: **wording-only pilot first; financial benchmark 
 A newly human-created chat, **Check remote desktop GPU access**, is included in the guide and resource coordination. It owns hardware/runtime/math feasibility, preserving numerical source owners and shared active jobs. GPU acceleration is conditional on useful verified equivalence/performance; it is not a new requirement for the small pilot. No chat was created by this orchestrator.
 
 Current guidance coverage including the later GPU participant: seven delivered, five adoption acknowledgements/declarations, publication-guide and GPU natural checkpoints pending. No further chat is recommended for the first costed milestone.
+
+<!-- quant-progress-dashboard:start -->
+## Progress, goals and the route to the first backtest — 2026-10-04
+
+The overall goal is an event-driven company/industry research system with validated after-cost portfolio comparisons. Current first milestone: one frozen **post-release wording equity pilot**, followed by the financial-benchmark arm and independently gated expansion.
+
+**Critical path:** qualify exact inputs/timing and matching market dates → freeze recipe/account rules → run the costed account → assess uncertainty and review. No accepted costed account series exists yet. A valid no-trade result needs eligible after-cost evidence; missing data stays insufficient.
+
+## Each chat's goal and progress
+
+| Exact chat title | Goal / role | Bounded progress | Next dependency |
+|---|---|---|---|
+| Benchmark | Traceable company and wording inputs | Diagnostic producer **5/5 complete**;3scores/1truncated exclusion; matching2024packet in progress | Accepted exact2024text/public/model evidence and Post consumer adapter |
+| Benchmark pt. 2 industry spec | Industry sources and usable market inputs | **7/7 complete** bounded producer handoff per final owner packet | Canonical consumer acceptance; overlapping equity dates, execution/actions/borrow/costs; broader history work remains open |
+| Post Benchmark | Canonical acceptance and one-command account replay | Negative runner/capsule verified: **38checks**,8excluded,0orders; positive receipt adapter and252-session export active | Qualified2024inputs and reviewed real-source/execution/account acceptance |
+| Assess Lattice repo fit | Full approved numerical/geometry completion, active by later human override | Continuation **3/7** per owner;45focused native cases reported;controlled study next | Fixed-target study/source qualification/review;no second account engine |
+| Organize Benchmark Data Push | Source contribution/publication workflow | Intake **5/5** merged; review interview **5/5** per owner; qualified-only choice verified | Source alignment explanation and exact handoffs;no provisional performance |
+| Research Sharpe confidence intervals | Honest inference on accepted account returns | Handoff **4/4**;production **0/3**;offline probe **4/4** delivered,receipt hash verified | Post integration/acceptance and qualified regular NAV before empirical inference |
+| Check remote desktop GPU access | Optional math/compute throughput | Planning **5/5 complete**; implementation acceptance **0/10** | Supported runtime/access, implementation, parity and measured total speedup |
+| Audit data dates and pilot gaps | P0 date/clock/coverage/acceptance audit | **5/6** per owner; storage binding and new2024candidate checks active | Final reviewed accepted/missing gate map, exact current source/restore pins |
+| Push everything to the riley branch | Audited workspace backup/storage recovery | Riley1799747ref verified;6948backup-matched removals recorded;~4GBfree | Remaining held-data audit and exact remote runtime bindings |
+| Track work across project chats | Reconcile interfaces, owners, decisions and accepted milestones | Architecture and continuation contracts delivered; progress instructions delivered **9/9** peers | Maintain this overview/Discussion3 and follow accepted costed capsule |
+
+Checkpoint counts are owner reports unless explicitly independently checked. App delivery is not proof of continued skill use or consumer acceptance. The initial eight peers returned seven compact packets plus Lattice's checkpoint display. The newly active storage owner received the same instructions; its first packet is pending. Post now reports a six-checkpoint pilot; its earlier four-step display was a shorter presentation of the same bounded work.
+
+
+The initial eight participating chats received the progress-bar/gsd-progress contract and showed checkpoints or returned packets. The new storage/backup owner also received it (nine peers total); its first packet is pending. Counts refer to each bounded milestone; no overall percentage or ETA is inferred. Use existing owned plans when the referenced GSD workflow is unavailable. Active helpers inherit the reporting contract; completed work is not restarted to generate status. The saved30-minute monitor now maintains these reports at changed milestones, remaining quiet when unchanged.
+
+The hypothetical USD1m account permits equally sized eligible equity longs/shorts, maximum100% combined gross exposure and zero idle-cash yield. Actual dividend/action/borrow/collateral/cost accounting remains required. Post reports protocol v2 frozen, with acceptance/bridge pending. Human chose qualified inputs before performance; no provisional performance is authorized. Protected final test/live capital are unchanged.
+
+**Main blockers:**2023 wording events versus2024/2024–25 scopes; exact-text publication/model-clock proof; execution/short-cost/lifecycle evidence; accepted regular net NAV. Disk exhaustion caused partial new wording files, which must be restored and verified before consumption. Bounded owner cleanup restored startup; bulk outputs stay remote. Source-intake PR4 is merged per its owner's retained readback; other local scopes are not implicitly merged. GPU planning completion has no measured speedup or economic implication.
+
+Local living dashboard: `docs/coordination/project-progress.md`, linked from the architecture context. Audit data dates and pilot gaps owns `docs/data-date-audit/` only.
+<!-- quant-progress-dashboard:end -->
+
+<!-- minimal-backtest-active:start -->
+## Keep the small integrated backtest moving — 2026-10-04
+
+**Runnable engineering milestone:** root read the actual source/interface and verified compact receipt86c1355f: recorded38focused checks,0skips,exit0; actual8filing groups excluded,0eligible events/orders/closed episodes, economic metricsnull. The negative gate works. It is not a completed performance backtest or evidence of no edge. Root did not rerun the suite or all205source files.
+
+**Next implementation/data boundary:** the current preflight explicitly refuses positive acceptance/qualified flags/any quotes until a validated external source/execution adapter exists. Post owns and continues that adapter, canonical acceptance, regular account marks and user-facing one-command capsule. Benchmark completed its2023diagnostic producer5/5; exact packet21d3d9f verified,3sentiment means/1truncated exclusion. Industry retained two2024release texts, and Benchmark is building the matching2024packet; source public/model/version and market/action/short/cost qualification remains pending. No synthetic/flat-cash result is promoted to historical alpha.
+
+**Latest human priority:** continue work that actively advances the minimal backtest. Separately, the later explicit instruction 'continue the work on lattice though' keeps Lattice's full already-approved plan and healthy workers active in parallel; its2/7checkpoint and fixed-target controls are separate from Post's first run. Do not restart completed GPU work merely to keep it busy. CPU is default; shared heavy-job lock/bounds remain.
+
+**Storage continuity:** the storage owner reports backup3/4/uploadrunning,cleanup1/3 and a verified private remote snapshot/archive manifest. Databento/Markdown retention and itsrileybranch ownership are preserved. Consumers were notified to verify original hashes and restore paths for moved non-Databento data; past runtime proofs remain past facts, while missing live paths stay unavailable until rerouted. No blanket archive/all-file verification by this coordinator is claimed.
+
+Current research account choices remain USD1m,equal long/short eligible positions,max100%gross/no leveraged exposure,idlecash0%; costs/borrow/collateral/dividends/marks are mandatory. Qualified-inputs-before-performance choice, development2024/25 and protected-final-test restrictions remain. The saved30-minute monitor now preserves the active goal,Lattice override,healthy-owner continuation and remote evidence routing. Local completion plan: `docs/coordination/minimal-backtest-completion.md`.
+<!-- minimal-backtest-active:end -->
+
+<!-- qualified-reporting-storage:start -->
+## Resolved reporting choice and current runnable checkpoint — 2026-10-04
+
+The human directly selected **Wait for qualified inputs before reporting performance** in Organize Benchmark Data Push, message01a1060a-c9cb-7b91-9a3f-0668dbd47fae. All earlier pending-Q4 references are historical and superseded. Diagnostics/alignment repairs continue; provisional economic headlines are not authorized.
+
+Post's actual negative-run capsule129de1147a00492838262f518b1e795d1d7514864a85cf0e283cf96caf0a536a and artifactmanifest349c958e21981c380f68003374152e379c984177e70e1dc52fe9e4e823ab95ab match root reads. The recorded38checks/8excluded/0orders remain insufficient, while Post actively builds the positive evidence adapter and cash-inclusive252-session export. Benchmark is scoring the completeFebruary2024release after source-link/hash checks. Public/model/version and execution/short/cost/account evidence still needs acceptance; no performance or no-edge claim follows.
+
+The Sharpe offline input probe was delivered, receiptc3285a5e hashchecked; eight synthetic tests are owner/reviewer evidence, not economic returns or production-stage completion (production0/3). Source/publication review5/5 is complete per owner, current28275f75report hashchecked. Data/date audit5/6 tracks exact cohort/calendar/quote/restore mismatches; timing is not fixed by silent timestamp shifts.
+
+Lattice remains fully active under the human's later explicit override, now3/7 per owner;45focused native tests/repairs are reported and the controlled study is next. They do not retroactively explain old Python pilot losses or establish edge. GPU planning remains complete/idle unless separately needed/requested.
+
+Storage recovered roughly4GB. Root independently verified GitHubrefs/heads/riley=1799747cd8c1ae7d6df83f3e2e87879266183b9b. Cleanup summary8f3a90b6779446c63b3d03f2b3a1cd9065b9f034b3637c844f7b00069f146f94 records6948exact-backup-matched removals/onechangedskip and protected/held-path presence; root did not rehash every removed byte. Future source use needs the originalhash→verified private remote byte/restore binding. No coordinator cleanup or branch switch occurred. The active monitor preserves qualified-only reporting, minimal backtest continuation and the Lattice exception.
+<!-- qualified-reporting-storage:end -->
+

@@ -1,0 +1,59 @@
+{
+  "contract_version": "offline-net-return-probe-v1",
+  "scope": "offline research probe; upstream-neutral periodic net-return checker",
+  "required_fields": {
+    "timestamps": "one explicit UTC ISO 8601 valuation timestamp per return",
+    "expected_calendar": "complete explicit UTC valuation timestamp sequence supplied by owner",
+    "net_returns": "decimal fraction of full-account net NAV change, after actual costs and flows; 0.01 means 1%",
+    "reference_returns": "matched decimal fraction per valuation period",
+    "reference_kind": ["observed_series", "declared_zero"],
+    "periods_per_year": "positive integer for conventional sqrt annualization",
+    "provenance": "nonempty JSON-compatible mapping with string keys, recursively copied into immutable result; caller eligibility claims have no authority",
+    "marks_complete": "literal true only when all period valuations have accepted marks",
+    "costs_complete": "literal true only when all applicable costs have accepted evidence",
+    "flows_reconciled": "literal true only when external flows have accepted reconciliation",
+    "timing_verified": "literal true only when decision, trade and valuation timing is accepted"
+  },
+  "output": {
+    "user_reportable": false,
+    "ci95": null,
+    "status": ["diagnostic_only", "unavailable"],
+    "diagnostics": "private synthetic formula checks only: excess mean, sample variance/SD, conventional mean/SD Sharpe and sqrt(periods_per_year) scaling"
+  },
+  "reason_codes": [
+    "prototype_synthetic_only_diagnostic_only",
+    "inference_method_not_implemented",
+    "calibration_pending",
+    "length_mismatch",
+    "invalid_timestamp",
+    "invalid_timestamps",
+    "invalid_net_returns",
+    "invalid_reference_returns",
+    "duplicate_timestamp",
+    "nonmonotone_timestamp",
+    "calendar_mismatch",
+    "invalid_expected_calendar",
+    "invalid_net_return",
+    "invalid_reference_return",
+    "invalid_reference_kind",
+    "declared_zero_mismatch",
+    "invalid_periods_per_year",
+    "missing_provenance",
+    "invalid_provenance",
+    "numerical_diagnostic_unavailable",
+    "marks_complete_unresolved",
+    "costs_complete_unresolved",
+    "flows_reconciled_unresolved",
+    "timing_verified_unresolved",
+    "insufficient_periods",
+    "bankruptcy_or_ruin",
+    "undefined_variance"
+  ],
+  "limitations": [
+    "No ledger adapter, eligibility decision, or production integration.",
+    "No calendar inference, row deletion, missing-value imputation, or source validation.",
+    "No HAC, bootstrap, Monte Carlo, calibration, or 95% confidence interval.",
+    "No user-facing economic Sharpe, trading-readiness, or profitability claim.",
+    "A validated shape alone cannot establish accepted costs, marks, timing, provenance, or an untouched holdout."
+  ]
+}

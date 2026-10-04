@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-10-04T08:40:21.832998+00:00",
+  "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+  "journal_records": 13897,
+  "outcome_counts": {
+    "unlink_intent": 6948,
+    "deleted": 6948,
+    "skipped_size_changed": 1
+  },
+  "deleted_logical_bytes": 3990201540,
+  "backup_reconciliation_mismatches": [],
+  "journaled_deleted_paths_absent": 6946,
+  "journaled_deleted_paths_present_now": [
+    {
+      "path": "src/__pycache__/__init__.cpython-311.pyc",
+      "current_size_bytes": 228,
+      "current_sha256": "3c5f0f83ca02261870dbb71f1f3b43353e598db3627e7aed44f335535a6c9736",
+      "unlink_outcome_at": "2026-10-04T08:32:42.567233+00:00",
+      "creation_time_utc": "2026-10-04T08:35:21.304580+00:00",
+      "mtime_utc": "2026-10-04T08:35:21.304580+00:00",
+      "observation": "present during later independent check; kept because active processes may generate caches"
+    },
+    {
+      "path": "src/__pycache__/reit_acquisition.cpython-311.pyc",
+      "current_size_bytes": 25156,
+      "current_sha256": "a54f48066f11844ed35a5815564fbd446223aecaac4d8f7f17851c9aa39363a9",
+      "unlink_outcome_at": "2026-10-04T08:32:42.680087+00:00",
+      "creation_time_utc": "2026-10-04T08:35:21.315102+00:00",
+      "mtime_utc": "2026-10-04T08:35:21.316098+00:00",
+      "observation": "present during later independent check; kept because active processes may generate caches"
+    }
+  ],
+  "protected_paths_checked": 1227,
+  "protected_paths_missing": [],
+  "disk_free_bytes": 3951906816,
+  "credential_source_retained": true,
+  "changed_sqlite_retained": true
+}

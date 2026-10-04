@@ -1,0 +1,101 @@
+{
+  "schema_version": "offline-net-return-probe-verification-v1",
+  "owner_thread_id": "01a10571-d8fb-7aa0-b526-b792caffbde2",
+  "verified_at_utc": "2026-10-04 08:34:53 UTC",
+  "working_directory": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs",
+  "scope": "Synthetic offline research prerequisite; not a production adapter or accepted backtest",
+  "root_independent_verification": {
+    "interpreter": "C:\\Program Files\\Python311\\python.exe",
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "command": [
+      "C:\\Program Files\\Python311\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/research/sharpe-inference",
+      "-p",
+      "test_contract_probe.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.29699999978765845,
+    "test_methods": 8,
+    "stdout": "",
+    "stderr": "test_absent_or_scalar_series_is_explicitly_unavailable (test_contract_probe.ContractProbeTests.test_absent_or_scalar_series_is_explicitly_unavailable) ... ok\ntest_empty_sparse_constant_and_bankruptcy_are_explicit (test_contract_probe.ContractProbeTests.test_empty_sparse_constant_and_bankruptcy_are_explicit) ... ok\ntest_finite_operands_that_overflow_formula_withhold_point (test_contract_probe.ContractProbeTests.test_finite_operands_that_overflow_formula_withhold_point) ... ok\ntest_hand_derived_sample_sharpe_is_private_diagnostic (test_contract_probe.ContractProbeTests.test_hand_derived_sample_sharpe_is_private_diagnostic) ... ok\ntest_invalid_inputs_retain_original_period_count_and_reasons (test_contract_probe.ContractProbeTests.test_invalid_inputs_retain_original_period_count_and_reasons) ... ok\ntest_provenance_is_copied_and_claims_cannot_promote (test_contract_probe.ContractProbeTests.test_provenance_is_copied_and_claims_cannot_promote) ... ok\ntest_provenance_rejects_mutable_unknown_and_ambiguous_keys (test_contract_probe.ContractProbeTests.test_provenance_rejects_mutable_unknown_and_ambiguous_keys) ... ok\ntest_unresolved_evidence_never_promotes_caller_claim (test_contract_probe.ContractProbeTests.test_unresolved_evidence_never_promotes_caller_claim) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n",
+    "contract_version": "offline-net-return-probe-v1",
+    "reason_count": 27,
+    "files": [
+      {
+        "path": "docs/research/sharpe-inference/contract_probe.py",
+        "bytes": 8201,
+        "sha256": "311ea5bd05c30f33a701dd586206f3b93397df73310a376982882ae0a29d9b7e"
+      },
+      {
+        "path": "docs/research/sharpe-inference/test_contract_probe.py",
+        "bytes": 6803,
+        "sha256": "8c7b95e83b206616c1d2dce0e8a4c594647b7707ddf3cc3d30aae4a87d56f73b"
+      },
+      {
+        "path": "docs/research/sharpe-inference/return-contract-v1.json",
+        "bytes": 2787,
+        "sha256": "97a328b034803f9857763670fc728ebf3fe7094bacb853f255902733a5ec0fb4"
+      }
+    ]
+  },
+  "independent_review": {
+    "agent": "/root/return_probe_review",
+    "status": "No remaining material finding within bounded scope",
+    "reviewer_ran_tests": false,
+    "reviewer_made_edits": false,
+    "closed_findings": [
+      "Mutable or ambiguous provenance",
+      "Finite-input diagnostic overflow",
+      "Absent or scalar series must produce explicit unavailable result"
+    ]
+  },
+  "worker_reported_red_green": {
+    "independently_replayed_red": false,
+    "initial_missing_module_red": "worker-reported exit1",
+    "review_regression_red": "worker-reported 8 methods, 6 failures and 8 subtest errors, exit1",
+    "final_green": "root independently verified above"
+  },
+  "invariants": {
+    "user_reportable": false,
+    "ci95": null,
+    "full_account_ledger_adapter": false,
+    "calibrated_confidence_method": false,
+    "bootstrap_calibration_run": false,
+    "monte_carlo_run": false,
+    "empirical_strategy_metrics": null
+  },
+  "human_reporting_mode": {
+    "source_thread_id": "01a1055f-309c-7682-a989-81dfeea8d6dd",
+    "source_turn_id": "01a1060a-3525-71d1-884a-7abac1885fef",
+    "source_user_message_id": "01a1060a-c9cb-7b91-9a3f-0668dbd47fae",
+    "decision": "Wait for qualified inputs before reporting performance",
+    "prior_Q4_status": "resolved; do not reask or infer provisional reporting permission"
+  },
+  "upstream_dependencies": [
+    "Aligned and qualified exact text/event cohort under frozen recipe",
+    "Evidenced public-by and usable-decision times",
+    "Qualified security, exchange calendar, corporate-action and execution evidence",
+    "Explicit fees, slippage, short borrow and collateral treatment",
+    "Accepted regular full-account net return panel and matched reference"
+  ],
+  "production_plan": {
+    "main_stages": 3,
+    "completed": 0,
+    "probe_does_not_complete_production_stage": true
+  },
+  "operations": {
+    "production_files_changed": false,
+    "remote_job_launched": false,
+    "heavy_local_job_launched": false,
+    "commit_created": false,
+    "pull_request_created": false,
+    "live_capital_used": false
+  },
+  "handoff_status": "Delivery is recorded separately in handoff-receipt.json"
+}

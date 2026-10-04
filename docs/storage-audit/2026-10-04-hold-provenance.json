@@ -1,0 +1,563 @@
+{
+  "review_time_utc": "2026-10-04T08:45:51.983490+00:00",
+  "workspace_root": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs",
+  "scope": "Read-only provenance review of the 419 previously held files; no deletions. Existing manifests, receipts, provider records, and the local verified backup manifest only.",
+  "held_files": 419,
+  "held_bytes": 282035273,
+  "backup_verification_summary": {
+    "exact_path_size_sha256_match": 404,
+    "size_changed_since_backup": 2,
+    "missing_from_backup_manifest": 13,
+    "commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+    "note": "All 15 exceptions are in live data/processed/chat_tracking; preserve operational metadata. No new hashes were computed in this follow-up; these counts come from the bounded earlier read-only hash pass."
+  },
+  "provenance_findings": [
+    {
+      "cohort": "data/processed/multi_market/futures-v1",
+      "files": 18,
+      "bytes": 8826385,
+      "classification": "proven_databento_derived",
+      "evidence": "study_report.json lists 3,512 input files under data/raw/databento with GLBX/EQUS job IDs and bbo-1m/definition/ohlcv-1d schemas; total 6,538,075 rows and 167,560,460 source bytes. The contextual-lattice source manifest SHA for futures_features matches causal_features_and_labels.csv. Retain."
+    },
+    {
+      "cohort": "data/processed/multi_market/pilot-download-verification",
+      "files": 12,
+      "bytes": 933600,
+      "classification": "proven_databento_acquisition_evidence",
+      "evidence": "retrieval-verification.json records matching local/remote SHA values for downloaded GLBX/EQUS artifacts; manifest verification references Databento job IDs. Retain."
+    },
+    {
+      "cohort": "data/processed/multi_market/metadata",
+      "files": 1,
+      "bytes": 10151,
+      "classification": "proven_databento_metadata",
+      "evidence": "databento_metadata_quotes_2026-10-03.json declares read-only Databento metadata, symbology and historical cost-quote purpose, and lists Databento dataset IDs. Retain."
+    },
+    {
+      "cohort": "data/processed/multi_market/options-matched-v1",
+      "files": 10,
+      "bytes": 64720,
+      "classification": "proven_databento_derived",
+      "evidence": "protocol source hashes for bars/quotes match retained full-options Databento ingest outputs and ingest manifest paths. Retain."
+    },
+    {
+      "cohort": "data/processed/multi_market/native-equity-v1 and dependent risk/role/contextual outputs",
+      "classification": "mixed_or_unknown_keep",
+      "evidence": "native-equity-v1 protocol points to /home/john-riley/projects/geomarket/runs/pit-survivorship/gm-ingest/prices.parquet and gives SHA256, but provider is not identified. Risk/role results lack complete provider-by-file mapping; contextual-lattice explicitly combines SEC, proven Databento futures and these vendor-unknown equity features. Retain."
+    },
+    {
+      "cohort": "data/processed/tiger_8k_*",
+      "classification": "unknown_provider_keep",
+      "evidence": "tiger_8k_filings.sql queries TigerDB quant_hacks.api_responses and SEC filing fields, but no upstream API/provider receipt was found. Preserve pending DB/source-owner review; retain SQL helper."
+    },
+    {
+      "cohort": "data/processed/team_sources/onboarding-verification",
+      "files": 6,
+      "bytes": 1205858,
+      "classification": "operational_audit_keep",
+      "evidence": "receipts hash source-contract, validation, workflow and test files; publishing receipt records a source-release snapshot. Retain."
+    },
+    {
+      "cohort": "data/processed/chat_tracking",
+      "files": 117,
+      "bytes": 6689761,
+      "classification": "live_coordination_keep",
+      "evidence": "progress, publication and verification records are active operational coordination metadata. Preserve even where backup manifest misses or prior local size differs."
+    },
+    {
+      "cohort": "artifacts/lattice-math-audit and artifacts/lattice-strategies",
+      "classification": "audit_and_source_helpers_keep",
+      "evidence": "contents are audit maps, run verifications, source hashes, report logs and code staging; preserve per instruction."
+    },
+    {
+      "cohort": "data/processed/options_expiration_inventory.csv",
+      "files": 1,
+      "bytes": 87565,
+      "classification": "unknown_provider_keep",
+      "evidence": "no provider-specific manifest or receipt tied this inventory to a provider."
+    },
+    {
+      "cohort": "data/processed/document_pilot quote/access/selection metadata and data/processed/hipergator reports/inventories/manifests/logs/archive",
+      "classification": "operational_or_unknown_keep",
+      "evidence": "metadata, run state, source identity/provenance, audit output and packaged remote run; kept out of removal candidate set."
+    },
+    {
+      "cohort": "artifacts/contextual-lattice/run-v1/results and bundles",
+      "classification": "mixed_provider_keep",
+      "evidence": "run manifest contains source hashes for SEC filings, Databento-derived futures_features and vendor-unknown equity_features. Preserve integrated results and archive; no bundle scan performed."
+    }
+  ],
+  "candidate_cohorts": {
+    "SEC contextual-lattice source payload": {
+      "files": 1,
+      "bytes": 1585197,
+      "backup_exact": 1,
+      "backup_exact_bytes": 1585197
+    },
+    "SEC/OCR document-pilot payloads": {
+      "files": 6,
+      "bytes": 649080,
+      "backup_exact": 6,
+      "backup_exact_bytes": 649080
+    },
+    "SEC/OCR Hipergator payloads": {
+      "files": 20,
+      "bytes": 647112,
+      "backup_exact": 20,
+      "backup_exact_bytes": 647112
+    },
+    "Massive native smoke outputs": {
+      "files": 7,
+      "bytes": 57966,
+      "backup_exact": 7,
+      "backup_exact_bytes": 57966
+    },
+    "Massive smoke outputs": {
+      "files": 5,
+      "bytes": 30327,
+      "backup_exact": 5,
+      "backup_exact_bytes": 30327
+    },
+    "Massive raw option quotes": {
+      "files": 3,
+      "bytes": 6873,
+      "backup_exact": 3,
+      "backup_exact_bytes": 6873
+    }
+  },
+  "candidate_files": [
+    {
+      "path": "artifacts/contextual-lattice/run-v1/inputs/sec-context-v1/filings.csv",
+      "size_bytes": 1585197,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC contextual-lattice source payload",
+      "evidence": "Adjacent run manifest source SEC_filings SHA256 is 631e613bd359a583b2ec7d1db3497b631828fe814b4f0decb5b28146d382bc68 and matches this file. Receipt says source is existing cache only and describes official SEC 8-K population. Receipt and coverage metadata remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "631e613bd359a583b2ec7d1db3497b631828fe814b4f0decb5b28146d382bc68"
+    },
+    {
+      "path": "data/processed/document_pilot/gpu_calibration/financial-table-page-53.png",
+      "size_bytes": 175501,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR document-pilot payloads",
+      "evidence": "documents.jsonl and native_batch/manifest.jsonl map transcript source hashes to SEC.gov 8-K filing URLs. The two calibration PNGs have documents.jsonl records identifying pages from SEC filing reports. Audit, cache coverage, quote access/collection, selection, and manifests remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "b2418617c8e621968ec582787dbc7535d86ff36d752fe0bb4f9d66cf0630b6a5"
+    },
+    {
+      "path": "data/processed/document_pilot/native_batch/3d7b289cc4115ca8ff234ffbd69a5d33118596e24cd3dfcc13fa4bf93d279d46.transcript.json",
+      "size_bytes": 24145,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR document-pilot payloads",
+      "evidence": "documents.jsonl and native_batch/manifest.jsonl map transcript source hashes to SEC.gov 8-K filing URLs. The two calibration PNGs have documents.jsonl records identifying pages from SEC filing reports. Audit, cache coverage, quote access/collection, selection, and manifests remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "653c3dd6d1828a31aed751bcb033969760915a3d70c7efae431496e50a2aa3cc"
+    },
+    {
+      "path": "data/processed/document_pilot/native_batch/403a2a3c78ead5d59ba214072acbce1a96276a42c2f21fc168e3675c6bf48dff.transcript.json",
+      "size_bytes": 29905,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR document-pilot payloads",
+      "evidence": "documents.jsonl and native_batch/manifest.jsonl map transcript source hashes to SEC.gov 8-K filing URLs. The two calibration PNGs have documents.jsonl records identifying pages from SEC filing reports. Audit, cache coverage, quote access/collection, selection, and manifests remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "9389154f1d57e026ab61049d39dff388bcb4448433f3b1c81f5d82cddeae3e10"
+    },
+    {
+      "path": "data/processed/document_pilot/native_batch/bd8f8abc1ae55dc1df1728a183a12c51f5a8e37a57e859ff354121b383ae2072.transcript.json",
+      "size_bytes": 88983,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR document-pilot payloads",
+      "evidence": "documents.jsonl and native_batch/manifest.jsonl map transcript source hashes to SEC.gov 8-K filing URLs. The two calibration PNGs have documents.jsonl records identifying pages from SEC filing reports. Audit, cache coverage, quote access/collection, selection, and manifests remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "c8fd0a8107e0ba6792efc13e06897e6fea2c5430d2ad2a6c28bcfb67cf0b0983"
+    },
+    {
+      "path": "data/processed/document_pilot/native_batch/dfa72676e801733682121a976c0d7328f293ee6674124529139efd01e9d8c011.transcript.json",
+      "size_bytes": 7751,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR document-pilot payloads",
+      "evidence": "documents.jsonl and native_batch/manifest.jsonl map transcript source hashes to SEC.gov 8-K filing URLs. The two calibration PNGs have documents.jsonl records identifying pages from SEC filing reports. Audit, cache coverage, quote access/collection, selection, and manifests remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "dd99378692ace87844c74a3f74b0d9c1ea11f4702463392c7b27ce9330911dd8"
+    },
+    {
+      "path": "data/processed/document_pilot/table_calibration_v2/financial-table-page-66.png",
+      "size_bytes": 322795,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR document-pilot payloads",
+      "evidence": "documents.jsonl and native_batch/manifest.jsonl map transcript source hashes to SEC.gov 8-K filing URLs. The two calibration PNGs have documents.jsonl records identifying pages from SEC filing reports. Audit, cache coverage, quote access/collection, selection, and manifests remain retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "f9ba9035d0bffac46ceccc1ceca979835c6c04da6acfdf278d219b06be5950c5"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/reports/20261003T211912Z-0d20e7e5e5/transcripts/ad6968b3e8cbcb1009f9d7929e8b5f1bd9c9f5e6fc2dc9aa7e4b2b569a203f83-cda5af8031d1.json",
+      "size_bytes": 31995,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "98220bfb24680cd57ce03435f0cd539da1f389e23bf82ee0791537e8dfbe5536"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/reports/20261003T211912Z-0d20e7e5e5/transcripts/ec12ecd95b0a3deb096f2ebd221676caea73eefe37cf6b9ddbfe63bebca3adcc-af0613bcf30c.json",
+      "size_bytes": 99645,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "6651d284ae4857f6f1fae8ad230074ceff1e0dfec8d6d4fd90642f8238ccfcc1"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/reports/20261003T211918Z-3da3b86cdc/transcripts/07c093fcbb9d4ff54bb26dd3e9634451c0564cad12ace1d2590e8ea3c1f419b4-94d95c3638a2.json",
+      "size_bytes": 27532,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "ebc5f35ea1ea9865dfd99a1aa45220007acc5416f1a74565bae8c72883fd6ff3"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/reports/20261003T211918Z-3da3b86cdc/transcripts/77cea8bea27eb406f5683e71a239016a1b85ce3f1269583e4472e06b66b83a40-2f57c1e9448f.json",
+      "size_bytes": 8059,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "95bb20f82ae87027f18d7edd1b11c108f608f39d5088e9a45d65a3658df09931"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/transcripts/135c99f2365d568d46db58fd7c2d5bbc503969f10878f1426e273ef71dd0e5c7.transcript.json",
+      "size_bytes": 23627,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "80878057d877fce8c39bc90ada2fa6b3a423100fd2204636a0516e7c0db3ab81"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/transcripts/651701235849fc9eafa451ce4fe0b3c3b2d9223d1e69215080c8cd04e431d62d.transcript.json",
+      "size_bytes": 7700,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "05be80ce32f47c37f086d0f78e35e2bbc2a5164047aecf969ca1275b71e754a4"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/transcripts/7619211df201dcb67a1b0964c9f10814aa22ecd35025ffaea575f3b44eb932eb.transcript.json",
+      "size_bytes": 29072,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "101beadc5d3db6f367afe4beb6e584d57fbed836b805ea889250de3fdb4a4601"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/transcripts/78fe066e212e3d49a3cc15064d420ecb54e4e39d970c1bb6e28d164fb0831085.transcript.json",
+      "size_bytes": 86156,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "7bf459f3268a29154ab041b08024c1844aca34e7e1f8d67b778b5033f1f6a055"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/transcripts/b16008522f638299f037ccf1fde8cf4afae974aaf59a6fea286b6ed3b85a3a05.ocr.json",
+      "size_bytes": 1401,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "739328582962e2200e0a5271aa4289be4870fe8e605514d335b1254d0492e151"
+    },
+    {
+      "path": "data/processed/hipergator/cache-scope-v1/results/pilot/transcripts/b16008522f638299f037ccf1fde8cf4afae974aaf59a6fea286b6ed3b85a3a05.transcript.json",
+      "size_bytes": 3461,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "2011f82425e86b019279e7b04df039936552c76512f84469ffe7cd922e7fc397"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/reports/20261003T222727Z-1a974b1755/transcripts/ad6968b3e8cbcb1009f9d7929e8b5f1bd9c9f5e6fc2dc9aa7e4b2b569a203f83-cda5af8031d1.json",
+      "size_bytes": 31999,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "0f517708abca1d3ac8cd89c234de48bda71f0f10af2a14be8c8091e10f48eece"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/reports/20261003T222727Z-1a974b1755/transcripts/ec12ecd95b0a3deb096f2ebd221676caea73eefe37cf6b9ddbfe63bebca3adcc-af0613bcf30c.json",
+      "size_bytes": 99649,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "00594303665072913b0713f4b3f614c435bb72a78cd77c0f330797c526071296"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/reports/20261003T222734Z-5bef5631a3/transcripts/07c093fcbb9d4ff54bb26dd3e9634451c0564cad12ace1d2590e8ea3c1f419b4-94d95c3638a2.json",
+      "size_bytes": 27536,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "52c4ec117cd0c8c12663f669495a111da2fe50f7cbcde051a650749a7c5e1972"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/reports/20261003T222734Z-5bef5631a3/transcripts/77cea8bea27eb406f5683e71a239016a1b85ce3f1269583e4472e06b66b83a40-2f57c1e9448f.json",
+      "size_bytes": 8063,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "ee2962bfbc294a738f2c7a9a33c59573124a65b6a071664aabc5a5eb2e180c0b"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/transcripts/1b4f7fb864b683cb83346a35581a8b8ed972067f44ed42aeed4424f39e14395c.ocr.json",
+      "size_bytes": 4661,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "6ed762d7d666a2062fc51b4712fd9052b587bb8e05137f8b075525827db6993e"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/transcripts/1b4f7fb864b683cb83346a35581a8b8ed972067f44ed42aeed4424f39e14395c.transcript.json",
+      "size_bytes": 9985,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "12b8edf02c8bef18e4ef972cca356d429953fe0d2ce2740bb793adccbfc8a81d"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/transcripts/36808e9ce783d7f2e871b1b3b413a90acab534f81fc02e3c3224180b25463557.transcript.json",
+      "size_bytes": 7704,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "362233884cade9a2f68af50f05883241dbfc64fd589c21b1d9827fc684af722d"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/transcripts/6e2db8a1fc49c7d04ec083d15eec01393b279654d3e23c5b0e02cd91f15162e0.transcript.json",
+      "size_bytes": 23631,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "96442509a7477c3ff7c5cb887e4fd5f18533ae4daf15161a879f87757ce0bb3a"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/transcripts/e7bb39632a2b80b576164928f0e60bbc728714d22a80d6155936e3c821d53007.transcript.json",
+      "size_bytes": 29076,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "ba1e8bf6ada354d2740f7f8509c2632c8546509bf1062324f64b9b9c0e9add39"
+    },
+    {
+      "path": "data/processed/hipergator/local-processor-v1/results/pilot/transcripts/ff7237143b3f70041e40f7744aad7166b4caac7d2fce4115e55f5bac0f29f373.transcript.json",
+      "size_bytes": 86160,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "SEC/OCR Hipergator payloads",
+      "evidence": "Both cache-scope and local-processor transcript manifests map source_sha256 values and document IDs to the SEC filing hashes also recorded in document_pilot/documents.jsonl. Candidate paths below are only OCR/transcript payloads; manifests, run records, inventories, reports, logs, verification and Markdown are retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "5700f536a7df99067bf6532ae2e6920e2c7e3a1d122dfd996d0a78e0019b2f02"
+    },
+    {
+      "path": "data/processed/smoke-options-native/capacity.csv",
+      "size_bytes": 1516,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "1cdfc34f0ddc4e4f57fe741c9985ca2289b9812bbf53841841df111c2861f06b"
+    },
+    {
+      "path": "data/processed/smoke-options-native/dropped.csv",
+      "size_bytes": 94,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "e47378fe7ce925494601bfc0a33bf1d575fa9433b8a752b90e314b18499a4b61"
+    },
+    {
+      "path": "data/processed/smoke-options-native/events.csv",
+      "size_bytes": 453,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "a90f9870ef2c5c0a5e4114274faa0d5660f4b2b6f9f7287704e01afad3252c86"
+    },
+    {
+      "path": "data/processed/smoke-options-native/option_bars.csv",
+      "size_bytes": 25446,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "c8449fcfac92b987853b927795a4ff6a7039dc3b59332cb40f96fa8a84f47a63"
+    },
+    {
+      "path": "data/processed/smoke-options-native/option_legs.csv",
+      "size_bytes": 2193,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "93d32bb8d94eebbad508a7ee23f9a56880450b1179dc4d51b17a4baf15ff2030"
+    },
+    {
+      "path": "data/processed/smoke-options-native/results.csv",
+      "size_bytes": 25385,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "d69bec0bd56299a6f46f322878f3e73a4a35b320c49c9b1572b36b307821b763"
+    },
+    {
+      "path": "data/processed/smoke-options-native/scoreboard.csv",
+      "size_bytes": 2879,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive native smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "3708b2f6359b7c650e82e5dcfe72c4764265faecb2015c32187761831dd87b7e"
+    },
+    {
+      "path": "data/processed/smoke/capacity.csv",
+      "size_bytes": 1516,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "1cdfc34f0ddc4e4f57fe741c9985ca2289b9812bbf53841841df111c2861f06b"
+    },
+    {
+      "path": "data/processed/smoke/dropped.csv",
+      "size_bytes": 94,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "e47378fe7ce925494601bfc0a33bf1d575fa9433b8a752b90e314b18499a4b61"
+    },
+    {
+      "path": "data/processed/smoke/events.csv",
+      "size_bytes": 453,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "a90f9870ef2c5c0a5e4114274faa0d5660f4b2b6f9f7287704e01afad3252c86"
+    },
+    {
+      "path": "data/processed/smoke/results.csv",
+      "size_bytes": 25385,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "d69bec0bd56299a6f46f322878f3e73a4a35b320c49c9b1572b36b307821b763"
+    },
+    {
+      "path": "data/processed/smoke/scoreboard.csv",
+      "size_bytes": 2879,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive smoke outputs",
+      "evidence": "Adjacent manifest.json says source=Massive 8-K disclosures and option chains. Manifest itself is excluded from candidate list and retained.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "3708b2f6359b7c650e82e5dcfe72c4764265faecb2015c32187761831dd87b7e"
+    },
+    {
+      "path": "data/raw/option_quotes/135d13f09b10ba23dda529cd3d6f54c98f51fbc3b4803279cba8d8173ffa3dac.metadata.json",
+      "size_bytes": 254,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive raw option quotes",
+      "evidence": "data/raw/option_quotes/135d13f09b10ba23dda529cd3d6f54c98f51fbc3b4803279cba8d8173ffa3dac.metadata.json declares provider=Massive; response payloads reference the Massive API. Proven non-Databento raw payload.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "1ce5661a59c4942d4bc3e8ab2c47c38c121fbbe02f7cbe075ad6c937541665c1"
+    },
+    {
+      "path": "data/raw/option_quotes/1fe1a4bdcbef24357445adaba8df2ff8ed4bdaa5ac69f3ffe245f95b525a5dcf.json",
+      "size_bytes": 5973,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive raw option quotes",
+      "evidence": "data/raw/option_quotes/135d13f09b10ba23dda529cd3d6f54c98f51fbc3b4803279cba8d8173ffa3dac.metadata.json declares provider=Massive; response payloads reference the Massive API. Proven non-Databento raw payload.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "1fe1a4bdcbef24357445adaba8df2ff8ed4bdaa5ac69f3ffe245f95b525a5dcf"
+    },
+    {
+      "path": "data/raw/option_quotes/8404ab045303120cfca5d1d62b967ea8ef6bc2cfe6f62cffce74f8f7bf158043.json",
+      "size_bytes": 646,
+      "provenance_class": "proven_non_databento_payload",
+      "cohort": "Massive raw option quotes",
+      "evidence": "data/raw/option_quotes/135d13f09b10ba23dda529cd3d6f54c98f51fbc3b4803279cba8d8173ffa3dac.metadata.json declares provider=Massive; response payloads reference the Massive API. Proven non-Databento raw payload.",
+      "backup_status": "exact_path_size_sha256_match_in_read_only_hash_pass",
+      "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+      "backup_sha256": "8404ab045303120cfca5d1d62b967ea8ef6bc2cfe6f62cffce74f8f7bf158043"
+    }
+  ],
+  "candidate_total": {
+    "files": 42,
+    "bytes": 2976555,
+    "all_backup_verified": true
+  },
+  "excluded_protected": {
+    "all_markdown": "Preserved.",
+    "all source helpers and SQL/code": "Preserved.",
+    "SEC source/processing receipts and manifests": "Preserved.",
+    "coordination and audit metadata": "Preserved.",
+    "all mixed/unknown data": "Preserved.",
+    "all Databento originals and evidenced descendants": "Preserved."
+  }
+}

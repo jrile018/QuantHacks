@@ -1,17 +1,17 @@
 {
-  "schema_version": "data-date-audit-availability-time-v1",
-  "persistence": "saved bounded refresh; fresh per-packet checks pending",
-  "observed_at": "2026-10-04 07:51:14 UTC",
+  "schema_version": "data-date-audit-availability-time-v2",
+  "persistence": "integrated bounded actual receipts; unknowns and evidence domains retained",
+  "observed_at": "2026-10-04T08:41:42.471217+00:00",
+  "coverage_boundary": "22 known gaps/30 requirements traced through named small metadata packets; no exhaustive raw corpus/remote market scan, no atomic latest-state claim",
   "packets": [
     {
-      "id": "wording-candidate",
-      "owner": "Post / Benchmark",
-      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "exact scoring manifest unavailable; 15doc/2391fragments owner report",
-      "purpose_arm": "wording first",
-      "unit_grain": "text/fragments vs independent event",
-      "scope_coverage": "reported seven early2023 disclosures",
-      "eligibility": "not accepted; model/version/texttime freeze unknown",
+      "id": "post-01",
+      "owner": "Post/Benchmark",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/wording_inputs_v2/manifest.json",
+      "purpose_arm": "wording_input",
+      "unit_grain": "15 documents /8 accessions /4 CIKs /8 primary8Ks /7 exhibits",
+      "scope_coverage": "2023 accession cohort; no2024 accession; unqualified",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
       "gap_ids": [
         "DD02",
         "DD03",
@@ -19,300 +19,2004 @@
         "DD21"
       ],
       "evidence": [
-        "E04",
-        "E09"
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "manifest schema inspected; source/extraction version remains in per-document transcripts",
+      "exact_input_output_manifest_sha": {
+        "declared_manifest_sha256": "0a4668449f6950738ba03d66e2828bcd6bb258def462c06a76dcab14adb216e2",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "sec_accepted_at_utc": {
+          "meaning": "administrative SEC acceptance",
+          "min": "2023-01-05T21:40:33Z",
+          "max": "2023-03-01T11:38:13Z",
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "null for7 exhibits",
+          "evidence": "manifest primary rows"
+        },
+        "earliest_public_at_utc": {
+          "meaning": "first public availability",
+          "min": null,
+          "max": null,
+          "timezone": null,
+          "precision": null,
+          "null_sentinel": "null unknown",
+          "evidence": "manifest"
+        },
+        "historical_receipt_at_utc": {
+          "meaning": "actual historical receipt",
+          "min": null,
+          "max": null,
+          "timezone": null,
+          "precision": null,
+          "null_sentinel": "null unknown",
+          "evidence": "manifest"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/wording_inputs_v2/manifest.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
-      "id": "issuer-calendar",
+      "id": "post-02",
       "owner": "Post",
-      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "exact calendar manifest unavailable",
-      "purpose_arm": "wording first/shared",
-      "unit_grain": "issuer/session",
-      "scope_coverage": "seed502sessionsx4=2008,2024-25 reference",
-      "eligibility": "actual security/date sets and schedules not freshly inspected",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/remote-v3/results/integrated-v3/sessions.json",
+      "purpose_arm": "shared_reference_calendar",
+      "unit_grain": "502 unique reference sessions",
+      "scope_coverage": "retrospective realized horizon only",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
       "gap_ids": [
         "DD01",
-        "DD04",
-        "DD05"
-      ],
-      "evidence": [
-        "E01"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "post-daily-bars",
-      "owner": "Post",
-      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "exact daily-bar manifest unavailable",
-      "purpose_arm": "marks/lookback wording",
-      "unit_grain": "security/day OHLC",
-      "scope_coverage": "seed3008bars,752/company,2023-25",
-      "eligibility": "structural dailycoverage; no execution/cost claim",
-      "gap_ids": [
-        "DD04",
-        "DD05",
-        "DD07",
+        "DD09",
         "DD21"
       ],
       "evidence": [
-        "E01"
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "XNYS-core/nyse-2022-notice-plus-2025-mourning-v1",
+      "exact_input_output_manifest_sha": {
+        "declared_sha256": "761acab4e6531c1197345b335f018388e72fec9a3f685e77cd44b9b9860548ab",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "session_id": {
+          "meaning": "local exchange date",
+          "min": "2024-01-02",
+          "max": "2025-12-31",
+          "timezone": "America/New_York",
+          "precision": "day",
+          "null_sentinel": "none observed",
+          "evidence": "actual502 rows"
+        },
+        "open_at_utc_close_at_utc": {
+          "meaning": "scheduled open/actual session close",
+          "min": "2024-01-02T14:30:00+00:00",
+          "max": "2025-12-31T21:00:00+00:00",
+          "timezone": "UTC from America/New_York",
+          "precision": "second",
+          "null_sentinel": "none observed",
+          "evidence": "DST shifts, six early closes, mourning exclusion inspected"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/remote-v3/results/integrated-v3/sessions.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
-      "id": "post-publication-v3",
+      "id": "post-03",
       "owner": "Post",
-      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "publication-replay-v3 exact path/hash pending",
-      "purpose_arm": "wording clock candidate",
-      "unit_grain": "source/document public bound",
-      "scope_coverage": "reported20conditional bounds,2BXMTexcluded",
-      "eligibility": "dayend+historicalbyte-equality assumption; no evidenced exact-text bound",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/remote-v3/results/integrated-v3/decisions.json",
+      "purpose_arm": "document_entity_decisions",
+      "unit_grain": "2008 issuer/session decisions,4 identical502-date sets",
+      "scope_coverage": "document-only, not qualified tradable observations",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
+      "gap_ids": [
+        "DD01",
+        "DD04",
+        "DD05",
+        "DD10"
+      ],
+      "evidence": [
+        "E14"
+      ],
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "protocol_version1",
+      "exact_input_output_manifest_sha": {
+        "sha256": null,
+        "commit": null
+      },
+      "time_fields": {
+        "decision_at_utc": {
+          "meaning": "information cutoff",
+          "min": null,
+          "max": null,
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "none observed",
+          "evidence": "zero decisions later than their own session close; exact early-close local times unprinted"
+        },
+        "outcome_end_utc": {
+          "meaning": "next session horizon endpoint",
+          "min": null,
+          "max": null,
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "unknown final-horizon behavior",
+          "evidence": "sample2024-01-02 decision endpoint2024-01-03T21:00:00Z"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/remote-v3/results/integrated-v3/decisions.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "post-04",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/publication-replay-v3/lane-report.json",
+      "purpose_arm": "conditional_publication_replay",
+      "unit_grain": "22sources/20conditional/2quarantined;13conditionalwordingdocs/2248fragments",
+      "scope_coverage": "zero historically qualified wording features; no observed ready or first-public/monitoring proof",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
       "gap_ids": [
         "DD03",
         "DD08"
       ],
       "evidence": [
-        "E01",
-        "E09"
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "publication-replay-lane-v1/SEC_assigned_filing_day_end_normal_dissemination_v1",
+      "exact_input_output_manifest_sha": {
+        "publication_replay_declared_sha256": "a7a5ee99a7d8af28d16767c1cdbe68fe3c1d19a4dc072713c8db1fac65084c23",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "created_at_utc": {
+          "meaning": "artifact generation",
+          "min": "2026-10-04T03:36:36.274055+00:00",
+          "max": "2026-10-04T03:36:36.274055+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "lane report"
+        },
+        "conditional_source_assumed_available_at_utc": {
+          "meaning": "assumed assigned-filing-day-end plus60s",
+          "min": null,
+          "max": null,
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "null quarantined",
+          "evidence": "wording-source-join; assumption, not verified public bound"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/publication-replay-v3/lane-report.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
-      "id": "industry-current-v2",
-      "owner": "Industry",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "clocks v2 candidate; outputhash not freshly inspected",
-      "purpose_arm": "clock candidate",
-      "unit_grain": "source/document rows",
-      "scope_coverage": "35rows;22uniqueexcluded43overlappingreasons;13proxy",
-      "eligibility": "knownactualfirstpublic0/ready0;publicuppernull,assumedSECproxy",
+      "id": "post-05",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/wording_results_v2/results/wording-v2/run-report.json",
+      "purpose_arm": "frozen_teacher_wording",
+      "unit_grain": "15docs;2391fragments;0failed;1truncated",
+      "scope_coverage": "scored teacher outputs, historical model cutoff/version unqualified",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
       "gap_ids": [
-        "DD03"
+        "DD08"
       ],
       "evidence": [
-        "E01"
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "ProsusAI/finbert@db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+      "exact_input_output_manifest_sha": {
+        "declared_report_sha256": "9d005dfb3d71175bcf95bd0b2180a92c6a4c1a7dc4b04a09aedd25c7ef58ca9b",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "completed_at_utc": {
+          "meaning": "actual model run completion",
+          "min": "2026-10-04T02:22:47.209449+00:00",
+          "max": "2026-10-04T02:22:47.209449+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "runreport"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/wording_results_v2/results/wording-v2/run-report.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
-      "id": "industry-history-v2",
-      "owner": "Industry",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "historical clocks v2 candidate; hash pending",
-      "purpose_arm": "financial history/conditionalclock",
-      "unit_grain": "document/accession rows",
-      "scope_coverage": "37rows36accessions",
-      "eligibility": "all37unqualified identities/publicavailability;SEC+24h assumption",
-      "gap_ids": [
-        "DD03",
-        "DD13"
-      ],
-      "evidence": [
-        "E01"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "industry-market-scope",
-      "owner": "Industry",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs.json",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "SHA b1c0d821e6dc74fd7355f17cef56725f01ad8acf6d1c88317a419689f33453f6; currentv3 notinspected",
-      "purpose_arm": "equityfirst;derivativesdeferred",
-      "unit_grain": "files,quote rows,definition rows separate",
-      "scope_coverage": "sixjobs162files1992219328compressedbytes;2024-01-01to2026-01-01exclusive",
-      "eligibility": "scope/acquisition not consumerexecutionaccepted;128unscoredAMTcandidate report",
+      "id": "post-06",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/stock_bars_2023_2025/collection-report.json",
+      "purpose_arm": "conditional_equity_price_diagnostic",
+      "unit_grain": "3008bars=752per4tickers",
+      "scope_coverage": "not qualified1530features or execution; no complete historical availability",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
       "gap_ids": [
         "DD04",
-        "DD06",
+        "DD05",
         "DD07",
-        "DD16",
         "DD21"
       ],
       "evidence": [
-        "E08"
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "Massive unadjusted daily bars; collector SHAff9ccfa86e729724180acc1ff7c703fcca3b3462770ae51a0cc29ff570c7d9da",
+      "exact_input_output_manifest_sha": {
+        "per_security_source_hashes": "retained in collectionreport",
+        "commit": null,
+        "recomputed": false
+      },
+      "time_fields": {
+        "bar_dates": {
+          "meaning": "daily market candidate dates",
+          "min": "2023-01-03",
+          "max": "2025-12-31",
+          "timezone": "provider daily clock semantics require qualification",
+          "precision": "day",
+          "null_sentinel": "none reported",
+          "evidence": "collectionreport"
+        },
+        "produced_at_utc": {
+          "meaning": "processing generation",
+          "min": "2026-10-04T01:31:35.633740+00:00",
+          "max": "2026-10-04T01:31:35.633740+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "collectionreport"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/stock_bars_2023_2025/collection-report.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
-      "id": "industry-structural",
-      "owner": "Industry",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261003/market/structural_audit.md",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "structuraldocument,adapter/codeversion unknown",
-      "purpose_arm": "broaderstructure",
-      "unit_grain": "securityquote/definition",
-      "scope_coverage": "seed2010-01-04to2026-08-28;EQUS1028190quotes2510defs",
-      "eligibility": "not eventaligned economiccoverage;15080ts_eventnull;21degradeddate propagation pending",
-      "gap_ids": [
-        "DD04",
-        "DD06",
-        "DD07"
-      ],
-      "evidence": [
-        "E01"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "benchmark-financial",
-      "owner": "Benchmark",
-      "canonical_location": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/examples/financial-pilot/minimum-source-scope.json",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "proposal schemafinancial-pilot-source-scope-v1;producer83eea30;livinghashes versioned",
-      "purpose_arm": "financial next;0requiredfirstarm",
-      "unit_grain": "originals/accessions/groups/XML/states/cells/issuerdates",
-      "scope_coverage": "45/37/36/424/500/844;8368history+16current=8384;2092issuerweekdayrows",
-      "eligibility": "proposal inactive;nativefieldclock eligibility disabled",
-      "gap_ids": [
-        "DD01",
-        "DD02",
-        "DD12",
-        "DD13",
-        "DD17"
-      ],
-      "evidence": [
-        "E01",
-        "E07"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "macro-cache",
-      "owner": "Benchmark / Industry",
-      "canonical_location": "canonical source path not freshly verified",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "version/manifest/hash unknown",
-      "purpose_arm": "financial next",
-      "unit_grain": "observation/vintage",
-      "scope_coverage": "seed820observations818numeric2null",
-      "eligibility": "historical-asofqualified0;BLSdashnull",
-      "gap_ids": [
-        "DD14"
-      ],
-      "evidence": [
-        "E01"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "native-final-consumer",
+      "id": "post-07",
       "owner": "Post",
-      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/native-v7-acceptance-v1/acceptance-capsule-final-v1.json",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "0efcef5cc06c729f3743e820978d419485216f008530b4ff0bc773dd9f9c2777; finalcollection2c63d5f3... seedpin",
-      "purpose_arm": "financial descriptive acceptance",
-      "unit_grain": "source files/bindings/testcases/fixtures",
-      "scope_coverage": "690tests0skipsEXIT0frozen196; earlier110outputs109bindings",
-      "eligibility": "canonicalobservations0/humangold0;noeligiblefieldclock/strategyperformance",
-      "gap_ids": [
-        "DD17"
-      ],
-      "evidence": [
-        "E05",
-        "E06"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "native-remote-archive",
-      "owner": "Benchmark",
-      "canonical_location": "/home/john-riley/quant_hacks_financial_research/completion-20261004-v7/results/native-handoff-delivery-v7.tar.gz",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "seed14216041bytes;fd39baea32a63349eabb4e043e4710a38add56e14ad55d0bd3650d6f6a7a2dc1",
-      "purpose_arm": "remote native data",
-      "unit_grain": "archivebytes vs local thinmetadata",
-      "scope_coverage": "V7remote fullarchive; distinct24KBpreparedpacket",
-      "eligibility": "seedpin only; remote source not newly verified; no bulkcopied",
-      "gap_ids": [
-        "DD18"
-      ],
-      "evidence": [
-        "E01"
-      ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
-    },
-    {
-      "id": "lattice-diagnostic",
-      "owner": "Lattice",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/grill-sessions/2026-10-03-contextual-lattice/task_plan.md",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "livingresearchplan; exactnumericoutputmanifest unknown",
-      "purpose_arm": "separate diagnostics",
-      "unit_grain": "forecast rows/adjustedclosereturns not netaccount",
-      "scope_coverage": "2024-25 inspected DEVELOPMENT;500bootstrap report",
-      "eligibility": "16:00adjustedclose study not comparable to earlierclock unadjustedtarget without reconciliation",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/conditional-diagnostic-run-v2/stage/prepared/recipe.json",
+      "purpose_arm": "conditional_raw_close_forecast",
+      "unit_grain": "1008opportunities/920preparedrows;retained752predictions188dates4stocks",
+      "scope_coverage": "2024development only; no text/dividends/execution; no model selection",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
       "gap_ids": [
         "DD05",
         "DD11"
       ],
       "evidence": [
-        "E01"
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "conditional-equity-diagnostic-recipe-v1",
+      "exact_input_output_manifest_sha": {
+        "freeze_declared_recipe_sha256": "6754f5d6795273688241c67cbaaeb9ea7bb4aecb983d1e6a88c46fe1b2e11480",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "fold_intervals": {
+          "meaning": "separate Q1trainQ2validation,Q2trainQ3validation,Q3trainQ4validation",
+          "min": "2024-01-01T00:00:00Z",
+          "max": "2025-01-01T00:00:00Z",
+          "timezone": "UTC",
+          "precision": "second",
+          "null_sentinel": "none",
+          "evidence": "recipe"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/conditional-diagnostic-run-v2/stage/prepared/recipe.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "post-08",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/configs/wording_equity_pilot-v1.json",
+      "purpose_arm": "first_wording_equity_protocol",
+      "unit_grain": "one linked Item2.02 exhibit per accession; equal-dollar eligible position/account-day",
+      "scope_coverage": "qualified_only; USD1m,longshort,<=100%gross,zeroidlecash; current economic chain pending",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
+      "gap_ids": [
+        "DD08",
+        "DD09",
+        "DD21"
+      ],
+      "evidence": [
+        "E14"
+      ],
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "wording-equity-pilot-protocol-v1",
+      "exact_input_output_manifest_sha": {
+        "declared_sha256": "4828922c88a423c41326578b715b1feae59bb451d86eced97dc363875a1095d9",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "frozen_at_utc": {
+          "meaning": "policy freeze",
+          "min": "2026-10-04T07:48:23.407632+00:00",
+          "max": "2026-10-04T07:48:23.407632+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "protocol"
+        },
+        "allowed_event_window": {
+          "meaning": "development cohort only",
+          "min": "2024-01-01",
+          "max": "2024-12-31",
+          "timezone": "reference exchange sessions",
+          "precision": "day",
+          "null_sentinel": "missing source evidence excluded",
+          "evidence": "date_from/protected_from"
+        },
+        "entry_exit": {
+          "meaning": "first qualifying open+60s to actualclose-60s",
+          "min": null,
+          "max": null,
+          "timezone": "UTC reference clock",
+          "precision": "second",
+          "null_sentinel": "unknown/unqualified/no-fill retained",
+          "evidence": "protocol; no current acceptedfills or netledger inspected"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/configs/wording_equity_pilot-v1.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "post-09",
+      "owner": "Post",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/native-v7-acceptance-v1/collection-verification-final-v1.json",
+      "purpose_arm": "P1_native_descriptive_delivery",
+      "unit_grain": "690unittests/196frozenfiles/8receipts/237346bytes;3descriptivegroups/4nodes/1state/0eligibleobservations",
+      "scope_coverage": "descriptive only; no economic gate; disabled benchmark_native_as_filed namespace",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
+      "gap_ids": [
+        "DD17",
+        "DD18"
+      ],
+      "evidence": [
+        "E14"
+      ],
+      "observed_at": "2026-10-04T07:58:35Z",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "native-v7-final-collection-verification-v1",
+      "exact_input_output_manifest_sha": {
+        "declared_sha256": "2c63d5f3a35a66e5b692855b8bcd123db94c09c25f575f5acd44fe7ed93bd553",
+        "run_sha256": "808da15b3d7c90a8a9f21255025647bd3cac4d54545c36d67e74947f6ff2942f",
+        "regression_log_sha256": "15f8458de46d5ca8a630b3b8ed36a1af73b2fa9024322d955957e05de715cf8a",
+        "source_manifest_sha256": "3850d35b2ed9eaafb57869a6232791cc80cbb125851da78d2fb259d261213ead",
+        "recomputed": false,
+        "commit": null
+      },
+      "time_fields": {
+        "verified_at_utc": {
+          "meaning": "collection verification time",
+          "min": "2026-10-04T07:19:19.208151+00:00",
+          "max": "2026-10-04T07:19:19.208151+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "receipt"
+        },
+        "finished_at_utc": {
+          "meaning": "actual remote gate completion",
+          "min": "2026-10-04T07:08:15.952644+00:00",
+          "max": "2026-10-04T07:08:15.952644+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "collectedfinalrun"
+        },
+        "public_first_public": {
+          "meaning": "historical availability",
+          "min": null,
+          "max": null,
+          "timezone": null,
+          "precision": null,
+          "null_sentinel": "unknown",
+          "evidence": "finalcapsule preserves unknown"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/data/processed/8k_validation/native-v7-acceptance-v1/collection-verification-final-v1.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "post-10",
+      "owner": "Post",
+      "canonical_location": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+      "purpose_arm": "first_wording_equity_current_protocol",
+      "unit_grain": "one eligible event opportunity;252 reference account sessions",
+      "scope_coverage": "qualified_only current v2; static header and hashes are not actual consumer acceptance",
+      "eligibility": "Inspected static/diagnostic/runtime scope only; no trading grant",
+      "gap_ids": [
+        "DD08",
+        "DD09",
+        "DD21"
+      ],
+      "evidence": [
+        "E14"
+      ],
+      "observed_at": "2026-10-04T08:19:52.372295+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": "wording-equity-pilot-protocol-v2",
+      "exact_input_output_manifest_sha": {
+        "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+        "bytes": 6225,
+        "recomputed": true,
+        "commit": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+        "supersedes_sha256": "4828922c88a423c41326578b715b1feae59bb451d86eced97dc363875a1095d9",
+        "calendar_file_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+        "calendar_rows_sha256": "dab36daed9c3ce207b1189c2f3b45d7d4a46d8ed031f486adbc12a4ef2f97d9e"
+      },
+      "time_fields": {
+        "frozen_at_utc": {
+          "meaning": "v2 protocol freeze",
+          "min": "2026-10-04T08:00:11.116997+00:00",
+          "max": "2026-10-04T08:00:11.116997+00:00",
+          "timezone": "UTC",
+          "precision": "microsecond",
+          "null_sentinel": "none",
+          "evidence": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json"
+        },
+        "calendar_dates": {
+          "meaning": "2024 reference sessions",
+          "min": "2024-01-02",
+          "max": "2024-12-31",
+          "timezone": "America/New_York",
+          "precision": "day",
+          "null_sentinel": "none in observed dates",
+          "evidence": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_calendar-2024-v1.json"
+        }
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "industry-current_v2",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+      "purpose_arm": "publication candidate",
+      "unit_grain": "source-document",
+      "scope_coverage": {
+        "reviewed_at": "2026-10-04T06:06:50.345909Z",
+        "rows": 35,
+        "issuers": 4,
+        "accessions": 16,
+        "proxy_candidates": 13,
+        "reason_occurrences": {
+          "conflict": 5,
+          "identity_integrity_unverified": 19,
+          "unqualified": 17,
+          "quarantine": 2
+        },
+        "unique_excluded": 22,
+        "known_public": 0,
+        "ready": 0
+      },
+      "eligibility": "Assumed proxy only;0observed public/ready; source schema name qualified does not change evidence",
+      "gap_ids": [
+        "DD03",
+        "DD12",
+        "DD22"
+      ],
+      "evidence": [
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "schema": "reit-publication-clock-evidence-v1",
+        "policy": "sec_acceptance_plus_24h_or_date_upper_plus_24h_v1",
+        "code_sha": null,
+        "mutable_artifact_commit": null
+      },
+      "exact_input_output_manifest_sha": {
+        "sha256": "2f8ef97967a705540512eff04be469acebc732487664f34dd9c362926ad0cedb",
+        "hash_evidence": "delegated actual byte SHA256 computation"
+      },
+      "time_fields": {
+        "reviewed_at": "2026-10-04T06:06:50.345909Z",
+        "earliest_public": null,
+        "historical_receipt": null
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false,
+      "storage_migration_scope": "Root cache path may have moved; no silent alias. Separate observed hash from current input binding."
+    },
+    {
+      "id": "industry-historical_v2",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+      "purpose_arm": "publication candidate",
+      "unit_grain": "source-document",
+      "scope_coverage": {
+        "reviewed_at": "2026-10-04T06:07:28.245148Z",
+        "rows": 37,
+        "accessions": 36,
+        "qualified_proxy_candidates": 0,
+        "all_unqualified": true
+      },
+      "eligibility": "Assumed proxy only;0observed public/ready; source schema name qualified does not change evidence",
+      "gap_ids": [
+        "DD03",
+        "DD12",
+        "DD22"
+      ],
+      "evidence": [
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "schema": "reit-publication-clock-evidence-v1",
+        "policy": "sec_acceptance_plus_24h_or_date_upper_plus_24h_v1",
+        "code_sha": null,
+        "mutable_artifact_commit": null
+      },
+      "exact_input_output_manifest_sha": {
+        "sha256": "02fb975fd86f2c1de924c49b1b9fc31a2f8cb7f036feb526e55aced7174d3a22",
+        "hash_evidence": "delegated actual byte SHA256 computation"
+      },
+      "time_fields": {
+        "reviewed_at": "2026-10-04T06:07:28.245148Z",
+        "earliest_public": null,
+        "historical_receipt": null
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false,
+      "storage_migration_scope": "Root cache path may have moved; no silent alias. Separate observed hash from current input binding."
+    },
+    {
+      "id": "industry-historical_v3",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+      "purpose_arm": "publication candidate",
+      "unit_grain": "source-document",
+      "scope_coverage": {
+        "reviewed_at": "2026-10-04T06:59:31.675821Z",
+        "rows": 37,
+        "accessions": 36,
+        "proxy_candidates": 37,
+        "exclusion_flags": 0,
+        "known_public": 0,
+        "observed_ready": 0,
+        "canonical_ready": false,
+        "code_sha256": "6b7e226e3f3c1262eb7fe185d1bc6f2c7a3c4ddc0114575dca212cbe821925db",
+        "remote": "home-pc:/tmp/quanthaxs-reit-continuation-20261004/clocks-qualified-v3"
+      },
+      "eligibility": "Assumed proxy only;0observed public/ready; source schema name qualified does not change evidence",
+      "gap_ids": [
+        "DD03",
+        "DD12",
+        "DD22"
+      ],
+      "evidence": [
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "schema": "reit-publication-clock-evidence-v1",
+        "policy": "sec_acceptance_plus_24h_or_date_upper_plus_24h_v1",
+        "code_sha": "6b7e226e3f3c1262eb7fe185d1bc6f2c7a3c4ddc0114575dca212cbe821925db",
+        "mutable_artifact_commit": null
+      },
+      "exact_input_output_manifest_sha": {
+        "sha256": "a2f65545708aebb9c3cf2fa566cfcfc613797970d6664bedd272cc79b1e8c09a",
+        "hash_evidence": "delegated actual byte SHA256 computation"
+      },
+      "time_fields": {
+        "reviewed_at": "2026-10-04T06:59:31.675821Z",
+        "earliest_public": null,
+        "historical_receipt": null
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false,
+      "storage_migration_scope": "Root cache path may have moved; no silent alias. Separate observed hash from current input binding."
+    },
+    {
+      "id": "industry-market",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+      "purpose_arm": "wording equity candidate; derivatives later",
+      "unit_grain": "input configuration/producer summary describing vendor minute and definition rows;remote raw bytes uninspected",
+      "scope_coverage": {
+        "schema": "reit-market-raw-inputs-1",
+        "jobs": 6,
+        "storage": "home-pc",
+        "start": "2024-01-01",
+        "exclusive_end": "2026-01-01",
+        "normalized_config_sha256": "08b47dab6af4fe487dade41937983007fd05e4131d94abc9af276ebcc5bf46ee",
+        "raw_vs_normalized_different_hash_domains": true,
+        "qualification_schema": "reit-market-qualification-v1",
+        "scope": "development_2024_2025_selected_raw_files",
+        "selected_files_scanned": 98,
+        "derivative_quote_files_unscanned": 46,
+        "diagnostic_rows": {
+          "EQUS": {
+            "used": 957736,
+            "total": 1028190
+          },
+          "January_OPRA": {
+            "used": 10419098,
+            "total": 14103960
+          },
+          "January_GLBX": {
+            "used": 174433,
+            "total": 235288
+          }
+        },
+        "unscored_amt_candidates": 128,
+        "baseline": "persistence",
+        "lookback_seconds": 60,
+        "holding_seconds": 3600,
+        "candidate_start": "2024-01-02T12:01:00.000000000Z",
+        "candidate_end": "2024-01-02T16:34:00.000000000Z",
+        "collection_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+        "collected_at": "2026-10-04T07:32:14.292359+00:00",
+        "retained_verify_test_clock_market_exits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reported_candidate_degraded_violations": 0,
+        "outcomes_read": false,
+        "consumer_accepted": false,
+        "coverage_complete": false,
+        "independent_dated_history_qualified": false,
+        "strict_arbitrage": "rejected",
+        "repricing": "insufficient",
+        "implementation_fixture_receipt_at": "2026-10-04T05:46:09.9892091Z",
+        "old_receipt_only_tiny_csv_sqlite_fixtures": true
+      },
+      "eligibility": "producer scope only; outcomes unread/consumer_accepted=false",
+      "gap_ids": [
+        "DD04",
+        "DD06",
+        "DD07",
+        "DD16",
+        "DD21",
+        "DD22"
+      ],
+      "evidence": [
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "schema": "reit-market-raw-inputs-1",
+        "qualification_schema": "reit-market-qualification-v1",
+        "location_kind": "configuration summary,not raw quote bytes",
+        "raw_remote_byte_bindings_inspected": false
+      },
+      "exact_input_output_manifest_sha": {
+        "raw_config_file_sha256": "79b4f0c0d89bf2e56741d7b44ef5bff626027571178ebbb16438aa69bf3c5146",
+        "normalized_config_sha256": "08b47dab6af4fe487dade41937983007fd05e4131d94abc9af276ebcc5bf46ee",
+        "different_hash_domains": true
+      },
+      "time_fields": {
+        "ts_event": "optional last trade; not quote update/freshness",
+        "ts_recv": "vendor minute interval endpoint; not our historical receipt",
+        "timezone": "UTC",
+        "precision": "nanoseconds",
+        "missing_ts_event": 15080,
+        "parsed_ts_event": 1013110,
+        "parsed_ts_recv": 1028190,
+        "quote_update_age": null,
+        "our_historical_receipt": null,
+        "observed_ready": null,
+        "structural_receipt_at": "2026-10-04T02:46:30.153488+00:00"
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false,
+      "storage_migration_scope": "Root cache path may have moved; no silent alias. Separate observed hash from current input binding."
+    },
+    {
+      "id": "industry-quality-mask",
+      "owner": "Industry",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+      "purpose_arm": "equity holding quality",
+      "unit_grain": "excluded dates and decision/holding intersections",
+      "scope_coverage": {
+        "quality_rule_sha256": "8a10928738733b5756e614d4e937ed3cea02f24e5092a0728cb1f505a3b063d4",
+        "dates": [
+          "2024-06-03",
+          "2024-09-18",
+          "2025-03-24",
+          "2025-04-04",
+          "2025-05-06",
+          "2025-06-04",
+          "2025-06-16",
+          "2025-07-09",
+          "2025-08-08",
+          "2025-08-13",
+          "2025-08-19",
+          "2025-08-25",
+          "2025-09-03",
+          "2025-09-08",
+          "2025-09-12",
+          "2025-09-17",
+          "2025-09-24",
+          "2025-10-10",
+          "2025-10-13",
+          "2025-10-22",
+          "2025-11-28"
+        ],
+        "adapter": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/src/reit_market_qualification.py",
+        "minute_check_line": 208,
+        "feature_holding_check_line": 340,
+        "actual_wording_cohort_mask_accepted": false
+      },
+      "eligibility": "implemented; actual wording cohort mask not accepted",
+      "gap_ids": [
+        "DD07",
+        "DD22"
+      ],
+      "evidence": [
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "adapter": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/src/reit_market_qualification.py"
+      },
+      "exact_input_output_manifest_sha": {
+        "frozen_selection_sha256": "6d27cf30d8ded9c7c8c1efc58ae190248578657221249277bd103397425b771c",
+        "quality_rule_sha256": "8a10928738733b5756e614d4e937ed3cea02f24e5092a0728cb1f505a3b063d4"
+      },
+      "time_fields": {},
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false,
+      "storage_migration_scope": "Root cache path may have moved; no silent alias. Separate observed hash from current input binding."
+    },
+    {
+      "id": "financial-native",
+      "owner": "Benchmark",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/data/processed/financial-source-completion/run-v7/handoff-metadata/results/native-handoff/feature-definitions.json",
+      "purpose_arm": "P1 financial next",
+      "unit_grain": "issuer/accession/entity-wide GAAP instant",
+      "scope_coverage": {
+        "original_pairs": 45,
+        "AMT": 11,
+        "BXMT": 11,
+        "AGNC": 11,
+        "AAT": 12,
+        "requested": 37,
+        "historical_accessions": 36,
+        "historical_each_issuer": 9,
+        "historical_cells": 8368,
+        "current_cells": 16,
+        "total_cells": 8384,
+        "numeric_groups": 424,
+        "xml_elements": 500,
+        "states": 844,
+        "ok": 180,
+        "unmatched": 664,
+        "separate_denominators": true,
+        "V8_numeric424_null680_not_partition_of844": true
+      },
+      "eligibility": "inactive optional proposal; public/trading clocks unqualified",
+      "gap_ids": [
+        "DD02",
+        "DD13",
+        "DD17"
+      ],
+      "evidence": [
+        "E16"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "producer": "V7",
+        "auditor": "V8",
+        "source": "sec-native-xbrl",
+        "schema": "sec-native-instant-v1",
+        "producer_commit": "83eea30db9db13f00c6e10828aa775e16c4cf940",
+        "unit": "USD",
+        "definitions": [
+          "Assets",
+          "Liabilities",
+          "StockholdersEquity",
+          "CashAndCashEquivalentsAtCarryingValue"
+        ]
+      },
+      "exact_input_output_manifest_sha": {
+        "definition_pin": "9d0bcb98204eef8820d6e216b85e5b8928ffca8f12cd6e7eeb72186d7a17b79d",
+        "rehashed": false
+      },
+      "time_fields": {
+        "fiscal": "date/instant no timezone; not publication",
+        "acceptance": "UTC proxy, not earliest public",
+        "our_retrieval_processing": "2026-10-04 UTC fractionalseconds; not historical vintage",
+        "earliest_public": null,
+        "historical_receipt_processing": null,
+        "AMT_exact_row_comparison": "pending",
+        "liabilities": "not debt; ratio disabled",
+        "AAT": "March aggregate/warnings versus June native facts separate"
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/data/processed/financial-source-completion/run-v7/handoff-metadata/results/native-handoff/feature-definitions.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "financial-calendar-scaffold",
+      "owner": "Benchmark/Post",
+      "canonical_location": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\financial-source-completion\\stage-v7\\inputs\\historical-matrix\\matrix.csv",
+      "purpose_arm": "P1 financial diagnostic",
+      "unit_grain": "issuer weekday/decision",
+      "scope_coverage": {
+        "rows": 2092,
+        "dates": 523,
+        "four_issuer_sets_equal": true,
+        "session_count": 502,
+        "extra_closure_dates": [
+          "2024-01-01",
+          "2024-01-15",
+          "2024-02-19",
+          "2024-03-29",
+          "2024-05-27",
+          "2024-06-19",
+          "2024-07-04",
+          "2024-09-02",
+          "2024-11-28",
+          "2024-12-25",
+          "2025-01-01",
+          "2025-01-09",
+          "2025-01-20",
+          "2025-02-17",
+          "2025-04-18",
+          "2025-05-26",
+          "2025-06-19",
+          "2025-07-04",
+          "2025-09-01",
+          "2025-11-27",
+          "2025-12-25"
+        ],
+        "missing_session_dates": []
+      },
+      "eligibility": "diagnostic_no_outcome,not executable session join",
+      "gap_ids": [
+        "DD01"
+      ],
+      "evidence": [
+        "E16",
+        "E17"
+      ],
+      "observed_at": "2026-10-04T08:12:11.884381+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "calendar_use": "retrospective_realized_horizon_only"
+      },
+      "exact_input_output_manifest_sha": {
+        "fresh_sha256": "305ad3708b1423520bf4f02289f37d5048873f90df22093e2ae11b7edf6f5300",
+        "bytes": 265657
+      },
+      "time_fields": {
+        "decision_clock": "21:00:00Z diagnostic_no_outcome scaffold; not issuer1530 or financial public time",
+        "min_date": "2024-01-01",
+        "max_date": "2025-12-31"
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\financial-source-completion\\stage-v7\\inputs\\historical-matrix\\matrix.csv",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "macro-cache",
+      "owner": "Benchmark",
+      "canonical_location": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/data/processed/financial-source-completion/audit-v8/independent-verification-v8.json",
+      "purpose_arm": "P1 macro",
+      "unit_grain": "series period/current cached response",
+      "scope_coverage": {
+        "saved_responses": 4,
+        "observations": 820,
+        "numeric": 818,
+        "missing": 2,
+        "historical_asof_qualified": 0,
+        "missing_ids": [
+          "CUUR0000SA0:2025:M10",
+          "LNS14000000:2025:M10"
+        ],
+        "period_end": "2025-10-31",
+        "value": null,
+        "quality": "missing_value",
+        "reason": "official BLS dashes;2025 lapse in appropriations",
+        "retrieved_at": "2026-10-04T02:40:58.384827Z",
+        "processed_at": "2026-10-04T05:54:05.043694Z",
+        "raw_sha_pin": "55df9053e8dc5261569a2e400b2bebaa4ec171bd765793d1dd169c8758fc9d00",
+        "definition_sha_pin": "40a111091bb60e85af64f05e652aa9d9673dcee7534f0790cb081a4fbdf55523"
+      },
+      "eligibility": "0historical vintage qualified; missing official values null",
+      "gap_ids": [
+        "DD14"
+      ],
+      "evidence": [
+        "E16"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "auditor": "V8"
+      },
+      "exact_input_output_manifest_sha": {
+        "raw_sha_pin": "55df9053e8dc5261569a2e400b2bebaa4ec171bd765793d1dd169c8758fc9d00",
+        "definition_sha_pin": "40a111091bb60e85af64f05e652aa9d9673dcee7534f0790cb081a4fbdf55523",
+        "rehashed": false
+      },
+      "time_fields": {
+        "retrieved_at": "2026-10-04T02:40:58.384827Z",
+        "processed_at": "2026-10-04T05:54:05.043694Z",
+        "historical_first_release_revision": null
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/data/processed/financial-source-completion/audit-v8/independent-verification-v8.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "native-remote-archive",
+      "owner": "Benchmark/Post",
+      "canonical_location": "/home/john-riley/quant_hacks_financial_research/completion-20261004-v7/results/native-handoff-delivery-v7.tar.gz",
+      "purpose_arm": "P2 archive",
+      "unit_grain": "delivery archive vs local metadata",
+      "scope_coverage": {
+        "receipt": "C:/Users/johnp/.codex/worktrees/point-in-time-feature-matrix/QuantHaxs/data/processed/financial-source-completion/run-v7/final-delivery-receipt-v7.json",
+        "status": "verified_completed_delivery",
+        "local_thin_metadata_files": 21,
+        "consumer_eligibility": false,
+        "remote": "/home/john-riley/quant_hacks_financial_research/completion-20261004-v7/results/native-handoff-delivery-v7.tar.gz",
+        "bytes_pin": 14216041,
+        "sha_pin": "fd39baea32a63349eabb4e043e4710a38add56e14ad55d0bd3650d6f6a7a2dc1",
+        "inner_manifest_sha_pin": "eb0a88996eb21fd00a43a862722396a866d5b33f771b1aa372270eb060c769e5",
+        "delivery_manifest_sha_pin": "cafdebf98ebd6b20e1a5ddc1490929cb104be107968db4a4d167c3d9a5f1730b",
+        "roles_sha_pin": "c4fa0270b3fb0f65369d75b6b36c471b642c6fe6574887467fd64aa357d9e0f7",
+        "pathmap_sha_pin": "90c7f58d685f17fe9a952386c6ded46bc1504b18c07300815704d7d2e07c70a7",
+        "live_remote_hash_verified": false,
+        "bulk_fetched": false
+      },
+      "eligibility": "retained delivery pin; live archive bytes not reverified,not field/economic grant",
+      "gap_ids": [
+        "DD18"
+      ],
+      "evidence": [
+        "E16"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "producer": "V7"
+      },
+      "exact_input_output_manifest_sha": {
+        "sha_pin": "fd39baea32a63349eabb4e043e4710a38add56e14ad55d0bd3650d6f6a7a2dc1",
+        "bytes_pin": 14216041,
+        "rehashed": false
+      },
+      "time_fields": {},
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "/home/john-riley/quant_hacks_financial_research/completion-20261004-v7/results/native-handoff-delivery-v7.tar.gz",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
       "id": "sharpe-inference-design",
-      "owner": "Sharpe lane",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/research/2026-10-04-sharpe-confidence-and-monte-carlo.md",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "existingdesign + docs/superpowers/plans/2026-10-04-sharpe-confidence-and-monte-carlo.md",
-      "purpose_arm": "inference afterledger",
-      "unit_grain": "joint daily netaccountreturns",
-      "scope_coverage": "no eligible netseries evidenced",
-      "eligibility": "method/planning only, no performance or MCexecution",
+      "owner": "Sharpe / GPU owner",
+      "canonical_location": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-sharpe-confidence-and-monte-carlo.md",
+      "purpose_arm": "inference plan;GPU optional CPU-first",
+      "unit_grain": "registered method/plan",
+      "scope_coverage": "method inspected;no accepted account input or new runtime",
+      "eligibility": "plan only; no empirical performance/speedup",
       "gap_ids": [
         "DD10",
         "DD11"
       ],
       "evidence": [
-        "E01"
+        "E13"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
-      "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "observed_at": "2026-10-04T07:58:04.552803+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "artifact_commit": null
+      },
+      "exact_input_output_manifest_sha": {
+        "fresh_sha256": "bd9e7321762188e2df74df37a5e58c04f87a97fa798f0c581a6d83cff5388f34",
+        "bytes": 32075
+      },
+      "time_fields": {
+        "mtime_utc": "2026-10-04T06:06:00.703032+00:00",
+        "mtime_is_publication": false
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-sharpe-confidence-and-monte-carlo.md",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     },
     {
       "id": "gpu-plan",
-      "owner": "GPU owner",
-      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/superpowers/plans/2026-10-04-remote-gpu-math-optimization.md",
-      "schema_adapter_code_version_input_output_manifest_hash_commit": "existing CPUfirst optionalbackend plan; fullhashunavailable",
-      "purpose_arm": "deferred acceleration",
-      "unit_grain": "runtimeparity/indices cohorts",
-      "scope_coverage": "no install/job/measuredspeedup",
-      "eligibility": "acceptednetledger/registeredmethod and parity required; not economic blocker",
+      "owner": "Sharpe / GPU owner",
+      "canonical_location": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\gpu-math\\2026-10-04-inference-training.md",
+      "purpose_arm": "inference plan;GPU optional CPU-first",
+      "unit_grain": "registered method/plan",
+      "scope_coverage": "method inspected;no accepted account input or new runtime",
+      "eligibility": "plan only; no empirical performance/speedup",
       "gap_ids": [
         "DD11"
       ],
       "evidence": [
-        "E12"
+        "E13"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC",
+      "observed_at": "2026-10-04T07:58:04.552803+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "artifact_commit": null
+      },
+      "exact_input_output_manifest_sha": {
+        "fresh_sha256": "30a291e9f1841ab3f8b0e8f0bf9247eb946097f6fb41b21f11f9aa8674a6bc7b",
+        "bytes": 17938
+      },
+      "time_fields": {
+        "mtime_utc": "2026-10-04T07:31:59.578071+00:00",
+        "mtime_is_publication": false
+      },
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\gpu-math\\2026-10-04-inference-training.md",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
+    },
+    {
+      "id": "lattice-diagnostic",
+      "owner": "Lattice",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/artifacts/lattice-strategies/reports-v1/input_audit.json",
+      "purpose_arm": "P1 numerical diagnostic context",
+      "unit_grain": "adjusted-close targets and own hedge horizons",
+      "scope_coverage": {
+        "schema_version": "lattice-evidence-receipt-v1",
+        "observed_at_utc": "2026-10-04T08:22:29.365956+00:00",
+        "project_role": "Lattice contextual forecast/risk diagnostics; DD05/DD11 P1, separate from accepted wording/economic/account result",
+        "inventory": [
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\configs\\experiments\\lattice-strategies-v1.json",
+            "bytes": 3006,
+            "sha256": "e0a262becd20bf60e53fe16db017b77dc83800eef8a9f8190554bb50d537c45b",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": [
+              "experiment_id",
+              "classification",
+              "universe",
+              "input_start",
+              "diagnostic_start",
+              "diagnostic_end",
+              "label_end",
+              "label_boundary",
+              "primary_horizon_sessions",
+              "secondary_horizons_sessions",
+              "target",
+              "target_caveat",
+              "clock",
+              "residual",
+              "risk",
+              "cost_scenarios_one_way_bps",
+              "cost_scope",
+              "uncertainty",
+              "missing_data",
+              "new_orders",
+              "promotion",
+              "deferred"
+            ]
+          },
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\lattice-implementation\\results-v1.md",
+            "bytes": 9471,
+            "sha256": "cd4ec5ef53923e2f97ed21045f1cd79ec31987bf7c71cf82c0fb33d9cb2c27c6",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": "Markdown research report"
+          },
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-strategies\\reports-v1\\input_audit.json",
+            "bytes": 783,
+            "sha256": "a05b411e75f445f4e0d5a2546213cb4424ff59406850d93def6d10e51ef65823",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": [
+              "calendar",
+              "clock",
+              "filtered_price_rows",
+              "input_first",
+              "input_last",
+              "missing_return_cells",
+              "provenance",
+              "return_sessions",
+              "source_schema",
+              "universe"
+            ]
+          },
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-strategies\\reports-v1\\residual_report.json",
+            "bytes": 16315,
+            "sha256": "68c636b235852f0e416c8fe8781bc77dba79ba6b0beaf3d37f48272463711f2d",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": [
+              "horizons",
+              "primary_horizon",
+              "promotion",
+              "rows_retained",
+              "status"
+            ]
+          },
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-strategies\\reports-v1\\risk_report.json",
+            "bytes": 10877,
+            "sha256": "6d10ce27b4a5ac10c946a0a87a3348d34d1633373332f62b3479e07e835b94e8",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": [
+              "allocation_cost_scenarios",
+              "common_dates",
+              "common_policy_dates",
+              "cost_scope",
+              "estimators",
+              "forecast_unit",
+              "mse_unit",
+              "paired_graph_comparisons",
+              "promotion"
+            ]
+          },
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-math-audit\\run-v1\\frozen-target-audit.json",
+            "bytes": 45577,
+            "sha256": "a83459c936765e9ebf967c0cc4957865726f1d85c913fbb99882f95029478de6",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": [
+              "input_sha256",
+              "input_rows",
+              "model_refits",
+              "new_price_data",
+              "study_scope",
+              "notes",
+              "comparisons"
+            ]
+          },
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\configs\\experiments\\lattice-completion-v2.json",
+            "bytes": 1981,
+            "sha256": "39dee6e18524d107b70d4aeecd0f7a87dcfd5766d4807d8dad55b0e92df8abe9",
+            "evidence_class": "freshly inspected local artifact",
+            "schema": [
+              "experiment_id",
+              "classification",
+              "universe",
+              "input_start",
+              "diagnostic_start",
+              "diagnostic_end",
+              "label_end",
+              "development_selection_years",
+              "previously_inspected_diagnostic_years",
+              "purge_terminal_decision_sessions_per_fold",
+              "primary_horizon_sessions",
+              "secondary_horizons_sessions",
+              "formation_sessions",
+              "calibration_sessions",
+              "formation_anchor",
+              "max_characteristic_reversion_sessions",
+              "arms",
+              "selection_candidates",
+              "selection_rule",
+              "selection_scope",
+              "target",
+              "secondary_target_caveat",
+              "clock",
+              "split_gate",
+              "synthetic_seed",
+              "bootstrap_repetitions",
+              "bootstrap_block_sessions",
+              "uncertainty_scope",
+              "final_test_access",
+              "new_paid_orders",
+              "capital_deployment",
+              "consumer_economic_acceptance"
+            ]
+          }
+        ],
+        "design_v2_docs": [
+          {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\lattice-completion\\design-v2.md",
+            "bytes": 4733,
+            "sha256": "10bafaab629084bf5cb7de3ff53360f347773e70c4f1e732685a541f7fbacbbe",
+            "evidence_class": "freshly inspected local design doc",
+            "excerpt": "# Controlled Lattice continuation \u2014 2026-10-04\n\n## Purpose and boundaries\n\nThe human authorized completing the explained plan. Test whether a residual-state correction adds next-session information beyond simple forecasts, and why a smaller error appears if it does. This is a numerical component for the Post-owned first equity wording pilot; it does not duplicate that policy or account engine. The first wording arm and later financial benchmark remain separate. Native repair, data qualification and predictive usefulness are separate conclusions.\n\nUse the existing adjusted-close snapshot and acquired market bytes. Historical identity, receipt and adjustment vintages are unqualified. Inspected 2024/2025 stays development; protected final tests remain locked. New future observations and an economic edge are evidence requirements, not promised implementation results.\n\n## Mechanism and alternatives\n\nHypothesis: a temporarily displaced cumulative return of a stock and its fitted hedge reverses when their relationship is stable. Alternatives: the apparent state is an integrated unpredictable return series; a permanent company/relationship shift makes catch-up inappropriate; historical drift explains any forecast improvement; or abstention reduces forecast magnitude without discovering predictability.\n\nPredictions and contradictions are registered before this new fit. The state term should add on the same basket beyond zero, its own historical mean, own-return AR and formation drift. A permanent shift should expose the harmful pull toward an old level. Generated mean-reversion gains validate conditional mathematics only. Splitting calibration checks whether the estimated dynamics and correction direction agree; it is a price-history proxy for stability, not qualified company news.\n\n## Target, arms and controls\n\nEvery setting uses the same 126-session formation ending before the largest 80-session calibration block. Form the signed MST peer hedge once for each date/stock; preserve its weights and gross normalization. Forty, sixty and eighty sessions estimate state on that identical basket. Changing calibration cannot change the formation cutoff, hedge or realized target. Normalize forecast and realized additive basket returns by the same sum of absolute hedge weights.\n\nRegistered arms: zero, same-basket historical mean, same-basket return AR, formation drift, state correction alone, drift plus correction, and split-stability-gated drift plus correction. Retain inva"
+          }
+        ],
+        "input_audit": {
+          "calendar": "union of native screened price sessions; exchange-completeness unverified",
+          "clock": "completed_session_close_assumed_replay_availability_not_verified_receipt_or_executable_fill",
+          "filtered_price_rows": 24132,
+          "input_first": "2018-01-02T00:00:00",
+          "input_last": "2025-12-31T00:00:00",
+          "missing_return_cells": 12,
+          "provenance": "native Yahoo adjusted-close snapshot, historical identity/adjustment/receipt vintages unqualified",
+          "return_sessions": 2011,
+          "source_schema": "ticker: string\ndate: string\nopen: double\nhigh: double\nlow: double\nclose: double\nadjclose: double\nvolume: int64",
+          "universe": [
+            "AAPL",
+            "AMZN",
+            "BAC",
+            "CVX",
+            "GD",
+            "GOOGL",
+            "JPM",
+            "META",
+            "MSFT",
+            "NVDA",
+            "UNH",
+            "XOM"
+          ]
+        },
+        "frozen_raw_input_claim": {
+          "bytes": 87583322,
+          "sha256": "196a139efbd3583656c30908da80defee16b06b1af709ef913e8cd704b04f7f0",
+          "evidence_class": "owner claim from task handoff; raw parquet not read and remote hash not verified",
+          "source": "Yahoo adjusted closes",
+          "historical_identity": "unknown/unqualified",
+          "adjustment_vintage": "unknown/unqualified",
+          "historical_receipt_vintage": "unknown/unqualified"
+        },
+        "time_fields": {
+          "input_date": "naive midnight string/session label, not actual receipt or availability; first2018-01-02T00:00:00 last2025-12-31T00:00:00",
+          "decision_availability": "completed16:00 session close assumption per handoff; config says completed_session_close_assumed_replay_availability_not_verified_receipt_or_executable_fill; exchange/DST completeness not established by union calendar",
+          "quote_update_fill": "unknown; no authoritative fill/quote execution",
+          "labels": "horizon1 fractional return;5/20 additive sums, not compounded account returns; final h sessions remain unobserved and labels stop2025-12-31"
+        },
+        "v1_design": {
+          "experiment_id": "lattice-strategies-v1-20261004",
+          "classification": "exploratory_reused_2024_2025_no_promotion",
+          "diagnostic_start": "2024-01-01",
+          "diagnostic_end": "2025-12-31",
+          "primary_horizon": 1,
+          "secondary_horizons": [
+            5,
+            20
+          ],
+          "formation": 126,
+          "calibration": 60,
+          "disjoint_windows": true,
+          "all_seven_models": [
+            "zero",
+            "historical_mean",
+            "own_return_ar1",
+            "market_state",
+            "mst_peer_state",
+            "topcorr_peer_state",
+            "distance_peer_state"
+          ],
+          "bootstrap": {
+            "bootstrap_repetitions": 500,
+            "primary_block_sessions": 20,
+            "seed": 20261004,
+            "paired_date_clusters": true,
+            "intervals": "unadjusted_exploratory_all_registered_comparisons_disclosed"
+          },
+          "no_promotion": true,
+          "new_orders": 0
+        },
+        "forecast_results": {
+          "1": {
+            "common_opportunities": 6012,
+            "common_valid_model_opportunities": 3861,
+            "loss_unit": "additive_fractional_return_squared",
+            "target": "sum of future daily fractional returns; not compounded multi-session PnL",
+            "mst_relative_improvement_pct_vs_zero": -3.0330971684416235,
+            "cluster_dates": 501
+          },
+          "20": {
+            "common_opportunities": 5784,
+            "common_valid_model_opportunities": 3682,
+            "loss_unit": "additive_fractional_return_squared",
+            "target": "sum of future daily fractional returns; not compounded multi-session PnL",
+            "mst_relative_improvement_pct_vs_zero": -12.517637424715895,
+            "cluster_dates": 482
+          },
+          "5": {
+            "common_opportunities": 5964,
+            "common_valid_model_opportunities": 3824,
+            "loss_unit": "additive_fractional_return_squared",
+            "target": "sum of future daily fractional returns; not compounded multi-session PnL",
+            "mst_relative_improvement_pct_vs_zero": -8.097566332196697,
+            "cluster_dates": 497
+          }
+        },
+        "frozen_target_audit": {
+          "input_sha256": "cead0f12d542bdde4c807db3d66295c7d93efe8a96b34343d0fb54a6681d98c6",
+          "input_rows": 126504,
+          "model_refits": 0,
+          "new_price_data": false,
+          "study_scope": "post-result exploratory audit, previously inspected 2024/2025",
+          "primary_mst_own_hedge": [
+            {
+              "cohort": "available_basket",
+              "rows": 6012,
+              "dates": 501,
+              "no_trade_rows": 1450,
+              "model_refits": 0,
+              "target_scope": "same frozen model-specific additive hedge basket, candidate versus zero only",
+              "cross_model_comparison_valid": false,
+              "hedge_outcome": {
+                "candidate_mse": 0.0002779255275470187,
+                "zero_mse": 0.00026510449324549,
+                "forecast_mean": 0.0005054973922415097,
+                "target_mean": 0.00036621451279931854,
+                "mean_forecast_squared": 1.0797071305404395e-05,
+                "twice_mean_forecast_times_target": -2.0239629961242784e-06,
+                "loss_difference_decomposition": 1.2821034301528673e-05,
+                "paired": {
+                  "cluster_dates": 501,
+                  "improvement": -1.2821034301528679e-05,
+                  "relative_improvement_pct": -4.836219161949941,
+                  "interval_95": [
+                    -1.87280796935914e-05,
+                    -7.281313098553957e-06
+                  ],
+                  "interval_scope": "unadjusted exploratory; date clusters, circular blocks"
+                }
+              }
+            },
+            {
+              "cohort": "valid_model",
+              "rows": 4562,
+              "dates": 501,
+              "no_trade_rows": 0,
+              "model_refits": 0,
+              "target_scope": "same frozen model-specific additive hedge basket, candidate versus zero only",
+              "cross_model_comparison_valid": false,
+              "hedge_outcome": {
+                "candidate_mse": 0.0002725944238914546,
+                "zero_mse": 0.0002556983129267921,
+                "forecast_mean": 0.0006661662258123535,
+                "target_mean": 0.000155197598068946,
+                "mean_forecast_squared": 1.4228845394145384e-05,
+                "twice_mean_forecast_times_target": -2.667265570517134e-06,
+                "loss_difference_decomposition": 1.6896110964662516e-05,
+                "paired": {
+                  "cluster_dates": 501,
+                  "improvement": -1.649020127711115e-05,
+                  "relative_improvement_pct": -6.556546224589538,
+                  "interval_95": [
+                    -2.363843947962946e-05,
+                    -9.976508158652915e-06
+                  ],
+                  "interval_scope": "unadjusted exploratory; date clusters, circular blocks"
+                }
+              }
+            }
+          ],
+          "interpretation": "Negative relative improvement means worse MSE versus zero on SAME frozen model-specific hedge outcome; available basket4.836219%worse versus valid subset6.556546%worse. Different hedge targets cannot support cross-model MSE claims."
+        },
+        "risk": {
+          "common_dates": 501,
+          "common_policy_dates": 501,
+          "forecast_unit": "fractional_return_squared_per_session",
+          "mse_unit": "fractional_return_fourth_power",
+          "cost_scope": "assumed research marks with gross one; no executable or account net profit claim",
+          "estimators": {
+            "diagonal_cov": {
+              "abstentions": 0,
+              "available_scored": 501,
+              "forecast_mean": 3.064707608798949e-05,
+              "mse": 2.644124826703585e-07,
+              "observed_mean": 0.0001176654561920478,
+              "qlike": -6.4891099777736425,
+              "scored": 501,
+              "unmarked": 1
+            },
+            "ledoit_wolf": {
+              "abstentions": 0,
+              "available_scored": 501,
+              "forecast_mean": 0.00010216061037963548,
+              "mse": 2.5975480142109457e-07,
+              "observed_mean": 0.0001176654561920478,
+              "qlike": -8.009180188230618,
+              "scored": 501,
+              "unmarked": 1
+            },
+            "mst_tree": {
+              "abstentions": 0,
+              "available_scored": 501,
+              "forecast_mean": 0.00010358329899687504,
+              "mse": 2.5948733860997964e-07,
+              "observed_mean": 0.0001176654561920478,
+              "qlike": -8.020213948493383,
+              "scored": 501,
+              "unmarked": 1
+            },
+            "one_factor": {
+              "abstentions": 0,
+              "available_scored": 501,
+              "forecast_mean": 0.0001359610202222893,
+              "mse": 2.619910568183475e-07,
+              "observed_mean": 0.0001176654561920478,
+              "qlike": -8.055118958682622,
+              "scored": 501,
+              "unmarked": 1
+            },
+            "sample_cov": {
+              "abstentions": 0,
+              "available_scored": 501,
+              "forecast_mean": 0.00011734373951098145,
+              "mse": 2.61270852330632e-07,
+              "observed_mean": 0.0001176654561920478,
+              "qlike": -8.029581556003924,
+              "scored": 501,
+              "unmarked": 1
+            }
+          },
+          "paired_graph_comparisons": {
+            "diagonal_cov": {
+              "cluster_dates": 501,
+              "improvement": 1.5311039707197402,
+              "interval_95": [
+                0.3895167646060696,
+                3.4173112148988816
+              ],
+              "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+              "relative_improvement_pct": null
+            },
+            "ledoit_wolf": {
+              "cluster_dates": 501,
+              "improvement": 0.01103376026276399,
+              "interval_95": [
+                -0.007469982277195277,
+                0.033728049847403234
+              ],
+              "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+              "relative_improvement_pct": null
+            },
+            "one_factor": {
+              "cluster_dates": 501,
+              "improvement": -0.03490501018923901,
+              "interval_95": [
+                -0.20058631505554378,
+                0.08210633123033335
+              ],
+              "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+              "relative_improvement_pct": null
+            },
+            "sample_cov": {
+              "cluster_dates": 501,
+              "improvement": -0.009367607510542005,
+              "interval_95": [
+                -0.08239968017993601,
+                0.04658572923375591
+              ],
+              "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+              "relative_improvement_pct": null
+            }
+          },
+          "promotion": false,
+          "fixed_book": "equal_weight_12_names_gross_one",
+          "cost_scenarios": [
+            0,
+            1,
+            5,
+            10
+          ],
+          "note": "QLIKE/MSE risk losses and assumed allocation marks are contextual; not qualified USD1m account PnL/Sharpe, authoritative fills, borrow/financing or forward evaluation."
+        },
+        "v2_config": {
+          "experiment_id": "lattice-completion-v2-20261004",
+          "classification": "development_diagnosis_no_economic_promotion",
+          "universe": [
+            "AAPL",
+            "MSFT",
+            "AMZN",
+            "GOOGL",
+            "META",
+            "NVDA",
+            "JPM",
+            "BAC",
+            "XOM",
+            "CVX",
+            "UNH",
+            "GD"
+          ],
+          "input_start": "2018-01-01",
+          "diagnostic_start": "2021-01-01",
+          "diagnostic_end": "2025-12-31",
+          "label_end": "2025-12-31",
+          "development_selection_years": [
+            2021,
+            2022,
+            2023
+          ],
+          "previously_inspected_diagnostic_years": [
+            2024,
+            2025
+          ],
+          "purge_terminal_decision_sessions_per_fold": 20,
+          "primary_horizon_sessions": 1,
+          "secondary_horizons_sessions": [
+            5,
+            20
+          ],
+          "formation_sessions": 126,
+          "calibration_sessions": [
+            40,
+            60,
+            80
+          ],
+          "formation_anchor": "before_maximum_80_session_calibration_block_identical_hedge_across_settings",
+          "max_characteristic_reversion_sessions": 30,
+          "arms": [
+            "zero",
+            "historical_mean",
+            "ar1",
+            "formation_alpha",
+            "state_correction",
+            "alpha_state",
+            "split_gated_alpha_state"
+          ],
+          "selection_candidates": [
+            "alpha_state",
+            "split_gated_alpha_state"
+          ],
+          "selection_rule": "lowest_equal_fold_mean_primary_MSE_difference_must_improve_zero_and_best_registered_simple_control_else_zero",
+          "selection_scope": "research_setting_only_no_accepted_economic_or_capital_policy",
+          "target": "same_reference_MST_hedge_additive_fractional_return_divided_by_sum_absolute_weights",
+          "secondary_target_caveat": "additive_path_diagnostic_not_compounded_account_return",
+          "clock": "completed_adjusted_close_assumed_replay_availability_unknown_actual_receipt_adjustment_vintage_and_fill",
+          "split_gate": "both_half_calibration_state_fits_stationary_with_tau_cap_and_same_sign_correction",
+          "synthetic_seed": 20261004,
+          "bootstrap_repetitions": 500,
+          "bootstrap_block_sessions": 20,
+          "uncertainty_scope": "unadjusted_exploratory_frozen_setting_intervals_all_trials_disclosed_not_selected_winner_confirmation",
+          "final_test_access": false,
+          "new_paid_orders": 0,
+          "capital_deployment": false,
+          "consumer_economic_acceptance": false
+        },
+        "acceptance_limits": {
+          "v2_status": "configuration/design only in this audit; no v2 run verified",
+          "v2_development": "2021-2025;2021-2023selection,2024-2025previouslyinspected diagnostics; protected final_test_access=false",
+          "first_arm_consumer_acceptance": false,
+          "account_pnl_measured_by_this_audit": false,
+          "profitability_promotion": false,
+          "missing": "Qualified identity/adjustment/availability/execution/costs and consumer matched information/opportunity/time acceptance remain separate",
+          "no_raw_parquet_read": true,
+          "no_remote_rehash": true,
+          "no_jobs_or_fits": true,
+          "no_tests": true
+        }
+      },
+      "eligibility": "not accepted wording comparator or account performance",
+      "gap_ids": [
+        "DD05",
+        "DD11",
+        "DD22"
+      ],
+      "evidence": [
+        "E18"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "versions": "preservedv1 diagnostic;v2DEVELOPMENT continuation",
+        "remote_input_rehashed": false
+      },
       "exact_input_output_manifest_sha": null,
-      "unknown_reason": "Fresh canonical bytes inaccessible under OS112; preserve retained specific hashes above as separately classified"
+      "time_fields": {},
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/artifacts/lattice-strategies/reports-v1/input_audit.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false,
+      "storage_migration_scope": "Root cache path may have moved; no silent alias. Separate observed hash from current input binding."
+    },
+    {
+      "id": "new-first-arm-owner-inputs",
+      "owner": "Benchmark/Industry/Post",
+      "canonical_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json",
+      "purpose_arm": "minimal2024wording equity input refresh",
+      "unit_grain": "source/event aggregation and input qualification status",
+      "scope_coverage": {
+        "schema": "first-arm-owner-refresh-v1",
+        "observed_at_utc": "2026-10-04T08:30:27.859178+00:00",
+        "scope": "minimal integrated wording-equity dependency removal only",
+        "industry": {
+          "thread": "01a102d3-5cc5-7373-9620-523d2a1419a6",
+          "current_turn": "01a105f6-ab08-7182-bd7b-d76e19143196",
+          "candidate_audit": {
+            "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+            "sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+            "bytes": 6500,
+            "evidence_class": "inspected_artifact"
+          },
+          "candidate_count": 2,
+          "candidates": [
+            {
+              "accession": "0001053507-24-000009",
+              "release_date": "2024-02-27",
+              "exhibit": "pressreleaseq42023.htm",
+              "claimed_archive_time_utc": "2024-02-27T12:00:00Z",
+              "sec_acceptance_utc": "2024-02-27T12:05:39Z"
+            },
+            {
+              "accession": "0001053507-24-000128",
+              "release_date": "2024-10-29",
+              "exhibit": "pressreleaseq32024.htm",
+              "claimed_archive_time_utc": "2024-10-29T11:00:00Z",
+              "sec_acceptance_utc": "2024-10-29T11:05:59Z"
+            }
+          ],
+          "accepted_public_bounds": 0,
+          "exact_retained_exhibit_bytes": "not established by inspected audit; peer37 annual/quarterly originals exclude these exhibits",
+          "source_time_class": "publisher/archive historical claims and SEC filing events, not accepted exact-version public bound or historical receipt",
+          "broker_cache_class": "owner retained command output reports None for both exhibit URLs; no independent database read",
+          "scores": "not yet delivered/accepted for these2024 candidates"
+        },
+        "benchmark": {
+          "thread": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+          "current_turn": "01a10605-1eea-77c0-97ce-fbd3e80fb27b",
+          "current_owner_report": "began minimal2024 candidate/input check; not completed2024 producer",
+          "completed_producer_commit_owner_report": "b165d3504743706c419e03239b1d9c538ea361e5",
+          "bindings": [
+            {
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+              "sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+              "bytes": 24638,
+              "evidence_class": "inspected_artifact"
+            },
+            {
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+              "sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+              "bytes": 3160,
+              "evidence_class": "inspected_artifact"
+            },
+            {
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+              "sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+              "bytes": 692,
+              "evidence_class": "inspected_artifact"
+            }
+          ],
+          "produced_at_utc": "2026-10-04T08:15:26.367135+00:00",
+          "counts": {
+            "diagnostic_documents": 3,
+            "diagnostic_fragment_count": 925,
+            "economic_eligible_events": 0,
+            "excluded_before_selection": 4,
+            "original_primary_documents": 8,
+            "original_scored_documents": 15,
+            "original_scored_fragments": 2391,
+            "qualified_events": 0,
+            "selected_accessions": 4,
+            "selected_complete_2024_events": 0,
+            "selected_scored_fragments": 1642
+          },
+          "selected_events": [
+            {
+              "accession": "0001053507-23-000021",
+              "filing_date": "2023-02-23",
+              "diagnostic_value": null,
+              "qualified_value": null,
+              "available_at_utc": null,
+              "exclusions": [
+                "truncated_fragment",
+                "truncated_or_missing_document_status"
+              ],
+              "historical_feature_eligible": false,
+              "economic_eligible": false
+            },
+            {
+              "accession": "0001061630-23-000011",
+              "filing_date": "2023-02-08",
+              "diagnostic_value": 0.0955195961522502,
+              "qualified_value": null,
+              "available_at_utc": null,
+              "exclusions": [],
+              "historical_feature_eligible": false,
+              "economic_eligible": false
+            },
+            {
+              "accession": "0001423689-23-000003",
+              "filing_date": "2023-01-30",
+              "diagnostic_value": -0.009022599404964544,
+              "qualified_value": null,
+              "available_at_utc": null,
+              "exclusions": [],
+              "historical_feature_eligible": false,
+              "economic_eligible": false
+            },
+            {
+              "accession": "0001500217-23-000006",
+              "filing_date": "2023-02-07",
+              "diagnostic_value": 0.05335560798050246,
+              "qualified_value": null,
+              "available_at_utc": null,
+              "exclusions": [],
+              "historical_feature_eligible": false,
+              "economic_eligible": false
+            }
+          ],
+          "consumer_acceptance": "pending separate Post receipt",
+          "qualification_gates": [
+            "source_exact_version_public_bound",
+            "model_historical_vintage",
+            "provider_rights",
+            "registered_replay_acceptance",
+            "canonical_owner_acceptance"
+          ],
+          "minimal_missing_inputs": [
+            "At least one retained2024 Item2.02 primary and its single explicitly linked earnings-release text/version, transcript and complete frozen-model scores for this registered cohort/horizon",
+            "Independently supported public upper bound for the exact selected text; acceptance+24h is only an assumption",
+            "Accepted model-version/history/rights and retrospective-transform provenance",
+            "Dated equity identity, open+60s/actualclose-60s execution quotes, actions, short lifecycle/borrow/collateral, costs and continuous-exposure evidence under Post executionv2"
+          ],
+          "model_binding": {
+            "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-pilot-readiness-v1\\model-provenance-summary-v1.json",
+            "sha256": "cbba73c162be2918d9ea4f00f78c808097562f51187dfce08e48e33a5580666f",
+            "bytes": 6969,
+            "evidence_class": "inspected_artifact"
+          },
+          "model_summary": {
+            "canonical_enabled": false,
+            "current_weight_body_rehashed": false,
+            "earlier_checkpoint_numerical_equivalence": "not established",
+            "financial_model_pins_substituted": false,
+            "historical_transform_qualification": false,
+            "metadata_weight_oid_matches_retained_raw_weight_receipt": true,
+            "model_files_from_retained_run_receipt": {
+              "config.json": "f6449ddda85eb726207a40be59c0cd3bd4b142ccb27298d5e45f9ae3396b1abe",
+              "model.safetensors": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+              "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+              "tokenizer_config.json": "ffc7913f6084b138dad68de5a0c2f0ee25ac983709260901e01f53be5796b9d9",
+              "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+            },
+            "model_id": "ProsusAI/finbert",
+            "new_inference_performed": false,
+            "new_weights_downloaded": false,
+            "official_file_metadata": {
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_file_metadata.json",
+              "sha256": "cd61e61ba9af15847b43ed52f9c81fec26c8b37f894de7ac064e5ff8e0fea8d7"
+            },
+            "official_metadata_witnesses": [
+              {
+                "bytes": 4821,
+                "headers": {
+                  "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+                  "ETag": "W/\"12d5-dEPpuPnByfkt6KyiTEZskvqcIF0\""
+                },
+                "name": "revision_metadata",
+                "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_metadata.txt",
+                "received_at_utc": "2026-10-04T07:35:07.202608+00:00",
+                "requested_at_utc": "2026-10-04T07:35:06.285768+00:00",
+                "resolved_url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+                "sha256": "d6ca09ac0217a579162e6c1a0a7710becc307a835c200029aad7de0e9876debe",
+                "status_code": 200,
+                "url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+              },
+              {
+                "bytes": 5939,
+                "headers": {
+                  "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+                  "ETag": "W/\"1733-2nmEtQFLaOirl2kCq4rguQR5Iks\""
+                },
+                "name": "revision_commits",
+                "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_commits.txt",
+                "received_at_utc": "2026-10-04T07:35:07.577181+00:00",
+                "requested_at_utc": "2026-10-04T07:35:07.210946+00:00",
+                "resolved_url": "https://huggingface.co/api/models/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+                "sha256": "6f36aa810957712397789c99b4d08b0274e66ddce4cce77b138c0a3367b565a8",
+                "status_code": 200,
+                "url": "https://huggingface.co/api/models/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+              },
+              {
+                "bytes": 1476,
+                "headers": {
+                  "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+                  "ETag": "W/\"d57a1f3bc9735cdc84c7734d787fee973ad3a420\"",
+                  "X-Repo-Commit": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+                },
+                "name": "revision_model_card",
+                "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_model_card.txt",
+                "received_at_utc": "2026-10-04T07:35:07.904132+00:00",
+                "requested_at_utc": "2026-10-04T07:35:07.577181+00:00",
+                "resolved_url": "https://huggingface.co/ProsusAI/finbert/raw/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/README.md",
+                "sha256": "23bf85400efe1e88cbe2bf79cec8c5ff81fe9806c599f3ca85e18288ab871008",
+                "status_code": 200,
+                "url": "https://huggingface.co/ProsusAI/finbert/raw/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/README.md"
+              },
+              {
+                "bytes": 11357,
+                "headers": {
+                  "Date": "Sun, 04 Oct 2026 07:35:09 GMT",
+                  "ETag": "W/\"c45f37bac7442b1d2ba0f29c51f8486a52505b23a9328cd14519cf793bf4996e\""
+                },
+                "name": "project_license",
+                "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\project_license.txt",
+                "received_at_utc": "2026-10-04T07:35:08.340689+00:00",
+                "requested_at_utc": "2026-10-04T07:35:07.904132+00:00",
+                "resolved_url": "https://raw.githubusercontent.com/ProsusAI/finBERT/master/LICENSE",
+                "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+                "status_code": 200,
+                "url": "https://raw.githubusercontent.com/ProsusAI/finBERT/master/LICENSE"
+              }
+            ],
+            "revision": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+            "run_report": {
+              "actual_completed_at_utc": "2026-10-04T02:22:47.209449+00:00",
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\wording_results_v2\\results\\wording-v2\\run-report.json",
+              "sha256": "9d005dfb3d71175bcf95bd0b2180a92c6a4c1a7dc4b04a09aedd25c7ef58ca9b"
+            },
+            "schema_version": "wording-pilot-model-provenance-summary-v1",
+            "training_cutoff_qualification": "unknown; checkpoint-format publication is not a claim of future training",
+            "trusted_model_manifest_sha256": "dac46dec0de5b5779f1931d42eadc7590f36c2b4fe9c59c2149c84563c20ddba",
+            "weight_artifact_metadata": {
+              "lastCommit": {
+                "date": "2023-06-05T11:55:24.000Z",
+                "id": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+                "title": "Adding `safetensors` variant of this model"
+              },
+              "lfs": {
+                "oid": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+                "pointerSize": 134,
+                "size": 437965908
+              },
+              "oid": "17ee6110e826d0024768ae6555077bb1396b7e4a",
+              "path": "model.safetensors",
+              "securityFileStatus": {
+                "avScan": {
+                  "message": "No security issues detected",
+                  "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+                  "status": "safe"
+                },
+                "jFrogScan": {
+                  "message": "Safe model, does not support code execution on load.",
+                  "reportLink": "https://research.jfrog.com/model-threats/noautoload-suscode?utm_source=huggingface",
+                  "status": "safe"
+                },
+                "pickleImportScan": {
+                  "pickleImports": [],
+                  "status": "unscanned",
+                  "version": "0.0.0"
+                },
+                "protectAiScan": {
+                  "reportLink": "https://insights-db.paloaltonetworks.com/models/ProsusAI/finbert/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/files?blob-id=17ee6110e826d0024768ae6555077bb1396b7e4a&utm_source=huggingface",
+                  "status": "unscanned"
+                },
+                "status": "safe",
+                "virusTotalScan": {
+                  "message": "0/75 engines detect it as malicious.",
+                  "reportLink": "https://www.virustotal.com/gui/file/e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00?utm_source=huggingface",
+                  "status": "safe"
+                }
+              },
+              "size": 437965908,
+              "type": "file",
+              "xetHash": "97c9cb12d04352c17ea4a86542c6411d19940e4418e13199087eba3230f3c144"
+            },
+            "weights_rights_qualification": "not accepted; exact revision card has no explicit license declaration; repository code license is separate"
+          },
+          "producer_code": {
+            "scripts/build_wording_event_handoff.py": {
+              "bytes": 3015,
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\scripts\\build_wording_event_handoff.py",
+              "sha256": "6a5e10a757c9343c9315a6e0dd5ff84602b00ee4c60a3c7eab16f5851581d72b"
+            },
+            "src/wording_event_aggregation.py": {
+              "bytes": 28187,
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\wording_event_aggregation.py",
+              "sha256": "8b8cbdee976fca1cfb2c37be0f2c1c246020ed579e99d20d28857ad128ffdafb"
+            },
+            "tests/test_wording_event_aggregation.py": {
+              "bytes": 20653,
+              "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\tests\\test_wording_event_aggregation.py",
+              "sha256": "2d5aef9f7b8d28a60052f2b2f91834b5855d983854ec05fde93afa85371c9a01"
+            }
+          }
+        },
+        "post_protocol": {
+          "binding": {
+            "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+            "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+            "bytes": 6225,
+            "evidence_class": "inspected_artifact"
+          },
+          "schema": "wording-equity-pilot-protocol-v2",
+          "date_from": "2024-01-01",
+          "date_to": null,
+          "signal_model_revision": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+          "static_protocol_read_is_not_acceptance": true,
+          "252sessions": "parent-reported unchanged2024 protocol window; not recomputed"
+        },
+        "blocker_acceptance_owner_map": [
+          {
+            "blocker": "at least one complete2024 Item2.02 primary + linked exact release/text/transcript/frozen scores",
+            "owner": "Industry retained source and Benchmark wording producer",
+            "acceptance": "new hash-pinned2024 event aggregate delivered; Post verifies exact source lineage and source eligibility"
+          },
+          {
+            "blocker": "exact-version evidenced public upper bound plus processing/replay latency",
+            "owner": "Industry evidence; Post canonical clocks",
+            "acceptance": "conditional publisher claims and SEC acceptance remain excluded until accepted exact-version bound"
+          },
+          {
+            "blocker": "historical model/version/rights and retrospective transform",
+            "owner": "Benchmark producer and Post consumer",
+            "acceptance": "model provenance reviewed under frozen protocol; existing model source/revision availability cannot be assumed historical"
+          },
+          {
+            "blocker": "dated security/actions/dividends and open+60s/close-60s execution quotes",
+            "owner": "Industry market producer and Post consumer",
+            "acceptance": "qualify actual2024 event/session/holding inputs and quote/update/venue policy; minute endpoints alone insufficient"
+          },
+          {
+            "blocker": "short borrow/collateral/lifecycle, fees/slippage and continuous exposure",
+            "owner": "Industry evidence and Post account replay",
+            "acceptance": "dated evidence with valid holding coverage and accepted cost policy"
+          },
+          {
+            "blocker": "static inputs to accepted integrated replay",
+            "owner": "Post canonical consumer",
+            "acceptance": "explicit consumer receipt then matured labels/order/fill/no-fill/NAV/metrics capsule"
+          }
+        ],
+        "historical_packet_caution": "existing2023 finding remains true for inspected completed saved-score packet; newest Industry two2024candidates are real research candidates, not an empty universe or accepted/scored cohort",
+        "new_replay_or_jobs": false,
+        "final_test_access": false,
+        "pilot_readiness": "insufficient_evidence; new2024 source candidates exist but no accepted2024 scored event established by these receipts",
+        "storage_boundary_owner_notice": {
+          "evidence_class": "parent relayed owner report",
+          "root_cached_REIT_SEC_paths": "may move during authorized cleanup; prior hashes are observed snapshots, not a claim current raw paths remain live",
+          "reported_remote_location": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
+          "reported_backup_manifest": "docs/storage-audit/2026-10-04-backup-files.jsonl",
+          "backup_manifest_inspected": false,
+          "candidate_research_markdown": "reported preserved; locally inspected during this refresh",
+          "post_and_benchmark_worktree_bindings": "read by exact named paths; no silent alias or bulk retrieval performed"
+        }
+      },
+      "eligibility": "Read exact receipt flags; producer completion does not establish canonical Post economic acceptance",
+      "gap_ids": [
+        "DD02",
+        "DD03",
+        "DD04",
+        "DD08",
+        "DD09",
+        "DD21"
+      ],
+      "evidence": [
+        "E19"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "schema_adapter_code_version_input_output_manifest_hash_commit": {
+        "canonical_policy": "wording_equity_pilot-v2",
+        "separate_prior_packet": true
+      },
+      "exact_input_output_manifest_sha": null,
+      "time_fields": {},
+      "unknown_reason": "Uninspected fields remain unknown; Git HEAD and mtime are not artifact identity/public availability",
+      "historically_observed_location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json",
+      "live_location_status": "Observed path at receipt cutoff only; current existence/restore binding not inferred. See DD22 for consumed inputs.",
+      "economic_consumer_current_binding_accepted": false
     }
   ],
   "time_fields": [
@@ -323,10 +2027,11 @@
       "timezone": null,
       "min": null,
       "max": null,
-      "coverage": null,
-      "precision_sentinel_null_evidence": "date-level expected; exactperiod/instant/precision perrow pending",
+      "coverage": "AATcurrentMarch31operand andJune30native period inspected; not a complete fiscal range",
+      "precision_sentinel_null_evidence": "date/instant has no timezone; source accession/unit/definition distinct; not publication",
       "gap_id": "DD13",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "event",
@@ -338,7 +2043,8 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "date/time unknown by exactcandidate; cannot use filingdate as publictime",
       "gap_id": "DD02",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "public_by",
@@ -350,7 +2056,8 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "current assumptions do not verify bound; earliestunknown allowed for delayed evidence",
       "gap_id": "DD03",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "earliest_public",
@@ -362,7 +2069,8 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "0known seed; exactevent monitoring unknown",
       "gap_id": "DD03",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "effective_revision_vintage",
@@ -374,43 +2082,47 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "zeroqualifiedhistoricalvintages; no backdating",
       "gap_id": "DD14",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "provider_receive",
-      "meaning": "providerclock distinct from ours; EQUS interval endpoint",
+      "meaning": "actual provider receipt timestamp distinct from vendor interval endpoint",
       "packet_scope": "market",
       "timezone": null,
       "min": null,
       "max": null,
       "coverage": null,
-      "precision_sentinel_null_evidence": "UTC vendorfields; exactns precision/sentinel packet needed",
+      "precision_sentinel_null_evidence": "Actual receipt unknown; ts_recv is a minute interval endpoint and supplies no receipt proof",
       "gap_id": "DD06",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "our_retrieval",
       "meaning": "actual ours downloaded bytes",
       "packet_scope": "all",
-      "timezone": null,
-      "min": null,
-      "max": null,
-      "coverage": null,
-      "precision_sentinel_null_evidence": "filesystemmtime not retrieval/publication proof; actual historicalreceipt unknown",
+      "timezone": "UTC",
+      "min": "2026-10-04T02:40:58.384827Z",
+      "max": "2026-10-04T02:40:58.384827Z",
+      "coverage": "one inspected macro retrieval batch only; not all sources or historical receipt",
+      "precision_sentinel_null_evidence": "fractional seconds; current2026retrieval not historical publication/vintage",
       "gap_id": "DD03",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "our_processing",
       "meaning": "actual extraction/replay-ready completion",
       "packet_scope": "wording",
-      "timezone": null,
-      "min": null,
-      "max": null,
-      "coverage": null,
-      "precision_sentinel_null_evidence": "processinglatency policy/log needed; assumedretrospective !=historicalactual",
+      "timezone": "UTC",
+      "min": "2026-10-04T02:22:47.209449Z",
+      "max": "2026-10-04T02:22:47.209449Z",
+      "coverage": "one FinBERT run completion only",
+      "precision_sentinel_null_evidence": "fractional seconds,currentteachercompletion; historicalready unknown",
       "gap_id": "DD08",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "signal_availability",
@@ -422,7 +2134,8 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "unknown until consumer accepts texttime; causal maxclock rule required",
       "gap_id": "DD03",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "decision",
@@ -431,22 +2144,28 @@
       "timezone": "America/New_York",
       "min": null,
       "max": null,
-      "coverage": null,
-      "precision_sentinel_null_evidence": "DST/earlyclose/product calendar and knownschedule; exact UTCconversion perrow pending",
+      "coverage": {
+        "legacy_document_decisions": 2008,
+        "legacy_sessions": 502,
+        "pilot_v2_sessions": 252
+      },
+      "precision_sentinel_null_evidence": "legacy13:00earlyclose=>12:30decision; actualUTC/DST values inPostreceipt. V2decision/entry=open+60s andexit=close-60s are static policy,not actualfills. Financial21:00Zdiagnostic clock separate",
       "gap_id": "DD05",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
-      "field": "quote_update_interval_endpoint",
-      "meaning": "update time vs interval endpoint vs lasttrade",
+      "field": "quote_update",
+      "meaning": "actual quote update timestamp",
       "packet_scope": "market",
-      "timezone": "UTC vendor clock",
+      "timezone": null,
       "min": null,
       "max": null,
       "coverage": null,
-      "precision_sentinel_null_evidence": "ts_event lasttrade;ts_recv endpoint;update freshness unknown;15080ts_eventnull",
+      "precision_sentinel_null_evidence": "Quote update/freshness unknown; ts_event is last trade and ts_recv is interval endpoint",
       "gap_id": "DD06",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "fill",
@@ -458,7 +2177,8 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "no acceptedfilltimes evidenced; execution policy/latency needed",
       "gap_id": "DD09",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "valuation",
@@ -470,7 +2190,8 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "no acceptedregular series; endofday policy/quote staleness needed",
       "gap_id": "DD10",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "field": "label_maturity",
@@ -482,7 +2203,50 @@
       "coverage": null,
       "precision_sentinel_null_evidence": "holding/foldpurgeembargo maturity not verified",
       "gap_id": "DD11",
-      "status": "pending exact per-row packet check; unknown retained"
+      "status": "scoped actual values and unknowns listed by packet; not global time equivalence",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    },
+    {
+      "field": "sec_acceptance",
+      "meaning": "administrative filing acceptance,not first public or exactversion public-by",
+      "packet_scope": "pinned8primary wording filings;7exhibits null",
+      "timezone": "UTC",
+      "min": "2023-01-05T21:40:33Z",
+      "max": "2023-03-01T11:38:13Z",
+      "coverage": 8,
+      "precision_sentinel_null_evidence": "seconds; exhibitacceptance null,never imputed",
+      "gap_id": "DD03",
+      "status": "inspected primary chronology",
+      "observed_at": "2026-10-04T07:58:35Z"
+    },
+    {
+      "field": "vendor_interval_endpoint",
+      "meaning": "EQUS ts_recv vendor minute interval endpoint,not provider or our receipt",
+      "packet_scope": "inspected structural EQUS metadata",
+      "timezone": "UTC",
+      "min": null,
+      "max": null,
+      "coverage": 1028190,
+      "precision_sentinel_null_evidence": "ns representation; exactaggregate range not recomputed",
+      "gap_id": "DD06",
+      "status": "known structural semantics;execution unqualified",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    },
+    {
+      "field": "last_trade_event",
+      "meaning": "EQUS optional ts_event last trade,not quote update or quote age",
+      "packet_scope": "inspected structural EQUS metadata",
+      "timezone": "UTC",
+      "min": null,
+      "max": null,
+      "coverage": {
+        "parsed": 1013110,
+        "missing": 15080
+      },
+      "precision_sentinel_null_evidence": "ns; missing remains null; no inference of quote freshness",
+      "gap_id": "DD06",
+      "status": "known structural semantics;execution unqualified",
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     }
   ]
 }

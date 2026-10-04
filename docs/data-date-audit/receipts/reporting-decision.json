@@ -1,0 +1,15 @@
+{
+  "schema_version": "data-date-reporting-decision-v1",
+  "evidence_class": "directly inspected exact human message via read_thread",
+  "thread": "01a1055f-309c-7682-a989-81dfeea8d6dd",
+  "title": "Organize Benchmark Data Push",
+  "turn": "01a1060a-3525-71d1-884a-7abac1885fef",
+  "message": "01a1060a-c9cb-7b91-9a3f-0668dbd47fae",
+  "question_item": "[\"request_user_input_async\",\"call_Y6YeZ6s9avK4gJyjk1GchItJ\",0]",
+  "question": "Does “no wait for qualified inputs” mean wait for qualified inputs before reporting performance, or proceed now with a labeled provisional report? I can check and repair alignment while that choice is pending.",
+  "answer": "Wait for qualified inputs before reporting performance",
+  "supersedes": "Earlier ambiguous wording and pending reporting Q4",
+  "scope": "Continue alignment and input/exclusion diagnostics; withhold empirical strategy performance until qualified inputs and accepted regular net account evidence",
+  "new_permission_for_provisional_performance": false,
+  "final_test_or_live_permission": false
+}

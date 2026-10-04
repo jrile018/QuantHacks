@@ -64,3 +64,8 @@ Research Sharpe confidence intervals is a human-created active participant in th
 [Decision register](first-pilot-decision-register.md) preserves the human small-costed-slice objective, named owners and unresolved interview choices. Benchmark settled local commit/docs are verified; producer run claims remain scoped and Post full acceptance pending. The Sharpe chat owns the pilot/grill research addendum; this orchestrator owns shared prioritization. Optional expansion and engine migration do not precede a feasible economic replay by default.
 
 New human-created participant: Check remote desktop GPU access owns bounded hardware/runtime/math feasibility, coordinating source changes with Lattice and shared resources with Post. It is covered by the skill guide and monitor; no orchestrator-created chat. Human Q4 directly verified: wording-only post-release pilot first, financial benchmark next. Exact pending Post handoff is handoffs/post-release-pilot.md.
+
+
+## Active minimal backtest completion
+
+[Completion plan](minimal-backtest-completion.md) records the real negative runner, missing positive adapter and smallest current text/market/account handoffs. Later direct human override keeps the full approved Lattice work active alongside the first pilot; GPU remains optional. Storage relocation requires exact hash/restore mapping, not assumed local availability.

@@ -1,0 +1,229 @@
+{
+  "schema_version": "industry-audit-receipt-v1",
+  "observed_date_utc": "2026-10-04",
+  "exact_agent_audit_wall_time": null,
+  "owner": "Industry",
+  "inspector": "/root/industry_evidence",
+  "evidence_class": "inspected local artifact (delegated)",
+  "checkout_head": "3f76ce20b7b3e055b47e37478924a93eaaf1f126",
+  "mutable_artifact_commit": null,
+  "no_remote_raw_bytes_reread": true,
+  "files": [
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+      "sha256": "2f8ef97967a705540512eff04be469acebc732487664f34dd9c362926ad0cedb",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+      "sha256": "02fb975fd86f2c1de924c49b1b9fc31a2f8cb7f036feb526e55aced7174d3a22",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+      "sha256": "a2f65545708aebb9c3cf2fa566cfcfc613797970d6664bedd272cc79b1e8c09a",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+      "sha256": "d7b9e99283da5bcaa0626b7e5635c695f09c4c23976914e1681597663032c519",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+      "sha256": "c07546115d23dccbcb8e6c209b6d9dd27e798b7c129e94a791498c10a877a366",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+      "sha256": "81583444a7437e9d31f769ef18569477f85ac7cb20b281b94ff3e456a508dbfe",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+      "sha256": "6d27cf30d8ded9c7c8c1efc58ae190248578657221249277bd103397425b771c",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+      "sha256": "79b4f0c0d89bf2e56741d7b44ef5bff626027571178ebbb16438aa69bf3c5146",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+      "sha256": "e38b50dea32fa717b4835adf56c5694a58b63da5f8c5e75c512dee00198e1aca",
+      "hash_evidence": "delegated actual byte SHA256 computation"
+    }
+  ],
+  "clocks": {
+    "schema": "reit-publication-clock-evidence-v1",
+    "grain": "source-document",
+    "current_v2": {
+      "reviewed_at": "2026-10-04T06:06:50.345909Z",
+      "rows": 35,
+      "issuers": 4,
+      "accessions": 16,
+      "proxy_candidates": 13,
+      "reason_occurrences": {
+        "conflict": 5,
+        "identity_integrity_unverified": 19,
+        "unqualified": 17,
+        "quarantine": 2
+      },
+      "unique_excluded": 22,
+      "known_public": 0,
+      "ready": 0
+    },
+    "historical_v2": {
+      "reviewed_at": "2026-10-04T06:07:28.245148Z",
+      "rows": 37,
+      "accessions": 36,
+      "qualified_proxy_candidates": 0,
+      "all_unqualified": true
+    },
+    "historical_v3": {
+      "reviewed_at": "2026-10-04T06:59:31.675821Z",
+      "rows": 37,
+      "accessions": 36,
+      "proxy_candidates": 37,
+      "exclusion_flags": 0,
+      "known_public": 0,
+      "observed_ready": 0,
+      "canonical_ready": false,
+      "code_sha256": "6b7e226e3f3c1262eb7fe185d1bc6f2c7a3c4ddc0114575dca212cbe821925db",
+      "remote": "home-pc:/tmp/quanthaxs-reit-continuation-20261004/clocks-qualified-v3"
+    },
+    "policy": "sec_acceptance_plus_24h_or_date_upper_plus_24h_v1",
+    "policy_meaning": "SEC acceptance+86400 seconds or next local midnight exclusive bound+86400 seconds",
+    "policy_evidence": "assumed proxy, not independently evidenced exact-text publication",
+    "output_pins_not_recomputed": {
+      "publication_clocks": "3fdbc0405567149a1cebaee5b72532702eb5b5532f89071495854cb259580392",
+      "latency_policy": "13ee1f71998f3f578388725b47a45684978869f08b2972dfff6cc5c8f554c667"
+    }
+  },
+  "market": {
+    "schema": "reit-market-raw-inputs-1",
+    "jobs": 6,
+    "storage": "home-pc",
+    "start": "2024-01-01",
+    "exclusive_end": "2026-01-01",
+    "normalized_config_sha256": "08b47dab6af4fe487dade41937983007fd05e4131d94abc9af276ebcc5bf46ee",
+    "raw_vs_normalized_different_hash_domains": true,
+    "qualification_schema": "reit-market-qualification-v1",
+    "scope": "development_2024_2025_selected_raw_files",
+    "selected_files_scanned": 98,
+    "derivative_quote_files_unscanned": 46,
+    "diagnostic_rows": {
+      "EQUS": {
+        "used": 957736,
+        "total": 1028190
+      },
+      "January_OPRA": {
+        "used": 10419098,
+        "total": 14103960
+      },
+      "January_GLBX": {
+        "used": 174433,
+        "total": 235288
+      }
+    },
+    "unscored_amt_candidates": 128,
+    "baseline": "persistence",
+    "lookback_seconds": 60,
+    "holding_seconds": 3600,
+    "candidate_start": "2024-01-02T12:01:00.000000000Z",
+    "candidate_end": "2024-01-02T16:34:00.000000000Z",
+    "collection_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+    "collected_at": "2026-10-04T07:32:14.292359+00:00",
+    "retained_verify_test_clock_market_exits": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "reported_candidate_degraded_violations": 0,
+    "outcomes_read": false,
+    "consumer_accepted": false,
+    "coverage_complete": false,
+    "independent_dated_history_qualified": false,
+    "strict_arbitrage": "rejected",
+    "repricing": "insufficient",
+    "implementation_fixture_receipt_at": "2026-10-04T05:46:09.9892091Z",
+    "old_receipt_only_tiny_csv_sqlite_fixtures": true
+  },
+  "timestamps": {
+    "ts_event": "optional last trade; not quote update/freshness",
+    "ts_recv": "vendor minute interval endpoint; not our historical receipt",
+    "timezone": "UTC",
+    "precision": "nanoseconds",
+    "missing_ts_event": 15080,
+    "parsed_ts_event": 1013110,
+    "parsed_ts_recv": 1028190,
+    "quote_update_age": null,
+    "our_historical_receipt": null,
+    "observed_ready": null,
+    "structural_receipt_at": "2026-10-04T02:46:30.153488+00:00"
+  },
+  "exclusions": {
+    "quality_rule_sha256": "8a10928738733b5756e614d4e937ed3cea02f24e5092a0728cb1f505a3b063d4",
+    "dates": [
+      "2024-06-03",
+      "2024-09-18",
+      "2025-03-24",
+      "2025-04-04",
+      "2025-05-06",
+      "2025-06-04",
+      "2025-06-16",
+      "2025-07-09",
+      "2025-08-08",
+      "2025-08-13",
+      "2025-08-19",
+      "2025-08-25",
+      "2025-09-03",
+      "2025-09-08",
+      "2025-09-12",
+      "2025-09-17",
+      "2025-09-24",
+      "2025-10-10",
+      "2025-10-13",
+      "2025-10-22",
+      "2025-11-28"
+    ],
+    "adapter": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/src/reit_market_qualification.py",
+    "minute_check_line": 208,
+    "feature_holding_check_line": 340,
+    "actual_wording_cohort_mask_accepted": false
+  },
+  "derivatives_deferred": {
+    "options_definition_rows": 882288,
+    "option_ids": 292251,
+    "futures_definition_rows": 64622,
+    "F": 17987,
+    "S": 46635,
+    "multipliers": "sentinel/unknown; no default100",
+    "contract_actions_deliverables_calendar_rolls_execution": "unaccepted",
+    "universe_scopes": [
+      53,
+      100,
+      5
+    ]
+  },
+  "limitations": [
+    "Remote quote/archive bytes not inspected",
+    "Component venue quotes do not establish NBBO or fills",
+    "Output manifest pins not independently recomputed",
+    "Mutable HEAD alone does not identify working bytes",
+    "Exact audit wall time unavailable",
+    "Producer candidate/implementation checks are separate from consumer acceptance"
+  ],
+  "gap_ids": [
+    "DD03",
+    "DD04",
+    "DD06",
+    "DD07",
+    "DD15",
+    "DD16"
+  ],
+  "original_staging_time_not_verified": "2026-10-04T08:00:34Z",
+  "root_recorded_at_utc": "2026-10-04T08:27:04.399834+00:00"
+}

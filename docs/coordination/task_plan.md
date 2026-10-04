@@ -57,6 +57,20 @@ Publication receipt: data/processed/chat_tracking/feature-matrix-github-verifica
 
 14. Inventory all installed/local and plugin-cache skill files; distinguish cached versions, active exposure and missing requested aliases — complete: 444 paths/full-body inventory and fresh complete-root enumeration match.
 15. Audit runtime portability/conflicts and per-chat observed applicability; check available independent work/internal helpers — complete: bounded independent reviewers, six participant observations; no additional first-milestone chat recommended now.
-16. Write task-to-skill routing and tailored current-chat guidance, verify acknowledgement evidence, propose useful conditional opening prompts — complete for inventory/review/guidance delivery: seven peers covered, five acknowledged/declarations observed, two natural checkpoints monitored. GitHub publication/readback is the final pending step; no new chat created by this audit. No new chat creation during this capacity review; existing owners/compute/permissions retained.
+16. Write task-to-skill routing and tailored current-chat guidance, verify acknowledgement evidence, propose useful conditional opening prompts — complete for inventory/review/guidance delivery: seven peers covered, five acknowledged/declarations observed, two natural checkpoints monitored. GitHub publication/readback completed at2026-10-04T07:35:45Z; no new chat created by this audit. No new chat creation during this capacity review; existing owners/compute/permissions retained.
 
 Scope confirmed by human: apply guidance to active QuantHaxs chats; inventory all installed skills. Local body scan is2.77MB/444files, no heavy compute needed. Audit distinguishes observed skills/tools from owner assurances; no unsupported model/effort/cost claims or global uninstall/config edits.
+
+
+## Human-requested visible progress — 2026-10-04
+
+17. Apply progress-bar/gsd-progress reporting to all eight peers and active helpers — complete initial delivery and observed checkpoint reporting; ongoing use remains monitored.
+18. Combine goals, bounded milestones, evidence and first-pilot dependencies in project-progress.md — complete, links checked and bounded independent review applied.
+19. Publish guarded overview and verify exact readback; persist monitor instructions — complete; receipt data/processed/chat_tracking/progress-rollup-20261004/github-verification.json. No new chat, job, purchase, test rerun or economic acceptance by this task.
+
+
+## Keep the simple integrated backtest moving — active
+
+20. Verify current real runner/gate and direct the smallest source/positive-adapter dependencies — actual negative gate verified, accepted real economic endpoint pending.
+21. Continue healthy productive owners; latest human explicitly retains full Lattice continuation — scoped messages delivered, override acknowledged by Lattice.
+22. Preserve remote evidence through storage cleanup and monitor until accepted costed capsule — active, source/quote/borrow/account gates unresolved. No completed economic result or new chat is claimed.

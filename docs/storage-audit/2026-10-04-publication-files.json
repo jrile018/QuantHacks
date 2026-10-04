@@ -1,0 +1,91 @@
+{
+  "captured_at_utc": "2026-10-04T08:56:41.838517+00:00",
+  "backup_parent_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+  "files": [
+    {
+      "path": "docs/storage-audit/2026-10-04-audit-records.zip",
+      "size_bytes": 2643746,
+      "sha256": "ac91750d44799e384ee68d4142af3b7ed3be960ff3b3a37698175721ba9622e1"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-audit.md",
+      "size_bytes": 8866,
+      "sha256": "4fe7ce5ba44078a6b72ab93655035aadb57f45e36b52f0a19ef8ecdc6a4e9266"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-backup-files.jsonl",
+      "size_bytes": 9854632,
+      "sha256": "f6cf757623ac38daca31825b0ed788d0b8a23feb4e293ab346bbf3ab1b5a3674"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-backup-verification.json",
+      "size_bytes": 1034,
+      "sha256": "636bafa3997ee0d7c3e34c7b58b09bee3693e8cfc2d36e69361800185ef83fe1"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-cleanup-summary.json",
+      "size_bytes": 3086,
+      "sha256": "8f3a90b6779446c63b3d03f2b3a1cd9065b9f034b3637c844f7b00069f146f94"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-cleanup.jsonl",
+      "size_bytes": 9356336,
+      "sha256": "17dc627fa04ce6bd19cb642140f0de61019c523f0484409f8ea392f07468caa5"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-consumer-bindings.json",
+      "size_bytes": 13965,
+      "sha256": "da4532c66048c76ec5ef4b0a632083be9097b320029018dd30178521860430cc"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-desktop-update.json",
+      "size_bytes": 582,
+      "sha256": "7038a4db0172bb00f65b4960b38dacb5ab1e3f8f2dc4fa89426074b41a9da425"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-final-verification.json",
+      "size_bytes": 1213,
+      "sha256": "638fec68b4ee4d3c29a347e2638d417fb487b51a8970ffaec218860f62ba0852"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-followup-cleanup-summary.json",
+      "size_bytes": 47991,
+      "sha256": "f9e880ea5cc671c72d16955ee49c95591fb7e1321c991c0ecec3f8b9ae54075a"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-followup-cleanup.jsonl",
+      "size_bytes": 70802,
+      "sha256": "d181ce266670710c8b9848888b4ecf077a4fd8b2fd1bee50c00ecdd6653f1be2"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-hold-provenance.json",
+      "size_bytes": 40202,
+      "sha256": "1734f81e0bedc4ef0ed70b13910708b1df13452331552af8817889151dcd0905"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-hold-provenance.md",
+      "size_bytes": 4337,
+      "sha256": "5c3b84db54eedc8f99be8a9fdccc12d48732e7bfdd046a896d4ec679bc19587a"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-independent-verification.json",
+      "size_bytes": 1627,
+      "sha256": "f35766633415ae64adc2147fad95882416d3c49971d21bb3ea692728e60237e2"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-inventory.json",
+      "size_bytes": 9304598,
+      "sha256": "073c6ed853b5bc737ccd551810bf5238dd0e5713b938a5a92a5ddc4da04f684b"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-inventory.md",
+      "size_bytes": 3556,
+      "sha256": "aa5298cc65d1510d4e0e6e61c1050810c8d1906a16cc7d3f19134025eba64f19"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-tiger-import.sql",
+      "size_bytes": 1706,
+      "sha256": "49f959298f9bbb26543e79c7055cf853b64d342a2ee4abacf0875747422af276"
+    }
+  ]
+}

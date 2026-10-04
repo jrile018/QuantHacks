@@ -1,0 +1,1047 @@
+{
+  "schema_version": "minimal-wording-equity-blocker-map-v1",
+  "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+  "canonical_consumer": {
+    "thread": "01a1029b-f907-7bc1-9127-bf22a03633cd",
+    "protocol": "wording_equity_pilot-v2",
+    "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+    "economic_acceptance": false
+  },
+  "producer_refresh": {
+    "schema": "first-arm-owner-refresh-v1",
+    "observed_at_utc": "2026-10-04T08:30:27.859178+00:00",
+    "scope": "minimal integrated wording-equity dependency removal only",
+    "industry": {
+      "thread": "01a102d3-5cc5-7373-9620-523d2a1419a6",
+      "current_turn": "01a105f6-ab08-7182-bd7b-d76e19143196",
+      "candidate_audit": {
+        "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+        "sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+        "bytes": 6500,
+        "evidence_class": "inspected_artifact"
+      },
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "accession": "0001053507-24-000009",
+          "release_date": "2024-02-27",
+          "exhibit": "pressreleaseq42023.htm",
+          "claimed_archive_time_utc": "2024-02-27T12:00:00Z",
+          "sec_acceptance_utc": "2024-02-27T12:05:39Z"
+        },
+        {
+          "accession": "0001053507-24-000128",
+          "release_date": "2024-10-29",
+          "exhibit": "pressreleaseq32024.htm",
+          "claimed_archive_time_utc": "2024-10-29T11:00:00Z",
+          "sec_acceptance_utc": "2024-10-29T11:05:59Z"
+        }
+      ],
+      "accepted_public_bounds": 0,
+      "exact_retained_exhibit_bytes": "not established by inspected audit; peer37 annual/quarterly originals exclude these exhibits",
+      "source_time_class": "publisher/archive historical claims and SEC filing events, not accepted exact-version public bound or historical receipt",
+      "broker_cache_class": "owner retained command output reports None for both exhibit URLs; no independent database read",
+      "scores": "not yet delivered/accepted for these2024 candidates"
+    },
+    "benchmark": {
+      "thread": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+      "current_turn": "01a10605-1eea-77c0-97ce-fbd3e80fb27b",
+      "current_owner_report": "began minimal2024 candidate/input check; not completed2024 producer",
+      "completed_producer_commit_owner_report": "b165d3504743706c419e03239b1d9c538ea361e5",
+      "bindings": [
+        {
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+          "sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+          "bytes": 24638,
+          "evidence_class": "inspected_artifact"
+        },
+        {
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+          "sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+          "bytes": 3160,
+          "evidence_class": "inspected_artifact"
+        },
+        {
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+          "sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+          "bytes": 692,
+          "evidence_class": "inspected_artifact"
+        }
+      ],
+      "produced_at_utc": "2026-10-04T08:15:26.367135+00:00",
+      "counts": {
+        "diagnostic_documents": 3,
+        "diagnostic_fragment_count": 925,
+        "economic_eligible_events": 0,
+        "excluded_before_selection": 4,
+        "original_primary_documents": 8,
+        "original_scored_documents": 15,
+        "original_scored_fragments": 2391,
+        "qualified_events": 0,
+        "selected_accessions": 4,
+        "selected_complete_2024_events": 0,
+        "selected_scored_fragments": 1642
+      },
+      "selected_events": [
+        {
+          "accession": "0001053507-23-000021",
+          "filing_date": "2023-02-23",
+          "diagnostic_value": null,
+          "qualified_value": null,
+          "available_at_utc": null,
+          "exclusions": [
+            "truncated_fragment",
+            "truncated_or_missing_document_status"
+          ],
+          "historical_feature_eligible": false,
+          "economic_eligible": false
+        },
+        {
+          "accession": "0001061630-23-000011",
+          "filing_date": "2023-02-08",
+          "diagnostic_value": 0.0955195961522502,
+          "qualified_value": null,
+          "available_at_utc": null,
+          "exclusions": [],
+          "historical_feature_eligible": false,
+          "economic_eligible": false
+        },
+        {
+          "accession": "0001423689-23-000003",
+          "filing_date": "2023-01-30",
+          "diagnostic_value": -0.009022599404964544,
+          "qualified_value": null,
+          "available_at_utc": null,
+          "exclusions": [],
+          "historical_feature_eligible": false,
+          "economic_eligible": false
+        },
+        {
+          "accession": "0001500217-23-000006",
+          "filing_date": "2023-02-07",
+          "diagnostic_value": 0.05335560798050246,
+          "qualified_value": null,
+          "available_at_utc": null,
+          "exclusions": [],
+          "historical_feature_eligible": false,
+          "economic_eligible": false
+        }
+      ],
+      "consumer_acceptance": "pending separate Post receipt",
+      "qualification_gates": [
+        "source_exact_version_public_bound",
+        "model_historical_vintage",
+        "provider_rights",
+        "registered_replay_acceptance",
+        "canonical_owner_acceptance"
+      ],
+      "minimal_missing_inputs": [
+        "At least one retained2024 Item2.02 primary and its single explicitly linked earnings-release text/version, transcript and complete frozen-model scores for this registered cohort/horizon",
+        "Independently supported public upper bound for the exact selected text; acceptance+24h is only an assumption",
+        "Accepted model-version/history/rights and retrospective-transform provenance",
+        "Dated equity identity, open+60s/actualclose-60s execution quotes, actions, short lifecycle/borrow/collateral, costs and continuous-exposure evidence under Post executionv2"
+      ],
+      "model_binding": {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-pilot-readiness-v1\\model-provenance-summary-v1.json",
+        "sha256": "cbba73c162be2918d9ea4f00f78c808097562f51187dfce08e48e33a5580666f",
+        "bytes": 6969,
+        "evidence_class": "inspected_artifact"
+      },
+      "model_summary": {
+        "canonical_enabled": false,
+        "current_weight_body_rehashed": false,
+        "earlier_checkpoint_numerical_equivalence": "not established",
+        "financial_model_pins_substituted": false,
+        "historical_transform_qualification": false,
+        "metadata_weight_oid_matches_retained_raw_weight_receipt": true,
+        "model_files_from_retained_run_receipt": {
+          "config.json": "f6449ddda85eb726207a40be59c0cd3bd4b142ccb27298d5e45f9ae3396b1abe",
+          "model.safetensors": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+          "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+          "tokenizer_config.json": "ffc7913f6084b138dad68de5a0c2f0ee25ac983709260901e01f53be5796b9d9",
+          "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        },
+        "model_id": "ProsusAI/finbert",
+        "new_inference_performed": false,
+        "new_weights_downloaded": false,
+        "official_file_metadata": {
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_file_metadata.json",
+          "sha256": "cd61e61ba9af15847b43ed52f9c81fec26c8b37f894de7ac064e5ff8e0fea8d7"
+        },
+        "official_metadata_witnesses": [
+          {
+            "bytes": 4821,
+            "headers": {
+              "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+              "ETag": "W/\"12d5-dEPpuPnByfkt6KyiTEZskvqcIF0\""
+            },
+            "name": "revision_metadata",
+            "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_metadata.txt",
+            "received_at_utc": "2026-10-04T07:35:07.202608+00:00",
+            "requested_at_utc": "2026-10-04T07:35:06.285768+00:00",
+            "resolved_url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+            "sha256": "d6ca09ac0217a579162e6c1a0a7710becc307a835c200029aad7de0e9876debe",
+            "status_code": 200,
+            "url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+          },
+          {
+            "bytes": 5939,
+            "headers": {
+              "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+              "ETag": "W/\"1733-2nmEtQFLaOirl2kCq4rguQR5Iks\""
+            },
+            "name": "revision_commits",
+            "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_commits.txt",
+            "received_at_utc": "2026-10-04T07:35:07.577181+00:00",
+            "requested_at_utc": "2026-10-04T07:35:07.210946+00:00",
+            "resolved_url": "https://huggingface.co/api/models/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+            "sha256": "6f36aa810957712397789c99b4d08b0274e66ddce4cce77b138c0a3367b565a8",
+            "status_code": 200,
+            "url": "https://huggingface.co/api/models/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+          },
+          {
+            "bytes": 1476,
+            "headers": {
+              "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+              "ETag": "W/\"d57a1f3bc9735cdc84c7734d787fee973ad3a420\"",
+              "X-Repo-Commit": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+            },
+            "name": "revision_model_card",
+            "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_model_card.txt",
+            "received_at_utc": "2026-10-04T07:35:07.904132+00:00",
+            "requested_at_utc": "2026-10-04T07:35:07.577181+00:00",
+            "resolved_url": "https://huggingface.co/ProsusAI/finbert/raw/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/README.md",
+            "sha256": "23bf85400efe1e88cbe2bf79cec8c5ff81fe9806c599f3ca85e18288ab871008",
+            "status_code": 200,
+            "url": "https://huggingface.co/ProsusAI/finbert/raw/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/README.md"
+          },
+          {
+            "bytes": 11357,
+            "headers": {
+              "Date": "Sun, 04 Oct 2026 07:35:09 GMT",
+              "ETag": "W/\"c45f37bac7442b1d2ba0f29c51f8486a52505b23a9328cd14519cf793bf4996e\""
+            },
+            "name": "project_license",
+            "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\project_license.txt",
+            "received_at_utc": "2026-10-04T07:35:08.340689+00:00",
+            "requested_at_utc": "2026-10-04T07:35:07.904132+00:00",
+            "resolved_url": "https://raw.githubusercontent.com/ProsusAI/finBERT/master/LICENSE",
+            "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+            "status_code": 200,
+            "url": "https://raw.githubusercontent.com/ProsusAI/finBERT/master/LICENSE"
+          }
+        ],
+        "revision": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+        "run_report": {
+          "actual_completed_at_utc": "2026-10-04T02:22:47.209449+00:00",
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\wording_results_v2\\results\\wording-v2\\run-report.json",
+          "sha256": "9d005dfb3d71175bcf95bd0b2180a92c6a4c1a7dc4b04a09aedd25c7ef58ca9b"
+        },
+        "schema_version": "wording-pilot-model-provenance-summary-v1",
+        "training_cutoff_qualification": "unknown; checkpoint-format publication is not a claim of future training",
+        "trusted_model_manifest_sha256": "dac46dec0de5b5779f1931d42eadc7590f36c2b4fe9c59c2149c84563c20ddba",
+        "weight_artifact_metadata": {
+          "lastCommit": {
+            "date": "2023-06-05T11:55:24.000Z",
+            "id": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+            "title": "Adding `safetensors` variant of this model"
+          },
+          "lfs": {
+            "oid": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+            "pointerSize": 134,
+            "size": 437965908
+          },
+          "oid": "17ee6110e826d0024768ae6555077bb1396b7e4a",
+          "path": "model.safetensors",
+          "securityFileStatus": {
+            "avScan": {
+              "message": "No security issues detected",
+              "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+              "status": "safe"
+            },
+            "jFrogScan": {
+              "message": "Safe model, does not support code execution on load.",
+              "reportLink": "https://research.jfrog.com/model-threats/noautoload-suscode?utm_source=huggingface",
+              "status": "safe"
+            },
+            "pickleImportScan": {
+              "pickleImports": [],
+              "status": "unscanned",
+              "version": "0.0.0"
+            },
+            "protectAiScan": {
+              "reportLink": "https://insights-db.paloaltonetworks.com/models/ProsusAI/finbert/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/files?blob-id=17ee6110e826d0024768ae6555077bb1396b7e4a&utm_source=huggingface",
+              "status": "unscanned"
+            },
+            "status": "safe",
+            "virusTotalScan": {
+              "message": "0/75 engines detect it as malicious.",
+              "reportLink": "https://www.virustotal.com/gui/file/e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00?utm_source=huggingface",
+              "status": "safe"
+            }
+          },
+          "size": 437965908,
+          "type": "file",
+          "xetHash": "97c9cb12d04352c17ea4a86542c6411d19940e4418e13199087eba3230f3c144"
+        },
+        "weights_rights_qualification": "not accepted; exact revision card has no explicit license declaration; repository code license is separate"
+      },
+      "producer_code": {
+        "scripts/build_wording_event_handoff.py": {
+          "bytes": 3015,
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\scripts\\build_wording_event_handoff.py",
+          "sha256": "6a5e10a757c9343c9315a6e0dd5ff84602b00ee4c60a3c7eab16f5851581d72b"
+        },
+        "src/wording_event_aggregation.py": {
+          "bytes": 28187,
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\wording_event_aggregation.py",
+          "sha256": "8b8cbdee976fca1cfb2c37be0f2c1c246020ed579e99d20d28857ad128ffdafb"
+        },
+        "tests/test_wording_event_aggregation.py": {
+          "bytes": 20653,
+          "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\tests\\test_wording_event_aggregation.py",
+          "sha256": "2d5aef9f7b8d28a60052f2b2f91834b5855d983854ec05fde93afa85371c9a01"
+        }
+      }
+    },
+    "post_protocol": {
+      "binding": {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+        "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+        "bytes": 6225,
+        "evidence_class": "inspected_artifact"
+      },
+      "schema": "wording-equity-pilot-protocol-v2",
+      "date_from": "2024-01-01",
+      "date_to": null,
+      "signal_model_revision": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+      "static_protocol_read_is_not_acceptance": true,
+      "252sessions": "parent-reported unchanged2024 protocol window; not recomputed"
+    },
+    "blocker_acceptance_owner_map": [
+      {
+        "blocker": "at least one complete2024 Item2.02 primary + linked exact release/text/transcript/frozen scores",
+        "owner": "Industry retained source and Benchmark wording producer",
+        "acceptance": "new hash-pinned2024 event aggregate delivered; Post verifies exact source lineage and source eligibility"
+      },
+      {
+        "blocker": "exact-version evidenced public upper bound plus processing/replay latency",
+        "owner": "Industry evidence; Post canonical clocks",
+        "acceptance": "conditional publisher claims and SEC acceptance remain excluded until accepted exact-version bound"
+      },
+      {
+        "blocker": "historical model/version/rights and retrospective transform",
+        "owner": "Benchmark producer and Post consumer",
+        "acceptance": "model provenance reviewed under frozen protocol; existing model source/revision availability cannot be assumed historical"
+      },
+      {
+        "blocker": "dated security/actions/dividends and open+60s/close-60s execution quotes",
+        "owner": "Industry market producer and Post consumer",
+        "acceptance": "qualify actual2024 event/session/holding inputs and quote/update/venue policy; minute endpoints alone insufficient"
+      },
+      {
+        "blocker": "short borrow/collateral/lifecycle, fees/slippage and continuous exposure",
+        "owner": "Industry evidence and Post account replay",
+        "acceptance": "dated evidence with valid holding coverage and accepted cost policy"
+      },
+      {
+        "blocker": "static inputs to accepted integrated replay",
+        "owner": "Post canonical consumer",
+        "acceptance": "explicit consumer receipt then matured labels/order/fill/no-fill/NAV/metrics capsule"
+      }
+    ],
+    "historical_packet_caution": "existing2023 finding remains true for inspected completed saved-score packet; newest Industry two2024candidates are real research candidates, not an empty universe or accepted/scored cohort",
+    "new_replay_or_jobs": false,
+    "final_test_access": false,
+    "pilot_readiness": "insufficient_evidence; new2024 source candidates exist but no accepted2024 scored event established by these receipts",
+    "storage_boundary_owner_notice": {
+      "evidence_class": "parent relayed owner report",
+      "root_cached_REIT_SEC_paths": "may move during authorized cleanup; prior hashes are observed snapshots, not a claim current raw paths remain live",
+      "reported_remote_location": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
+      "reported_backup_manifest": "docs/storage-audit/2026-10-04-backup-files.jsonl",
+      "backup_manifest_inspected": false,
+      "candidate_research_markdown": "reported preserved; locally inspected during this refresh",
+      "post_and_benchmark_worktree_bindings": "read by exact named paths; no silent alias or bulk retrieval performed"
+    }
+  },
+  "storage_binding_refresh": {
+    "schema_version": "storage-binding-evidence-v1",
+    "observed_at_utc": "2026-10-04T08:33:31.333338+00:00",
+    "storage_chat": {
+      "id": "01a105e1-e8ff-7c90-8b54-dc2d2aa2cfc4",
+      "title": "Push everything to the riley branch",
+      "turn": "01a105e2-479d-76a0-b8e1-98e7fdab6709",
+      "evidence_class": "bounded retained owner status and direct human instruction",
+      "direct_human_cleanup": "look over the current data if its not from data bento or an old md file begin getting rid of it...have an agent clean up the storage",
+      "owner_report": "Delete only backup-hash-matching candidates; retain Databento,Markdown,changed or uncertain files;private archive retained;GitHub upload still running in sampled turn"
+    },
+    "backup_manifest": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\storage-audit\\2026-10-04-backup-files.jsonl",
+    "backup_manifest_total_rows_owner_report": 29102,
+    "backup_lookup": {
+      "method": "rg fixed strings only for named rootrelativepaths; parse matched records only",
+      "matched_rows": 12,
+      "rg_exit_code": 0
+    },
+    "reported_remote_snapshot": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
+    "reported_immutable_archive": "home-pc:/home/john-riley/quanthaxs-archives/20261004-riley/workspace.tar.gz",
+    "bindings": [
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+        "old_sha256": "2f8ef97967a705540512eff04be469acebc732487664f34dd9c362926ad0cedb",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\current-v2-candidate\\manifest.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+            "size_bytes": 16805,
+            "mtime_ns": 1791094014000000000,
+            "sha256": "2f8ef97967a705540512eff04be469acebc732487664f34dd9c362926ad0cedb",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+        "old_sha256": "02fb975fd86f2c1de924c49b1b9fc31a2f8cb7f036feb526e55aced7174d3a22",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-proposed-v2-candidate\\manifest.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+            "size_bytes": 16132,
+            "mtime_ns": 1791094049000000000,
+            "sha256": "02fb975fd86f2c1de924c49b1b9fc31a2f8cb7f036feb526e55aced7174d3a22",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+        "old_sha256": "a2f65545708aebb9c3cf2fa566cfcfc613797970d6664bedd272cc79b1e8c09a",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-qualified-v3\\manifest.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+            "size_bytes": 15874,
+            "mtime_ns": 1791098739000000000,
+            "sha256": "a2f65545708aebb9c3cf2fa566cfcfc613797970d6664bedd272cc79b1e8c09a",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+        "old_sha256": "d7b9e99283da5bcaa0626b7e5635c695f09c4c23976914e1681597663032c519",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-qualified-v3\\local_verification.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+            "size_bytes": 1231,
+            "mtime_ns": 1791098880000000000,
+            "sha256": "d7b9e99283da5bcaa0626b7e5635c695f09c4c23976914e1681597663032c519",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+        "old_sha256": "c07546115d23dccbcb8e6c209b6d9dd27e798b7c129e94a791498c10a877a366",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market\\implementation_verification.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+            "size_bytes": 1553,
+            "mtime_ns": 1791092770000000000,
+            "sha256": "c07546115d23dccbcb8e6c209b6d9dd27e798b7c129e94a791498c10a877a366",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+        "old_sha256": "81583444a7437e9d31f769ef18569477f85ac7cb20b281b94ff3e456a508dbfe",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\qualification_report.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+            "size_bytes": 126826,
+            "mtime_ns": 1791098849000000000,
+            "sha256": "81583444a7437e9d31f769ef18569477f85ac7cb20b281b94ff3e456a508dbfe",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+        "old_sha256": "6d27cf30d8ded9c7c8c1efc58ae190248578657221249277bd103397425b771c",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\frozen_selection.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+            "size_bytes": 49254,
+            "mtime_ns": 1791098848000000000,
+            "sha256": "6d27cf30d8ded9c7c8c1efc58ae190248578657221249277bd103397425b771c",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+        "old_sha256": "79b4f0c0d89bf2e56741d7b44ef5bff626027571178ebbb16438aa69bf3c5146",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market_inputs_v3.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+            "size_bytes": 51017,
+            "mtime_ns": 1791096559000000000,
+            "sha256": "79b4f0c0d89bf2e56741d7b44ef5bff626027571178ebbb16438aa69bf3c5146",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+        "old_sha256": "e38b50dea32fa717b4835adf56c5694a58b63da5f8c5e75c512dee00198e1aca",
+        "old_observed": "industry-evidence snapshot",
+        "binding_purpose": "Industry clock/market thin metadata",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261003\\market\\peer_coverage_handoff.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+            "size_bytes": 4495,
+            "mtime_ns": 1791089858000000000,
+            "sha256": "e38b50dea32fa717b4835adf56c5694a58b63da5f8c5e75c512dee00198e1aca",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": true,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+        "old_sha256": null,
+        "old_observed": "2026-10-04T07:32:14.292359+00:00",
+        "binding_purpose": "Market collection thin receipt",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\collection_receipt.json",
+        "current_local_exists": false,
+        "current_sha256": null,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+        "recorded_backup_entries": [
+          {
+            "path": "data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+            "size_bytes": 13088,
+            "mtime_ns": 1791099134000000000,
+            "sha256": "eccc306195202584b9cd99f0bcc740643f3f5afc60f19cebe28ab5c5f6435fe3",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": null,
+        "recorded_backup_matches_current_hash": null
+      },
+      {
+        "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+        "old_sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+        "old_observed": "2026-10-04T08:30:27.859178+00:00",
+        "binding_purpose": "Preserved2024candidate research Markdown",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+        "current_local_exists": true,
+        "current_sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+        "current_bytes": 6500,
+        "current_matches_old_sha256": true,
+        "root_relative_backup_path": "docs/research/2026-10-04-reit-2024-public-bound-candidates.md",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": false,
+        "recorded_backup_matches_current_hash": false
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+        "old_sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+        "old_observed": "2026-10-04T08:30:27.859178+00:00",
+        "binding_purpose": "Separate Benchmark worktree event producer packet",
+        "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+        "current_local_exists": true,
+        "current_sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+        "current_bytes": 24638,
+        "current_matches_old_sha256": true,
+        "root_relative_backup_path": null,
+        "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed"
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+        "old_sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+        "old_observed": "2026-10-04T08:30:27.859178+00:00",
+        "binding_purpose": "Separate Benchmark worktree event producer packet",
+        "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+        "current_local_exists": true,
+        "current_sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+        "current_bytes": 3160,
+        "current_matches_old_sha256": true,
+        "root_relative_backup_path": null,
+        "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed"
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+        "old_sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+        "old_observed": "2026-10-04T08:30:27.859178+00:00",
+        "binding_purpose": "Separate Benchmark worktree event producer packet",
+        "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+        "current_local_exists": true,
+        "current_sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+        "current_bytes": 692,
+        "current_matches_old_sha256": true,
+        "root_relative_backup_path": null,
+        "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed"
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+        "old_sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+        "old_observed": "2026-10-04T08:30:27.859178+00:00",
+        "binding_purpose": "Separate Postworktree static protocol",
+        "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+        "current_local_exists": true,
+        "current_sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+        "current_bytes": 6225,
+        "current_matches_old_sha256": true,
+        "root_relative_backup_path": null,
+        "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed"
+      },
+      {
+        "path": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/configs/wording_equity_calendar-2024-v1.json",
+        "old_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+        "old_observed": "2026-10-04T08:19:52.372295Z",
+        "binding_purpose": "Separate Postworktree252session calendar",
+        "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_calendar-2024-v1.json",
+        "current_local_exists": true,
+        "current_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+        "current_bytes": 237555,
+        "current_matches_old_sha256": true,
+        "root_relative_backup_path": null,
+        "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed"
+      },
+      {
+        "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\industry-evidence.json",
+        "old_sha256": null,
+        "old_observed": "audit documentation",
+        "binding_purpose": "Preserved audit docs",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\industry-evidence.json",
+        "current_local_exists": true,
+        "current_sha256": "1035eb9d6489898a771ebc6f77a80b79b86696701722ec5312886097ec2822aa",
+        "current_bytes": 9081,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "docs/data-date-audit/receipts/industry-evidence.json",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": null,
+        "recorded_backup_matches_current_hash": false
+      },
+      {
+        "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\first-arm-owner-refresh.json",
+        "old_sha256": null,
+        "old_observed": "audit documentation",
+        "binding_purpose": "Preserved audit docs",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\first-arm-owner-refresh.json",
+        "current_local_exists": true,
+        "current_sha256": "9fb341840798eb7dc8be2762d593fe66bc0ef72fdc066e39c6ed7bbc1fea5a30",
+        "current_bytes": 18481,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "docs/data-date-audit/receipts/first-arm-owner-refresh.json",
+        "recorded_backup_entries": [],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": null,
+        "recorded_backup_matches_current_hash": false
+      },
+      {
+        "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.json",
+        "old_sha256": null,
+        "old_observed": "audit documentation",
+        "binding_purpose": "Preserved audit docs",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.json",
+        "current_local_exists": true,
+        "current_sha256": "b009e94f010a0a1727707d127aef0bd9164a7de36f2c8b672fcb0590279a5ef8",
+        "current_bytes": 38414,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "docs/data-date-audit/receipts/post-evidence.json",
+        "recorded_backup_entries": [
+          {
+            "path": "docs/data-date-audit/receipts/post-evidence.json",
+            "size_bytes": 20365,
+            "mtime_ns": 1791100914000000000,
+            "sha256": "55b46f08bed3e5407e3b3fdfbf44ee720ebc7432f0f038a9d0c0124d60a122a4",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": null,
+        "recorded_backup_matches_current_hash": false
+      },
+      {
+        "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.md",
+        "old_sha256": null,
+        "old_observed": "audit documentation",
+        "binding_purpose": "Preserved audit docs",
+        "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.md",
+        "current_local_exists": true,
+        "current_sha256": "deaffa6d09db1932d6e976e6b325440b6873b98b0a061668b3aeb8cca4880413",
+        "current_bytes": 12365,
+        "current_matches_old_sha256": null,
+        "root_relative_backup_path": "docs/data-date-audit/receipts/post-evidence.md",
+        "recorded_backup_entries": [
+          {
+            "path": "docs/data-date-audit/receipts/post-evidence.md",
+            "size_bytes": 13232,
+            "mtime_ns": 1791100903000000000,
+            "sha256": "56245b35eb424dcf5b87980315176240c248459f689695748733f156cf25d398",
+            "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+            "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+          }
+        ],
+        "actual_remote_bytes_live_verified": false,
+        "remote_live_verification": "unknown; no remote read performed",
+        "recorded_backup_matches_old_hash": null,
+        "recorded_backup_matches_current_hash": false
+      }
+    ],
+    "scope": "Only named small metadata/inputbinding files and audit docs; no fullmanifest/raw/remote/archive read",
+    "acceptance_condition": "Consumer binds exact source/transcript/model/clock/market/policy bytes by hash. Missing root path needs explicit restore or remote consumer binding with newly verified bytes and owner path mapping. Backupentry and past receipt remain historical evidence; no silent worktree migration or readiness grant.",
+    "economic_acceptance": false
+  },
+  "ordered_dependencies": [
+    {
+      "id": "DD21",
+      "arm_priority": "P0 wording alignment",
+      "status": "missing",
+      "claimed_state": "Owner reports7early2023wording vs2024-25newmarket",
+      "verified_state": "Pinned wording packet has8primary filing/accession events with SECacceptance2023-01-05..2023-03-01 and7exhibits with null acceptance. Frozenv2 window remains2024-01-01..2025-01-01exclusive. New Industry research candidates:AMT2024-02-27/2024-10-29,2documents,0accepted public bounds; exact retained exhibit bytes/scores not established. Benchmark minimal2024check active at receipt cutoff.",
+      "discrepancy_counterexample": "No2024 accession/filing event in this pinned2023packet under frozen event-window rule. This is not global no2024text/quotes or a completed market join. If event_date differs, require row evidence; newer Benchmark aggregation is pending.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Benchmark + Post + Industry",
+      "dependency": "DD03,DD04",
+      "next_action": "Benchmark/Post publish exact admissible existing event-date cohort and Industry executable holding-window coverage, or explicit versioned recipe/window revision within human-delegated scope; never reopen protected tests",
+      "acceptance_condition": "Row-level exact text/version/public-by/model/event/security/calendar/quote/action/cost admissible intersection accepted by Post, with excluded/censored/no-fill counts; otherwise first-arm result unavailable",
+      "evidence": [
+        "E04",
+        "E08",
+        "E09",
+        "E14",
+        "E15",
+        "E19"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
+    },
+    {
+      "id": "DD22",
+      "arm_priority": "P0 consumed input bindings;P1 unconsumed historical storage",
+      "status": "partial",
+      "claimed_state": "Another human-authorized owner migrating backed non-Databento root data/artifacts/cache to remote snapshot/archive",
+      "verified_state": "Named small path/backup binding checks recorded in receipts/storage-binding-evidence.json; inspect individual local/remote verification flags before consumer use",
+      "discrepancy_counterexample": "A previously hashed root path can become unavailable; retained historical proof does not certify current local or remote input bytes. Worktree inputs are separate roots and cannot be silently remapped.",
+      "consequence": "Post requires current exact consumed path/byte/hash/version binding before replay; unrelated prior runtime receipts remain valid past facts",
+      "owner": "Storage owner + Industry/Benchmark producers + Post consumer",
+      "dependency": "DD03,DD04,DD08,DD09",
+      "next_action": "Coordinate exact affected first-arm bindings with storage owner; verify matching backup/restore hashes and accepted current input manifest. Keep bulk remote; no duplicate backup or cleanup by audit.",
+      "acceptance_condition": "For each consumed input, explicit local/remote path, bytes,SHA256,role,version,verification time and Post accepted consumer binding; missing live file remains unavailable until restored/mapped",
+      "evidence": [
+        "E19",
+        "E20"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    },
+    {
+      "id": "DD03",
+      "arm_priority": "P0 wording",
+      "status": "partial",
+      "claimed_state": "Conditional Post20bounds; Industry35current/37historical",
+      "verified_state": "Post22sources:20conditional and2quarantined. Industry current-v2:35rows/13proxy candidates/22excluded; history-v2:37rows/0proxy candidates; history-v3:37rows/37proxy candidates/0flags, but0known public/0observed ready/canonical_ready=false.",
+      "discrepancy_counterexample": "Post filing-day-end+60s/byte-equality and Industry SECacceptance+24h are assumptions. No exact-version supported historical public-by proof or actual historical receipt is established.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Industry + Post",
+      "dependency": "DD08",
+      "next_action": "Bind exact source identity/hash/version to public-by evidence and explicit processing/latency or exclude",
+      "acceptance_condition": "Consumer per-row acceptance/exclusion; preserve clock unknowns",
+      "evidence": [
+        "E01",
+        "E09",
+        "E14",
+        "E15",
+        "E19"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
+    },
+    {
+      "id": "DD08",
+      "arm_priority": "P0 wording",
+      "status": "partial",
+      "claimed_state": "15docs/2391fragments/one truncated candidate",
+      "verified_state": "ProsusAI/finbert@db38d3727cbaed87c9aed72df7b3519e2ba5cca1 scored15docs/2391fragments,0failed,1truncated; completed2026-10-04T02:22:47.209449Z. V2 aggregation recipe now frozen. Model provenance summary byte-hashed:2023-06-05safetensors variant metadata matches retained weight OID, but current weight body not rehashed, earlier-checkpoint equivalence/training cutoff unknown, historical transform and weight rights not accepted. Format commit date is not proof of future training.",
+      "discrepancy_counterexample": "Training cutoff and historical model/version availability are unqualified. Current processing completion is not historical signal readiness; document/text span, dedup/truncation and event aggregation still need accepted provenance.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Post; Benchmark inputs",
+      "dependency": "DD03,DD21",
+      "next_action": "Benchmark bind existing exact scored spans/model revision and aggregation to eligible event manifest; Post accept or exclude model/text/time qualification without a new model",
+      "acceptance_condition": "Hash-pinned recipe before scoring; model later-version labelled conditional retrospective; no candidate=>unavailable",
+      "evidence": [
+        "E01",
+        "E03",
+        "E09",
+        "E14",
+        "E19"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
+    },
+    {
+      "id": "DD01",
+      "arm_priority": "P1 financial date classification; P0 only actual wording calendar/session consumer join",
+      "status": "partial",
+      "claimed_state": "502sessionsx4=2008;2092financialweekdays",
+      "verified_state": "2092 financial rows = 523 identical issuer weekdays; 2008 document decisions = 502 sessions (252 in2024,250 in2025). Exact difference is21 exchange closures x4=84 rows, no session absent financial grid. Six early-close decisions at12:30 local precede13:00close.",
+      "discrepancy_counterexample": "Classification is closed. Financial21:00Z diagnostic clock is not issuer15:30 or executable quote time; retrospective calendar is not proof of schedule known at an earlier decision.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Post + Benchmark",
+      "dependency": "DD21",
+      "next_action": "Post bind actualv2 entry/exit/account dates to accepted known-at-decision product calendar; Benchmark retain financial scaffold diagnostic. No holiday zero-fill.",
+      "acceptance_condition": "Calendar classification receipt is accepted for bounded audit; consumer session/time/security/schedule qualification has exact receipt before economic use",
+      "evidence": [
+        "E01",
+        "E07",
+        "E14",
+        "E16",
+        "E17"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "closed_subgates": [
+        "Actual523/502date-set subtraction,21named closures,84issuer rows",
+        "Six early-close decisions before actual close; no missing equity session"
+      ]
+    },
+    {
+      "id": "DD06",
+      "arm_priority": "P0 equity",
+      "status": "partial",
+      "claimed_state": "EQUS1028190quotes/2510definitions;15080ts_eventnull",
+      "verified_state": "EQUS1028190 interval rows;15080 ts_event missing,1013110 parsed events,1028190 parsed receives. ts_event is optional last trade; ts_recv vendor minute endpoint, not our historical receipt or quote update.",
+      "discrepancy_counterexample": "Component venue does not establish NBBO, fills or quote freshness; missing trade times are not filled, and no last-trade age screen can certify quote age.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Industry + Post",
+      "dependency": "DD04",
+      "next_action": "Qualify bidask,volume,spread,venue,nullsentinel,crossed/empty and execution/freshness policy",
+      "acceptance_condition": "Actual schema/row receipt and conservative fills; no last-trade-age freshness screen",
+      "evidence": [
+        "E01",
+        "E08",
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    },
+    {
+      "id": "DD07",
+      "arm_priority": "P0 equity",
+      "status": "partial",
+      "claimed_state": "21degraded dates frozen historically",
+      "verified_state": "Frozen quality rule has21degraded dates, distinct from the21calendar closure dates. Adapter feature/holding intersection exists; actual wording consumer mask accepted=false, independent historical identity/action qualification=false.",
+      "discrepancy_counterexample": "Implemented checks do not prove propagation through actual event, quote, order, fill and valuation cohort. Preserve no-fill, censored and excluded observations, including action/borrow uncertainty.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Industry + Post",
+      "dependency": "DD04,DD06",
+      "next_action": "Join intervals to decisions/holding; evidence security mapping/actions; retain adverse exclusions",
+      "acceptance_condition": "Consumer mask survives feature/order/fill/valuation joins and counts",
+      "evidence": [
+        "E01",
+        "E15"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    },
+    {
+      "id": "DD09",
+      "arm_priority": "P0 policy/execution",
+      "status": "partial",
+      "claimed_state": "Direct human: hypotheticalUSD1m,long/short,equal eligible targets,gross<=100%,no leverage,zero passive cash yield; v2 static freeze inspected",
+      "verified_state": "V2 recipe exactbyteSHA e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb supersedes preservedv1; freeze2026-10-04T08:00:11.116997Z. Linked252-session2024calendar file/row hashes match. USD1m, long/short, equally sized eligible targets,<=100%gross,no leverage; zero passive cash yield preserves cash balances/flat days.",
+      "discrepancy_counterexample": "Static contract/entry+flat-close checks do not establish qualified source/model/identity/actions/costs/borrow/short lifecycle or continuous intraday gross cap. Forced full investment is not authorized; unknown costs are not zero.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Post",
+      "dependency": "DD03,DD06,DD07,DD08",
+      "next_action": "Freeze selection/rebalance/holding/delay/integerqty/costs/capacity/financing/borrow and no-fill; match baseline",
+      "acceptance_condition": "Immutable policy/orders quotes/multipliers/session/cost input hashes; unknown borrow costs neverzero",
+      "evidence": [
+        "E01",
+        "E02",
+        "E03",
+        "E09",
+        "E14",
+        "E19"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
+    },
+    {
+      "id": "DD10",
+      "arm_priority": "P0 account/metrics",
+      "status": "missing",
+      "claimed_state": "No accepted regular costed USD1m netNAV evidenced",
+      "verified_state": "No accepted regularly marked, costed USD1m challenger/matched-long/cash account series is evidenced in this bounded audit.",
+      "discrepancy_counterexample": "Sparse/terminal or synthetic fixture marks cannot support measured return, SharpeCI, drawdown or win rate. Retain open/cash/flat/loss/no-fill/action/dividend/borrow flows; zero cash yield does not mean zero balance.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Post",
+      "dependency": "DD09",
+      "next_action": "Post produce regularly marked three net account paths, with cash balance/flat/no-fill sessions and explicit costs, collateral, actions and closed-episode tie/censor rules",
+      "acceptance_condition": "Reconciled daily account ledger; cashzero variance Sharpe/delta undefined; unsupported metrics null/reason",
+      "evidence": [
+        "E01",
+        "E09",
+        "E14"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    },
+    {
+      "id": "DD11",
+      "arm_priority": "P0 inference after accepted net series",
+      "status": "partial",
+      "claimed_state": "Existing dependence-aware inference design;2024-25 DEVELOPMENT",
+      "verified_state": "Existing inference research/plan inspected: regularly marked account daily net returns, temporal dependence, joint matched paths, HAC/studentized block bootstrap and declared95%CI. No accepted inference input exists.",
+      "discrepancy_counterexample": "Event/fragment counts are not independent observations. Existing2024/25 inspection is DEVELOPMENT; a config excluding2025 does not restore untouched status. Final test remains closed; no human success threshold is invented.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Post + Sharpe lane",
+      "dependency": "DD10",
+      "next_action": "Sharpe lane finish owned inference contract/negative fixtures; apply registered joint dependence-aware95%interval only after Post net-series acceptance; preserve trial/fold ledger and DEVELOPMENT labels",
+      "acceptance_condition": "Netregular accepted cohort hash; block/HAC/sample/calibration metadata; no arbitrary human success cutoff; MC later",
+      "evidence": [
+        "E01",
+        "E02",
+        "E12",
+        "E13",
+        "E14",
+        "E18"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
+    }
+  ],
+  "outside_first_arm": [
+    "financial-only native counts/calendar/vintages unless consumed",
+    "derivatives/universe expansions",
+    "GPU acceleration/full MonteCarlo path work"
+  ],
+  "historical_Lattice_owner_scope": "separate full approved work continues under its own human override; this audit launches no job",
+  "pending_human_question": null,
+  "action_boundary": "one canonical Post replay; no second strategy implementation,acquisition,cleanup,merge,live capital or protected-test access by audit"
+}

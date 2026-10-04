@@ -1,0 +1,59 @@
+{
+  "final_summary_deliveries_pending": false,
+  "results": [
+    {
+      "owner": "Coordinator",
+      "thread": "01a1036f-6912-73f2-b9ff-513b7d6c8400",
+      "tool_result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"threadId\":\"01a1036f-6912-73f2-b9ff-513b7d6c8400\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "owner": "Post",
+      "thread": "01a1029b-f907-7bc1-9127-bf22a03633cd",
+      "tool_result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"threadId\":\"01a1029b-f907-7bc1-9127-bf22a03633cd\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "owner": "Sharpe parent",
+      "thread": "01a10571-d8fb-7aa0-b526-b792caffbde2",
+      "tool_result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"threadId\":\"01a10571-d8fb-7aa0-b526-b792caffbde2\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "owner": "Storage",
+      "thread": "01a105e1-e8ff-7c90-8b54-dc2d2aa2cfc4",
+      "tool_result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"threadId\":\"01a105e1-e8ff-7c90-8b54-dc2d2aa2cfc4\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "delivery_is_consumer_acceptance": false,
+  "scope": "Verified bounded audit docs; canonical Post replay and source owners continue; no economic readiness"
+}

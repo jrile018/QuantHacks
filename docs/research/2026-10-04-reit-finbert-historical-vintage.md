@@ -1,0 +1,20 @@
+# Frozen FinBERT revision: historical vintage evidence
+
+**Assessment (2026-10-04):** Hugging Face's official records place the exact pinned `ProsusAI/finbert` revision `db38d3727cbaed87c9aed72df7b3519e2ba5cca1` on **June 5, 2023**, before the proposed AMT earnings releases on February 27 and October 29, 2024. This supports using that already existing provider for a historical delayed-replay research design. It does not establish the disclosure text's public-by clock, a historical run of this project's scoring pipeline, or eligibility for a trade.
+
+## Official revision evidence
+
+| Record | What it establishes | Limit |
+|---|---|---|
+| [Exact-revision commit history](https://huggingface.co/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1) | Hugging Face labels `db38d37` as “Adding `safetensors` variant of this model,” committed by `SFconvertbot` on **June 5, 2023**. This is the exact full revision pinned in the existing wording handoff. | The page displays a calendar date, not a separately verified second-level UTC release time. |
+| [Model repository PR #10](https://huggingface.co/ProsusAI/finbert/discussions/10) | Platform discussion says PR #10 opened **June 5, 2023**, from `refs/pr/10` against `refs/heads/main`, and links commit `db38d372`. The bot says the new safetensors file is equivalent to the pre-existing `pytorch_model.bin`. | The bot's equivalence statement is a publisher claim; this note did not compare tensor values or run inference. The commit's PR ref matters for reconstruction. |
+| [PR #10 file diff](https://huggingface.co/ProsusAI/finbert/discussions/10/files) and [exact-revision safetensors file page](https://huggingface.co/ProsusAI/finbert/blob/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/model.safetensors) | Diff adds `.gitattributes` and `model.safetensors`. The Git LFS pointer states `oid sha256:e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00`, size **437,965,908 bytes**. Hugging Face's file page reports the same SHA-256. | This is the safetensors weight-file identifier, not the hash of a local model copy or of an inference output. No model bytes were downloaded for this check. |
+| [Current `main` commit history](https://huggingface.co/ProsusAI/finbert/commits/main) | As inspected on 2026-10-04, its displayed history has earlier commits through May 23, 2023 and does **not** list `db38d37`; PR #10 still displays “Ready to merge.” | Do not describe this revision as a merged `main` release. Name the exact commit and PR ref. A current branch view alone does not prove every past branch state. |
+
+## Decision-use distinction
+
+The platform's June 2023 PR-open date and commit record are direct evidence that the **specific pinned repository snapshot** existed before either 2024 candidate disclosure. The model family's 2019 paper or 2020 initial upload is unnecessary to make that narrower claim and would not date `db38…` itself. The change at `db38…` is the safetensors conversion PR; its reported equivalence to existing PyTorch weights remains unverified here.
+
+The existing project wording scores were processed in **2026** and cover 2023 source accessions; they do not score the proposed 2024 events. The pilot would rerun the frozen, pre-2024-available provider on exact 2024 release versions under a declared historical processing-latency replay. To bind that run to this vintage, the canonical record still needs the loaded revision and actual model-file hash, tokenizer/config and library versions, source-text hashes, output hashes, and processing receipt. This note did not inspect a local model cache or infer those values.
+
+**Unresolved:** the model training-data cutoff and provenance of every training example; tensor-level equivalence between the PR's safetensors file and `pytorch_model.bin`; any historical project inference at release time; and the separate exact-text historical public upper-bound, security, market and economic gates. None is inferred from the dated model commit. No new model, download, inference or score was produced for this audit.

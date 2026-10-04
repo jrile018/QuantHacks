@@ -1,0 +1,132 @@
+{
+  "schema_version": "data-date-audit-artifact-manifest-v1",
+  "observed_at_utc": "2026-10-04T08:49:04.007189+00:00",
+  "hash_domain": "Exact owned audit file bytes, including preserved original snapshots; excludes this manifest to avoid self-reference",
+  "files": [
+    {
+      "path": "availability-date-matrix.json",
+      "bytes": 110440,
+      "sha256": "0490c066bd516b42d2e14f54df8c948da6f3075eb83db3f674bf6e0c6ab3b702"
+    },
+    {
+      "path": "closure-receipts.json",
+      "bytes": 15569,
+      "sha256": "f05a0ccf0717d42b867d8a10d414e793d0d339113856f39868af7d512a923a37"
+    },
+    {
+      "path": "evidence-snapshot.json",
+      "bytes": 6543,
+      "sha256": "a36b3b2f170ac0050920bf8219629ef0833754de59d9f3e38814375effb1433c"
+    },
+    {
+      "path": "FINDINGS.md",
+      "bytes": 8188,
+      "sha256": "bf6b24b5ccf356f27cc0c88f170ed1bbb3e6d8e0de6c94a61179f62bea05f9a1"
+    },
+    {
+      "path": "first-arm-blocker-map.json",
+      "bytes": 64108,
+      "sha256": "c57a71df658b6d42aae3afe0e975e94690d444f5672c137ce0ad197c170eaab3"
+    },
+    {
+      "path": "gap-ledger.json",
+      "bytes": 56312,
+      "sha256": "7761a7621f2a73cb07c23297863c8cbbd1eff97615c1b871971167377d53acc7"
+    },
+    {
+      "path": "handoff-prompt.md",
+      "bytes": 14569,
+      "sha256": "e6dc8ab4c97b1302f2f68a127742e39679b6d7bc946a059017efd2e6ae2c9652"
+    },
+    {
+      "path": "performance-availability.json",
+      "bytes": 12659,
+      "sha256": "1dc39a820d7cf87bb352c0edabd9437dd717ba27640beb21a0db8b5eaefa7a2b"
+    },
+    {
+      "path": "plan-progress.md",
+      "bytes": 3144,
+      "sha256": "4bfe05a5803d5c57de98af72675d4a7600638f458d2220078f6a52ded8482425"
+    },
+    {
+      "path": "receipts/calendar-reconciliation.json",
+      "bytes": 5812,
+      "sha256": "8439e81bc326002057abca52cdb243ab8b2b95c698f83180a51d67d704a320c2"
+    },
+    {
+      "path": "receipts/final-handoff.json",
+      "bytes": 1485,
+      "sha256": "5a9e55e16dee737ce6e98c45cd1e2ff785e0f8fa479152acc8c686ac745e33b7"
+    },
+    {
+      "path": "receipts/financial-evidence.json",
+      "bytes": 7149,
+      "sha256": "434a5b9dfa1edf996ab9e39553ed559654159883160d7ae7a0cf0c6e65b80bf9"
+    },
+    {
+      "path": "receipts/first-arm-owner-refresh.json",
+      "bytes": 18481,
+      "sha256": "9fb341840798eb7dc8be2762d593fe66bc0ef72fdc066e39c6ed7bbc1fea5a30"
+    },
+    {
+      "path": "receipts/industry-evidence.json",
+      "bytes": 9081,
+      "sha256": "1035eb9d6489898a771ebc6f77a80b79b86696701722ec5312886097ec2822aa"
+    },
+    {
+      "path": "receipts/industry-evidence.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "receipts/lattice-evidence.json",
+      "bytes": 21399,
+      "sha256": "16b2a811fc65909ff2de6b4e704d65cbc03d54558367c5ab94f07ec4e158caa5"
+    },
+    {
+      "path": "receipts/post-evidence.json",
+      "bytes": 38414,
+      "sha256": "b009e94f010a0a1727707d127aef0bd9164a7de36f2c8b672fcb0590279a5ef8"
+    },
+    {
+      "path": "receipts/post-evidence.md",
+      "bytes": 12365,
+      "sha256": "deaffa6d09db1932d6e976e6b325440b6873b98b0a061668b3aeb8cca4880413"
+    },
+    {
+      "path": "receipts/reporting-decision.json",
+      "bytes": 1062,
+      "sha256": "815c73f57a397f0d7017845ff62acee44ab4a34660b73d45ad5f02a0e4d204d8"
+    },
+    {
+      "path": "receipts/root-evidence.json",
+      "bytes": 3487,
+      "sha256": "083e40e61e850ea911dbd3b2ed00770bf22be7d623b45dc12f8ee37eb1531556"
+    },
+    {
+      "path": "receipts/storage-binding-evidence.json",
+      "bytes": 28028,
+      "sha256": "033db0d1f2054d02b1929cfc38d2e6a006139abd782acd93d6d6d8b42ec12a16"
+    },
+    {
+      "path": "refresh-audit.py",
+      "bytes": 49267,
+      "sha256": "13e112bf9a65a7eb886850aee7288668216ac38bf3915ff10842845efc088be8"
+    },
+    {
+      "path": "seed-audit-2026-10-04.md",
+      "bytes": 22346,
+      "sha256": "e43199483f251fa35327219debb0268b3419c181c558d2df42b494ed0766beda"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2478,
+      "sha256": "5f7939f206927408b037e6cf02f6f6aa0ede6365f104f85799b69c99f8bd86ba"
+    },
+    {
+      "path": "verify-audit.py",
+      "bytes": 11714,
+      "sha256": "d37d12e2d25c77c52b33daf81d12a2e542a67329efd86f0ae8a68ec5ade26afe"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "schema_version": "storage-binding-evidence-v1",
+  "observed_at_utc": "2026-10-04T08:33:31.333338+00:00",
+  "storage_chat": {
+    "id": "01a105e1-e8ff-7c90-8b54-dc2d2aa2cfc4",
+    "title": "Push everything to the riley branch",
+    "turn": "01a105e2-479d-76a0-b8e1-98e7fdab6709",
+    "evidence_class": "bounded retained owner status and direct human instruction",
+    "direct_human_cleanup": "look over the current data if its not from data bento or an old md file begin getting rid of it...have an agent clean up the storage",
+    "owner_report": "Delete only backup-hash-matching candidates; retain Databento,Markdown,changed or uncertain files;private archive retained;GitHub upload still running in sampled turn"
+  },
+  "backup_manifest": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\storage-audit\\2026-10-04-backup-files.jsonl",
+  "backup_manifest_total_rows_owner_report": 29102,
+  "backup_lookup": {
+    "method": "rg fixed strings only for named rootrelativepaths; parse matched records only",
+    "matched_rows": 12,
+    "rg_exit_code": 0
+  },
+  "reported_remote_snapshot": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
+  "reported_immutable_archive": "home-pc:/home/john-riley/quanthaxs-archives/20261004-riley/workspace.tar.gz",
+  "bindings": [
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+      "old_sha256": "2f8ef97967a705540512eff04be469acebc732487664f34dd9c362926ad0cedb",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\current-v2-candidate\\manifest.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/clocks/current-v2-candidate/manifest.json",
+          "size_bytes": 16805,
+          "mtime_ns": 1791094014000000000,
+          "sha256": "2f8ef97967a705540512eff04be469acebc732487664f34dd9c362926ad0cedb",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+      "old_sha256": "02fb975fd86f2c1de924c49b1b9fc31a2f8cb7f036feb526e55aced7174d3a22",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-proposed-v2-candidate\\manifest.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/clocks/historical-proposed-v2-candidate/manifest.json",
+          "size_bytes": 16132,
+          "mtime_ns": 1791094049000000000,
+          "sha256": "02fb975fd86f2c1de924c49b1b9fc31a2f8cb7f036feb526e55aced7174d3a22",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+      "old_sha256": "a2f65545708aebb9c3cf2fa566cfcfc613797970d6664bedd272cc79b1e8c09a",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-qualified-v3\\manifest.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/manifest.json",
+          "size_bytes": 15874,
+          "mtime_ns": 1791098739000000000,
+          "sha256": "a2f65545708aebb9c3cf2fa566cfcfc613797970d6664bedd272cc79b1e8c09a",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+      "old_sha256": "d7b9e99283da5bcaa0626b7e5635c695f09c4c23976914e1681597663032c519",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-qualified-v3\\local_verification.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/clocks/historical-qualified-v3/local_verification.json",
+          "size_bytes": 1231,
+          "mtime_ns": 1791098880000000000,
+          "sha256": "d7b9e99283da5bcaa0626b7e5635c695f09c4c23976914e1681597663032c519",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+      "old_sha256": "c07546115d23dccbcb8e6c209b6d9dd27e798b7c129e94a791498c10a877a366",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market\\implementation_verification.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/market/implementation_verification.json",
+          "size_bytes": 1553,
+          "mtime_ns": 1791092770000000000,
+          "sha256": "c07546115d23dccbcb8e6c209b6d9dd27e798b7c129e94a791498c10a877a366",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+      "old_sha256": "81583444a7437e9d31f769ef18569477f85ac7cb20b281b94ff3e456a508dbfe",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\qualification_report.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/market-v2-results/qualification_report.json",
+          "size_bytes": 126826,
+          "mtime_ns": 1791098849000000000,
+          "sha256": "81583444a7437e9d31f769ef18569477f85ac7cb20b281b94ff3e456a508dbfe",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+      "old_sha256": "6d27cf30d8ded9c7c8c1efc58ae190248578657221249277bd103397425b771c",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\frozen_selection.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/market-v2-results/frozen_selection.json",
+          "size_bytes": 49254,
+          "mtime_ns": 1791098848000000000,
+          "sha256": "6d27cf30d8ded9c7c8c1efc58ae190248578657221249277bd103397425b771c",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+      "old_sha256": "79b4f0c0d89bf2e56741d7b44ef5bff626027571178ebbb16438aa69bf3c5146",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market_inputs_v3.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/market_inputs_v3.json",
+          "size_bytes": 51017,
+          "mtime_ns": 1791096559000000000,
+          "sha256": "79b4f0c0d89bf2e56741d7b44ef5bff626027571178ebbb16438aa69bf3c5146",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+      "old_sha256": "e38b50dea32fa717b4835adf56c5694a58b63da5f8c5e75c512dee00198e1aca",
+      "old_observed": "industry-evidence snapshot",
+      "binding_purpose": "Industry clock/market thin metadata",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261003\\market\\peer_coverage_handoff.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261003/market/peer_coverage_handoff.json",
+          "size_bytes": 4495,
+          "mtime_ns": 1791089858000000000,
+          "sha256": "e38b50dea32fa717b4835adf56c5694a58b63da5f8c5e75c512dee00198e1aca",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": true,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+      "old_sha256": null,
+      "old_observed": "2026-10-04T07:32:14.292359+00:00",
+      "binding_purpose": "Market collection thin receipt",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\collection_receipt.json",
+      "current_local_exists": false,
+      "current_sha256": null,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+      "recorded_backup_entries": [
+        {
+          "path": "data/processed/reit_build/20261004-continuation/market-v2-results/collection_receipt.json",
+          "size_bytes": 13088,
+          "mtime_ns": 1791099134000000000,
+          "sha256": "eccc306195202584b9cd99f0bcc740643f3f5afc60f19cebe28ab5c5f6435fe3",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": null,
+      "recorded_backup_matches_current_hash": null
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+      "old_sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+      "old_observed": "2026-10-04T08:30:27.859178+00:00",
+      "binding_purpose": "Preserved2024candidate research Markdown",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+      "current_local_exists": true,
+      "current_sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+      "current_bytes": 6500,
+      "current_matches_old_sha256": true,
+      "root_relative_backup_path": "docs/research/2026-10-04-reit-2024-public-bound-candidates.md",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": false,
+      "recorded_backup_matches_current_hash": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+      "old_sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+      "old_observed": "2026-10-04T08:30:27.859178+00:00",
+      "binding_purpose": "Separate Benchmark worktree event producer packet",
+      "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+      "current_local_exists": true,
+      "current_sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+      "current_bytes": 24638,
+      "current_matches_old_sha256": true,
+      "root_relative_backup_path": null,
+      "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed"
+    },
+    {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+      "old_sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+      "old_observed": "2026-10-04T08:30:27.859178+00:00",
+      "binding_purpose": "Separate Benchmark worktree event producer packet",
+      "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+      "current_local_exists": true,
+      "current_sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+      "current_bytes": 3160,
+      "current_matches_old_sha256": true,
+      "root_relative_backup_path": null,
+      "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed"
+    },
+    {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+      "old_sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+      "old_observed": "2026-10-04T08:30:27.859178+00:00",
+      "binding_purpose": "Separate Benchmark worktree event producer packet",
+      "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+      "current_local_exists": true,
+      "current_sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+      "current_bytes": 692,
+      "current_matches_old_sha256": true,
+      "root_relative_backup_path": null,
+      "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed"
+    },
+    {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+      "old_sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+      "old_observed": "2026-10-04T08:30:27.859178+00:00",
+      "binding_purpose": "Separate Postworktree static protocol",
+      "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+      "current_local_exists": true,
+      "current_sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+      "current_bytes": 6225,
+      "current_matches_old_sha256": true,
+      "root_relative_backup_path": null,
+      "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed"
+    },
+    {
+      "path": "C:/Users/johnp/.codex/worktrees/8k-cross-asset-validation/QuantHaxs/configs/wording_equity_calendar-2024-v1.json",
+      "old_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+      "old_observed": "2026-10-04T08:19:52.372295Z",
+      "binding_purpose": "Separate Postworktree252session calendar",
+      "old_observed_path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_calendar-2024-v1.json",
+      "current_local_exists": true,
+      "current_sha256": "0f9781d31c384a8ef9b74a3e68eaa1de57f1708cc627839f247ba5ccd6016c53",
+      "current_bytes": 237555,
+      "current_matches_old_sha256": true,
+      "root_relative_backup_path": null,
+      "backup_namespace_reason": "Separately rooted worktree; root snapshot manifest is not a silent alias",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed"
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\industry-evidence.json",
+      "old_sha256": null,
+      "old_observed": "audit documentation",
+      "binding_purpose": "Preserved audit docs",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\industry-evidence.json",
+      "current_local_exists": true,
+      "current_sha256": "1035eb9d6489898a771ebc6f77a80b79b86696701722ec5312886097ec2822aa",
+      "current_bytes": 9081,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "docs/data-date-audit/receipts/industry-evidence.json",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": null,
+      "recorded_backup_matches_current_hash": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\first-arm-owner-refresh.json",
+      "old_sha256": null,
+      "old_observed": "audit documentation",
+      "binding_purpose": "Preserved audit docs",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\first-arm-owner-refresh.json",
+      "current_local_exists": true,
+      "current_sha256": "9fb341840798eb7dc8be2762d593fe66bc0ef72fdc066e39c6ed7bbc1fea5a30",
+      "current_bytes": 18481,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "docs/data-date-audit/receipts/first-arm-owner-refresh.json",
+      "recorded_backup_entries": [],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": null,
+      "recorded_backup_matches_current_hash": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.json",
+      "old_sha256": null,
+      "old_observed": "audit documentation",
+      "binding_purpose": "Preserved audit docs",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.json",
+      "current_local_exists": true,
+      "current_sha256": "b009e94f010a0a1727707d127aef0bd9164a7de36f2c8b672fcb0590279a5ef8",
+      "current_bytes": 38414,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "docs/data-date-audit/receipts/post-evidence.json",
+      "recorded_backup_entries": [
+        {
+          "path": "docs/data-date-audit/receipts/post-evidence.json",
+          "size_bytes": 20365,
+          "mtime_ns": 1791100914000000000,
+          "sha256": "55b46f08bed3e5407e3b3fdfbf44ee720ebc7432f0f038a9d0c0124d60a122a4",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": null,
+      "recorded_backup_matches_current_hash": false
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.md",
+      "old_sha256": null,
+      "old_observed": "audit documentation",
+      "binding_purpose": "Preserved audit docs",
+      "old_observed_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\data-date-audit\\receipts\\post-evidence.md",
+      "current_local_exists": true,
+      "current_sha256": "deaffa6d09db1932d6e976e6b325440b6873b98b0a061668b3aeb8cca4880413",
+      "current_bytes": 12365,
+      "current_matches_old_sha256": null,
+      "root_relative_backup_path": "docs/data-date-audit/receipts/post-evidence.md",
+      "recorded_backup_entries": [
+        {
+          "path": "docs/data-date-audit/receipts/post-evidence.md",
+          "size_bytes": 13232,
+          "mtime_ns": 1791100903000000000,
+          "sha256": "56245b35eb424dcf5b87980315176240c248459f689695748733f156cf25d398",
+          "backup_commit": "1799747cd8c1ae7d6df83f3e2e87879266183b9b",
+          "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo"
+        }
+      ],
+      "actual_remote_bytes_live_verified": false,
+      "remote_live_verification": "unknown; no remote read performed",
+      "recorded_backup_matches_old_hash": null,
+      "recorded_backup_matches_current_hash": false
+    }
+  ],
+  "scope": "Only named small metadata/inputbinding files and audit docs; no fullmanifest/raw/remote/archive read",
+  "acceptance_condition": "Consumer binds exact source/transcript/model/clock/market/policy bytes by hash. Missing root path needs explicit restore or remote consumer binding with newly verified bytes and owner path mapping. Backupentry and past receipt remain historical evidence; no silent worktree migration or readiness grant.",
+  "economic_acceptance": false
+}

@@ -1,25 +1,20 @@
-# Data and date audit: plan and progress
+# Data and date audit: completed bounded checkpoints
 
-Goal: reconcile the seed against exact available receipts, trace every known requirement, coordinate existing owners, then interview only unresolved human decisions. Evidence gaps may remain pending with an owner and acceptance condition; this does not grant economic or production readiness.
+Recorded 2026-10-04T08:49:04.007189+00:00. Progress: 6/6 named audit checkpoints. This is completion of the evidence/register/handoff work, not completion of the economic backtest.
 
-Scope: only docs/data-date-audit/. Preserve root Post plan/progress, source code, owner records, historical failures, alpha-review hash pins and the protected final test. No acquisition, model, job, installation, merge, deployment or live trade is launched.
+- [x] Restore seed, instructions and owner boundaries; preserve original seed/snapshot/handoff and root Post plans.
+- [x] Verify exact human scope and later long/short, gross cap, cash-yield and qualified-only reporting decisions.
+- [x] Collect bounded independent Post, Industry, financial and Lattice receipts; deliver scoped owner requests.
+- [x] Reconcile actual523/502date sets, cohort/model clocks, v1/v2 recipes, new2024candidate/2023aggregate versions and migrated input bindings.
+- [x] Save22-gap/30-requirement register,23-packet/17-clock inventory, metric-null table and one canonical first-arm blocker map.
+- [x] Clear independent review; pass fresh owned JSON/reference/link checks, retain protected alpha hash and record delivery separately from acceptance.
 
-- [x] Read seed/snapshot and repository instructions; apply routing, audit, exploration, parallel-agent and public grilling instructions.
-- [x] Directly verify initial choices and later policy amendments from exact human messages.
-- [x] Gather bounded owner snapshots, retained runtime outputs and deliver six scoped owner requests.
-- [x] Stage DD01-DD19 plus DD20 storage and DD21 actual wording/market join, 30 requirement mappings, 15 packets and 14 time-field categories.
-- [x] Independent review corrects the wording mismatch to unresolved join, rather than a proven zero-row result.
-- [x] Save the bounded gap ledger and availability/time matrix after storage read preflight recovered.
-- [ ] Refresh canonical packet bytes, calendar/date joins, current versions and final retained runtime receipts.
-- [ ] Integrate independently owned Post/Industry/financial evidence receipts and validate links/hashes/references.
-- [ ] Publish concise findings, performance availability table and closure receipts; retain every pending/deferred gap with owner/reason.
+Only docs/data-date-audit/ was edited. Planning skill: writing-plans; execution/audit/parallel routing/verification skills applied. Systematic-debugging identified the inventory-tool limit error and patch context order; the storage owner was found via an independent bounded lookup. No producer code, source adapter, acquisition, model fit, full suite, cleanup, remote bulk fetch, merge, deployment, final-test opening or live trade was launched by this chat.
 
-Planning workflow: writing-plans, adapted to this explicitly authorized audit and its owned directory. Execution proceeds under the authorized native audit with independent evidence lanes; no second master plan or pipeline is created. No user approval is needed for reversible checks/documentation.
+Initial OS112 shell/Node/write failures are retained. Small metadata I/O recovered. Ten named Industry root metadata files are now locally absent; nine historical hashes match recorded backup entries. Actual remote bytes still require consumer verification. Benchmark/Post worktree input/config/calendar files remain separate and freshly match their retained hashes. See DD22 and the storage binding receipt; never silently alias an old path.
 
-Storage: shell helper, Node initialization and initial plan save failed with OS error112. No cleanup was attempted. A later read preflight reports C: free43,413,504bytes. Save only small audit metadata. DD20 is partial until reads/writes/checks remain successful; avoid bulk output/data.
+Human reporting answer directly inspected: message01a1060a-c9cb-7b91-9a3f-0668dbd47fae in Organize Benchmark Data Push: Wait for qualified inputs before reporting performance. Prior pending-Q4 references remain historical. No new interview is required. Zero passive cash yield retains balances/flat days; <=100%gross does not force investment. All other settled choices and delegated Post recipe ownership persist.
 
-Decisions: wording first, financial benchmark next, post-release equities, daily/next-session research and historical development then forward paper remain. Human delegates recipe to Post, allows long/short equally sized eligible positions, up to100% gross exposure, no leverage and no passive/background earnings. USD1m is hypothetical. Exact accounting/rounding/drift/borrow/cost policies are Post's freeze responsibility. No success/drawdown/promotion threshold is invented. See gap-ledger.json E02/E03.
+Canonical economic replay remains Post-owned. Two AMT2024research candidates exist; the completed Benchmark packet still has fourselected2023events/threediagnostic/zeroqualified. Needed: exact2024text/version/scores/public bound/model provenance; calendar/security/quote/actions/costs/short lifecycle; accepted input path bindings; then regularly marked net accounts and registered dependence-aware inference. No measured PnL/Sharpe/win rate is reported. Financial-only and derivative requirements stay deferred unless consumed. Lattice's separate full approved work continues under its own human override.
 
-Grill frontier: installed skill search did not find grill-me; public wrapper and grilling method were read as fallback. The publication chat's existing Q4 qualification-before-headlines versus labelled provisional scenario is pending; no duplicate question here. File/owner facts remain audit work. No new human tradeoff is ready.
-
-Economic results: no accepted regularly marked costed net account series has been evidenced. PnL, Sharpe95%CI, drawdown and net closed-episode win rate remain null with reasons. Cash-only Sharpe and delta-Sharpe to zero-variance cash are undefined. Financial-only calendar/count/native receipt work staysP1 unless consumed by wording.
+Commands and byte fingerprints: verification.json and artifact-manifest.json. Delivery receipts: closure-receipts.json. Successful delivery never implies downstream consumer acceptance.

@@ -1,7 +1,7 @@
 {
   "schema_version": "data-date-audit-bounded-refresh-v1",
-  "observed_at": "2026-10-04 07:51:14 UTC",
-  "persistence": "saved bounded refresh; fresh per-packet checks pending",
+  "observed_at": "2026-10-04T08:41:42.471217+00:00",
+  "persistence": "Integrated bounded receipts; source snapshots preserved; consumer/economic gates remain open",
   "evidence": [
     {
       "id": "E01",
@@ -132,35 +132,114 @@
       "claim": "existing CPU-first optionalGPU plan; inference method owner preserved; no runtime/speedup",
       "path": "docs/superpowers/plans/2026-10-04-remote-gpu-math-optimization.md",
       "observed_at": "2026-10-04 07:51:14 UTC"
+    },
+    {
+      "id": "E13",
+      "class": "inspected small artifact bytes",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/root-evidence.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Git HEAD does not identify mutable artifacts; mtime is not publication"
+    },
+    {
+      "id": "E14",
+      "class": "delegated inspected artifact + fresh bounded hashes + retained runtime",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/post-evidence.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Eight runtime receipts freshly hashed; 196 source matches retained, not freshly repeated; some input hashes are declared pins"
+    },
+    {
+      "id": "E15",
+      "class": "delegated inspected local artifact bytes",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/industry-evidence.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Remote market bytes not reread; publication proxies assumed; producer diagnostics not consumer acceptance"
+    },
+    {
+      "id": "E16",
+      "class": "delegated inspected local metadata + retained runtime",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/financial-evidence.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Producer output pins read, not all rehashed; no full native audit or remote archive rerun"
+    },
+    {
+      "id": "E17",
+      "class": "fresh actual date-set comparison and byte hashes",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/calendar-reconciliation.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Classifies scaffold dates; does not qualify price, security, schedule knowledge or execution joins"
+    },
+    {
+      "id": "E18",
+      "class": "delegated inspected Lattice metadata",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/lattice-evidence.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Adjusted-close numerical diagnostics, not accepted wording account performance; no remote input rehash or fit"
+    },
+    {
+      "id": "E19",
+      "class": "bounded new first-arm owner version refresh",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "New producer candidate/input versions do not imply Post acceptance; receipt distinguishes owner report from byte proof"
+    },
+    {
+      "id": "E20",
+      "class": "bounded storage binding metadata inspection",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/storage-binding-evidence.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Historical observed paths and backup manifest pins are not a current live remote byte verification or consumer binding"
+    },
+    {
+      "id": "E21",
+      "class": "directly inspected exact human message",
+      "location": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/reporting-decision.json",
+      "recorded_at": "2026-10-04T08:41:42.471217+00:00",
+      "observation_times": "see scoped receipt; records are not an atomic simultaneous snapshot",
+      "limitation": "Settles reporting mode; no provisional performance,final-test or live-capital permission"
     }
   ],
   "gaps": [
     {
       "id": "DD01",
-      "arm_priority": "P0 shared / P1 financial",
+      "arm_priority": "P1 financial date classification; P0 only actual wording calendar/session consumer join",
       "status": "partial",
       "claimed_state": "502sessionsx4=2008;2092financialweekdays",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "84 difference not actual missing prices; calendar/security/date sets unjoined",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "2092 financial rows = 523 identical issuer weekdays; 2008 document decisions = 502 sessions (252 in2024,250 in2025). Exact difference is21 exchange closures x4=84 rows, no session absent financial grid. Six early-close decisions at12:30 local precede13:00close.",
+      "discrepancy_counterexample": "Classification is closed. Financial21:00Z diagnostic clock is not issuer15:30 or executable quote time; retrospective calendar is not proof of schedule known at an earlier decision.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post + Benchmark",
       "dependency": "DD21",
-      "next_action": "Compare exact security/session dates,501/502 coverage, exceptional closures, early closes,DST and known schedule",
-      "acceptance_condition": "Row-level sets/versionedcalendar receipt classifies each extra/missing date; no holiday zero-fill",
+      "next_action": "Post bind actualv2 entry/exit/account dates to accepted known-at-decision product calendar; Benchmark retain financial scaffold diagnostic. No holiday zero-fill.",
+      "acceptance_condition": "Calendar classification receipt is accepted for bounded audit; consumer session/time/security/schedule qualification has exact receipt before economic use",
       "evidence": [
         "E01",
-        "E07"
+        "E07",
+        "E14",
+        "E16",
+        "E17"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "closed_subgates": [
+        "Actual523/502date-set subtraction,21named closures,84issuer rows",
+        "Six early-close decisions before actual close; no missing equity session"
+      ]
     },
     {
       "id": "DD02",
       "arm_priority": "P0 wording / P1 financial",
       "status": "partial",
       "claimed_state": "45/37/36/424/500/844/8384 observed claims",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Separate grain/version counts; wording independent events/decisions/quotes/trades/NAV uncounted",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Wording15docs=8primary8Ks+7exhibits,8accessions,4CIKs; conditional13docs/7accessions/2248fragments versus total2391fragments. Financial45originals,37requests,36historyaccessions,8384cells,424groups,500XMLnodes,844states remain separate grains. New Benchmark completed packet:4selected2023accessions/3diagnosticdocuments/925diagnosticfragments/1642selectedscoredfragments,0qualified/0economic/0complete2024events; producer completion is not consumer acceptance.",
+      "discrepancy_counterexample": "Current pinned packet taxonomy is reconciled. Event grouping, admissible opportunities, predictions, orders/fills, closed episodes and daily NAV require actual consumer denominators; fragments are not independent events.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post + Benchmark",
       "dependency": "DD08",
       "next_action": "Publish six denominators incl amendment/news grouping and unknown/censored/excluded/no-trade/no-fill",
@@ -168,36 +247,44 @@
       "evidence": [
         "E01",
         "E07",
-        "E09"
+        "E09",
+        "E14",
+        "E16",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD03",
       "arm_priority": "P0 wording",
       "status": "partial",
       "claimed_state": "Conditional Post20bounds; Industry35current/37historical",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Assumed dissemination/byte equality/SEC+24h not evidenced public-by; earliest/actual historical receipt unknown",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Post22sources:20conditional and2quarantined. Industry current-v2:35rows/13proxy candidates/22excluded; history-v2:37rows/0proxy candidates; history-v3:37rows/37proxy candidates/0flags, but0known public/0observed ready/canonical_ready=false.",
+      "discrepancy_counterexample": "Post filing-day-end+60s/byte-equality and Industry SECacceptance+24h are assumptions. No exact-version supported historical public-by proof or actual historical receipt is established.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Industry + Post",
       "dependency": "DD08",
       "next_action": "Bind exact source identity/hash/version to public-by evidence and explicit processing/latency or exclude",
       "acceptance_condition": "Consumer per-row acceptance/exclusion; preserve clock unknowns",
       "evidence": [
         "E01",
-        "E09"
+        "E09",
+        "E14",
+        "E15",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD04",
       "arm_priority": "P0 wording",
       "status": "partial",
       "claimed_state": "Post3008bars2023-25;Industry2024-25;structural2010-2026",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Coverage scopes differ; exact wording event/holding market joins pending",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Post3008unadjusted daily bars=752each fourtickers,2023-01-03..2025-12-31. Industry configured window2024-01-01..2026-01-01exclusive;98selected files scanned,46derivativequote files unscanned. Its128AMTcandidates are one-day2024-01-02 12:01..16:34UTC producer diagnostics, outcomes unread/consumer_accepted=false.",
+      "discrepancy_counterexample": "Existing2023 daily text/bar date overlap does not establish required executable open+60s/close-60s quotes. New producer event aggregation may supersede the current packet; global absence of text/quotes is not proved.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post + Industry",
       "dependency": "DD21",
       "next_action": "Matrix per security/session/holding window with quote eligibility,price source conflicts/actions",
@@ -205,89 +292,100 @@
       "evidence": [
         "E01",
         "E04",
-        "E08"
+        "E08",
+        "E14",
+        "E15",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD05",
-      "arm_priority": "P0 comparison",
+      "arm_priority": "P1 diagnostic reconciliation; P0 if target/comparison consumed",
       "status": "partial",
       "claimed_state": "Postunadjusted close target vs Latticeadjusted16:00",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Target/clock/fold mismatch;752forecasts188dates,MSE1.0426 not tradingPnL",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Post2024 diagnostic has752forecasts/188dates and unadjusted next-close target excluding dividendcash; MSEratio1.0426 versuszero. Lattice adjusted-close targets/hedge controls and distinct horizons remain separate.",
+      "discrepancy_counterexample": "MSE is not portfolio PnL, Sharpe or win rate; later closing prices cannot enter earlier decision features. Lattice numerical diagnostics are not a matched wording comparator.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post + Lattice",
       "dependency": "DD04",
       "next_action": "Reconcile adjustments/splits/dividends and 15:30/16:00/09:30/09:35 product clocks",
       "acceptance_condition": "Separate target/fold/version receipts and no laterclose in earlier features",
       "evidence": [
-        "E01"
+        "E01",
+        "E14",
+        "E18"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD06",
       "arm_priority": "P0 equity",
       "status": "partial",
       "claimed_state": "EQUS1028190quotes/2510definitions;15080ts_eventnull",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "ts_event last trade,ts_recv vendorinterval endpoint; quote-update/our receipt unknown;componentvenue notNBBO",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "EQUS1028190 interval rows;15080 ts_event missing,1013110 parsed events,1028190 parsed receives. ts_event is optional last trade; ts_recv vendor minute endpoint, not our historical receipt or quote update.",
+      "discrepancy_counterexample": "Component venue does not establish NBBO, fills or quote freshness; missing trade times are not filled, and no last-trade age screen can certify quote age.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Industry + Post",
       "dependency": "DD04",
       "next_action": "Qualify bidask,volume,spread,venue,nullsentinel,crossed/empty and execution/freshness policy",
       "acceptance_condition": "Actual schema/row receipt and conservative fills; no last-trade-age freshness screen",
       "evidence": [
         "E01",
-        "E08"
+        "E08",
+        "E15"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD07",
       "arm_priority": "P0 equity",
       "status": "partial",
       "claimed_state": "21degraded dates frozen historically",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Feature/holding propagation and historical membership/actions/delists not freshly accepted",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Frozen quality rule has21degraded dates, distinct from the21calendar closure dates. Adapter feature/holding intersection exists; actual wording consumer mask accepted=false, independent historical identity/action qualification=false.",
+      "discrepancy_counterexample": "Implemented checks do not prove propagation through actual event, quote, order, fill and valuation cohort. Preserve no-fill, censored and excluded observations, including action/borrow uncertainty.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Industry + Post",
       "dependency": "DD04,DD06",
       "next_action": "Join intervals to decisions/holding; evidence security mapping/actions; retain adverse exclusions",
       "acceptance_condition": "Consumer mask survives feature/order/fill/valuation joins and counts",
       "evidence": [
-        "E01"
+        "E01",
+        "E15"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD08",
       "arm_priority": "P0 wording",
       "status": "partial",
       "claimed_state": "15docs/2391fragments/one truncated candidate",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Exact extraction/normalization/dedup/token/model/traincutoff/version available then not qualified freeze",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "ProsusAI/finbert@db38d3727cbaed87c9aed72df7b3519e2ba5cca1 scored15docs/2391fragments,0failed,1truncated; completed2026-10-04T02:22:47.209449Z. V2 aggregation recipe now frozen. Model provenance summary byte-hashed:2023-06-05safetensors variant metadata matches retained weight OID, but current weight body not rehashed, earlier-checkpoint equivalence/training cutoff unknown, historical transform and weight rights not accepted. Format commit date is not proof of future training.",
+      "discrepancy_counterexample": "Training cutoff and historical model/version availability are unqualified. Current processing completion is not historical signal readiness; document/text span, dedup/truncation and event aggregation still need accepted provenance.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post; Benchmark inputs",
       "dependency": "DD03,DD21",
-      "next_action": "Freeze existing candidate incl revisions,aggregation/model/prompt dictionary/trials; no new model",
+      "next_action": "Benchmark bind existing exact scored spans/model revision and aggregation to eligible event manifest; Post accept or exclude model/text/time qualification without a new model",
       "acceptance_condition": "Hash-pinned recipe before scoring; model later-version labelled conditional retrospective; no candidate=>unavailable",
       "evidence": [
         "E01",
         "E03",
-        "E09"
+        "E09",
+        "E14",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD09",
       "arm_priority": "P0 policy/execution",
       "status": "partial",
-      "claimed_state": "Human1m,longshort,equalabs,<=100%gross,0cash",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Policy choices resolved; order rounding/drift/gross enforcement/collateral/costs/borrow still unverified",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "claimed_state": "Direct human: hypotheticalUSD1m,long/short,equal eligible targets,gross<=100%,no leverage,zero passive cash yield; v2 static freeze inspected",
+      "verified_state": "V2 recipe exactbyteSHA e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb supersedes preservedv1; freeze2026-10-04T08:00:11.116997Z. Linked252-session2024calendar file/row hashes match. USD1m, long/short, equally sized eligible targets,<=100%gross,no leverage; zero passive cash yield preserves cash balances/flat days.",
+      "discrepancy_counterexample": "Static contract/entry+flat-close checks do not establish qualified source/model/identity/actions/costs/borrow/short lifecycle or continuous intraday gross cap. Forced full investment is not authorized; unknown costs are not zero.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post",
       "dependency": "DD03,DD06,DD07,DD08",
       "next_action": "Freeze selection/rebalance/holding/delay/integerqty/costs/capacity/financing/borrow and no-fill; match baseline",
@@ -296,55 +394,62 @@
         "E01",
         "E02",
         "E03",
-        "E09"
+        "E09",
+        "E14",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD10",
       "arm_priority": "P0 account/metrics",
       "status": "missing",
       "claimed_state": "No accepted regular costed USD1m netNAV evidenced",
-      "verified_state": "bounded evidence only; missing",
-      "discrepancy_counterexample": "Terminal/sparse marks and USD1000fixtures cannot support netstrategyPnL/Sharpe/winrate/drawdown",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "No accepted regularly marked, costed USD1m challenger/matched-long/cash account series is evidenced in this bounded audit.",
+      "discrepancy_counterexample": "Sparse/terminal or synthetic fixture marks cannot support measured return, SharpeCI, drawdown or win rate. Retain open/cash/flat/loss/no-fill/action/dividend/borrow flows; zero cash yield does not mean zero balance.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post",
       "dependency": "DD09",
-      "next_action": "Regular marks incl open/cash/flat/loss/no-fill/action/borrow flows; attribution and cash0 comparator",
+      "next_action": "Post produce regularly marked three net account paths, with cash balance/flat/no-fill sessions and explicit costs, collateral, actions and closed-episode tie/censor rules",
       "acceptance_condition": "Reconciled daily account ledger; cashzero variance Sharpe/delta undefined; unsupported metrics null/reason",
       "evidence": [
         "E01",
-        "E09"
+        "E09",
+        "E14"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD11",
-      "arm_priority": "P0 inference",
+      "arm_priority": "P0 inference after accepted net series",
       "status": "partial",
       "claimed_state": "Existing dependence-aware inference design;2024-25 DEVELOPMENT",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "No eligible netseries;trials/overlap/crossasset reduce confidence;finaltest remains locked",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Existing inference research/plan inspected: regularly marked account daily net returns, temporal dependence, joint matched paths, HAC/studentized block bootstrap and declared95%CI. No accepted inference input exists.",
+      "discrepancy_counterexample": "Event/fragment counts are not independent observations. Existing2024/25 inspection is DEVELOPMENT; a config excluding2025 does not restore untouched status. Final test remains closed; no human success threshold is invented.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Post + Sharpe lane",
       "dependency": "DD10",
-      "next_action": "Registered HAC/studentized blockbootstrap jointpaths95CI; trial/fold ledger; failures supported/undefined/insufficient",
+      "next_action": "Sharpe lane finish owned inference contract/negative fixtures; apply registered joint dependence-aware95%interval only after Post net-series acceptance; preserve trial/fold ledger and DEVELOPMENT labels",
       "acceptance_condition": "Netregular accepted cohort hash; block/HAC/sample/calibration metadata; no arbitrary human success cutoff; MC later",
       "evidence": [
         "E01",
         "E02",
-        "E12"
+        "E12",
+        "E13",
+        "E14",
+        "E18"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD12",
       "arm_priority": "P0 shared / P1 financial",
       "status": "partial",
       "claimed_state": "v2/V7/V8 handoffs coexist, livinghashes changed",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Historical snapshots vs current acceptance pins differ;human amendments newer thanseed",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Seed, evidence-snapshot and handoff preserved. Current receipt versions and hash domains are explicitly separated: Industrycurrentv2/historyv3, financialproducerV7/auditorV8, Postv1/v2. Root alpha-review SHA remains9b6dbc6ab013f3a50c90af2e5072235ab29cabf50bc2875bd76dbe3e2140f25e.",
+      "discrepancy_counterexample": "Concurrent owner edits mean this is bounded versioned evidence, not an atomic latest-state snapshot. Coordinator shared-record amendments and downstream pins remain pending owner acceptance.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Coordinator + owners",
       "dependency": "DD17,DD19",
       "next_action": "Mark supersession by exactcommit/hash/manifest/observedtime;deliberate downstream pins",
@@ -353,172 +458,219 @@
         "E01",
         "E03",
         "E06",
-        "E07"
+        "E07",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD13",
-      "arm_priority": "P1 financial",
+      "arm_priority": "P1 financial next; P0 only if consumed",
       "status": "deferred",
       "claimed_state": "AATMarchaggregate/June4facts;15warnings;AMToldperiod disclosedlater",
-      "verified_state": "bounded evidence only; deferred",
-      "discrepancy_counterexample": "Fiscalperiod/instant !=publictime;liabilities !=debt;source precedence unaccepted",
-      "consequence": "separate-arm qualification pending",
+      "verified_state": "Four entity-wide GAAP USD instant tags retained separately. Historical8368selected cells have no AAT prior-period warnings; current16cells have15AATwarnings with March31operand versus June30latest accession. Historical/public clocks unqualified; proposal inactive.",
+      "discrepancy_counterexample": "Fiscal instant is not disclosure. June native facts do not silently replace March aggregate; liabilities are not debt. Exact AMT later-disclosed old-period comparison remains pending.",
+      "consequence": "Separate later arm remains disabled until its own qualification",
       "owner": "Benchmark + Post",
       "dependency": "DD03 financial,DD17",
       "next_action": "Separate accession/unit/definition/period/publictime;no backdating or silent replacements",
       "acceptance_condition": "Qualified native per-field/time receipt for separate financial arm, disabled until accepted",
       "evidence": [
         "E01",
-        "E07"
+        "E07",
+        "E16"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD14",
-      "arm_priority": "P1 macro",
+      "arm_priority": "P1 macro; P0 only if consumed",
       "status": "deferred",
       "claimed_state": "820macro818numeric2null;historicalqualifiedvintages0",
-      "verified_state": "bounded evidence only; deferred",
-      "discrepancy_counterexample": "Currentvalue/retrieval not vintage;BLSdashes null",
-      "consequence": "separate-arm qualification pending",
+      "verified_state": "Macro820observations=818numeric+2null;0historical-asof-qualified. BLS CUUR0000SA0/LNS14000000:2025:M10 official dashes retained as null; current retrieval/processing2026-10-04.",
+      "discrepancy_counterexample": "Retrieval/current value is not first-release/revision vintage; do not backdate or fill missing values.",
+      "consequence": "Separate later arm remains disabled until its own qualification",
       "owner": "Benchmark + Industry",
       "dependency": "DD13",
       "next_action": "Evidence firstrelease/revision/vintage/effective/public clock or keep disabled",
       "acceptance_condition": "Exactasof vintage source/provenance consumer acceptance for separate arm",
       "evidence": [
-        "E01"
+        "E01",
+        "E16"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD15",
-      "arm_priority": "P2 universe",
+      "arm_priority": "P2 universe; no first equity dependency",
       "status": "deferred",
       "claimed_state": "53SICcandidates/100configured/5observedoptions disjoint",
-      "verified_state": "bounded evidence only; deferred",
-      "discrepancy_counterexample": "Different universes;disjoint doesn't establish nonREIT classification",
-      "consequence": "separate-arm qualification pending",
+      "verified_state": "Universe counts53SIC candidates/100configured/5observed options are distinct scopes.",
+      "discrepancy_counterexample": "Disjoint scopes do not establish non-REIT status, historical membership, survivor-free selection or instrument identity.",
+      "consequence": "Separate later arm remains disabled until its own qualification",
       "owner": "Industry + Post",
       "dependency": "none firstarm",
       "next_action": "Evidence historical classification/inclusion instrument mappings",
       "acceptance_condition": "Versioned point-in-time universe/action/membership receipt",
       "evidence": [
-        "E01"
+        "E01",
+        "E15"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD16",
       "arm_priority": "P2 derivatives",
       "status": "deferred",
       "claimed_state": "OPRA882288definitionrows292251ids vs259852151quotes;GLBX64622defs vs5063606BBO",
-      "verified_state": "bounded evidence only; deferred",
-      "discrepancy_counterexample": "Downloadintegrity not executionqualified;sentinelmultiplier/deliverables/calendars unaccepted",
-      "consequence": "separate-arm qualification pending",
+      "verified_state": "OPRA882288definition rows/292251ids versus259852151quote rows; GLBX64622definition rows=17987F+46635S versus5063606BBO rows. Multipliers/deliverables/actions/calendars/rolls/execution unaccepted.",
+      "discrepancy_counterexample": "Download integrity and definition counts do not qualify contracts or costs; unknown multiplier is not default100. Derivatives remain separate later arm.",
+      "consequence": "Separate later arm remains disabled until its own qualification",
       "owner": "Industry + Post",
       "dependency": "none firstarm",
       "next_action": "Separate contractquote/definition/actions/deliverables/rolls/calendar/assignment/venue/capacity qualification",
       "acceptance_condition": "Percontract window receipts before derivatives replay;no equitypilot dependency",
       "evidence": [
         "E01",
-        "E08"
+        "E08",
+        "E15"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD17",
-      "arm_priority": "P1 native;P0 only consumed",
-      "status": "partial",
+      "arm_priority": "P1 native; P0 only if consumed",
+      "status": "done",
       "claimed_state": "110files109bindings8roles28tests;final690/0EXIT0frozen196 retained",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Descriptive/transport/runtime not canonical fieldclock or financialnumerical/economic acceptance",
-      "consequence": "separate-arm qualification pending",
+      "verified_state": "All eight collected final runtime receipt hashes freshly match; collection verifier and acceptance capsule independently hashed. Retained final690tests/0skips/5.450s/exit0,196source matches,110outputs/109bindings/8roles. Actual3descriptive groups/4rawnodes/1state;0canonical/0human gold.",
+      "discrepancy_counterexample": "Closure is bounded descriptive transport/namespace receipt verification. The690suite/196source sweep/full numeric audit were not rerun and do not establish public-time or economic eligibility.",
+      "consequence": "Bounded descriptive receipt gate closed; no field-clock/economic readiness",
       "owner": "Post + Benchmark",
       "dependency": "none firstarm unlessused",
-      "next_action": "Inspect finalmanifest/capsule/collectionverifier/logs;trace producertransportconsumerfieldclock",
+      "next_action": "Preserve completed bounded runtime receipt verification; leave clock/numeric/economic requirements under their own gaps",
       "acceptance_condition": "Exact final receipt hashes/runtime retained,disabledregistry/canonical0gold0 explicit;no expensive rerun",
       "evidence": [
         "E01",
         "E05",
-        "E06"
+        "E06",
+        "E14",
+        "E16"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD18",
-      "arm_priority": "P2 storage",
-      "status": "not verifiable",
+      "arm_priority": "P2 archive/storage",
+      "status": "partial",
       "claimed_state": "Remotev7archive14216041bytes fd39baea...a2dc1",
-      "verified_state": "bounded evidence only; not verifiable",
-      "discrepancy_counterexample": "Local thinmetadata not full archive;24KBpreparedpacket distinct;requested14MB not freshly rehashed",
-      "consequence": "separate-arm qualification pending",
+      "verified_state": "Final producer delivery receipt inspected:21local thin metadata files; remote V7archive pin14216041bytes/SHAfd39baea32a63349eabb4e043e4710a38add56e14ad55d0bd3650d6f6a7a2dc1; role/path/inner manifest pins retained.",
+      "discrepancy_counterexample": "Live remote archive bytes/hash not reverified or downloaded by audit. Thin metadata, archive and small prepared fixture are separate objects, no economic grant.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Benchmark + Post",
       "dependency": "none firstarm",
       "next_action": "Map remote/local roles and exacttransport receipt;small receipts first",
       "acceptance_condition": "Archivepath/bytes/hash and acceptedtransportmanifest;no bulk localcopy",
       "evidence": [
         "E01",
-        "E07"
+        "E07",
+        "E16"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     },
     {
       "id": "DD19",
       "arm_priority": "P0 decisions/delivery",
       "status": "partial",
       "claimed_state": "Seedoverstrict earliest/openrisk language;directPostdelivery failed",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Fresh human policy verified;all4auditrequests delivered afterchangedturn;sharedrecords refresh pending;Q4pending elsewhere",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Direct human decisions/amendments verified. Existing delayed post-release gate permits evidenced exact-version public-by bound with latency while earliest remains unknown. Initial six owner requests and changed Post/parent checkpoint delivered; past delivery failures retained. Reporting mode directly verified in humanmessage01a1060a-c9cb-7b91-9a3f-0668dbd47fae:Wait for qualified inputs before reporting performance. Prior pending references are historical.",
+      "discrepancy_counterexample": "Shared records and downstream pins require current version acknowledgement; delivery is not acceptance. Reporting choice is settled; no duplicate interview or provisional performance permission.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Coordinator + Post",
       "dependency": "DD12",
-      "next_action": "Refresh ownedregister with exacthumans and delayedboundgate;retain olddeliveryexceptions;do not duplicateQ4",
+      "next_action": "Deliver exact human reporting answer and current blocker map; retain past failed deliveries and snapshot versions; continue only input qualification needed for canonical Post replay",
       "acceptance_condition": "Freshsharedrecordcommit/hash and separate delivery vs consumeracceptance;allsettled branches preserved",
       "evidence": [
         "E01",
         "E02",
         "E03",
-        "E11"
+        "E11",
+        "E13",
+        "E14",
+        "E19",
+        "E21"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
     },
     {
       "id": "DD20",
-      "arm_priority": "P0 audit operations",
-      "status": "blocked",
+      "arm_priority": "P1 storage operation; P0 if metadata cannot be completed",
+      "status": "partial",
       "claimed_state": "C:disk full;OS112 shell+Node+planwritefail",
-      "verified_state": "bounded evidence only; blocked",
-      "discrepancy_counterexample": "Cannot inspect freshbytes,completeinventory/datesor save requested audit records",
-      "consequence": "audit completion blocked",
-      "owner": "Human storage action; audit owner verification",
+      "verified_state": "Initial OS112 shell/Node/write failures retained. Scoped metadata reads/writes,22-gap/30-requirement JSON/reference checks,17timecategories,local findings links and protected alpha hash now pass. Broad disk capacity and source migration remain separate.",
+      "discrepancy_counterexample": "Audit metadata path recovered; broad disk capacity is not certified. Storage failure does not negate prior retained runtime proofs or authorize deleting others' files.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
+      "owner": "Audit metadata verification; storage capacity remains external",
       "dependency": "allartifact checks",
-      "next_action": "Free user-selected storage;then resume scoped reads and write only audit docs",
+      "next_action": "Keep small metadata I/O; use DD22 exact live bindings for migrated consumed inputs; do not delete others' files or duplicate bulk",
       "acceptance_condition": "Successful read/write preflight,checked complete ledger/inventory/links;no othersfiles deleted",
       "evidence": [
-        "E10"
+        "E10",
+        "E13",
+        "E14",
+        "E17"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "closed_subgates": [
+        "Bounded audit metadata read/write recovered",
+        "Current audit structure/link/hash verification passed"
+      ]
     },
     {
       "id": "DD21",
       "arm_priority": "P0 wording alignment",
-      "status": "partial",
+      "status": "missing",
       "claimed_state": "Owner reports7early2023wording vs2024-25newmarket",
-      "verified_state": "bounded evidence only; partial",
-      "discrepancy_counterexample": "Unresolved actual event/security/key/window mismatch;zero paired rows not independently proven",
-      "consequence": "first-arm claim cannot advance without stated acceptance",
+      "verified_state": "Pinned wording packet has8primary filing/accession events with SECacceptance2023-01-05..2023-03-01 and7exhibits with null acceptance. Frozenv2 window remains2024-01-01..2025-01-01exclusive. New Industry research candidates:AMT2024-02-27/2024-10-29,2documents,0accepted public bounds; exact retained exhibit bytes/scores not established. Benchmark minimal2024check active at receipt cutoff.",
+      "discrepancy_counterexample": "No2024 accession/filing event in this pinned2023packet under frozen event-window rule. This is not global no2024text/quotes or a completed market join. If event_date differs, require row evidence; newer Benchmark aggregation is pending.",
+      "consequence": "Audit classification is recorded; listed consumer acceptance remains pending",
       "owner": "Benchmark + Post + Industry",
       "dependency": "DD03,DD04",
-      "next_action": "Inspect exact7accessions/events,priorPost2023bars and current quoteavailability;retain exclusions",
-      "acceptance_condition": "Actual joined cohort/entry/holding/fill/label coverage;marks alone not execution;no qualifying candidate=>unavailable",
+      "next_action": "Benchmark/Post publish exact admissible existing event-date cohort and Industry executable holding-window coverage, or explicit versioned recipe/window revision within human-delegated scope; never reopen protected tests",
+      "acceptance_condition": "Row-level exact text/version/public-by/model/event/security/calendar/quote/action/cost admissible intersection accepted by Post, with excluded/censored/no-fill counts; otherwise first-arm result unavailable",
       "evidence": [
         "E04",
         "E08",
-        "E09"
+        "E09",
+        "E14",
+        "E15",
+        "E19"
       ],
-      "observed_at": "2026-10-04 07:51:14 UTC"
+      "observed_at": "2026-10-04T08:41:42.471217+00:00",
+      "new_owner_receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json"
+    },
+    {
+      "id": "DD22",
+      "arm_priority": "P0 consumed input bindings;P1 unconsumed historical storage",
+      "status": "partial",
+      "claimed_state": "Another human-authorized owner migrating backed non-Databento root data/artifacts/cache to remote snapshot/archive",
+      "verified_state": "Named small path/backup binding checks recorded in receipts/storage-binding-evidence.json; inspect individual local/remote verification flags before consumer use",
+      "discrepancy_counterexample": "A previously hashed root path can become unavailable; retained historical proof does not certify current local or remote input bytes. Worktree inputs are separate roots and cannot be silently remapped.",
+      "consequence": "Post requires current exact consumed path/byte/hash/version binding before replay; unrelated prior runtime receipts remain valid past facts",
+      "owner": "Storage owner + Industry/Benchmark producers + Post consumer",
+      "dependency": "DD03,DD04,DD08,DD09",
+      "next_action": "Coordinate exact affected first-arm bindings with storage owner; verify matching backup/restore hashes and accepted current input manifest. Keep bulk remote; no duplicate backup or cleanup by audit.",
+      "acceptance_condition": "For each consumed input, explicit local/remote path, bytes,SHA256,role,version,verification time and Post accepted consumer binding; missing live file remains unavailable until restored/mapped",
+      "evidence": [
+        "E19",
+        "E20"
+      ],
+      "observed_at": "2026-10-04T08:41:42.471217+00:00"
     }
   ],
   "requirements": [
@@ -530,7 +682,8 @@
         "DD09",
         "DD11",
         "DD19"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R02",
@@ -542,8 +695,10 @@
         "DD12",
         "DD17",
         "DD18",
-        "DD20"
-      ]
+        "DD20",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R03",
@@ -555,7 +710,8 @@
         "DD10",
         "DD13",
         "DD14"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R04",
@@ -565,7 +721,8 @@
         "DD04",
         "DD05",
         "DD21"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R05",
@@ -574,7 +731,8 @@
         "DD02",
         "DD07",
         "DD10"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R06",
@@ -582,7 +740,8 @@
       "gap_ids": [
         "DD03",
         "DD08"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R07",
@@ -590,7 +749,8 @@
       "gap_ids": [
         "DD04",
         "DD21"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R08",
@@ -599,7 +759,8 @@
         "DD05",
         "DD07",
         "DD11"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R09",
@@ -607,7 +768,8 @@
       "gap_ids": [
         "DD06",
         "DD07"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R10",
@@ -617,7 +779,8 @@
         "DD07",
         "DD09",
         "DD16"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R11",
@@ -625,7 +788,8 @@
       "gap_ids": [
         "DD08",
         "DD11"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R12",
@@ -633,7 +797,8 @@
       "gap_ids": [
         "DD09",
         "DD10"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R13",
@@ -643,29 +808,34 @@
         "DD04",
         "DD09",
         "DD10",
-        "DD17"
-      ]
+        "DD17",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R14",
       "requirement": "690/196 exactretainedproof not rerun;native financialP1 unlessconsumed disabledfields",
       "gap_ids": [
         "DD17"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R15",
       "requirement": "FinancialAATMarchJune warnings AMT lateroldperiodunitsdefsinstants liabilitiesvsdebt",
       "gap_ids": [
         "DD13"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R16",
       "requirement": "Macrorevisionvintageszero historicqualification BLSdashes",
       "gap_ids": [
         "DD14"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R17",
@@ -673,23 +843,27 @@
       "gap_ids": [
         "DD15",
         "DD16"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R18",
       "requirement": "Livingdocument supersession exactversions decisions capsules alphahash protected",
       "gap_ids": [
         "DD12",
-        "DD19"
-      ]
+        "DD19",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R19",
-      "requirement": "USD1m equalabsolute longshort100%gross noleverage0idlecash collateralshortproceeds qtydrift policy",
+      "requirement": "USD1m equal eligible targets long/short<=100%gross,no leverage,zero passive cash yield; cash balances/flat days retained,short collateral,integer quantities/drift enforcement",
       "gap_ids": [
         "DD09",
         "DD19"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R20",
@@ -698,14 +872,16 @@
         "DD07",
         "DD09",
         "DD10"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R21",
       "requirement": "Regularnet markedNAV openpositions/cash/flatdays dailyreturns versus terminalfixture",
       "gap_ids": [
         "DD10"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R22",
@@ -713,21 +889,24 @@
       "gap_ids": [
         "DD10",
         "DD11"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R23",
       "requirement": "Temporal/overlap/samedaycrossassetdependence HAC jointstudentizedbootstrap95CI trials/folds/samplelimits noarbitrarythreshold",
       "gap_ids": [
         "DD11"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R24",
       "requirement": "MCpathbootstrap !=strategybacktest enginepathregimecapacityscenarioslater noalpha claim",
       "gap_ids": [
         "DD11"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R25",
@@ -735,23 +914,28 @@
       "gap_ids": [
         "DD19",
         "DD20"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R26",
       "requirement": "Owner coordinationboundedstatus/receipts durableexceptions nointerruptdelivery!=acceptance",
       "gap_ids": [
         "DD12",
-        "DD19"
-      ]
+        "DD19",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R27",
       "requirement": "Remote/fullthin metadata smallreads noheavyduplicated proofs/jobs;Tailscaletmuxlock2threads4GiB noLAN",
       "gap_ids": [
         "DD18",
-        "DD20"
-      ]
+        "DD20",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R28",
@@ -759,7 +943,8 @@
       "gap_ids": [
         "DD11",
         "DD20"
-      ]
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R29",
@@ -768,8 +953,10 @@
         "DD08",
         "DD11",
         "DD19",
-        "DD20"
-      ]
+        "DD20",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     },
     {
       "id": "R30",
@@ -795,8 +982,10 @@
         "DD18",
         "DD19",
         "DD20",
-        "DD21"
-      ]
+        "DD21",
+        "DD22"
+      ],
+      "audit_trace_status": "mapped to bounded evidence and explicit owner/acceptance condition; not a claim of implementation closure"
     }
   ],
   "decision_frontier": {
@@ -808,13 +997,10 @@
       "longshort",
       "equalabsolute",
       "gross<=100%",
-      "noPassiveRevenue"
+      "noPassiveRevenue",
+      "Wait for qualified inputs before reporting performance"
     ],
-    "pending_existing_elsewhere": {
-      "thread": "01a1055f-309c-7682-a989-81dfeea8d6dd",
-      "question": "call_ucihXfwgKKFzigXOSokzs3kT",
-      "decision": "qualify headlines vs labelled provisional scenario"
-    },
+    "pending_existing_elsewhere": null,
     "new_questions": [],
     "fact_prerequisites": [
       "DD03",
@@ -823,7 +1009,23 @@
       "DD08",
       "DD10",
       "DD21"
-    ]
+    ],
+    "cash_clarification": "Zero cash yield/passive income; no forced full investment or zero cash balance",
+    "resolved_existing_elsewhere": {
+      "schema_version": "data-date-reporting-decision-v1",
+      "evidence_class": "directly inspected exact human message via read_thread",
+      "thread": "01a1055f-309c-7682-a989-81dfeea8d6dd",
+      "title": "Organize Benchmark Data Push",
+      "turn": "01a1060a-3525-71d1-884a-7abac1885fef",
+      "message": "01a1060a-c9cb-7b91-9a3f-0668dbd47fae",
+      "question_item": "[\"request_user_input_async\",\"call_Y6YeZ6s9avK4gJyjk1GchItJ\",0]",
+      "question": "Does \u201cno wait for qualified inputs\u201d mean wait for qualified inputs before reporting performance, or proceed now with a labeled provisional report? I can check and repair alignment while that choice is pending.",
+      "answer": "Wait for qualified inputs before reporting performance",
+      "supersedes": "Earlier ambiguous wording and pending reporting Q4",
+      "scope": "Continue alignment and input/exclusion diagnostics; withhold empirical strategy performance until qualified inputs and accepted regular net account evidence",
+      "new_permission_for_provisional_performance": false,
+      "final_test_or_live_permission": false
+    }
   },
   "performance": {
     "status": "notcomputed",
@@ -832,6 +1034,12 @@
     "baseline": null,
     "cash": null,
     "incremental": null,
-    "reason": "No accepted costed regular net account replay; zero-yield cash Sharpe/delta undefined; Q4 pending"
+    "reason": "No accepted costed regular net account replay; zero-variance cash Sharpe/delta undefined; human requires qualified inputs before performance"
+  },
+  "coverage_boundary": "22 known gaps/30 requirements traced through named small metadata packets; no exhaustive raw corpus/remote market scan, no atomic latest-state claim",
+  "latest_first_arm_owner_refresh": {
+    "receipt": "C:/Users/johnp/OneDrive/Documents/ChatGPT/QuantHaxs/docs/data-date-audit/receipts/first-arm-owner-refresh.json",
+    "evidence": "E19",
+    "effect": "New producer candidate versions are additional packets; original pinned2023cohort finding remains scoped to that packet. Follow exact blocker map, not a global absence claim."
   }
 }

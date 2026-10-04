@@ -1,0 +1,357 @@
+{
+  "schema": "first-arm-owner-refresh-v1",
+  "observed_at_utc": "2026-10-04T08:30:27.859178+00:00",
+  "scope": "minimal integrated wording-equity dependency removal only",
+  "industry": {
+    "thread": "01a102d3-5cc5-7373-9620-523d2a1419a6",
+    "current_turn": "01a105f6-ab08-7182-bd7b-d76e19143196",
+    "candidate_audit": {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\2026-10-04-reit-2024-public-bound-candidates.md",
+      "sha256": "37d62e4f9b0f2def6a62a187b16149dc0074e79e14925fd775c0187fe38b49cf",
+      "bytes": 6500,
+      "evidence_class": "inspected_artifact"
+    },
+    "candidate_count": 2,
+    "candidates": [
+      {
+        "accession": "0001053507-24-000009",
+        "release_date": "2024-02-27",
+        "exhibit": "pressreleaseq42023.htm",
+        "claimed_archive_time_utc": "2024-02-27T12:00:00Z",
+        "sec_acceptance_utc": "2024-02-27T12:05:39Z"
+      },
+      {
+        "accession": "0001053507-24-000128",
+        "release_date": "2024-10-29",
+        "exhibit": "pressreleaseq32024.htm",
+        "claimed_archive_time_utc": "2024-10-29T11:00:00Z",
+        "sec_acceptance_utc": "2024-10-29T11:05:59Z"
+      }
+    ],
+    "accepted_public_bounds": 0,
+    "exact_retained_exhibit_bytes": "not established by inspected audit; peer37 annual/quarterly originals exclude these exhibits",
+    "source_time_class": "publisher/archive historical claims and SEC filing events, not accepted exact-version public bound or historical receipt",
+    "broker_cache_class": "owner retained command output reports None for both exhibit URLs; no independent database read",
+    "scores": "not yet delivered/accepted for these2024 candidates"
+  },
+  "benchmark": {
+    "thread": "01a1029e-8008-7d52-8f98-6c55f4aa739e",
+    "current_turn": "01a10605-1eea-77c0-97ce-fbd3e80fb27b",
+    "current_owner_report": "began minimal2024 candidate/input check; not completed2024 producer",
+    "completed_producer_commit_owner_report": "b165d3504743706c419e03239b1d9c538ea361e5",
+    "bindings": [
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\consumer-packet-v1.json",
+        "sha256": "21d3d9f83adaa3b65ab1f79eb35aa36cb749dde98788c97a08bd5dd7e3512efc",
+        "bytes": 24638,
+        "evidence_class": "inspected_artifact"
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\final-verification-v1.json",
+        "sha256": "7a24fa47784512fb4db93d81636739ded01b7cea547a900c016471a3a4bb42c1",
+        "bytes": 3160,
+        "evidence_class": "inspected_artifact"
+      },
+      {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-event-handoff-v2\\artifact-manifest.json",
+        "sha256": "3f48fc2d8e0ab00aaca3a56fd249f73cf87543cf58769f48a70110ea9ebbbdee",
+        "bytes": 692,
+        "evidence_class": "inspected_artifact"
+      }
+    ],
+    "produced_at_utc": "2026-10-04T08:15:26.367135+00:00",
+    "counts": {
+      "diagnostic_documents": 3,
+      "diagnostic_fragment_count": 925,
+      "economic_eligible_events": 0,
+      "excluded_before_selection": 4,
+      "original_primary_documents": 8,
+      "original_scored_documents": 15,
+      "original_scored_fragments": 2391,
+      "qualified_events": 0,
+      "selected_accessions": 4,
+      "selected_complete_2024_events": 0,
+      "selected_scored_fragments": 1642
+    },
+    "selected_events": [
+      {
+        "accession": "0001053507-23-000021",
+        "filing_date": "2023-02-23",
+        "diagnostic_value": null,
+        "qualified_value": null,
+        "available_at_utc": null,
+        "exclusions": [
+          "truncated_fragment",
+          "truncated_or_missing_document_status"
+        ],
+        "historical_feature_eligible": false,
+        "economic_eligible": false
+      },
+      {
+        "accession": "0001061630-23-000011",
+        "filing_date": "2023-02-08",
+        "diagnostic_value": 0.0955195961522502,
+        "qualified_value": null,
+        "available_at_utc": null,
+        "exclusions": [],
+        "historical_feature_eligible": false,
+        "economic_eligible": false
+      },
+      {
+        "accession": "0001423689-23-000003",
+        "filing_date": "2023-01-30",
+        "diagnostic_value": -0.009022599404964544,
+        "qualified_value": null,
+        "available_at_utc": null,
+        "exclusions": [],
+        "historical_feature_eligible": false,
+        "economic_eligible": false
+      },
+      {
+        "accession": "0001500217-23-000006",
+        "filing_date": "2023-02-07",
+        "diagnostic_value": 0.05335560798050246,
+        "qualified_value": null,
+        "available_at_utc": null,
+        "exclusions": [],
+        "historical_feature_eligible": false,
+        "economic_eligible": false
+      }
+    ],
+    "consumer_acceptance": "pending separate Post receipt",
+    "qualification_gates": [
+      "source_exact_version_public_bound",
+      "model_historical_vintage",
+      "provider_rights",
+      "registered_replay_acceptance",
+      "canonical_owner_acceptance"
+    ],
+    "minimal_missing_inputs": [
+      "At least one retained2024 Item2.02 primary and its single explicitly linked earnings-release text/version, transcript and complete frozen-model scores for this registered cohort/horizon",
+      "Independently supported public upper bound for the exact selected text; acceptance+24h is only an assumption",
+      "Accepted model-version/history/rights and retrospective-transform provenance",
+      "Dated equity identity, open+60s/actualclose-60s execution quotes, actions, short lifecycle/borrow/collateral, costs and continuous-exposure evidence under Post executionv2"
+    ],
+    "model_binding": {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-pilot-readiness-v1\\model-provenance-summary-v1.json",
+      "sha256": "cbba73c162be2918d9ea4f00f78c808097562f51187dfce08e48e33a5580666f",
+      "bytes": 6969,
+      "evidence_class": "inspected_artifact"
+    },
+    "model_summary": {
+      "canonical_enabled": false,
+      "current_weight_body_rehashed": false,
+      "earlier_checkpoint_numerical_equivalence": "not established",
+      "financial_model_pins_substituted": false,
+      "historical_transform_qualification": false,
+      "metadata_weight_oid_matches_retained_raw_weight_receipt": true,
+      "model_files_from_retained_run_receipt": {
+        "config.json": "f6449ddda85eb726207a40be59c0cd3bd4b142ccb27298d5e45f9ae3396b1abe",
+        "model.safetensors": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer_config.json": "ffc7913f6084b138dad68de5a0c2f0ee25ac983709260901e01f53be5796b9d9",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "model_id": "ProsusAI/finbert",
+      "new_inference_performed": false,
+      "new_weights_downloaded": false,
+      "official_file_metadata": {
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_file_metadata.json",
+        "sha256": "cd61e61ba9af15847b43ed52f9c81fec26c8b37f894de7ac064e5ff8e0fea8d7"
+      },
+      "official_metadata_witnesses": [
+        {
+          "bytes": 4821,
+          "headers": {
+            "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+            "ETag": "W/\"12d5-dEPpuPnByfkt6KyiTEZskvqcIF0\""
+          },
+          "name": "revision_metadata",
+          "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_metadata.txt",
+          "received_at_utc": "2026-10-04T07:35:07.202608+00:00",
+          "requested_at_utc": "2026-10-04T07:35:06.285768+00:00",
+          "resolved_url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+          "sha256": "d6ca09ac0217a579162e6c1a0a7710becc307a835c200029aad7de0e9876debe",
+          "status_code": 200,
+          "url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+        },
+        {
+          "bytes": 5939,
+          "headers": {
+            "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+            "ETag": "W/\"1733-2nmEtQFLaOirl2kCq4rguQR5Iks\""
+          },
+          "name": "revision_commits",
+          "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_commits.txt",
+          "received_at_utc": "2026-10-04T07:35:07.577181+00:00",
+          "requested_at_utc": "2026-10-04T07:35:07.210946+00:00",
+          "resolved_url": "https://huggingface.co/api/models/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+          "sha256": "6f36aa810957712397789c99b4d08b0274e66ddce4cce77b138c0a3367b565a8",
+          "status_code": 200,
+          "url": "https://huggingface.co/api/models/ProsusAI/finbert/commits/db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+        },
+        {
+          "bytes": 1476,
+          "headers": {
+            "Date": "Sun, 04 Oct 2026 07:35:08 GMT",
+            "ETag": "W/\"d57a1f3bc9735cdc84c7734d787fee973ad3a420\"",
+            "X-Repo-Commit": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1"
+          },
+          "name": "revision_model_card",
+          "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\revision_model_card.txt",
+          "received_at_utc": "2026-10-04T07:35:07.904132+00:00",
+          "requested_at_utc": "2026-10-04T07:35:07.577181+00:00",
+          "resolved_url": "https://huggingface.co/ProsusAI/finbert/raw/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/README.md",
+          "sha256": "23bf85400efe1e88cbe2bf79cec8c5ff81fe9806c599f3ca85e18288ab871008",
+          "status_code": 200,
+          "url": "https://huggingface.co/ProsusAI/finbert/raw/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/README.md"
+        },
+        {
+          "bytes": 11357,
+          "headers": {
+            "Date": "Sun, 04 Oct 2026 07:35:09 GMT",
+            "ETag": "W/\"c45f37bac7442b1d2ba0f29c51f8486a52505b23a9328cd14519cf793bf4996e\""
+          },
+          "name": "project_license",
+          "path": "data\\processed\\wording-pilot-readiness-v1\\model-provenance\\project_license.txt",
+          "received_at_utc": "2026-10-04T07:35:08.340689+00:00",
+          "requested_at_utc": "2026-10-04T07:35:07.904132+00:00",
+          "resolved_url": "https://raw.githubusercontent.com/ProsusAI/finBERT/master/LICENSE",
+          "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+          "status_code": 200,
+          "url": "https://raw.githubusercontent.com/ProsusAI/finBERT/master/LICENSE"
+        }
+      ],
+      "revision": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+      "run_report": {
+        "actual_completed_at_utc": "2026-10-04T02:22:47.209449+00:00",
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\data\\processed\\8k_validation\\wording_results_v2\\results\\wording-v2\\run-report.json",
+        "sha256": "9d005dfb3d71175bcf95bd0b2180a92c6a4c1a7dc4b04a09aedd25c7ef58ca9b"
+      },
+      "schema_version": "wording-pilot-model-provenance-summary-v1",
+      "training_cutoff_qualification": "unknown; checkpoint-format publication is not a claim of future training",
+      "trusted_model_manifest_sha256": "dac46dec0de5b5779f1931d42eadc7590f36c2b4fe9c59c2149c84563c20ddba",
+      "weight_artifact_metadata": {
+        "lastCommit": {
+          "date": "2023-06-05T11:55:24.000Z",
+          "id": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+          "title": "Adding `safetensors` variant of this model"
+        },
+        "lfs": {
+          "oid": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+          "pointerSize": 134,
+          "size": 437965908
+        },
+        "oid": "17ee6110e826d0024768ae6555077bb1396b7e4a",
+        "path": "model.safetensors",
+        "securityFileStatus": {
+          "avScan": {
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "status": "safe"
+          },
+          "jFrogScan": {
+            "message": "Safe model, does not support code execution on load.",
+            "reportLink": "https://research.jfrog.com/model-threats/noautoload-suscode?utm_source=huggingface",
+            "status": "safe"
+          },
+          "pickleImportScan": {
+            "pickleImports": [],
+            "status": "unscanned",
+            "version": "0.0.0"
+          },
+          "protectAiScan": {
+            "reportLink": "https://insights-db.paloaltonetworks.com/models/ProsusAI/finbert/db38d3727cbaed87c9aed72df7b3519e2ba5cca1/files?blob-id=17ee6110e826d0024768ae6555077bb1396b7e4a&utm_source=huggingface",
+            "status": "unscanned"
+          },
+          "status": "safe",
+          "virusTotalScan": {
+            "message": "0/75 engines detect it as malicious.",
+            "reportLink": "https://www.virustotal.com/gui/file/e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00?utm_source=huggingface",
+            "status": "safe"
+          }
+        },
+        "size": 437965908,
+        "type": "file",
+        "xetHash": "97c9cb12d04352c17ea4a86542c6411d19940e4418e13199087eba3230f3c144"
+      },
+      "weights_rights_qualification": "not accepted; exact revision card has no explicit license declaration; repository code license is separate"
+    },
+    "producer_code": {
+      "scripts/build_wording_event_handoff.py": {
+        "bytes": 3015,
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\scripts\\build_wording_event_handoff.py",
+        "sha256": "6a5e10a757c9343c9315a6e0dd5ff84602b00ee4c60a3c7eab16f5851581d72b"
+      },
+      "src/wording_event_aggregation.py": {
+        "bytes": 28187,
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\src\\wording_event_aggregation.py",
+        "sha256": "8b8cbdee976fca1cfb2c37be0f2c1c246020ed579e99d20d28857ad128ffdafb"
+      },
+      "tests/test_wording_event_aggregation.py": {
+        "bytes": 20653,
+        "path": "C:\\Users\\johnp\\.codex\\worktrees\\point-in-time-feature-matrix\\QuantHaxs\\tests\\test_wording_event_aggregation.py",
+        "sha256": "2d5aef9f7b8d28a60052f2b2f91834b5855d983854ec05fde93afa85371c9a01"
+      }
+    }
+  },
+  "post_protocol": {
+    "binding": {
+      "path": "C:\\Users\\johnp\\.codex\\worktrees\\8k-cross-asset-validation\\QuantHaxs\\configs\\wording_equity_pilot-v2.json",
+      "sha256": "e7197cea447fe9e413fe659b4ab2bdd41468e6cdb4933d7f82fb4560bab78acb",
+      "bytes": 6225,
+      "evidence_class": "inspected_artifact"
+    },
+    "schema": "wording-equity-pilot-protocol-v2",
+    "date_from": "2024-01-01",
+    "date_to": null,
+    "signal_model_revision": "db38d3727cbaed87c9aed72df7b3519e2ba5cca1",
+    "static_protocol_read_is_not_acceptance": true,
+    "252sessions": "parent-reported unchanged2024 protocol window; not recomputed"
+  },
+  "blocker_acceptance_owner_map": [
+    {
+      "blocker": "at least one complete2024 Item2.02 primary + linked exact release/text/transcript/frozen scores",
+      "owner": "Industry retained source and Benchmark wording producer",
+      "acceptance": "new hash-pinned2024 event aggregate delivered; Post verifies exact source lineage and source eligibility"
+    },
+    {
+      "blocker": "exact-version evidenced public upper bound plus processing/replay latency",
+      "owner": "Industry evidence; Post canonical clocks",
+      "acceptance": "conditional publisher claims and SEC acceptance remain excluded until accepted exact-version bound"
+    },
+    {
+      "blocker": "historical model/version/rights and retrospective transform",
+      "owner": "Benchmark producer and Post consumer",
+      "acceptance": "model provenance reviewed under frozen protocol; existing model source/revision availability cannot be assumed historical"
+    },
+    {
+      "blocker": "dated security/actions/dividends and open+60s/close-60s execution quotes",
+      "owner": "Industry market producer and Post consumer",
+      "acceptance": "qualify actual2024 event/session/holding inputs and quote/update/venue policy; minute endpoints alone insufficient"
+    },
+    {
+      "blocker": "short borrow/collateral/lifecycle, fees/slippage and continuous exposure",
+      "owner": "Industry evidence and Post account replay",
+      "acceptance": "dated evidence with valid holding coverage and accepted cost policy"
+    },
+    {
+      "blocker": "static inputs to accepted integrated replay",
+      "owner": "Post canonical consumer",
+      "acceptance": "explicit consumer receipt then matured labels/order/fill/no-fill/NAV/metrics capsule"
+    }
+  ],
+  "historical_packet_caution": "existing2023 finding remains true for inspected completed saved-score packet; newest Industry two2024candidates are real research candidates, not an empty universe or accepted/scored cohort",
+  "new_replay_or_jobs": false,
+  "final_test_access": false,
+  "pilot_readiness": "insufficient_evidence; new2024 source candidates exist but no accepted2024 scored event established by these receipts",
+  "storage_boundary_owner_notice": {
+    "evidence_class": "parent relayed owner report",
+    "root_cached_REIT_SEC_paths": "may move during authorized cleanup; prior hashes are observed snapshots, not a claim current raw paths remain live",
+    "reported_remote_location": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
+    "reported_backup_manifest": "docs/storage-audit/2026-10-04-backup-files.jsonl",
+    "backup_manifest_inspected": false,
+    "candidate_research_markdown": "reported preserved; locally inspected during this refresh",
+    "post_and_benchmark_worktree_bindings": "read by exact named paths; no silent alias or bulk retrieval performed"
+  }
+}

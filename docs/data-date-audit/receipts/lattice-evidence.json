@@ -1,0 +1,514 @@
+{
+  "schema_version": "lattice-evidence-receipt-v1",
+  "observed_at_utc": "2026-10-04T08:22:29.365956+00:00",
+  "project_role": "Lattice contextual forecast/risk diagnostics; DD05/DD11 P1, separate from accepted wording/economic/account result",
+  "inventory": [
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\configs\\experiments\\lattice-strategies-v1.json",
+      "bytes": 3006,
+      "sha256": "e0a262becd20bf60e53fe16db017b77dc83800eef8a9f8190554bb50d537c45b",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": [
+        "experiment_id",
+        "classification",
+        "universe",
+        "input_start",
+        "diagnostic_start",
+        "diagnostic_end",
+        "label_end",
+        "label_boundary",
+        "primary_horizon_sessions",
+        "secondary_horizons_sessions",
+        "target",
+        "target_caveat",
+        "clock",
+        "residual",
+        "risk",
+        "cost_scenarios_one_way_bps",
+        "cost_scope",
+        "uncertainty",
+        "missing_data",
+        "new_orders",
+        "promotion",
+        "deferred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\lattice-implementation\\results-v1.md",
+      "bytes": 9471,
+      "sha256": "cd4ec5ef53923e2f97ed21045f1cd79ec31987bf7c71cf82c0fb33d9cb2c27c6",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": "Markdown research report"
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-strategies\\reports-v1\\input_audit.json",
+      "bytes": 783,
+      "sha256": "a05b411e75f445f4e0d5a2546213cb4424ff59406850d93def6d10e51ef65823",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": [
+        "calendar",
+        "clock",
+        "filtered_price_rows",
+        "input_first",
+        "input_last",
+        "missing_return_cells",
+        "provenance",
+        "return_sessions",
+        "source_schema",
+        "universe"
+      ]
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-strategies\\reports-v1\\residual_report.json",
+      "bytes": 16315,
+      "sha256": "68c636b235852f0e416c8fe8781bc77dba79ba6b0beaf3d37f48272463711f2d",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": [
+        "horizons",
+        "primary_horizon",
+        "promotion",
+        "rows_retained",
+        "status"
+      ]
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-strategies\\reports-v1\\risk_report.json",
+      "bytes": 10877,
+      "sha256": "6d10ce27b4a5ac10c946a0a87a3348d34d1633373332f62b3479e07e835b94e8",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": [
+        "allocation_cost_scenarios",
+        "common_dates",
+        "common_policy_dates",
+        "cost_scope",
+        "estimators",
+        "forecast_unit",
+        "mse_unit",
+        "paired_graph_comparisons",
+        "promotion"
+      ]
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\artifacts\\lattice-math-audit\\run-v1\\frozen-target-audit.json",
+      "bytes": 45577,
+      "sha256": "a83459c936765e9ebf967c0cc4957865726f1d85c913fbb99882f95029478de6",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": [
+        "input_sha256",
+        "input_rows",
+        "model_refits",
+        "new_price_data",
+        "study_scope",
+        "notes",
+        "comparisons"
+      ]
+    },
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\configs\\experiments\\lattice-completion-v2.json",
+      "bytes": 1981,
+      "sha256": "39dee6e18524d107b70d4aeecd0f7a87dcfd5766d4807d8dad55b0e92df8abe9",
+      "evidence_class": "freshly inspected local artifact",
+      "schema": [
+        "experiment_id",
+        "classification",
+        "universe",
+        "input_start",
+        "diagnostic_start",
+        "diagnostic_end",
+        "label_end",
+        "development_selection_years",
+        "previously_inspected_diagnostic_years",
+        "purge_terminal_decision_sessions_per_fold",
+        "primary_horizon_sessions",
+        "secondary_horizons_sessions",
+        "formation_sessions",
+        "calibration_sessions",
+        "formation_anchor",
+        "max_characteristic_reversion_sessions",
+        "arms",
+        "selection_candidates",
+        "selection_rule",
+        "selection_scope",
+        "target",
+        "secondary_target_caveat",
+        "clock",
+        "split_gate",
+        "synthetic_seed",
+        "bootstrap_repetitions",
+        "bootstrap_block_sessions",
+        "uncertainty_scope",
+        "final_test_access",
+        "new_paid_orders",
+        "capital_deployment",
+        "consumer_economic_acceptance"
+      ]
+    }
+  ],
+  "design_v2_docs": [
+    {
+      "path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\docs\\research\\lattice-completion\\design-v2.md",
+      "bytes": 4733,
+      "sha256": "10bafaab629084bf5cb7de3ff53360f347773e70c4f1e732685a541f7fbacbbe",
+      "evidence_class": "freshly inspected local design doc",
+      "excerpt": "# Controlled Lattice continuation \u2014 2026-10-04\n\n## Purpose and boundaries\n\nThe human authorized completing the explained plan. Test whether a residual-state correction adds next-session information beyond simple forecasts, and why a smaller error appears if it does. This is a numerical component for the Post-owned first equity wording pilot; it does not duplicate that policy or account engine. The first wording arm and later financial benchmark remain separate. Native repair, data qualification and predictive usefulness are separate conclusions.\n\nUse the existing adjusted-close snapshot and acquired market bytes. Historical identity, receipt and adjustment vintages are unqualified. Inspected 2024/2025 stays development; protected final tests remain locked. New future observations and an economic edge are evidence requirements, not promised implementation results.\n\n## Mechanism and alternatives\n\nHypothesis: a temporarily displaced cumulative return of a stock and its fitted hedge reverses when their relationship is stable. Alternatives: the apparent state is an integrated unpredictable return series; a permanent company/relationship shift makes catch-up inappropriate; historical drift explains any forecast improvement; or abstention reduces forecast magnitude without discovering predictability.\n\nPredictions and contradictions are registered before this new fit. The state term should add on the same basket beyond zero, its own historical mean, own-return AR and formation drift. A permanent shift should expose the harmful pull toward an old level. Generated mean-reversion gains validate conditional mathematics only. Splitting calibration checks whether the estimated dynamics and correction direction agree; it is a price-history proxy for stability, not qualified company news.\n\n## Target, arms and controls\n\nEvery setting uses the same 126-session formation ending before the largest 80-session calibration block. Form the signed MST peer hedge once for each date/stock; preserve its weights and gross normalization. Forty, sixty and eighty sessions estimate state on that identical basket. Changing calibration cannot change the formation cutoff, hedge or realized target. Normalize forecast and realized additive basket returns by the same sum of absolute hedge weights.\n\nRegistered arms: zero, same-basket historical mean, same-basket return AR, formation drift, state correction alone, drift plus correction, and split-stability-gated drift plus correction. Retain inva"
+    }
+  ],
+  "input_audit": {
+    "calendar": "union of native screened price sessions; exchange-completeness unverified",
+    "clock": "completed_session_close_assumed_replay_availability_not_verified_receipt_or_executable_fill",
+    "filtered_price_rows": 24132,
+    "input_first": "2018-01-02T00:00:00",
+    "input_last": "2025-12-31T00:00:00",
+    "missing_return_cells": 12,
+    "provenance": "native Yahoo adjusted-close snapshot, historical identity/adjustment/receipt vintages unqualified",
+    "return_sessions": 2011,
+    "source_schema": "ticker: string\ndate: string\nopen: double\nhigh: double\nlow: double\nclose: double\nadjclose: double\nvolume: int64",
+    "universe": [
+      "AAPL",
+      "AMZN",
+      "BAC",
+      "CVX",
+      "GD",
+      "GOOGL",
+      "JPM",
+      "META",
+      "MSFT",
+      "NVDA",
+      "UNH",
+      "XOM"
+    ]
+  },
+  "frozen_raw_input_claim": {
+    "bytes": 87583322,
+    "sha256": "196a139efbd3583656c30908da80defee16b06b1af709ef913e8cd704b04f7f0",
+    "evidence_class": "owner claim from task handoff; raw parquet not read and remote hash not verified",
+    "source": "Yahoo adjusted closes",
+    "historical_identity": "unknown/unqualified",
+    "adjustment_vintage": "unknown/unqualified",
+    "historical_receipt_vintage": "unknown/unqualified"
+  },
+  "time_fields": {
+    "input_date": "naive midnight string/session label, not actual receipt or availability; first2018-01-02T00:00:00 last2025-12-31T00:00:00",
+    "decision_availability": "completed16:00 session close assumption per handoff; config says completed_session_close_assumed_replay_availability_not_verified_receipt_or_executable_fill; exchange/DST completeness not established by union calendar",
+    "quote_update_fill": "unknown; no authoritative fill/quote execution",
+    "labels": "horizon1 fractional return;5/20 additive sums, not compounded account returns; final h sessions remain unobserved and labels stop2025-12-31"
+  },
+  "v1_design": {
+    "experiment_id": "lattice-strategies-v1-20261004",
+    "classification": "exploratory_reused_2024_2025_no_promotion",
+    "diagnostic_start": "2024-01-01",
+    "diagnostic_end": "2025-12-31",
+    "primary_horizon": 1,
+    "secondary_horizons": [
+      5,
+      20
+    ],
+    "formation": 126,
+    "calibration": 60,
+    "disjoint_windows": true,
+    "all_seven_models": [
+      "zero",
+      "historical_mean",
+      "own_return_ar1",
+      "market_state",
+      "mst_peer_state",
+      "topcorr_peer_state",
+      "distance_peer_state"
+    ],
+    "bootstrap": {
+      "bootstrap_repetitions": 500,
+      "primary_block_sessions": 20,
+      "seed": 20261004,
+      "paired_date_clusters": true,
+      "intervals": "unadjusted_exploratory_all_registered_comparisons_disclosed"
+    },
+    "no_promotion": true,
+    "new_orders": 0
+  },
+  "forecast_results": {
+    "1": {
+      "common_opportunities": 6012,
+      "common_valid_model_opportunities": 3861,
+      "loss_unit": "additive_fractional_return_squared",
+      "target": "sum of future daily fractional returns; not compounded multi-session PnL",
+      "mst_relative_improvement_pct_vs_zero": -3.0330971684416235,
+      "cluster_dates": 501
+    },
+    "20": {
+      "common_opportunities": 5784,
+      "common_valid_model_opportunities": 3682,
+      "loss_unit": "additive_fractional_return_squared",
+      "target": "sum of future daily fractional returns; not compounded multi-session PnL",
+      "mst_relative_improvement_pct_vs_zero": -12.517637424715895,
+      "cluster_dates": 482
+    },
+    "5": {
+      "common_opportunities": 5964,
+      "common_valid_model_opportunities": 3824,
+      "loss_unit": "additive_fractional_return_squared",
+      "target": "sum of future daily fractional returns; not compounded multi-session PnL",
+      "mst_relative_improvement_pct_vs_zero": -8.097566332196697,
+      "cluster_dates": 497
+    }
+  },
+  "frozen_target_audit": {
+    "input_sha256": "cead0f12d542bdde4c807db3d66295c7d93efe8a96b34343d0fb54a6681d98c6",
+    "input_rows": 126504,
+    "model_refits": 0,
+    "new_price_data": false,
+    "study_scope": "post-result exploratory audit, previously inspected 2024/2025",
+    "primary_mst_own_hedge": [
+      {
+        "cohort": "available_basket",
+        "rows": 6012,
+        "dates": 501,
+        "no_trade_rows": 1450,
+        "model_refits": 0,
+        "target_scope": "same frozen model-specific additive hedge basket, candidate versus zero only",
+        "cross_model_comparison_valid": false,
+        "hedge_outcome": {
+          "candidate_mse": 0.0002779255275470187,
+          "zero_mse": 0.00026510449324549,
+          "forecast_mean": 0.0005054973922415097,
+          "target_mean": 0.00036621451279931854,
+          "mean_forecast_squared": 1.0797071305404395e-05,
+          "twice_mean_forecast_times_target": -2.0239629961242784e-06,
+          "loss_difference_decomposition": 1.2821034301528673e-05,
+          "paired": {
+            "cluster_dates": 501,
+            "improvement": -1.2821034301528679e-05,
+            "relative_improvement_pct": -4.836219161949941,
+            "interval_95": [
+              -1.87280796935914e-05,
+              -7.281313098553957e-06
+            ],
+            "interval_scope": "unadjusted exploratory; date clusters, circular blocks"
+          }
+        }
+      },
+      {
+        "cohort": "valid_model",
+        "rows": 4562,
+        "dates": 501,
+        "no_trade_rows": 0,
+        "model_refits": 0,
+        "target_scope": "same frozen model-specific additive hedge basket, candidate versus zero only",
+        "cross_model_comparison_valid": false,
+        "hedge_outcome": {
+          "candidate_mse": 0.0002725944238914546,
+          "zero_mse": 0.0002556983129267921,
+          "forecast_mean": 0.0006661662258123535,
+          "target_mean": 0.000155197598068946,
+          "mean_forecast_squared": 1.4228845394145384e-05,
+          "twice_mean_forecast_times_target": -2.667265570517134e-06,
+          "loss_difference_decomposition": 1.6896110964662516e-05,
+          "paired": {
+            "cluster_dates": 501,
+            "improvement": -1.649020127711115e-05,
+            "relative_improvement_pct": -6.556546224589538,
+            "interval_95": [
+              -2.363843947962946e-05,
+              -9.976508158652915e-06
+            ],
+            "interval_scope": "unadjusted exploratory; date clusters, circular blocks"
+          }
+        }
+      }
+    ],
+    "interpretation": "Negative relative improvement means worse MSE versus zero on SAME frozen model-specific hedge outcome; available basket4.836219%worse versus valid subset6.556546%worse. Different hedge targets cannot support cross-model MSE claims."
+  },
+  "risk": {
+    "common_dates": 501,
+    "common_policy_dates": 501,
+    "forecast_unit": "fractional_return_squared_per_session",
+    "mse_unit": "fractional_return_fourth_power",
+    "cost_scope": "assumed research marks with gross one; no executable or account net profit claim",
+    "estimators": {
+      "diagonal_cov": {
+        "abstentions": 0,
+        "available_scored": 501,
+        "forecast_mean": 3.064707608798949e-05,
+        "mse": 2.644124826703585e-07,
+        "observed_mean": 0.0001176654561920478,
+        "qlike": -6.4891099777736425,
+        "scored": 501,
+        "unmarked": 1
+      },
+      "ledoit_wolf": {
+        "abstentions": 0,
+        "available_scored": 501,
+        "forecast_mean": 0.00010216061037963548,
+        "mse": 2.5975480142109457e-07,
+        "observed_mean": 0.0001176654561920478,
+        "qlike": -8.009180188230618,
+        "scored": 501,
+        "unmarked": 1
+      },
+      "mst_tree": {
+        "abstentions": 0,
+        "available_scored": 501,
+        "forecast_mean": 0.00010358329899687504,
+        "mse": 2.5948733860997964e-07,
+        "observed_mean": 0.0001176654561920478,
+        "qlike": -8.020213948493383,
+        "scored": 501,
+        "unmarked": 1
+      },
+      "one_factor": {
+        "abstentions": 0,
+        "available_scored": 501,
+        "forecast_mean": 0.0001359610202222893,
+        "mse": 2.619910568183475e-07,
+        "observed_mean": 0.0001176654561920478,
+        "qlike": -8.055118958682622,
+        "scored": 501,
+        "unmarked": 1
+      },
+      "sample_cov": {
+        "abstentions": 0,
+        "available_scored": 501,
+        "forecast_mean": 0.00011734373951098145,
+        "mse": 2.61270852330632e-07,
+        "observed_mean": 0.0001176654561920478,
+        "qlike": -8.029581556003924,
+        "scored": 501,
+        "unmarked": 1
+      }
+    },
+    "paired_graph_comparisons": {
+      "diagonal_cov": {
+        "cluster_dates": 501,
+        "improvement": 1.5311039707197402,
+        "interval_95": [
+          0.3895167646060696,
+          3.4173112148988816
+        ],
+        "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+        "relative_improvement_pct": null
+      },
+      "ledoit_wolf": {
+        "cluster_dates": 501,
+        "improvement": 0.01103376026276399,
+        "interval_95": [
+          -0.007469982277195277,
+          0.033728049847403234
+        ],
+        "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+        "relative_improvement_pct": null
+      },
+      "one_factor": {
+        "cluster_dates": 501,
+        "improvement": -0.03490501018923901,
+        "interval_95": [
+          -0.20058631505554378,
+          0.08210633123033335
+        ],
+        "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+        "relative_improvement_pct": null
+      },
+      "sample_cov": {
+        "cluster_dates": 501,
+        "improvement": -0.009367607510542005,
+        "interval_95": [
+          -0.08239968017993601,
+          0.04658572923375591
+        ],
+        "interval_scope": "unadjusted exploratory; date clusters, circular blocks",
+        "relative_improvement_pct": null
+      }
+    },
+    "promotion": false,
+    "fixed_book": "equal_weight_12_names_gross_one",
+    "cost_scenarios": [
+      0,
+      1,
+      5,
+      10
+    ],
+    "note": "QLIKE/MSE risk losses and assumed allocation marks are contextual; not qualified USD1m account PnL/Sharpe, authoritative fills, borrow/financing or forward evaluation."
+  },
+  "v2_config": {
+    "experiment_id": "lattice-completion-v2-20261004",
+    "classification": "development_diagnosis_no_economic_promotion",
+    "universe": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "NVDA",
+      "JPM",
+      "BAC",
+      "XOM",
+      "CVX",
+      "UNH",
+      "GD"
+    ],
+    "input_start": "2018-01-01",
+    "diagnostic_start": "2021-01-01",
+    "diagnostic_end": "2025-12-31",
+    "label_end": "2025-12-31",
+    "development_selection_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "previously_inspected_diagnostic_years": [
+      2024,
+      2025
+    ],
+    "purge_terminal_decision_sessions_per_fold": 20,
+    "primary_horizon_sessions": 1,
+    "secondary_horizons_sessions": [
+      5,
+      20
+    ],
+    "formation_sessions": 126,
+    "calibration_sessions": [
+      40,
+      60,
+      80
+    ],
+    "formation_anchor": "before_maximum_80_session_calibration_block_identical_hedge_across_settings",
+    "max_characteristic_reversion_sessions": 30,
+    "arms": [
+      "zero",
+      "historical_mean",
+      "ar1",
+      "formation_alpha",
+      "state_correction",
+      "alpha_state",
+      "split_gated_alpha_state"
+    ],
+    "selection_candidates": [
+      "alpha_state",
+      "split_gated_alpha_state"
+    ],
+    "selection_rule": "lowest_equal_fold_mean_primary_MSE_difference_must_improve_zero_and_best_registered_simple_control_else_zero",
+    "selection_scope": "research_setting_only_no_accepted_economic_or_capital_policy",
+    "target": "same_reference_MST_hedge_additive_fractional_return_divided_by_sum_absolute_weights",
+    "secondary_target_caveat": "additive_path_diagnostic_not_compounded_account_return",
+    "clock": "completed_adjusted_close_assumed_replay_availability_unknown_actual_receipt_adjustment_vintage_and_fill",
+    "split_gate": "both_half_calibration_state_fits_stationary_with_tau_cap_and_same_sign_correction",
+    "synthetic_seed": 20261004,
+    "bootstrap_repetitions": 500,
+    "bootstrap_block_sessions": 20,
+    "uncertainty_scope": "unadjusted_exploratory_frozen_setting_intervals_all_trials_disclosed_not_selected_winner_confirmation",
+    "final_test_access": false,
+    "new_paid_orders": 0,
+    "capital_deployment": false,
+    "consumer_economic_acceptance": false
+  },
+  "acceptance_limits": {
+    "v2_status": "configuration/design only in this audit; no v2 run verified",
+    "v2_development": "2021-2025;2021-2023selection,2024-2025previouslyinspected diagnostics; protected final_test_access=false",
+    "first_arm_consumer_acceptance": false,
+    "account_pnl_measured_by_this_audit": false,
+    "profitability_promotion": false,
+    "missing": "Qualified identity/adjustment/availability/execution/costs and consumer matched information/opportunity/time acceptance remain separate",
+    "no_raw_parquet_read": true,
+    "no_remote_rehash": true,
+    "no_jobs_or_fits": true,
+    "no_tests": true
+  }
+}
