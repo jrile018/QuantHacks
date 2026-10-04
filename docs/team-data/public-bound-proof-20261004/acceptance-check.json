@@ -1,0 +1,95 @@
+{
+  "checks": {
+    "cdx_status_200": true,
+    "cdx_original_url_exact": true,
+    "cdx_timestamp_exact": true,
+    "cdx_capture_http_200_html": true,
+    "replay_requested_url_exact": true,
+    "replay_final_url_exact": true,
+    "replay_http_200": true,
+    "memento_timestamp_matches_cdx": true,
+    "capture_payload_hash_matches_receipt": true,
+    "retained_raw_expected_hash": true,
+    "retained_native_expected_hash": true,
+    "producer_native_regenerates_retained_text": true,
+    "archive_native_equals_retained_native_full_bytes": true,
+    "document_text_v1_full_text_equal": true,
+    "scorer_json_expected_sha256": true,
+    "scorer_source_sha256_matches_retained": true,
+    "scorer_version_and_engine_match": true,
+    "scorer_text_hash_verified": true,
+    "archive_full_text_equals_actual_scorer_text": true,
+    "handoff_expected_sha256": true,
+    "handoff_fragment_count_exact": true,
+    "all_handoff_fragment_spans_and_quotes_match_scorer_text": true,
+    "handoff_retains_excluded_truncated_status": true
+  },
+  "all_checks_pass": true,
+  "expected_original_url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+  "cdx_digest": "EWCYBFYCZ3YU5AK5XSHOTKUKREZN3K6L",
+  "capture_timestamp_utc": "2024-02-27T13:08:04+00:00",
+  "memento_datetime": "Tue, 27 Feb 2024 13:08:04 GMT",
+  "source_code": {
+    "producer_native_path": "/home/john-riley/.cache/quanthaxs-data-push-public-proof-20261004-v1/collect_reit_peer_originals.py",
+    "producer_source_sha256": "db9599dc1f224ba27342f0f94e8598a80e442eafc724d283fa629e17e04e700b",
+    "canonical_module_path": "/home/john-riley/.cache/quanthaxs-data-push-public-proof-20261004-v1/document_transcript.py",
+    "canonical_module_sha256": "6ebaa1bc0752e4db466af4ada0baac2569a80865e3fc9ff2a789dcda95b9e7bb",
+    "canonical_normalization_version": "document_text_v1",
+    "canonical_adapter_revision": "document_transcript_v2"
+  },
+  "raw": {
+    "capture_sha256": "ddcdb59b56685f9251a06c56d41387e6ec6c353259e91fd15715bffef5553af5",
+    "retained_sha256": "d3e0d2b13d9b4ff50cb104362855975b96dfc354804343f5bdfe1a9c842c3a62"
+  },
+  "producer_native": {
+    "capture_sha256": "281856042cd75a0d40c79a76679a679d5c4a6e11cf2d1cdb51679c5e46e9cdb5",
+    "retained_regenerated_sha256": "281856042cd75a0d40c79a76679a679d5c4a6e11cf2d1cdb51679c5e46e9cdb5",
+    "retained_artifact_sha256": "281856042cd75a0d40c79a76679a679d5c4a6e11cf2d1cdb51679c5e46e9cdb5",
+    "capture_chars": 73521,
+    "retained_chars": 73521
+  },
+  "document_text_v1": {
+    "archive_text_sha256": "4776176a977db7c3bd00eb8fd53b4e977ad7866642597dff4c8e50034c6743f4",
+    "retained_text_sha256": "4776176a977db7c3bd00eb8fd53b4e977ad7866642597dff4c8e50034c6743f4",
+    "archive_chars": 71565,
+    "retained_chars": 71565,
+    "archive_flags": [
+      "unresolved_table_structure"
+    ],
+    "retained_flags": [
+      "unresolved_table_structure"
+    ],
+    "archive_tables": 430,
+    "retained_tables": 430
+  },
+  "actual_scorer": {
+    "path": "/home/john-riley/quant_hacks_financial_research/wording-2024-minimal-20261004-v1/inputs-v1/transcripts/d3e0d2b13d9b4ff50cb104362855975b96dfc354804343f5bdfe1a9c842c3a62.json",
+    "json_bytes": 422910,
+    "json_sha256": "28ee13d850c908503528b14a67d2ebd80c17d45e8c6036ca59e1f51bd0043efa",
+    "normalized_text_chars": 71565,
+    "normalized_text_utf8_sha256": "4776176a977db7c3bd00eb8fd53b4e977ad7866642597dff4c8e50034c6743f4",
+    "normalization_version": "document_text_v1",
+    "extraction_method": "native_html",
+    "engine_revision": "stdlib_v1",
+    "adapter_revision": "document_transcript_v2",
+    "settings": {}
+  },
+  "actual_fullspan_handoff": {
+    "path": "/home/john-riley/quant_hacks_financial_research/wording-2024-minimal-20261004-v1/results/aggregate-v1/wording-event-handoff.json",
+    "json_bytes": 825951,
+    "json_sha256": "705842bb3df0d3faabfcf858953831090855e198a26e6ccc2139d547147abd4f",
+    "fragments": 716,
+    "fragment_span_quote_matches": 716,
+    "fragment_character_weight_sum": 68580,
+    "truncated_fragment_count": 1,
+    "status": "excluded",
+    "qualified_value": null,
+    "exclusion_counts": {
+      "truncated_fragment": 1,
+      "truncated_or_missing_document_status": 1
+    }
+  },
+  "http_attempts_note": "Probe counted six top-level urllib requests. Automatic redirects, if any, were not separately counted; final replay URL matched request.",
+  "scorer_span_binding": "complete_exact_full_text_and_all_fragment_spans",
+  "canonical_accepted": false
+}

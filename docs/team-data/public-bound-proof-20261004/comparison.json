@@ -1,0 +1,27 @@
+{
+  "retained_raw_path": "/tmp/quanthaxs-reit-pilot-repair-20261004-v1/source-pack/objects/d3e0d2b13d9b4ff50cb104362855975b96dfc354804343f5bdfe1a9c842c3a62",
+  "retained_raw_bytes": 1042841,
+  "retained_raw_sha256": "d3e0d2b13d9b4ff50cb104362855975b96dfc354804343f5bdfe1a9c842c3a62",
+  "retained_native_text_path": "/tmp/quanthaxs-reit-pilot-repair-20261004-v1/source-pack/release-sources-v2/0001053507-24-000009-press_release_exhibit.txt",
+  "retained_native_text_bytes": 75159,
+  "retained_native_text_sha256": "281856042cd75a0d40c79a76679a679d5c4a6e11cf2d1cdb51679c5e46e9cdb5",
+  "current_sec_raw_sha256": "d3e0d2b13d9b4ff50cb104362855975b96dfc354804343f5bdfe1a9c842c3a62",
+  "current_sec_equals_retained_raw": true,
+  "archive_raw_sha256": "ddcdb59b56685f9251a06c56d41387e6ec6c353259e91fd15715bffef5553af5",
+  "archive_raw_equals_retained_raw": false,
+  "archive_vs_retained_first_byte_difference_at": 1042699,
+  "archive_vs_retained_common_suffix_bytes": 36,
+  "archive_difference_context_hex": {
+    "archive": "666f6e743e3c2f6469763e3c2f6469763e3c2f6469763e3c2f626f64793e3c2f68746d6c3e0a3c2f544558543e0a3c2f444f43554d454e543e0a",
+    "retained": "666f6e743e3c2f6469763e3c2f6469763e3c2f6469763e3c73637269707420747970653d22746578742f6a6176617363726970742220207372633d222f7665356b6b674f4b532f31745a2f494f5a6943772f6d35513351386d704a4c7063325858692f5733516353"
+  },
+  "normalization": "HTMLParser skips script/style/noscript, decodes entities; Unicode NFKC, remove soft hyphen, collapse whitespace; compare full strings",
+  "archive_full_normalized_text_chars": 65154,
+  "retained_raw_full_normalized_text_chars": 65154,
+  "archive_full_normalized_text_sha256": "be75597d4e93fc1f7ffd7d2c3a3f7164f236aa5437e838100d625bb959c1abc7",
+  "retained_raw_full_normalized_text_sha256": "be75597d4e93fc1f7ffd7d2c3a3f7164f236aa5437e838100d625bb959c1abc7",
+  "archive_full_normalized_text_equals_retained_raw": true,
+  "retained_native_whitespace_normalized_chars": 66207,
+  "retained_native_whitespace_normalized_sha256": "dddb8180a51427d25374430c65149d6b128e03f70f0f2d271c3e23b1e5f7e7af",
+  "archive_text_equals_retained_native_whitespace_normalized": false
+}

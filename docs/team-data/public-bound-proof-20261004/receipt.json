@@ -1,0 +1,137 @@
+{
+  "scope": "AMT February 2024 historical full-content capture",
+  "algorithm": "Python html.parser skips script/style/noscript; HTML entities decoded; Unicode NFKC; soft hyphen removed; whitespace collapsed; no semantic/boilerplate trimming",
+  "tool": "Python stdlib urllib/html.parser/hashlib",
+  "targets": {
+    "feb_sec": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+    "feb_issuer": "https://americantower.gcs-web.com/news-releases/news-release-details/american-tower-corporation-reports-fourth-quarter-and-full-19",
+    "feb_wire": "https://www.businesswire.com/news/home/20240227784442/en/American-Tower-Corporation-Reports-Fourth-Quarter-and-Full-Year-2023-Financial-Results"
+  },
+  "results": {
+    "feb_sec_cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.sec.gov%2FArchives%2Fedgar%2Fdata%2F1053507%2F000105350724000009%2Fpressreleaseq42023.htm&from=2024&to=2024&output=json&filter=statuscode%3A200&collapse=timestamp%3A4&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.sec.gov%2FArchives%2Fedgar%2Fdata%2F1053507%2F000105350724000009%2Fpressreleaseq42023.htm&from=2024&to=2024&output=json&filter=statuscode%3A200&collapse=timestamp%3A4&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest",
+      "headers": {
+        "Date": "Sun, 04 Oct 2026 08:57:18 GMT",
+        "Content-Type": "application/json"
+      },
+      "bytes": 225,
+      "sha256": "5001988c29e69cad7148df87c9c3962b016f4d9deae0c5c86505f3af5dc734c9",
+      "rows": [
+        [
+          "timestamp",
+          "original",
+          "statuscode",
+          "mimetype",
+          "digest"
+        ],
+        [
+          "20240227130804",
+          "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+          "200",
+          "text/html",
+          "EWCYBFYCZ3YU5AK5XSHOTKUKREZN3K6L"
+        ]
+      ]
+    },
+    "feb_issuer_cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Famericantower.gcs-web.com%2Fnews-releases%2Fnews-release-details%2Famerican-tower-corporation-reports-fourth-quarter-and-full-19&from=2024&to=2024&output=json&filter=statuscode%3A200&collapse=timestamp%3A4&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest",
+      "attempt": 3,
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Famericantower.gcs-web.com%2Fnews-releases%2Fnews-release-details%2Famerican-tower-corporation-reports-fourth-quarter-and-full-19&from=2024&to=2024&output=json&filter=statuscode%3A200&collapse=timestamp%3A4&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest",
+      "headers": {
+        "Date": "Sun, 04 Oct 2026 08:57:22 GMT",
+        "Content-Type": "application/json"
+      },
+      "bytes": 266,
+      "sha256": "c1194c4718d9dc8285c34c20ae3c6240911c95ee97612f2a5fd6b237743128d1",
+      "rows": [
+        [
+          "timestamp",
+          "original",
+          "statuscode",
+          "mimetype",
+          "digest"
+        ],
+        [
+          "20240416152836",
+          "https://americantower.gcs-web.com/news-releases/news-release-details/american-tower-corporation-reports-fourth-quarter-and-full-19",
+          "200",
+          "text/html",
+          "37VELQG2M4XXS7XKFD73QMTENSBDXIR4"
+        ]
+      ]
+    },
+    "feb_wire_cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.businesswire.com%2Fnews%2Fhome%2F20240227784442%2Fen%2FAmerican-Tower-Corporation-Reports-Fourth-Quarter-and-Full-Year-2023-Financial-Results&from=2024&to=2024&output=json&filter=statuscode%3A200&collapse=timestamp%3A4&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest",
+      "attempt": 5,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    "feb_sec_current": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+      "attempt": 6,
+      "status": 200,
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+      "headers": {
+        "Content-Type": "text/html",
+        "Last-Modified": "Tue, 27 Feb 2024 12:06:38 GMT",
+        "Date": "Sun, 04 Oct 2026 08:57:35 GMT"
+      },
+      "bytes": 1042841,
+      "sha256": "d3e0d2b13d9b4ff50cb104362855975b96dfc354804343f5bdfe1a9c842c3a62",
+      "normalized_text_sha256": "be75597d4e93fc1f7ffd7d2c3a3f7164f236aa5437e838100d625bb959c1abc7",
+      "normalized_text_chars": 65154
+    }
+  },
+  "captures": [
+    {
+      "target": "feb_sec",
+      "url": "https://web.archive.org/web/20240227130804id_/https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+      "attempt": 2,
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20240227130804id_/https://www.sec.gov/Archives/edgar/data/1053507/000105350724000009/pressreleaseq42023.htm",
+      "headers": {
+        "Date": "Sun, 04 Oct 2026 08:57:19 GMT",
+        "Content-Type": "text/html",
+        "x-archive-orig-date": "Tue, 27 Feb 2024 13:08:04 GMT",
+        "memento-datetime": "Tue, 27 Feb 2024 13:08:04 GMT"
+      },
+      "bytes": 1042733,
+      "sha256": "ddcdb59b56685f9251a06c56d41387e6ec6c353259e91fd15715bffef5553af5",
+      "normalized_text_sha256": "be75597d4e93fc1f7ffd7d2c3a3f7164f236aa5437e838100d625bb959c1abc7",
+      "normalized_text_chars": 65154,
+      "archive_timestamp_utc": "20240227130804"
+    },
+    {
+      "target": "feb_issuer",
+      "url": "https://web.archive.org/web/20240416152836id_/https://americantower.gcs-web.com/news-releases/news-release-details/american-tower-corporation-reports-fourth-quarter-and-full-19",
+      "attempt": 4,
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20240416152836id_/https://americantower.gcs-web.com/news-releases/news-release-details/american-tower-corporation-reports-fourth-quarter-and-full-19",
+      "headers": {
+        "Date": "Sun, 04 Oct 2026 08:57:23 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "x-archive-orig-date": "Tue, 16 Apr 2024 15:28:37 GMT",
+        "memento-datetime": "Tue, 16 Apr 2024 15:28:36 GMT"
+      },
+      "bytes": 62171,
+      "sha256": "b949bc5ba4d9e3b16a7ab299b2bfca8c6608217fcaaeaf28274d2347415abfaa",
+      "archive_timestamp_utc": "20240416152836"
+    }
+  ],
+  "comparisons": [
+    {
+      "capture": "feb_sec_capture",
+      "against": "feb_sec_current",
+      "normalized_exact_equal": true,
+      "ratio": 1.0,
+      "capture_chars": 65154,
+      "reference_chars": 65154
+    }
+  ],
+  "total_requests": 6,
+  "total_bytes_read": 2148236,
+  "utc_finished": "2026-10-04T08:57:50.447276+00:00"
+}
