@@ -1,0 +1,130 @@
+{
+  "schema_version": "informational-first-wording-pilot-checkpoint-v1",
+  "snapshot_at_utc": "2026-10-04T10:03:44Z",
+  "authority": "informational_handoff_only",
+  "canonical_mutation_performed": false,
+  "post_checkout": "canonical Post Benchmark checkout",
+  "candidate": "AMT:0001053507-24-000009:Item2.02",
+  "state": {
+    "exact_text_clock_role": "accepted_only_for_pinned_entire_text_and_source",
+    "public_by_upper_at_utc": "2024-02-27T13:08:04Z",
+    "registered_replay_latency_seconds": 60,
+    "first_public_at_utc": null,
+    "historical_received_at_utc": null,
+    "historical_processed_at_utc": null,
+    "token_safe_score": "verified_descriptive_only",
+    "base_parents": 716,
+    "complete_children": 717,
+    "subdivided_parents": 1,
+    "truncated_children": 0,
+    "classifier_context_equivalent": false,
+    "diagnostic_score": -0.04021022828585354,
+    "machine_descriptive_wording_score_accepted": true,
+    "wording_acceptance_scope": "machine_descriptive_complete_normalized_wording_only",
+    "economic_signal_accepted": false,
+    "model_historical_vintage_evidence_accepted": true,
+    "model_available_by_upper_at_utc": "2023-06-06T00:00:00Z",
+    "model_bound_kind": "conservative_consumer_inference_from_official_provider_dated_public_release_history",
+    "canonical_market_role_accepted": false,
+    "qualified_events": 0,
+    "canonical_economic_qualified": false,
+    "performance_reported": false
+  },
+  "verified_post_refs": [
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/source-public-bound-acceptance-v1.json",
+      "sha256": "0941a9ab57aeb811c54543bdd5019734b576643bb9c6fd55657a5e1085d7ff89"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/actual-2024-token-safe-input-v1/consumer-packet-v1.json",
+      "sha256": "5b2c4ae798e2d8c4b18a06f2bb898182a3ca92bce82db7cef4314fdfab32caea"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/actual-2024-token-safe-input-v1/transport-companion-v2.json",
+      "sha256": "b5e85b90cbd4b3523f10dc696374306efc9ad2158e48c881642e12838c493a5e"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/token-safe-intake-review-v1.json",
+      "sha256": "8e2e060dbe4b83ac2817ab15b6d4e65778556cc9634d58bfe36b1c6b100e7124"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/model-history-consumer-review-v2.json",
+      "sha256": "b6016d025f37487e82af506b90a4a987b74106adddc6af06b7ced15cfb9c49bc"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/model-public-release-input-v1/producer-independent-review-record-v1.json",
+      "sha256": "540b15d533af1c35ac919b52195098460e2dc1fe73bfa17aca617e1c51434b0e"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/model-vintage-acceptance-v1.json",
+      "sha256": "7d52de695124d5d45d0e22cca39fa35193b395e0f8cba1b292c2ff7d0a7a654f"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/wording-score-acceptance-v1.json",
+      "sha256": "bebaef04d01837d93a9935afdba94d61b825a2266e9c8b2a0138c3914a88b002"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/collection-verification-v3.json",
+      "sha256": "808cc50db9d78478eaeedf8461663e13c5638f6c537a29c21d75bd9f9b6b0f63"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/remote-final-v3/results/workflow-verification-v3/actual-score-verification.json",
+      "sha256": "dc3e4794eb411bba03325f01c85bec46f9bf7be768a6e1ffad497b2a36fd74a4"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/remote-final-v3/results/workflow-verification-v3/run.json",
+      "sha256": "dfb46d988aa18d6bc787c85ea5f37bac14261bdcec168d12f7697420964859c0"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/remote-final-v3/results/qualified-workflow-v1/report.json",
+      "sha256": "261177c3c7ce1570b2f2d1d16abbd445b57132207d09f9d81b241d5355f5fc62"
+    }
+  ],
+  "prior_run_refs": [
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/actual-2024-input-v1/consumer-packet-v1.json",
+      "sha256": "a07a12fb6389f662e7f889e7dab52a5f50a5d3f9f4d0831c93776b81fa590791",
+      "meaning": "old_excluded_truncated_packet"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/remote-final-v2/results/qualified-workflow-v1/report.json",
+      "sha256": "7bea540e8ba6302ba7c593edd5b295ef57f0d11cc0cb80b992d1336251035d7b",
+      "meaning": "prior_insufficient_replay_not_current_score"
+    },
+    {
+      "path": "data/processed/8k_validation/simple-wording-workflow-v1/remote-final-v2/results/workflow-verification-v1/run.json",
+      "sha256": "0466a1e42cb394361a66290a63fd2d4538b2d12e5ebfd603c9d5cba3901e9664",
+      "meaning": "prior_69_test_verification"
+    }
+  ],
+  "local_proof_ref": {
+    "path": "docs/team-data/public-bound-proof-2026-10-04.md",
+    "sha256": "1717a4d9a7a0e1c768194e193b265252aad446c4db855cf7f980624c9b0493a7"
+  },
+  "owner_reported_unread_producer_evidence": {
+    "path": "data/processed/wording-2024-token-safe-v1/public-model-evidence-v1/public-release-evidence-v1.json",
+    "sha256": "fdd907c02975199629ef9d80fa4af37b55407df0f391dde57250b7e698f00125",
+    "status": "reported_by_Benchmark_not_reverified_in_this_checkout"
+  },
+  "frozen_human_choices": {
+    "hypothetical_initial_usd": 1000000,
+    "long_and_short": true,
+    "equal_absolute_notional_across_eligible_positions": true,
+    "combined_gross_cap": 1.0,
+    "leverage": false,
+    "passive_cash_yield": 0,
+    "performance_policy": "qualified_inputs_first"
+  },
+  "next_owner_actions": [
+    "Post: bind accepted clock, model-vintage and machine-descriptive score roles to one actual packet and independent root approval",
+    "Industry/Post: qualify identity, actions, executable quotes, size, costs, borrow, collateral, dividends, whole-run exposure and account marks",
+    "Post: run qualified replay with matched baseline and cash, then report economics only if ledger qualifies"
+  ],
+  "publication": {
+    "scope": "prior_11_documentation_and_proof_files_only;_this_checkpoint_not_included",
+    "commit": "b9a55b4424da51affe6987bf95a07b1f4e4dbc46",
+    "audit_path": "docs/storage-audit/2026-10-04-proof-docs-publication.json",
+    "audit_sha256": "453c5b731fe9da04aa5cf9b3495bcb604985713303ae22e19ba6bd2f0a61d860",
+    "verified": true
+  }
+}
