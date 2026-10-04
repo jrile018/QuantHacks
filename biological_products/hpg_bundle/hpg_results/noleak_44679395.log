@@ -1,0 +1,148 @@
+host: c0710a-s3.ufhpc   job: 44679395   date: Sun Oct  4 06:20:43 AM EDT 2026
+Python 3.10.8
+WARNING: Ignoring invalid distribution -yopenssl (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -uggingface-hub (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ryptography (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -qdm (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -idgetsnbextension (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -f-xet (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ensorflow (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -yopenssl (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -uggingface-hub (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ryptography (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -qdm (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -idgetsnbextension (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -f-xet (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ensorflow (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -yopenssl (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -uggingface-hub (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -ryptography (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -qdm (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -idgetsnbextension (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -f-xet (/apps/python/3.10/lib/python3.10/site-packages)
+    WARNING: Ignoring invalid distribution -ensorflow (/apps/python/3.10/lib/python3.10/site-packages)
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tedana 24.0.2 requires bokeh<=3.5.2,>=1.0.0, but you have bokeh 3.7.3 which is incompatible.
+tedana 24.0.2 requires scikit-learn<=1.5.2,>=0.21, but you have scikit-learn 1.7.2 which is incompatible.
+econml 0.12.0 requires shap<0.40.0,>=0.38.1, but you have shap 0.41.0 which is incompatible.
+cnvkit 0.9.9 requires joblib<1.0, but you have joblib 1.3.2 which is incompatible.
+
+[notice] A new release of pip available: 22.2.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+scikit-learn pinned to 1.7.2
+scikit-learn 1.7.2 | pandas 2.0.3 | numpy 1.26.2 | matplotlib 3.6.3
+code: 88a52022   folder: /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products
+
+################ 1. REAL PRICES + OFFERING MODEL WITHOUT THE LEAK (script 44) ################
+rows 89150 | rows where the stored price was not the real price: 9224 (10.3%) in 32 tickers
+stored market cap vs rebuilt: same within 10% in 91.9% of rows, off by more than 2x in 6.4%
+
+OLD (with the leak, 7 day gap, filter on the stored price): AUC 0.690 | hit rate in traded slice 14.1% vs base 2.1%
+  trades 188 | real close under $1 on the signal day: 31
+  before costs, all trades, 5 day hold
+    in sample     n 104  avg  +2.00%  median  +4.63%  win  64%  Sharpe +0.33  95% [-0.75, +3.24]
+    out of sample n  78  avg  +4.95%  median  +4.15%  win  63%  Sharpe +2.10  95% [+0.55, +3.77]
+  before costs, real close at least $1 on the signal day
+    in sample     n  90  avg  +5.97%  median  +4.28%  win  64%  Sharpe +2.32  95% [+0.92, +3.66]
+    out of sample n  61  avg  +3.09%  median  +2.43%  win  59%  Sharpe +1.80  95% [+0.03, +3.64]
+
+NEW (no leak, 12 day gap, filter on the real price): AUC 0.690 | hit rate in traded slice 11.7% vs base 2.0%
+  2025: flagged company-days 250, hit rate 11.2%
+  2026: flagged company-days 187, hit rate 12.3%
+  before costs, 1 day hold, trades 301
+    in sample     n 172  avg  +0.34%  median  +1.24%  win  58%  Sharpe +0.66  95% [-1.59, +3.30]
+    out of sample n 116  avg  +1.26%  median  +0.96%  win  57%  Sharpe +2.69  95% [-0.22, +5.81]
+  before costs, 3 day hold, trades 225
+    in sample     n 126  avg  +2.49%  median  +0.30%  win  53%  Sharpe +1.48  95% [-0.07, +2.92]
+    out of sample n  89  avg  +2.68%  median  +1.74%  win  61%  Sharpe +1.85  95% [-0.07, +3.99]
+  before costs, 5 day hold, trades 198
+    in sample     n 110  avg  +3.08%  median  +0.87%  win  53%  Sharpe +1.22  95% [-0.11, +2.43]
+    out of sample n  78  avg  +4.64%  median  +3.47%  win  65%  Sharpe +3.11  95% [+1.63, +4.76]
+  before costs, 10 day hold, trades 166
+    in sample     n  93  avg  +5.15%  median  +6.00%  win  58%  Sharpe +0.98  95% [-0.03, +2.21]
+    out of sample n  65  avg  +9.34%  median  +7.73%  win  68%  Sharpe +2.45  95% [+1.32, +3.72]
+  CONTROL: random liquid company-days, same count, 5 day hold
+    in sample     n 229  avg  +1.87%  median  +1.97%  win  62%  Sharpe +1.22  95% [+0.27, +2.30]
+    out of sample n 168  avg  +0.59%  median  +1.02%  win  54%  Sharpe +0.43  95% [-0.62, +1.69]
+
+5 day trades 198 | already priced from real quotes: 71 | new, need quotes: 127
+  measured cost on the priced ones: mean 1.49%, median 1.01% (the unpriced ones use the old median 1.29% until script 22 is rerun)
+  after costs (bid/ask + 30%/yr borrow), 5 day hold
+    in sample     n 110  avg  +1.11%  median  -1.17%  win  49%  Sharpe +0.44  95% [-0.90, +1.72]
+    out of sample n  78  avg  +2.68%  median  +1.15%  win  54%  Sharpe +1.78  95% [+0.22, +3.34]
+  after costs, only the trades with measured quotes
+    in sample     n  40  avg  -0.25%  median  -1.17%  win  48%  Sharpe -0.14  95% [-2.41, +2.14]
+    out of sample n  28  avg  +2.97%  median  +0.80%  win  54%  Sharpe +1.70  95% [-0.91, +4.84]
+
+saved fds_realprice.csv, offer_signal_slice_v2.csv, offer_trades_v2.csv
+
+################ 2. JOIN THE TRADES WITH THE REAL QUOTES (script 45) ################
+trades in the leak-free list 198 | quotes pulled 198 | all four quotes found 197 | not pulled yet 0 | no quote found 1
+check: real entry quote vs real close the day before, median ratio 1.000, more than 2x apart in 2 trades
+entry quote under $1 (real close the day before was at least $1): 4 trades
+cost per trade: mean 1.54%  median 1.05%  | 2025 mean 1.48%  2026 mean 1.61%
+saved offer_strategy_trades_v2.csv 197 trades
+
+################ 3. STANDARD RESULTS: P&L, win rate, Sharpe, 95% interval, equity curves (script 42) ################
+Matplotlib is building the font cache; this may take a moment.
+STANDARD RESULTS (per trade; same windows and same formula for every strategy)
+                                    strategy                    engine                                costs                     window  trades  total_pnl_pct  avg_trade_pct  median_trade_pct  win_rate  sharpe  ci_lo  ci_hi
+Offering short: short stocks the model flags              our backtest         real bid/ask + 30%/yr borrow        in sample 2024-2025     109         106.72           0.98             -1.23      0.47    0.38  -1.02   1.61
+Offering short: short stocks the model flags              our backtest         real bid/ask + 30%/yr borrow out of sample Jan-Aug 2026      78         186.22           2.39              1.33      0.55    1.59   0.07   3.21
+Offering short: short stocks the model flags              our backtest                                 none        in sample 2024-2025     109         333.01           3.06              0.65      0.52    1.20  -0.11   2.43
+Offering short: short stocks the model flags              our backtest                                 none out of sample Jan-Aug 2026      78         361.99           4.64              3.47      0.65    3.11   1.62   4.71
+Offering short, liquid subset: entry bid/ask              our backtest         real bid/ask + 30%/yr borrow        in sample 2024-2025      73         238.71           3.27              2.81      0.55    1.14  -0.48   2.64
+Offering short, liquid subset: entry bid/ask              our backtest         real bid/ask + 30%/yr borrow out of sample Jan-Aug 2026      52         192.53           3.70              2.20      0.58    2.73   0.85   4.72
+Trial registry stage: short while building a              our backtest        2% round trip + 15%/yr borrow        in sample 2024-2025     184         484.07           2.63              4.11      0.55    0.11  -0.20   0.40
+Trial registry stage: short while building a              our backtest        2% round trip + 15%/yr borrow out of sample Jan-Aug 2026      68        -368.68          -5.42             -4.94      0.44   -0.30  -0.78   0.18
+Trial registry stage: short while building a              our backtest                                 none        in sample 2024-2025     184        1261.27           6.85              7.87      0.58    0.30   0.01   0.59
+Trial registry stage: short while building a              our backtest                                 none out of sample Jan-Aug 2026      68        -111.84          -1.64             -1.75      0.47   -0.09  -0.58   0.43
+  Buy after an offering 8-K (stock, 10 days) team engine on HiPerGator none (engine uses last trade prices)        in sample 2024-2025      35         207.84           5.94              0.18      0.51    1.17  -0.48   2.31
+  Buy after an offering 8-K (stock, 10 days) team engine on HiPerGator none (engine uses last trade prices) out of sample Jan-Aug 2026      15         -40.31          -2.69             -5.89      0.20   -0.58  -6.90   1.45
+Offering short: the same model signal, price team engine on HiPerGator none (engine uses last trade prices)        in sample 2024-2025      10          63.94           6.39             -1.95      0.40    2.04  -5.62   4.81
+Offering short: the same model signal, price team engine on HiPerGator none (engine uses last trade prices) out of sample Jan-Aug 2026      10           8.97           0.90             -0.01      0.50    0.46  -4.47   4.98
+
+PORTFOLIO VERSION (daily profit and loss, our own backtests, after costs)
+                     strategy                     window  trades  days  total_return_pct  annual_return_pct  vol_pct  sharpe  ci_lo  ci_hi  max_drawdown_pct
+               Offering short        in sample 2024-2025     109   250             20.13              20.31    39.80    0.66  -1.16   2.54            -23.82
+Offering short, liquid subset        in sample 2024-2025      73   250             67.75              68.44    34.69    1.68  -0.54   3.80            -20.00
+               Offering short out of sample Jan-Aug 2026      78   170             33.23              53.01    33.80    1.43  -0.68   4.00            -21.46
+Offering short, liquid subset out of sample Jan-Aug 2026      52   165             41.31              69.56    24.24    2.30   0.19   4.46            -10.19
+         Trial registry stage        in sample 2024-2025     184   552             12.25               5.42    21.24    0.36  -1.15   2.16            -26.46
+         Trial registry stage out of sample Jan-Aug 2026      68   189             -9.47             -12.42    25.33   -0.40  -2.38   0.86            -17.26
+
+written to /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/reports
+
+################ 4. DOES HIPERGATOR MATCH THE LAPTOP RUN? (script 46) ################
+trade list: earlier run 198 trades, this run 198 trades, the same in both 198 | largest difference in a trade result 0.00e+00
+
+PER TRADE TABLE, earlier run vs this run
+                          strategy        costs        window  trades earlier  trades now  avg_trade_pct earlier  avg_trade_pct now  win_rate earlier  win_rate now  sharpe earlier  sharpe now  ci_lo earlier  ci_lo now  ci_hi earlier  ci_hi now
+Offering short: short stocks the m real bid/ask in sample 202             109         109                   0.98               0.98              0.47          0.47            0.38        0.38          -1.02      -1.02           1.61       1.61
+Offering short: short stocks the m real bid/ask out of sample              78          78                   2.39               2.39              0.55          0.55            1.59        1.59           0.07       0.07           3.21       3.21
+Offering short: short stocks the m         none in sample 202             109         109                   3.06               3.06              0.52          0.52            1.20        1.20          -0.11      -0.11           2.43       2.43
+Offering short: short stocks the m         none out of sample              78          78                   4.64               4.64              0.65          0.65            3.11        3.11           1.62       1.62           4.71       4.71
+Offering short, liquid subset: ent real bid/ask in sample 202              73          73                   3.27               3.27              0.55          0.55            1.14        1.14          -0.48      -0.48           2.64       2.64
+Offering short, liquid subset: ent real bid/ask out of sample              52          52                   3.70               3.70              0.58          0.58            2.73        2.73           0.85       0.85           4.72       4.72
+Trial registry stage: short while  2% round tri in sample 202             184         184                   2.63               2.63              0.55          0.55            0.11        0.11          -0.20      -0.20           0.40       0.40
+Trial registry stage: short while  2% round tri out of sample              68          68                  -5.42              -5.42              0.44          0.44           -0.30       -0.30          -0.78      -0.78           0.18       0.18
+Trial registry stage: short while          none in sample 202             184         184                   6.85               6.85              0.58          0.58            0.30        0.30           0.01       0.01           0.59       0.59
+Trial registry stage: short while          none out of sample              68          68                  -1.64              -1.64              0.47          0.47           -0.09       -0.09          -0.58      -0.58           0.43       0.43
+Buy after an offering 8-K (stock,  none (engine in sample 202              35          35                   5.94               5.94              0.51          0.51            1.17        1.17          -0.48      -0.48           2.31       2.31
+Buy after an offering 8-K (stock,  none (engine out of sample              15          15                  -2.69              -2.69              0.20          0.20           -0.58       -0.58          -6.90      -6.90           1.45       1.45
+Offering short: the same model sig none (engine in sample 202              10          10                   6.39               6.39              0.40          0.40            2.04        2.04          -5.62      -5.62           4.81       4.81
+Offering short: the same model sig none (engine out of sample              10          10                   0.90               0.90              0.50          0.50            0.46        0.46          -4.47      -4.47           4.98       4.98
+
+PORTFOLIO TABLE, earlier run vs this run
+                     strategy        window  trades earlier  trades now  return% earlier  return% now  Sharpe earlier  Sharpe now  drawdown% earlier  drawdown% now
+               Offering short in sample 202             109         109            20.13        20.13            0.66        0.66             -23.82         -23.82
+Offering short, liquid subset in sample 202              73          73            67.75        67.75            1.68        1.68             -20.00         -20.00
+               Offering short out of sample              78          78            33.23        33.23            1.43        1.43             -21.46         -21.46
+Offering short, liquid subset out of sample              52          52            41.31        41.31            2.30        2.30             -10.19         -10.19
+         Trial registry stage in sample 202             184         184            12.25        12.25            0.36        0.36             -26.46         -26.46
+         Trial registry stage out of sample              68          68            -9.47        -9.47           -0.40       -0.40             -17.26         -17.26
+
+largest difference: trades 0 | per trade Sharpe 0.0000 | portfolio Sharpe 0.0000 | interval ends 0.0000
+VERDICT: MATCH. This run reproduces the earlier numbers (same trades, same Sharpe).
+
+finished: Sun Oct  4 06:22:10 AM EDT 2026

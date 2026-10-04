@@ -17,7 +17,7 @@ A second, independent check of the first version of this document confirmed the 
 5. **Training gap** raised from 7 to 12 days, so no training label reaches the test quarter.
 6. **How much the fix changed.** Before costs the first version showed Sharpe 2.25 in sample and 1.83 out of sample. Corrected: 1.20 and 3.11. Only 71 of the 198 trades are the same as before. The strategy trades 1 to 2 names a day, so a small change in the model swaps most of the names. This is a sign of fragility.
 7. **Trial registry (still rejected).** Three fixes in script 42: the "no 8-K" filter now looks back only (event day and 2 days before), market cap and price use the real values, and the per trade result is plain buy and hold (the old formula was wrong when a short lost more than 100% in a day). Windows are now assigned by the usable date. Result: Sharpe 0.11 in sample, -0.30 out of sample.
-8. **Where things ran.** The HiPerGator jobs in section 6 ran the first version and the team engine. The corrected offering-short numbers (scripts 44, 45, 42) were run on a laptop after the fix. The team engine runs do not use our price file and are not affected by the leak. The "our signal priced by the team engine" run used the first version's signal days and was not rerun.
+8. **Where things ran.** All backtests ran on HiPerGator (section 6). Jobs 44673323 to 44675692 ran the first version and the team engine. Job 44679395 reran the corrected version (scripts 44, 45, 42) from this branch at commit 88a52022, and script 46 confirmed it matches the laptop run exactly: the same 198 trades and the same Sharpe in every row. Only the downloads (split history and real quotes, scripts 43 and 22) were done on a laptop. The team engine runs do not use our price file and are not affected by the leak. The "our signal priced by the team engine" run used the first version's signal days and was not rerun.
 
 ## 1. Bottom line
 
@@ -25,7 +25,7 @@ A second, independent check of the first version of this document confirmed the 
 2. **Offering short, before costs:** our model flags stocks likely to announce a stock offering. Shorting them (hedged with XBI, 5 days) has a Sharpe of 1.20 in sample (-0.11 to 2.43) and 3.11 out of sample (1.62 to 4.71). The in-sample interval includes zero.
 3. **After real trading costs and a 30% borrow fee:** Sharpe 0.38 in sample (-1.02 to 1.61) and 1.59 out of sample (0.07 to 3.21). As a daily portfolio: 0.66 and 1.43, both intervals include zero. **In sample does not match out of sample, and in sample is not different from zero, so we do not claim a tradable edge.** The honest label is "promising in 2026, not confirmed in 2025".
 4. **Two other strategies were tested and rejected** by the same rule (in sample must match out of sample): the trial registry strategy and buying after an offering filing.
-5. **Where it ran:** the first version and the team engine (`run_all.py` code at PR #4, unchanged) ran on HiPerGator (section 6). The corrected numbers were rerun locally after our check found the leak (section 0).
+5. **Where it ran:** HiPerGator (section 6). First the first version and the team engine (`run_all.py` code at PR #4, unchanged), then the corrected version in job 44679395. Every number in sections 1 to 5 for our own backtests is from that job.
 
 ## 2. The standard used for every result
 
@@ -146,9 +146,10 @@ Offering short uses 20% of capital per trade (about 2 trades open at a time). Tr
 | 44673323 | c0706a-s7 | Our backtests: offering short, trial registry (both halves) | `hpg_bundle/hpg_results/backtest_44673323.log` |
 | 44673985 | c0706a-s3 | Team engine smoke test, 8 events | `lead_backtest_44673985.log` |
 | 44674111 | c0702a-s7 | Team engine, `public_offering`, both windows | `lead_backtest_44674111.log` |
-| 44675692 | c0704a-s1 | Team engine priced on our model's 155 signal days | `lead_signal_44675692.log` |
+| 44675692 | c0704a-s1 | Team engine priced on our model's 155 signal days (first version) | `lead_signal_44675692.log` |
+| 44679395 | c0710a-s3 | **Corrected run:** real prices, offering model without the leak, standard tables (scripts 44, 45, 42), then a comparison with the laptop run (script 46: MATCH) | `noleak_44679395.log` |
 
-The HiPerGator numbers for our own backtests matched the local run of the first version exactly. These jobs ran before the leak fix. The corrected offering-short numbers in sections 1 to 5 come from scripts 44, 45 and 42 run locally afterwards (section 0, item 8).
+The first four jobs ran before the leak fix. Job 44679395 ran the corrected version straight from this branch (commit 88a52022, Python 3.10.8, scikit-learn 1.7.2, pandas 2.0.3, numpy 1.26.2) and reproduces the laptop numbers exactly: the same 198 trades, largest Sharpe difference 0.0000. The numbers in sections 1 to 5 for our own backtests are from that job.
 All logs and engine output folders are in `hpg_bundle/hpg_results/`.
 
 ## 7. The dataset
@@ -186,7 +187,9 @@ python 39_strategy_audit.py --set holdout --confirm_holdout
 python 42_standard_results.py                         # the standard tables and charts in this document
 ```
 
-On HiPerGator: copy `hpg_bundle/` to `~/qh_bio`, then `sbatch run_backtest.sbatch` (our backtests), `sbatch run_lead_backtest.sbatch` (team engine, needs `MASSIVE_API_KEY` exported in the shell first), `sbatch run_lead_signal.sbatch` (our signal through the team engine).
+Corrected run on HiPerGator: check out this branch, `cd biological_products/hpg_bundle`, `sbatch run_noleak.sbatch` (about 2 minutes, no API key needed).
+
+First version on HiPerGator: copy `hpg_bundle/` to `~/qh_bio`, then `sbatch run_backtest.sbatch` (our backtests), `sbatch run_lead_backtest.sbatch` (team engine, needs `MASSIVE_API_KEY` exported in the shell first), `sbatch run_lead_signal.sbatch` (our signal through the team engine).
 
 ## 9. Other ideas tested and dropped
 
