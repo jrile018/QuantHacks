@@ -32,7 +32,7 @@ The lead's audit found nine problems (A1 to A9). Status of each:
 3. **Before costs the flagged stocks fell more than matched peers, in both windows.** Per trade Sharpe 1.18 in sample and 1.23 out of sample (quote mid to mid, 5 day hold, XBI hedge). Paired against same-day controls of the same size, runway and liquidity (83 of 193 signals have a match): pick minus control +6.6% per trade in sample (34 pairs, 95% interval 0.00 to 4.36 in Sharpe terms) and +4.5% out of sample (45 pairs), before costs, bar prices. Random eligible names made +2.2% and +0.6%. This is a comparison, not a causal claim, and it is before costs.
 4. **After real bid/ask fills and a 30% yearly borrow fee there is nothing left.** Per trade Sharpe 0.38 and -0.07. In the cash ledger (fixed shares, 20% of NAV per trade, assumed borrow, no fill-size evidence): return +3.6% and +3.3% over the two windows, Sharpe 0.33 and 0.30, every interval includes zero, drawdowns of -26% and -35%. **No tradable edge is claimed.**
 5. **Two other strategies were tested and rejected**: the trial registry strategy (Sharpe -0.13 and -0.43) and buying after an offering 8-K through the team engine (1.86 on 12 events, 0.11 on 21).
-6. **Where it ran.** The dataset build ran in a cloud container (pandas 2.3.3, the laptop could not run it in time), the model, quotes and tables on a laptop, and the whole chain again as a frozen job on HiPerGator from this branch (job TBD_JOB, section 6), which compares its outputs file by file with the committed laptop outputs.
+6. **Where it ran.** The dataset build ran in a cloud container (pandas 2.3.3, the laptop could not run it in time), the model, quotes and tables on a laptop, and the whole chain again as a frozen job on HiPerGator from this branch (job 44688161, section 6, VERDICT: MATCH), which compares its outputs file by file with the committed laptop outputs.
 
 ## 2. The standard used for every result
 
@@ -136,9 +136,9 @@ On wording, following the audit: different point estimates with overlapping inte
 | 44674111 | c0702a-s7 | Team engine, `public_offering`, our universe | `lead_backtest_44674111.log` |
 | 44675692 | c0704a-s1 | Team engine on the first-version signal days | `lead_signal_44675692.log` |
 | 44679395 | c0710a-s3 | Second version (split fix only), scripts 44, 45, 42; matched the laptop with the OLD checker (A9) | `noleak_44679395.log` |
-| TBD_JOB | TBD_NODE | **Version 3 frozen run**: scripts 48, 45, 42, 47, 49 (self test then real run), strict checker 46 with fixtures; input and output hashes in the log and in `reports/run_manifest.json` | `v3_TBD_JOB.log` |
+| 44688161 | c0709a-s3 | **Version 3 frozen run** (commit b3a90f3b): scripts 48, 45, 42, 47, 49 (self test then real run), strict checker 46 with fixtures; input and output hashes in the log and in `reports/run_manifest.json` | `v3_44688161.log` |
 
-The version 3 job copies the committed laptop outputs as its reference before running, prints their hashes, reruns everything from the committed inputs, and fails unless every row and value of the compared files agrees within 1e-6. The quotes (`stock_trades_real_v3.csv`, Massive API) and split history were downloaded on a laptop and are committed inputs; the team engine outputs are reused from jobs 44674111 and 44675692.
+The version 3 job copies the committed laptop outputs as its reference before running, prints their hashes, reruns everything from the committed inputs (model fit, quote join, tables, audit, ledger self test and ledger), and fails unless every row and value of the compared files agrees within 1e-6 (bootstrap interval columns within 0.25). Job 44688161 ran 08:39 to 08:40 EDT on 2026-10-04 and reported MATCH; its log holds the input and output SHA-256 hashes. The quotes (`stock_trades_real_v3.csv`, Massive API) and split history were downloaded on a laptop and are committed inputs; the team engine outputs are reused from jobs 44674111 and 44675692.
 
 ## 7. The dataset (version 2)
 
