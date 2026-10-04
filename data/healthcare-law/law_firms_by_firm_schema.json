@@ -1,0 +1,162 @@
+{
+  "grain": "law_firm",
+  "description": "One row per law firm across pharma+medtech with universe flags",
+  "n_rows": 5022,
+  "n_columns": 25,
+  "generated_at": "2026-10-04T01:26:34.984106+00:00",
+  "url_columns": [
+    "example_case_url"
+  ],
+  "fields": [
+    {
+      "name": "law_firm",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_cases",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_companies",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_in_window",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_resolved",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_with_outcome",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_with_duration",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "median_duration_days",
+      "dtype": "number",
+      "is_url": false,
+      "non_null": 1134
+    },
+    {
+      "name": "mean_duration_days",
+      "dtype": "number",
+      "is_url": false,
+      "non_null": 1134
+    },
+    {
+      "name": "outcome_mix",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5020
+    },
+    {
+      "name": "sources",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5020
+    },
+    {
+      "name": "jurisdictions",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5020
+    },
+    {
+      "name": "courts",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5020
+    },
+    {
+      "name": "tickers",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "link_origins",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5020
+    },
+    {
+      "name": "n_link_records",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "example_case_name",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5020
+    },
+    {
+      "name": "example_case_url",
+      "dtype": "string",
+      "is_url": true,
+      "non_null": 5020
+    },
+    {
+      "name": "in_pharma",
+      "dtype": "boolean",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "in_medtech",
+      "dtype": "boolean",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "universes",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_cases_pharma",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "n_cases_medtech",
+      "dtype": "integer",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "pharma_tickers",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5022
+    },
+    {
+      "name": "medtech_tickers",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 5022
+    }
+  ]
+}

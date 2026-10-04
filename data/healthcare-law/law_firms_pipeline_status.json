@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-10-03",
+  "n_pharma_company_cases": 1511,
+  "n_medtech_company_cases": 962,
+  "n_pharma_multi": 914,
+  "n_medtech_multi": 0,
+  "n_consolidated_cases": 1689,
+  "n_firms": 5022,
+  "n_firms_pharma_only": 1477,
+  "n_firms_medtech_only": 3021,
+  "n_firms_both_universes": 524,
+  "n_pharma_profile": 100,
+  "n_pharma_patents": 4980,
+  "n_pharma_links": 2463,
+  "n_medtech_links": 4987,
+  "outputs": {
+    "healthcare_law": "C:\\Users\\ackjl\\OneDrive\\Documents\\GitHub\\QuantHacks\\data\\healthcare-law\\law_firms_by_firm.csv",
+    "pharma": "C:\\Users\\ackjl\\OneDrive\\Documents\\GitHub\\QuantHacks\\data\\pharma-data\\edgar_law_firms_by_firm.csv",
+    "medtech": "C:\\Users\\ackjl\\OneDrive\\Documents\\GitHub\\QuantHacks\\data\\medtech-data\\medtech_law_firm_catalog_consolidated.csv"
+  }
+}

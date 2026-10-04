@@ -1,0 +1,237 @@
+{
+  "grain": "case / docket row",
+  "description": "Pharma + medtech firm cases with outcomes, duration, universe",
+  "n_rows": 1689,
+  "n_columns": 37,
+  "generated_at": "2026-10-04T01:26:34.828836+00:00",
+  "url_columns": [
+    "case_url",
+    "source_url",
+    "courtlistener_url",
+    "justia_url"
+  ],
+  "fields": [
+    {
+      "name": "ticker",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "query_name",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "case_name",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "court",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1208
+    },
+    {
+      "name": "court_id",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 682
+    },
+    {
+      "name": "docket_number",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 698
+    },
+    {
+      "name": "filing_date",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1118
+    },
+    {
+      "name": "termination_date",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1068
+    },
+    {
+      "name": "suit_nature",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 528
+    },
+    {
+      "name": "cause",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 488
+    },
+    {
+      "name": "jurisdiction_type",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 475
+    },
+    {
+      "name": "parties",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 671
+    },
+    {
+      "name": "attorneys",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 559
+    },
+    {
+      "name": "law_firms",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1479
+    },
+    {
+      "name": "law_firm_primary",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1479
+    },
+    {
+      "name": "docket_id",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 682
+    },
+    {
+      "name": "case_url",
+      "dtype": "string",
+      "is_url": true,
+      "non_null": 1689
+    },
+    {
+      "name": "source",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "in_study_window",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "raw_status",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 16
+    },
+    {
+      "name": "disposition_text",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1398
+    },
+    {
+      "name": "source_url",
+      "dtype": "string",
+      "is_url": true,
+      "non_null": 1689
+    },
+    {
+      "name": "jurisdiction_state",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1681
+    },
+    {
+      "name": "outcome_category",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "outcome_rule",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "resolution_date",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "duration_days",
+      "dtype": "number",
+      "is_url": false,
+      "non_null": 217
+    },
+    {
+      "name": "universe",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "law_firm_or_party",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 16
+    },
+    {
+      "name": "decision_date",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 16
+    },
+    {
+      "name": "merge_confidence",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 420
+    },
+    {
+      "name": "note",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 62
+    },
+    {
+      "name": "courtlistener_url",
+      "dtype": "string",
+      "is_url": true,
+      "non_null": 1689
+    },
+    {
+      "name": "justia_url",
+      "dtype": "string",
+      "is_url": true,
+      "non_null": 1689
+    },
+    {
+      "name": "url",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "doc_id",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    },
+    {
+      "name": "linked_tickers",
+      "dtype": "string",
+      "is_url": false,
+      "non_null": 1689
+    }
+  ]
+}
