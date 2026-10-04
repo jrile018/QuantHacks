@@ -9,3 +9,8 @@ data/processed/
 .venv/
 .ipynb_checkpoints/
 __pycache__/
+
+# Ignore all top-level local files and folders except commodities/
+/*
+!/commodities/
+!/.gitignore
