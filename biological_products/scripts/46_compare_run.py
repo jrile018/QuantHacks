@@ -14,7 +14,9 @@ Regression fixtures:  python 46_compare_run.py --fixtures   (two cases that fool
 """
 import os, sys, argparse, hashlib, json
 import numpy as np, pandas as pd
-ap = argparse.ArgumentParser(); ap.add_argument('--ref'); ap.add_argument('--tol', type=float, default=1e-6); ap.add_argument('--fixtures', action='store_true'); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('--ref'); ap.add_argument('--tol', type=float, default=1e-6)
+ap.add_argument('--boot_tol', type=float, default=0.25, help='tolerance for bootstrap interval columns (ci_*, cib_*): they are random-sample estimates and the random stream can differ between numpy versions')
+ap.add_argument('--fixtures', action='store_true'); a = ap.parse_args()
 here = os.path.dirname(os.path.abspath(__file__)); REP = os.path.join(here, '..', 'reports'); FDS = os.path.join(here, '..', 'data', 'fds'); RAW = os.path.join(here, '..', 'data', 'raw')
 KEYS = {'standard_results.csv': ['strategy', 'engine', 'costs', 'window'], 'standard_portfolio.csv': ['strategy', 'window'], 'ledger_daily.csv': ['date'],
         'ledger_trades.csv': ['tk', 'signal'], 'ledger_summary.csv': ['window'], 'offer_trades_v3.csv': ['cik', 'signal'], 'offer_trades_v2.csv': ['cik', 'signal'],
@@ -41,11 +43,14 @@ def compare(ref_df, new_df, keys, tol, name):
             xn, yn = x.isna().values, y.isna().values
             if (xn != yn).any(): probs.append(f'{name}.{c}: NaN pattern differs in {int((xn != yn).sum())} rows'); continue
             xv, yv = x.values[~xn].astype(float), y.values[~yn].astype(float)
-            bad = ~np.isclose(xv, yv, rtol=tol, atol=tol)
-            if bad.any(): probs.append(f'{name}.{c}: {int(bad.sum())} values differ, max abs diff {np.abs(xv - yv)[bad].max():.3g}')
+            t_ = BOOT_TOL if (c.startswith('ci_') or c.startswith('cib_')) else tol
+            bad = ~np.isclose(xv, yv, rtol=t_, atol=t_)
+            if bad.any(): probs.append(f'{name}.{c}: {int(bad.sum())} values differ, max abs diff {np.abs(xv - yv)[bad].max():.3g}' + (' (bootstrap column, tolerance %.2f)' % t_ if t_ != tol else ''))
         else:
             if (x.astype(str).values != y.astype(str).values).any(): probs.append(f'{name}.{c}: text values differ')
     return probs
+
+BOOT_TOL = a.boot_tol
 
 def sha(path):
     h = hashlib.sha256()
@@ -91,4 +96,4 @@ json.dump(manifest, open(os.path.join(REP, 'run_manifest.json'), 'w'), indent=1,
 print('compared files:', compared); print('input hashes written to reports/run_manifest.json')
 if problems:
     print('VERDICT: DIFFERENT. Problems:'); [print('  -', p) for p in problems[:40]]; sys.exit(1)
-print('VERDICT: MATCH. Every row and every numeric value of the compared files agrees with the reference within', a.tol); sys.exit(0)
+print(f'VERDICT: MATCH. Every row and every numeric value of the compared files agrees with the reference within {a.tol} (bootstrap interval columns within {a.boot_tol}, since they are random-sample estimates)'); sys.exit(0)

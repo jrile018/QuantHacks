@@ -2,7 +2,7 @@
 """
 16_build_fds.py  -  point-in-time company snapshot (FDS) for SIC 2836 biologics.
 
-One row per (company, market day). Decision clock = market close (21:00 UTC rule).
+One row per (company, market day). Decision clock = market close (16:00 America/New_York).
 Rule for anything that only has a DATE (SEC filings): usable from the NEXT calendar day.
 Timestamped items (news) are usable if published before 16:00 America/New_York that day (v2 fix: was a fixed 21:00 UTC, wrong in summer).
 v2 (2026-10-04): real (unadjusted) prices and market cap from the split history; trial features from monthly AACT registry snapshots;

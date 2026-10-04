@@ -7,7 +7,7 @@ Point in time company snapshot. One row per company per market day. 89,151 rows,
 ## Files (data/fds/)
 | File | What it is |
 | --- | --- |
-| fds_features.csv | The matrix. Numbers only. 155 feature columns (v2) plus `cik` and `date` (YYYYMMDD). |
+| fds_features.csv | The matrix. Numbers only. 156 feature columns (v2) plus `cik` and `date` (YYYYMMDD). |
 | fds_missing.csv | Same shape. Reason code for every cell (see fds_lookup_codes.csv). |
 | fds_labels.csv | Outcomes (next returns, will an 8-K come). Kept separate so labels can never leak into features. |
 | fds_dictionary.csv | Every column: block, unit, definition. |
@@ -27,7 +27,7 @@ Rebuild: `python scripts/16_build_fds.py` then `python scripts/16b_write_fds.py`
 7. **Labels in their own file.** Features at day t, outcomes after t.
 
 ## Blocks
-financials (balance, flows, derived: runway, cash vs market cap, dilution), market (returns, volatility, volume, distance from high, XBI/SPY state), filings (counts and days-since by form type, 8-K item counts), 8-K category history (Massive categories grouped: trial, regulatory, offering, deal, management, listing, earnings, presentation, debt), insider (Form 4 buys and sells), news (volume, sentiment, spike), trials (leak-safe subset), regulatory (FDA action dates already mentioned in earlier 8-Ks, openFDA approvals), calendar.
+financials (balance, flows, derived: runway, cash vs market cap, dilution), market (returns, volatility, volume, distance from high, XBI/SPY state), filings (counts and days-since by form type, 8-K item counts), 8-K category history (Massive categories grouped: trial, regulatory, offering, deal, management, listing, earnings, presentation, debt), insider (Form 4 buys and sells), news (volume, sentiment, spike), trials (monthly registry snapshot subset), regulatory (FDA action dates already mentioned in earlier 8-Ks, openFDA approvals), calendar.
 
 ## What was left out on purpose
 - **ClinicalTrials.gov forward-looking fields.** v2 trial features come from the monthly AACT snapshot available before each day (`tr_snapshot_age_days` = how old that view is). Planned completion dates are not used as features; a trial counts as completed only when the snapshot marks the completion ACTUAL. Trial-to-company mapping uses the Oct 2026 sponsor list (a trial whose sponsor changed is attributed to today's owner).

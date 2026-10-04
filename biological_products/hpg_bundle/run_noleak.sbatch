@@ -37,5 +37,5 @@ python -W ignore 49_ledger.py --trades offer_strategy_trades_v3.csv --quotes sto
 echo; echo "################ 6. STRICT COMPARISON WITH THE COMMITTED LAPTOP RUN (script 46) ################"
 python -W ignore 46_compare_run.py --fixtures
 python -W ignore 46_compare_run.py --ref "$REF"
-echo; echo "output hashes (sha256):"; sha256sum ../reports/standard_results.csv ../reports/standard_portfolio.csv ../reports/ledger_daily.csv ../reports/ledger_trades.csv ../data/fds/offer_trades_v3.csv ../data/fds/offer_strategy_trades_v3.csv | sed 's/^/  /'
+echo; echo "output hashes (sha256):"; sha256sum ../reports/standard_results.csv ../reports/standard_portfolio.csv ../reports/ledger_daily.csv ../reports/ledger_trades.csv ../reports/ledger_summary.csv ../data/fds/offer_trades_v3.csv ../data/fds/offer_strategy_trades_v3.csv | sed 's/^/  /'
 echo; echo "finished OK: $(date)"
