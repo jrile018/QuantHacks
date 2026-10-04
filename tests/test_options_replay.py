@@ -43,5 +43,20 @@ class OptionsChecks(unittest.TestCase):
         self.assertEqual(params['as_of'],['2025-01-03'])
         self.assertEqual(params['strike_price.gte'],['95.0'])
 
+    def test_outcome_narrative_follows_the_summary(self):
+        cols=dict(variant='v',signals=35,entered=0,closed=0,unresolved_exits=0,closed_net_pnl_usd=0.0)
+        def text(**over):return r.narrative_outcome(pd.DataFrame([{**cols,**over}]))
+        self.assertIn('No trades closed, so no P&L direction is claimed.',text())
+        unresolved=text(entered=2,closed=1,unresolved_exits=1,closed_net_pnl_usd=40.0)
+        self.assertIn('1 entered trade(s) have unresolved exits',unresolved)
+        self.assertNotIn('No unresolved exits occurred',unresolved)
+        self.assertIn('made money',unresolved)
+        self.assertIn('made money',text(entered=5,closed=5,closed_net_pnl_usd=120.5))
+        losing=text(entered=5,closed=5,closed_net_pnl_usd=-80.0)
+        self.assertIn('lost money in total (-$80.00',losing)
+        self.assertNotIn('made money',losing)
+        self.assertIn('No unresolved exits occurred',losing)
+        self.assertIn('Of 0 signals',r.narrative_outcome(pd.DataFrame(columns=list(cols))))
+
 
 if __name__=='__main__':unittest.main()

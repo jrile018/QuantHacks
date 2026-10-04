@@ -5,6 +5,7 @@ No forward-return labels, current membership gates, or test-based parameter sear
 """
 from pathlib import Path
 import hashlib
+import os
 import json
 import math
 import numpy as np
@@ -14,15 +15,16 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 BASE = Path(__file__).resolve().parent
-OUT = BASE.parent / 'processed/feature_strategies'
+OUT = Path(os.environ['FEATURE_OUT']) if os.environ.get('FEATURE_OUT') else BASE.parent / 'processed/feature_strategies'
+MATRIX = Path(os.environ['FEATURE_MATRIX']) if os.environ.get('FEATURE_MATRIX') else BASE / 'final/feature_matrix_qualified.csv'
 SPECS = {
     'operating_profitability': [('q_operating_margin', 1)],
     'cash_flow_quality': [('q_fcf_physical_capex_margin', 1)],
     'revenue_growth': [('rev_growth_yoy_q', 1)],
     'quality_growth': [('q_operating_margin', 1), ('rev_growth_yoy_q', 1), ('q_sbc_pct_rev', -1)],
     'capital_efficiency': [('q_fcf_physical_capex_margin', 1), ('capex_cash_ttm_to_revenue', -1)],
-    'capex_expansion': [('capex_cash_ttm_growth_yoy', 1)],
     'lease_discipline': [('operating_lease_liability_growth_yoy', -1)],
+    'quality_capex_discipline': [('q_operating_margin', 1), ('operating_lease_liability_growth_yoy', -1), ('capex_cash_ttm_to_revenue', -1)],
     'momentum_6m': [('momentum_6m', 1)],
 }
 
@@ -39,10 +41,24 @@ def score_rows(frame, terms):
     return score
 
 
-def replay(close, identity, dates, tickers, bps):
+def dividend_cash(dividends, dates, tickers, shares):
+    """Cash per date from ordinary dividends on held shares, paid on the ex-date (not reinvested)."""
+    cash = pd.Series(0., index=dates)
+    if dividends is None or not len(tickers):
+        return cash
+    rows = dividends[dividends.ticker.isin(tickers) & (dividends.distribution_type == "recurring")]
+    for _, row in rows.iterrows():
+        ex = pd.Timestamp(row.ex_dividend_date)
+        if dates[0] < ex <= dates[-1] and row.ticker in shares.index:
+            day = dates[dates >= ex][0]
+            cash[day] += shares[row.ticker] * float(row.split_adjusted_cash_amount)
+    return cash.cumsum()
+
+
+def replay(close, identity, dates, tickers, bps, dividends=None):
     """Fixed shares, full liquidation at scheduled exit. Missing holdings invalidate.
 
-    One dollar initial cash; dividends and cash interest intentionally excluded.
+    One dollar initial cash. Recurring dividends on held shares are credited as cash; no cash interest.
     """
     if not tickers:
         return {'status': 'insufficient_signal_coverage'}, pd.DataFrame()
@@ -57,21 +73,23 @@ def replay(close, identity, dates, tickers, bps):
     # Cost-inclusive fully invested entry; shares are held unchanged.
     invested = 1 / (1 + cost)
     shares = invested / len(tickers) / marks.iloc[0]
-    equity = marks.mul(shares).sum(axis=1)
+    cash_dividends = dividend_cash(dividends, dates, tickers, shares)
+    equity = marks.mul(shares).sum(axis=1) + cash_dividends.to_numpy()
     equity.iloc[-1] *= (1 - cost)
     returns = equity.pct_change()
     returns.iloc[0] = equity.iloc[0] - 1
     wealth = np.r_[1., equity.to_numpy()]
     result = {'status': 'resolved_price_only', 'net_return': float(equity.iloc[-1] - 1),
               'max_drawdown': float((wealth / np.maximum.accumulate(wealth) - 1).min()),
-              'entry_cost': 1 - invested, 'exit_cost': float(equity.iloc[-1] / (1-cost)*cost)}
+              'entry_cost': 1 - invested, 'exit_cost': float(equity.iloc[-1] / (1-cost)*cost),
+              'dividend_cash': float(cash_dividends.iloc[-1])}
     daily = pd.DataFrame({'date': dates, 'net_return': returns.to_numpy(), 'equity': equity.to_numpy()})
     return result, daily
 
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    inputs = [BASE/'final/feature_matrix_backtest.csv',
+    inputs = [MATRIX,
               BASE/'extracts/company_coverage/daily_bars_reviewed.csv',
               BASE/'output/factor_returns_daily.csv']
     matrix = pd.read_csv(inputs[0], dtype={'cik':str}, low_memory=False)
@@ -80,6 +98,7 @@ def main():
     assert matrix.cik.nunique() == 168
     assert not matrix.duplicated(['cik', 'quarter']).any()
     assert not bars.duplicated(['ticker', 'date']).any()
+    dividends = pd.read_csv(BASE/'extracts/backtest_inputs/dividends.csv', parse_dates=['ex_dividend_date'])
     calendar = factors.index
     close = bars.pivot(index='date', columns='ticker', values='close').reindex(calendar)
     volume = bars.pivot(index='date', columns='ticker', values='volume').reindex_like(close)
@@ -134,8 +153,8 @@ def main():
                 common = {'quarter':quarter, 'phase':phase, 'entry_date':entry, 'exit_date':exit_date,
                           'strategy':strategy, 'scenario':scenario, 'pool_count':len(pool),
                           'holdings_count':len(chosen)}
-                result, daily = replay(close, identity, dates, chosen, bps)
-                matched, _ = replay(close, identity, dates, sorted(pool.index), bps)
+                result, daily = replay(close, identity, dates, chosen, bps, dividends)
+                matched, _ = replay(close, identity, dates, sorted(pool.index), bps, dividends)
                 market = np.prod(1+(factors.loc[dates[1:], 'mkt_rf']+factors.loc[dates[1:], 'rf'])/100)-1
                 result['market_total_return_comparator'] = float(market)
                 result['matched_pool_status'] = matched['status']
@@ -184,7 +203,7 @@ def main():
                 'formation_rule':'quarter-end features; prior 60 factor sessions >=55 bars, last close >=$3, median dollar volume >=$1m, provider identity match',
                 'execution_assumption':'first factor-calendar close strictly after quarter-end; liquidate next quarterly boundary close; fixed shares',
                 'missing_held_marks':'invalidate full cohort; never silently drop or impute terminal return',
-                'return_definition':'price only, net assumed execution costs; zero cash interest; dividends excluded',
+                'return_definition':'total return: price plus recurring cash dividends on held shares (not reinvested), net assumed execution costs; zero cash interest',
                 'selection':'2024 trading quarters; fixed candidate menu and top quintile; highest completed 2024 cumulative net price return',
                 'test':'2025 and mature 2026 quarters; previously inspected historical data, NOT a fresh holdout',
                 'macro_features':'PJM common across issuers; FERC/guidance too sparse or unverified for these rankings',
@@ -199,7 +218,7 @@ def main():
                              (daily_all.scenario=='base_10bp') & (daily_all.strategy==strategy)]
             daily_returns = path.groupby('date').net_return.apply(lambda r: np.prod(1+r)-1)
             ax.plot(daily_returns.index, np.cumprod(1+daily_returns), label=strategy)
-    ax.set(title='Completed quarterly price-return paths (costs included)', ylabel='Growth of $1; dividends excluded')
+    ax.set(title='Completed quarterly total-return paths (costs included)', ylabel='Growth of $1; includes dividends')
     ax.grid(alpha=.25)
     if ax.lines: ax.legend(fontsize=8)
     fig.autofmt_xdate(); fig.tight_layout(); fig.savefig(OUT/'completed_paths.png', dpi=160); plt.close(fig)
@@ -207,7 +226,7 @@ def main():
              'Eight fixed long-only hypotheses plus an equal-weight benchmark were formed across the 168-issuer universe. Holdings use formation-date liquidity and identity checks, not future label availability or current active status.', '',
              f'Selected using completed 2024 quarters only: **{winner or "none (no complete selection path)"}**. All candidates and later failed cohorts are retained.', '',
              'Features are frozen at quarter-end. Buy at the first subsequent factor-calendar close, hold fixed shares until the next quarterly entry boundary, then sell. Single-feature and composite scores select the top quintile, including boundary ties; composites require all inputs. Fewer than 25 usable scores or fewer than five distinct scores produce no trade. Base costs are 10bp per side; stress costs are 50bp per side. These are assumed fills, not verified executable prices.', '',
-             'These are price-return tests with dividends excluded and zero cash interest. The separate market comparator includes dividends and is not a like-for-like alpha estimate. Matched-pool comparison is price-only with the same cost assumptions. Capital efficiency uses physical CapEx only; capitalized software can still affect the interpretation of cash flow.', '',
+             'These are total-return tests: recurring cash dividends on held shares are credited on ex-date, not reinvested, with zero cash interest. Dividend coverage comes from the stored dividends file and is only as complete as that file; the market comparator is a separate index series and is not a like-for-like alpha estimate. Matched-pool comparison is price-only with the same cost assumptions. Capital efficiency uses physical CapEx only; capitalized software can still affect the interpretation of cash flow.', '',
              'Eligibility reduces the tradable research basket to 98–112 issuers per formation quarter; the 168-company grid is the screening universe, not a promise of 168 tradable instruments. Six mature chronological test quarters run from January 2, 2025 to July 1, 2026. Later periods lack a full subsequent quarterly boundary on the stored factor calendar.', '',
              'A missing held price or unqualified identity invalidates the entire quarterly cohort. No terminal liquidation price is fabricated. Cumulative results exist only for complete paths; resolved-quarter averages for incomplete paths are descriptive and must not be ranked as complete strategies. No forward-availability filter is applied to holdings.', '',
              'Historical membership, corporate actions, cash dividends, actual liquidity/costs and identity remain incompletely certified. Earlier research inspected later dates; chronological evaluation is not a fresh holdout. There are only six mature test quarters, so no reliable significance claim or deployable edge follows. Previously completed mean-reversion research also did not establish a reliable edge.', '',

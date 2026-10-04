@@ -38,6 +38,16 @@ CLOUD = ['cloud_annual_minimum_commitment_disclosed_usd',
 GUIDANCE = ['capex_guidance_annual_high_usd', 'capex_guidance_annual_low_usd',
             'capex_guidance_remaining_year_high_usd','capex_guidance_remaining_year_low_usd',
             'capex_guidance_next_12_months_upper_bound_usd']
+OVERLAY_INPUTS = ['total_assets','ttm_revenue','ttm_software_development_cash_payments',
+                 'capex_cash_ttm_to_revenue','capex_cash_ttm_growth_yoy','capex_cash_quarter_growth_yoy',
+                 'ppe_net_growth_yoy','ppe_gross_usd','ppe_net_usd','unused_cloud_commitment_expense_quarter_disclosed_usd',
+                 'operating_lease_liability_growth_qoq','operating_lease_liability_growth_yoy',
+                 'finance_lease_liability_growth_qoq','finance_lease_liability_growth_yoy',
+                 'operating_lease_liability_usd','operating_lease_rou_asset_usd','operating_lease_undiscounted_payments_usd',
+                 'operating_lease_noncash_additions_quarter_usd','operating_lease_noncash_additions_annual_usd',
+                 'finance_lease_liability_usd','finance_lease_rou_asset_usd','finance_lease_undiscounted_payments_usd',
+                 'finance_lease_noncash_additions_quarter_usd','finance_lease_noncash_additions_annual_usd'] + [c for c,_ in QUALITY] + CLOUD + GUIDANCE + ['pjm_rto_capacity_price_change_vs_previous_auction','ferc_power_search_candidate_count','capex_guidance_candidate_sentences','datacenter_capex_candidate_sentences','ppa_disclosure_candidate_sentences']
+
 CANDIDATES = ['ferc_power_search_candidate_count','capex_guidance_candidate_sentences',
               'datacenter_capex_candidate_sentences','ppa_disclosure_candidate_sentences']
 
@@ -54,8 +64,18 @@ def ratio(a,b):
     return a/b.where(b>0)
 
 
+def with_absent_columns_as_missing(frame):
+    """Columns removed by the qualification step are treated as missing data, so their groups stay neutral."""
+    frame = frame.copy()
+    for col in OVERLAY_INPUTS:
+        if col not in frame:
+            frame[col] = np.nan
+    return frame
+
+
 def overlay(frame, old_frame=None):
     """Rank observable components separately; don't equate absent data to zero spend."""
+    frame = with_absent_columns_as_missing(frame)
     values, groups = {}, {}
     for col,sign in QUALITY:
         values[col] = frame[col]*sign
@@ -65,7 +85,7 @@ def overlay(frame, old_frame=None):
     if old_frame is None:
         values['software_cash_growth_2q'] = pd.Series(np.nan,index=frame.index)
     else:
-        prior = old_frame.ttm_software_development_cash_payments.reindex(frame.index)
+        prior = with_absent_columns_as_missing(old_frame).ttm_software_development_cash_payments.reindex(frame.index)
         values['software_cash_growth_2q'] = ratio(frame.ttm_software_development_cash_payments,prior)-1
     groups['software_investment'] = ['software_cash_intensity','software_cash_growth_2q']
     groups['physical_investment'] = []
@@ -255,12 +275,12 @@ def performance(daily,rf,warning):
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
-    inputs=[BASE/'final/feature_matrix_backtest.csv',BASE/'final/feature_matrix_provenance.csv',
+    inputs=[BASE/'final/feature_matrix_qualified.csv',BASE/'final/feature_matrix_provenance.csv',
             BASE/'extracts/power_capex/matrix_feature_provenance.csv',
             BASE/'extracts/company_coverage/daily_bars_reviewed.csv',
             BASE/'extracts/backtest_inputs/dividends.csv',BASE/'output/factor_returns_daily.csv']
     hashes={str(p.relative_to(BASE.parents[1])):hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}
-    matrix=pd.read_csv(inputs[0],dtype={'cik':str},low_memory=False)
+    matrix=with_absent_columns_as_missing(pd.read_csv(inputs[0],dtype={'cik':str},low_memory=False))
     assert matrix.cik.nunique()==168 and not matrix.duplicated(['cik','quarter']).any()
     names=sorted(matrix.ticker.unique())
     bars=pd.read_csv(inputs[3],parse_dates=['date'],low_memory=False)

@@ -62,13 +62,10 @@ def main() -> int:
         panel[(r["cik"], r["period_end"])][r["feature"]] = r["value"]
         features.add(r["feature"])
 
-    # Federal awards started in the quarter (exact-name matches, the reliable subset)
-    awards: dict[tuple[str, str], list[float]] = defaultdict(list)
-    for r in con.execute("SELECT cik, start_date, award_amount FROM fact_contracts WHERE exact_name_match IN ('True','true','1')"):
-        if r["start_date"]:
-            y, m = int(r["start_date"][:4]), int(r["start_date"][5:7])
-            awards[(r["cik"], f"{y}Q{(m - 1) // 3 + 1}")].append(float(r["award_amount"] or 0))
-    features |= {"federal_awards_count_started_exact", "federal_award_value_started_exact"}
+    # Federal award predictors are withheld. They are placed in the quarter the contract starts,
+    # but the amount has no dated vintage (amendments can change it later), so nothing shows it
+    # was known at the quarter end. Failing closed means no award columns in this matrix.
+    # Re-enable only after amount vintages with publication dates exist.
 
     # Quarters with a label, in order
     # Quarters come from the panel's labels (2024Q1 style). Labels are keyed on the date.
@@ -90,12 +87,6 @@ def main() -> int:
             vals = []
             for cik in ciks:
                 v = panel[(cik, qlabel)].get(f)
-                if v is None and f == "federal_awards_count_started_exact":
-                    v = str(len(awards.get((cik, qlabel), [])))
-                if f == "federal_award_value_started_exact":
-                    v = str(sum(awards.get((cik, qlabel), [])))
-                if f == "federal_awards_count_started_exact":
-                    v = str(len(awards.get((cik, qlabel), [])))
                 try:
                     vals.append((float(v), cik))
                 except (TypeError, ValueError):
@@ -122,10 +113,6 @@ def main() -> int:
         }
         for f in feature_list:
             raw = panel[(cik, qlabel)].get(f, "")
-            if f == "federal_awards_count_started_exact":
-                raw = str(len(awards.get((cik, qlabel), [])))
-            elif f == "federal_award_value_started_exact":
-                raw = str(round(sum(awards.get((cik, qlabel), [])), 2))
             row[f] = raw
             row[f"{f}__present"] = 1 if raw not in ("", None) else 0
             rk = ranks.get((cik, qlabel, f))

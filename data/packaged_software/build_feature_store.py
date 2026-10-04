@@ -93,7 +93,7 @@ def valid_date(s: str) -> bool:
     try:
         dt.date.fromisoformat(s)
         return True
-    except (ValueError, AttributeError):
+    except (ValueError, TypeError, AttributeError):
         return False
 
 
@@ -106,8 +106,12 @@ def main() -> int:
         c = companies.get(ticker)
         if not c:
             return
+        # Fail closed: a value with a blank or invalid as_of cannot be shown to be public by the
+        # quarter end, so it is withheld. Blank and withheld are reported with different reasons.
+        if value not in ("", None) and not valid_date(as_of):
+            value, reason = "", f"missing_or_invalid_as_of ({as_of or 'blank'})"
         # Withhold anything not public by the quarter end, and say why
-        if value not in ("", None) and as_of and valid_date(as_of) and as_of > quarter_last_day(period):
+        elif value not in ("", None) and as_of > quarter_last_day(period):
             value, reason = "", f"not_public_by_period_end (as_of {as_of})"
         cells.append({
             "cik": c["cik"].zfill(10), "ticker": ticker, "period_end": period,

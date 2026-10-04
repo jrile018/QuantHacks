@@ -57,6 +57,23 @@ def select_contract(client,ticker,kind,signal_date,entry_date):
     return contract,''
 
 
+def narrative_outcome(summary):
+    """Outcome sentences for the REPORT section, computed from the summary table, never fixed text."""
+    signals=int(summary.signals.sum()) if len(summary) else 0
+    entered=int(summary.entered.sum()) if len(summary) else 0
+    closed=int(summary.closed.sum()) if len(summary) else 0
+    unresolved=int(summary.unresolved_exits.sum()) if len(summary) else 0
+    pnl=float(summary.closed_net_pnl_usd.sum()) if len(summary) else 0.0
+    counts=f'Of {signals} signals across the variants, {entered} entered with valid quotes and {closed} closed with observed quotes.'
+    exits=('No unresolved exits occurred in this run.' if unresolved==0 else
+           f'{unresolved} entered trade(s) have unresolved exits, so coverage is incomplete and no complete performance claim is made.')
+    if closed==0:pnl_text='No trades closed, so no P&L direction is claimed.'
+    else:
+        direction='made money' if pnl>0 else 'lost money' if pnl<0 else 'broke even'
+        pnl_text=f'The closed subset {direction} in total ({"-" if pnl<0 else ""}${abs(pnl):,.2f} net of fees).'
+    return f'{counts} {exits} {pnl_text}'
+
+
 def main():
     source=pd.read_csv(OUT/'trades_oos.csv',parse_dates=['entry_date','exit_date','entry_signal_date'])
     source=source[(source.scenario=='base')&source.variant.isin(['correlated_pairs','cointegrated_pairs'])].copy()
@@ -133,12 +150,13 @@ def main():
     (OUT/'options_replay_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     report=OUT/'REPORT.md'
     if report.exists():
+        outcome=narrative_outcome(summary)
         content=report.read_text(encoding='utf-8').split('\n## Options replay with historical quotes\n')[0]
         lines=['| Variant | Signals | Closed quoted trades | Return on premium paid |',
                '| --- | ---: | ---: | ---: |']
         for row in summary.itertuples():
             lines.append(f'| {row.variant} | {row.signals} | {row.closed} | {row.closed_weighted_return_on_premium:.2%} |')
-        content+='\n## Options replay with historical quotes\n\n'+ '\n'.join(lines)+'''
+        content+='\n## Options replay with historical quotes\n\n'+ '\n'.join(lines)+f'''
 
 This fixed recipe buys an ATM call on the stock long leg and an ATM put on the stock short leg, with expiry
 90-120 days after entry. Contract metadata is queried as of the prior signal date and ATM strikes use real
@@ -146,12 +164,11 @@ unadjusted historical stock closes. Entry quotes must have positive bid/ask, bou
 timestamps within one second. Orders use observed asks, exit bids and displayed sizes, plus $0.65/contract each way.
 Size is capped at $10,000 per leg and available quoted depth. Fixed recipe parameters are not optimized on options P&L.
 
-Only five of 35 correlated-pair signals met the quote/contract criteria and closed with observed quotes; one
-cointegration trade also closed. The quote-qualified subset has coverage bias and very low sample size.
-It cannot establish the return of an options portfolio. Missing entry quotes/listings or asynchronous quotes
-cancel the paired entry; missing exit quotes remain unresolved instead of being removed from coverage.
-No unresolved exits occurred in this run. Calls/puts are equal-premium exposures, not a delta-neutral hedge,
-and their performance includes theta and implied-volatility effects. The closed subset lost money.
+{outcome}
+The quote-qualified subset has coverage bias and is a small sample. It cannot establish the return of an
+options portfolio. Missing entry quotes/listings or asynchronous quotes cancel the paired entry; missing exit
+quotes remain unresolved instead of being removed from coverage. Calls/puts are equal-premium exposures, not a
+delta-neutral hedge, and their performance includes theta and implied-volatility effects.
 No annualized options return, Sharpe or drawdown is fabricated from sparse entry/exit observations.
 
 See options_replay_trades.csv, options_replay_legs.csv and options_replay_manifest.json for actual prices,

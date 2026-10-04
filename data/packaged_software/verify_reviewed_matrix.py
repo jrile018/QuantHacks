@@ -8,17 +8,24 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
 FINAL = ROOT / "final"
+# Features added after the base matrix (power/CapEx) are recorded in their own ledger.
+EXTENSION_LEDGER = ROOT / "extracts" / "power_capex" / "matrix_feature_provenance.csv"
 
 
 def main():
     manifest = json.loads((FINAL / "feature_matrix_manifest.json").read_text())
     checks = {}
     for group, base in [("input_sha256", ROOT), ("output_sha256", FINAL)]:
-        checks[group] = all(hashlib.sha256((base / p).read_bytes()).hexdigest() == h for p, h in manifest[group].items())
+        checks[group] = all(hashlib.sha256((base.joinpath(*p.replace("\\", "/").split("/"))).read_bytes()).hexdigest() == h
+                            for p, h in manifest[group].items())
     m = pd.read_csv(FINAL / "feature_matrix_backtest.csv", dtype={"cik": str})
-    p = pd.read_csv(FINAL / "feature_matrix_provenance.csv", dtype={"cik": str}, keep_default_na=False)
+    base_p = pd.read_csv(FINAL / "feature_matrix_provenance.csv", dtype={"cik": str}, keep_default_na=False)
+    ext_p = pd.read_csv(EXTENSION_LEDGER, dtype={"cik": str}, keep_default_na=False)
+    p = pd.concat([base_p, ext_p], ignore_index=True)
     raw = [c for c in m if c + "__present" in m]
     checks["full_grid_unique"] = len(m) == 168 * 19 and not m.duplicated(["cik", "quarter"]).any()
+    checks["ledgers_disjoint_and_cover_matrix"] = (not set(base_p.feature) & set(ext_p.feature)
+                                                   and set(base_p.feature) | set(ext_p.feature) == set(raw))
     checks["presence_flags"] = all((m[f].notna().astype(int) == m[f + "__present"]).all() for f in raw)
     checks["equal_values_equal_ranks"] = all((m.groupby(["quarter", f])[f + "__rank"].nunique() <= 1).all() for f in raw)
     checks["ranks_match_independent_average_formula"] = True
@@ -30,8 +37,16 @@ def main():
             checks["ranks_match_independent_average_formula"] &= bool(np.allclose(actual, expected, equal_nan=True))
     populated = p[p.value != ""]
     checks["no_future_availability"] = bool((populated.available_date <= populated.decision_date).all())
+    checks["populated_cells_have_availability_date"] = bool((populated.available_date != "").all())
     checks["one_ledger_cell_per_feature"] = len(p) == len(m) * len(raw) and not p.duplicated(["cik", "quarter", "feature"]).any()
     checks["every_blank_has_reason"] = bool((p.loc[p.value == "", "missing_reason"] != "").all())
+    checks["every_matrix_value_is_ledgered"] = int(m[raw].notna().sum().sum()) == len(populated)
+    matrix_indexed = m.set_index(["cik", "quarter"])
+    checks["ledger_values_match_matrix"] = True
+    for feature, g in populated.groupby("feature"):
+        matrix_vals = pd.to_numeric(matrix_indexed[feature].reindex(pd.MultiIndex.from_frame(g[["cik", "quarter"]]))).to_numpy()
+        ledger_vals = pd.to_numeric(g.value).to_numpy()
+        checks["ledger_values_match_matrix"] &= bool(np.allclose(matrix_vals, ledger_vals, rtol=1e-9, atol=1e-12))
     checks["award_predictors_withheld"] = all(m[f].isna().all() for f in raw if f.startswith("federal_award"))
     cloud = populated[populated.source_file.str.contains("infrastructure_evidence", na=False)]
     checks["cloud_disclosure_quarter_only"] = bool((pd.to_datetime(cloud.available_date).dt.to_period("Q").astype(str) == cloud.quarter).all())
