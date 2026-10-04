@@ -1,0 +1,22 @@
+{
+  "captured_at_utc": "2026-10-04T09:08:09.337970+00:00",
+  "previous_audit_publication_commit": "b52cfddc609a13abc3289e9a545907fdb8c3ec05",
+  "purpose": "Correct missing prior-owner pin comparison from false/mismatch implication to null/unknown; remote-byte evidence unchanged",
+  "files": [
+    {
+      "path": "docs/storage-audit/2026-10-04-consumer-bindings.json",
+      "size_bytes": 14837,
+      "sha256": "7a91828501a5ce3e25f4cbae7c9b686ab27a01f8ebf0d709264f867a90cbc0b9"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-audit.md",
+      "size_bytes": 8935,
+      "sha256": "4362db05a763a9c8972078b891cc47a72080a776226b36c59d60ff87657bcccd"
+    },
+    {
+      "path": "docs/storage-audit/2026-10-04-audit-records.zip",
+      "size_bytes": 2645161,
+      "sha256": "e070de9092ae2af30f91d8c7fa5741c2ddea21b776d2b2c224710abd081c276c"
+    }
+  ]
+}

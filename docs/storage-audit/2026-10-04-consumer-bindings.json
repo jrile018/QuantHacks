@@ -32,7 +32,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-proposed-v2-candidate\\manifest.json",
@@ -49,7 +50,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-qualified-v3\\manifest.json",
@@ -66,7 +68,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\clocks\\historical-qualified-v3\\local_verification.json",
@@ -83,7 +86,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market\\implementation_verification.json",
@@ -100,7 +104,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\qualification_report.json",
@@ -117,7 +122,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\frozen_selection.json",
@@ -134,7 +140,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market_inputs_v3.json",
@@ -151,7 +158,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261003\\market\\peer_coverage_handoff.json",
@@ -168,7 +176,8 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": true
+      "backup_sha256_matches_owner_pin": true,
+      "owner_pin_comparison_status": "match"
     },
     {
       "original_path": "C:\\Users\\johnp\\OneDrive\\Documents\\ChatGPT\\QuantHaxs\\data\\processed\\reit_build\\20261004-continuation\\market-v2-results\\collection_receipt.json",
@@ -185,7 +194,14 @@
       "restore_root": "home-pc:/tmp/quanthaxs-riley-20261004/repo",
       "verification_time_utc": "2026-10-04T08:54:04.285926+00:00",
       "backup_status": "verified",
-      "backup_sha256_matches_owner_pin": false
+      "backup_sha256_matches_owner_pin": null,
+      "owner_pin_comparison_status": "unknown_no_prior_pin"
     }
-  ]
+  ],
+  "owner_pin_comparison_counts": {
+    "match": 9,
+    "unknown_no_prior_pin": 1
+  },
+  "classification_corrected_at_utc": "2026-10-04T09:06:22.232787+00:00",
+  "classification_correction": "The collection receipt has no recorded prior owner pin. Its prior comparison is unknown, not evidence of a changed version or hash mismatch. Original remote-byte verification is unchanged."
 }
