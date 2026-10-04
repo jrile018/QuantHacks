@@ -140,12 +140,6 @@ For shared changes, the repository owner must approve the current commit in GitH
 
 These checks establish configuration and reproducible intake behavior. Actual scanned-page recognition requires a local OCR pilot with the selected backend; accepted benchmark features still require the relevant producer/consumer checks.
 
-# Soybean weather-signal backtester
-
-A walk-forward backtester that tests whether U.S. Corn Belt weather predicts soybean futures returns during the pod-set and seed-fill window (July–August). The project also tests the same rules on corn, wheat, cocoa, sugar, coffee and cotton, to see whether any effect is specific to soybeans.
-
-**Status: no edge demonstrated.** The frozen soybean spec was run once on its holdout (June 2025 onward). The pre-registered pass rule needs at least 10 trade episodes. The v1 engine run gave 9 episodes and FAILED. The later v2 engine run gave 10 episodes and met that count, but the holdout had already been seen during development, so it cannot be treated as a clean test. Full-history results are not clearly distinguishable from zero. See [Results](#results) and [Caveats](#caveats).
-
 ---
 
 ## Contents
