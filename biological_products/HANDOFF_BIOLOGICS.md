@@ -1,7 +1,7 @@
 # Biologics (SIC 2836) hand-off, version 3
 
 Owner: Abhay. Written 2026-10-04 (version 3, after the team lead's audit of commits 2d07581 and 583e472). Universe: 139 tickers, Biological Products (no diagnostic substances).
-Everything uses public data. Every number can be rerun with the commands in section 8, except that script 16 needs the AACT snapshot archive (not in the repo, 112 MB) and script 22 needs a Massive API key. The previous versions of this document are in the git history (f3fc5cf1, 2d075817, 583e472b).
+`RESULTS_EXPLAINED.pdf` next to this file explains every column and every number in plain words. Everything uses public data. Every number can be rerun with the commands in section 8, except that script 16 needs the AACT snapshot archive (not in the repo, 112 MB) and script 22 needs a Massive API key. The previous versions of this document are in the git history (f3fc5cf1, 2d075817, 583e472b).
 
 ## 0. What changed since the audit, finding by finding
 
