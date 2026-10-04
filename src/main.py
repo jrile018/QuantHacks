@@ -14,7 +14,7 @@ import requests
 from .capital_liquidity import plan_trade
 from .config import (BASELINE_BUCKET, COST_HAIRCUT, ENTRY, EVENT_TAG, MAX_VOLUME_PARTICIPATION,
                      OTM_PCT, RISK_FRACTION, STRATEGIES, STUDY_END, STUDY_START)
-from .implementation import run_study
+from .implementation import option_bar_rows, option_leg_rows, run_study
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,10 +56,17 @@ def capacity_table(priced, capital: float, risk_fraction: float, participation: 
 def write_outputs(study: dict, capacity: pd.DataFrame, output_dir: Path, manifest: dict) -> None:
     """Write the study tables and settings needed to reproduce them."""
     output_dir.mkdir(parents=True, exist_ok=True)
-    for name, table in (("events", study["events"]), ("dropped", study["dropped"]),
+    tables = (("events", study["events"]), ("dropped", study["dropped"]),
                         ("results", study["results"]), ("scoreboard", study["board"]),
-                        ("capacity", capacity)):
-        table.to_csv(output_dir / f"{name}.csv", index=False)
+                        ("capacity", capacity),
+                        ("option_legs", option_leg_rows(study["events"], study["priced"])),
+                        ("option_bars", option_bar_rows(study["priced"])))
+    exported = {}
+    for name, table in tables:
+        path = output_dir / f"{name}.csv"
+        table.to_csv(path, index=False)
+        exported[name] = {"rows": len(table), "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
+    manifest = {**manifest, "exported_tables": exported}
     (output_dir / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 
 
