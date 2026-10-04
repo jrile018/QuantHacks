@@ -117,3 +117,7 @@ The architecture separates those responsibilities so the same account workflow c
 | Comparison and reporting gates | Complete regular-calendar NAV, matched always-long/zero-cash baselines, withheld unqualified headlines | Same eligible opportunity set and valuation window, complete ledger/marks, relevant comparator and independently qualified metric evidence |
 
 The separate options example reports gross unit mechanics and does not inherit equity account qualification. Futures or other universes need their own dated contract/unit/settlement and margin adapters, frozen strategy protocols and independent qualification. They should reuse the existing account engine through tested adapters rather than introduce a second account engine. A reusable interface preserves missing-evidence gates; it does not erase asset-specific risks or imply that every strategy is implemented here.
+
+## Sharpe presentation
+
+The notebook presents Sharpe as **one scalar point estimate** per qualified strategy, rather than a 95% confidence interval. Its current Sharpe is **N/A** because qualified real account returns are unavailable. Synthetic demonstrations do not supply a replacement number. Existing canonical report uncertainty fields and protocol schemas remain intact; they are not the primary Sharpe display.

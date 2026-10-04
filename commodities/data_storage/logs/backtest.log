@@ -1,0 +1,294 @@
+2026-10-04 03:41:26 | INFO     | __main__:setup_logging:35 - Logging to C:\Users\kkati\Kushagra\NasaPowerCouncil\data_storage\logs\backtest.log
+2026-10-04 03:41:26 | INFO     | __main__:main:42 - ================================================================================
+2026-10-04 03:41:26 | INFO     | __main__:main:43 - NASAPOWERCOUNCIL - Weather-Based Commodity Trading System
+2026-10-04 03:41:26 | INFO     | __main__:main:44 - ================================================================================
+2026-10-04 03:41:26 | INFO     | __main__:main:45 - Backtest Period: 2010-01-01 to 2023-01-01
+2026-10-04 03:41:26 | INFO     | __main__:main:46 - Commodities: ['corn']
+2026-10-04 03:41:26 | INFO     | __main__:main:47 - Initial Capital: $1,000,000
+2026-10-04 03:41:26 | INFO     | __main__:main:48 - Model: ridge  |  PCA: True (n_components=0.95)
+2026-10-04 03:41:26 | INFO     | __main__:main:49 - ================================================================================
+2026-10-04 03:41:26 | INFO     | __main__:main:53 - 
+🚀 Starting backtest...
+2026-10-04 03:41:26 | INFO     | data.market_fetcher:__init__:41 - Market data provider: Yahoo Finance (REAL DATA ONLY)
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:104 - ================================================================================
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:105 - STARTING BACKTEST
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:106 - Period: 2010-01-01 to 2023-01-01
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:107 - Commodities: ['corn']
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:108 - Initial Capital: $1,000,000
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:109 - Strategy Mode: directional
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:110 - ================================================================================
+2026-10-04 03:41:26 | INFO     | backtest.engine:run:113 - 
+Step 1: Fetching climate data...
+2026-10-04 03:41:26 | INFO     | backtest.engine:_fetch_all_climate_data:142 - Fetching climate data for corn...
+2026-10-04 03:41:26 | INFO     | data.climate_fetcher:fetch_region:84 - Fetching NASA POWER data for corn_Iowa (42.0, -93.5)
+2026-10-04 03:41:40 | INFO     | data.climate_fetcher:fetch_region:96 - Cached data for corn_Iowa
+2026-10-04 03:41:41 | INFO     | data.climate_fetcher:fetch_region:84 - Fetching NASA POWER data for corn_Illinois (40.0, -89.0)
+2026-10-04 03:41:55 | INFO     | data.climate_fetcher:fetch_region:96 - Cached data for corn_Illinois
+2026-10-04 03:41:56 | INFO     | data.climate_fetcher:fetch_region:84 - Fetching NASA POWER data for corn_Nebraska (41.5, -99.8)
+2026-10-04 03:42:10 | INFO     | data.climate_fetcher:fetch_region:96 - Cached data for corn_Nebraska
+2026-10-04 03:42:11 | INFO     | data.climate_fetcher:fetch_region:84 - Fetching NASA POWER data for corn_Indiana (40.3, -86.1)
+2026-10-04 03:42:24 | INFO     | data.climate_fetcher:fetch_region:96 - Cached data for corn_Indiana
+2026-10-04 03:42:25 | INFO     | data.climate_fetcher:fetch_commodity_regions:168 - Fetched climate data for 4 regions of corn
+2026-10-04 03:42:25 | INFO     | backtest.engine:run:116 - 
+Step 2: Fetching market data...
+2026-10-04 03:42:25 | INFO     | backtest.engine:_fetch_all_market_data:157 - Fetching market data for corn...
+2026-10-04 03:42:25 | DEBUG    | data.cache_manager:get:76 - Cache MISS: d2182e96cccde511a60cc65db01e6612
+2026-10-04 03:42:25 | INFO     | data.market_fetcher:_fetch_from_yahoo:103 - Fetching corn (ZC=F) from Yahoo Finance...
+2026-10-04 03:42:28 | INFO     | data.market_fetcher:_fetch_from_yahoo:161 - ✓ Fetched 3268 records for corn
+2026-10-04 03:42:28 | INFO     | data.market_fetcher:_fetch_from_yahoo:162 -   Date range: 2010-01-04 to 2022-12-30
+2026-10-04 03:42:28 | INFO     | data.market_fetcher:_fetch_from_yahoo:163 -   Price range: $301.50 to $831.25
+2026-10-04 03:42:28 | DEBUG    | data.cache_manager:set:93 - Cached data: d2182e96cccde511a60cc65db01e6612
+2026-10-04 03:42:28 | INFO     | backtest.engine:run:119 - 
+Step 3: Generating features...
+2026-10-04 03:42:28 | INFO     | backtest.engine:_run_pipeline:172 - Generating features for corn...
+2026-10-04 03:42:28 | INFO     | features.feature_pipeline:run:95 - Running feature pipeline for corn
+2026-10-04 03:42:28 | INFO     | features.feature_pipeline:process_region:37 - Processing features for corn - Iowa
+2026-10-04 03:42:28 | INFO     | features.feature_pipeline:process_region:37 - Processing features for corn - Illinois
+2026-10-04 03:42:28 | INFO     | features.feature_pipeline:process_region:37 - Processing features for corn - Nebraska
+2026-10-04 03:42:28 | INFO     | features.feature_pipeline:process_region:37 - Processing features for corn - Indiana
+2026-10-04 03:42:30 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 03:42:30 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for corn
+2026-10-04 03:42:30 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Illinois
+2026-10-04 03:42:30 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 03:42:30 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 03:42:30 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for corn
+2026-10-04 03:42:30 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Nebraska
+2026-10-04 03:42:30 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for corn
+2026-10-04 03:42:30 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Iowa
+2026-10-04 03:42:30 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 03:42:30 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for corn
+2026-10-04 03:42:30 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Indiana
+2026-10-04 03:42:30 | INFO     | features.feature_pipeline:aggregate:79 - Aggregating regions for corn
+2026-10-04 03:42:30 | INFO     | features.regional_aggregator:aggregate_regional_features:41 - Aggregating 24 stress features across 4 regions
+2026-10-04 03:42:30 | INFO     | features.regional_aggregator:aggregate_regional_features:80 - Aggregated features shape: (4749, 25)
+2026-10-04 03:42:30 | INFO     | features.feature_pipeline:run:103 - Feature pipeline complete for corn: (4749, 25)
+2026-10-04 03:42:30 | INFO     | backtest.engine:run:122 - 
+Step 4: Running walk-forward simulation...
+2026-10-04 03:42:30 | INFO     | backtest.engine:_walk_forward_simulation:205 - Starting simulation at index 756 / 3268
+2026-10-04 03:42:30 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2013-03-11 (800/3268) | Portfolio: $1,000,000
+2026-10-04 03:42:30 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'cold_stress_7d_agg': 0.22362014035644148, 'cold_stress_30d_agg': 0.21462147422142933, 'cold_stress_14d_agg': 0.208915851343207, 'cold_stress_z_7d_agg': 0.2078716382363933, 'cold_stress_z_14d_agg': 0.18721757768552705}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2013-04-01): 9 components, explained=0.964
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'cold_stress_30d_agg': 0.21813445284553928, 'cold_stress_7d_agg': 0.20339363600060684, 'cold_stress_14d_agg': 0.20339038975430976, 'cold_stress_z_14d_agg': 0.18995441045735603, 'cold_stress_z_7d_agg': 0.18890441636648417}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2013-05-01): 9 components, explained=0.964
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'cold_stress_30d_agg': 0.21984360383305973, 'cold_stress_14d_agg': 0.20479361479543765, 'cold_stress_7d_agg': 0.20000451815287604, 'cold_stress_z_14d_agg': 0.19922336763060033, 'cold_stress_z_30d_agg': 0.18148914393202567}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2013-06-03): 9 components, explained=0.963
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2013-07-01 — closing position.
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2013-08-01 (900/3268) | Portfolio: $1,022,362
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2013-12-23 (1000/3268) | Portfolio: $1,022,362
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.2082573735921508, 'dry_stress_30d_agg': 0.17822066756532118, 'heat_stress_z_30d_agg': 0.1694363061919294, 'dry_stress_7d_agg': 0.14879565031161962, 'dry_stress_z_14d_agg': 0.1219942447116061}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2014-04-01): 9 components, explained=0.966
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.20311822737414123, 'dry_stress_30d_agg': 0.17283666155832064, 'heat_stress_z_30d_agg': 0.16868555112624115, 'dry_stress_7d_agg': 0.1449623056287556, 'dry_stress_z_14d_agg': 0.12235787867098055}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2014-05-01): 9 components, explained=0.966
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2014-05-19 (1100/3268) | Portfolio: $1,044,850
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.2037393578855609, 'dry_stress_30d_agg': 0.17692709464963707, 'heat_stress_z_30d_agg': 0.167216408226337, 'dry_stress_7d_agg': 0.14603842881583165, 'dry_stress_z_14d_agg': 0.14394091977404877}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2014-06-02): 9 components, explained=0.964
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2014-07-01 — closing position.
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2014-10-09 (1200/3268) | Portfolio: $1,118,564
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2015-03-05 (1300/3268) | Portfolio: $1,118,564
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.2006903279791668, 'dry_stress_30d_agg': 0.17437657099816703, 'dry_stress_7d_agg': 0.15826143496500478, 'heat_stress_z_30d_agg': 0.14850248943117472, 'dry_stress_z_14d_agg': 0.1356758751098396}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2015-04-01): 9 components, explained=0.964
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.20256840142735139, 'dry_stress_30d_agg': 0.1769886916569705, 'dry_stress_7d_agg': 0.15891511180795834, 'heat_stress_z_30d_agg': 0.1435192599292945, 'dry_stress_z_14d_agg': 0.1336708616057835}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2015-05-01): 9 components, explained=0.965
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.2035831768525792, 'dry_stress_30d_agg': 0.1782185414434692, 'dry_stress_7d_agg': 0.16042863639076857, 'heat_stress_z_30d_agg': 0.1427012894411168, 'dry_stress_z_14d_agg': 0.1329920742779288}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2015-06-01): 9 components, explained=0.965
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2015-07-01 — closing position.
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2015-07-28 (1400/3268) | Portfolio: $1,007,892
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2015-12-17 (1500/3268) | Portfolio: $1,007,892
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.20068948336084988, 'dry_stress_7d_agg': 0.17002809141078373, 'dry_stress_30d_agg': 0.16175894229768376, 'heat_stress_z_30d_agg': 0.12821896976734318, 'dry_stress_z_14d_agg': 0.12580658522741492}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2016-04-01): 8 components, explained=0.957
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.19831234817265211, 'dry_stress_7d_agg': 0.16805992000944425, 'dry_stress_30d_agg': 0.16113635867716403, 'heat_stress_z_30d_agg': 0.1298480291302959, 'dry_stress_z_14d_agg': 0.1262506349568651}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2016-05-02): 8 components, explained=0.957
+2026-10-04 03:42:31 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2016-05-12 (1600/3268) | Portfolio: $1,041,629
+2026-10-04 03:42:31 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.20277973223015108, 'dry_stress_7d_agg': 0.17392404389749602, 'dry_stress_30d_agg': 0.16442633700221723, 'heat_stress_z_30d_agg': 0.1313136469603914, 'dry_stress_z_14d_agg': 0.1267912061145367}
+2026-10-04 03:42:31 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2016-06-01): 8 components, explained=0.958
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2016-07-01 — closing position.
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2016-10-04 (1700/3268) | Portfolio: $1,117,209
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2017-03-02 (1800/3268) | Portfolio: $1,117,209
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13953531916216122, 'dry_stress_30d_agg': 0.12441009544115135, 'dry_stress_7d_agg': 0.12124131416885343, 'heat_stress_z_30d_agg': 0.12072089195202156, 'dry_stress_z_14d_agg': 0.12017916136124124}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2017-04-03): 8 components, explained=0.955
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.1384638853159247, 'dry_stress_30d_agg': 0.12385037269730095, 'heat_stress_z_30d_agg': 0.12072913077698672, 'dry_stress_7d_agg': 0.12045242340782224, 'dry_stress_z_14d_agg': 0.12015366359287252}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2017-05-01): 8 components, explained=0.956
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13606632705720267, 'heat_stress_z_30d_agg': 0.12117342313474153, 'dry_stress_30d_agg': 0.1210639663158413, 'dry_stress_z_14d_agg': 0.12034257528410788, 'dry_stress_7d_agg': 0.11841836910394196}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2017-06-01): 8 components, explained=0.956
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2017-07-03 — closing position.
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2017-07-25 (1900/3268) | Portfolio: $1,126,544
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2017-12-14 (2000/3268) | Portfolio: $1,126,544
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.14102613855169116, 'dry_stress_30d_agg': 0.13108057347260324, 'dry_stress_7d_agg': 0.1256993386243814, 'heat_stress_z_30d_agg': 0.118907339752634, 'dry_stress_z_14d_agg': 0.1181789733876086}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2018-04-02): 8 components, explained=0.953
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.1419493694222904, 'dry_stress_30d_agg': 0.1316303901437131, 'dry_stress_7d_agg': 0.12564778843559485, 'heat_stress_z_30d_agg': 0.1194563966703006, 'dry_stress_z_14d_agg': 0.11829235550980274}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2018-05-01): 8 components, explained=0.954
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2018-05-10 (2100/3268) | Portfolio: $1,137,154
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.14437484436068318, 'dry_stress_30d_agg': 0.13346975485181733, 'dry_stress_7d_agg': 0.12658053699892532, 'heat_stress_z_30d_agg': 0.1201727887783622, 'dry_stress_z_14d_agg': 0.11856340284716942}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2018-06-01): 8 components, explained=0.953
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2018-07-02 — closing position.
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2018-10-02 (2200/3268) | Portfolio: $1,249,097
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2019-03-01 (2300/3268) | Portfolio: $1,249,097
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.14192866640474655, 'dry_stress_30d_agg': 0.13042165578296286, 'dry_stress_7d_agg': 0.12592133787287577, 'dry_stress_z_14d_agg': 0.1144385750636978, 'heat_stress_z_30d_agg': 0.11346234280160288}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2019-04-01): 8 components, explained=0.952
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13494915563586748, 'dry_stress_30d_agg': 0.12589638471208706, 'dry_stress_7d_agg': 0.11752205219317223, 'dry_stress_z_14d_agg': 0.11362483476280431, 'heat_stress_z_30d_agg': 0.11184140442113027}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2019-05-01): 8 components, explained=0.951
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.1452902852456381, 'dry_stress_30d_agg': 0.1317872227586105, 'dry_stress_7d_agg': 0.12783580762760435, 'heat_stress_z_30d_agg': 0.11471768263652926, 'dry_stress_z_14d_agg': 0.11340954580632526}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2019-06-03): 8 components, explained=0.951
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2019-07-01 — closing position.
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2019-07-24 (2400/3268) | Portfolio: $1,373,063
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2019-12-13 (2500/3268) | Portfolio: $1,373,063
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13710228119019602, 'dry_stress_7d_agg': 0.11976354766826147, 'dry_stress_30d_agg': 0.11674178022502982, 'dry_stress_z_14d_agg': 0.1077887876948287, 'heat_stress_z_30d_agg': 0.10493415550458177}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2020-04-01): 8 components, explained=0.951
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.1389993930512797, 'dry_stress_30d_agg': 0.12209251529066233, 'dry_stress_7d_agg': 0.11957648912184565, 'dry_stress_z_14d_agg': 0.10640654290951962, 'heat_stress_z_30d_agg': 0.1026610534869573}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2020-05-01): 8 components, explained=0.951
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2020-05-08 (2600/3268) | Portfolio: $1,397,440
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13664890685045236, 'dry_stress_30d_agg': 0.1210053133215927, 'dry_stress_7d_agg': 0.1175196402010602, 'dry_stress_z_14d_agg': 0.10654812980492095, 'heat_stress_z_30d_agg': 0.10293782372625362}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2020-06-01): 8 components, explained=0.951
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2020-07-01 — closing position.
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2020-09-30 (2700/3268) | Portfolio: $1,400,180
+2026-10-04 03:42:32 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2021-02-24 (2800/3268) | Portfolio: $1,400,180
+2026-10-04 03:42:32 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13662724043411625, 'dry_stress_30d_agg': 0.13131435140119652, 'cold_stress_7d_agg': 0.12066132854162571, 'cold_stress_14d_agg': 0.11686465592264367, 'dry_stress_7d_agg': 0.11602105042078889}
+2026-10-04 03:42:32 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2021-04-01): 9 components, explained=0.960
+2026-10-04 03:42:33 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13964920541118794, 'cold_stress_7d_agg': 0.12705165275254982, 'cold_stress_14d_agg': 0.12589060645581146, 'dry_stress_30d_agg': 0.1256541690078544, 'dry_stress_7d_agg': 0.12216105571466454}
+2026-10-04 03:42:33 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2021-05-03): 9 components, explained=0.963
+2026-10-04 03:42:33 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_14d_agg': 0.13921909895663753, 'dry_stress_7d_agg': 0.1368707174594964, 'cold_stress_7d_agg': 0.1322387038295662, 'cold_stress_14d_agg': 0.12968248435730872, 'cold_stress_30d_agg': 0.11607536047794188}
+2026-10-04 03:42:33 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2021-06-01): 9 components, explained=0.963
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2021-07-01 — closing position.
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2021-07-19 (2900/3268) | Portfolio: $1,522,016
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2021-12-08 (3000/3268) | Portfolio: $1,522,016
+2026-10-04 03:42:33 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_7d_agg': 0.13698829620605282, 'dry_stress_14d_agg': 0.13551051528533922, 'cold_stress_7d_agg': 0.13163740341552785, 'cold_stress_14d_agg': 0.12564423784461953, 'dry_stress_30d_agg': 0.1174750578621676}
+2026-10-04 03:42:33 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2022-04-01): 9 components, explained=0.964
+2026-10-04 03:42:33 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_7d_agg': 0.1411248158776449, 'dry_stress_14d_agg': 0.13828759381304173, 'cold_stress_7d_agg': 0.1370763940391734, 'cold_stress_14d_agg': 0.13131716515666278, 'dry_stress_30d_agg': 0.11835152035804679}
+2026-10-04 03:42:33 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2022-05-02): 9 components, explained=0.964
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2022-05-03 (3100/3268) | Portfolio: $1,524,444
+2026-10-04 03:42:33 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'dry_stress_7d_agg': 0.1351944792280768, 'cold_stress_7d_agg': 0.13308885984653537, 'dry_stress_14d_agg': 0.13100682158434876, 'cold_stress_14d_agg': 0.12727995362274144, 'dry_stress_30d_agg': 0.11255749087769736}
+2026-10-04 03:42:33 | DEBUG    | backtest.engine:_generate_signal_for_date:507 - PCA (corn 2022-06-01): 9 components, explained=0.963
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:240 - corn season ended at 2022-07-01 — closing position.
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:224 - Processing 2022-09-26 (3200/3268) | Portfolio: $1,541,337
+2026-10-04 03:42:33 | INFO     | backtest.engine:_walk_forward_simulation:425 - Collected 2512 result records
+2026-10-04 03:42:33 | INFO     | backtest.engine:run:125 - 
+================================================================================
+2026-10-04 03:42:33 | INFO     | backtest.engine:run:126 - BACKTEST COMPLETE
+2026-10-04 03:42:33 | INFO     | backtest.engine:run:127 - Final Portfolio Value: $1,541,337.43
+2026-10-04 03:42:33 | INFO     | backtest.engine:run:128 - Total Return: 54.13%
+2026-10-04 03:42:33 | INFO     | backtest.engine:run:129 - ================================================================================
+2026-10-04 03:42:33 | INFO     | __main__:main:65 - ✓ Backtest complete
+2026-10-04 03:42:33 | INFO     | __main__:main:68 - 
+📊 Computing performance metrics by commodity...
+2026-10-04 03:42:33 | INFO     | backtest.metrics:compute_metrics_by_commodity:139 - 
+Computing metrics for corn (months [4, 5, 6])...
+2026-10-04 03:42:33 | INFO     | backtest.metrics:compute_metrics:118 - Computed performance metrics for corn (active trading days only)
+2026-10-04 03:42:33 | INFO     | __main__:main:75 - ✓ Results saved to C:\Users\kkati\Kushagra\NasaPowerCouncil\data_storage\results\backtest_results.csv
+2026-10-04 03:42:33 | INFO     | __main__:main:78 - 
+📈 Creating visualizations...
+2026-10-04 03:42:33 | INFO     | backtest.matplotlib_visualizer:create_full_report:186 - Filtered to 632 trading days in months [4, 5, 6]
+2026-10-04 03:42:34 | INFO     | backtest.matplotlib_visualizer:create_full_report:228 - Saved backtest visualization to C:\Users\kkati\Kushagra\NasaPowerCouncil\data_storage\results\backtest_plot.png
+2026-10-04 03:42:34 | INFO     | __main__:main:83 - ✓ Plot saved to C:\Users\kkati\Kushagra\NasaPowerCouncil\data_storage\results\backtest_plot.png
+2026-10-04 03:42:34 | INFO     | backtest.quantstats_report:generate_quantstats_report:74 - Generating QuantStats tearsheet...
+2026-10-04 03:42:34 | INFO     | backtest.quantstats_report:generate_quantstats_report:79 -   Returns series: 494 days, 2013-04-29 → 2022-06-30
+2026-10-04 03:42:34 | INFO     | backtest.quantstats_report:generate_quantstats_report:81 -   Non-zero days: 485 (98.2% of calendar days)
+2026-10-04 03:42:36 | INFO     | backtest.quantstats_report:generate_quantstats_report:118 - ✓ QuantStats report saved to C:\Users\kkati\Kushagra\NasaPowerCouncil\data_storage\results\quantstats_report.html
+2026-10-04 03:42:36 | INFO     | __main__:main:93 - 
+================================================================================
+2026-10-04 03:42:36 | INFO     | __main__:main:94 - ✅ BACKTEST COMPLETE
+2026-10-04 03:42:36 | INFO     | __main__:main:95 - ================================================================================
+2026-10-04 09:42:02 | INFO     | __main__:setup_logging:35 - Logging to data_storage\logs\backtest.log
+2026-10-04 09:42:02 | INFO     | __main__:main:42 - ================================================================================
+2026-10-04 09:42:02 | INFO     | __main__:main:43 - NASAPOWERCOUNCIL - Weather-Based Commodity Trading System
+2026-10-04 09:42:02 | INFO     | __main__:main:44 - ================================================================================
+2026-10-04 09:42:02 | INFO     | __main__:main:45 - Backtest Period: 2015-01-01 to 2025-01-01
+2026-10-04 09:42:02 | INFO     | __main__:main:46 - Commodities: ['soybeans']
+2026-10-04 09:42:02 | INFO     | __main__:main:47 - Initial Capital: $1,000,000
+2026-10-04 09:42:02 | INFO     | __main__:main:48 - Model: ridge  |  PCA: True (n_components=0.95)
+2026-10-04 09:42:02 | INFO     | __main__:main:49 - ================================================================================
+2026-10-04 09:42:02 | INFO     | __main__:main:53 - 
+🚀 Starting backtest...
+2026-10-04 09:42:02 | INFO     | data.market_fetcher:__init__:41 - Market data provider: Yahoo Finance (REAL DATA ONLY)
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:138 - ================================================================================
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:139 - STARTING BACKTEST
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:140 - Period: 2015-01-01 to 2025-01-01
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:141 - Commodities: ['soybeans']
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:142 - Initial Capital: $1,000,000
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:143 - Strategy Mode: directional
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:144 - ================================================================================
+2026-10-04 09:42:02 | INFO     | backtest.engine:run:147 - 
+Step 1: Fetching climate data...
+2026-10-04 09:42:02 | INFO     | backtest.engine:_fetch_all_climate_data:185 - Fetching climate data for soybeans...
+2026-10-04 09:42:02 | INFO     | data.climate_fetcher:fetch_region:86 - Fetching NASA POWER data for soybeans_Iowa (42.0, -93.5)
+2026-10-04 09:42:12 | INFO     | data.climate_fetcher:fetch_region:98 - Cached data for soybeans_Iowa
+2026-10-04 09:42:13 | INFO     | data.climate_fetcher:fetch_region:86 - Fetching NASA POWER data for soybeans_Illinois (40.0, -89.0)
+2026-10-04 09:42:23 | INFO     | data.climate_fetcher:fetch_region:98 - Cached data for soybeans_Illinois
+2026-10-04 09:42:24 | INFO     | data.climate_fetcher:fetch_region:86 - Fetching NASA POWER data for soybeans_Minnesota (45.0, -94.0)
+2026-10-04 09:42:34 | INFO     | data.climate_fetcher:fetch_region:98 - Cached data for soybeans_Minnesota
+2026-10-04 09:42:35 | INFO     | data.climate_fetcher:fetch_region:86 - Fetching NASA POWER data for soybeans_Indiana (40.3, -86.1)
+2026-10-04 09:42:45 | INFO     | data.climate_fetcher:fetch_region:98 - Cached data for soybeans_Indiana
+2026-10-04 09:42:46 | INFO     | data.climate_fetcher:fetch_commodity_regions:178 - Fetched climate data for 4 regions of soybeans
+2026-10-04 09:42:46 | INFO     | backtest.engine:run:150 - 
+Step 2: Fetching market data...
+2026-10-04 09:42:46 | INFO     | backtest.engine:_fetch_all_market_data:204 - Fetching market data for soybeans...
+2026-10-04 09:42:46 | DEBUG    | data.cache_manager:get:76 - Cache MISS: 997134dfd5cb095c568a95b35060c511
+2026-10-04 09:42:46 | INFO     | data.market_fetcher:_fetch_from_yahoo:103 - Fetching soybeans (ZS=F) from Yahoo Finance...
+2026-10-04 09:42:46 | INFO     | data.market_fetcher:_fetch_from_yahoo:161 - ✓ Fetched 2514 records for soybeans
+2026-10-04 09:42:46 | INFO     | data.market_fetcher:_fetch_from_yahoo:162 -   Date range: 2015-01-02 to 2024-12-31
+2026-10-04 09:42:46 | INFO     | data.market_fetcher:_fetch_from_yahoo:163 -   Price range: $791.00 to $1769.00
+2026-10-04 09:42:46 | DEBUG    | data.cache_manager:set:93 - Cached data: 997134dfd5cb095c568a95b35060c511
+2026-10-04 09:42:46 | DEBUG    | data.cache_manager:get:68 - Cache HIT: 63ec1796f32ffb4d717462c5bb39f912
+2026-10-04 09:42:46 | INFO     | data.market_fetcher:fetch_futures_data:73 - Using cached data for corn
+2026-10-04 09:42:46 | INFO     | backtest.engine:run:162 - 
+Step 3: Generating features...
+2026-10-04 09:42:46 | INFO     | backtest.engine:_run_pipeline:219 - Generating features for soybeans...
+2026-10-04 09:42:46 | INFO     | features.feature_pipeline:run:95 - Running feature pipeline for soybeans
+2026-10-04 09:42:46 | INFO     | features.feature_pipeline:process_region:37 - Processing features for soybeans - Iowa
+2026-10-04 09:42:46 | INFO     | features.feature_pipeline:process_region:37 - Processing features for soybeans - Illinois
+2026-10-04 09:42:46 | INFO     | features.feature_pipeline:process_region:37 - Processing features for soybeans - Minnesota
+2026-10-04 09:42:46 | INFO     | features.feature_pipeline:process_region:37 - Processing features for soybeans - Indiana
+2026-10-04 09:42:48 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 09:42:49 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 09:42:49 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for soybeans
+2026-10-04 09:42:49 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Minnesota
+2026-10-04 09:42:49 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for soybeans
+2026-10-04 09:42:49 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Iowa
+2026-10-04 09:42:49 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 09:42:49 | DEBUG    | features.seasonal_deviation:compute_seasonal_deviations:59 - Computed seasonal deviations for 4 variables
+2026-10-04 09:42:49 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for soybeans
+2026-10-04 09:42:49 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Illinois
+2026-10-04 09:42:49 | DEBUG    | features.stress_calculator:compute_stress_indicators:67 - Computed stress indicators for soybeans
+2026-10-04 09:42:49 | DEBUG    | features.feature_pipeline:process_region:45 - Generated 38 features for Indiana
+2026-10-04 09:42:49 | INFO     | features.feature_pipeline:aggregate:79 - Aggregating regions for soybeans
+2026-10-04 09:42:49 | INFO     | features.regional_aggregator:aggregate_regional_features:41 - Aggregating 24 stress features across 4 regions
+2026-10-04 09:42:49 | INFO     | features.regional_aggregator:aggregate_regional_features:80 - Aggregated features shape: (3654, 25)
+2026-10-04 09:42:49 | INFO     | features.feature_pipeline:run:103 - Feature pipeline complete for soybeans: (3654, 25)
+2026-10-04 09:42:49 | INFO     | soybean.features:add_soybean_features:129 - Added 8 soybean features
+2026-10-04 09:42:49 | INFO     | backtest.engine:run:165 - 
+Step 4: Running walk-forward simulation...
+2026-10-04 09:42:49 | INFO     | backtest.engine:_walk_forward_simulation:260 - Starting simulation at index 2262 / 2514
+2026-10-04 09:42:49 | INFO     | backtest.engine:_walk_forward_simulation:279 - Processing 2024-02-27 (2300/2514) | Portfolio: $1,000,000
+2026-10-04 09:42:49 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'cold_stress_30d_agg': 0.11783635830968524, 'cold_stress_14d_agg': 0.11449077007681562, 'cold_stress_7d_agg': 0.10374705109300525, 'cold_stress_z_30d_agg': 0.08954380990761573, 'heat_stress_z_14d_agg': 0.07597376460064932}
+2026-10-04 09:42:49 | DEBUG    | backtest.engine:_generate_signal_for_date:610 - PCA (soybeans 2024-07-01): 7 components, explained=0.954
+2026-10-04 09:42:49 | INFO     | backtest.engine:_walk_forward_simulation:279 - Processing 2024-07-22 (2400/2514) | Portfolio: $1,005,937
+2026-10-04 09:42:49 | INFO     | models.ridge_model:prepare_features:96 - Top feature correlations: {'cold_stress_30d_agg': 0.12780288582895047, 'cold_stress_14d_agg': 0.12515132405864351, 'cold_stress_7d_agg': 0.11548009160880922, 'cold_stress_z_30d_agg': 0.0897985763480615, 'heat_stress_z_14d_agg': 0.0760993083456127}
+2026-10-04 09:42:49 | DEBUG    | backtest.engine:_generate_signal_for_date:610 - PCA (soybeans 2024-08-01): 9 components, explained=0.971
+2026-10-04 09:42:49 | INFO     | backtest.engine:_walk_forward_simulation:295 - soybeans season ended at 2024-09-03 — closing position.
+2026-10-04 09:42:49 | INFO     | backtest.engine:_walk_forward_simulation:279 - Processing 2024-12-11 (2500/2514) | Portfolio: $1,005,937
+2026-10-04 09:42:49 | INFO     | backtest.engine:_walk_forward_simulation:528 - Collected 252 result records
+2026-10-04 09:42:49 | INFO     | backtest.engine:run:168 - 
+================================================================================
+2026-10-04 09:42:49 | INFO     | backtest.engine:run:169 - BACKTEST COMPLETE
+2026-10-04 09:42:49 | INFO     | backtest.engine:run:170 - Final Portfolio Value: $1,005,937.15
+2026-10-04 09:42:49 | INFO     | backtest.engine:run:171 - Total Return: 0.59%
+2026-10-04 09:42:49 | INFO     | backtest.engine:run:172 - ================================================================================
+2026-10-04 09:42:49 | INFO     | __main__:main:65 - ✓ Backtest complete
+2026-10-04 09:42:49 | INFO     | __main__:main:68 - 
+📊 Computing performance metrics by commodity...
+2026-10-04 09:42:49 | INFO     | backtest.metrics:compute_metrics_by_commodity:139 - 
+Computing metrics for soybeans (months [7, 8])...
+2026-10-04 09:42:49 | INFO     | backtest.metrics:compute_metrics:118 - Computed performance metrics for soybeans (active trading days only)
+2026-10-04 09:42:49 | INFO     | __main__:main:75 - ✓ Results saved to data_storage\results\backtest_results.csv
+2026-10-04 09:42:49 | INFO     | __main__:main:78 - 
+📈 Creating visualizations...
+2026-10-04 09:42:49 | INFO     | backtest.matplotlib_visualizer:create_full_report:186 - Filtered to 44 trading days in months [7, 8]
+2026-10-04 09:42:50 | INFO     | backtest.matplotlib_visualizer:create_full_report:228 - Saved backtest visualization to data_storage\results\backtest_plot.png
+2026-10-04 09:42:50 | INFO     | __main__:main:83 - ✓ Plot saved to data_storage\results\backtest_plot.png
+2026-10-04 09:42:50 | INFO     | backtest.quantstats_report:generate_quantstats_report:74 - Generating QuantStats tearsheet...
+2026-10-04 09:42:50 | INFO     | backtest.quantstats_report:generate_quantstats_report:79 -   Returns series: 5 days, 2024-07-09 → 2024-07-15
+2026-10-04 09:42:50 | INFO     | backtest.quantstats_report:generate_quantstats_report:81 -   Non-zero days: 5 (100.0% of calendar days)
+2026-10-04 09:42:52 | INFO     | backtest.quantstats_report:generate_quantstats_report:118 - ✓ QuantStats report saved to data_storage\results\quantstats_report.html
+2026-10-04 09:42:52 | INFO     | __main__:main:93 - 
+================================================================================
+2026-10-04 09:42:52 | INFO     | __main__:main:94 - ✅ BACKTEST COMPLETE
+2026-10-04 09:42:52 | INFO     | __main__:main:95 - ================================================================================

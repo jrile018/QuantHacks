@@ -31,6 +31,11 @@ class RepositoryNotebookTests(unittest.TestCase):
         self.assertIn("audit_exported_run", text)
         self.assertIn("run_simple_wording_backtest.py", text)
         self.assertIn("SYNTHETIC FABRICATED", text)
+        sharpe_display = next(cell.source for cell in notebook.cells if cell.id == "metrics-interpretation")
+        self.assertIn("Sharpe (single point estimate)", sharpe_display)
+        self.assertIn("report one scalar point estimate", sharpe_display)
+        self.assertIn("current Sharpe result is **N/A**", sharpe_display)
+        self.assertIn("Do not substitute a fabricated synthetic estimate or an interval", sharpe_display)
         architecture = next(cell.source for cell in notebook.cells if cell.id == "strategy-universe-architecture")
         for boundary in ("Signal and decision policy", "Security universe and market lifecycle", "Portfolio and execution policy", "Comparison and reporting gates"):
             self.assertIn(boundary, architecture)

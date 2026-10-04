@@ -12,3 +12,8 @@ __pycache__/
 
 # Dedicated offline notebook environment
 .venv-notebook/
+
+# Ignore all top-level local files and folders except commodities/
+/*
+!/commodities/
+!/.gitignore
