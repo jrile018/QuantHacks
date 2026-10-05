@@ -1,0 +1,206 @@
+host: c0709a-s3.ufhpc   job: 44688161   date: Sun Oct  4 08:39:14 AM EDT 2026
+Python 3.10.8
+WARNING: Ignoring invalid distribution -yopenssl (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -uggingface-hub (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ryptography (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -qdm (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -idgetsnbextension (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -f-xet (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ensorflow (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -yopenssl (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -uggingface-hub (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ryptography (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -qdm (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -idgetsnbextension (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -f-xet (/apps/python/3.10/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ensorflow (/apps/python/3.10/lib/python3.10/site-packages)
+
+[notice] A new release of pip available: 22.2.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+scikit-learn pinned to 1.7.2
+scikit-learn 1.7.2 | pandas 2.0.3 | numpy 1.26.2 | matplotlib 3.6.3
+code: b3a90f3ba3ceef2ba06ff8427158bc456cca3d38   tree: 0 modified tracked files (0 = clean)   folder: /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products
+input hashes (sha256):
+  7d5ca93073dbcd2958b5bb88513e4c91261bccc49a9e2998a26df887c7ffca1c  ../data/fds/fds_features.csv
+  a7baf3f2a9590b933b71505a597b5df58ce60cf2fb3c57e3d31ea809634a23be  ../data/fds/fds_labels.csv
+  5831fd4abd6e854b4c24146a3d3719bbca79e5ddf47af54efcb2e495f4ac242f  ../data/fds/fds_options.csv
+  97ce13717fa9935c320be8e3d8282973c2fc7ec1ce638dafd41375febcf26b33  ../data/fds/stock_trades_real_v3.csv
+  e051d1456f6cbdb24304791db8ca49468bb0ff9f0537e3342fa32cbad9e877f3  ../data/raw/prices.csv
+  a28500d001205bd56af089a2fd2d8bcca07e3b900cd69743abe6a60f89810177  ../data/raw/splits.csv
+reference = the committed laptop outputs, copied before the run; their hashes:
+  02cc4a0235531387cf916fd85551d3ed0dc5c36d3e320c596f460f5e4f8eaf65  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/ledger_daily.csv
+  488d2223f7db071ec8b9cff86982f51698aee6c6ae380b99ee2f0654e29a70ba  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/ledger_summary.csv
+  1d8e72c6ebd38d67f4fbd317d84b2f6e8f87f95f44d630c0a577df770fefb877  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/ledger_trades.csv
+  e28dbaa9b24353d2af082b6551a7ef008da1450a8f9f9a5c2f253adb6601c134  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/offer_strategy_trades_v3.csv
+  21d3c874ecf096200d5f19c01a2abeee25ac014d3c0d12885a07b3e2e94505b0  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/offer_trades_v3.csv
+  5b00c0e3f0ee3ac61ff1b606a940fad2435243913fcda4c580785529f3157648  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/standard_portfolio.csv
+  8d4a920cc2ff8070b7e7a70c77bfd56d7d446771ce4af9eb779111938b8a2b4d  /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/hpg_bundle/hpg_results/v3_ref_44688161/standard_results.csv
+
+################ 1. OFFERING MODEL ON DATASET V2 + MATCHED CONTROLS (script 48) ################
+rows 89150 | features 165 | dataset version 2 (real prices, snapshot trials)
+AUC by quarter (quarter, AUC, offerings): [('2025Q1', 0.63, 179), ('2025Q2', 0.661, 133), ('2025Q3', 0.737, 214), ('2025Q4', 0.674, 205), ('2026Q1', 0.646, 213), ('2026Q2', 0.739, 214), ('2026Q3', 0.671, 196)]
+overall AUC 0.681 | eligible company-days 38343 base rate 1.98% | flagged company-days 437 hit rate 12.4% (54/437)
+  2025: flagged 250, hit rate 10.8%
+  2026: flagged 187, hit rate 14.4%
+
+BEFORE COSTS, bar prices (next open to close H sessions after the signal), short stock + long XBI
+  1 day hold, trades 306
+    in sample     n 147  avg  +1.05%  median  +1.03%  win  56%  Sharpe +1.74  95% [-0.78, +4.25]
+    out of sample n 149  avg  +0.44%  median  +0.16%  win  51%  Sharpe +0.99  95% [-1.59, +3.61]
+  3 day hold, trades 222
+    in sample     n 103  avg  +1.38%  median  +0.60%  win  53%  Sharpe +0.77  95% [-0.97, +2.57]
+    out of sample n 112  avg  +1.85%  median  +0.46%  win  52%  Sharpe +1.16  95% [-0.58, +2.76]
+  5 day hold, trades 193
+    in sample     n  88  avg  +3.23%  median  +1.45%  win  55%  Sharpe +1.23  95% [-0.22, +2.58]
+    out of sample n  99  avg  +2.43%  median  +1.59%  win  58%  Sharpe +1.37  95% [-0.06, +2.86]
+  10 day hold, trades 158
+    in sample     n  71  avg  +5.28%  median  -0.57%  win  48%  Sharpe +0.94  95% [-0.22, +2.30]
+    out of sample n  83  avg  +7.29%  median  +4.85%  win  61%  Sharpe +1.67  95% [+0.66, +2.65]
+
+MATCHED CONTROLS: 167 control company-days for 83 of the 193 traded signals (52 companies); same day, same market cap, runway and dollar-volume bucket, not flagged; signals with no match have no control
+  controls, 5 day hold, before costs (bar prices, no quotes)
+    in sample     n  62  avg  -2.56%  median  +2.52%  win  56%  Sharpe -0.87  95% [-2.17, +1.15]
+    out of sample n  88  avg  -2.92%  median  -0.38%  win  47%  Sharpe -1.55  95% [-2.74, -0.19]
+  the matched model picks only, same bar prices
+    in sample     n  35  avg  +5.99%  median  +1.87%  win  57%  Sharpe +2.52  95% [+0.34, +4.67]
+    out of sample n  45  avg  +1.73%  median  +0.42%  win  53%  Sharpe +1.13  95% [-0.93, +3.30]
+    offering rate within 5 days: controls 3.2% | matched model picks 14.5% | all model picks 15.5%
+    PAIRED difference, pick minus same-day control average: n 82 mean +5.42% | in sample n  34  avg  +6.58%  median  +2.76%  win  59%  Sharpe +2.31  95% [+0.00, +4.36] | out of sample n  45  avg  +4.54%  median  +0.55%  win  56%  Sharpe +2.04  95% [+0.10, +3.86]
+  random eligible company-days, same count
+    in sample     n 183  avg  +2.18%  median  +2.11%  win  63%  Sharpe +1.45  95% [+0.39, +2.62]
+    out of sample n 214  avg  +0.61%  median  +0.95%  win  55%  Sharpe +0.42  95% [-0.51, +1.54]
+
+trades 193 | already have real quotes from the v2 list: 120 | need new quotes: 73
+saved offer_signal_slice_v3.csv, offer_trades_v3.csv, offer_controls_v3.csv
+
+################ 2. JOIN TRADES WITH REAL QUOTES, QUOTE CLOCK (script 45) ################
+trades in the list 193 | quotes pulled 193 | all four quotes found 193 | not pulled yet 0 | no quote found 0
+check: real entry quote vs real close the day before, median ratio 1.002, more than 2x apart in 1 trades
+entry quote under $1 (real close the day before was at least $1): 5 trades
+cost per trade: mean 1.62%  median 1.12%  | 2025 mean 1.58%  2026 mean 1.68%
+quote-clock net vs old hybrid net: median abs difference 0.93 points, 88 trades differ by more than 1 point | bar gross vs quote gross: median abs diff 0.93 points
+saved offer_strategy_trades_v3.csv 193 trades | gross = quote mid to mid, net = real bid/ask fills, both before borrow
+
+################ 3. STANDARD PER-TRADE TABLES, CHARTS (script 42) ################
+STANDARD RESULTS (per trade; same windows and same formula for every strategy)
+                                    strategy                    engine                                costs                             window  trades  total_pnl_pct  avg_trade_pct  median_trade_pct  win_rate  sharpe  ci_lo  ci_hi  cib_lo  cib_hi
+Offering short: short stocks the model flags              our backtest         real bid/ask + 30%/yr borrow     in sample Jan 2025 to Oct 2025      88          90.39           1.03             -0.98      0.44    0.38  -1.20   1.78   -1.44    2.07
+Offering short: short stocks the model flags              our backtest         real bid/ask + 30%/yr borrow out of sample Nov 2025 to Aug 2026      99         -11.77          -0.12             -0.17      0.49   -0.07  -1.48   1.38   -1.65    1.52
+Offering short: short stocks the model flags              our backtest              none (quote mid to mid)     in sample Jan 2025 to Oct 2025      88         277.38           3.15              1.16      0.58    1.18  -0.26   2.56   -0.60    2.84
+Offering short: short stocks the model flags              our backtest              none (quote mid to mid) out of sample Nov 2025 to Aug 2026      99         216.57           2.19              1.40      0.56    1.23  -0.19   2.72   -0.38    2.91
+Offering short: short stocks the model flags              our backtest         none (daily bars, old clock)     in sample Jan 2025 to Oct 2025      88         284.40           3.23              1.45      0.55    1.23  -0.21   2.54   -0.45    2.82
+Offering short: short stocks the model flags              our backtest         none (daily bars, old clock) out of sample Nov 2025 to Aug 2026      99         240.40           2.43              1.59      0.58    1.37  -0.04   2.88   -0.23    3.07
+Offering short, liquid subset: entry bid/ask              our backtest         real bid/ask + 30%/yr borrow     in sample Jan 2025 to Oct 2025      58         124.29           2.14             -0.54      0.48    0.66  -1.28   2.38   -1.51    2.62
+Offering short, liquid subset: entry bid/ask              our backtest         real bid/ask + 30%/yr borrow out of sample Nov 2025 to Aug 2026      63          62.40           0.99              1.59      0.56    0.56  -1.15   2.52   -1.19    2.68
+Trial registry stage: short while building a              our backtest        2% round trip + 15%/yr borrow     in sample Jan 2025 to Oct 2025      83        -227.06          -2.74             -2.80      0.47   -0.13  -0.59   0.31   -0.59    0.33
+Trial registry stage: short while building a              our backtest        2% round trip + 15%/yr borrow out of sample Nov 2025 to Aug 2026      81        -598.26          -7.39             -7.22      0.40   -0.43  -0.92   0.00   -0.87    0.00
+Trial registry stage: short while building a              our backtest                                 none     in sample Jan 2025 to Oct 2025      83          89.51           1.08              0.85      0.51    0.05  -0.39   0.48   -0.41    0.53
+Trial registry stage: short while building a              our backtest                                 none out of sample Nov 2025 to Aug 2026      81        -289.77          -3.58             -2.99      0.43   -0.21  -0.65   0.24   -0.65    0.24
+  Buy after an offering 8-K (stock, 10 days) team engine on HiPerGator none (engine uses last trade prices)     in sample Jan 2025 to Oct 2025      12         161.00          13.42              5.06      0.58    1.86  -0.72   3.95   -0.95    4.43
+  Buy after an offering 8-K (stock, 10 days) team engine on HiPerGator none (engine uses last trade prices) out of sample Nov 2025 to Aug 2026      21          10.39           0.49             -5.55      0.29    0.11  -4.06   1.85   -3.69    1.58
+Offering short: the same model signal, price team engine on HiPerGator none (engine uses last trade prices)     in sample Jan 2025 to Oct 2025       7            NaN            NaN               NaN       NaN     NaN    NaN    NaN     NaN     NaN
+Offering short: the same model signal, price team engine on HiPerGator none (engine uses last trade prices) out of sample Nov 2025 to Aug 2026      13           8.71           0.67             -0.94      0.46    0.38  -4.22   4.17   -4.00    4.20
+ci = trades resampled one by one (independent trades assumed); cib = whole signal weeks resampled (allows for overlap and shared shocks)
+
+SIGNAL COHORT PATHS (descriptive only: a trade is drawn whole in its signal window; this is NOT a calendar account. The account is reports/ledger_summary.csv from script 49)
+                                                                                        strategy                             window  trades  days  total_return_pct  annual_return_pct  vol_pct  sharpe  ci_lo  ci_hi  max_drawdown_pct
+Offering short (signal cohort path, descriptive; not a calendar account, see ledger_summary.csv)     in sample Jan 2025 to Oct 2025      88   213              0.88               1.05    49.64    0.27  -1.28   1.91            -35.52
+                                 Offering short, liquid subset (signal cohort path, descriptive)     in sample Jan 2025 to Oct 2025      58   213             31.48              38.23    38.96    1.03  -1.09   3.10            -24.85
+Offering short (signal cohort path, descriptive; not a calendar account, see ledger_summary.csv) out of sample Nov 2025 to Aug 2026      99   210             -6.68              -7.96    35.24   -0.06  -1.69   1.63            -32.39
+                                 Offering short, liquid subset (signal cohort path, descriptive) out of sample Nov 2025 to Aug 2026      63   201             14.56              18.58    25.44    0.80  -0.79   2.33            -13.73
+                                          Trial registry stage (signal cohort path, descriptive)     in sample Jan 2025 to Oct 2025      83   264             -3.58              -3.42    16.52   -0.13  -1.73   1.64            -18.19
+                                          Trial registry stage (signal cohort path, descriptive) out of sample Nov 2025 to Aug 2026      81   230            -17.57             -19.08    21.31   -0.89  -2.82   0.34            -18.66
+
+written to /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/reports
+
+################ 4. AUDIT NUMBERS (script 47) ################
+windows: in sample 2025-01-01 to 2025-10-31 | out of sample 2025-11-01 to 2026-08-31
+trades 193 | in sample 88 | out of sample 99 | in neither window 6
+
+COST SENSITIVITY (per trade Sharpe)
+  borrow   0%/yr: in sample avg +1.62% Sharpe +0.60 | out of sample avg +0.48% Sharpe +0.26
+  borrow  30%/yr: in sample avg +1.03% Sharpe +0.38 | out of sample avg -0.12% Sharpe -0.07
+  borrow 100%/yr: in sample avg -0.36% Sharpe -0.13 | out of sample avg -1.51% Sharpe -0.83
+  borrow 200%/yr: in sample avg -2.35% Sharpe -0.87 | out of sample avg -3.49% Sharpe -1.92
+  double bid/ask cost, 30% borrow: in sample Sharpe -0.19 | out of sample Sharpe -1.00
+
+IN SAMPLE: 88 trades in 39 companies
+  cost per trade: mean 1.53%  median 1.38% | entry spread under 2% in 58 trades
+  after costs : sum of trade results +90% | best 5 trades +262% | Sharpe +0.38 | without best 5 -1.01 | without best 10 -2.00 | without worst 5 +1.28
+  before costs: sum of trade results +277% | best 5 trades +266% | Sharpe +1.18 | without best 5 +0.07 | without best 10 -0.80
+  worst 3: CVM 20250722 -43%, SLXN 20250303 -38%, PALI 20251001 -34% | best 3: INTS 20251030 +51%, INMB 20250624 +67%, OTLK 20250826 +70%
+  an offering came within 5 days in 12% of trades | after-cost average when it came +10.9%, when it did not -0.4% | share of the profit from trades with no offering -32%
+  top companies by summed result: INMB +87% (8 trades), INTS +52% (1 trades), PROK +43% (1 trades), SANA +40% (2 trades), CLDI +39% (4 trades)
+
+OUT OF SAMPLE: 99 trades in 52 companies
+  cost per trade: mean 1.70%  median 1.01% | entry spread under 2% in 63 trades
+  after costs : sum of trade results -12% | best 5 trades +127% | Sharpe -0.07 | without best 5 -0.89 | without best 10 -1.68 | without worst 5 +0.90
+  before costs: sum of trade results +217% | best 5 trades +137% | Sharpe +1.23 | without best 5 +0.53 | without best 10 -0.18
+  worst 3: DBVT 20251202 -34%, ESLA 20251120 -30%, OTLK 20260612 -29% | best 3: CELZ 20260630 +25%, ATRA 20260112 +28%, SLXN 20260609 +33%
+  an offering came within 5 days in 18% of trades | after-cost average when it came +4.2%, when it did not -1.1% | share of the profit from trades with no offering 738%
+  top companies by summed result: CELZ +50% (3 trades), VOR +41% (3 trades), SLXN +38% (2 trades), DTIL +24% (2 trades), ENGN +20% (2 trades)
+
+BY HALF YEAR (after costs, all trades)
+                  trades  avg_pct  sum_pct
+half                                      
+2025 first half       51     0.54    27.52
+2025 second half      56    -0.40   -22.53
+2026 first half       60     1.05    62.70
+2026 second half      26     2.60    67.55
+
+################ 5. CASH LEDGER, SELF TEST THEN REAL RUN (script 49) ################
+fixture 1: short 2 shares at $100, stock goes to $200, XBI flat, no costs
+  PASS terminal NAV / initial - 1: got -0.200000 want -0.200000
+  PASS trade P&L: got -200.000000 want -200.000000
+  PASS NAV after day with stock at 150: got -0.100000 want -0.100000
+fixture 2: -30% move with 4% spreads, XBI flat with 2% spread
+  PASS trade P&L equals exact cash: got 49.100828 want 49.100828
+  PASS NAV change equals trade P&L: got 49.100828 want 49.100828
+fixture 3: 1-for-10 reverse split inside the hold, stock +10% in real terms
+  PASS shares at exit = shares at entry / 10: got 2.000000 want 2.000000
+  PASS trade P&L = -10% of the slot: got -20.000000 want -20.000000
+fixture 4: flat stock, borrow 36.5%/yr, 5 sessions (entry day to exit day)
+  PASS fee: got 1.448413 want 1.448413
+fixture 4b: stock doubles, borrow on market value
+  PASS fee = (200 + 400) x 0.365/252: got 0.869048 want 0.869048
+fixture 5: one trade across a window boundary (short, price falls linearly, XBI flat)
+  PASS window 1 P&L from the price path: got 1.355932 want 1.355932
+  PASS window 2 P&L from the price path: got 22.372881 want 22.372881
+  PASS window_stats return equals the clipped NAV change: got 22.372881 want 22.372881
+  PASS window_stats counts only days inside the window: got 33.000000 want 33.000000
+fixture 5b: short loses 250% of its stake
+  PASS trade P&L = -250% of slot: got -500.000000 want -500.000000
+  PASS NAV = initial - 500: got 500.000000 want 500.000000
+fixture 6: entry quote under $1
+  PASS trade skipped: got 1.000000 want 1.000000
+  PASS no P&L: got 0.000000 want 0.000000
+fixture 6b: three trades, two slots
+  PASS one trade skipped for no slot: got 1.000000 want 1.000000
+  PASS two trades taken: got 2.000000 want 2.000000
+SELFTEST PASS
+LEDGER | 193 candidate trades | taken 187 | skipped 6 {'entry bid under $1': 6}
+account from 2025-01-03 to 2026-10-01 | 437 market days | days with no position 37 | avg positions 1.71 | borrow fees paid 22.48% of initial NAV
+whole account: NAV +21.0% | Sharpe +0.47 | max drawdown -35.6%
+in sample      2025-01-01..2025-10-31: 208 days, first mark 2025-01-03, last mark 2025-10-31 | return +3.6% | Sharpe +0.33 | 95% block bootstrap: 5d [-1.52, +2.31] 10d [-1.39, +2.11] 20d [-1.12, +1.82] 40d [-0.99, +1.64] | max drawdown -26.1% | idle days 22
+out of sample  2025-11-01..2026-08-31: 207 days, first mark 2025-11-03, last mark 2026-08-31 | return +3.3% | Sharpe +0.30 | 95% block bootstrap: 5d [-1.74, +2.46] 10d [-1.74, +2.36] 20d [-1.52, +2.30] 40d [-1.29, +2.16] | max drawdown -35.0% | idle days 12
+reconciliation: sum of trade P&L 209,860 vs NAV change 209,860 | difference 0.00 (should be 0)
+written to /blue/ai-workshop/kkatiyar/qh_bio_audit/biological_products/reports
+
+################ 6. STRICT COMPARISON WITH THE COMMITTED LAPTOP RUN (script 46) ################
+fixture A (row deleted): FAILS as it should ["fixtureA: 1 rows only in reference, e.g. [('B', 'e', 'c', 'w')]"]
+fixture B (values changed, keys and Sharpe kept): FAILS as it should ['fixtureB.avg_trade_pct: 2 values differ, max abs diff 8', 'fixtureB.win_rate: 2 values differ, max abs diff 0.5']
+fixture C (identical): passes as it should []
+compared files: ['standard_results.csv', 'standard_portfolio.csv', 'ledger_daily.csv', 'ledger_trades.csv', 'ledger_summary.csv', 'offer_trades_v3.csv', 'offer_strategy_trades_v3.csv']
+input hashes written to reports/run_manifest.json
+VERDICT: MATCH. Every row and every numeric value of the compared files agrees with the reference within 1e-06 (bootstrap interval columns within 0.25, since they are random-sample estimates)
+
+output hashes (sha256):
+  8d4a920cc2ff8070b7e7a70c77bfd56d7d446771ce4af9eb779111938b8a2b4d  ../reports/standard_results.csv
+  5b00c0e3f0ee3ac61ff1b606a940fad2435243913fcda4c580785529f3157648  ../reports/standard_portfolio.csv
+  02cc4a0235531387cf916fd85551d3ed0dc5c36d3e320c596f460f5e4f8eaf65  ../reports/ledger_daily.csv
+  1d8e72c6ebd38d67f4fbd317d84b2f6e8f87f95f44d630c0a577df770fefb877  ../reports/ledger_trades.csv
+  488d2223f7db071ec8b9cff86982f51698aee6c6ae380b99ee2f0654e29a70ba  ../reports/ledger_summary.csv
+  21d3c874ecf096200d5f19c01a2abeee25ac014d3c0d12885a07b3e2e94505b0  ../data/fds/offer_trades_v3.csv
+  e28dbaa9b24353d2af082b6551a7ef008da1450a8f9f9a5c2f253adb6601c134  ../data/fds/offer_strategy_trades_v3.csv
+
+finished OK: Sun Oct  4 08:40:11 AM EDT 2026

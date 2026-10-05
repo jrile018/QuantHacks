@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "source_id": "biologics-fds-daily",
+  "owner": "abhay",
+  "owner_github": "abhay-dronavalli",
+  "stage": "discovery",
+  "engine": "native"
+}

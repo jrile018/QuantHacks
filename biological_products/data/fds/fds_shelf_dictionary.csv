@@ -1,0 +1,15 @@
+column,block,unit,description
+sh_float_hi60_m,shelf,USD millions,"Highest market cap in the last 60 company rows, an upper bound on float under the baby shelf rule because affiliate holdings are assumed to be zero."
+sh_baby,shelf,flag,One when the estimated upper bound on float is below the baby shelf rule threshold of 75 million dollars.
+sh_dist_to_75,shelf,log ratio,Log of the estimated upper bound on float divided by the baby shelf rule threshold of 75 million dollars.
+sh_cap_12m_m,shelf,USD millions,One third of the estimated upper bound on float for companies inside the baby shelf rule.
+sh_used_12m_m,shelf,USD millions,Nonnegative common stock proceeds over 12 months used as a rough measure of baby shelf rule capacity already used.
+sh_room_m,shelf,USD millions,Estimated remaining baby shelf rule capacity after rough prior stock proceeds are removed.
+sh_need_12m_m,shelf,USD millions,Cash gap over 12 months based on four quarters of burn less current liquidity.
+sh_room_to_need,shelf,ratio,"Estimated baby shelf rule room divided by the cash gap, clipped from zero to 20."
+sh_room_to_mcap,shelf,ratio,Estimated baby shelf rule room divided by current market cap.
+sh_squeeze,shelf,flag,One when the baby shelf rule room is smaller than the positive cash gap.
+sh_has_s3,shelf,flag,One when an S-3 filing occurred in the last 365 days.
+sh_has_424b,shelf,flag,One when a 424B prospectus filing occurred in the last 365 days.
+sh_float_ratio,shelf,ratio,Reported public float divided by market cap when the ratio is between 0.05 and 1.2.
+sh_months_baby,shelf,market days,Number of the last 252 company rows inside the estimated baby shelf rule zone.

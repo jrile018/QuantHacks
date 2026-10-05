@@ -1,0 +1,75 @@
+host: c0704a-s1.ufhpc   job: 44675692   date: Sun Oct  4 05:01:33 AM EDT 2026   repo: /blue/ai-workshop/kkatiyar/QuantHacks
+team repo commit: fa30fcb Add teammate source onboarding and configuration gates (#4)
+team engine from /blue/ai-workshop/kkatiyar/QuantHacks | our signal events 155 | 2025-01-02 to 2026-09-24 | tickers 59
+  offering signal: 25/155 events, 9s
+  offering signal: 50/155 events, 15s
+  offering signal: 75/155 events, 19s
+  offering signal: 100/155 events, 27s
+  offering signal: 125/155 events, 34s
+  offering signal: 150/155 events, 41s
+offering signal: 155 events -> 64 priced (event, bucket) pairs; 195 drops; 43s
+events 155 | priced (event, bucket) pairs 64 | result rows 2991
+why events were dropped: {'no option chain as of the pre-event session': 91, '3-6m: ATM pair did not trade on or near the pre-event session': 29, '2m: ATM pair did not trade on or near the pre-event session': 17, '1m: ATM pair did not trade on or near the pre-event session': 16, '2m: no expiry 46-80 days out': 14, 'could not recover spot from the chain (no liquid near-dated pair)': 12}
+
+priced events 34 | tickers 22 | by year {2025: 17, 2026: 17} | by bucket {'1m': 27, '3-6m': 17, '2m': 14}
+
+bucket 1m: SHORT the stock (minus the engine stock result), entry the session after the signal, no costs
+  hold  1 sessions | all: n  27 mean  +2.55% median  +0.28% win 0.52 Sharpe +6.15 [+0.99, +10.65]
+                   | 2025: n  13 mean  +2.60% median  +2.48% win 0.69 Sharpe +8.82 [+0.88, +18.46]
+                   | 2026: n  14 mean  +2.51% median  -0.54% win 0.36 Sharpe +4.87 [-11.25, +11.26]
+  hold  3 sessions | all: n  24 mean  +5.69% median  +0.76% win 0.58 Sharpe +3.11 [-0.31, +5.69]
+                   | 2025: n  12 mean  +4.21% median  +0.76% win 0.58 Sharpe +2.06 [-5.74, +5.29]
+                   | 2026: n  12 mean  +7.17% median  +1.87% win 0.58 Sharpe +4.29 [-0.42, +9.14]
+  hold  5 sessions | all: n  20 mean  +3.65% median  -0.99% win 0.45 Sharpe +1.42 [-2.50, +3.60]
+                   | 2025: n  10 mean  +6.39% median  -1.95% win 0.40 Sharpe +2.04 [-6.14, +4.78]
+                   | 2026: n  10 mean  +0.90% median  -0.01% win 0.50 Sharpe +0.46 [-4.62, +4.98]
+  hold 10 sessions | all: n  21 mean  +9.47% median  +2.52% win 0.57 Sharpe +2.07 [+0.17, +3.79]
+                   | 2025: n  10 mean +17.38% median  +9.14% win 0.60 Sharpe +3.12 [+0.94, +5.79]
+                   | 2026: n  11 mean  +2.28% median  +1.34% win 0.55 Sharpe +0.75 [-2.38, +4.16]
+  hold 21 sessions | all: n   7 too few
+                   | 2025: n   3 too few
+                   | 2026: n   4 too few
+
+bucket 2m: SHORT the stock (minus the engine stock result), entry the session after the signal, no costs
+  hold  1 sessions | all: n  12 mean  +5.08% median  +1.13% win 0.50 Sharpe +4.61 [-5.75, +10.84]
+                   | 2025: n   7 too few
+                   | 2026: n   5 too few
+  hold  3 sessions | all: n  11 mean  +2.33% median  -1.87% win 0.36 Sharpe +1.13 [-9.98, +4.72]
+                   | 2025: n   7 too few
+                   | 2026: n   4 too few
+  hold  5 sessions | all: n  10 mean -12.46% median  -3.03% win 0.30 Sharpe -3.24 [-6.65, -0.97]
+                   | 2025: n   6 too few
+                   | 2026: n   4 too few
+  hold 10 sessions | all: n   9 mean  -1.74% median  -3.77% win 0.33 Sharpe -0.90 [-7.36, +2.38]
+                   | 2025: n   6 too few
+                   | 2026: n   3 too few
+  hold 21 sessions | all: n   9 mean  +2.47% median  +1.61% win 0.67 Sharpe +0.29 [-2.90, +2.37]
+                   | 2025: n   6 too few
+                   | 2026: n   3 too few
+
+bucket 3-6m: SHORT the stock (minus the engine stock result), entry the session after the signal, no costs
+  hold  1 sessions | all: n  16 mean  +0.08% median  -0.39% win 0.31 Sharpe +0.18 [-8.43, +8.17]
+                   | 2025: n   9 mean  +1.94% median  -0.01% win 0.33 Sharpe +4.39 [-12.63, +12.75]
+                   | 2026: n   7 too few
+  hold  3 sessions | all: n  11 mean  +7.64% median  -0.32% win 0.45 Sharpe +2.92 [-3.92, +7.55]
+                   | 2025: n   8 mean  +9.17% median  +0.58% win 0.50 Sharpe +3.00 [-6.24, +9.18]
+                   | 2026: n   3 too few
+  hold  5 sessions | all: n  13 mean  +7.14% median  +1.44% win 0.62 Sharpe +2.15 [-2.28, +5.55]
+                   | 2025: n   9 mean  +8.29% median  +0.47% win 0.56 Sharpe +2.08 [-5.02, +6.14]
+                   | 2026: n   4 too few
+  hold 10 sessions | all: n  10 mean  -4.00% median  -4.24% win 0.40 Sharpe -0.90 [-6.03, +2.02]
+                   | 2025: n   6 too few
+                   | 2026: n   4 too few
+  hold 21 sessions | all: n  11 mean  +5.62% median  +6.60% win 0.64 Sharpe +0.49 [-1.58, +3.32]
+                   | 2025: n   8 mean  +7.05% median  +6.31% win 0.62 Sharpe +0.53 [-1.89, +4.26]
+                   | 2026: n   3 too few
+
+reference, bucket 1m, hold 5 sessions, the engine strategies as they are (long side):
+  stock             n  20 mean  -3.65% median  +0.99% win 0.55 Sharpe -1.42 [-3.57, +2.55]
+  long_call         n  24 mean  -1.96% median  -0.88% win 0.42 Sharpe -1.75 [-4.29, +1.18]
+  covered_call      n  20 mean  +0.29% median  +2.01% win 0.65 Sharpe +0.15 [-2.61, +4.70]
+  protective_put    n  19 mean  -3.29% median  -1.13% win 0.42 Sharpe -2.42 [-5.08, +0.74]
+  collar            n  19 mean  +0.80% median  +0.51% win 0.58 Sharpe +0.78 [-2.65, +4.20]
+  cash_secured_put  n  23 mean  -0.34% median  +0.89% win 0.65 Sharpe -0.24 [-2.36, +5.09]
+
+finished: Sun Oct  4 05:02:22 AM EDT 2026

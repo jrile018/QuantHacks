@@ -1,0 +1,9 @@
+code,meaning
+0,present
+1,not public yet at this date
+2,company never reported it
+3,present but older than 200 days
+4,not enough history to compute
+5,not collected
+6,inapplicable or none in coverage window
+7,"present, derived from other reported values"

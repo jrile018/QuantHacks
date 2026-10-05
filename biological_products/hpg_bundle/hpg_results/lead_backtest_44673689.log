@@ -1,0 +1,3 @@
+host: c0706a-s15.ufhpc   job: 44673689   date: Sun Oct  4 04:31:08 AM EDT 2026   repo: /blue/ai-workshop/kkatiyar/QuantHacks   tag: public_offering   mode: smoke
+python ok | pandas 2.0.3 | numpy 1.26.2
+MASSIVE_API_KEY is not set. Stop.

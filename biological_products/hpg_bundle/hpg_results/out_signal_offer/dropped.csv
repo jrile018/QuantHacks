@@ -1,0 +1,196 @@
+ticker,t_0,reason
+OTLK,2025-01-03,1m: no expiry 21-45 days out
+OTLK,2025-01-03,2m: no paired strikes near spot
+OTLK,2025-01-03,3-6m: no paired strikes near spot
+SANA,2025-01-10,1m: no paired strikes near spot
+SANA,2025-01-10,2m: no expiry 46-80 days out
+SANA,2025-01-10,3-6m: no paired strikes near spot
+DTIL,2025-01-13,no option chain as of the pre-event session
+OTLK,2025-01-14,1m: ATM pair did not trade on or near the pre-event session
+OTLK,2025-01-14,2m: no expiry 46-80 days out
+OTLK,2025-01-14,3-6m: ATM pair did not trade on or near the pre-event session
+CADL,2025-01-21,2m: ATM pair did not trade on or near the pre-event session
+DTIL,2025-01-24,no option chain as of the pre-event session
+SLXN,2025-01-29,no option chain as of the pre-event session
+IVVD,2025-02-05,1m: no expiry 21-45 days out
+IVVD,2025-02-05,2m: no paired strikes near spot
+IVVD,2025-02-05,3-6m: no paired strikes near spot
+CLDI,2025-02-11,no option chain as of the pre-event session
+ALLO,2025-02-18,1m: ATM pair did not trade on or near the pre-event session
+ALLO,2025-02-18,2m: no expiry 46-80 days out
+ALLO,2025-02-18,3-6m: ATM pair did not trade on or near the pre-event session
+CLDI,2025-02-20,no option chain as of the pre-event session
+CADL,2025-03-03,1m: ATM pair did not trade on or near the pre-event session
+CADL,2025-03-03,2m: ATM pair did not trade on or near the pre-event session
+SLXN,2025-03-06,no option chain as of the pre-event session
+MGTX,2025-03-14,could not recover spot from the chain (no liquid near-dated pair)
+INMB,2025-03-17,2m: no expiry 46-80 days out
+SLXN,2025-03-20,no option chain as of the pre-event session
+AGEN,2025-03-21,1m: ATM pair did not trade on or near the pre-event session
+AGEN,2025-03-21,2m: ATM pair did not trade on or near the pre-event session
+LXEO,2025-03-25,could not recover spot from the chain (no liquid near-dated pair)
+DBVT,2025-03-31,no option chain as of the pre-event session
+SLXN,2025-04-02,no option chain as of the pre-event session
+ALGS,2025-04-07,no option chain as of the pre-event session
+DBVT,2025-04-08,no option chain as of the pre-event session
+INMB,2025-04-09,1m: ATM pair did not trade on or near the pre-event session
+DTIL,2025-04-16,no option chain as of the pre-event session
+DBVT,2025-04-17,no option chain as of the pre-event session
+AGEN,2025-04-23,2m: ATM pair did not trade on or near the pre-event session
+AGEN,2025-04-23,3-6m: ATM pair did not trade on or near the pre-event session
+SLXN,2025-05-02,no option chain as of the pre-event session
+TVGN,2025-05-22,no option chain as of the pre-event session
+KYMR,2025-06-03,could not recover spot from the chain (no liquid near-dated pair)
+AGEN,2025-06-04,1m: no expiry 21-45 days out
+AGEN,2025-06-04,3-6m: ATM pair did not trade on or near the pre-event session
+TVGN,2025-06-10,no option chain as of the pre-event session
+TVGN,2025-06-20,no option chain as of the pre-event session
+DTIL,2025-06-26,no option chain as of the pre-event session
+OTLK,2025-07-03,could not recover spot from the chain (no liquid near-dated pair)
+VOR,2025-07-07,1m: no paired strikes near spot
+VOR,2025-07-07,2m: no expiry 46-80 days out
+VOR,2025-07-07,3-6m: no paired strikes near spot
+CVM,2025-07-14,no option chain as of the pre-event session
+PROK,2025-07-16,2m: no expiry 46-80 days out
+OTLK,2025-07-17,could not recover spot from the chain (no liquid near-dated pair)
+SABS,2025-07-22,no option chain as of the pre-event session
+SCLX,2025-07-24,no option chain as of the pre-event session
+PALI,2025-07-28,no option chain as of the pre-event session
+AIM,2025-07-29,no option chain as of the pre-event session
+AIM,2025-08-06,no option chain as of the pre-event session
+AIM,2025-08-14,no option chain as of the pre-event session
+CLDI,2025-08-15,no option chain as of the pre-event session
+AIM,2025-08-22,no option chain as of the pre-event session
+OTLK,2025-08-25,2m: ATM pair did not trade on or near the pre-event session
+CVM,2025-09-02,no option chain as of the pre-event session
+TECX,2025-09-03,1m: ATM pair did not trade on or near the pre-event session
+TECX,2025-09-03,2m: ATM pair did not trade on or near the pre-event session
+TECX,2025-09-03,3-6m: ATM pair did not trade on or near the pre-event session
+INKT,2025-09-04,no option chain as of the pre-event session
+OTLK,2025-09-11,1m: ATM pair did not trade on or near the pre-event session
+OTLK,2025-09-11,3-6m: ATM pair did not trade on or near the pre-event session
+SLXN,2025-09-12,no option chain as of the pre-event session
+BCDA,2025-09-19,no option chain as of the pre-event session
+BCDA,2025-09-29,no option chain as of the pre-event session
+ZURA,2025-10-01,1m: no expiry 21-45 days out
+ZURA,2025-10-01,3-6m: ATM pair did not trade on or near the pre-event session
+PALI,2025-10-02,no option chain as of the pre-event session
+PALI,2025-10-10,no option chain as of the pre-event session
+BCDA,2025-10-15,no option chain as of the pre-event session
+SLXN,2025-10-17,no option chain as of the pre-event session
+LXEO,2025-10-20,2m: no expiry 46-80 days out
+LXEO,2025-10-20,3-6m: ATM pair did not trade on or near the pre-event session
+REPL,2025-10-21,1m: ATM pair did not trade on or near the pre-event session
+REPL,2025-10-21,2m: ATM pair did not trade on or near the pre-event session
+REPL,2025-10-21,3-6m: ATM pair did not trade on or near the pre-event session
+SABS,2025-10-22,no option chain as of the pre-event session
+XFOR,2025-10-27,no option chain as of the pre-event session
+SLXN,2025-10-28,no option chain as of the pre-event session
+DTIL,2025-10-29,no option chain as of the pre-event session
+PALI,2025-10-30,no option chain as of the pre-event session
+INTS,2025-10-31,no option chain as of the pre-event session
+ESLA,2025-11-05,no option chain as of the pre-event session
+DTIL,2025-11-06,no option chain as of the pre-event session
+VOR,2025-11-12,no option chain as of the pre-event session
+ESLA,2025-11-13,no option chain as of the pre-event session
+SCLX,2025-11-14,no option chain as of the pre-event session
+SCLX,2025-11-24,no option chain as of the pre-event session
+OTLK,2025-11-26,3-6m: ATM pair did not trade on or near the pre-event session
+DBVT,2025-12-01,no option chain as of the pre-event session
+AVXL,2025-12-04,2m: no expiry 46-80 days out
+AVXL,2025-12-04,3-6m: ATM pair did not trade on or near the pre-event session
+PMCB,2025-12-05,could not recover spot from the chain (no liquid near-dated pair)
+TARA,2025-12-08,1m: ATM pair did not trade on or near the pre-event session
+TARA,2025-12-08,2m: ATM pair did not trade on or near the pre-event session
+TARA,2025-12-08,3-6m: ATM pair did not trade on or near the pre-event session
+KYMR,2025-12-09,1m: ATM pair did not trade on or near the pre-event session
+KYMR,2025-12-09,2m: ATM pair did not trade on or near the pre-event session
+KYMR,2025-12-09,3-6m: ATM pair did not trade on or near the pre-event session
+SNTI,2025-12-10,no option chain as of the pre-event session
+SNTI,2025-12-19,no option chain as of the pre-event session
+OTLK,2025-12-22,2m: ATM pair did not trade on or near the pre-event session
+OTLK,2025-12-22,3-6m: ATM pair did not trade on or near the pre-event session
+OTLK,2025-12-31,1m: no expiry 21-45 days out
+OTLK,2025-12-31,3-6m: ATM pair did not trade on or near the pre-event session
+VOR,2026-01-05,no option chain as of the pre-event session
+GLUE,2026-01-09,2m: no expiry 46-80 days out
+ATRA,2026-01-12,no option chain as of the pre-event session
+VOR,2026-01-21,no option chain as of the pre-event session
+ATRA,2026-01-23,no option chain as of the pre-event session
+VOR,2026-01-29,no option chain as of the pre-event session
+LIMN,2026-02-04,no option chain as of the pre-event session
+AIM,2026-02-06,no option chain as of the pre-event session
+HUMA,2026-02-11,2m: no expiry 46-80 days out
+AIM,2026-02-17,no option chain as of the pre-event session
+CADL,2026-02-23,could not recover spot from the chain (no liquid near-dated pair)
+TARA,2026-02-25,2m: ATM pair did not trade on or near the pre-event session
+TARA,2026-02-25,3-6m: ATM pair did not trade on or near the pre-event session
+HUMA,2026-03-02,3-6m: ATM pair did not trade on or near the pre-event session
+VOR,2026-03-03,no option chain as of the pre-event session
+SLDB,2026-03-06,1m: ATM pair did not trade on or near the pre-event session
+SLDB,2026-03-06,2m: no expiry 46-80 days out
+SLDB,2026-03-06,3-6m: ATM pair did not trade on or near the pre-event session
+INKT,2026-03-11,no option chain as of the pre-event session
+VOR,2026-03-23,no option chain as of the pre-event session
+INKT,2026-03-24,no option chain as of the pre-event session
+MAZE,2026-03-26,3-6m: ATM pair did not trade on or near the pre-event session
+INKT,2026-04-01,no option chain as of the pre-event session
+SRZN,2026-04-02,no option chain as of the pre-event session
+SRZN,2026-04-13,no option chain as of the pre-event session
+SRZN,2026-04-21,no option chain as of the pre-event session
+CMPX,2026-04-28,3-6m: ATM pair did not trade on or near the pre-event session
+SRZN,2026-05-01,no option chain as of the pre-event session
+OCGN,2026-05-05,1m: no expiry 21-45 days out
+SRZN,2026-05-11,no option chain as of the pre-event session
+ATRA,2026-05-11,no option chain as of the pre-event session
+FENC,2026-05-15,could not recover spot from the chain (no liquid near-dated pair)
+QNCX,2026-05-19,no option chain as of the pre-event session
+SRZN,2026-05-20,no option chain as of the pre-event session
+SRZN,2026-05-29,no option chain as of the pre-event session
+SCLX,2026-06-01,no option chain as of the pre-event session
+CRDF,2026-06-02,1m: no expiry 21-45 days out
+CRDF,2026-06-02,2m: no paired strikes near spot
+CRDF,2026-06-02,3-6m: ATM pair did not trade on or near the pre-event session
+BCDA,2026-06-08,no option chain as of the pre-event session
+SRZN,2026-06-08,no option chain as of the pre-event session
+TECX,2026-06-10,could not recover spot from the chain (no liquid near-dated pair)
+SLXN,2026-06-11,no option chain as of the pre-event session
+HUMA,2026-06-12,1m: ATM pair did not trade on or near the pre-event session
+HUMA,2026-06-12,2m: no expiry 46-80 days out
+HUMA,2026-06-12,3-6m: ATM pair did not trade on or near the pre-event session
+SRZN,2026-06-22,no option chain as of the pre-event session
+ALLO,2026-06-24,2m: ATM pair did not trade on or near the pre-event session
+CGTX,2026-06-25,no option chain as of the pre-event session
+TSHA,2026-06-26,1m: ATM pair did not trade on or near the pre-event session
+TSHA,2026-06-26,2m: ATM pair did not trade on or near the pre-event session
+TSHA,2026-06-26,3-6m: ATM pair did not trade on or near the pre-event session
+CELZ,2026-07-01,no option chain as of the pre-event session
+SCLX,2026-07-07,no option chain as of the pre-event session
+CRIS,2026-07-08,no option chain as of the pre-event session
+OTLK,2026-07-09,2m: no expiry 46-80 days out
+OTLK,2026-07-09,3-6m: ATM pair did not trade on or near the pre-event session
+AGEN,2026-07-14,2m: no expiry 46-80 days out
+AGEN,2026-07-14,3-6m: ATM pair did not trade on or near the pre-event session
+SCLX,2026-07-15,no option chain as of the pre-event session
+RGNX,2026-07-20,could not recover spot from the chain (no liquid near-dated pair)
+CRIS,2026-07-23,no option chain as of the pre-event session
+SCLX,2026-07-23,no option chain as of the pre-event session
+OTLK,2026-07-24,2m: ATM pair did not trade on or near the pre-event session
+OTLK,2026-07-24,3-6m: ATM pair did not trade on or near the pre-event session
+ENTX,2026-07-29,2m: ATM pair did not trade on or near the pre-event session
+ENTX,2026-07-29,3-6m: ATM pair did not trade on or near the pre-event session
+REPL,2026-08-03,1m: ATM pair did not trade on or near the pre-event session
+TWST,2026-08-06,1m: ATM pair did not trade on or near the pre-event session
+TWST,2026-08-06,2m: ATM pair did not trade on or near the pre-event session
+TWST,2026-08-06,3-6m: ATM pair did not trade on or near the pre-event session
+CELZ,2026-08-07,no option chain as of the pre-event session
+CELZ,2026-08-21,no option chain as of the pre-event session
+GRML,2026-08-24,no option chain as of the pre-event session
+LIMN,2026-09-01,no option chain as of the pre-event session
+IBRX,2026-09-02,1m: ATM pair did not trade on or near the pre-event session
+LIMN,2026-09-10,no option chain as of the pre-event session
+DTIL,2026-09-14,could not recover spot from the chain (no liquid near-dated pair)
+ARMP,2026-09-15,could not recover spot from the chain (no liquid near-dated pair)
+GRML,2026-09-22,no option chain as of the pre-event session
+SRZN,2026-09-25,2m: ATM pair did not trade on or near the pre-event session
+SRZN,2026-09-25,3-6m: ATM pair did not trade on or near the pre-event session

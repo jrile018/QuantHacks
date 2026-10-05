@@ -1,0 +1,17 @@
+host: c0706a-s3.ufhpc   job: 44673985   date: Sun Oct  4 04:34:20 AM EDT 2026   repo: /blue/ai-workshop/kkatiyar/QuantHacks   tag: public_offering   mode: smoke
+python ok | pandas 2.0.3 | numpy 1.26.2
+team repo commit: fa30fcb Add teammate source onboarding and configuration gates (#4)
+
+######## SMOKE TEST: first 8 events only ########
+team backtest from /blue/ai-workshop/kkatiyar/QuantHacks | tag public_offering | 2024-01-01..2025-12-31 | universe 139 tickers | max events 8
+3,618 'public_offering' disclosures across all filers, 2024-01-01..2025-12-31
+public_offering 2024-01-01..2025-12-31: 8 events -> 4 priced (event, bucket) pairs; 8 drops; 4s
+events 8 | priced 4 | result rows 204
+why events were dropped: {'could not recover spot from the chain (no liquid near-dated pair)': 3, 'no option chain as of the pre-event session': 3, '2m: no expiry 46-80 days out': 1, '2m: ATM pair did not trade on or near the pre-event session': 1}
+
+===== out_smoke_public_offering: tag public_offering | window 2024-01-01..2025-12-31 | events found 8 | priced 4 | result rows 204 =====
+too few priced events for a Sharpe estimate (need at least 10 per cell)
+
+saved lead_backtest_sharpe.csv 0 rows
+
+finished: Sun Oct  4 04:34:30 AM EDT 2026

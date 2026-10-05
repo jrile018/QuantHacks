@@ -1,0 +1,11 @@
+column,block,unit,description
+sv_ratio_1d,short,fraction,"short sale volume / total volume on the previous market day (FINRA, all venues)"
+sv_ratio_5d,short,fraction,same ratio summed over the previous 5 market days
+sv_ratio_20d,short,fraction,same ratio summed over the previous 20 market days
+sv_ratio_z60,short,z score,"5 day ratio compared with the 60 day average of the daily ratio, in standard deviations"
+sv_exempt_share_20d,short,fraction,short exempt volume / total volume over the previous 20 market days
+sv_days_with_print_20d,short,days,days in the previous 20 market days with a FINRA short volume print for this ticker
+si_days_to_cover,short,days,"FINRA reported days to cover (short interest / average daily volume), latest settlement usable 14 days after it"
+si_chg_pct,short,fraction,change of short interest from the previous settlement date to the latest one (clipped to -1 .. 5)
+si_shares_m,short,shares_m,"shares sold short at the latest usable settlement date, in millions, as reported then (not split adjusted)"
+si_age_days,short,days,days between the latest usable settlement date and this row date

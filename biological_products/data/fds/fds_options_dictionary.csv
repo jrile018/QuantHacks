@@ -1,0 +1,10 @@
+column,block,unit,description
+opt_prior_events,options,count,"earlier 8-K events (clinical, FDA, financing, deal, earnings) for which options were looked up; usable from the day after the filing date"
+opt_prior_quoted,options,count,"of those, events with a usable bid/ask on at least one at-the-money leg"
+opt_prior_unlisted,options,count,"of those, events where the company had no listed options in the window"
+opt_ever_listed,options,flag,"1 if any earlier sampled event had listed options, 0 if none did; NaN = never sampled"
+opt_last_spread_pct,options,fraction,bid-ask spread / mid of the at-the-money call and put at the last quoted earlier event (average of the two)
+opt_med_spread_pct,options,fraction,median of those spreads over all earlier quoted events
+opt_last_straddle_pct,options,fraction,near-month at-the-money straddle price / stock price at the last quoted earlier event
+opt_last_implied_move,options,fraction,implied event move estimate at the last quoted earlier event (crude)
+opt_days_since_quote,options,days,days since that last quoted event became usable
